@@ -6,7 +6,7 @@
 
 window.EIK = window.EIK || {};
 
-EIK.VERSION = '20260908j';
+EIK.VERSION = '20260908k';
 
 /* サイトのベースパスを実行時に解決する。
    ビルドが無いので base を埋め込めない。GitHub Pages のプロジェクトページ
