@@ -63,10 +63,26 @@ STYLES = {"oneword", "basic", "contraction", "request", "formal", "casual",
           "offer", "apology", "suggest", "explain", "negotiate", "propose",
           "decline", "complain", "reassure"}
 # 日本語文中に現れても正常なラテン文字語（必要になったら足す）
-ALLOWED_JA_LATIN = {"Wi-Fi", "iPhone", "iPad", "Web", "SNS"}
+ALLOWED_JA_LATIN = {"Wi-Fi", "iPhone", "iPad", "Web", "SNS", "Slack"}
 
 ANSWERS_PER_SITUATION = 10
 MIN_REGISTER_SPREAD = 3
+
+
+def stray_latin(text, where, field):
+    """日本語で書くべき欄に英単語が残っていないか。
+
+    situationJa / ja / note は日本語で書く決まり（.github/CLAUDE.md 7 節）。
+    英文をそのまま貼ったまま訳し忘れる事故が実際に起きたので機械で止める。
+    全て大文字の略語（ATM / SIM）と、日本語文に現れて自然な少数の語は許す。
+    """
+    # 「…」で囲んだ語は「その英語表現そのものを指している」ので対象外にする。
+    text = re.sub(r"\u300c[^\u300d]*\u300d", "", text or "")
+    for m in re.finditer(r"[A-Za-z][A-Za-z-]{2,}", text):
+        w = m.group()
+        if w.isupper() or w in ALLOWED_JA_LATIN:
+            continue
+        err("%s: %s に英単語が残っています: %r" % (where, field, w))
 
 # 段階ごとの、解答に期待される文の数。
 #   min / max … 各解答が満たすべき範囲
@@ -198,12 +214,7 @@ def check_situation(s, rel, cid, lv, rule, seen_ids):
     if d not in (1, 2, 3):
         err("%s: difficulty は 1..3 のいずれか（現在 %r）" % (where, d))
 
-    sja = s.get("situationJa") or ""
-    for m_en in re.finditer(r"[A-Za-z][A-Za-z-]{2,}", sja):
-        w = m_en.group()
-        if w.isupper() or w in ALLOWED_JA_LATIN:
-            continue
-        err("%s: situationJa に英単語が残っています: %r" % (where, w))
+    stray_latin(s.get("situationJa") or "", where, "situationJa")
 
     want = s.get("want", "")
     if not re.match(r"^You want to |^You want ", want):
@@ -257,6 +268,9 @@ def check_situation(s, rel, cid, lv, rule, seen_ids):
             m = re.search(r"[\uac00-\ud7a3\u1100-\u11ff\u3130-\u318f]", v)
             if m:
                 err("%s: %s にハングルが混入しています: %r" % (aw, field, m.group()))
+            if field == "ja":
+                # note は英語表現を引用して解説するので対象にしない。
+                stray_latin(v, aw, field)
 
     dup = set(x for x in ens if ens.count(x) > 1)
     if dup:
