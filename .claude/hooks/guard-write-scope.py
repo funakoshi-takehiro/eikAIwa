@@ -92,10 +92,15 @@ def main():
     if tool == "Bash":
         cmd = ti.get("command") or ""
 
-        # 参照クローンへの push を止める（remote 側の認証は無いが、二重の安全弁）
+        # 参照クローンへの push を止める（remote 側の認証は無いが、二重の安全弁）。
+        # -C を省略可能にすると「あらゆる git push」に一致してしまい、
+        # eng_std への正当な push まで拒否される。-C は必須で書く。
         for r in PROTECTED_ROOTS:
-            if re.search(r"\bgit\s+(-C\s+%s\S*\s+)?push\b" % re.escape(r), cmd):
+            if re.search(r"\bgit\s+-C\s+%s\S*\s+\S*\s*push\b" % re.escape(r), cmd):
                 deny(f"  参照リポジトリへの push: {r}")
+        # cwd 自体が保護パスの中にあるなら、そこでの push も止める
+        if re.search(r"\bgit\b[^|;&]*\bpush\b", cmd) and not allowed(os.path.normpath(cwd)):
+            deny(f"  保護パス内での push: cwd={cwd}")
 
         # 書き込み動詞 + 保護パス の同時出現を拾う
         write_verbs = (
