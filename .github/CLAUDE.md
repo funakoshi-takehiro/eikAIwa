@@ -109,5 +109,17 @@ NODE_PATH="$(npm root -g)" node .github/tools/browser_smoke.js   # ブラウザ�
 `precheck.py` を通らなければデプロイしない。
 third-party action は **SHA 固定 + `# vX.Y.Z` コメント**、Dependabot が weekly で更新する。
 
-**リポジトリを public にし、Settings → Pages → Source を「GitHub Actions」に
-しておく必要がある。**
+**リポジトリを public にする必要がある。**無料プランでは Pages が
+public リポジトリでしか使えない。`configure-pages` に `enablement: true` を
+入れてあるので、public にすれば次の push で Pages 側の設定は自動で入る。
+
+## 10. プレビュー
+
+`python3 .github/tools/build_preview.py` で、CSS・JS・問題データを全部
+埋め込んだ単一 HTML を作れる。Pages を有効化する前に中身を確認する用。
+
+- 見た目と学習の流れは本番と同一（同じソースを束ねているだけ）
+- Service Worker と manifest は外れるので、**インストールとオフラインは使えない**
+- 問題データは `fetch` を差し替えて埋め込みから返す。アプリ側のコードは変更しない
+
+`--artifact` を付けると `<html>`/`<head>`/`<body>` を持たない断片が出る。

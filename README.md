@@ -17,6 +17,12 @@ At a train station. You want to find a restroom.   （相手: 駅員）
 
 <https://funakoshi-takehiro.github.io/eng_std/>
 
+> **公開にはリポジトリを public にする必要があります。**
+> 無料プランでは GitHub Pages が public リポジトリでしか使えません。
+> Settings → General → Change visibility から public にすれば、
+> 次の push で Pages が自動的に有効化されて公開されます
+> （`deploy-pages.yml` に `enablement: true` を入れてあります）。
+
 スマホのホーム画面に追加すると、**通信がなくても学習できます**。
 追加方法はアプリ内の「設定 → ホーム画面への追加方法」にあります。
 
@@ -54,6 +60,11 @@ NODE_PATH="$(npm root -g)" node .github/tools/offline_test.js
 
 # CSS / JS を変更したら必ずキャッシュ版数を上げる
 sh .github/tools/bump-version.sh
+
+# 単一 HTML のプレビューを作る（公開前に中身を見たいとき）
+python3 .github/tools/build_preview.py
+# → preview/eikaiwa-preview.html をブラウザで開くだけで動く
+#   ただしインストールとオフラインは本番（Pages）でのみ使える
 ```
 
 開発上の決まりごとは [`.github/CLAUDE.md`](.github/CLAUDE.md) にあります。
