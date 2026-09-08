@@ -1,0 +1,2586 @@
+{
+  "category": "smalltalk",
+  "level": 3,
+  "situations": [
+    {
+      "id": "smalltalk-3-001",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a conference reception",
+      "listener": "someone senior you have wanted to meet",
+      "want": "You want to introduce yourself to someone senior without it feeling forced.",
+      "situationJa": "会いたかった目上の人に、不自然にならず自己紹介したい。",
+      "tags": [
+        "networking",
+        "introductions"
+      ],
+      "answers": [
+        {
+          "en": "I hope you don't mind me coming over. I'm Rina Sato, from the Osaka research group, and I used your framework in my last paper. I wanted to say it saved me about six months of work.",
+          "ja": "お声がけして申し訳ありません。大阪の研究班のサトウ・リナと申します。前回の論文で先生の枠組みを使いました。半年ほどの作業が省けたとお伝えしたかったのです。",
+          "register": "polite",
+          "style": "explain",
+          "note": "名乗り、接点、具体的な感謝。最も自然な形。"
+        },
+        {
+          "en": "We haven't met, but we've been circling the same problem for years. I work on the measurement side of what you presented this morning. I've wanted to ask you about the third slide since about ten o'clock.",
+          "ja": "初めてお目にかかりますが、何年も同じ課題の周りにいます。今朝ご発表の内容の、測定側を担当しています。10時頃からずっと3枚目の資料について伺いたいと思っていました。",
+          "register": "neutral",
+          "style": "context",
+          "note": "共通の関心から入る。会話が続きやすい。"
+        },
+        {
+          "en": "You've probably had twenty of these conversations tonight, so I'll be brief. I'm Rina, and I wanted to thank you for the reply you sent me in March. You had no reason to answer a student's email and it made a real difference.",
+          "ja": "今夜こうした会話を20回はされているでしょうから、手短に申し上げます。リナと申します。3月にご返信いただいたお礼を伝えたかったのです。学生のメールに答える義理はなかったのに、大きな助けになりました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の疲労に触れる。印象に残る。"
+        },
+        {
+          "en": "Could I ask you one question while I have the chance? It's about the second dataset in this morning's talk. I promise it's one question and then I'll leave you alone.",
+          "ja": "機会があるうちに、1つだけ伺ってもよいですか。今朝のご発表の2つ目の資料についてです。1問だけで、その後は失礼いたします。",
+          "register": "polite",
+          "style": "request",
+          "note": "拘束時間を約束する。応じてもらいやすい。"
+        },
+        {
+          "en": "Forgive the introduction out of nowhere. My name is Rina Sato and I work in the measurement group at Osaka. I have followed your work for some years and wished to say so in person.",
+          "ja": "突然のご挨拶をお許しください。大阪の測定班に所属するサトウ・リナと申します。長年ご研究を拝見しており、直接お伝えしたいと思っておりました。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。目上への挨拶として安全。"
+        },
+        {
+          "en": "Hi, I'm Rina — I've been meaning to say hello all day. I use your framework in my work. Your talk this morning answered a question I've had for two years.",
+          "ja": "こんにちは、リナと申します。一日中ご挨拶しようと思っていました。仕事で先生の枠組みを使っています。今朝のご発表で、2年来の疑問が解けました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな場で。堅苦しくない自己紹介。"
+        },
+        {
+          "en": "I know this is the worst moment to start a technical conversation. Could I send you two paragraphs by email instead? That way you can ignore it if you're busy and I won't take your evening.",
+          "ja": "技術的な話を始めるには最悪の場面だと承知しています。代わりに2段落ほどメールでお送りしてもよいですか。ご多忙なら無視でき、夜のお時間も奪いません。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "場を選ぶ。相手に逃げ道を作る。"
+        },
+        {
+          "en": "I won't pretend I happened to be passing. I came over deliberately because I've wanted to meet you for a while. I'll keep it short and I don't want anything from you.",
+          "ja": "たまたま通りかかったふりはしません。以前からお会いしたく、意図してこちらへ来ました。手短にしますし、何かを求めているわけでもありません。",
+          "register": "casual",
+          "style": "decline",
+          "note": "偶然を装わない率直さ。好印象を与える。"
+        },
+        {
+          "en": "I nearly didn't come over, which would have been silly. I've talked myself out of it twice today already. So here I am — I'm Rina, and I work on measurement.",
+          "ja": "声をかけずに終わるところでした。ばかげた話ですが。今日すでに2度、思いとどまりました。というわけで、測定を担当しているリナと申します。",
+          "register": "casual",
+          "style": "complain",
+          "note": "率直な自己開示。人柄が伝わり親しみやすい。"
+        },
+        {
+          "en": "I'd rather not take your time here where it's loud. Could I buy you a coffee tomorrow between the sessions? Fifteen minutes, and I'll come with actual questions.",
+          "ja": "騒がしいこの場でお時間をいただくのは避けたいです。明日、発表の合間にお茶をご一緒できませんか。15分で、きちんと質問を用意して伺います。",
+          "register": "polite",
+          "style": "propose",
+          "note": "次の約束につなげる。最も実利のある型。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-002",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a dinner",
+      "listener": "an acquaintance",
+      "want": "You want to steer the conversation away from politics without offending anyone.",
+      "situationJa": "角を立てずに、政治の話題から会話を離したい。",
+      "tags": [
+        "deflecting",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "I've got strong views on that and I've learned not to bring them to dinner. It never ends well and the food gets cold. Tell me about the trip instead — you were in Lisbon, weren't you?",
+          "ja": "その件には強い意見がありますが、食事の席には持ち込まないことにしています。良い結末にならず、料理も冷めます。代わりに旅行の話を。リスボンでしたよね。",
+          "register": "casual",
+          "style": "explain",
+          "note": "自分の方針として避ける。誰も否定しない。"
+        },
+        {
+          "en": "The last time this came up at a table, two people left early. I don't think anyone changed their mind either. I'd rather we all made it to dessert.",
+          "ja": "前回この話題が食卓で出たとき、2人が早々に帰りました。誰の考えも変わりませんでした。全員でデザートまでたどり着きたいです。",
+          "register": "casual",
+          "style": "context",
+          "note": "経験談で笑いに変える。空気が和らぐ。"
+        },
+        {
+          "en": "I can tell it matters to you and I don't want to brush that off. It's just not something I can do well over dinner. Could we come back to it another time?",
+          "ja": "大切な話題だとお見受けし、軽く扱いたくはありません。ただ、食事の席で上手に話せる自信がありません。またの機会にできませんか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を尊重して外す。関係を傷つけない。"
+        },
+        {
+          "en": "Could we save this one for a night when there's fewer of us? I'd genuinely like to hear it properly. Just not across eight people and a main course.",
+          "ja": "この話題は、もう少し少人数の夜まで取っておけませんか。きちんと伺いたいのは本心です。ただ、8人と主菜を挟んでは難しいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "先送りとして扱う。拒絶に聞こえない。"
+        },
+        {
+          "en": "I make it a rule not to discuss politics at the table, if you'll forgive me. It is no reflection on the question itself. Perhaps we might return to your trip.",
+          "ja": "ご容赦いただければ、食卓では政治の話をしないことにしております。ご質問自体を否定するものではありません。よろしければ旅行のお話に戻りませんか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった会食で。丁寧に線を引く。"
+        },
+        {
+          "en": "Oh, not at dinner — I'd never stop! Ask me in about three years. Anyway, how was Lisbon?",
+          "ja": "食事中はやめておきます。始めたら止まりません。3年後にでも聞いてください。ところで、リスボンはどうでしたか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "冗談で流す。最も摩擦が少ない。"
+        },
+        {
+          "en": "I'll give you one sentence and then I'm changing the subject. I think it's more complicated than either side says. Now, someone promised me a story about the flight.",
+          "ja": "一文だけ述べて、話題を変えます。どちらの立場が言うより複雑だと思います。さて、飛行機での出来事を話してくださる方がいましたね。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "一言だけ応じて移る。無視より自然。"
+        },
+        {
+          "en": "I'd rather not, if you don't mind. Not because I don't have a view, but because I like all of you. Let's talk about something we can disagree about safely.",
+          "ja": "差し支えなければ、遠慮させてください。意見が無いからではなく、皆さんが好きだからです。安全に意見の分かれる話をしましょう。",
+          "register": "casual",
+          "style": "decline",
+          "note": "温かく断る。冗談として受け取られる。"
+        },
+        {
+          "en": "We did this at the last dinner and it took the whole evening. I remember going home slightly annoyed with someone I like. I'd rather not repeat that tonight.",
+          "ja": "前回の食事会でも同じ話になり、一晩使いました。好きな相手に少し苛立ったまま帰った記憶があります。今夜は繰り返したくありません。",
+          "register": "casual",
+          "style": "complain",
+          "note": "経緯を持ち出す。説得力がある。"
+        },
+        {
+          "en": "How about a rule for tonight — nothing anyone's shouted about online this week. That leaves us food, travel and terrible films. I'll start with the terrible film I watched on Sunday.",
+          "ja": "今夜は決まりを作りませんか。今週ネットで誰かが騒いだ話題は無し、というのは。残るのは料理と旅行とひどい映画です。日曜に観たひどい映画から始めます。",
+          "register": "casual",
+          "style": "propose",
+          "note": "冗談の規則を作る。場が明るくなる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-003",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At the office",
+      "listener": "a colleague going through a hard time",
+      "want": "You want to offer support without prying.",
+      "situationJa": "詮索せずに、辛い状況の同僚を気遣いたい。",
+      "tags": [
+        "support",
+        "empathy"
+      ],
+      "answers": [
+        {
+          "en": "I heard things have been difficult and I didn't want to say nothing. You don't have to tell me anything at all. If it's useful to have someone take the Thursday report, it's yours.",
+          "ja": "大変な状況と伺い、何も言わないのは違うと思いました。何もお話しいただく必要はありません。木曜の報告書を代わりに引き受けるのが助けになるなら、お任せください。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "詮索せず具体的な申し出。最も実際的。"
+        },
+        {
+          "en": "I went through something similar two years ago and people kept asking how I was. What I actually wanted was for someone to bring lunch and not ask. So I've brought lunch.",
+          "ja": "2年前に似たことがあり、皆から具合を尋ねられ続けました。本当に欲しかったのは、何も聞かず昼食を持ってきてくれる人でした。というわけで昼食を持ってきました。",
+          "register": "casual",
+          "style": "context",
+          "note": "自分の経験から。押し付けにならない。"
+        },
+        {
+          "en": "I don't want to intrude and I won't ask what's going on. I'd just like you to know I've noticed and I'm around. That's all — no reply needed.",
+          "ja": "立ち入るつもりはなく、事情は伺いません。ただ、気づいていること、そばにいることをお伝えしたかったのです。それだけです。返事は不要です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "返事を求めない。最も負担が軽い声かけ。"
+        },
+        {
+          "en": "Could I take the client calls this week? Not because you can't do them, but because it's three hours you'd get back. Say no and I'll never mention it again.",
+          "ja": "今週の顧客対応を私が引き受けてもよいですか。できないからではなく、3時間戻るからです。断っていただければ、二度と申しません。",
+          "register": "polite",
+          "style": "request",
+          "note": "断りやすくする。相手の尊厳を守る。"
+        },
+        {
+          "en": "I understand you have had a difficult few weeks. Please do let me know if there is anything I can usefully take on. I shall not raise it again unless you wish to.",
+          "ja": "この数週間、大変であったと伺っております。お引き受けできることがあれば、どうぞお申し付けください。ご希望がない限り、こちらから再度触れることはいたしません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある同僚に。礼を失しない。"
+        },
+        {
+          "en": "I'm not going to ask what's going on. But I'm here if you want to talk, or not talk. Either's fine.",
+          "ja": "事情は伺いません。ただ、話したいときも、話したくないときも、私はここにいます。どちらでも構いません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短くて温かい。親しい同僚に。"
+        },
+        {
+          "en": "If you'd rather I didn't mention it at work, I won't. And if you'd rather talk somewhere that isn't the office, we could get a coffee. You choose and I'll follow.",
+          "ja": "職場で触れない方がよければ、そうします。職場以外で話したければ、お茶でもいかがですか。決めていただければ、それに従います。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "主導権を相手に渡す。安心感がある。"
+        },
+        {
+          "en": "I'd rather not do the thing where everyone pretends not to notice. That was the worst part when it happened to me. So I'm saying it once, and then I'll leave it with you.",
+          "ja": "皆が気づかないふりをする状況は避けたいです。自分のときは、それが一番つらかったからです。だから一度だけ申し上げ、あとはお任せします。",
+          "register": "casual",
+          "style": "decline",
+          "note": "沈黙を破る理由を説明する。誠実に響く。"
+        },
+        {
+          "en": "I nearly didn't say anything, in case it made things worse. Then I thought saying nothing was probably worse. So this is me doing it badly but doing it.",
+          "ja": "かえって悪くするかと思い、何も言わずにおくところでした。ただ、黙っている方が悪いだろうと考え直しました。うまくはありませんが、こうしてお伝えしています。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の迷いを開示する。飾らない誠実さ。"
+        },
+        {
+          "en": "Here's an offer with no strings. I'll cover your Monday mornings for the next month, no explanation needed. If you don't want it, just say so and it's forgotten.",
+          "ja": "条件なしの申し出です。今後1か月、月曜の午前を私が受け持ちます。理由の説明は不要です。不要であれば、そう仰っていただければ忘れます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期間を区切った具体的な支援。受けやすい。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-004",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a party",
+      "listener": "someone who is monopolising you",
+      "want": "You want to escape a conversation without being rude.",
+      "situationJa": "失礼にならないよう、長引く会話から抜けたい。",
+      "tags": [
+        "exiting",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "I've really enjoyed this, and I should go and find the host. I promised her I'd say hello properly. Let's carry on if we bump into each other later.",
+          "ja": "とても楽しかったです。そろそろ主催者を探しに行かなければなりません。きちんと挨拶すると約束したのです。後でお会いしたら続きを話しましょう。",
+          "register": "polite",
+          "style": "explain",
+          "note": "理由と再会の余地を示す。最も無難な抜け方。"
+        },
+        {
+          "en": "I came with two friends who don't know anyone here. I've abandoned them for about half an hour now. I should probably rescue them before they leave without me.",
+          "ja": "ここに知り合いのいない友人2人と来ました。もう30分ほど放っています。置いて帰られる前に助けに行くべきかもしれません。",
+          "register": "casual",
+          "style": "context",
+          "note": "第三者を理由にする。相手を否定しない。"
+        },
+        {
+          "en": "I don't want to cut you off mid-story, so tell me the ending. Then I'm afraid I have to go and circulate a bit. It's been genuinely good to meet you.",
+          "ja": "話の途中で遮りたくないので、結末まで伺います。その後は、少し他の方とも話しに行かせてください。お会いできて本当によかったです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "最後まで聞いてから抜ける。丁寧で好印象。"
+        },
+        {
+          "en": "Could I introduce you to Marco before I go? You two both work in publishing and I think you'd get on. Marco, this is Elena — she's been telling me about the Lisbon project.",
+          "ja": "行く前に、マルコさんをご紹介してもよいですか。お二人とも出版のお仕事で、話が合うと思います。マルコさん、こちらはエレナさん。リスボンの企画の話を伺っていました。",
+          "register": "polite",
+          "style": "request",
+          "note": "他の人に引き継ぐ。最も上手な抜け方。"
+        },
+        {
+          "en": "It has been a pleasure to talk with you. I ought to go and greet a few other people before the evening ends. I do hope we shall speak again.",
+          "ja": "お話しできて光栄でした。夜が終わる前に、他の方にもご挨拶に伺わなければなりません。またお話しできればと存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった集まりで。礼儀正しく退く。"
+        },
+        {
+          "en": "I'm going to grab another drink — can I get you one? Actually, I might do a lap while I'm up. Catch you later.",
+          "ja": "もう一杯取ってきます。何かお持ちしましょうか。ついでに少し回ってきます。また後ほど。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気軽な場で。自然に立ち上がる口実。"
+        },
+        {
+          "en": "I'd love to hear the rest of this properly rather than in a loud room. Could I take your number and call you next week? I'd rather that than half a conversation here.",
+          "ja": "騒がしい場ではなく、きちんと続きを伺いたいです。連絡先を伺い、来週お電話してもよいですか。ここで中途半端に話すより、その方がよいです。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "興味があるときの抜け方。関係が続く。"
+        },
+        {
+          "en": "I'd rather not stay and keep looking over your shoulder — that's rude to you. I've got a few people I promised to see. Let me do that and I'll come back if you're still here.",
+          "ja": "あなたの肩越しに視線を泳がせ続けるのは失礼なので、避けたいです。会うと約束した方が何人かいます。済ませて、まだいらしたら戻ります。",
+          "register": "casual",
+          "style": "decline",
+          "note": "正直に述べる。かえって誠実に見える。"
+        },
+        {
+          "en": "I've been standing in one spot for an hour and my feet have given up. I'm going to move about a bit. It was good to meet you.",
+          "ja": "1時間同じ場所に立ち続けて、足が限界です。少し動いてきます。お会いできてよかったです。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の事情にする。角が立たない。"
+        },
+        {
+          "en": "Let's do this properly some time. Send me a message and we'll get lunch. For now I should go and do my rounds before the food disappears.",
+          "ja": "いずれきちんとお話ししましょう。連絡をいただければ昼食でも。今は料理が無くなる前に、ひと回りしてきます。",
+          "register": "casual",
+          "style": "propose",
+          "note": "次を約束して抜ける。温かく終われる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-005",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone who made an offensive remark",
+      "want": "You want to push back on a remark you found offensive.",
+      "situationJa": "不快な発言に、その場で異議を示したい。",
+      "tags": [
+        "conflict",
+        "values"
+      ],
+      "answers": [
+        {
+          "en": "I'm going to say something rather than let that pass. I don't think that's true of the people I've worked with. I'd rather tell you than sit here looking uncomfortable.",
+          "ja": "聞き流さずに、一言申し上げます。私が一緒に働いてきた方々には当てはまらないと思います。居心地悪く黙っているより、お伝えしたいのです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "静かに、しかし明確に。最も再現しやすい型。"
+        },
+        {
+          "en": "I've heard that said a lot and I used to nod along. Then I worked with about forty people it was supposed to describe. It didn't hold for any of them.",
+          "ja": "その言い方はよく耳にし、以前はうなずいていました。その後、そう言われる人たち40人ほどと働きました。誰にも当てはまりませんでした。",
+          "register": "neutral",
+          "style": "context",
+          "note": "自分も同じだったと示す。相手が構えない。"
+        },
+        {
+          "en": "I don't think you meant it the way it landed. It's the kind of line that sounds fine until someone in the room is on the wrong end of it. I'd rather say that now than talk about it after you've left.",
+          "ja": "受け取られ方までは意図されていないと思います。ただ、その場に当事者がいると途端に響き方が変わる類の言葉です。ご不在の場で話すより、今申し上げたいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の意図を善解する。対話が続く。"
+        },
+        {
+          "en": "Could you say more about what you meant by that? I want to be sure I've understood before I react. I might have taken it the wrong way.",
+          "ja": "その言葉の意味を、もう少し伺えますか。反応する前に、正しく理解したいのです。私の受け取り方が違うのかもしれません。",
+          "register": "polite",
+          "style": "request",
+          "note": "問いで返す。相手が自ら気づくことも多い。"
+        },
+        {
+          "en": "I am afraid I cannot let that remark pass without comment. It does not accord with my experience, nor do I think it fair to those it describes. I say so with no hostility intended.",
+          "ja": "その発言を、何も申し上げずに流すことはできません。私の経験と一致せず、当事者に対しても公平とは思えません。敵意はございません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。毅然としつつ礼を保つ。"
+        },
+        {
+          "en": "I don't think that's fair, honestly. I've not found that at all. Different experience, I suppose.",
+          "ja": "正直、それは公平ではないと思います。私はまったくそう感じたことがありません。経験が違うのでしょうね。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く反対して流す。場を壊さない。"
+        },
+        {
+          "en": "We're not going to agree on this tonight and I don't want to ruin the evening. I did want to say I see it differently. Let's leave it there and talk about something else.",
+          "ja": "今夜は意見が一致しないでしょうし、場を壊したくもありません。ただ、見方が違うとは申し上げたかったのです。ここまでにして、別の話にしましょう。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "反対を示して撤収する。実用性が高い。"
+        },
+        {
+          "en": "I'd rather not laugh along with that one, if that's all right. It isn't a joke where I work. I'm not making a scene, I just didn't want to join in.",
+          "ja": "差し支えなければ、それに一緒に笑うのは遠慮します。私の職場では冗談になりません。騒ぎを起こす気はなく、加わりたくないだけです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "同調しないと示す。最小限の抵抗。"
+        },
+        {
+          "en": "That's the second time tonight and I let the first one go. I've regretted doing that before. So I'm saying something this time.",
+          "ja": "今夜これで2度目で、1度目は流しました。以前そうして後悔したことがあります。だから今回は申し上げます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを指摘する。行動の理由が明確。"
+        },
+        {
+          "en": "Can we swap it for a better version of the same point? If what you mean is that the training was poor, I'd agree with that. That's a conversation I'd actually like to have.",
+          "ja": "同じ趣旨を、より良い言い方に置き換えませんか。研修が不十分だった、という意味であれば同意します。それなら喜んで議論したい話題です。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "論点を救い出す。対立を議論に変える。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-006",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a wedding",
+      "listener": "a relative you rarely see",
+      "want": "You want to deflect questions about your personal life.",
+      "situationJa": "私生活についての質問を、やんわりかわしたい。",
+      "tags": [
+        "deflecting",
+        "family"
+      ],
+      "answers": [
+        {
+          "en": "Nothing to report on that front, I'm afraid. Everything else is going well though — the new job started in March. How's the house coming along?",
+          "ja": "その件はお伝えできることがありません。ほかは順調で、3月に新しい仕事を始めました。お家の方はいかがですか。",
+          "register": "casual",
+          "style": "explain",
+          "note": "短く答えて話題を返す。定番で効果的。"
+        },
+        {
+          "en": "I get asked that at every family thing and I never have a good answer. The honest version is that I'm happy as I am. That's usually where the conversation ends, so let me ask about you instead.",
+          "ja": "親族の集まりのたびに聞かれますが、良い答えを持ったことがありません。正直に言えば、今のままで満足しています。たいていそこで会話が終わるので、そちらのお話を伺わせてください。",
+          "register": "casual",
+          "style": "context",
+          "note": "正直に答えてから移る。誠実で角が立たない。"
+        },
+        {
+          "en": "I know you're asking because you care, and I don't mind the question. It's just not the most interesting thing about my year. Ask me about the trip to Portugal instead.",
+          "ja": "気にかけてくださっての質問と分かっていますし、嫌ではありません。ただ、今年一番面白い話ではないのです。ポルトガル旅行の話でも聞いてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "善意を認めてから逸らす。関係が壊れない。"
+        },
+        {
+          "en": "Could I dodge that one and ask you something instead? I've been meaning to ask how your mother is. I heard she'd been in hospital in the spring.",
+          "ja": "その質問はかわして、こちらから伺ってもよいですか。お母様のご様子を伺いたいと思っていました。春に入院されたと聞きました。",
+          "register": "polite",
+          "style": "request",
+          "note": "かわすと明言する。愛想よく話題を移す。"
+        },
+        {
+          "en": "There is nothing new to report, I am afraid. I do appreciate the interest all the same. Perhaps you might tell me how the family are keeping.",
+          "ja": "あいにく、新しくお伝えできることはございません。お気遣いはありがたく存じます。よろしければ、ご家族のご様子をお聞かせください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある親戚に。礼儀正しくかわす。"
+        },
+        {
+          "en": "Still no news on that one! You'll be the first to know. How about you — how's the garden?",
+          "ja": "その件はまだ何もありません。何かあれば真っ先にお知らせします。そちらはいかがですか、お庭の具合は。",
+          "register": "casual",
+          "style": "casual",
+          "note": "冗談めかして流す。最も軽やかな返し。"
+        },
+        {
+          "en": "I'll trade you — I'll answer that if you tell me what happened with the boat. Everyone's been very mysterious about it. That sounds like a much better story.",
+          "ja": "取引しましょう。船の件を教えてくださるなら、お答えします。皆さん、その話になると口を濁されます。そちらの方がよほど面白そうです。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "冗談の交換条件。場が明るくなる。"
+        },
+        {
+          "en": "I'd rather not get into it at a wedding, if that's all right. It's a longer conversation than we've got. Let's do it properly next time I visit.",
+          "ja": "差し支えなければ、結婚式の場では立ち入らずにおきたいです。ここでは足りない長さの話です。次に伺うときに、きちんとお話ししましょう。",
+          "register": "polite",
+          "style": "decline",
+          "note": "はっきり断りつつ次を約束する。"
+        },
+        {
+          "en": "Three people have asked me that in the last hour. I'm starting to think there's a rota. I'll tell the four of you at once if anything ever happens.",
+          "ja": "この1時間で3人に同じことを聞かれました。順番でも決まっているのかと思い始めています。何かあれば、4人まとめてお知らせします。",
+          "register": "casual",
+          "style": "complain",
+          "note": "笑いに変える。誰も傷つかない。"
+        },
+        {
+          "en": "How about we make a deal for today. No life-plan questions, and I'll dance with you later. That seems like a fair exchange to me.",
+          "ja": "今日は取り決めをしませんか。人生設計の質問は無し、代わりに後で一緒に踊ります。公平な交換だと思います。",
+          "register": "casual",
+          "style": "propose",
+          "note": "冗談の約束にする。場にふさわしい。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-007",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a work social",
+      "listener": "a colleague you have clashed with",
+      "want": "You want to repair a relationship after a disagreement at work.",
+      "situationJa": "仕事で衝突した同僚と、関係を修復したい。",
+      "tags": [
+        "repair",
+        "colleagues"
+      ],
+      "answers": [
+        {
+          "en": "I wanted to say something about Tuesday's meeting. I pushed harder than I needed to and it came out badly. I still think the deadline was wrong, but I could have said it better.",
+          "ja": "火曜の会議について申し上げたいことがあります。必要以上に押し、言い方が悪くなりました。期日が不適切という考えは変わりませんが、伝え方はもっとよくできました。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "態度は謝り、主張は保つ。誠実で健全。"
+        },
+        {
+          "en": "I'd had two projects slip that week and I brought that into the room. That's not your fault and you got the sharp end of it. I've been meaning to say so since Wednesday.",
+          "ja": "あの週は2つの案件が遅れており、それを会議に持ち込みました。あなたのせいではないのに、鋭い言い方をぶつけました。水曜からずっと伝えたいと思っていました。",
+          "register": "neutral",
+          "style": "context",
+          "note": "背景を説明する。言い訳にせず率直に。"
+        },
+        {
+          "en": "You don't have to accept this or say anything back. I just didn't want it sitting between us for another month. That's all I came over to say.",
+          "ja": "受け入れる必要も、返事をする必要もありません。ただ、これがもう1か月わだかまるのは避けたかったのです。それだけをお伝えしに来ました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "返答を求めない。相手の負担が軽い。"
+        },
+        {
+          "en": "Could we talk about how we handle the next one? Not the argument itself, but the way it went. I'd rather change the pattern than win the point.",
+          "ja": "次に同じことが起きたときの進め方を話せませんか。議論の中身ではなく、その進み方についてです。議論に勝つより、やり方を変えたいのです。",
+          "register": "polite",
+          "style": "request",
+          "note": "将来に目を向ける。修復として最も有効。"
+        },
+        {
+          "en": "I should like to apologise for the manner of my remarks on Tuesday. My disagreement was genuine, but the way I expressed it was not helpful. I hope we can put it behind us.",
+          "ja": "火曜の発言の仕方について、お詫び申し上げます。異論そのものは本心でしたが、その表し方は建設的ではありませんでした。この件は水に流せればと存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある相手に。礼を尽くした謝罪。"
+        },
+        {
+          "en": "About Tuesday — sorry, I was sharper than I meant to be. Bad week, but that's not your problem. Still think the date's wrong, mind you.",
+          "ja": "火曜の件ですが、思った以上にきつい言い方をしてすみません。悪い週でしたが、それはあなたには関係のない話です。ただ、期日が不適切という考えは変わりません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く謝って主張も残す。同僚間で自然。"
+        },
+        {
+          "en": "I'll meet you halfway on the timeline if you'll take another look at the scope. Neither of us is going to get the version we argued for. I'd rather land somewhere than keep going.",
+          "ja": "範囲を見直していただけるなら、日程については歩み寄ります。互いに主張した通りにはならないでしょう。争い続けるより、どこかに着地したいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "実務の妥協で関係も直す。効率が良い。"
+        },
+        {
+          "en": "I'd rather not pretend it didn't happen and be awkward for six months. We've got two more projects together this year. Let's just deal with it now.",
+          "ja": "無かったことにして、半年気まずくするのは避けたいです。今年はあと2件、一緒に担当します。今のうちに片付けましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "先送りを断る。現実的で受け入れられやすい。"
+        },
+        {
+          "en": "I've been going over it since and I keep landing in the same place. The point was right and the delivery was poor. That's an uncomfortable combination to sit with.",
+          "ja": "以来考え続けていますが、同じ結論に戻ります。指摘は正しく、伝え方は拙かった。抱えているには落ち着かない組み合わせです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "自省を率直に述べる。信頼が回復しやすい。"
+        },
+        {
+          "en": "Could we do a coffee on Monday and go through the plan together? Half an hour, no audience, and we come out with one version. I'd rather do that than have it play out in another meeting.",
+          "ja": "月曜にお茶でも飲みながら、計画を一緒に見直しませんか。30分、人目の無いところで、1つの案にまとめましょう。また会議の場で繰り返すより、その方がよいです。",
+          "register": "polite",
+          "style": "propose",
+          "note": "具体的な場を用意する。実際に関係が戻る。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-008",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone who has just been made redundant",
+      "want": "You want to respond well when someone tells you they lost their job.",
+      "situationJa": "失業したと打ち明けられ、うまく応じたい。",
+      "tags": [
+        "empathy",
+        "bad-news"
+      ],
+      "answers": [
+        {
+          "en": "I'm sorry — that's a lot to be carrying at a party. Thank you for telling me rather than pretending. Do you want to talk about it or would you rather not tonight?",
+          "ja": "それはお辛いですね。集まりの場で抱えるには重い話です。取り繕わずに話してくださって、ありがとうございます。今夜は話したいですか、それとも触れずにおきますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "同情の後に選択肢を渡す。押し付けない。"
+        },
+        {
+          "en": "The same thing happened to me in twenty nineteen and it took months to stop feeling like my fault. It wasn't, and this isn't either. That took me a long time to actually believe.",
+          "ja": "2019年に同じことがあり、自分のせいだと感じなくなるまで数か月かかりました。そうではありませんでしたし、今回もそうです。本当に信じられるまで時間がかかりました。",
+          "register": "casual",
+          "style": "context",
+          "note": "自分の経験を差し出す。孤立感が和らぐ。"
+        },
+        {
+          "en": "I'm not going to give you advice unless you ask for it. You've probably had plenty already. If you want someone to complain to for ten minutes, I'm very good at listening.",
+          "ja": "求められない限り、助言はしません。すでに十分受けておられるでしょう。10分ほど愚痴を言う相手が欲しければ、聞くのは得意です。",
+          "register": "casual",
+          "style": "considerate",
+          "note": "助言を控える宣言。実は最も助けになる。"
+        },
+        {
+          "en": "Could I do something practical rather than say something useless? I could look over your application letter, or introduce you to two people in the sector. Say the word and I'll do either.",
+          "ja": "気の利かない言葉より、実際に役立つことをさせてください。応募書類を拝見することも、業界の方を2人ご紹介することもできます。一言いただければ、どちらでもします。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な申し出。社交辞令にならない。"
+        },
+        {
+          "en": "I am very sorry to hear that. Please do let me know if there is anything I can usefully do. I should be glad to make an introduction if that would help.",
+          "ja": "それはお気の毒に存じます。私にできることがあれば、どうぞお知らせください。ご紹介がお役に立つようでしたら、喜んで承ります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある相手に。過度に立ち入らない。"
+        },
+        {
+          "en": "Oh, that's rough. I'm sorry. Do you want to talk about it or shall we talk about literally anything else?",
+          "ja": "それは大変ですね。お気の毒です。その話をしますか、それとも全然別の話にしますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く受け止めて選ばせる。親しい相手に。"
+        },
+        {
+          "en": "I could send you three names this week, or I could not mention it again. Both are genuine offers. Which would actually help?",
+          "ja": "今週中に3人ご紹介することもできますし、二度と触れずにおくこともできます。どちらも本心からの申し出です。実際に助かるのはどちらですか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "相手に選ばせる。押し付けにならない。"
+        },
+        {
+          "en": "I'd rather not tell you it happens for a reason. It usually doesn't, and it wouldn't help tonight anyway. What I will say is that you were good at that job.",
+          "ja": "意味があって起きたことだ、とは言いたくありません。たいていそうではありませんし、今夜の助けにもなりません。申し上げたいのは、あなたはあの仕事で優秀だった、ということです。",
+          "register": "casual",
+          "style": "decline",
+          "note": "決まり文句を避ける。誠実さが際立つ。"
+        },
+        {
+          "en": "People kept telling me to stay positive when it happened to me. I wanted to throw something at them. So I'll skip that part.",
+          "ja": "私のときは、前向きでいるようにと言われ続けました。何か投げつけたい気分でした。ですから、その部分は省きます。",
+          "register": "casual",
+          "style": "complain",
+          "note": "共感を笑いに変える。距離が縮まる。"
+        },
+        {
+          "en": "Here's what I'd like to do. I'll message you on Thursday, and if you want to meet we will, and if you don't you can ignore it. No obligation either way.",
+          "ja": "こうさせてください。木曜に連絡しますので、会いたければ会いましょう。そうでなければ無視してくださって構いません。どちらでも義理はありません。",
+          "register": "casual",
+          "style": "propose",
+          "note": "その場限りにしない。負担のない申し出。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-009",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a dinner party",
+      "listener": "the group",
+      "want": "You want to tell a story about yourself without dominating the table.",
+      "situationJa": "場を独占せずに、自分の話を語りたい。",
+      "tags": [
+        "storytelling",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "This connects to what Aya said about missing trains. Mine involves the wrong country rather than the wrong train. I'll keep it to two minutes because the ending is the only good part.",
+          "ja": "アヤさんの乗り遅れの話につながります。私の場合は電車ではなく国を間違えました。面白いのは結末だけなので、2分で終えます。",
+          "register": "casual",
+          "style": "explain",
+          "note": "前の話につなげ、長さを予告する。理想的。"
+        },
+        {
+          "en": "I ended up in the city rather than the airport, which I'd assumed were the same place. They are, as it turns out, about an hour apart. I discovered this forty minutes before the flight.",
+          "ja": "同じ場所だと思い込んで、空港ではなく市内に着きました。実際には1時間ほど離れています。それに気づいたのは、出発の40分前でした。",
+          "register": "casual",
+          "style": "context",
+          "note": "説明を短く保つ。話が締まる。"
+        },
+        {
+          "en": "Do stop me if it starts to run long. I have a habit of adding detail nobody asked for. I'd rather be cut off than take the whole table.",
+          "ja": "長くなり始めたら、遠慮なく止めてください。誰も求めていない詳細を足す癖があります。場を独占するより、遮っていただく方がよいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自ら退路を作る。場が和む。"
+        },
+        {
+          "en": "Could I add one story before we move on? It's about the time I locked myself out in Helsinki. It's short, and it does me no credit whatsoever.",
+          "ja": "話題が移る前に、1つ話を加えてもよいでしょうか。ヘルシンキで締め出された時のことです。短く、まったく自慢にならない話です。",
+          "register": "polite",
+          "style": "request",
+          "note": "許可を求めてから話す。丁寧で愛される型。"
+        },
+        {
+          "en": "If I may add a brief story on the same theme. It concerns an occasion when I confused two airports with very similar names. I shall keep it short, as the conclusion is the only remarkable part.",
+          "ja": "同じ話題で、短い話を1つ加えてもよろしいでしょうか。よく似た名前の2つの空港を取り違えた時のことです。見どころは結末だけですので、手短にいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった食卓で。控えめに切り出す。"
+        },
+        {
+          "en": "Oh, I've got one of these. Wrong airport, forty minutes before the flight. It gets worse.",
+          "ja": "私にもそういう話があります。空港を間違えて、出発の40分前でした。さらにひどくなります。",
+          "register": "casual",
+          "style": "casual",
+          "note": "極端に短い導入。テンポが良い。"
+        },
+        {
+          "en": "I'll tell the short version now and the long one another time. The short one has the taxi and the long one has the police. Nobody was arrested, before anyone asks.",
+          "ja": "今は短い方を、長い方はまたの機会に話します。短い方には車が、長い方には警察が出てきます。念のため、誰も逮捕されていません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "続きを匂わせて短くする。上手な語り。"
+        },
+        {
+          "en": "I'd rather not take the whole table for ten minutes. Let me do the ending and skip the middle. The middle is mostly me running.",
+          "ja": "10分も皆さんの時間を取るのは避けたいです。中盤は飛ばして結末だけ話します。中盤はほぼ私が走っているだけです。",
+          "register": "casual",
+          "style": "decline",
+          "note": "自分で刈り込む。場の空気を読む型。"
+        },
+        {
+          "en": "I've told this one badly at three dinners now. Tonight I'm going to try telling it in under two minutes. Time me, and if I fail, you can all groan.",
+          "ja": "この話は3回の食事会で下手に語ってきました。今夜は2分以内で話してみます。時間を計って、失敗したら遠慮なく呆れてください。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自虐で許可を得る。誰も退屈しない。"
+        },
+        {
+          "en": "How about I tell mine and then Marco tells his? He's got a much better one about a ferry. I'll go quickly so there's time.",
+          "ja": "私が話したら、次はマルコさんにお願いしませんか。船にまつわる、もっと良い話をお持ちです。時間が残るよう、手短にします。",
+          "register": "casual",
+          "style": "propose",
+          "note": "次の人に渡す前提。場が回る。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-010",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At the office",
+      "listener": "a new colleague from abroad",
+      "want": "You want to help someone new feel included without singling them out.",
+      "situationJa": "特別扱いにせず、新しく来た人に馴染んでもらいたい。",
+      "tags": [
+        "inclusion",
+        "colleagues"
+      ],
+      "answers": [
+        {
+          "en": "A few of us get lunch at half twelve on Thursdays. It's nothing formal and people drift in and out. Come along if you fancy it, and don't if you'd rather have the hour.",
+          "ja": "木曜の12時半に、何人かで昼食を取っています。堅苦しい集まりではなく、来る人も帰る人も自由です。気が向けばどうぞ。1人で過ごしたければそれで構いません。",
+          "register": "casual",
+          "style": "explain",
+          "note": "断りやすい誘い方。気負わせない。"
+        },
+        {
+          "en": "The first month here is mostly working out who to ask about what. It took me about six weeks and I'd worked in the building before. Ask me anything, including the things that feel too small to ask.",
+          "ja": "最初の1か月は、何を誰に聞けばよいかを覚える期間です。私は同じ建物で働いていたのに6週間かかりました。些細すぎると感じることも含め、何でも聞いてください。",
+          "register": "neutral",
+          "style": "context",
+          "note": "自分も苦労したと示す。質問しやすくなる。"
+        },
+        {
+          "en": "I won't ask you to explain your accent or where you're really from. You'll get plenty of that. I'd rather hear what you worked on before this.",
+          "ja": "訛りや出身地の詮索はしません。そういう質問は嫌というほど受けるでしょうから。それより、以前どんな仕事をされていたか伺いたいです。",
+          "register": "casual",
+          "style": "considerate",
+          "note": "煩わしい質問を避けると宣言する。効果的。"
+        },
+        {
+          "en": "Could I introduce you to two people in the data team? You'll be working with them in a month and they're easier to meet now. It's less awkward than turning up cold in a meeting.",
+          "ja": "データ班の2人をご紹介してもよいですか。1か月後には一緒に働く相手で、今のうちの方が会いやすいです。会議で初対面になるより気まずくありません。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な引き合わせ。実務的な助け。"
+        },
+        {
+          "en": "You would be most welcome to join us for lunch on Thursdays. There is no obligation and people come as they please. Do say if you would prefer to be left to settle in.",
+          "ja": "木曜の昼食に、よろしければご参加ください。義務ではなく、皆それぞれの都合で来ています。落ち着くまでそっとしておいてほしければ、その旨お知らせください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離を保った丁寧な誘い。押し付けない。"
+        },
+        {
+          "en": "We do lunch on Thursdays if you fancy it. No pressure at all. Also, ask me anything — I mean it.",
+          "ja": "木曜に昼食に行くので、よければどうぞ。まったく気にせずに。あと、何でも聞いてください。本気で言っています。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気軽な同僚の距離感。自然に馴染む。"
+        },
+        {
+          "en": "If a big group lunch sounds like a lot, we could just get a coffee. Same thing, quarter of the people. Either is completely fine.",
+          "ja": "大人数の昼食が負担に感じるなら、お茶だけでも構いません。同じことですが、人数は4分の1です。どちらでもまったく問題ありません。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "規模を選ばせる。内向的な人にも届く。"
+        },
+        {
+          "en": "I'd rather not do the thing where we all ask you about your country for a month. You'll be sick of it by Friday. Let's talk about the project instead.",
+          "ja": "1か月にわたって皆で出身国のことを尋ね続ける、というのは避けたいです。金曜には飽き飽きされるでしょう。代わりに仕事の話をしましょう。",
+          "register": "casual",
+          "style": "decline",
+          "note": "定番の負担を先回りで断つ。歓迎される。"
+        },
+        {
+          "en": "When I moved here nobody told me the building closes early on Fridays. I found out by being locked in the car park. So I'm telling you the useless things nobody mentions.",
+          "ja": "私が来たとき、金曜は建物が早く閉まると誰も教えてくれませんでした。駐車場に閉じ込められて知りました。ですから、誰も言わない些細なことをお伝えします。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の失敗談から入る。距離が縮まる。"
+        },
+        {
+          "en": "How about we do a standing fifteen minutes on Monday mornings for your first month? You bring whatever's confusing and I'll answer or find out. After that we drop it unless you want to keep going.",
+          "ja": "最初の1か月、月曜の朝に15分の時間を設けませんか。分からないことを持ってきていただければ、答えるか調べます。その後は、続けたい場合を除いて終わりにします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限付きの支援。依存にならない。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-011",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "a friend who asks for a favour",
+      "want": "You want to decline a favour without damaging the friendship.",
+      "situationJa": "友人関係を保ったまま、頼み事を断りたい。",
+      "tags": [
+        "declining",
+        "friends"
+      ],
+      "answers": [
+        {
+          "en": "I'm going to say no to this one, and I want to tell you why. I've got two weekends free before the end of the year. If I take this on I'll do it badly and resent it.",
+          "ja": "これはお断りします。理由もお伝えします。年内に空いている週末は2つだけです。引き受ければ、中途半端になり、不満も残ります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "理由を隠さない断り方。信頼を保つ。"
+        },
+        {
+          "en": "I said yes to three things like this in the spring and did all of them late. You were on the receiving end of one of them. I'd rather not put you there again.",
+          "ja": "春に似た頼みを3つ引き受け、すべて遅れました。そのうち1つは、あなたにご迷惑をかけました。同じ立場に立たせたくありません。",
+          "register": "casual",
+          "style": "context",
+          "note": "過去の失敗を根拠にする。説得力が高い。"
+        },
+        {
+          "en": "I know you wouldn't have asked if it weren't important. That's exactly why I don't want to half-do it. Please ask me again for something smaller — I'd say yes to that.",
+          "ja": "重要でなければ頼まないと分かっています。だからこそ、中途半端に扱いたくありません。もっと小さなことなら、ぜひまた声をかけてください。喜んで引き受けます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断りつつ関係を開く。角が立たない。"
+        },
+        {
+          "en": "Could I help with a smaller part instead? I could read the draft, but I can't write the section. That's about two hours rather than two weekends.",
+          "ja": "代わりに、もっと小さな部分でお手伝いできませんか。草稿を読むことはできますが、節を書くのは無理です。週末2つではなく、2時間程度で済みます。",
+          "register": "polite",
+          "style": "request",
+          "note": "縮小した貢献を提案する。断りが柔らぐ。"
+        },
+        {
+          "en": "I am afraid I shall have to decline on this occasion. My commitments through to December leave no room for it. I hope you will ask me another time.",
+          "ja": "今回は、お断りせざるを得ません。12月までの予定に余裕がございません。またの機会にお声がけいただければ幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある友人に。丁寧で明確。"
+        },
+        {
+          "en": "I can't, sorry — I'd love to but I genuinely haven't got the time. If I said yes I'd let you down in November. Ask me in the new year though.",
+          "ja": "できません、ごめんなさい。やりたいのですが、本当に時間がありません。引き受ければ11月に迷惑をかけます。年明けにまた声をかけてください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい相手に。率直で温かい断り。"
+        },
+        {
+          "en": "I could do it if the deadline moved to February. Before that I'd be squeezing it in between two other things. Would February work, or do you need it sooner?",
+          "ja": "期限が2月なら引き受けられます。それ以前だと、他の2件の合間に押し込むことになります。2月で構いませんか、それとも早く必要ですか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "条件付きで受ける。関係が最も傷つかない。"
+        },
+        {
+          "en": "I'd rather say no now than yes and disappear in October. That's what I did last time and it was worse for both of us. So this is me being honest early.",
+          "ja": "引き受けておいて10月に音信不通になるより、今断りたいです。前回それをやって、双方にとって悪い結果になりました。ですから早めに正直に申し上げます。",
+          "register": "casual",
+          "style": "decline",
+          "note": "断る理由を相手の利益にする。納得される。"
+        },
+        {
+          "en": "I've been saying yes to everything this year and I've enjoyed almost none of it. That's my problem rather than yours. But it's why the answer this time is no.",
+          "ja": "今年は何でも引き受け、ほとんど楽しめませんでした。あなたではなく私の問題です。ただ、今回お断りする理由はそこにあります。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の状態を開示する。責められない断り。"
+        },
+        {
+          "en": "Here's what I can do instead. I'll introduce you to Sara, who's done exactly this three times. And I'll buy you dinner while you complain about me saying no.",
+          "ja": "代わりにできることがあります。まったく同じことを3度やっているサラさんを紹介します。それから、私の断りへの愚痴を聞きながら夕食をご馳走します。",
+          "register": "casual",
+          "style": "propose",
+          "note": "代案と冗談を添える。関係が保たれる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-012",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone you have forgotten",
+      "want": "You want to admit you cannot remember someone you have clearly met.",
+      "situationJa": "明らかに面識があるのに思い出せない、と正直に伝えたい。",
+      "tags": [
+        "awkward",
+        "introductions"
+      ],
+      "answers": [
+        {
+          "en": "I'm going to be honest — I know we've met and I can't place where. It's going to bother me all night if I pretend. Could you rescue me?",
+          "ja": "正直に申し上げます。お会いしたのは覚えているのですが、どこでかが出てきません。取り繕えば一晩中気になります。助けていただけますか。",
+          "register": "casual",
+          "style": "explain",
+          "note": "正直に頼む。ほとんどの人が笑って助ける。"
+        },
+        {
+          "en": "I recognise you and I've got the wrong context in my head. I keep thinking conference, but it might be the swimming pool. Either way, I'm Rina — start me off.",
+          "ja": "顔は分かるのですが、場面の記憶が食い違っています。学会かと思うのですが、プールかもしれません。いずれにせよリナと申します。手がかりをください。",
+          "register": "casual",
+          "style": "context",
+          "note": "推測を口に出す。会話として面白くなる。"
+        },
+        {
+          "en": "I hope you won't take this the wrong way. I remember talking to you and enjoying it, and I've lost the where entirely. Names and places have never stayed with me.",
+          "ja": "悪く取らないでいただけると幸いです。お話しして楽しかったことは覚えていますが、場所がまったく思い出せません。名前と場所は昔から覚えられないのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を安心させる前置き。傷つけない。"
+        },
+        {
+          "en": "Could you remind me where we met? I'd rather ask than spend the evening guessing. I promise it isn't because you weren't memorable.",
+          "ja": "どこでお会いしたか、教えていただけますか。一晩推測し続けるより、伺う方がよいです。印象が薄かったからではないと、お約束します。",
+          "register": "polite",
+          "style": "request",
+          "note": "頼み方に一言添える。感じが良い。"
+        },
+        {
+          "en": "Forgive me, I am certain we have met and I cannot recall the occasion. I would rather admit it than continue under a misapprehension. Might you remind me?",
+          "ja": "失礼をお許しください。お会いしたのは確かなのですが、その機会が思い出せません。誤解したまま続けるより、正直に申し上げたく存じます。お教えいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。品よく認める。"
+        },
+        {
+          "en": "Right, I've completely blanked — where do I know you from? Sorry, it's been a long week. I'm Rina, by the way.",
+          "ja": "すみません、完全に飛んでしまいました。どこでお会いしましたか。長い一週間だったもので。ちなみにリナと申します。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く認める。気安い場で最も自然。"
+        },
+        {
+          "en": "Give me one clue and I'll get there. Was it work or was it through Marco? I'm fairly confident I can do it with one clue.",
+          "ja": "手がかりを1つください。それで思い出せます。仕事関係ですか、それともマルコさん経由ですか。1つあれば、たどり着ける自信があります。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "遊びに変える。場が和む。"
+        },
+        {
+          "en": "I'd rather not bluff my way through the next ten minutes. I did that last month and got caught. So: help me out, where was it?",
+          "ja": "この先10分をごまかして乗り切るのは避けたいです。先月それをやって、ばれました。ですので、助けてください。どこでしたか。",
+          "register": "casual",
+          "style": "decline",
+          "note": "自虐で正直さを出す。相手も楽しめる。"
+        },
+        {
+          "en": "I'm terrible at this and always have been. I once failed to recognise someone I'd worked with for a year. So please don't read anything into it.",
+          "ja": "これが昔から本当に苦手です。1年一緒に働いた相手が分からなかったこともあります。ですので、深く受け取らないでください。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の特性として説明。相手の面子を守る。"
+        },
+        {
+          "en": "Let's start again properly. I'm Rina, I work in measurement, and I have a terrible memory for faces. Now tell me yours and I'll never forget it again.",
+          "ja": "改めて自己紹介させてください。リナと申します。測定の仕事をしており、顔を覚えるのが大の苦手です。お名前を教えてください。二度と忘れません。",
+          "register": "casual",
+          "style": "propose",
+          "note": "仕切り直す。最も気持ちよく収まる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-013",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a neighbour's door",
+      "listener": "your neighbour",
+      "want": "You want to raise a noise problem with a neighbour you like.",
+      "situationJa": "好意を持っている隣人に、騒音の相談をしたい。",
+      "tags": [
+        "neighbours",
+        "conflict"
+      ],
+      "answers": [
+        {
+          "en": "I've been putting this off because I like living next to you. The music on Thursday nights comes through the bedroom wall. Would it be possible to move the speaker off that wall?",
+          "ja": "お隣で暮らせて良いと思っているので、切り出すのを先延ばしにしていました。木曜の夜の音楽が寝室の壁を通して聞こえます。その壁から音の出る機器を離していただけませんか。",
+          "register": "polite",
+          "style": "explain",
+          "note": "好意を先に述べる。要求が具体的。"
+        },
+        {
+          "en": "The wall between our bedrooms is thinner than the rest of the building. We found that out when the previous tenants complained about us. It carries bass much more than voices.",
+          "ja": "寝室同士の壁は、建物の他の部分より薄いです。前の入居者から苦情を受けて分かりました。声よりも低い音がよく通ります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "建物のせいにする。相手を責めない。"
+        },
+        {
+          "en": "I'm not asking you to stop having people over — please do. It's really only after about eleven that it becomes a problem. Everything before that is completely fine.",
+          "ja": "人を招くのをやめてほしいのではありません。どうぞ続けてください。問題になるのは、だいたい11時を過ぎてからです。それ以前はまったく構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "許容範囲を明示する。合意が容易。"
+        },
+        {
+          "en": "Could you let me know when you're planning a late one? I'd sleep in the other room and it'd be a non-issue. A message on the day is all I'd need.",
+          "ja": "遅くなりそうな日を教えていただけませんか。別の部屋で寝れば問題になりません。当日に一報いただければ十分です。",
+          "register": "polite",
+          "style": "request",
+          "note": "自分も動く案。最も現実的な解決。"
+        },
+        {
+          "en": "I hope you will forgive me raising this. Sound from the bedroom wall carries rather more than one might expect. I should be grateful if the music could be turned down after eleven.",
+          "ja": "この件をお伝えすることをお許しください。寝室側の壁は、思いのほか音を通します。11時以降、音量を下げていただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "面識の浅い隣人に。礼儀正しく伝える。"
+        },
+        {
+          "en": "Sorry to be that neighbour — the music comes through the bedroom wall a bit. Could you shift the speaker? That'd probably fix it.",
+          "ja": "こういう隣人ですみません。音楽が寝室の壁から少し聞こえてきます。機器の位置をずらしていただけますか。それで解決すると思います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く切り出す。関係が良い相手に。"
+        },
+        {
+          "en": "How about we agree on eleven on weeknights and no limit at weekends? I'd honestly rather that than have you tiptoe about. It only really matters when I'm up at six.",
+          "ja": "平日は11時まで、週末は制限なし、で合意しませんか。気を遣って過ごされるより、その方がよいです。困るのは6時に起きる日だけです。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "互いの譲歩を明示する。長続きする。"
+        },
+        {
+          "en": "I'd rather not go to the building manager about it. That turns it into a formal thing and we'd both hate that. I'd much rather we sorted it between us.",
+          "ja": "管理会社に相談するのは避けたいです。正式な話になり、互いに嫌な思いをします。私たちの間で片付けたいです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "穏便に済ませたい意思を示す。効果がある。"
+        },
+        {
+          "en": "It's been most Thursdays since about June and I've said nothing. That's my fault as much as anything. I should have mentioned it the first time rather than let it build up.",
+          "ja": "6月頃からほとんどの木曜に起きていましたが、何も言いませんでした。それは私にも責任があります。溜め込まず、最初のときに伝えるべきでした。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "自分の遅さも認める。責める調子が消える。"
+        },
+        {
+          "en": "Could we swap numbers so this is easier next time? You message me when it's a late one, and I'll message you if it's ever too loud. That way neither of us has to knock on a door.",
+          "ja": "今後のために、連絡先を交換しませんか。遅くなる日はご連絡いただき、うるさければ私から連絡します。互いに戸を叩かずに済みます。",
+          "register": "casual",
+          "style": "propose",
+          "note": "仕組みを作る。関係が良くなる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-014",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone giving you unwanted advice",
+      "want": "You want to stop unwanted advice politely.",
+      "situationJa": "望んでいない助言を、丁寧に止めたい。",
+      "tags": [
+        "boundaries",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "I appreciate that you're trying to help. I'm not really looking for solutions on this one. I mostly wanted to say it out loud to someone.",
+          "ja": "助けようとしてくださっているのは分かります。ただ、これについて解決策を求めているわけではありません。誰かに口に出したかっただけなのです。",
+          "register": "polite",
+          "style": "explain",
+          "note": "求めているものを言語化する。最も有効。"
+        },
+        {
+          "en": "I've had four people tell me to change jobs this month. I've thought about it more than any of them have. It's a bit more complicated from the inside.",
+          "ja": "今月4人に転職を勧められました。その誰よりも私自身が考えています。内側から見ると、もう少し複雑なのです。",
+          "register": "casual",
+          "style": "context",
+          "note": "検討済みだと伝える。助言が止まる。"
+        },
+        {
+          "en": "You might well be right and I'm not dismissing it. I'm just not in a place to act on it tonight. Could we come back to it another time?",
+          "ja": "おっしゃる通りかもしれず、退けるつもりはありません。ただ、今夜そこへ動ける状態ではないのです。またの機会にできませんか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を否定せず先送りする。関係が保たれる。"
+        },
+        {
+          "en": "Could I just complain for five minutes without fixing anything? You don't have to solve it and I promise I'm not asking you to. Then we can talk about something cheerful.",
+          "ja": "5分だけ、何も解決せずに愚痴を言ってもよいですか。解決していただく必要はなく、求めてもいません。その後は明るい話をしましょう。",
+          "register": "casual",
+          "style": "request",
+          "note": "許可を求める形。相手も楽になる。"
+        },
+        {
+          "en": "That is kind of you, and I have considered it at some length. I am not seeking advice on the matter at present. I hope you will not mind my saying so.",
+          "ja": "ご親切に感謝いたしますし、私なりに十分検討してまいりました。現時点で助言を求めているわけではございません。このように申し上げることをお許しください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある相手に。丁寧に線を引く。"
+        },
+        {
+          "en": "Thanks, but I'm not after advice on this one. Just venting, honestly. How's your week been?",
+          "ja": "ありがとうございます。ただ、この件で助言を求めてはいません。正直、愚痴を言いたかっただけです。そちらの一週間はいかがでしたか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く止めて話題を移す。親しい相手に。"
+        },
+        {
+          "en": "If you've got one suggestion I haven't heard, I'll take it. Otherwise I'd rather talk about something else. Deal?",
+          "ja": "まだ聞いたことのない提案が1つあるなら、伺います。そうでなければ、別の話をしたいです。それでよろしいですか。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "冗談めかした条件。角が立たない。"
+        },
+        {
+          "en": "I'd rather not turn this into a plan tonight. Every time I do, I end up feeling worse rather than better. Let's leave it as a moan.",
+          "ja": "今夜これを計画にするのは避けたいです。そうするたび、気分が良くなるどころか悪くなります。愚痴のままにしておきましょう。",
+          "register": "casual",
+          "style": "decline",
+          "note": "自分の性質として述べる。相手も引きやすい。"
+        },
+        {
+          "en": "I know I brought it up, so this is partly my fault. I should have said at the start that I wasn't after answers. That's on me rather than you.",
+          "ja": "私から切り出したので、これは私にも非があります。最初に、答えを求めていないと言うべきでした。あなたではなく私の落ち度です。",
+          "register": "casual",
+          "style": "complain",
+          "note": "責任を引き受ける。相手が気を悪くしない。"
+        },
+        {
+          "en": "How about this — I'll ask you properly when I'm ready to decide. You'd be the first person I'd ask. For tonight, tell me about the house instead.",
+          "ja": "こうしませんか。決める気になったら、改めてきちんと伺います。真っ先にお聞きしたい相手です。今夜は代わりに、お家の話を聞かせてください。",
+          "register": "casual",
+          "style": "propose",
+          "note": "将来の相談を約束する。温かく終われる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-015",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a networking event",
+      "listener": "someone whose work you could help with",
+      "want": "You want to offer help without it sounding like a sales pitch.",
+      "situationJa": "売り込みに聞こえないよう、力になれると伝えたい。",
+      "tags": [
+        "networking",
+        "offering"
+      ],
+      "answers": [
+        {
+          "en": "What you've just described is almost exactly what we solved last year. I'm not trying to sell you anything — we don't work in your sector. I could tell you what we did and you can ignore it.",
+          "ja": "今おっしゃった内容は、昨年私たちが解決したものとほぼ同じです。売り込むつもりはなく、業種も違います。何をしたかをお話ししますので、参考にならなければ無視してください。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "売り込みでないと明言する。信用される。"
+        },
+        {
+          "en": "We hit the same wall two years ago and spent four months on it. The answer turned out to be simpler than we expected. It cost us nothing in the end, which is why I'd happily tell you.",
+          "ja": "2年前に同じ壁に当たり、4か月を費やしました。答えは思ったより単純でした。結局費用はかからなかったので、喜んでお話しします。",
+          "register": "neutral",
+          "style": "context",
+          "note": "経験の共有として差し出す。押し付けない。"
+        },
+        {
+          "en": "I don't want to turn a nice conversation into a pitch. If it's useful, I'll send you two paragraphs and a link. If not, we'll talk about something else entirely.",
+          "ja": "せっかくの会話を売り込みに変えたくありません。お役に立つなら、2段落ほどと参考先をお送りします。不要であれば、まったく別の話をしましょう。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手に選ばせる。警戒されない。"
+        },
+        {
+          "en": "Could I send you the write-up we did internally? It's four pages and it's not a brochure. You'd owe me nothing for reading it.",
+          "ja": "社内でまとめた資料をお送りしてもよいですか。4ページで、宣伝物ではありません。読まれても何の義理も生じません。",
+          "register": "polite",
+          "style": "request",
+          "note": "無償と明示する。受け取ってもらいやすい。"
+        },
+        {
+          "en": "We encountered a very similar problem last year and resolved it. I should be glad to describe what we did, with no obligation whatsoever. Please say if you would rather I did not.",
+          "ja": "昨年、非常に近い課題に直面し、解決いたしました。何のご負担もなく、その内容をご説明できれば幸いです。ご不要であれば遠慮なくお申し付けください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。押しつけがましくない。"
+        },
+        {
+          "en": "We had exactly that problem last year. Happy to tell you what worked — not selling anything. Just seems daft not to say.",
+          "ja": "昨年まさに同じ問題がありました。うまくいった方法を喜んでお話しします。売り込みではありません。黙っているのも変なので。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く自然に。気さくな場に合う。"
+        },
+        {
+          "en": "If it turns out you do want help with it, we could talk about that separately. But that's not what I'm doing now. Right now I'm just telling you what we learned.",
+          "ja": "その上でお手伝いが必要となれば、それは別途お話しできます。ただ、今それをしているのではありません。今は、私たちが学んだことをお伝えしているだけです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "境界を明示する。誠実に響く。"
+        },
+        {
+          "en": "I'd rather not hand you a card and call it networking. If the write-up helps, that's a better start than a business card. Send me a message if you want it.",
+          "ja": "名刺を渡して交流と称するのは避けたいです。資料がお役に立つなら、名刺より良い出発点になります。ご入用なら、ご連絡ください。",
+          "register": "casual",
+          "style": "decline",
+          "note": "形式的な交流を断る。印象に残る。"
+        },
+        {
+          "en": "I've been to four of these events this year and been pitched at every one. It's exhausting and I don't want to do it to you. So: no pitch, just the thing that worked.",
+          "ja": "今年こうした催しに4回来て、そのたびに売り込まれました。疲れますし、同じことをしたくありません。ですので売り込みは無しで、うまくいった方法だけを。",
+          "register": "casual",
+          "style": "complain",
+          "note": "共感から入る。信頼が生まれる。"
+        },
+        {
+          "en": "How about I send it over and we leave it there? If you want to talk further, you get in touch. I won't chase you, I promise.",
+          "ja": "資料をお送りして、そこまでにしませんか。さらにお話ししたければ、ご連絡ください。追いかけたりはしません。お約束します。",
+          "register": "casual",
+          "style": "propose",
+          "note": "追わないと約束する。かえって連絡が来る。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-016",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a friend's home",
+      "listener": "your host",
+      "want": "You want to explain a dietary restriction without making a fuss.",
+      "situationJa": "騒ぎ立てずに、食べられないものを伝えたい。",
+      "tags": [
+        "food",
+        "hosting"
+      ],
+      "answers": [
+        {
+          "en": "I should have said before you cooked — I can't eat shellfish. Please don't change anything on my account. There's plenty here I can eat and I'd rather you didn't fuss.",
+          "ja": "料理をされる前に申し上げるべきでした。甲殻類が食べられません。私のために何も変えないでください。食べられるものが十分ありますし、お手を煩わせたくありません。",
+          "register": "polite",
+          "style": "explain",
+          "note": "遅れを詫びつつ負担を減らす。ちょうど良い。"
+        },
+        {
+          "en": "It's an allergy rather than a preference, so I do have to be careful. It's only shellfish and it isn't severe. Anything cooked in the same pan is fine.",
+          "ja": "好みではなく、いわゆる食物アレルギーなので、注意が必要です。甲殻類だけで、重篤ではありません。同じ鍋で調理したものは問題ありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "深刻さの程度まで示す。相手が安心する。"
+        },
+        {
+          "en": "I didn't want to say anything and make a thing of it. Then I thought it'd be worse to say it halfway through dinner. So I'm saying it now and then dropping it entirely.",
+          "ja": "騒ぎにしたくなくて、黙っていようと思いました。ただ、食事の途中で言う方が悪いと考え直しました。ですので今申し上げて、あとは触れません。",
+          "register": "casual",
+          "style": "considerate",
+          "note": "配慮した上での発言と示す。歓迎される。"
+        },
+        {
+          "en": "Could you tell me what's in the sauce? I'm fine with everything except shellfish. If it's in there, I'll have more of the salad and nobody needs to know.",
+          "ja": "そのソースの材料を教えていただけますか。甲殻類以外は何でも大丈夫です。入っていれば、私はサラダを多めにいただきます。誰にも気づかれません。",
+          "register": "polite",
+          "style": "request",
+          "note": "静かに確認する。場を乱さない。"
+        },
+        {
+          "en": "I ought to mention that I am unable to eat shellfish. Please do not alter anything on my account. I shall be perfectly happy with whatever else there is.",
+          "ja": "甲殻類を食べられないことを申し上げておきます。私のために何かを変えていただく必要はございません。ほかのものをいただければ十分でございます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "初めて招かれた家で。丁寧に伝える。"
+        },
+        {
+          "en": "Quick one — I can't do shellfish. Everything else is great. Don't change anything, honestly.",
+          "ja": "手短に。甲殻類が食べられません。ほかはすべて大丈夫です。本当に、何も変えないでください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい家で。極力軽く伝える。"
+        },
+        {
+          "en": "If it's easier, I'm very happy to eat around it. I'd rather do that than have you make something separate. Just point me at what's safe.",
+          "ja": "その方が楽であれば、避けて食べるので構いません。別に用意していただくより、その方がよいです。大丈夫なものを教えてください。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "手間を減らす提案。主催者が助かる。"
+        },
+        {
+          "en": "Please don't cook me a separate dish. That's exactly the fuss I was hoping to avoid. I'd genuinely rather eat bread and be part of the table.",
+          "ja": "別の料理を作るのはやめてください。避けたかったのは、まさにその手間です。パンだけでも、皆と同じ食卓にいる方がよいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "厚意を断る。誠実に伝われば失礼にならない。"
+        },
+        {
+          "en": "I forgot to say when you invited me, which was silly of me. You asked and I said no problems. That's my fault entirely.",
+          "ja": "お招きいただいた際に伝え忘れました。うかつでした。お尋ねいただいたのに、問題ないと答えてしまいました。すべて私の落ち度です。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の失念を認める。気まずさが消える。"
+        },
+        {
+          "en": "How about I bring something next time to make up for it? I'll cook and you can tell me what you can't eat. That seems fair.",
+          "ja": "お詫びに、次回は私が何か持って行きましょうか。私が作りますので、食べられないものを教えてください。それで公平だと思います。",
+          "register": "casual",
+          "style": "propose",
+          "note": "次につなげる。気まずさが好意に変わる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-017",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "an old friend you have drifted from",
+      "want": "You want to reconnect with someone you have lost touch with.",
+      "situationJa": "疎遠になった友人と、関係をつなぎ直したい。",
+      "tags": [
+        "friends",
+        "reconnecting"
+      ],
+      "answers": [
+        {
+          "en": "It's been about four years, hasn't it? I've thought about messaging you a dozen times and never did. I'm glad the decision got taken out of my hands tonight.",
+          "ja": "4年ほどになりますね。何度も連絡しようと思っては、しませんでした。今夜そうせずに済んだのはありがたいです。",
+          "register": "casual",
+          "style": "explain",
+          "note": "正直に述べる。気まずさが一気に消える。"
+        },
+        {
+          "en": "I think we last spoke around when you moved to Berlin. Everything got busy and then it had been a year and it felt strange to write. That's how these things go, I suppose.",
+          "ja": "最後に話したのは、ベルリンに移られた頃だと思います。忙しくなり、気づけば1年が経ち、今さら書くのも妙に思えました。こういうものなのでしょうね。",
+          "register": "casual",
+          "style": "context",
+          "note": "経緯を説明する。互いを責めない。"
+        },
+        {
+          "en": "I don't want to make this awkward by apologising for four years. Neither of us wrote, and neither of us meant anything by it. I'd rather pick it up than explain it.",
+          "ja": "4年分を詫びて気まずくするのは避けたいです。互いに書かなかっただけで、他意はありません。説明するより、続きから始めたいです。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "謝罪の応酬を避ける。前向きに始まる。"
+        },
+        {
+          "en": "Could you catch me up properly rather than give me the summary? I'd like the actual version, not the one you tell at parties. I've got all evening and nowhere to be.",
+          "ja": "要約ではなく、きちんと近況を聞かせていただけますか。集まりで話す用ではなく、本当のところを伺いたいです。今夜は時間があり、他に行くところもありません。",
+          "register": "polite",
+          "style": "request",
+          "note": "深い話を求める。再会が実質的になる。"
+        },
+        {
+          "en": "It has been a great many years and I am very glad to see you. I have often wondered how you were getting on. I should like to hear it all properly.",
+          "ja": "ずいぶん長い年月が経ちました。お会いできて本当にうれしいです。どうされているかと、たびたび気にかけておりました。ぜひきちんとお伺いしたいです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のあった相手に。温かく丁寧。"
+        },
+        {
+          "en": "Four years! I nearly messaged you about the football thing last year. Right, tell me everything.",
+          "ja": "4年ですね。去年、あの試合の件で連絡しようとしました。さて、全部聞かせてください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "細部を覚えていると示す。距離が縮まる。"
+        },
+        {
+          "en": "Let's not try to do four years in twenty minutes. Give me the headlines tonight and the rest over lunch. I'd rather do it properly than rush it.",
+          "ja": "4年分を20分で済ませるのはやめましょう。今夜は要点だけ、残りは昼食のときに。急ぐより、きちんと話したいです。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "次の約束を前提にする。実際に続く。"
+        },
+        {
+          "en": "I'd rather not do the polite version where we both say we're fine. I want the real answer. How have you actually been?",
+          "ja": "互いに元気だと言い合う、社交辞令のやり取りは避けたいです。本当のところが聞きたいのです。実際、どう過ごされていましたか。",
+          "register": "casual",
+          "style": "decline",
+          "note": "表面的な会話を断る。深い再会になる。"
+        },
+        {
+          "en": "I was genuinely bad at keeping in touch that year. It wasn't about you and I've never quite got round to saying so. Consider it said now.",
+          "ja": "あの年は本当に連絡を怠っていました。あなたのせいではなく、それを伝える機会がありませんでした。今、伝えたことにさせてください。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の非を認める。関係が回復しやすい。"
+        },
+        {
+          "en": "Let's fix the actual problem tonight. Give me your number before either of us leaves, and I'll message you on Sunday. Then it won't be another four years.",
+          "ja": "今夜、根本の問題を解決しましょう。互いが帰る前に連絡先を教えてください。日曜に連絡します。そうすればまた4年空くことはありません。",
+          "register": "casual",
+          "style": "propose",
+          "note": "具体的な行動で締める。実際に続く。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-018",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "the group",
+      "want": "You want to bring a quiet person into a group conversation.",
+      "situationJa": "輪に入れていない人を、会話に加えたい。",
+      "tags": [
+        "inclusion",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "Sara, you worked on something like this last year, didn't you? I remember you saying the opposite of what we've all just agreed. I'd rather hear that than four of us nodding.",
+          "ja": "サラさん、去年これに似た仕事をされていましたよね。今皆が合意した内容と逆のことを仰っていた記憶があります。4人でうなずき合うより、そちらを伺いたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "具体的に振る。答えやすくなる。"
+        },
+        {
+          "en": "We've been talking about the London office for ten minutes and Sara actually works there. I've been quoting her secondhand this whole time. Let's get it from the source.",
+          "ja": "10分ほどロンドンの事務所の話をしていますが、実際に勤めているのはサラさんです。私はずっと又聞きを話していました。本人から伺いましょう。",
+          "register": "casual",
+          "style": "context",
+          "note": "その人の資格を示して振る。自然に主役になる。"
+        },
+        {
+          "en": "I've been doing most of the talking and I should stop. Sara, you've been very patient with me. What did you make of the announcement?",
+          "ja": "私が話しすぎているので、そろそろ止めます。サラさん、ずっと辛抱強く聞いてくださいました。あの発表をどう受け止められましたか。",
+          "register": "casual",
+          "style": "considerate",
+          "note": "自分を下げて振る。相手が入りやすい。"
+        },
+        {
+          "en": "Could we hear from someone who hasn't said anything yet? Sara, I'd genuinely like to know if you see it differently. No pressure if not.",
+          "ja": "まだ話していない方の意見を聞けませんか。サラさん、違う見方をされているなら、ぜひ伺いたいです。難しければ気にされないでください。",
+          "register": "polite",
+          "style": "request",
+          "note": "断る余地を残す。押し付けにならない。"
+        },
+        {
+          "en": "Sara, I should be interested to hear your view on this. You have rather more direct experience than the rest of us. Please do say if you would rather not.",
+          "ja": "サラさん、この件についてのご意見を伺いたく存じます。私たちより直接の経験をお持ちです。お気が進まなければ、遠慮なくお申し付けください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。丁寧に振る。"
+        },
+        {
+          "en": "Sara, what do you reckon? You've been suspiciously quiet. I bet you disagree with all of us.",
+          "ja": "サラさんはどう思われますか。やけに静かでしたね。きっと全員と意見が違うのでしょう。",
+          "register": "casual",
+          "style": "casual",
+          "note": "冗談を交えて振る。気安い場に合う。"
+        },
+        {
+          "en": "You don't have to weigh in on the whole thing. Just the bit about the timing, if you've got a view. Or tell me to stop asking.",
+          "ja": "全体について意見を出す必要はありません。時期の話だけでも、お考えがあれば。あるいは、もう聞くなと仰ってください。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "答える範囲を小さくする。応じやすい。"
+        },
+        {
+          "en": "I'd rather not carry on with four of us agreeing with each other. That's how we got the last decision wrong. Sara, please tell us we're mistaken.",
+          "ja": "4人で同意し合ったまま続けるのは避けたいです。前回の判断を誤ったのは、そのやり方でした。サラさん、私たちの誤りをどうか指摘してください。",
+          "register": "casual",
+          "style": "decline",
+          "note": "同調圧力を断つ。異論が出やすくなる。"
+        },
+        {
+          "en": "We've done this before — three of us talk and the person who knows most says nothing. It happened at the last dinner too. Sara, you're the one who's been there.",
+          "ja": "以前もありました。3人が話し、最も詳しい人が黙っている。前回の食事会でもそうでした。サラさん、現地におられたのはあなたです。",
+          "register": "casual",
+          "style": "complain",
+          "note": "場の癖を指摘する。全員の意識が変わる。"
+        },
+        {
+          "en": "Let's go round rather than shout over each other. Sara first, since she's actually been there, then the rest of us. I'll go last since I've talked the most.",
+          "ja": "互いに声を張るより、順に回しましょう。実際に現地におられたサラさんから、その後に私たちで。一番話した私が最後にします。",
+          "register": "casual",
+          "style": "propose",
+          "note": "順番を作る。静かな人が確実に入れる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-019",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a party",
+      "listener": "a friend who has had too much to drink",
+      "want": "You want to persuade a friend to go home.",
+      "situationJa": "飲みすぎた友人に、帰るよう促したい。",
+      "tags": [
+        "care",
+        "friends"
+      ],
+      "answers": [
+        {
+          "en": "I think it's time to call it a night. You've got the interview at nine and it's already midnight. Let me get you a taxi and I'll come with you.",
+          "ja": "そろそろお開きにしましょう。9時から面接があるのに、もう深夜です。車を呼びますので、一緒に行きます。",
+          "register": "casual",
+          "style": "explain",
+          "note": "理由と行動を同時に。最も効く型。"
+        },
+        {
+          "en": "You said an hour ago that you wanted to leave before the last train. That was two drinks and forty minutes back. I'm going to hold you to what you said then.",
+          "ja": "1時間前、終電前に帰りたいと仰っていました。あれから2杯と40分が過ぎています。あのときの言葉に沿って動きます。",
+          "register": "casual",
+          "style": "context",
+          "note": "本人の意思を根拠にする。反発が少ない。"
+        },
+        {
+          "en": "I'm not telling you off and I'm not going to lecture you. I'd just like you to get home safely. Let's go together, and I'll say nothing about it tomorrow.",
+          "ja": "咎めているのでも、説教するつもりでもありません。ただ、無事に帰ってほしいのです。一緒に出ましょう。明日この件には触れません。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "羞恥心を刺激しない。素直に応じやすい。"
+        },
+        {
+          "en": "Would you come outside with me for five minutes? I could do with the air, and I'd rather not stand here shouting. Then we can decide about the taxi.",
+          "ja": "5分ほど、外に出ていただけませんか。風に当たりたいですし、ここで大声を出し続けたくもありません。その上で車のことを決めましょう。",
+          "register": "polite",
+          "style": "request",
+          "note": "自分の用事にする。抵抗されにくい。"
+        },
+        {
+          "en": "I do think it would be sensible to head home now. You have an early start and the last train is at half past. Allow me to see you to a taxi.",
+          "ja": "そろそろお帰りになるのが賢明かと存じます。明朝が早く、終電も30分です。車までお送りさせてください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "親しくない相手に。丁寧に促す。"
+        },
+        {
+          "en": "Right, come on, let's get you home. Big day tomorrow. I'll walk you to the taxi.",
+          "ja": "さあ、帰りましょう。明日は大事な日です。車まで一緒に行きます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く決める。議論の余地を残さない。"
+        },
+        {
+          "en": "One glass of water and then we decide. If you still want to stay after that, I'll drop it. But drink the water first.",
+          "ja": "水を一杯飲んでから決めましょう。それでも残りたければ、私は引き下がります。ただ、まず水を飲んでください。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "条件を出す。時間を稼ぎつつ引ける。"
+        },
+        {
+          "en": "I'd rather not leave you here and hope for the best. I've done that once and spent the night worrying. Come on, I'll ride with you.",
+          "ja": "ここに残して、無事を祈るだけというのは避けたいです。一度そうして、一晩心配し続けました。さあ、一緒に乗りましょう。",
+          "register": "casual",
+          "style": "decline",
+          "note": "自分の心配として述べる。断りにくい。"
+        },
+        {
+          "en": "You've asked me three times where your coat is. That's usually the sign with you. I'm calling it as your friend rather than as the fun police.",
+          "ja": "上着の場所を3度も聞かれました。あなたの場合、それが目安です。うるさく言うためではなく、友人として言っています。",
+          "register": "casual",
+          "style": "complain",
+          "note": "観察を根拠にする。冗談で角を取る。"
+        },
+        {
+          "en": "Here's the deal. We share a taxi, you get home, and I'll bring you breakfast tomorrow. You can tell me I was wrong over the coffee.",
+          "ja": "こうしましょう。車を相乗りして帰り、明日は私が朝食を持って行きます。そのとき、私が間違っていたと言ってくださって構いません。",
+          "register": "casual",
+          "style": "propose",
+          "note": "翌日の約束を添える。応じやすくなる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-020",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At the office",
+      "listener": "a colleague",
+      "want": "You want to accept a compliment without deflecting it.",
+      "situationJa": "謙遜で流さずに、褒め言葉を受け止めたい。",
+      "tags": [
+        "compliments",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "Thank you — I'm going to take that rather than argue with it. I worked hard on that section and it's nice that it showed. I usually say it was nothing, and it wasn't nothing.",
+          "ja": "ありがとうございます。否定せずに受け取ります。あの節は力を入れたので、伝わったのは嬉しいです。いつもは大したことないと言いますが、大したことでした。",
+          "register": "casual",
+          "style": "explain",
+          "note": "受け取ると宣言する。謙遜癖を断つ。"
+        },
+        {
+          "en": "That's kind, and it took three drafts to get there. The first two were much worse. So thank you, and I earned it.",
+          "ja": "ありがとうございます。あそこに至るまで3稿かかりました。最初の2つはずっとひどいものでした。ですから、感謝しますし、努力の結果です。",
+          "register": "casual",
+          "style": "context",
+          "note": "過程を明かす。自慢にならず誠実。"
+        },
+        {
+          "en": "Thank you for saying so rather than just thinking it. People don't often bother. It's made the whole week feel worthwhile.",
+          "ja": "思うだけでなく、言葉にしてくださってありがとうございます。わざわざ言う人は多くありません。今週が報われた気がします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の行為に感謝する。会話が温かくなる。"
+        },
+        {
+          "en": "Could you tell me which part worked for you? I'd genuinely like to know what landed. I'll do more of it next time.",
+          "ja": "どの部分が良かったか、教えていただけますか。何が伝わったのか、本当に知りたいのです。次はそこを増やします。",
+          "register": "polite",
+          "style": "request",
+          "note": "学びに変える。褒め言葉が実利になる。"
+        },
+        {
+          "en": "Thank you, that is very kind of you to say. It was a piece of work I cared about, so I am glad it came across. I appreciate you mentioning it.",
+          "ja": "ありがとうございます。そう仰っていただき光栄です。思い入れのある仕事でしたので、伝わったのは嬉しいです。お言葉に感謝いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある相手に。品よく受ける。"
+        },
+        {
+          "en": "Thanks, that's really nice to hear. I was quite pleased with it too. Not going to pretend otherwise.",
+          "ja": "ありがとうございます、うれしいです。自分でもよくできたと思っていました。そうでないふりはしません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く素直に受ける。自然で好感が持てる。"
+        },
+        {
+          "en": "I'll accept the compliment if you'll take one back. The data section was yours and it made the whole thing work. Fair exchange.",
+          "ja": "お褒めの言葉を受け取りますので、こちらからも1つ受け取ってください。統計の節はあなたの担当で、全体が成り立ったのはそのおかげです。公平な交換です。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "褒め返す。会話が自然に続く。"
+        },
+        {
+          "en": "I'd normally say it was a team effort and change the subject. It was a team effort, but I did that bit. So: thank you.",
+          "ja": "普段なら、皆のおかげだと言って話題を変えます。実際に皆のおかげですが、あの部分は私がやりました。ですので、ありがとうございます。",
+          "register": "casual",
+          "style": "decline",
+          "note": "反射的な謙遜を意識的にやめる。"
+        },
+        {
+          "en": "I've been told I brush these off too quickly. Apparently it makes the other person feel awkward. So I'm practising — thank you very much.",
+          "ja": "こうした言葉をすぐ流しすぎる、と言われたことがあります。相手を気まずくさせるそうです。ですので練習中です。ありがとうございます。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自己開示で受け取る。可愛げがある。"
+        },
+        {
+          "en": "Thank you. Would you mind saying that to Kenji as well? He signs off my reviews and he'd never hear it otherwise.",
+          "ja": "ありがとうございます。同じことをケンジさんにも伝えていただけませんか。私の評価をまとめる立場で、そうでもしないと耳に入りません。",
+          "register": "casual",
+          "style": "propose",
+          "note": "実利につなげる。図々しく見えない頼み方。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-021",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On a long train journey",
+      "listener": "the passenger beside you",
+      "want": "You want to end a conversation you no longer want to have.",
+      "situationJa": "続けたくなくなった会話を、静かに終わらせたい。",
+      "tags": [
+        "boundaries",
+        "travel"
+      ],
+      "answers": [
+        {
+          "en": "It's been good to talk. I've got about two hours of reading to do before we arrive. I hope you don't mind if I get on with it.",
+          "ja": "お話しできてよかったです。到着までに2時間ほど読まなければならないものがあります。取りかからせていただいてもよろしいでしょうか。",
+          "register": "polite",
+          "style": "explain",
+          "note": "理由を示して終える。最も無難。"
+        },
+        {
+          "en": "I've got a presentation first thing tomorrow and it isn't finished. I'd love to keep chatting but I'd regret it in the morning. Thank you for the company though.",
+          "ja": "明朝一番に発表があり、まだ仕上がっていません。話を続けたいのですが、朝に後悔しそうです。ご一緒できて楽しかったです。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的な事情。相手も納得しやすい。"
+        },
+        {
+          "en": "I don't want you to think I'm being unfriendly. I'm just running low on words for today. It's been genuinely nice talking to you.",
+          "ja": "そっけないと思われたくありません。ただ、今日はもう話す力が残っていないのです。お話しできて本当に楽しかったです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "誤解を防ぐ一言。柔らかく終われる。"
+        },
+        {
+          "en": "Would you mind if I put my headphones in for a bit? I've got a call to prepare for. I'll say goodbye properly before we get in.",
+          "ja": "少しの間、耳当てを着けてもよろしいでしょうか。通話の準備が必要なのです。到着前にきちんとご挨拶します。",
+          "register": "polite",
+          "style": "request",
+          "note": "許可を求める。丁寧で角が立たない。"
+        },
+        {
+          "en": "It has been a pleasure to talk with you. I am afraid I must attend to some work before we arrive. I do hope you have a pleasant journey.",
+          "ja": "お話しできて光栄でした。到着までに仕事を片付けなければなりません。よい旅を、心よりお祈りいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった終わり方。年配の同席者に。"
+        },
+        {
+          "en": "Nice talking to you. I'd better get some work done before we arrive. Enjoy the rest of the trip.",
+          "ja": "お話しできてよかったです。到着前に少し仕事を進めます。よい旅を。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く自然に終える。実用性が高い。"
+        },
+        {
+          "en": "Can I give you the last twenty minutes before we arrive instead? I've got work I have to finish first. Then we can talk properly at the end.",
+          "ja": "到着前の20分をお話しの時間にしませんか。先に終わらせるべき仕事があるのです。最後にきちんとお話ししましょう。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "終わりでなく先送りにする。感じが良い。"
+        },
+        {
+          "en": "I'd rather stop now than keep going and become poor company. I've been travelling since six this morning. I hope you understand.",
+          "ja": "無理に続けて、つまらない相手になるより、ここで区切りたいです。今朝6時から移動しています。ご理解いただけると幸いです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "正直に伝える。相手も気を悪くしない。"
+        },
+        {
+          "en": "I'm not great at talking and reading at the same time. I've read the same page four times now. That's a sign I should pick one.",
+          "ja": "話しながら読むのが得意ではありません。同じページを4回読み返しています。どちらかにすべき合図でしょう。",
+          "register": "casual",
+          "style": "complain",
+          "note": "冗談として終える。関係が悪くならない。"
+        },
+        {
+          "en": "How about we swap book recommendations and leave it there? You said you liked the Icelandic one. I'll write mine down and then get on with my reading.",
+          "ja": "お薦めの本を交換して、ここまでにしませんか。アイスランドのものが良かったと仰っていましたね。私の分を書き留めたら、読書に戻ります。",
+          "register": "casual",
+          "style": "propose",
+          "note": "良い形で締める。次の話題に移らせない。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-022",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone you disagree with",
+      "want": "You want to disagree in depth while keeping it friendly.",
+      "situationJa": "友好を保ったまま、しっかり議論したい。",
+      "tags": [
+        "disagreeing",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "I see it completely differently and I'd enjoy arguing about it. Not to win, just because I think it's interesting. Can I put the other side?",
+          "ja": "私はまったく違う見方をしており、それについて議論するのは楽しそうです。勝つためではなく、面白いと思うからです。反対側を述べてもよいですか。",
+          "register": "casual",
+          "style": "explain",
+          "note": "目的を明示する。議論が敵対にならない。"
+        },
+        {
+          "en": "I held your position for about ten years and then changed my mind. It wasn't one argument that did it, it was living somewhere else for two. That's what I'd want to explain.",
+          "ja": "10年ほどはあなたと同じ立場でしたが、考えが変わりました。議論でではなく、2年間よその土地で暮らしたためです。そこを説明したいのです。",
+          "register": "casual",
+          "style": "context",
+          "note": "自分の変化を語る。押し付けにならない。"
+        },
+        {
+          "en": "I'd rather understand why you think it than tell you why I don't. Those are usually more interesting conversations. What made you land there?",
+          "ja": "なぜ私が反対かを述べるより、なぜあなたがそう考えるかを理解したいです。その方が面白い会話になります。どうしてその考えに至ったのですか。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "先に聞く姿勢。議論の質が上がる。"
+        },
+        {
+          "en": "Could you tell me what evidence would change your mind? I'll answer the same question about mine. If neither of us has an answer, we're not really arguing.",
+          "ja": "どんな根拠があれば考えが変わるか、教えていただけますか。私も同じ問いに答えます。互いに答えが無ければ、それは議論ではありません。",
+          "register": "neutral",
+          "style": "request",
+          "note": "議論の前提を確認する。高度で有効。"
+        },
+        {
+          "en": "I take a rather different view, if I may say so. I should be glad to set out why, though I have no wish to labour it. Do stop me if it becomes tedious.",
+          "ja": "差し支えなければ、かなり異なる見方をしております。理由を申し上げたく存じますが、長々と続けるつもりはありません。退屈になりましたらお止めください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。丁寧に異論を出す。"
+        },
+        {
+          "en": "I completely disagree, but in a friendly way. Can I tell you why? You can tell me I'm wrong afterwards.",
+          "ja": "まったく反対ですが、悪意はありません。理由をお話ししてもよいですか。その後で、私が間違っていると仰ってください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く宣言する。緊張が生まれない。"
+        },
+        {
+          "en": "Let's each take three minutes and not interrupt. Then we'll see whether we actually disagree or just use different words. I'd bet on the second one.",
+          "ja": "互いに3分ずつ、遮らずに話しませんか。その上で、本当に意見が違うのか、言葉が違うだけなのかを見ましょう。私は後者に賭けます。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "手順を決める。議論が発展的になる。"
+        },
+        {
+          "en": "I'd rather not do the version where we both get louder. I've done that and nobody enjoys it. Let's do the version where we ask questions.",
+          "ja": "互いに声が大きくなる展開は避けたいです。経験がありますが、誰も楽しめません。問いを交わす形にしましょう。",
+          "register": "casual",
+          "style": "decline",
+          "note": "議論の形式を先に決める。実際に効く。"
+        },
+        {
+          "en": "I've noticed I only ever discuss this with people who agree with me. That's probably why my argument is lazy. So I'd actually like you to push back hard.",
+          "ja": "この話題は、賛成する人としかしていないことに気づきました。だから私の論は雑なのでしょう。ですから、遠慮なく強く反論してください。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の弱点を開示する。良い議論になる。"
+        },
+        {
+          "en": "How about we each name the strongest point on the other side? I'll start with yours. It's a better conversation than each of us defending our own.",
+          "ja": "互いに、相手側の最も強い論点を挙げてみませんか。私からあなたの側の論点を述べます。自分の立場を守り合うより、良い会話になります。",
+          "register": "casual",
+          "style": "propose",
+          "note": "手法を提案する。対立が知的な遊びになる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-023",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At the office kitchen",
+      "listener": "a colleague",
+      "want": "You want to ask a colleague to stop making comments about your appearance.",
+      "situationJa": "外見についての発言をやめてほしいと、同僚に伝えたい。",
+      "tags": [
+        "boundaries",
+        "colleagues"
+      ],
+      "answers": [
+        {
+          "en": "Could I ask you not to comment on how I look? I know it's meant kindly. I'd just rather it didn't happen at work.",
+          "ja": "外見についての発言は控えていただけますか。悪気がないのは分かっています。ただ、職場ではやめていただきたいのです。",
+          "register": "polite",
+          "style": "explain",
+          "note": "短く明確に。悪意を認めた上で頼む。"
+        },
+        {
+          "en": "It happens most mornings and I've never known what to say back. So I've smiled and said nothing for about six months. I'd rather just tell you than carry on doing that.",
+          "ja": "ほぼ毎朝あり、どう返せばよいか分かりませんでした。半年ほど、笑って何も言わずにきました。それを続けるより、率直にお伝えしたいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "頻度と自分の状態を示す。真剣さが伝わる。"
+        },
+        {
+          "en": "I'm sure you mean it as a compliment and I'm not upset with you. It's just not something I'm comfortable with at work. I'd rather say it directly than get awkward about it.",
+          "ja": "褒め言葉のつもりだと思いますし、怒ってもいません。ただ、職場では落ち着かないのです。気まずくなる前に、直接お伝えしたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を責めずに線を引く。関係が保てる。"
+        },
+        {
+          "en": "Could we keep it to work things in the mornings? I'm happy to talk about anything else. It's just the appearance comments I'd like to stop.",
+          "ja": "朝のやり取りは仕事の話に限れませんか。それ以外なら何でも構いません。外見への言及だけをやめていただきたいのです。",
+          "register": "polite",
+          "style": "request",
+          "note": "対象を限定する。相手が理解しやすい。"
+        },
+        {
+          "en": "I should be grateful if you would refrain from commenting on my appearance. I have no doubt it is well meant. I simply find it uncomfortable in a work setting.",
+          "ja": "外見についてのご発言は控えていただけますと幸いです。悪意がないことは疑っておりません。ただ、職場では落ち着かないのです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった伝え方。記録に残したい場合に。"
+        },
+        {
+          "en": "Could you drop the comments about how I look? Not a big deal, just not my thing. Thanks.",
+          "ja": "外見についての発言はやめていただけますか。大ごとにする気はありませんが、私は苦手なのです。よろしくお願いします。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く済ませる。大ごとにしたくない場合に。"
+        },
+        {
+          "en": "If you want to say something nice, say it about the work. I'd take that any day. It's the same intention and it lands much better.",
+          "ja": "何か良いことを仰りたいなら、仕事について言ってください。それならいつでも歓迎です。同じ気持ちで、はるかによく伝わります。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "代替案を示す。相手が実行しやすい。"
+        },
+        {
+          "en": "I'd rather not raise it with anyone else, and I don't think I need to. This is me asking you directly, once. I'd like that to be the end of it.",
+          "ja": "他の誰かに相談するのは避けたいですし、必要ないと思っています。これは一度きり、直接のお願いです。これで終わりにしたいのです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "次の段階を示唆する。静かに本気を伝える。"
+        },
+        {
+          "en": "It's every morning and it's only ever me. Two other people have said the same to me privately. That's why I'm mentioning it rather than letting it go.",
+          "ja": "毎朝あり、対象はいつも私だけです。他に2人が同じことを個別に話してくれました。だから流さずにお伝えしています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "事実を並べる。深刻さが正しく伝わる。"
+        },
+        {
+          "en": "Let's leave it there and carry on as normal. I'm not annoyed and I'd like this to be a small thing. Coffee's on me if it feels awkward.",
+          "ja": "この話はここまでにして、普段通りにしましょう。腹を立ててはいませんし、小さな話で終えたいです。気まずければ、お茶は私が出します。",
+          "register": "casual",
+          "style": "propose",
+          "note": "関係の修復まで含める。実務的で温かい。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-024",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "a friend who is upset with you",
+      "want": "You want to apologise properly for something you did.",
+      "situationJa": "自分の非を、きちんと謝りたい。",
+      "tags": [
+        "apology",
+        "friends"
+      ],
+      "answers": [
+        {
+          "en": "I want to apologise for Saturday. I told Marco something you'd told me in confidence, and that was mine to keep. I'm sorry, and I understand why you're angry.",
+          "ja": "土曜のことをお詫びします。内緒で聞いた話をマルコさんに伝えてしまいました。私が守るべきことでした。申し訳ありません。怒られて当然です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "何をしたかを具体的に言う。謝罪の核心。"
+        },
+        {
+          "en": "I've been trying to work out how it happened and I don't have a good answer. I wasn't thinking, and that's not much of a defence. The reason matters less than the fact I did it.",
+          "ja": "なぜそうなったのか考えてきましたが、良い説明が見つかりません。考えが足りなかった、では弁解になりません。理由より、やってしまった事実が問題です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "言い訳を作らない。誠実さが伝わる。"
+        },
+        {
+          "en": "You don't have to accept this tonight or at all. I'm not saying it so you'll tell me it's fine. I'm saying it because you should hear it from me.",
+          "ja": "今夜受け入れる必要も、そもそも受け入れる必要もありません。大丈夫だと言ってもらうために言うのではありません。私の口から伝えるべきだからです。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "許しを求めない謝罪。最も誠実な形。"
+        },
+        {
+          "en": "Could you tell me how it actually landed on your side? I'd rather hear it than guess and get it wrong. I'll listen without defending myself.",
+          "ja": "そちらでどう受け止められたか、教えていただけますか。推測して誤るより、伺いたいです。弁解せずに聞きます。",
+          "register": "polite",
+          "style": "request",
+          "note": "相手に話させる。関係の修復が進む。"
+        },
+        {
+          "en": "I should like to apologise properly for what I said on Saturday. It was a confidence that I had no business repeating. I am sorry, and I shall not do it again.",
+          "ja": "土曜の発言について、きちんとお詫び申し上げます。私が口にすべきではない内密の話でした。申し訳ありません。二度といたしません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった謝罪。書面にも使える形。"
+        },
+        {
+          "en": "I'm sorry about Saturday — I shouldn't have said it. No excuse, it was just wrong. I feel awful about it.",
+          "ja": "土曜のこと、ごめんなさい。言うべきではありませんでした。言い訳はできません。ただ間違いでした。とても申し訳なく思っています。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く率直に。親しい友人に。"
+        },
+        {
+          "en": "Tell me what would help and I'll do it. If that's talking to Marco myself, I will. If it's leaving you alone for a month, I'll do that too.",
+          "ja": "何をすれば助けになるか教えてください。その通りにします。私からマルコさんに話すべきならそうします。1か月そっとしておくべきなら、それもします。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "償いを相手に選ばせる。実効性がある。"
+        },
+        {
+          "en": "I'd rather not explain why I did it, because it would sound like an excuse. There isn't a version of the reason that makes it acceptable. So I'll leave it at sorry.",
+          "ja": "なぜそうしたかの説明は避けます。言い訳に聞こえるからです。どう説明しても正当化はできません。ですので、謝罪だけにとどめます。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "説明を控える判断。誠実さが際立つ。"
+        },
+        {
+          "en": "I've done a version of this before and you were generous about it. I don't think I should rely on that twice. That's the part that bothers me most.",
+          "ja": "以前も似たことをして、寛大に許してもらいました。それに2度甘えるべきではないと思います。それが一番こたえています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを自ら認める。逃げない姿勢。"
+        },
+        {
+          "en": "I'd like to fix it rather than just feel bad about it. I'll speak to Marco tomorrow and tell him it came from me. Then I'll leave you to decide about the rest.",
+          "ja": "落ち込むだけでなく、実際に手を打ちたいです。明日マルコさんに話し、私から出た話だと伝えます。その後のことは、あなたに委ねます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "行動で示す。謝罪が言葉だけにならない。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-025",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone from a very different background",
+      "want": "You want to ask about someone's culture without sounding ignorant.",
+      "situationJa": "無知に聞こえないよう、相手の文化について尋ねたい。",
+      "tags": [
+        "curiosity",
+        "culture"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to ask you something and I might get the words wrong. Correct me if I do. I've read about the festival but I've never met anyone who grew up with it.",
+          "ja": "1つ伺いたいのですが、言葉を誤るかもしれません。その際はご指摘ください。あの祭りについて読んだことはありますが、実際に育った方に会ったことがありません。",
+          "register": "polite",
+          "style": "explain",
+          "note": "誤りを先に認める。相手が訂正しやすい。"
+        },
+        {
+          "en": "Everything I know about it comes from one documentary and it was probably terrible. That's the level I'm starting from. Tell me what it actually gets wrong.",
+          "ja": "私が知っているのは1本の記録映像だけで、おそらく質の低いものでした。その程度からの出発です。何が誤っているか教えてください。",
+          "register": "casual",
+          "style": "context",
+          "note": "自分の無知を正直に示す。会話が対等になる。"
+        },
+        {
+          "en": "Do stop me if this is a question you get constantly. I imagine there's a top five and this is probably in it. I'd rather ask badly than not ask at all.",
+          "ja": "いつも聞かれる質問でしたら、遠慮なく止めてください。よくある5つのうちの1つかもしれません。それでも、聞かずにいるより下手でも尋ねたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の疲労に配慮する。誠実に響く。"
+        },
+        {
+          "en": "Could I ask what it was actually like rather than what it's like in general? I'm more interested in your version than the encyclopedia one. What was it like in your house?",
+          "ja": "一般論ではなく、実際にどうだったかを伺えますか。百科事典的な説明より、あなたの経験に関心があります。ご家庭ではどのような感じでしたか。",
+          "register": "polite",
+          "style": "request",
+          "note": "代表として語らせない。良い問いになる。"
+        },
+        {
+          "en": "I hope you will not mind my asking. I have read a little about it but never spoken to anyone with direct experience. I should be very interested to hear about it.",
+          "ja": "お尋ねすることをお許しいただければ幸いです。少し読んだことはありますが、直接経験のある方と話したことがありません。ぜひお伺いしたく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "初対面で。丁寧に関心を示す。"
+        },
+        {
+          "en": "Can I ask you about it, or is that annoying? I genuinely don't know much. Feel free to say no.",
+          "ja": "その話を伺ってもよいですか。煩わしければ結構です。正直、あまり知らないのです。断っていただいて構いません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "断る自由を渡す。気楽に聞ける。"
+        },
+        {
+          "en": "I'll trade you — you tell me about that and I'll explain why we queue for everything. Mine is a much worse deal for you. But it's the best I've got.",
+          "ja": "交換しませんか。その話を教えてくださるなら、私はなぜ我々が何にでも並ぶかを説明します。あなたにとっては割の悪い取引です。ただ、それが精一杯です。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "冗談で対等にする。一方的な質問にならない。"
+        },
+        {
+          "en": "I'd rather not ask you to speak for a whole country. That's an unfair thing to put on anyone. So just tell me about your own experience of it.",
+          "ja": "一国を代表して語るよう求めるのは避けたいです。誰にとっても不公平な負担だからです。ですので、ご自身の経験だけをお聞かせください。",
+          "register": "polite",
+          "style": "decline",
+          "note": "代表を求めない。配慮が伝わる。"
+        },
+        {
+          "en": "I've asked this badly before and got a very polite non-answer. I probably deserved it. Let me try again more carefully this time.",
+          "ja": "以前この質問を下手にして、非常に丁寧にかわされたことがあります。当然の結果でした。今回はもう少し慎重に尋ねさせてください。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の失敗を開示する。誠実さが伝わる。"
+        },
+        {
+          "en": "How about you tell me one thing people always get wrong about it? That's usually more interesting than anything I'd think to ask. Then I'll ask better questions.",
+          "ja": "皆が必ず誤解している点を1つ教えていただけませんか。私が思いつく質問より、たいてい面白い話になります。その後で、もっと良い質問をします。",
+          "register": "casual",
+          "style": "propose",
+          "note": "相手に主導権を渡す問い。会話が深まる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-026",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "a friend making a big decision",
+      "want": "You want to give an honest opinion a friend may not want to hear.",
+      "situationJa": "友人が聞きたくないであろう本音を、正直に伝えたい。",
+      "tags": [
+        "honesty",
+        "friends"
+      ],
+      "answers": [
+        {
+          "en": "Do you want my honest view or do you want support? Both are available and I'll give you whichever you ask for. I've got a real opinion on this one.",
+          "ja": "率直な意見と、支持のどちらをお望みですか。どちらもお出しできますし、望まれた方を差し上げます。この件については本当に考えがあります。",
+          "register": "casual",
+          "style": "explain",
+          "note": "先に確認する。最も誠実で摩擦が少ない。"
+        },
+        {
+          "en": "You asked me the same question in June and I told you what you wanted to hear. I've regretted that since. So this time I'm going to say what I actually think.",
+          "ja": "6月にも同じことを聞かれ、望まれる答えを返しました。以来ずっと後悔しています。ですから今回は、本当に思うことを申し上げます。",
+          "register": "casual",
+          "style": "context",
+          "note": "前回の反省から入る。重みが伝わる。"
+        },
+        {
+          "en": "I'll say this once and then I'll back whatever you decide. I don't think the timing is right, and I think you know that. After tonight I won't bring it up again.",
+          "ja": "一度だけ申し上げ、その後はどんな決断も支持します。時期が適切でないと思いますし、ご自身も感じておられると思います。今夜を最後に、二度と持ち出しません。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "一度きりと約束する。関係を守る。"
+        },
+        {
+          "en": "Could I ask you three questions before I say anything? If you can answer all three, I'll shut up entirely. If you can't, I'd like to talk about it properly.",
+          "ja": "何か言う前に、3つ質問してもよいですか。すべて答えられるなら、私は口を閉じます。答えられないなら、きちんと話させてください。",
+          "register": "neutral",
+          "style": "request",
+          "note": "問いで気づかせる。説教にならない。"
+        },
+        {
+          "en": "I hope you will take this in the spirit it is meant. I have reservations about the timing rather than the decision itself. I shall of course support you either way.",
+          "ja": "この言葉を、そのままの気持ちで受け取っていただければ幸いです。決断そのものではなく、時期に懸念があります。もちろん、どちらであれ応援いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある友人に。丁寧に懸念を伝える。"
+        },
+        {
+          "en": "Honestly? I don't think it's the right time. That's my view and you asked. I'll still help you move if you go ahead.",
+          "ja": "正直に言えば、今が適切な時期だとは思いません。それが私の考えで、聞かれたのでお答えしました。進めるなら、引っ越しは手伝います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直かつ支持も示す。親しい友人に。"
+        },
+        {
+          "en": "I'll give you the honest version if you promise not to decide tonight. That's the only condition. Sleep on it and then do whatever you want.",
+          "ja": "今夜決めないと約束してくださるなら、本音を申し上げます。条件はそれだけです。一晩考えて、その上でお好きにしてください。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "条件付きで話す。衝動的な決断を防ぐ。"
+        },
+        {
+          "en": "I'd rather not just agree with you to keep the evening pleasant. You've got enough people doing that already. I think you deserve one person who says the other thing.",
+          "ja": "場を和やかに保つために、ただ同意するのは避けたいです。そうしてくれる人はすでに十分いるでしょう。反対のことを言う人が1人はいるべきだと思います。",
+          "register": "casual",
+          "style": "decline",
+          "note": "同調を断る理由を示す。友情の証になる。"
+        },
+        {
+          "en": "I've watched you talk yourself into two of these before. Both times you asked me afterwards why I didn't say anything. So I'm saying something this time.",
+          "ja": "以前2度、同じように自分を納得させていくのを見ました。どちらのときも、後からなぜ何も言わなかったのかと聞かれました。ですので今回は申し上げます。",
+          "register": "casual",
+          "style": "complain",
+          "note": "過去の経緯を根拠にする。説得力が高い。"
+        },
+        {
+          "en": "Here's what I'd suggest instead of deciding now. Give it until the end of the month and talk to Sara, who's done it. Then decide, and I'll back you completely.",
+          "ja": "今決める代わりに、こう提案します。月末まで待ち、経験のあるサラさんに話を聞いてください。その上で決めていただければ、全面的に支持します。",
+          "register": "casual",
+          "style": "propose",
+          "note": "具体的な次の一歩を出す。実際に助かる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-027",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a company party",
+      "listener": "your manager's manager",
+      "want": "You want to make small talk with someone very senior.",
+      "situationJa": "かなり上の立場の人と、雑談を成立させたい。",
+      "tags": [
+        "hierarchy",
+        "networking"
+      ],
+      "answers": [
+        {
+          "en": "I've not had the chance to say hello properly. I'm Rina, I'm in the measurement team on the fourth floor. We're the ones who send you the Monday numbers.",
+          "ja": "きちんとご挨拶する機会がありませんでした。4階の測定班のリナと申します。月曜の数字をお送りしている部署です。",
+          "register": "polite",
+          "style": "explain",
+          "note": "自分を位置づける。相手が話しやすくなる。"
+        },
+        {
+          "en": "You mentioned in the town hall that you'd worked in logistics before this. I spent two years in a warehouse during university. It's the only job I've had where I slept properly.",
+          "ja": "全社集会で、以前は物流におられたと仰っていました。私も大学時代に2年、倉庫で働きました。よく眠れた唯一の仕事です。",
+          "register": "casual",
+          "style": "context",
+          "note": "共通点を出す。上下を越えて話が続く。"
+        },
+        {
+          "en": "I imagine you've been asked about the reorganisation forty times tonight. I'm not going to make it forty-one. How was the trip to Seoul?",
+          "ja": "今夜、組織再編について40回は尋ねられたことと思います。41回目にはしません。ソウルへの出張はいかがでしたか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "気遣いを示す。強く印象に残る。"
+        },
+        {
+          "en": "Could I ask you something not about work? You said you'd taken up sailing. I've been thinking about it and everyone tells me it's a terrible idea.",
+          "ja": "仕事以外のことを伺ってもよいですか。帆走を始められたと仰っていました。私も考えているのですが、皆に無謀だと言われます。",
+          "register": "polite",
+          "style": "request",
+          "note": "仕事から離す。人として話せる。"
+        },
+        {
+          "en": "I do not think we have met properly. My name is Rina Sato and I work in the measurement team. I have been here two years and very much enjoy it.",
+          "ja": "きちんとご挨拶できていなかったかと存じます。測定班のサトウ・リナと申します。在籍2年目で、とても充実しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。無難で失礼がない。"
+        },
+        {
+          "en": "Hello — I'm Rina, from measurement. We send you the Monday numbers. Sorry about the Monday numbers.",
+          "ja": "こんにちは、測定のリナと申します。月曜の数字をお送りしている者です。月曜の数字については、申し訳ありません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "冗談で入る。距離が一気に縮まる。"
+        },
+        {
+          "en": "I've got one work question and one normal question. You choose which one we do. I'd rather not spend the whole evening talking about dashboards.",
+          "ja": "仕事の質問と、普通の質問が1つずつあります。どちらにするか選んでください。一晩中、集計画面の話をするのは避けたいです。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "相手に選ばせる。気の利いた切り出し方。"
+        },
+        {
+          "en": "I'd rather not use this as a chance to pitch you something. Everyone else will do that tonight. I just wanted to say hello properly.",
+          "ja": "この機会に何かを売り込むのは避けたいです。今夜は他の皆さんがそうされるでしょう。私はきちんとご挨拶したかっただけです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "下心が無いと示す。かえって覚えられる。"
+        },
+        {
+          "en": "I've walked past you three times tonight working out what to say. In the end I decided honesty was easier. So: hello, I'm Rina.",
+          "ja": "何を言うか考えながら、今夜3度そばを通り過ぎました。結局、正直に言う方が楽だと決めました。ですので、こんにちは。リナと申します。",
+          "register": "casual",
+          "style": "complain",
+          "note": "率直な自己開示。人柄が伝わる。"
+        },
+        {
+          "en": "I won't take your evening. Could I send you one question by email next week instead? It's about the measurement work and it'd take you two minutes.",
+          "ja": "お時間を取らせません。代わりに来週、質問を1つメールでお送りしてもよいですか。測定の仕事についてで、2分で済む内容です。",
+          "register": "polite",
+          "style": "propose",
+          "note": "後日につなげる。実利のある切り上げ方。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-028",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone who keeps interrupting you",
+      "want": "You want to finish what you were saying when interrupted.",
+      "situationJa": "遮られた話を、最後まで言い切りたい。",
+      "tags": [
+        "assertiveness",
+        "social"
+      ],
+      "answers": [
+        {
+          "en": "Let me just finish this bit and then it's yours. There's one more sentence and it's the point of the whole thing. Thirty seconds and I'm done.",
+          "ja": "この部分だけ言い切らせてください。その後はお譲りします。あと1文で、それが要点なのです。30秒で終わります。",
+          "register": "casual",
+          "style": "explain",
+          "note": "長さを予告する。角が立たず戻れる。"
+        },
+        {
+          "en": "I was about three sentences from the interesting part. Everything before it was setup, which is my fault. Give me one more go and I'll get there faster.",
+          "ja": "面白いところまで、あと3文でした。それまではすべて前置きで、私の話し方の問題です。もう一度だけ、今度は早くたどり着きます。",
+          "register": "casual",
+          "style": "context",
+          "note": "自分のせいにして戻る。摩擦が生じない。"
+        },
+        {
+          "en": "That's a good point and I want to come back to it. Can I finish mine first so we don't lose either? I'll be quick and then it's straight to you.",
+          "ja": "良い指摘なので、後で必ず戻ります。どちらも失わないよう、先に私の話を終えてもよいですか。手短にして、すぐお譲りします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の話も守る。最も好かれる戻り方。"
+        },
+        {
+          "en": "Could I have one more minute? I've started this three times now. If it isn't interesting by the end of it, I'll drop it for good.",
+          "ja": "あと1分いただけますか。この話を始めるのは3度目です。最後まで話して面白くなければ、二度と持ち出しません。",
+          "register": "polite",
+          "style": "request",
+          "note": "回数を示す。冗談として通り、要求も通る。"
+        },
+        {
+          "en": "If I might just complete the thought. There is one further point which rather changes the picture. I shall then be glad to hear your view.",
+          "ja": "考えを最後まで述べさせていただければ幸いです。もう一点、見え方を大きく変えるものがございます。その後、ぜひご意見を伺います。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。丁寧に主導権を戻す。"
+        },
+        {
+          "en": "Hang on, let me finish — one more line. Then it's all yours, I promise. It's the good bit.",
+          "ja": "少し待ってください、あと1行だけ。その後は全部お譲りします。約束します。ここが面白いところなのです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く止める。親しい場で最も自然。"
+        },
+        {
+          "en": "How about I finish and then you get twice as long? That seems more than fair. I've only got a sentence left anyway.",
+          "ja": "私が終えたら、その倍の時間を差し上げるのはどうですか。十分公平だと思います。どのみち、残りは1文だけです。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "冗談の取引。誰も気を悪くしない。"
+        },
+        {
+          "en": "I'd rather not abandon this halfway for the third time. It'll bother me for the rest of the night. Let me land it and then we move on.",
+          "ja": "3度目の中断で終わらせるのは避けたいです。一晩気になり続けます。着地させてから、次に移りましょう。",
+          "register": "casual",
+          "style": "decline",
+          "note": "はっきり主張する。繰り返しへの正当な反応。"
+        },
+        {
+          "en": "That's three times I've started this story tonight. I'm beginning to think the universe doesn't want it told. One more attempt and then I'll take the hint.",
+          "ja": "この話を始めるのは今夜3度目です。語られたくないのかと思い始めています。もう一度だけ試して、それで駄目なら諦めます。",
+          "register": "casual",
+          "style": "complain",
+          "note": "笑いに変えて指摘する。場が和む。"
+        },
+        {
+          "en": "Let's do it properly — I'll take one minute, then you take one. I'd rather hear yours fully than half of both. You can time me.",
+          "ja": "きちんとやりましょう。私が1分、次にあなたが1分。互いの話を半分ずつ聞くより、しっかり伺いたいです。時間を計ってください。",
+          "register": "casual",
+          "style": "propose",
+          "note": "順番を作る。互いに満足できる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-029",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gathering",
+      "listener": "someone who has been unwell",
+      "want": "You want to ask about someone's health without making it heavy.",
+      "situationJa": "重くならないよう、体調について尋ねたい。",
+      "tags": [
+        "health",
+        "empathy"
+      ],
+      "answers": [
+        {
+          "en": "It's good to see you out. You can tell me as much or as little as you like about how it's going. Or nothing at all — I'll happily talk about the football.",
+          "ja": "お出かけになれてよかったです。経過については、話したい分だけで構いません。まったく話さなくても結構です。喜んで別の話をします。",
+          "register": "casual",
+          "style": "explain",
+          "note": "話す量を相手に委ねる。負担が無い。"
+        },
+        {
+          "en": "I asked your brother how you were and he said to ask you directly. He was right, so here I am. How are things, really?",
+          "ja": "ご兄弟に様子を伺ったところ、本人に直接聞くようにと言われました。もっともなので、こうして伺っています。本当のところ、いかがですか。",
+          "register": "casual",
+          "style": "context",
+          "note": "遠回しを避ける。誠実さが伝わる。"
+        },
+        {
+          "en": "I don't want to make you give the update forty times tonight. If you've already done it once, just say so. I'll ask you something else entirely.",
+          "ja": "今夜40回も同じ説明をさせたくありません。すでに一度話されたなら、そう仰ってください。まったく別のことを伺います。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "説明疲れに配慮する。ありがたがられる。"
+        },
+        {
+          "en": "Could I ask how you're doing, in the real sense rather than the polite one? You don't have to answer. I'd just rather ask than assume.",
+          "ja": "社交辞令ではなく、本当の意味でご様子を伺ってもよいですか。答えなくても構いません。ただ、憶測するより尋ねたいのです。",
+          "register": "polite",
+          "style": "request",
+          "note": "問いの質を明示する。誠実な会話になる。"
+        },
+        {
+          "en": "I was very sorry to hear you had been unwell. I hope you are on the mend. Please do not feel obliged to go into it.",
+          "ja": "ご体調を崩されたと伺い、心配しておりました。快方に向かわれていることを願います。詳しくお話しいただく必要はございません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "距離のある相手に。踏み込まない気遣い。"
+        },
+        {
+          "en": "How are you doing? Genuine question, not the polite one. Tell me to shut up if you'd rather not.",
+          "ja": "調子はいかがですか。社交辞令ではなく、本気の質問です。話したくなければ、黙れと言ってください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く率直に。親しい相手に最適。"
+        },
+        {
+          "en": "Give me the two-sentence version if you're tired of the long one. Or the long one if you want someone to actually listen. Either is fine by me.",
+          "ja": "長い説明に飽きておられるなら、2文でどうぞ。きちんと聞いてほしければ、長い方でも構いません。どちらでも大丈夫です。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "分量を選ばせる。相手が楽になる。"
+        },
+        {
+          "en": "I'd rather not pretend I hadn't heard. That always feels stranger than asking. So I'm asking, and you can tell me to change the subject.",
+          "ja": "聞いていないふりをするのは避けたいです。かえって不自然になります。ですのでお尋ねしますが、話題を変えろと仰っていただいて構いません。",
+          "register": "casual",
+          "style": "decline",
+          "note": "沈黙より問いを選ぶ理由を示す。誠実。"
+        },
+        {
+          "en": "When I was ill last year everyone asked how I was and nobody wanted the real answer. It got quite lonely. So I'm asking and I do want the real answer.",
+          "ja": "昨年私が体調を崩したとき、皆が様子を尋ねましたが、本当の答えを求める人はいませんでした。かなり孤独でした。ですから、本当の答えを伺いたいのです。",
+          "register": "casual",
+          "style": "complain",
+          "note": "経験を共有する。深い会話が可能になる。"
+        },
+        {
+          "en": "How about I get us both a drink and you tell me the honest version? If you'd rather not, I'll get the drinks anyway. Either way you get a drink.",
+          "ja": "何か飲み物を取ってきますので、本当のところを聞かせていただけませんか。話したくなければ、それでも飲み物は持ってきます。どちらにしても一杯どうぞ。",
+          "register": "casual",
+          "style": "propose",
+          "note": "軽さを保ちつつ場を作る。話しやすくなる。"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk-3-030",
+      "category": "smalltalk",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a leaving party",
+      "listener": "a colleague who is leaving",
+      "want": "You want to say something meaningful to a colleague who is leaving.",
+      "situationJa": "去っていく同僚に、心のこもった一言を伝えたい。",
+      "tags": [
+        "farewell",
+        "colleagues"
+      ],
+      "answers": [
+        {
+          "en": "I wanted to say one specific thing rather than the usual. You took over my worst project in my worst month and never mentioned it again. I've never properly thanked you for that.",
+          "ja": "決まり文句ではなく、1つ具体的なことをお伝えしたかったのです。私の最悪の月に、最悪の案件を引き取り、その後一度も口にされませんでした。きちんとお礼を言えていませんでした。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "具体的な出来事を挙げる。心に残る。"
+        },
+        {
+          "en": "You changed how I run meetings and you probably don't know it. I copied the way you always ask the quietest person first. Three people have since told me they like it.",
+          "ja": "会議の進め方が変わったのは、あなたのおかげです。ご本人はご存じないでしょう。最も静かな人に最初に振るやり方を真似ました。以来3人から良いと言われました。",
+          "register": "casual",
+          "style": "context",
+          "note": "影響を具体的に語る。最も嬉しい別れの言葉。"
+        },
+        {
+          "en": "I know you've had thirty versions of this conversation today. I won't make you do another one. I just wanted to say the office will be worse without you.",
+          "ja": "今日、こうした会話を30回はされたでしょう。もう一度やらせるつもりはありません。ただ、あなたがいないこの職場は寂しくなる、とお伝えしたかったのです。",
+          "register": "casual",
+          "style": "considerate",
+          "note": "相手の疲れに触れる。短く印象的。"
+        },
+        {
+          "en": "Could we stay in touch properly rather than just online? I'd genuinely like to know how the new place goes. I'll message you in a month and you can ignore it.",
+          "ja": "画面越しだけでなく、きちんと連絡を取り合いませんか。新しい職場のご様子を、本当に知りたいのです。1か月後に連絡しますので、無視してくださって構いません。",
+          "register": "polite",
+          "style": "request",
+          "note": "実際に続く関係にする。押し付けない。"
+        },
+        {
+          "en": "I should like to say how much I have valued working with you. Your handling of the Osaka account taught me a great deal. I wish you every success in the new role.",
+          "ja": "ご一緒できたことを、心よりありがたく思っております。大阪の担当としてのお仕事から多くを学びました。新しい職務でのご成功をお祈りいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった送別で。品位のある挨拶。"
+        },
+        {
+          "en": "I'm going to miss you, honestly. This place will be considerably less fun. Don't be a stranger.",
+          "ja": "正直、寂しくなります。この職場は、ずいぶんつまらなくなるでしょう。連絡を絶やさないでください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く率直に。親しい同僚に。"
+        },
+        {
+          "en": "I'll let you go and talk to everyone else on one condition. You have to tell me honestly whether the new job is better in six months. Deal?",
+          "ja": "1つ条件付きで、他の方のところへお送りします。半年後、新しい仕事が本当に良いかを正直に教えてください。それでよろしいですか。",
+          "register": "casual",
+          "style": "negotiate",
+          "note": "冗談で次を約束する。別れが軽くなる。"
+        },
+        {
+          "en": "I'd rather not do the version where we both say we'll keep in touch and don't. Let's actually put something in the diary now. Lunch in November?",
+          "ja": "連絡を取り合おうと言って実際にはしない、という展開は避けたいです。今のうちに予定を入れましょう。11月に昼食でもいかがですか。",
+          "register": "casual",
+          "style": "decline",
+          "note": "社交辞令を断つ。実際に会える。"
+        },
+        {
+          "en": "I've been meaning to tell you this for two years and left it until your last week. That's fairly typical of me. But you were the reason I stayed in that difficult year.",
+          "ja": "2年間伝えようと思いながら、最後の週まで延ばしました。私らしいところです。ただ、あの苦しい年に私が辞めずに済んだのは、あなたのおかげです。",
+          "register": "casual",
+          "style": "complain",
+          "note": "遅れを認めつつ本題へ。誠実に響く。"
+        },
+        {
+          "en": "Let's make this concrete. Send me your personal address before you go, and I'll send you the thing we never finished. Then lunch in November, my treat.",
+          "ja": "具体的にしましょう。お帰りの前に個人の連絡先を教えてください。終わらせられなかったあの件をお送りします。それから11月に昼食を、私のおごりで。",
+          "register": "casual",
+          "style": "propose",
+          "note": "行動で締める。関係が本当に続く。"
+        }
+      ]
+    }
+  ]
+}
