@@ -1,0 +1,385 @@
+{
+  "category": "services",
+  "situations": [
+    {
+      "id": "services-001", "category": "services", "difficulty": 2,
+      "place": "At a bank", "listener": "a bank clerk",
+      "want": "You want to open a bank account.",
+      "situationJa": "銀行口座を開きたい。",
+      "tags": ["requesting", "bank"],
+      "answers": [
+        { "en": "I'd like to open an account.", "ja": "口座を開設したいのですが。", "register": "neutral", "style": "basic", "note": "基本形。open an account を丸ごと覚えたい。" },
+        { "en": "Open an account, please.", "ja": "口座開設をお願いします。", "register": "neutral", "style": "oneword", "note": "窓口で。短くても通じる。" },
+        { "en": "Could I open a current account here?", "ja": "こちらで当座預金口座を開けますか。", "register": "polite", "style": "request", "note": "current account は英国の「普通口座」。米国では checking account。" },
+        { "en": "Do I need an appointment to open an account?", "ja": "口座開設には予約が必要ですか。", "register": "neutral", "style": "existence", "note": "予約制の銀行が多い。先に確認したい。" },
+        { "en": "I would like to enquire about opening an account as a new resident.", "ja": "新規居住者として口座開設について伺いたいのですが。", "register": "formal", "style": "formal", "note": "resident は「居住者」。立場を明示すると話が早い。" },
+        { "en": "Can I set up an account here?", "ja": "ここで口座を作れますか。", "register": "casual", "style": "casual", "note": "set up は「開設する」。口語的で自然。" },
+        { "en": "What documents do I need?", "ja": "どんな書類が必要ですか。", "register": "neutral", "style": "vocab", "note": "最重要の確認。書類不足で出直すのを防げる。" },
+        { "en": "Is there a monthly fee?", "ja": "月額の手数料はありますか。", "register": "neutral", "style": "basic", "note": "口座維持手数料がある国もある。必ず確認。" },
+        { "en": "I've just moved here from Japan for work — what would you recommend?", "ja": "仕事で日本から越してきたばかりです。何がおすすめでしょうか。", "register": "polite", "style": "context", "note": "状況を伝えると、適した口座を提案してもらえる。" },
+        { "en": "I may not have everything with me — could you tell me what's required?", "ja": "すべて揃っていないかもしれません。必要なものを教えていただけますか。", "register": "polite", "style": "considerate", "note": "先に確認する姿勢。無駄足を避けられる。" }
+      ]
+    },
+    {
+      "id": "services-002", "category": "services", "difficulty": 2,
+      "place": "At a post office", "listener": "a clerk",
+      "want": "You want to send a package to Japan.",
+      "situationJa": "日本へ荷物を送りたい。",
+      "tags": ["requesting", "post"],
+      "answers": [
+        { "en": "I'd like to send this to Japan.", "ja": "これを日本へ送りたいのですが。", "register": "neutral", "style": "basic", "note": "基本形。荷物を差し出しながら。" },
+        { "en": "To Japan, please.", "ja": "日本までお願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。窓口で通じる。" },
+        { "en": "Could you tell me the cheapest way to send this?", "ja": "いちばん安い送り方を教えていただけますか。", "register": "polite", "style": "request", "note": "選択肢を提示してもらえる。実用的。" },
+        { "en": "How long does it take to Japan?", "ja": "日本まで何日かかりますか。", "register": "neutral", "style": "basic", "note": "配送日数の確認。方法選びの決め手になる。" },
+        { "en": "I'd like to enquire about international shipping options to Japan.", "ja": "日本への国際配送の選択肢について伺いたいのですが。", "register": "formal", "style": "formal", "note": "改まった問い合わせ。窓口で通じる。" },
+        { "en": "Can I post this to Japan?", "ja": "これを日本に送れますか。", "register": "casual", "style": "casual", "note": "post は英国式の「郵送する」。" },
+        { "en": "Is there a tracked option?", "ja": "追跡付きの方法はありますか。", "register": "neutral", "style": "existence", "note": "tracked は「追跡可能な」。大切な荷物には必須。" },
+        { "en": "Do I need to fill in a customs form?", "ja": "税関申告書に記入が必要ですか。", "register": "neutral", "style": "vocab", "note": "国際便では必ず必要。忘れると送れない。" },
+        { "en": "It's a birthday gift, so I'd like it to arrive by the 20th.", "ja": "誕生日の贈り物なので、20日までに届けたいです。", "register": "polite", "style": "context", "note": "期限を伝えると、適した方法を勧めてもらえる。" },
+        { "en": "Whatever's most reliable — it's fragile.", "ja": "いちばん確実な方法でお願いします。壊れやすいものです。", "register": "polite", "style": "considerate", "note": "fragile は「壊れやすい」。丁寧に扱ってもらえる。" }
+      ]
+    },
+    {
+      "id": "services-003", "category": "services", "difficulty": 2,
+      "place": "At a hair salon", "listener": "a hairdresser",
+      "want": "You want a small trim, not a big change.",
+      "situationJa": "大きく変えず、少しだけ整えてほしい。",
+      "tags": ["requesting", "hair"],
+      "answers": [
+        { "en": "Just a trim, please.", "ja": "少し整えるだけでお願いします。", "register": "neutral", "style": "oneword", "note": "trim は「軽く切り揃える」。美容室での必須語。" },
+        { "en": "Just a little off the ends.", "ja": "毛先を少しだけお願いします。", "register": "neutral", "style": "basic", "note": "off the ends は「毛先を切る」。具体的で伝わる。" },
+        { "en": "Could you take about two centimeters off?", "ja": "2センチほど切っていただけますか。", "register": "polite", "style": "request", "note": "長さを数字で。最も誤解が少ない。" },
+        { "en": "I'd like to keep the length, just tidy it up.", "ja": "長さは残して、整えるだけにしてください。", "register": "polite", "style": "basic", "note": "tidy up は「整える」。方針が明確に伝わる。" },
+        { "en": "I'd prefer a conservative trim rather than a restyle.", "ja": "大きく変えるのではなく、控えめに整えていただければと存じます。", "register": "formal", "style": "formal", "note": "restyle は「髪型を変える」。改まった指定。" },
+        { "en": "Not too much off!", "ja": "切りすぎないでくださいね！", "register": "casual", "style": "casual", "note": "気さくな一言。不安を伝えられる。" },
+        { "en": "Is it possible to keep the fringe as it is?", "ja": "前髪はそのままにできますか。", "register": "neutral", "style": "existence", "note": "fringe は英国で「前髪」。米国では bangs。" },
+        { "en": "Could you show me how much before you cut?", "ja": "切る前にどのくらいか見せていただけますか。", "register": "polite", "style": "vocab", "note": "切りすぎを防ぐ最も確実な方法。" },
+        { "en": "I have photos in a week, so I don't want a big change.", "ja": "1週間後に写真撮影があるので、大きく変えたくありません。", "register": "polite", "style": "context", "note": "理由を伝えると、慎重に対応してもらえる。" },
+        { "en": "I trust your judgment — but on the shorter side of cautious.", "ja": "お任せしますが、控えめな範囲でお願いします。", "register": "polite", "style": "considerate", "note": "任せつつ範囲を示す。関係のよい美容師に。" }
+      ]
+    },
+    {
+      "id": "services-004", "category": "services", "difficulty": 2,
+      "place": "At a mobile phone shop", "listener": "a shop assistant",
+      "want": "You want a SIM card that works for one month.",
+      "situationJa": "1か月使えるSIMカードがほしい。",
+      "tags": ["requesting", "mobile"],
+      "answers": [
+        { "en": "A SIM card for one month, please.", "ja": "1か月分のSIMカードをお願いします。", "register": "neutral", "style": "oneword", "note": "期間を添える。これで通じる。" },
+        { "en": "I need a prepaid SIM for a month.", "ja": "1か月分のプリペイドSIMが必要です。", "register": "neutral", "style": "basic", "note": "prepaid は「前払いの」。旅行者向けの定番。" },
+        { "en": "Could you recommend a plan for a short stay?", "ja": "短期滞在向けの料金プランをおすすめいただけますか。", "register": "polite", "style": "request", "note": "plan は「料金プラン」。提案してもらえる。" },
+        { "en": "Do you have tourist SIM cards?", "ja": "旅行者向けのSIMはありますか。", "register": "neutral", "style": "existence", "note": "専用商品がある国も多い。まず確認。" },
+        { "en": "I'd like to enquire about a short-term data plan.", "ja": "短期のデータプランについて伺いたいのですが。", "register": "formal", "style": "formal", "note": "data plan は「データ通信プラン」。改まった聞き方。" },
+        { "en": "Just need data for a month.", "ja": "1か月分のデータだけ必要です。", "register": "casual", "style": "casual", "note": "通話が不要なら簡潔に。安く済むことが多い。" },
+        { "en": "How much data does that include?", "ja": "それはどのくらいのデータ量が含まれますか。", "register": "neutral", "style": "vocab", "note": "容量の確認。プラン選びの決め手。" },
+        { "en": "Will it work in my phone? It's a Japanese model.", "ja": "私の端末で使えますか。日本の機種です。", "register": "neutral", "style": "basic", "note": "SIMロックの確認。買う前に必須。" },
+        { "en": "I'm here for four weeks and mainly need maps and messaging.", "ja": "4週間滞在し、主に地図とメッセージに使います。", "register": "polite", "style": "context", "note": "用途を伝えると、無駄のないプランを勧めてもらえる。" },
+        { "en": "Whatever's simplest — I don't need anything fancy.", "ja": "いちばん簡単なもので結構です。凝ったものは要りません。", "register": "polite", "style": "considerate", "note": "選択肢が多すぎるときに。話が早く終わる。" }
+      ]
+    },
+    {
+      "id": "services-005", "category": "services", "difficulty": 2,
+      "place": "At a dry cleaner", "listener": "a staff member",
+      "want": "You want to ask when it will be ready.",
+      "situationJa": "いつ仕上がるか聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "When will it be ready?", "ja": "いつ仕上がりますか。", "register": "neutral", "style": "basic", "note": "基本形。あらゆるサービスで使える。" },
+        { "en": "How long does it take?", "ja": "どのくらいかかりますか。", "register": "neutral", "style": "oneword", "note": "所要時間を聞く。同じくらいよく使う。" },
+        { "en": "Could I collect it tomorrow?", "ja": "明日受け取れますか。", "register": "polite", "style": "request", "note": "collect は英国で「受け取る」。米国では pick up。" },
+        { "en": "Is same-day service available?", "ja": "当日仕上げはありますか。", "register": "neutral", "style": "existence", "note": "same-day service は「当日仕上げ」。急ぎのときに。" },
+        { "en": "Would you be able to tell me when this will be ready for collection?", "ja": "こちらの受取可能日を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "for collection は「受け取り用に」。改まった表現。" },
+        { "en": "Ready by when?", "ja": "いつまでにできますか。", "register": "casual", "style": "casual", "note": "非常に短い。伝票を見ながら。" },
+        { "en": "Is there an express option?", "ja": "特急仕上げはありますか。", "register": "neutral", "style": "vocab", "note": "express は「特急の」。追加料金で早くなる。" },
+        { "en": "What time do you close on Friday?", "ja": "金曜は何時に閉まりますか。", "register": "neutral", "style": "basic", "note": "受取時間を確認する。取りに行けないと困る。" },
+        { "en": "I need it for an event on Saturday — is that possible?", "ja": "土曜の行事で必要なのですが、間に合いますか。", "register": "polite", "style": "context", "note": "期限を伝えると、間に合う方法を提案してもらえる。" },
+        { "en": "No rush at all if it's busy — when would suit?", "ja": "混んでいるようなら急ぎません。いつごろでしょうか。", "register": "polite", "style": "considerate", "note": "急かさない姿勢。店側が調整しやすい。" }
+      ]
+    },
+    {
+      "id": "services-006", "category": "services", "difficulty": 2,
+      "place": "At a bank", "listener": "a clerk",
+      "want": "You want to report a lost bank card.",
+      "situationJa": "銀行のカードをなくしたと届け出たい。",
+      "tags": ["reporting", "trouble"],
+      "answers": [
+        { "en": "I've lost my card.", "ja": "カードをなくしました。", "register": "neutral", "style": "basic", "note": "まずこれ。すぐ止めてもらえる。" },
+        { "en": "Lost card — could you block it?", "ja": "カードを紛失しました。停止していただけますか。", "register": "neutral", "style": "oneword", "note": "block は「利用停止にする」。最優先の対応。" },
+        { "en": "Could you cancel my card and issue a new one?", "ja": "カードを停止して新しいものを発行していただけますか。", "register": "polite", "style": "request", "note": "次の手続きまで一度に頼める。効率的。" },
+        { "en": "I need to report a lost debit card.", "ja": "デビットカードの紛失を届け出たいのですが。", "register": "neutral", "style": "basic", "note": "report は「届け出る」。事務的で明確。" },
+        { "en": "I'm afraid I've misplaced my card and would like it stopped.", "ja": "恐れ入りますが、カードを紛失しましたので停止をお願いします。", "register": "formal", "style": "formal", "note": "misplace は「置き忘れる」。改まった言い方。" },
+        { "en": "My card's gone.", "ja": "カードがなくなりました。", "register": "casual", "style": "casual", "note": "率直。焦っていても言える。" },
+        { "en": "Are there any transactions I don't recognize?", "ja": "身に覚えのない取引はありますか。", "register": "neutral", "style": "existence", "note": "不正利用の確認。紛失時の最重要チェック。" },
+        { "en": "How long will a replacement take?", "ja": "再発行にはどのくらいかかりますか。", "register": "neutral", "style": "vocab", "note": "replacement は「代替品」。旅行中なら死活問題。" },
+        { "en": "I think I left it in a shop yesterday — could you stop it now?", "ja": "昨日お店に置き忘れたようです。今すぐ停止できますか。", "register": "polite", "style": "context", "note": "状況を伝えつつ即時停止を求める。最も実務的。" },
+        { "en": "I know this may take time — but could we stop the card first?", "ja": "時間がかかるのは承知していますが、まずカードの停止をお願いできますか。", "register": "polite", "style": "considerate", "note": "優先順位を示す。落ち着いた対応ができる。" }
+      ]
+    },
+    {
+      "id": "services-007", "category": "services", "difficulty": 2,
+      "place": "At a gym", "listener": "a staff member",
+      "want": "You want to cancel your membership.",
+      "situationJa": "会員をやめたい。",
+      "tags": ["cancelling"],
+      "answers": [
+        { "en": "I'd like to cancel my membership.", "ja": "会員をやめたいのですが。", "register": "neutral", "style": "basic", "note": "基本形。明確で伝わる。" },
+        { "en": "Cancel my membership, please.", "ja": "会員の解約をお願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。窓口で。" },
+        { "en": "Could you tell me how to cancel?", "ja": "解約方法を教えていただけますか。", "register": "polite", "style": "request", "note": "手順から聞く。丁寧で角が立たない。" },
+        { "en": "What's the notice period?", "ja": "解約の予告期間はどのくらいですか。", "register": "neutral", "style": "vocab", "note": "notice period は「予告期間」。1か月前が多い。" },
+        { "en": "I'd like to enquire about terminating my membership.", "ja": "会員契約の終了について伺いたいのですが。", "register": "formal", "style": "formal", "note": "terminate は「終了する」。契約上の正式な語。" },
+        { "en": "I want to stop coming.", "ja": "通うのをやめたいです。", "register": "casual", "style": "casual", "note": "率直な口語。小さな施設で。" },
+        { "en": "Is there a cancellation fee?", "ja": "解約手数料はかかりますか。", "register": "neutral", "style": "existence", "note": "違約金がある場合も。必ず確認したい。" },
+        { "en": "Could I freeze it instead of cancelling?", "ja": "解約ではなく一時休止にできますか。", "register": "polite", "style": "basic", "note": "freeze は「一時停止する」。再開予定なら得。" },
+        { "en": "I'm moving abroad next month, so I need to cancel.", "ja": "来月海外へ移るので解約が必要です。", "register": "polite", "style": "context", "note": "理由が明確だと、違約金が免除されることもある。" },
+        { "en": "I've enjoyed it here — it's just that I'm relocating.", "ja": "こちらは気に入っていました。転居のためです。", "register": "polite", "style": "considerate", "note": "不満ではないと示す。気持ちよく終われる。" }
+      ]
+    },
+    {
+      "id": "services-008", "category": "services", "difficulty": 2,
+      "place": "At an apartment viewing", "listener": "an agent",
+      "want": "You want to ask what is included in the rent.",
+      "situationJa": "家賃に何が含まれるか聞きたい。",
+      "tags": ["asking", "housing"],
+      "answers": [
+        { "en": "What's included in the rent?", "ja": "家賃には何が含まれますか。", "register": "neutral", "style": "basic", "note": "基本形。契約前の最重要確認。" },
+        { "en": "Are bills included?", "ja": "光熱費は含まれますか。", "register": "neutral", "style": "oneword", "note": "bills は「光熱費など」。英国での必須語。" },
+        { "en": "Could you tell me what the rent covers?", "ja": "家賃が何を賄うか教えていただけますか。", "register": "polite", "style": "request", "note": "cover は「賄う」。丁寧で正確。" },
+        { "en": "Is there a service charge on top?", "ja": "別途、管理費はかかりますか。", "register": "neutral", "style": "existence", "note": "service charge は「管理費」。見落としやすい費用。" },
+        { "en": "I'd like to clarify precisely what is covered by the monthly rent.", "ja": "月額家賃に何が含まれるか正確に確認したいのですが。", "register": "formal", "style": "formal", "note": "改まった確認。契約前に必ず。" },
+        { "en": "So what do I pay on top?", "ja": "他に払うものは何ですか。", "register": "casual", "style": "casual", "note": "率直で実用的。総額が把握できる。" },
+        { "en": "Is council tax included?", "ja": "住民税は含まれますか。", "register": "neutral", "style": "vocab", "note": "council tax は英国の地方税。物件により扱いが違う。" },
+        { "en": "How much would the total monthly cost be?", "ja": "月々の総額はいくらになりますか。", "register": "neutral", "style": "basic", "note": "総額で聞くのがいちばん確実。" },
+        { "en": "I'm comparing a few places, so I'd like the full monthly figure.", "ja": "何件か比較しているので、月額の総額を知りたいです。", "register": "polite", "style": "context", "note": "比較していると伝えると、正確な数字が出てくる。" },
+        { "en": "Sorry for all the questions — I just want to budget properly.", "ja": "質問が多くてすみません。予算を正しく立てたいだけです。", "register": "polite", "style": "considerate", "note": "理由を示す。細かく聞いても嫌がられない。" }
+      ]
+    },
+    {
+      "id": "services-009", "category": "services", "difficulty": 2,
+      "place": "On the phone", "listener": "a delivery company",
+      "want": "You want to change the delivery date.",
+      "situationJa": "配達日を変更したい。",
+      "tags": ["changing", "delivery"],
+      "answers": [
+        { "en": "Could I change the delivery date?", "ja": "配達日を変更できますか。", "register": "polite", "style": "request", "note": "基本形。最も使う。" },
+        { "en": "I need to reschedule the delivery.", "ja": "配達の日程を変更する必要があります。", "register": "neutral", "style": "basic", "note": "reschedule は「日程変更する」。事務的で明確。" },
+        { "en": "Change the delivery to Friday?", "ja": "配達を金曜に変更できますか。", "register": "casual", "style": "oneword", "note": "希望日を添える。話が早い。" },
+        { "en": "Is it possible to have it delivered next week instead?", "ja": "代わりに来週に届けていただくことは可能ですか。", "register": "neutral", "style": "existence", "note": "可否から確認する。丁寧。" },
+        { "en": "I'd like to request a change to the scheduled delivery date.", "ja": "予定されている配達日の変更をお願いしたいのですが。", "register": "formal", "style": "formal", "note": "改まった依頼。書面でも使える。" },
+        { "en": "Can you push it back a few days?", "ja": "数日遅らせてもらえますか。", "register": "casual", "style": "casual", "note": "push back は「後ろにずらす」。口語的。" },
+        { "en": "Is there a redelivery fee?", "ja": "再配達に料金はかかりますか。", "register": "neutral", "style": "vocab", "note": "redelivery は「再配達」。有料の場合もある。" },
+        { "en": "Could you leave it with a neighbor instead?", "ja": "代わりに隣家に預けていただけますか。", "register": "polite", "style": "basic", "note": "日程変更より簡単な解決策。提案すると喜ばれる。" },
+        { "en": "I won't be home on Thursday — could we make it Saturday?", "ja": "木曜は不在です。土曜にできますか。", "register": "polite", "style": "context", "note": "理由と代案を一度に。最も効率的。" },
+        { "en": "Whatever day works for your route is fine.", "ja": "配送ルートの都合のよい日で結構です。", "register": "polite", "style": "considerate", "note": "相手の都合を優先する。快く応じてもらえる。" }
+      ]
+    },
+    {
+      "id": "services-010", "category": "services", "difficulty": 3,
+      "place": "On the phone", "listener": "a customer service agent",
+      "want": "You want to complain about being charged twice.",
+      "situationJa": "二重請求について申し出たい。",
+      "tags": ["complaining", "billing"],
+      "answers": [
+        { "en": "I've been charged twice.", "ja": "二重に請求されています。", "register": "neutral", "style": "basic", "note": "事実を端的に。最も明確な出だし。" },
+        { "en": "There's a duplicate charge on my account.", "ja": "口座に重複した請求があります。", "register": "neutral", "style": "vocab", "note": "duplicate charge は「重複請求」。正確な用語。" },
+        { "en": "Could you look into a double charge for me?", "ja": "二重請求を調べていただけますか。", "register": "polite", "style": "request", "note": "look into は「調査する」。落ち着いた依頼。" },
+        { "en": "I paid once but was billed twice on the 3rd.", "ja": "1回しか払っていませんが、3日に2回請求されています。", "register": "neutral", "style": "context", "note": "日付を添える。調査が速い。" },
+        { "en": "I'm afraid there appears to be an error with my billing.", "ja": "恐れ入りますが、請求に誤りがあるようです。", "register": "formal", "style": "formal", "note": "appears to be で断定を避けた丁寧な指摘。" },
+        { "en": "You've taken the money twice.", "ja": "2回引き落とされています。", "register": "casual", "style": "casual", "note": "率直で強い。口調に注意が必要。" },
+        { "en": "Is there a way to get one of them refunded?", "ja": "片方を返金していただく方法はありますか。", "register": "neutral", "style": "existence", "note": "解決策を求める形。話が前に進む。" },
+        { "en": "How long does a refund usually take?", "ja": "返金には通常どのくらいかかりますか。", "register": "neutral", "style": "oneword", "note": "見通しを確認する。実務的。" },
+        { "en": "I have both transaction numbers here if that helps.", "ja": "必要でしたら両方の取引番号をお伝えできます。", "register": "polite", "style": "basic", "note": "証拠を用意する。解決が格段に速くなる。" },
+        { "en": "I'm sure it's a system error — could you help me sort it out?", "ja": "システムの不具合だと思います。解決を手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "担当者を責めない。協力してもらいやすい。" }
+      ]
+    },
+    {
+      "id": "services-011", "category": "services", "difficulty": 2,
+      "place": "At a library", "listener": "a librarian",
+      "want": "You want to renew a book you borrowed.",
+      "situationJa": "借りている本の貸出を延長したい。",
+      "tags": ["requesting", "library"],
+      "answers": [
+        { "en": "Could I renew this book?", "ja": "この本の貸出を延長できますか。", "register": "polite", "style": "request", "note": "renew は「延長する」。図書館での必須語。" },
+        { "en": "Renew this, please.", "ja": "これの延長をお願いします。", "register": "neutral", "style": "oneword", "note": "本を差し出しながら。短くて確実。" },
+        { "en": "I'd like to extend the loan.", "ja": "貸出期間を延ばしたいのですが。", "register": "neutral", "style": "vocab", "note": "loan は図書館で「貸出」。正式な語。" },
+        { "en": "Is it possible to keep this for another two weeks?", "ja": "あと2週間借りることはできますか。", "register": "neutral", "style": "existence", "note": "期間を明示。答えが具体的になる。" },
+        { "en": "I'd like to request an extension on this item, if possible.", "ja": "可能でしたら、こちらの貸出延長をお願いしたいのですが。", "register": "formal", "style": "formal", "note": "item は図書館で「資料」。改まった依頼。" },
+        { "en": "Can I keep this longer?", "ja": "もう少し長く借りられますか。", "register": "casual", "style": "casual", "note": "率直で分かりやすい。気さくな図書館で。" },
+        { "en": "Has anyone reserved it?", "ja": "予約が入っていますか。", "register": "neutral", "style": "basic", "note": "予約があると延長できない。先に確認できる。" },
+        { "en": "Can I renew it online instead?", "ja": "オンラインで延長できますか。", "register": "neutral", "style": "vocab", "note": "次回から窓口に来なくて済む。実用的。" },
+        { "en": "I'm halfway through and won't finish by Friday — could I renew?", "ja": "半分ほど読んだところで金曜までに読み終わりません。延長できますか。", "register": "polite", "style": "context", "note": "事情を添えると、自然な依頼になる。" },
+        { "en": "If someone's waiting, I'll bring it back — otherwise, could I renew?", "ja": "お待ちの方がいれば返します。いなければ延長できますか。", "register": "polite", "style": "considerate", "note": "他の利用者への配慮。感じがよい。" }
+      ]
+    },
+    {
+      "id": "services-012", "category": "services", "difficulty": 2,
+      "place": "At a repair shop", "listener": "a technician",
+      "want": "You want to ask how much the repair will cost.",
+      "situationJa": "修理費用がいくらか聞きたい。",
+      "tags": ["asking", "repair"],
+      "answers": [
+        { "en": "How much will the repair cost?", "ja": "修理費用はいくらですか。", "register": "neutral", "style": "basic", "note": "基本形。修理を頼む前に必ず。" },
+        { "en": "How much to fix it?", "ja": "直すのにいくらかかりますか。", "register": "casual", "style": "oneword", "note": "短くて実用的。小さな店で。" },
+        { "en": "Could you give me a quote first?", "ja": "先にお見積もりをいただけますか。", "register": "polite", "style": "request", "note": "quote は「見積もり」。高額修理では必須。" },
+        { "en": "Is there a charge for the diagnosis?", "ja": "診断だけでも料金はかかりますか。", "register": "neutral", "style": "existence", "note": "見てもらうだけで有料の店もある。先に確認。" },
+        { "en": "I'd appreciate an estimate before you proceed.", "ja": "作業前にお見積もりをいただけますと幸いです。", "register": "formal", "style": "formal", "note": "before you proceed は「着手前に」。改まった依頼。" },
+        { "en": "What's this going to cost me?", "ja": "これいくらになりますか。", "register": "casual", "style": "casual", "note": "率直な口語。気さくな店で。" },
+        { "en": "Is it worth repairing, or should I replace it?", "ja": "修理する価値がありますか、それとも買い替えるべきですか。", "register": "neutral", "style": "vocab", "note": "worth 〜ing は「〜する価値がある」。誠実な助言がもらえる。" },
+        { "en": "Could you call me if it goes above fifty?", "ja": "50を超えるようでしたらご連絡いただけますか。", "register": "polite", "style": "basic", "note": "上限を決める。想定外の請求を防げる。" },
+        { "en": "It's an old machine, so I don't want to spend too much on it.", "ja": "古い機械なので、あまりお金をかけたくありません。", "register": "polite", "style": "context", "note": "予算感を示す。無駄な修理を避けられる。" },
+        { "en": "Take a look first and let me know — no obligation.", "ja": "まず見ていただいてお知らせください。依頼は決めていません。", "register": "polite", "style": "considerate", "note": "no obligation は「義務なしで」。双方が気楽。" }
+      ]
+    },
+    {
+      "id": "services-013", "category": "services", "difficulty": 2,
+      "place": "At a ticket office", "listener": "a staff member",
+      "want": "You want to ask if there is a student discount.",
+      "situationJa": "学生割引があるか聞きたい。",
+      "tags": ["asking", "discount"],
+      "answers": [
+        { "en": "Is there a student discount?", "ja": "学生割引はありますか。", "register": "neutral", "style": "existence", "note": "基本形。まずこれ。" },
+        { "en": "Student discount?", "ja": "学生割引は？", "register": "casual", "style": "oneword", "note": "学生証を見せながら。短くても通じる。" },
+        { "en": "Do you offer concessions?", "ja": "割引の設定はありますか。", "register": "neutral", "style": "vocab", "note": "concession は英国で「各種割引」。学生・高齢者などを含む。" },
+        { "en": "Could you tell me if students get a reduced rate?", "ja": "学生は割引料金になるか教えていただけますか。", "register": "polite", "style": "request", "note": "reduced rate は「割引料金」。丁寧で正確。" },
+        { "en": "I'd like to enquire whether any discounts apply to students.", "ja": "学生に適用される割引があるか伺いたいのですが。", "register": "formal", "style": "formal", "note": "apply to 〜 は「〜に適用される」。改まった聞き方。" },
+        { "en": "Anything cheaper for students?", "ja": "学生だと安くなりますか。", "register": "casual", "style": "casual", "note": "率直な口語。気さくな窓口で。" },
+        { "en": "What ID do I need to show?", "ja": "どの身分証を見せればよいですか。", "register": "neutral", "style": "basic", "note": "割引がある場合の次の確認。実用的。" },
+        { "en": "Does an international student card work?", "ja": "国際学生証は使えますか。", "register": "neutral", "style": "basic", "note": "海外の学生証が使えるか。旅行者には重要。" },
+        { "en": "I'm a postgraduate student visiting from Japan — would that qualify?", "ja": "日本から来ている大学院生ですが、対象になりますか。", "register": "polite", "style": "context", "note": "qualify は「対象になる」。自分の立場を明示。" },
+        { "en": "No problem if not — but is there a student rate?", "ja": "無ければ結構ですが、学生料金はありますか。", "register": "polite", "style": "considerate", "note": "無い場合に相手が気まずくならない。" }
+      ]
+    },
+    {
+      "id": "services-014", "category": "services", "difficulty": 2,
+      "place": "At a car rental desk", "listener": "an agent",
+      "want": "You want to ask about the insurance options.",
+      "situationJa": "保険の選択肢について聞きたい。",
+      "tags": ["asking", "insurance"],
+      "answers": [
+        { "en": "What insurance is included?", "ja": "どの保険が含まれますか。", "register": "neutral", "style": "basic", "note": "基本形。契約前の必須確認。" },
+        { "en": "Insurance options?", "ja": "保険の選択肢は？", "register": "casual", "style": "oneword", "note": "短くても通じる。カウンターで。" },
+        { "en": "Could you explain the insurance options?", "ja": "保険の選択肢をご説明いただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。複雑なので説明を求めたい。" },
+        { "en": "Is there an excess I'd have to pay?", "ja": "自己負担額はいくらですか。", "register": "neutral", "style": "existence", "note": "excess は英国で「免責額」。米国では deductible。最重要。" },
+        { "en": "I'd like to understand the extent of the cover provided.", "ja": "補償範囲について理解したいのですが。", "register": "formal", "style": "formal", "note": "cover は英国で「補償」。改まった確認。" },
+        { "en": "Do I need the extra insurance?", "ja": "追加の保険は必要ですか。", "register": "casual", "style": "casual", "note": "率直な質問。過剰な販売を避けられる。" },
+        { "en": "Does my credit card cover this?", "ja": "私のクレジットカードで補償されますか。", "register": "neutral", "style": "vocab", "note": "カード付帯保険があることも。二重加入を防げる。" },
+        { "en": "What happens if there's a scratch?", "ja": "傷が付いた場合どうなりますか。", "register": "neutral", "style": "basic", "note": "具体的な事例で聞く。理解が確実になる。" },
+        { "en": "I'll be driving on country roads, so I'd like decent cover.", "ja": "田舎道を走るので、しっかりした補償が欲しいです。", "register": "polite", "style": "context", "note": "用途を伝えると、適切な提案がもらえる。" },
+        { "en": "I'd rather over-insure than have a surprise — what do you recommend?", "ja": "後で驚くより手厚くしたいです。何がおすすめですか。", "register": "polite", "style": "considerate", "note": "方針を示して任せる。判断が楽になる。" }
+      ]
+    },
+    {
+      "id": "services-015", "category": "services", "difficulty": 2,
+      "place": "At a doctor's reception", "listener": "a receptionist",
+      "want": "You want to register as a new patient.",
+      "situationJa": "新規の患者として登録したい。",
+      "tags": ["registering"],
+      "answers": [
+        { "en": "I'd like to register as a new patient.", "ja": "新規患者として登録したいのですが。", "register": "neutral", "style": "basic", "note": "基本形。register as 〜 を覚えたい。" },
+        { "en": "Registering, please.", "ja": "登録をお願いします。", "register": "neutral", "style": "oneword", "note": "窓口で。短くても通じる。" },
+        { "en": "Could you tell me how to register here?", "ja": "こちらでの登録方法を教えていただけますか。", "register": "polite", "style": "request", "note": "手順から聞く。丁寧で確実。" },
+        { "en": "Are you accepting new patients?", "ja": "新規の患者を受け付けていますか。", "register": "neutral", "style": "existence", "note": "受付停止のこともある。先に確認したい。" },
+        { "en": "I would like to enquire about registering with this practice.", "ja": "こちらの医院への登録について伺いたいのですが。", "register": "formal", "style": "formal", "note": "practice は英国で「診療所」。改まった言い方。" },
+        { "en": "Can I sign up here?", "ja": "ここで登録できますか。", "register": "casual", "style": "casual", "note": "sign up は「登録する」。口語的で自然。" },
+        { "en": "What documents do I need to bring?", "ja": "どんな書類を持参すればよいですか。", "register": "neutral", "style": "vocab", "note": "住所証明などが要る。無駄足を防げる。" },
+        { "en": "Do I need proof of address?", "ja": "住所を証明するものは必要ですか。", "register": "neutral", "style": "basic", "note": "proof of address は「住所証明」。頻出の要件。" },
+        { "en": "I've just moved into the area from Japan — how do I register?", "ja": "日本からこの地域に越してきたばかりです。登録方法を教えてください。", "register": "polite", "style": "context", "note": "状況を伝えると、必要な手続きを案内してもらえる。" },
+        { "en": "I may not have everything today — could you tell me what's needed?", "ja": "本日は揃っていないかもしれません。必要なものを教えていただけますか。", "register": "polite", "style": "considerate", "note": "先に確認する姿勢。丁寧に案内してもらえる。" }
+      ]
+    },
+    {
+      "id": "services-016", "category": "services", "difficulty": 2,
+      "place": "At a laundrette", "listener": "a staff member",
+      "want": "You want to ask how the machines work.",
+      "situationJa": "洗濯機の使い方を聞きたい。",
+      "tags": ["asking", "instructions"],
+      "answers": [
+        { "en": "How do these work?", "ja": "これはどう使いますか。", "register": "neutral", "style": "basic", "note": "機械を指しながら。最も基本。" },
+        { "en": "Sorry, first time here.", "ja": "すみません、初めてなんです。", "register": "casual", "style": "oneword", "note": "これだけで教えてもらえる。頼み方として有効。" },
+        { "en": "Could you show me how to use the machine?", "ja": "洗濯機の使い方を教えていただけますか。", "register": "polite", "style": "request", "note": "show me は「実演してもらう」。確実に理解できる。" },
+        { "en": "Do I need coins or a card?", "ja": "硬貨とカード、どちらが必要ですか。", "register": "neutral", "style": "existence", "note": "支払方法の確認。最初につまずく点。" },
+        { "en": "Would you mind explaining the procedure?", "ja": "手順をご説明いただけますでしょうか。", "register": "formal", "style": "formal", "note": "procedure は「手順」。改まった依頼。" },
+        { "en": "How does this thing work?", "ja": "これどうやって使うの？", "register": "casual", "style": "casual", "note": "率直な口語。気さくな場で。" },
+        { "en": "Where do I put the detergent?", "ja": "洗剤はどこに入れますか。", "register": "neutral", "style": "vocab", "note": "detergent は「洗剤」。具体的な質問で確実。" },
+        { "en": "How long does a cycle take?", "ja": "1回の運転はどのくらいかかりますか。", "register": "neutral", "style": "basic", "note": "cycle は「洗濯の1回転」。待ち時間が分かる。" },
+        { "en": "I'm not sure which setting to use for wool.", "ja": "ウールにどの設定を使えばよいか分かりません。", "register": "polite", "style": "context", "note": "具体的に困っている点を言う。的確な助言がもらえる。" },
+        { "en": "Sorry to bother you — could you point me in the right direction?", "ja": "お邪魔してすみません、やり方を教えていただけますか。", "register": "polite", "style": "considerate", "note": "遠慮がちに頼む。忙しそうな店員にも。" }
+      ]
+    },
+    {
+      "id": "services-017", "category": "services", "difficulty": 2,
+      "place": "On the phone", "listener": "an internet provider",
+      "want": "You want to report that your internet is not working.",
+      "situationJa": "インターネットが繋がらないと伝えたい。",
+      "tags": ["reporting", "technical"],
+      "answers": [
+        { "en": "My internet isn't working.", "ja": "インターネットが繋がりません。", "register": "neutral", "style": "basic", "note": "基本形。まずこれ。" },
+        { "en": "No internet since this morning.", "ja": "今朝から繋がりません。", "register": "neutral", "style": "oneword", "note": "いつからかを添える。原因の切り分けが速い。" },
+        { "en": "Could you check if there's an outage in my area?", "ja": "この地域で障害が出ていないか確認していただけますか。", "register": "polite", "style": "request", "note": "outage は「障害・停止」。技術的で的確。" },
+        { "en": "Is there a known problem in this area?", "ja": "この地域で既知の問題はありますか。", "register": "neutral", "style": "existence", "note": "自分の設備の問題かを切り分けられる。" },
+        { "en": "I'd like to report a loss of connection at my address.", "ja": "当方の住所で接続が失われていることを報告いたします。", "register": "formal", "style": "formal", "note": "loss of connection は「接続断」。正式な報告。" },
+        { "en": "The wifi's down.", "ja": "Wi-Fi が落ちています。", "register": "casual", "style": "casual", "note": "be down は「停止している」。口語で自然。" },
+        { "en": "The router light is red.", "ja": "ルーターのランプが赤いです。", "register": "neutral", "style": "vocab", "note": "具体的な症状。診断が一気に進む。" },
+        { "en": "I've already restarted the router twice.", "ja": "すでにルーターを2回再起動しました。", "register": "neutral", "style": "basic", "note": "試したことを先に言う。同じ案内を繰り返されずに済む。" },
+        { "en": "It dropped out at nine and hasn't come back — I work from home.", "ja": "9時に切れてから戻りません。在宅勤務をしています。", "register": "polite", "style": "context", "note": "緊急性を伝える。優先対応してもらえることがある。" },
+        { "en": "I know it may not be your fault — but could you help me get it back?", "ja": "そちらの責任ではないかもしれませんが、復旧を手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "担当者を責めない。協力を得やすい。" }
+      ]
+    },
+    {
+      "id": "services-018", "category": "services", "difficulty": 2,
+      "place": "At a shop", "listener": "a staff member",
+      "want": "You want to ask if you can pay in installments.",
+      "situationJa": "分割払いができるか聞きたい。",
+      "tags": ["asking", "payment"],
+      "answers": [
+        { "en": "Can I pay in installments?", "ja": "分割払いはできますか。", "register": "neutral", "style": "basic", "note": "基本形。installment は「分割払いの1回分」。" },
+        { "en": "Payment plan?", "ja": "分割の仕組みはありますか。", "register": "casual", "style": "oneword", "note": "payment plan は「支払い計画」。短くて通じる。" },
+        { "en": "Do you offer finance options?", "ja": "分割払いの取り扱いはありますか。", "register": "neutral", "style": "existence", "note": "finance は英国で「分割払い」。店舗でよく見る語。" },
+        { "en": "Could you tell me about the payment options?", "ja": "お支払い方法について教えていただけますか。", "register": "polite", "style": "request", "note": "全体を聞ける。丁寧で自然。" },
+        { "en": "I'd like to enquire about spreading the cost over several months.", "ja": "数か月に分けてお支払いすることについて伺いたいのですが。", "register": "formal", "style": "formal", "note": "spread the cost は「費用を分散する」。改まった言い方。" },
+        { "en": "Can I pay it off bit by bit?", "ja": "少しずつ払っていけますか。", "register": "casual", "style": "casual", "note": "pay off は「払い終える」。口語的で分かりやすい。" },
+        { "en": "Is there interest on that?", "ja": "利息はかかりますか。", "register": "neutral", "style": "vocab", "note": "interest は「利息」。分割の可否より重要なことも。" },
+        { "en": "How many months can it be spread over?", "ja": "何か月まで分けられますか。", "register": "neutral", "style": "basic", "note": "期間の確認。月々の負担が計算できる。" },
+        { "en": "It's a bit more than I planned — is there a payment plan?", "ja": "予定より少し高くて。分割の仕組みはありますか。", "register": "polite", "style": "context", "note": "事情を言うと、値引きの提案が出ることも。" },
+        { "en": "If not, that's completely fine — I was just checking.", "ja": "無ければ全く問題ありません。確認しただけです。", "register": "polite", "style": "considerate", "note": "気まずくならない締め方。断られても自然。" }
+      ]
+    },
+    {
+      "id": "services-019", "category": "services", "difficulty": 2,
+      "place": "At a hotel or venue", "listener": "a staff member",
+      "want": "You want to ask if the venue is wheelchair accessible.",
+      "situationJa": "車椅子で利用できるか聞きたい。",
+      "tags": ["asking", "accessibility"],
+      "answers": [
+        { "en": "Is it wheelchair accessible?", "ja": "車椅子で利用できますか。", "register": "neutral", "style": "basic", "note": "基本形。wheelchair accessible は標準の表現。" },
+        { "en": "Step-free access?", "ja": "段差なしで入れますか。", "register": "casual", "style": "oneword", "note": "step-free access は「段差のない経路」。案内表示でも使われる。" },
+        { "en": "Could you tell me about accessibility here?", "ja": "こちらのバリアフリー対応について教えていただけますか。", "register": "polite", "style": "request", "note": "全体を一度に聞ける。丁寧。" },
+        { "en": "Is there a lift to the upper floor?", "ja": "上の階へのエレベーターはありますか。", "register": "neutral", "style": "existence", "note": "具体的に聞くと確実。lift は英国式。" },
+        { "en": "I'd like to enquire about accessible facilities for a wheelchair user.", "ja": "車椅子利用者向けの設備について伺いたいのですが。", "register": "formal", "style": "formal", "note": "accessible facilities は「バリアフリー設備」。正式な語。" },
+        { "en": "Can you get a wheelchair in?", "ja": "車椅子で入れますか。", "register": "casual", "style": "casual", "note": "率直な口語。小さな店で。" },
+        { "en": "Are there accessible toilets?", "ja": "多目的トイレはありますか。", "register": "neutral", "style": "vocab", "note": "accessible toilet は「多目的トイレ」。重要な確認。" },
+        { "en": "How wide are the doorways?", "ja": "出入り口の幅はどのくらいですか。", "register": "neutral", "style": "basic", "note": "具体的な数値が要る場合に。実用度が高い。" },
+        { "en": "My father uses a wheelchair — would he be able to get around here?", "ja": "父が車椅子を使っています。こちらで問題なく移動できますか。", "register": "polite", "style": "context", "note": "誰のためか伝えると、丁寧に確認してもらえる。" },
+        { "en": "I'd rather check in advance than turn up and find out.", "ja": "行ってから分かるより、事前に確認しておきたいのです。", "register": "polite", "style": "considerate", "note": "確認する理由を示す。誠実に対応してもらえる。" }
+      ]
+    },
+    {
+      "id": "services-020", "category": "services", "difficulty": 2,
+      "place": "At a service counter", "listener": "a staff member",
+      "want": "You want to thank someone for going out of their way to help.",
+      "situationJa": "特別に助けてくれたことへの感謝を伝えたい。",
+      "tags": ["thanking"],
+      "answers": [
+        { "en": "Thank you so much for your help.", "ja": "ご対応いただき本当にありがとうございました。", "register": "neutral", "style": "basic", "note": "最も基本。まずこれ。" },
+        { "en": "You've been a great help.", "ja": "本当に助かりました。", "register": "neutral", "style": "oneword", "note": "相手の貢献を認める。温かく伝わる。" },
+        { "en": "I really appreciate you going out of your way.", "ja": "わざわざご対応いただき、心から感謝します。", "register": "polite", "style": "basic", "note": "go out of one's way は「わざわざする」。最も的確な感謝。" },
+        { "en": "Could I speak to your manager to say how helpful you've been?", "ja": "上長の方に、ご対応がすばらしかったとお伝えしてもよいですか。", "register": "polite", "style": "request", "note": "最も価値のある感謝。本人の評価に繋がる。" },
+        { "en": "I'm most grateful for the trouble you've taken.", "ja": "ご尽力に深く感謝申し上げます。", "register": "formal", "style": "formal", "note": "the trouble you've taken は「かけた手間」。改まった感謝。" },
+        { "en": "You're a star, thanks!", "ja": "本当にありがとう、助かりました！", "register": "casual", "style": "casual", "note": "英国の口語。温かく親しみのある感謝。" },
+        { "en": "Is there somewhere I can leave feedback?", "ja": "感想を書ける場所はありますか。", "register": "neutral", "style": "existence", "note": "組織に伝わる形での感謝。実際に役に立つ。" },
+        { "en": "You didn't have to do that — thank you.", "ja": "そこまでしていただかなくてもよかったのに。ありがとうございます。", "register": "polite", "style": "vocab", "note": "特別な対応だったと認める。感謝が深く伝わる。" },
+        { "en": "You stayed past closing to sort this out — I really appreciate it.", "ja": "閉店後まで対応してくださいました。本当に感謝しています。", "register": "polite", "style": "context", "note": "具体的に語る。最も心に残る感謝。" },
+        { "en": "I know it wasn't your job — thank you for helping anyway.", "ja": "ご担当外だったと思います。それでも助けていただき感謝します。", "register": "polite", "style": "considerate", "note": "職務外の親切を認める。相手が最も嬉しい言葉。" }
+      ]
+    }
+  ]
+}

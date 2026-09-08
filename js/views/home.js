@@ -40,7 +40,7 @@ EIK.Views.Home = function (ctx) {
         '</a>' +
 
         '<div class="statrow">' +
-          '<div class="stat"><div class="stat__v accent">' + s.learned + '</div><div class="stat__l">学習した状況</div></div>' +
+          '<div class="stat"><div class="stat__v accent">' + s.learned + '</div><div class="stat__l">学習した問題</div></div>' +
           '<div class="stat"><div class="stat__v">' + s.mastered + '</div><div class="stat__l">習得ずみ</div></div>' +
           '<div class="stat"><div class="stat__v">' + EIK.Store.streak() + '</div><div class="stat__l">連続日数</div></div>' +
         '</div>' +
@@ -49,7 +49,7 @@ EIK.Views.Home = function (ctx) {
           '<div class="section-title">学習の進みぐあい</div>' +
           '<div class="card">' +
             '<div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:8px">' +
-              '<span class="muted">全 ' + s.total + ' 状況</span>' +
+              '<span class="muted">全 ' + s.total + ' 問</span>' +
               '<span style="font-weight:700;color:var(--accent)">' +
                 Math.round(s.learned / Math.max(1, s.total) * 100) + '%</span>' +
             '</div>' +

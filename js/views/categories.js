@@ -16,7 +16,7 @@ EIK.Views.Categories = function (ctx) {
         '<span class="catcard__ic">' + iconFor(c.icon) + '</span>' +
         '<span class="catcard__body">' +
           '<span class="catcard__name">' + EIK.escapeHtml(c.nameJa) + '</span>' +
-          '<span class="catcard__meta">' + s.learned + ' / ' + s.total + ' 状況' +
+          '<span class="catcard__meta">' + s.learned + ' / ' + s.total + ' 問' +
             (s.due ? '　・　復習 ' + s.due + '件' : '') + '</span>' +
         '</span>' +
         '<span class="catcard__ring">' + EIK.ringSvg(pct, 38, 3) +
@@ -64,7 +64,7 @@ EIK.Views.Category = function (ctx) {
         '<p class="small muted" style="margin-top:6px">' + EIK.escapeHtml(c.descJa || '') + '</p>' +
         '<div style="margin-top:14px"><div class="pbar"><div class="pbar__fill" style="width:' +
           (s.total ? s.learned / s.total * 100 : 0) + '%"></div></div></div>' +
-        '<p class="small muted" style="margin-top:8px">' + s.learned + ' / ' + s.total + ' 状況を学習ずみ</p>' +
+        '<p class="small muted" style="margin-top:8px">' + s.learned + ' / ' + s.total + ' 問を学習ずみ</p>' +
       '</div>' +
       '<a class="btn btn-primary btn-lg btn-block" href="#/practice/category/' + encodeURIComponent(id) + '">' +
         'このカテゴリを練習する</a>' +

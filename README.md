@@ -49,6 +49,9 @@ python3 .github/tools/precheck.py
 # ブラウザで一周させる
 NODE_PATH="$(npm root -g)" node .github/tools/browser_smoke.js
 
+# オフラインで学習できることを確認する
+NODE_PATH="$(npm root -g)" node .github/tools/offline_test.js
+
 # CSS / JS を変更したら必ずキャッシュ版数を上げる
 sh .github/tools/bump-version.sh
 ```

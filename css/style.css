@@ -460,28 +460,39 @@ a.card:active, button.card:active { transform: translateY(0); }
    カテゴリ / リスト
    ========================================================================== */
 .catlist { display: grid; gap: 10px; }
-.catcard { display: flex; align-items: center; gap: 14px; padding: 15px 16px; }
+/* a.card の display:block は詳細度 (0,1,1) で .catcard の (0,1,0) に勝つ。
+   要素セレクタを付けて詳細度を揃えないと flex にならず、
+   子の span が inline のままになって width/height が無視される。
+   実際これで進捗リングの SVG が巨大化してカードを突き破った。 */
+a.catcard, button.catcard, .catcard {
+  display: flex; align-items: center; gap: 14px; padding: 15px 16px;
+}
 .catcard__ic {
   width: 44px; height: 44px; border-radius: 12px; flex: 0 0 auto;
+  /* .catcard の子は flex アイテムだが、念のため寸法が効く表示種別にする */
   display: flex; align-items: center; justify-content: center;
   background: var(--accent-soft); color: var(--accent);
   border: 1px solid var(--accent-border);
 }
 .catcard__ic svg { width: 22px; height: 22px; }
 .catcard__body { flex: 1 1 auto; min-width: 0; }
-.catcard__name { font-weight: 700; font-size: .95rem; }
-.catcard__meta { font-size: .74rem; color: var(--ink-4); margin-top: 2px; }
-.catcard__ring { flex: 0 0 auto; width: 38px; height: 38px; position: relative; }
+/* 中身は <span> で組んでいるので、明示的にブロックにしないと
+   名前と説明が同じ行に並んで重なる（実測で踏んだ）。 */
+.catcard__name { display: block; font-weight: 700; font-size: .95rem; }
+.catcard__meta { display: block; font-size: .74rem; color: var(--ink-4); margin-top: 2px; }
+.catcard__ring { display: block; flex: 0 0 auto; width: 38px; height: 38px; position: relative; }
 .catcard__pct { position: absolute; inset: 0; display: flex; align-items: center;
                 justify-content: center; font-size: .62rem; font-weight: 700; color: var(--ink-3); }
 
 .sitlist { display: grid; gap: 8px; }
-.sitrow { display: flex; align-items: center; gap: 12px; padding: 13px 15px; }
+a.sitrow, button.sitrow, .sitrow {
+  display: flex; align-items: center; gap: 12px; padding: 13px 15px;
+}
 .sitrow__body { flex: 1 1 auto; min-width: 0; }
-.sitrow__want { font-size: .9rem; font-weight: 500; line-height: 1.5; }
-.sitrow__place { font-size: .72rem; color: var(--ink-4); margin-top: 3px; }
+.sitrow__want { display: block; font-size: .9rem; font-weight: 500; line-height: 1.5; }
+.sitrow__place { display: block; font-size: .72rem; color: var(--ink-4); margin-top: 3px; }
 .sitrow__box {
-  flex: 0 0 auto; width: 10px; height: 10px; border-radius: 3px;
+  display: block; flex: 0 0 auto; width: 10px; height: 10px; border-radius: 3px;
   background: var(--line); border: 1px solid var(--line);
 }
 .sitrow__box[data-lv="0"] { background: transparent; }

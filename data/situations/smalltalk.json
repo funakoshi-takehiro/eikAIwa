@@ -1,0 +1,575 @@
+{
+  "category": "smalltalk",
+  "situations": [
+    {
+      "id": "smalltalk-001", "category": "smalltalk", "difficulty": 1,
+      "place": "At a party", "listener": "someone you have just met",
+      "want": "You want to start a conversation with someone new.",
+      "situationJa": "初対面の人に話しかけたい。",
+      "tags": ["opening"],
+      "answers": [
+        { "en": "Hi, I'm Ken.", "ja": "こんにちは、ケンです。", "register": "casual", "style": "oneword", "note": "名乗るのが最も簡単な始め方。世界共通。" },
+        { "en": "Hi, I don't think we've met. I'm Ken.", "ja": "こんにちは、初めてですよね。ケンです。", "register": "neutral", "style": "basic", "note": "自然な切り出し。相手も名乗りやすい。" },
+        { "en": "How do you know the host?", "ja": "主催の方とはどういうご関係ですか。", "register": "neutral", "style": "basic", "note": "パーティでの定番。共通の話題が見つかる。" },
+        { "en": "Could I join you?", "ja": "ご一緒してもよいですか。", "register": "polite", "style": "request", "note": "輪に入るときの丁寧な一言。" },
+        { "en": "Good evening. I don't believe we've been introduced — I'm Ken.", "ja": "こんばんは。まだご紹介いただいていませんね。ケンと申します。", "register": "formal", "style": "formal", "note": "改まった場で。上品な切り出し。" },
+        { "en": "Hey, is this seat free?", "ja": "ここ、空いていますか。", "register": "casual", "style": "casual", "note": "自然に隣に座って会話を始められる。" },
+        { "en": "Is this your first time at one of these?", "ja": "こういう集まりは初めてですか。", "register": "neutral", "style": "existence", "note": "相手が話しやすい質問。会話が続く。" },
+        { "en": "That's a great jacket — where's it from?", "ja": "素敵なジャケットですね。どちらのものですか。", "register": "casual", "style": "vocab", "note": "褒めから入る。最も温かい始め方。" },
+        { "en": "I don't know many people here — mind if I say hello?", "ja": "あまり知り合いがいなくて。ご挨拶してもよいですか。", "register": "polite", "style": "context", "note": "正直に言うと、たいてい歓迎される。" },
+        { "en": "I hope I'm not interrupting — I just wanted to say hello.", "ja": "お邪魔でなければよいのですが、ご挨拶したくて。", "register": "polite", "style": "considerate", "note": "会話中の相手に入るときの前置き。" }
+      ]
+    },
+    {
+      "id": "smalltalk-002", "category": "smalltalk", "difficulty": 1,
+      "place": "In an elevator", "listener": "a neighbor",
+      "want": "You want to make a comment about the weather.",
+      "situationJa": "天気について何か言いたい。",
+      "tags": ["weather"],
+      "answers": [
+        { "en": "Nice day, isn't it?", "ja": "いい天気ですね。", "register": "neutral", "style": "oneword", "note": "英語圏の最も基本的な世間話。まずこれ。" },
+        { "en": "Lovely weather today.", "ja": "今日はいい天気ですね。", "register": "neutral", "style": "basic", "note": "lovely は英国でよく使う。上品な響き。" },
+        { "en": "It's freezing out there.", "ja": "外は凍えるほど寒いですね。", "register": "casual", "style": "casual", "note": "freezing は「凍えるほど」。共感を呼ぶ。" },
+        { "en": "Have you been enjoying the sunshine?", "ja": "この晴天を楽しんでいらっしゃいますか。", "register": "polite", "style": "request", "note": "相手に話させる形。会話が続く。" },
+        { "en": "Rather changeable weather we're having, isn't it?", "ja": "変わりやすい天気が続いておりますね。", "register": "formal", "style": "formal", "note": "changeable は「変わりやすい」。英国的で上品。" },
+        { "en": "Some weather we're having!", "ja": "すごい天気ですね！", "register": "casual", "style": "vocab", "note": "良くも悪くも使える便利な慣用句。" },
+        { "en": "Is it supposed to rain later?", "ja": "後で雨が降る予報ですか。", "register": "neutral", "style": "existence", "note": "質問にすると相手が答えやすい。会話が伸びる。" },
+        { "en": "I hear it's going to get colder this week.", "ja": "今週は冷え込むそうですね。", "register": "neutral", "style": "basic", "note": "情報を提供する形。相手が反応しやすい。" },
+        { "en": "I moved here from Japan, so I'm still getting used to this weather.", "ja": "日本から越してきたので、この天気にまだ慣れなくて。", "register": "polite", "style": "context", "note": "自分の話を少し出す。関係が一歩進む。" },
+        { "en": "Not that I'm complaining — but it's been quite grey lately.", "ja": "文句というわけではありませんが、最近どんよりしていますね。", "register": "polite", "style": "considerate", "note": "Not that I'm complaining は「不満ではないが」。柔らかい。" }
+      ]
+    },
+    {
+      "id": "smalltalk-003", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "someone you just met",
+      "want": "You want to ask what they do for work.",
+      "situationJa": "相手の仕事を聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "What do you do?", "ja": "お仕事は何をされていますか。", "register": "neutral", "style": "oneword", "note": "最も一般的。これだけで仕事の話になる。" },
+        { "en": "What do you do for work?", "ja": "どんなお仕事をされていますか。", "register": "neutral", "style": "basic", "note": "for work を付けると誤解がない。" },
+        { "en": "What line of work are you in?", "ja": "どのような業界にいらっしゃいますか。", "register": "neutral", "style": "vocab", "note": "line of work は「職種・業界」。少し洒落た言い方。" },
+        { "en": "Could I ask what you do?", "ja": "お仕事を伺ってもよいですか。", "register": "polite", "style": "request", "note": "丁寧な形。初対面でも失礼にならない。" },
+        { "en": "May I ask what field you work in?", "ja": "どのような分野でお仕事をされているか伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "field は「分野」。改まった場で自然。" },
+        { "en": "So what's your thing?", "ja": "何をされている方ですか。", "register": "casual", "style": "casual", "note": "非常にくだけた口語。若い人同士で。" },
+        { "en": "Is that something you've always done?", "ja": "それはずっと続けてこられたことですか。", "register": "neutral", "style": "existence", "note": "答えを深掘りする質問。会話が続く。" },
+        { "en": "What's a typical day like for you?", "ja": "普段の一日はどんな感じですか。", "register": "neutral", "style": "basic", "note": "職名より内容を聞く。話が広がりやすい。" },
+        { "en": "You mentioned you travel a lot — is that for work?", "ja": "よく旅行されるとおっしゃっていましたが、お仕事でですか。", "register": "polite", "style": "context", "note": "相手の話から自然につなげる。上手な聞き方。" },
+        { "en": "Feel free not to talk shop — but what do you do?", "ja": "仕事の話でなくても構いませんが、何をされていますか。", "register": "polite", "style": "considerate", "note": "talk shop は「仕事の話をする」。相手に選ばせる配慮。" }
+      ]
+    },
+    {
+      "id": "smalltalk-004", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "an acquaintance",
+      "want": "You want to politely end the conversation.",
+      "situationJa": "会話を丁寧に切り上げたい。",
+      "tags": ["closing", "polite"],
+      "answers": [
+        { "en": "It was nice talking to you.", "ja": "お話しできてよかったです。", "register": "neutral", "style": "basic", "note": "最も基本。これで自然に終われる。" },
+        { "en": "I should probably mingle a bit.", "ja": "少し他の方ともお話ししてきますね。", "register": "neutral", "style": "vocab", "note": "mingle は「人と交わる」。パーティでの定番の切り上げ方。" },
+        { "en": "Anyway, I'll let you get on.", "ja": "では、お引き止めしませんね。", "register": "polite", "style": "oneword", "note": "let you get on は「先へ進ませる」。英国的で上品。" },
+        { "en": "Could I get your contact details before I go?", "ja": "失礼する前に連絡先を伺ってもよいですか。", "register": "polite", "style": "request", "note": "関係を続けたいときに。終わり方が前向きになる。" },
+        { "en": "It's been a genuine pleasure — I hope we speak again.", "ja": "本当に楽しい時間でした。またお話しできれば幸いです。", "register": "formal", "style": "formal", "note": "改まった別れ。印象に残る。" },
+        { "en": "Right, I'd better make a move.", "ja": "そろそろ行きますね。", "register": "casual", "style": "casual", "note": "make a move は「動き出す」。英国の口語。" },
+        { "en": "Is there anyone here you think I should meet?", "ja": "この中で会っておくとよい方はいますか。", "register": "neutral", "style": "existence", "note": "紹介につなげつつ会話を移せる。うまい切り上げ方。" },
+        { "en": "I'll leave you to it — enjoy the rest of the evening.", "ja": "では失礼します。よい夜をお過ごしください。", "register": "polite", "style": "basic", "note": "leave you to it は「お任せする」。自然な締め方。" },
+        { "en": "I've got an early start tomorrow, so I'll head off — lovely to meet you.", "ja": "明日が早いので失礼します。お会いできてよかったです。", "register": "polite", "style": "context", "note": "理由を添えると、避けているように見えない。" },
+        { "en": "I don't want to monopolize you — thanks for the chat.", "ja": "お一人を独占してはいけませんね。お話しありがとうございました。", "register": "polite", "style": "considerate", "note": "monopolize は「独占する」。相手を立てる上手な締め方。" }
+      ]
+    },
+    {
+      "id": "smalltalk-005", "category": "smalltalk", "difficulty": 2,
+      "place": "At the office kitchen", "listener": "a colleague",
+      "want": "You want to compliment their new haircut.",
+      "situationJa": "新しい髪型を褒めたい。",
+      "tags": ["complimenting"],
+      "answers": [
+        { "en": "I like your haircut!", "ja": "その髪型、いいですね。", "register": "casual", "style": "oneword", "note": "素直で温かい。日常的に使いたい。" },
+        { "en": "Your hair looks great.", "ja": "髪型が素敵ですね。", "register": "neutral", "style": "basic", "note": "最も自然な褒め方。誰にでも使える。" },
+        { "en": "Did you get your hair cut? It suits you.", "ja": "髪を切られましたか。お似合いです。", "register": "neutral", "style": "basic", "note": "suit は「似合う」。褒め言葉として頻出。" },
+        { "en": "Could I ask where you had it done?", "ja": "どちらで切られたか伺ってもよいですか。", "register": "polite", "style": "request", "note": "本気で気に入っていると伝わる。会話も続く。" },
+        { "en": "If I may say so, your new hairstyle is very becoming.", "ja": "失礼ながら、新しい髪型がとてもお似合いです。", "register": "formal", "style": "formal", "note": "becoming は「よく似合う」。上品だがやや古風。" },
+        { "en": "Nice hair!", "ja": "いい髪型！", "register": "casual", "style": "casual", "note": "最短。親しい同僚に。" },
+        { "en": "Is that a new style?", "ja": "新しい髪型ですか。", "register": "neutral", "style": "existence", "note": "確認から入る。褒めが自然に続けられる。" },
+        { "en": "That length really works on you.", "ja": "その長さ、とてもお似合いです。", "register": "neutral", "style": "vocab", "note": "work on someone は「似合う」の口語。具体的で伝わる。" },
+        { "en": "I've been thinking of getting mine cut — yours looks great.", "ja": "私も切ろうかと思っていました。あなたのはとても素敵です。", "register": "polite", "style": "context", "note": "自分の話を絡める。会話が広がる。" },
+        { "en": "I hope it's not weird to say — but your hair looks really nice.", "ja": "変なことを言うようですが、髪型がとても素敵です。", "register": "polite", "style": "considerate", "note": "距離感が不安なときの前置き。丁寧に伝わる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-006", "category": "smalltalk", "difficulty": 2,
+      "place": "At a cafe", "listener": "a friend",
+      "want": "You want to invite a friend to see a film.",
+      "situationJa": "友人を映画に誘いたい。",
+      "tags": ["inviting"],
+      "answers": [
+        { "en": "Want to see a film?", "ja": "映画でも見ませんか。", "register": "casual", "style": "oneword", "note": "最も自然な誘い方。短くて気軽。" },
+        { "en": "Do you fancy seeing a film this weekend?", "ja": "今週末、映画でもいかがですか。", "register": "casual", "style": "casual", "note": "fancy は英国で「〜したい気がする」。自然な誘い。" },
+        { "en": "Would you like to go see a movie?", "ja": "映画を見に行きませんか。", "register": "neutral", "style": "basic", "note": "丁寧すぎず砕けすぎない。誰にでも使える。" },
+        { "en": "Are you free on Saturday? There's a film I'd like to see.", "ja": "土曜は空いていますか。見たい映画があるんです。", "register": "neutral", "style": "basic", "note": "都合を先に聞く。断りやすくて親切。" },
+        { "en": "I wondered whether you might like to see a film together.", "ja": "一緒に映画でもいかがかと思いまして。", "register": "formal", "style": "formal", "note": "控えめで丁寧。まだ距離がある相手に。" },
+        { "en": "Fancy the cinema?", "ja": "映画どう？", "register": "casual", "style": "vocab", "note": "cinema は英国で「映画館」。最短の誘い方。" },
+        { "en": "Is there anything you've been wanting to watch?", "ja": "見たいものはありますか。", "register": "neutral", "style": "existence", "note": "相手に選ばせる。誘いが押しつけにならない。" },
+        { "en": "There's a new film on at the Odeon — shall we go?", "ja": "オデオンで新作をやっています。行きませんか。", "register": "neutral", "style": "request", "note": "具体的な案を出す。話が進みやすい。" },
+        { "en": "You said you liked that director — his new one is out.", "ja": "あの監督がお好きと言っていましたね。新作が出ています。", "register": "polite", "style": "context", "note": "相手の好みを覚えている。最も嬉しい誘い方。" },
+        { "en": "No worries if you're busy — but fancy a film sometime?", "ja": "お忙しければ結構ですが、いつか映画でもいかがですか。", "register": "polite", "style": "considerate", "note": "断りやすくする。関係を壊さない誘い方。" }
+      ]
+    },
+    {
+      "id": "smalltalk-007", "category": "smalltalk", "difficulty": 2,
+      "place": "At the office", "listener": "a colleague",
+      "want": "You want to decline an invitation politely.",
+      "situationJa": "誘いを丁寧に断りたい。",
+      "tags": ["declining", "polite"],
+      "answers": [
+        { "en": "I'd love to, but I can't.", "ja": "行きたいのですが、都合がつきません。", "register": "neutral", "style": "basic", "note": "意欲を示してから断る。最も角が立たない。" },
+        { "en": "Sorry, I can't make it.", "ja": "すみません、行けません。", "register": "neutral", "style": "oneword", "note": "make it は「都合をつける」。簡潔で明確。" },
+        { "en": "Thanks for asking, but I'm busy that day.", "ja": "お誘いありがとうございます。ただその日は予定があります。", "register": "polite", "style": "basic", "note": "感謝を先に。断られた側も気分を害さない。" },
+        { "en": "Could I take a rain check?", "ja": "またの機会にお願いできますか。", "register": "polite", "style": "request", "note": "rain check は「延期」の慣用句。次につながる断り方。" },
+        { "en": "I'm afraid I have a prior commitment that evening.", "ja": "恐れ入りますが、その晩は先約がございます。", "register": "formal", "style": "formal", "note": "prior commitment は「先約」。改まった断り方。" },
+        { "en": "Ah, I can't this time — next time?", "ja": "ああ、今回は無理です。次回は？", "register": "casual", "style": "casual", "note": "軽く断りつつ次に繋げる。気さくな関係に。" },
+        { "en": "Is there another date that might work?", "ja": "他の日程で合うものはありますか。", "register": "neutral", "style": "existence", "note": "断りではなく調整に変える。前向き。" },
+        { "en": "I've got family visiting that weekend.", "ja": "その週末は家族が来るんです。", "register": "neutral", "style": "vocab", "note": "具体的な理由。嘘っぽくならない。" },
+        { "en": "I really wanted to come, but I've already promised my daughter.", "ja": "本当に行きたかったのですが、娘と約束してしまっていて。", "register": "polite", "style": "context", "note": "断らざるを得ない事情。相手も納得する。" },
+        { "en": "Please do ask again — I'm just unlucky with the timing.", "ja": "またぜひお誘いください。今回はたまたま都合が悪いだけなので。", "register": "polite", "style": "considerate", "note": "次を促す一言。関係が続く最良の断り方。" }
+      ]
+    },
+    {
+      "id": "smalltalk-008", "category": "smalltalk", "difficulty": 1,
+      "place": "At a gathering", "listener": "someone from another country",
+      "want": "You want to ask where they are from.",
+      "situationJa": "出身地を聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "Where are you from?", "ja": "ご出身はどちらですか。", "register": "neutral", "style": "oneword", "note": "最も基本。ただし文脈によっては失礼になることも。" },
+        { "en": "Whereabouts are you from?", "ja": "どちらのご出身ですか。", "register": "neutral", "style": "vocab", "note": "whereabouts は英国でよく使う。やや柔らかい。" },
+        { "en": "Have you always lived here?", "ja": "ずっとこちらにお住まいですか。", "register": "neutral", "style": "basic", "note": "出身を直接聞かない。より配慮のある形。" },
+        { "en": "Could I ask where you grew up?", "ja": "どちらで育たれたか伺ってもよいですか。", "register": "polite", "style": "request", "note": "grow up は「育つ」。出身国より自然なことが多い。" },
+        { "en": "May I ask which part of the country you're from?", "ja": "国内のどちらのご出身か伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "国を前提にせず地域を聞く。丁寧で安全。" },
+        { "en": "Where's home for you?", "ja": "ご自身にとっての故郷はどちらですか。", "register": "casual", "style": "casual", "note": "温かい聞き方。答え方を相手に委ねられる。" },
+        { "en": "Is there a place you consider home?", "ja": "故郷と思える場所はありますか。", "register": "neutral", "style": "existence", "note": "複数の国で育った人にも答えやすい。" },
+        { "en": "How long have you been in London?", "ja": "ロンドンにはどのくらいいらっしゃいますか。", "register": "neutral", "style": "basic", "note": "現在地から入る。自然に出身の話になる。" },
+        { "en": "I moved here from Japan two years ago — how about you?", "ja": "私は2年前に日本から来ました。あなたは？", "register": "polite", "style": "context", "note": "自分から明かす。最も自然で対等な聞き方。" },
+        { "en": "Feel free to say if it's a long story — where are you from?", "ja": "話が長くなるようでしたら結構ですが、ご出身はどちらですか。", "register": "polite", "style": "considerate", "note": "複雑な背景がある人への配慮。" }
+      ]
+    },
+    {
+      "id": "smalltalk-009", "category": "smalltalk", "difficulty": 2,
+      "place": "At a dinner", "listener": "a friend of a friend",
+      "want": "You want to ask about their hobbies.",
+      "situationJa": "趣味について聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "What do you do in your free time?", "ja": "お休みの日は何をされていますか。", "register": "neutral", "style": "basic", "note": "hobby より自然。英語では free time で聞くことが多い。" },
+        { "en": "Any hobbies?", "ja": "趣味はありますか。", "register": "casual", "style": "oneword", "note": "短くて気軽。ただし少し直接的。" },
+        { "en": "What are you into?", "ja": "何に興味がありますか。", "register": "casual", "style": "casual", "note": "be into 〜 は「〜に熱中している」。自然な口語。" },
+        { "en": "Could I ask how you like to spend your weekends?", "ja": "週末はどのように過ごされるか伺ってもよいですか。", "register": "polite", "style": "request", "note": "丁寧で話が広がりやすい。" },
+        { "en": "May I ask what interests you outside of work?", "ja": "お仕事以外ではどのようなことに関心がおありですか。", "register": "formal", "style": "formal", "note": "改まった場で。上品な聞き方。" },
+        { "en": "Do you get much time for yourself?", "ja": "ご自身の時間は取れていますか。", "register": "neutral", "style": "existence", "note": "忙しい相手に。共感から入れる。" },
+        { "en": "Have you picked up anything new recently?", "ja": "最近何か新しく始めたことはありますか。", "register": "neutral", "style": "vocab", "note": "pick up は「始める」。会話が具体的になる。" },
+        { "en": "Are you more of an indoors or outdoors person?", "ja": "室内派ですか、それとも外派ですか。", "register": "neutral", "style": "basic", "note": "選択肢を示す。答えやすくて会話が続く。" },
+        { "en": "You mentioned running — do you do that often?", "ja": "走っているとおっしゃっていましたね。よくされるのですか。", "register": "polite", "style": "context", "note": "相手の言葉を拾う。最も上手な深掘り。" },
+        { "en": "I'm always looking for new things to try — what do you enjoy?", "ja": "新しいことを試したいと思っていて。何がお好きですか。", "register": "polite", "style": "considerate", "note": "自分の関心を先に出す。相手が話しやすくなる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-010", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "an acquaintance",
+      "want": "You want to say you did not catch their name.",
+      "situationJa": "相手の名前を聞き取れなかったと伝えたい。",
+      "tags": ["clarifying"],
+      "answers": [
+        { "en": "Sorry, what was your name again?", "ja": "すみません、お名前をもう一度お願いできますか。", "register": "neutral", "style": "basic", "note": "again を付けると自然。恥ずかしくない聞き方。" },
+        { "en": "Sorry, I didn't catch your name.", "ja": "すみません、お名前を聞き取れませんでした。", "register": "neutral", "style": "oneword", "note": "catch は「聞き取る」。最も一般的。" },
+        { "en": "Could you say your name once more?", "ja": "お名前をもう一度おっしゃっていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。改まった場でも使える。" },
+        { "en": "How do you pronounce it?", "ja": "どのように発音されますか。", "register": "neutral", "style": "basic", "note": "正しく呼びたい姿勢が伝わる。好印象。" },
+        { "en": "I do apologize — would you mind repeating your name?", "ja": "申し訳ありません、お名前をもう一度お願いできますでしょうか。", "register": "formal", "style": "formal", "note": "改まった場で。丁寧さが際立つ。" },
+        { "en": "Sorry, name again?", "ja": "ごめん、名前もう一回？", "register": "casual", "style": "casual", "note": "非常にくだけた。親しい場で。" },
+        { "en": "Is there a shorter version people use?", "ja": "皆さんが使う短い呼び方はありますか。", "register": "neutral", "style": "existence", "note": "長い名前のときに。相手も答えやすい。" },
+        { "en": "Could you spell it for me?", "ja": "綴りを教えていただけますか。", "register": "polite", "style": "vocab", "note": "聞き取れないときの確実な方法。" },
+        { "en": "I'm terrible with names — could you tell me yours again?", "ja": "名前を覚えるのが苦手で。もう一度お願いできますか。", "register": "polite", "style": "context", "note": "自分の欠点として言う。相手が気を悪くしない。" },
+        { "en": "I want to get it right — could you say it once more?", "ja": "正しく覚えたいので、もう一度お願いできますか。", "register": "polite", "style": "considerate", "note": "敬意が伝わる。何度聞いても失礼にならない。" }
+      ]
+    },
+    {
+      "id": "smalltalk-011", "category": "smalltalk", "difficulty": 1,
+      "place": "At a neighbor's door", "listener": "your neighbor",
+      "want": "You want to introduce yourself as a new neighbor.",
+      "situationJa": "新しく越してきたと近所に挨拶したい。",
+      "tags": ["greeting"],
+      "answers": [
+        { "en": "Hi, I've just moved in next door.", "ja": "こんにちは、隣に越してきました。", "register": "neutral", "style": "basic", "note": "move in は「入居する」。最も自然な挨拶。" },
+        { "en": "Hi, I'm your new neighbor.", "ja": "こんにちは、新しい隣人です。", "register": "neutral", "style": "oneword", "note": "簡潔で分かりやすい。まずこれ。" },
+        { "en": "Sorry to bother you — I just wanted to say hello.", "ja": "お邪魔してすみません、ご挨拶に伺いました。", "register": "polite", "style": "request", "note": "突然の訪問への配慮。丁寧な切り出し。" },
+        { "en": "Good afternoon. I've recently moved into number 12.", "ja": "こんにちは。最近12番に越してまいりました。", "register": "formal", "style": "formal", "note": "部屋番号を添える。改まった挨拶。" },
+        { "en": "Hey, we just moved in — thought I'd say hi.", "ja": "こんにちは、越してきたところです。ご挨拶をと思って。", "register": "casual", "style": "casual", "note": "気さくで温かい。多くの国でこれが自然。" },
+        { "en": "Is there anything I should know about the building?", "ja": "建物について知っておくべきことはありますか。", "register": "neutral", "style": "existence", "note": "実用的な質問。会話が続き関係が始まる。" },
+        { "en": "When is bin day here?", "ja": "こちらのごみの日はいつですか。", "register": "neutral", "style": "vocab", "note": "bin day は英国で「ごみ収集日」。近所付き合いの定番。" },
+        { "en": "Do let me know if we're ever too noisy.", "ja": "うるさいときは遠慮なくおっしゃってください。", "register": "polite", "style": "basic", "note": "先に伝えておくと、後の摩擦を防げる。" },
+        { "en": "We moved in on Saturday — sorry about all the boxes in the hall.", "ja": "土曜に越してきました。廊下の段ボールが多くてすみません。", "register": "polite", "style": "context", "note": "迷惑を先に詫びる。良い第一印象になる。" },
+        { "en": "I won't keep you — just wanted to introduce myself.", "ja": "お引き止めしません。ご挨拶だけと思いまして。", "register": "polite", "style": "considerate", "note": "相手の時間を奪わない配慮。感じがよい。" }
+      ]
+    },
+    {
+      "id": "smalltalk-012", "category": "smalltalk", "difficulty": 2,
+      "place": "At a party", "listener": "a group in conversation",
+      "want": "You want to join a group conversation.",
+      "situationJa": "話している輪に加わりたい。",
+      "tags": ["joining"],
+      "answers": [
+        { "en": "Mind if I join you?", "ja": "ご一緒してもよいですか。", "register": "neutral", "style": "oneword", "note": "最も自然な入り方。短くて丁寧。" },
+        { "en": "Is it OK if I join in?", "ja": "加わってもよろしいですか。", "register": "neutral", "style": "basic", "note": "join in は「加わる」。丁寧で自然。" },
+        { "en": "Could I listen in?", "ja": "聞かせていただいてもよいですか。", "register": "polite", "style": "request", "note": "listen in は「そばで聞く」。控えめで入りやすい。" },
+        { "en": "Sorry to interrupt — what are you all talking about?", "ja": "お邪魔してすみません、何のお話ですか。", "register": "polite", "style": "basic", "note": "話題を尋ねる形。自然に会話に入れる。" },
+        { "en": "I hope you don't mind my joining you.", "ja": "ご一緒させていただいてもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "改まった場で。丁寧さが際立つ。" },
+        { "en": "What did I miss?", "ja": "何の話でしたか。", "register": "casual", "style": "casual", "note": "軽く入れる。知り合いがいる輪で自然。" },
+        { "en": "Is this a private conversation?", "ja": "内輪のお話でしょうか。", "register": "neutral", "style": "existence", "note": "冗談めかして入る言い方。場を和ませられる。" },
+        { "en": "That sounds interesting — could I hear more?", "ja": "面白そうですね。もう少し伺えますか。", "register": "polite", "style": "vocab", "note": "話の内容に反応して入る。最も自然。" },
+        { "en": "I overheard you mention Kyoto — I lived there for years.", "ja": "京都の話が聞こえまして。私は何年か住んでいました。", "register": "polite", "style": "context", "note": "共通点を持ち込む。歓迎される入り方。" },
+        { "en": "Feel free to carry on — I'm happy just to listen.", "ja": "どうぞ続けてください。聞いているだけで十分です。", "register": "polite", "style": "considerate", "note": "会話を邪魔しない姿勢。輪に馴染みやすい。" }
+      ]
+    },
+    {
+      "id": "smalltalk-013", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "someone you met before",
+      "want": "You want to say you remember meeting them.",
+      "situationJa": "以前会ったことを覚えていると伝えたい。",
+      "tags": ["greeting"],
+      "answers": [
+        { "en": "We've met before, haven't we?", "ja": "以前お会いしましたよね。", "register": "neutral", "style": "basic", "note": "確認の形。相手も思い出しやすい。" },
+        { "en": "Good to see you again.", "ja": "またお会いできてうれしいです。", "register": "neutral", "style": "oneword", "note": "覚えていると自然に伝わる。温かい。" },
+        { "en": "We met at the conference last year, didn't we?", "ja": "昨年の会議でお会いしましたよね。", "register": "neutral", "style": "basic", "note": "場面を具体的に。相手が確実に思い出せる。" },
+        { "en": "Could I say hello again? We spoke last spring.", "ja": "またご挨拶させてください。昨春お話ししました。", "register": "polite", "style": "request", "note": "丁寧で相手に負担をかけない。" },
+        { "en": "I believe we were introduced at the Tokyo event.", "ja": "東京での催しでご紹介いただいたかと存じます。", "register": "formal", "style": "formal", "note": "改まった場で。上品な言い方。" },
+        { "en": "Hey, long time no see!", "ja": "やあ、久しぶりですね！", "register": "casual", "style": "casual", "note": "親しい相手に。温かく打ち解けた響き。" },
+        { "en": "Is your project still going?", "ja": "あの案件はまだ続いていますか。", "register": "neutral", "style": "existence", "note": "前回の話題に触れる。覚えていると強く伝わる。" },
+        { "en": "You gave me some great advice last time — thank you.", "ja": "前回すばらしい助言をいただきました。ありがとうございました。", "register": "polite", "style": "vocab", "note": "感謝から入る。最も好印象な再会の挨拶。" },
+        { "en": "We talked about running — did you do that marathon?", "ja": "ランニングの話をしましたね。あのマラソンは走られましたか。", "register": "polite", "style": "context", "note": "具体的な記憶を出す。関係が一気に縮まる。" },
+        { "en": "No worries if you don't remember — we met briefly last year.", "ja": "覚えていらっしゃらなくても大丈夫です。昨年少しお話ししました。", "register": "polite", "style": "considerate", "note": "相手に逃げ道を作る。気まずさを消せる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-014", "category": "smalltalk", "difficulty": 2,
+      "place": "At the office", "listener": "a colleague",
+      "want": "You want to congratulate them on their promotion.",
+      "situationJa": "昇進を祝いたい。",
+      "tags": ["congratulating"],
+      "answers": [
+        { "en": "Congratulations!", "ja": "おめでとうございます！", "register": "neutral", "style": "oneword", "note": "最も基本。まずこれが言えれば十分。" },
+        { "en": "Congratulations on the promotion.", "ja": "昇進おめでとうございます。", "register": "neutral", "style": "basic", "note": "対象を明示。より丁寧で正確。" },
+        { "en": "Well deserved!", "ja": "当然の結果ですね！", "register": "neutral", "style": "vocab", "note": "well deserved は「実力に見合った」。最も嬉しい褒め言葉。" },
+        { "en": "Could I buy you a drink to celebrate?", "ja": "お祝いに一杯ごちそうさせてください。", "register": "polite", "style": "request", "note": "具体的な祝い方。関係が深まる。" },
+        { "en": "May I offer my sincere congratulations on your appointment.", "ja": "ご就任を心よりお祝い申し上げます。", "register": "formal", "style": "formal", "note": "appointment は「任命」。改まった祝辞。" },
+        { "en": "Nice one — you earned it!", "ja": "やりましたね。実力です！", "register": "casual", "style": "casual", "note": "親しい同僚に。温かく気さく。" },
+        { "en": "Is there a celebration planned?", "ja": "お祝いの予定はありますか。", "register": "neutral", "style": "existence", "note": "祝いつつ会話を続けられる。" },
+        { "en": "The team is lucky to have you in that role.", "ja": "その役職にあなたがいてチームは幸運です。", "register": "polite", "style": "basic", "note": "本人ではなく周囲の利点を語る。品のある祝い方。" },
+        { "en": "I've seen how hard you worked for this — really pleased for you.", "ja": "そのために努力されていたのを見ていました。本当によかったです。", "register": "polite", "style": "context", "note": "過程を認める。最も心に残る祝いの言葉。" },
+        { "en": "I won't keep you — but congratulations, genuinely.", "ja": "お引き止めしませんが、心からおめでとうございます。", "register": "polite", "style": "considerate", "note": "忙しい相手にも短く気持ちを伝えられる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-015", "category": "smalltalk", "difficulty": 3,
+      "place": "At a gathering", "listener": "an acquaintance",
+      "want": "You want to change the subject away from an uncomfortable topic.",
+      "situationJa": "気まずい話題から話を変えたい。",
+      "tags": ["redirecting", "polite"],
+      "answers": [
+        { "en": "Anyway, how's your family?", "ja": "ところで、ご家族はお元気ですか。", "register": "neutral", "style": "basic", "note": "Anyway は話題転換の合図。最も自然。" },
+        { "en": "Let's talk about something else.", "ja": "別の話にしましょう。", "register": "neutral", "style": "oneword", "note": "率直。親しい相手なら問題ない。" },
+        { "en": "On a different note — have you been away recently?", "ja": "話は変わりますが、最近どこかへ行かれましたか。", "register": "polite", "style": "request", "note": "on a different note は上品な転換句。" },
+        { "en": "I'd rather not get into that, if that's all right.", "ja": "よろしければ、その話は控えさせてください。", "register": "polite", "style": "basic", "note": "get into 〜 は「立ち入る」。明確だが丁寧。" },
+        { "en": "Perhaps we might move on to something lighter.", "ja": "もう少し軽い話題に移りましょうか。", "register": "formal", "style": "formal", "note": "lighter は「軽い」。上品に方向を変えられる。" },
+        { "en": "Anyway — did you see the game last night?", "ja": "ところで、昨夜の試合は見ました？", "register": "casual", "style": "casual", "note": "全く違う話題を投げる。場が変わる。" },
+        { "en": "Is there anything else you've been up to lately?", "ja": "最近他に何かされていますか。", "register": "neutral", "style": "existence", "note": "相手に話させて自然に転換できる。" },
+        { "en": "That's a big topic — shall we save it for another time?", "ja": "大きな話題ですね。またの機会にしませんか。", "register": "polite", "style": "vocab", "note": "話題を否定せず先送りする。角が立たない。" },
+        { "en": "I don't know enough about it to say much — but tell me about your trip.", "ja": "詳しくないので何とも言えません。それより旅行の話を聞かせてください。", "register": "polite", "style": "context", "note": "無知を理由にする。誰も傷つけずに転換できる。" },
+        { "en": "I'd hate to spoil the mood — shall we talk about something else?", "ja": "せっかくの雰囲気を壊したくないので、別の話にしませんか。", "register": "polite", "style": "considerate", "note": "場への配慮として提案する。受け入れられやすい。" }
+      ]
+    },
+    {
+      "id": "smalltalk-016", "category": "smalltalk", "difficulty": 2,
+      "place": "At a cafe", "listener": "a friend",
+      "want": "You want to ask how they have been since you last met.",
+      "situationJa": "前に会ってから元気だったか聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "How have you been?", "ja": "お元気でしたか。", "register": "neutral", "style": "basic", "note": "久しぶりの相手への定番。最重要の型。" },
+        { "en": "How are things?", "ja": "調子はどうですか。", "register": "neutral", "style": "oneword", "note": "気軽で自然。よく使われる。" },
+        { "en": "What have you been up to?", "ja": "最近どうされていましたか。", "register": "casual", "style": "casual", "note": "be up to 〜 は「〜をして過ごす」。会話が広がる。" },
+        { "en": "Could you fill me in on what's been happening?", "ja": "最近の様子を聞かせていただけますか。", "register": "polite", "style": "request", "note": "fill someone in は「近況を伝える」。親しみのある依頼。" },
+        { "en": "I trust everything has been going well since we last spoke.", "ja": "前回お話しして以来、順調でいらっしゃることと存じます。", "register": "formal", "style": "formal", "note": "改まった再会。ビジネスの場で自然。" },
+        { "en": "All good with you?", "ja": "元気にしてた？", "register": "casual", "style": "vocab", "note": "非常にくだけた口語。親しい友人に。" },
+        { "en": "Is there any news?", "ja": "何か変わったことはありますか。", "register": "neutral", "style": "existence", "note": "相手に話題を選ばせる。答えやすい。" },
+        { "en": "How's the new job treating you?", "ja": "新しい仕事はいかがですか。", "register": "neutral", "style": "basic", "note": "具体的に聞くと、深い会話になる。" },
+        { "en": "Last time we spoke you were moving house — how did that go?", "ja": "前回は引っ越すところでしたね。どうなりましたか。", "register": "polite", "style": "context", "note": "前の話を覚えている。最も嬉しい聞き方。" },
+        { "en": "No need to go into detail — but how have you been?", "ja": "詳しくでなくても構いませんが、お元気でしたか。", "register": "polite", "style": "considerate", "note": "何かあった相手への配慮。踏み込みすぎない。" }
+      ]
+    },
+    {
+      "id": "smalltalk-017", "category": "smalltalk", "difficulty": 2,
+      "place": "At a party", "listener": "the host",
+      "want": "You want to thank the host before leaving.",
+      "situationJa": "帰る前に主催者にお礼を言いたい。",
+      "tags": ["thanking"],
+      "answers": [
+        { "en": "Thanks for having me.", "ja": "お招きいただきありがとうございました。", "register": "neutral", "style": "basic", "note": "定番。必ず言えるようにしたい。" },
+        { "en": "Thank you, it was lovely.", "ja": "ありがとうございました、素敵でした。", "register": "polite", "style": "oneword", "note": "短くても十分伝わる。上品な響き。" },
+        { "en": "I've had a wonderful evening — thank you.", "ja": "すばらしい夜でした。ありがとうございました。", "register": "polite", "style": "basic", "note": "具体的に感想を添える。喜ばれる。" },
+        { "en": "Could I help with anything before I go?", "ja": "帰る前に何かお手伝いできますか。", "register": "polite", "style": "request", "note": "片付けを申し出る。最も感謝が伝わる行動。" },
+        { "en": "Thank you most sincerely for your hospitality this evening.", "ja": "本日のおもてなしに心より御礼申し上げます。", "register": "formal", "style": "formal", "note": "hospitality は「もてなし」。改まった感謝。" },
+        { "en": "Great party — thanks!", "ja": "すごくよかったです、ありがとう！", "register": "casual", "style": "casual", "note": "気さくで温かい。親しい相手に。" },
+        { "en": "Is there anything I can bring next time?", "ja": "次回は何か持ってきましょうか。", "register": "polite", "style": "existence", "note": "次を前提にした一言。関係が続く。" },
+        { "en": "The food was fantastic — did you make it all?", "ja": "料理が最高でした。全部作られたのですか。", "register": "neutral", "style": "vocab", "note": "具体的に褒める。会話も生まれる。" },
+        { "en": "I'm glad I came — it was good to meet everyone.", "ja": "来てよかったです。皆さんにお会いできてよかった。", "register": "polite", "style": "context", "note": "参加の価値を伝える。主催者が最も嬉しい言葉。" },
+        { "en": "I'll get out of your way — thank you for a lovely evening.", "ja": "お邪魔にならないうちに失礼します。素敵な夜をありがとうございました。", "register": "polite", "style": "considerate", "note": "片付けの邪魔をしない配慮。上手な帰り方。" }
+      ]
+    },
+    {
+      "id": "smalltalk-018", "category": "smalltalk", "difficulty": 2,
+      "place": "In a queue", "listener": "the person behind you",
+      "want": "You want to make a light comment about the long wait.",
+      "situationJa": "長い待ち時間について軽く声をかけたい。",
+      "tags": ["opening"],
+      "answers": [
+        { "en": "Long queue today.", "ja": "今日は列が長いですね。", "register": "neutral", "style": "oneword", "note": "英国では queue、米国では line。" },
+        { "en": "This is taking a while, isn't it?", "ja": "時間がかかっていますね。", "register": "neutral", "style": "basic", "note": "isn't it? で相手の同意を誘う。会話が始まる。" },
+        { "en": "Have you been waiting long?", "ja": "長くお待ちですか。", "register": "neutral", "style": "basic", "note": "相手に話させる形。自然に会話になる。" },
+        { "en": "Could be worse — at least it's not raining.", "ja": "まだましですね、雨でないだけ。", "register": "casual", "style": "casual", "note": "前向きな冗談。場が和む。" },
+        { "en": "It does seem rather busy this evening.", "ja": "今夜はずいぶん混んでおりますね。", "register": "formal", "style": "formal", "note": "改まった言い方。年配の方などに。" },
+        { "en": "Never fails, does it?", "ja": "いつもこうですよね。", "register": "casual", "style": "vocab", "note": "皮肉めいた共感。英語圏でよく通じる。" },
+        { "en": "Is it always this busy?", "ja": "いつもこんなに混んでいますか。", "register": "neutral", "style": "existence", "note": "地元の人から情報が得られる。実用的。" },
+        { "en": "I should have come earlier.", "ja": "もっと早く来ればよかったです。", "register": "neutral", "style": "request", "note": "自分について言うだけ。相手が返しやすい。" },
+        { "en": "I only came for one thing — I didn't expect this.", "ja": "ひとつ買いに来ただけなのですが、これは想定外でした。", "register": "polite", "style": "context", "note": "事情を明かす。会話が自然に続く。" },
+        { "en": "Not that I'm complaining — but it's quite a wait.", "ja": "文句ではありませんが、なかなかの待ち時間ですね。", "register": "polite", "style": "considerate", "note": "不満に聞こえないよう配慮した一言。" }
+      ]
+    },
+    {
+      "id": "smalltalk-019", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "someone who seems alone",
+      "want": "You want to include someone who is standing alone.",
+      "situationJa": "一人でいる人を輪に入れたい。",
+      "tags": ["inviting", "kind"],
+      "answers": [
+        { "en": "Come and join us.", "ja": "こちらへどうぞ。", "register": "neutral", "style": "oneword", "note": "温かく短い。最も自然な誘い方。" },
+        { "en": "Would you like to join us?", "ja": "ご一緒しませんか。", "register": "polite", "style": "request", "note": "丁寧で押しつけがましくない。" },
+        { "en": "Are you here on your own?", "ja": "お一人でいらしているのですか。", "register": "neutral", "style": "basic", "note": "自然に会話を始められる。共感が伝わる。" },
+        { "en": "We were just talking about travel — do you like traveling?", "ja": "旅行の話をしていたところです。旅行はお好きですか。", "register": "neutral", "style": "basic", "note": "話題ごと引き入れる。入りやすくなる。" },
+        { "en": "Please do join us if you'd care to.", "ja": "よろしければぜひご一緒ください。", "register": "formal", "style": "formal", "note": "care to 〜 は改まった「〜したければ」。上品。" },
+        { "en": "Hey, come over here.", "ja": "ねえ、こっちへどうぞ。", "register": "casual", "style": "casual", "note": "気さくで温かい。距離が近い場で。" },
+        { "en": "Is there anyone here you know?", "ja": "こちらにお知り合いはいますか。", "register": "neutral", "style": "existence", "note": "相手の状況が分かる。紹介にもつなげられる。" },
+        { "en": "Let me introduce you to a few people.", "ja": "何人かご紹介させてください。", "register": "polite", "style": "vocab", "note": "最も親切な行動。相手が心底助かる。" },
+        { "en": "I didn't know anyone when I first came either — I'm Ken.", "ja": "私も最初は誰も知りませんでした。ケンです。", "register": "polite", "style": "context", "note": "共感から入る。相手の緊張がほぐれる。" },
+        { "en": "No pressure at all — but you're very welcome to join us.", "ja": "ご無理でなければですが、ぜひご一緒ください。", "register": "polite", "style": "considerate", "note": "一人でいたい人への配慮。押しつけにならない。" }
+      ]
+    },
+    {
+      "id": "smalltalk-020", "category": "smalltalk", "difficulty": 2,
+      "place": "At the office", "listener": "a colleague",
+      "want": "You want to ask about their holiday plans.",
+      "situationJa": "休暇の予定を聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "Any holiday plans?", "ja": "休暇の予定はありますか。", "register": "neutral", "style": "oneword", "note": "英国では holiday、米国では vacation。" },
+        { "en": "Are you going anywhere this summer?", "ja": "この夏どこかへ行かれますか。", "register": "neutral", "style": "basic", "note": "季節を添えると具体的。答えやすい。" },
+        { "en": "Have you got anything nice planned?", "ja": "何か楽しいご予定はありますか。", "register": "neutral", "style": "basic", "note": "nice を入れると温かい。英国でよく使う。" },
+        { "en": "Could I ask where you're off to?", "ja": "どちらへ行かれるか伺ってもよいですか。", "register": "polite", "style": "request", "note": "be off to 〜 は「〜へ出かける」。自然な言い回し。" },
+        { "en": "Might I ask whether you have any travel planned?", "ja": "何かご旅行のご予定はおありでしょうか。", "register": "formal", "style": "formal", "note": "改まった聞き方。距離のある相手に。" },
+        { "en": "Going anywhere fun?", "ja": "どこか楽しいところへ行く？", "register": "casual", "style": "casual", "note": "気さくで短い。同僚同士で自然。" },
+        { "en": "Is there anywhere you've always wanted to go?", "ja": "ずっと行きたかった場所はありますか。", "register": "neutral", "style": "existence", "note": "予定がなくても話が広がる。良い質問。" },
+        { "en": "How long are you taking off?", "ja": "どのくらい休まれますか。", "register": "neutral", "style": "vocab", "note": "take off は「休みを取る」。実務的にも役立つ。" },
+        { "en": "You mentioned wanting to visit Italy — is that happening?", "ja": "イタリアに行きたいとおっしゃっていましたね。実現しそうですか。", "register": "polite", "style": "context", "note": "前の話を覚えている。関係が深まる。" },
+        { "en": "Don't feel you have to share — but any plans?", "ja": "話さなくても構いませんが、何かご予定は？", "register": "polite", "style": "considerate", "note": "私事に踏み込みすぎない配慮。" }
+      ]
+    },
+    {
+      "id": "smalltalk-021", "category": "smalltalk", "difficulty": 2,
+      "place": "On a plane", "listener": "the passenger next to you",
+      "want": "You want to politely signal you would rather not talk.",
+      "situationJa": "話したくないことを丁寧に示したい。",
+      "tags": ["declining", "polite"],
+      "answers": [
+        { "en": "I think I might try to sleep.", "ja": "少し眠ろうと思います。", "register": "neutral", "style": "basic", "note": "最も角が立たない。相手も納得する。" },
+        { "en": "I've got some work to finish, sorry.", "ja": "すみません、仕事を片付けないといけなくて。", "register": "neutral", "style": "oneword", "note": "理由が明確。失礼にならない。" },
+        { "en": "It was nice chatting — I'm going to read for a bit.", "ja": "お話しできてよかったです。少し読書します。", "register": "polite", "style": "request", "note": "会話を肯定してから区切る。最も丁寧。" },
+        { "en": "I hope you don't mind — I'm rather tired.", "ja": "恐れ入りますが、少し疲れておりまして。", "register": "formal", "style": "formal", "note": "改まった断り方。相手を立てられる。" },
+        { "en": "I'm going to zone out for a bit, sorry.", "ja": "すみません、少しぼんやりします。", "register": "casual", "style": "casual", "note": "zone out は「ぼんやりする」。軽い断り方。" },
+        { "en": "Is it OK if I put my headphones in?", "ja": "イヤホンをしてもよいですか。", "register": "polite", "style": "existence", "note": "許可を求める形。角を立てずに区切れる。" },
+        { "en": "I didn't sleep last night, so I'll rest my eyes.", "ja": "昨夜眠れなかったので、少し目を休めます。", "register": "neutral", "style": "context", "note": "具体的な理由。相手が気を悪くしない。" },
+        { "en": "I'm not much of a talker on flights, I'm afraid.", "ja": "機内ではあまり話さないほうでして。", "register": "polite", "style": "vocab", "note": "自分の性質として言う。相手を否定しない。" },
+        { "en": "It's been a long trip and I need to recharge a bit.", "ja": "長旅で少し休みたいのです。", "register": "polite", "style": "basic", "note": "recharge は「充電する・回復する」。柔らかい表現。" },
+        { "en": "Nothing personal at all — I just need some quiet.", "ja": "他意はありません。少し静かにしたいだけです。", "register": "polite", "style": "considerate", "note": "Nothing personal は「悪気はない」。誤解を防げる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-022", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "a friend",
+      "want": "You want to introduce two people to each other.",
+      "situationJa": "2人を引き合わせたい。",
+      "tags": ["introducing"],
+      "answers": [
+        { "en": "Have you two met?", "ja": "お二人はお会いになりましたか。", "register": "neutral", "style": "oneword", "note": "紹介の切り出しとして最も自然。" },
+        { "en": "Anna, this is Ken. Ken, Anna.", "ja": "アンナ、こちらケンです。ケン、アンナです。", "register": "neutral", "style": "basic", "note": "基本の紹介の形。名前を両方言うのが礼儀。" },
+        { "en": "Let me introduce you two.", "ja": "お二人をご紹介します。", "register": "polite", "style": "request", "note": "丁寧な切り出し。改まった場でも使える。" },
+        { "en": "Ken, I'd like you to meet Anna — she works in design.", "ja": "ケン、アンナを紹介します。デザインの仕事をされています。", "register": "polite", "style": "basic", "note": "一言添えると会話が始まりやすい。良い紹介。" },
+        { "en": "May I introduce Anna, who leads our design team.", "ja": "デザインチームを率いるアンナをご紹介いたします。", "register": "formal", "style": "formal", "note": "改まった場での正式な紹介。" },
+        { "en": "Ken — Anna. Anna — Ken.", "ja": "ケン、アンナ。アンナ、ケン。", "register": "casual", "style": "casual", "note": "最短の紹介。気さくな場で。" },
+        { "en": "Is there anyone else you'd like to meet?", "ja": "他にお会いになりたい方はいますか。", "register": "neutral", "style": "existence", "note": "紹介を続ける申し出。親切な振る舞い。" },
+        { "en": "You two should talk — you both lived in Kyoto.", "ja": "お二人は話すべきです。どちらも京都に住んでいました。", "register": "neutral", "style": "vocab", "note": "共通点を示す。会話が確実に始まる。" },
+        { "en": "Anna was asking about Japan, and Ken lived there for years.", "ja": "アンナが日本のことを聞いていて、ケンは何年か住んでいました。", "register": "polite", "style": "context", "note": "文脈ごと渡す。最も上手な紹介。" },
+        { "en": "I'll leave you two to it — I'm sure you'll get on.", "ja": "お二人にお任せします。きっと話が合うと思います。", "register": "polite", "style": "considerate", "note": "get on は「気が合う」。紹介後に自然に離れられる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-023", "category": "smalltalk", "difficulty": 2,
+      "place": "At a cafe", "listener": "a friend",
+      "want": "You want to say you understand how they feel.",
+      "situationJa": "相手の気持ちが分かると伝えたい。",
+      "tags": ["empathizing"],
+      "answers": [
+        { "en": "I know how you feel.", "ja": "お気持ち分かります。", "register": "neutral", "style": "basic", "note": "最も基本の共感表現。まずこれ。" },
+        { "en": "That sounds really hard.", "ja": "それは本当に大変ですね。", "register": "neutral", "style": "oneword", "note": "評価せずに受け止める。最も安全で温かい。" },
+        { "en": "I've been there myself.", "ja": "私も同じ経験があります。", "register": "neutral", "style": "vocab", "note": "been there は「経験がある」。強い共感になる。" },
+        { "en": "Could I do anything to help?", "ja": "何かお手伝いできることはありますか。", "register": "polite", "style": "request", "note": "共感から行動へ。実際に助けになる。" },
+        { "en": "I can only imagine how difficult that must be.", "ja": "どれほど大変か、想像するしかありません。", "register": "formal", "style": "formal", "note": "分かったふりをしない。誠実な共感。" },
+        { "en": "Ugh, that's rough.", "ja": "うわ、それはつらいですね。", "register": "casual", "style": "casual", "note": "率直な共感。親しい相手に自然。" },
+        { "en": "Is there anything you need right now?", "ja": "今、必要なことはありますか。", "register": "polite", "style": "existence", "note": "相手のペースに合わせる。押しつけない支援。" },
+        { "en": "You're handling it better than I would.", "ja": "私ならこうはいきません。よく対処されています。", "register": "neutral", "style": "basic", "note": "相手を認める。励ましになる。" },
+        { "en": "I went through something similar last year, so I do understand.", "ja": "昨年似たことを経験したので、よく分かります。", "register": "polite", "style": "context", "note": "根拠のある共感。押しつけがましくない。" },
+        { "en": "I won't pretend to know exactly — but I'm here.", "ja": "完全に分かるとは言いません。でもそばにいます。", "register": "polite", "style": "considerate", "note": "最も誠実な共感の形。安易に「分かる」と言わない。" }
+      ]
+    },
+    {
+      "id": "smalltalk-024", "category": "smalltalk", "difficulty": 1,
+      "place": "At a shop counter", "listener": "a shop assistant",
+      "want": "You want to respond when asked how you are.",
+      "situationJa": "「調子はどう？」と聞かれて返したい。",
+      "tags": ["responding"],
+      "answers": [
+        { "en": "Good, thanks. You?", "ja": "元気です、ありがとう。あなたは？", "register": "neutral", "style": "oneword", "note": "最も一般的。聞き返すのが礼儀。" },
+        { "en": "I'm well, thank you. And you?", "ja": "元気です、ありがとうございます。そちらは？", "register": "polite", "style": "basic", "note": "丁寧な形。改まった場でも使える。" },
+        { "en": "Not bad, thanks.", "ja": "まあまあです、ありがとう。", "register": "neutral", "style": "basic", "note": "控えめな返答。英国でよく使う。" },
+        { "en": "Can't complain.", "ja": "文句なしです。", "register": "casual", "style": "vocab", "note": "「悪くない」の慣用句。気さくで温かい。" },
+        { "en": "Very well, thank you. I hope you are too.", "ja": "おかげさまで。そちらもお元気でしょうか。", "register": "formal", "style": "formal", "note": "改まった返答。目上の相手に。" },
+        { "en": "Yeah, all good.", "ja": "うん、元気です。", "register": "casual", "style": "casual", "note": "非常にくだけた口語。若い人同士で。" },
+        { "en": "Busy, but that's a good thing.", "ja": "忙しいですが、良いことですね。", "register": "neutral", "style": "existence", "note": "会話が続く返し方。前向きな印象。" },
+        { "en": "A bit tired, but otherwise fine.", "ja": "少し疲れていますが、他は元気です。", "register": "neutral", "style": "request", "note": "正直だが重くない。自然な会話になる。" },
+        { "en": "Good — I've just come back from holiday, so I can't complain.", "ja": "元気です。休暇から戻ったばかりなので、文句なしです。", "register": "polite", "style": "context", "note": "少し情報を足す。会話が広がる。" },
+        { "en": "I'm fine, thanks for asking — how about yourself?", "ja": "元気です、お気遣いありがとうございます。そちらはいかがですか。", "register": "polite", "style": "considerate", "note": "thanks for asking を添えると温かい。" }
+      ]
+    },
+    {
+      "id": "smalltalk-025", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "someone speaking quickly",
+      "want": "You want to say you did not understand.",
+      "situationJa": "理解できなかったと伝えたい。",
+      "tags": ["clarifying"],
+      "answers": [
+        { "en": "Sorry, I didn't understand.", "ja": "すみません、分かりませんでした。", "register": "neutral", "style": "basic", "note": "率直で失礼にならない。まずこれ。" },
+        { "en": "Sorry, could you say that again?", "ja": "すみません、もう一度お願いできますか。", "register": "polite", "style": "request", "note": "繰り返しを頼む定番。最も使う。" },
+        { "en": "Sorry, you lost me.", "ja": "すみません、ついていけませんでした。", "register": "casual", "style": "vocab", "note": "you lost me は「話についていけない」。自然な口語。" },
+        { "en": "What do you mean by that?", "ja": "それはどういう意味ですか。", "register": "neutral", "style": "basic", "note": "内容を確認する形。会話が深まる。" },
+        { "en": "I do apologize — I'm afraid I didn't quite follow.", "ja": "申し訳ありません、よく理解できませんでした。", "register": "formal", "style": "formal", "note": "follow は「話について行く」。改まった場で。" },
+        { "en": "Huh? Sorry.", "ja": "え？すみません。", "register": "casual", "style": "oneword", "note": "非常にくだけた。親しい間柄でのみ。" },
+        { "en": "Is there a simpler way to put it?", "ja": "もっと簡単な言い方はありますか。", "register": "neutral", "style": "existence", "note": "相手が言い換えてくれる。実用的。" },
+        { "en": "Do you mean the meeting is cancelled?", "ja": "会議が中止という意味ですか。", "register": "neutral", "style": "confirm", "note": "自分の理解を確認する。最も確実。" },
+        { "en": "My English isn't perfect — could you rephrase that?", "ja": "英語が完璧ではないので、言い換えていただけますか。", "register": "polite", "style": "context", "note": "rephrase は「言い換える」。正直に言うと親切にしてもらえる。" },
+        { "en": "I want to be sure I've got it — could you explain once more?", "ja": "きちんと理解したいので、もう一度説明していただけますか。", "register": "polite", "style": "considerate", "note": "理解への意欲として伝わる。前向きな印象。" }
+      ]
+    },
+    {
+      "id": "smalltalk-026", "category": "smalltalk", "difficulty": 2,
+      "place": "At a restaurant", "listener": "a friend",
+      "want": "You want to ask for their opinion on something.",
+      "situationJa": "意見を聞きたい。",
+      "tags": ["asking"],
+      "answers": [
+        { "en": "What do you think?", "ja": "どう思いますか。", "register": "neutral", "style": "oneword", "note": "最も基本。あらゆる場面で使える。" },
+        { "en": "What's your take on it?", "ja": "あなたの見方はどうですか。", "register": "casual", "style": "vocab", "note": "take は「見方・解釈」。少し洒落た言い方。" },
+        { "en": "How do you see it?", "ja": "どのようにご覧になりますか。", "register": "neutral", "style": "basic", "note": "視点を尋ねる形。会話が深まる。" },
+        { "en": "Could I get your opinion on something?", "ja": "ひとつご意見を伺ってもよいですか。", "register": "polite", "style": "request", "note": "本題の前に置く。相手が構えられる。" },
+        { "en": "I'd be interested to hear your view on this.", "ja": "この件についてのご見解を伺いたく存じます。", "register": "formal", "style": "formal", "note": "view は「見解」。改まった場で自然。" },
+        { "en": "What do you reckon?", "ja": "どう思う？", "register": "casual", "style": "casual", "note": "reckon は英国・豪州の口語。親しみやすい。" },
+        { "en": "Is there something I'm not seeing here?", "ja": "私が見落としていることはありますか。", "register": "neutral", "style": "existence", "note": "自分の視点の限界を認める。謙虚で好印象。" },
+        { "en": "Would you have done it differently?", "ja": "あなたなら違うやり方をしましたか。", "register": "neutral", "style": "basic", "note": "具体的な意見が引き出せる。" },
+        { "en": "You've dealt with this kind of thing before — what would you do?", "ja": "こういうことを扱ってこられましたよね。あなたならどうしますか。", "register": "polite", "style": "context", "note": "相手の経験を認める。答えたくなる聞き方。" },
+        { "en": "Only if you have a view — but what do you think?", "ja": "お考えがあればで結構ですが、どう思われますか。", "register": "polite", "style": "considerate", "note": "答えなくてもよい余地を残す。押しつけない。" }
+      ]
+    },
+    {
+      "id": "smalltalk-027", "category": "smalltalk", "difficulty": 2,
+      "place": "At a friend's home", "listener": "your friend",
+      "want": "You want to compliment their home.",
+      "situationJa": "家を褒めたい。",
+      "tags": ["complimenting"],
+      "answers": [
+        { "en": "Your place is lovely.", "ja": "素敵なお住まいですね。", "register": "neutral", "style": "oneword", "note": "英語圏での定番。訪問時に必ず言いたい。" },
+        { "en": "What a nice flat!", "ja": "素敵なお部屋ですね！", "register": "neutral", "style": "basic", "note": "flat は英国、apartment は米国。" },
+        { "en": "I love what you've done with it.", "ja": "内装がとても素敵ですね。", "register": "neutral", "style": "vocab", "note": "「手を入れた成果」を褒める。最も喜ばれる形。" },
+        { "en": "Could I ask where you got that lamp?", "ja": "あのランプはどちらで買われたのですか。", "register": "polite", "style": "request", "note": "具体物を褒める。会話が広がる。" },
+        { "en": "You have a beautiful home — thank you for having me.", "ja": "美しいお住まいですね。お招きありがとうございます。", "register": "formal", "style": "formal", "note": "褒めと感謝を一度に。上品な入り方。" },
+        { "en": "Wow, this is great.", "ja": "わあ、素敵ですね。", "register": "casual", "style": "casual", "note": "率直な反応。親しい友人に自然。" },
+        { "en": "Is that view always this good?", "ja": "その眺めはいつもこんなに良いのですか。", "register": "neutral", "style": "existence", "note": "質問の形で褒める。会話が続く。" },
+        { "en": "It feels really warm in here.", "ja": "とても居心地の良い空間ですね。", "register": "neutral", "style": "basic", "note": "雰囲気を褒める。物より深く伝わる。" },
+        { "en": "You mentioned you'd renovated — it looks fantastic.", "ja": "改装されたと伺っていましたね。すばらしい出来です。", "register": "polite", "style": "context", "note": "努力を認める。最も嬉しい褒め方。" },
+        { "en": "I hope it's not rude to say — but I really like your taste.", "ja": "失礼でなければよいのですが、センスが本当に素敵です。", "register": "polite", "style": "considerate", "note": "距離感が不安なときの前置き。丁寧に伝わる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-028", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "someone you disagree with",
+      "want": "You want to disagree politely in casual conversation.",
+      "situationJa": "雑談の中で丁寧に反対したい。",
+      "tags": ["disagreeing"],
+      "answers": [
+        { "en": "I see it differently, I think.", "ja": "私は違う見方をしていると思います。", "register": "neutral", "style": "oneword", "note": "最も角の立たない反対。まずこれ。" },
+        { "en": "That's interesting — I'd say the opposite.", "ja": "面白いですね。私はむしろ逆だと思います。", "register": "neutral", "style": "basic", "note": "相手を認めてから述べる。会話が続く。" },
+        { "en": "I'm not sure I'd go that far.", "ja": "そこまでとは言えない気がします。", "register": "neutral", "style": "vocab", "note": "go that far は「そこまで言う」。柔らかい否定。" },
+        { "en": "Could I offer another view?", "ja": "別の見方をお示ししてもよいですか。", "register": "polite", "style": "request", "note": "対立ではなく追加として提示できる。" },
+        { "en": "I take your point, though I'm inclined to disagree.", "ja": "おっしゃることは分かりますが、私は異なる考えです。", "register": "formal", "style": "formal", "note": "be inclined to 〜 は「〜する傾向がある」。上品な反対。" },
+        { "en": "Really? I'd have said otherwise.", "ja": "そうですか。私なら違うことを言いますね。", "register": "casual", "style": "casual", "note": "率直だが軽い。親しい相手に。" },
+        { "en": "Is that generally the case, though?", "ja": "それは一般的にそうなのでしょうか。", "register": "neutral", "style": "existence", "note": "質問の形で異議を示す。角が立たない。" },
+        { "en": "There might be more to it than that.", "ja": "それだけではないかもしれませんね。", "register": "neutral", "style": "basic", "note": "断定せず余地を示す。穏やかな反論。" },
+        { "en": "I've read something that suggested the opposite — though I could be wrong.", "ja": "逆のことを示す記事を読んだことがあります。私が間違っているかもしれませんが。", "register": "polite", "style": "context", "note": "根拠を示しつつ謙虚。最も摩擦が少ない。" },
+        { "en": "We may just have to disagree on this one.", "ja": "この件は意見が分かれるままでもよいかもしれませんね。", "register": "polite", "style": "considerate", "note": "議論を穏やかに終える定番句。関係を守れる。" }
+      ]
+    },
+    {
+      "id": "smalltalk-029", "category": "smalltalk", "difficulty": 1,
+      "place": "At a cafe", "listener": "a friend",
+      "want": "You want to suggest meeting again soon.",
+      "situationJa": "また近いうちに会おうと提案したい。",
+      "tags": ["suggesting"],
+      "answers": [
+        { "en": "Let's do this again soon.", "ja": "また近いうちにやりましょう。", "register": "neutral", "style": "basic", "note": "別れ際の定番。温かく締められる。" },
+        { "en": "See you soon!", "ja": "また近いうちに！", "register": "casual", "style": "oneword", "note": "最短。気軽な別れの挨拶。" },
+        { "en": "We should do this more often.", "ja": "もっと頻繁にやりましょう。", "register": "neutral", "style": "basic", "note": "関係を続けたい気持ちが伝わる。" },
+        { "en": "Could we put something in the diary?", "ja": "予定を入れておきませんか。", "register": "polite", "style": "request", "note": "diary は英国で「予定表」。具体化する良い一言。" },
+        { "en": "I'd very much like to meet again before long.", "ja": "近いうちにまたお会いできればと存じます。", "register": "formal", "style": "formal", "note": "before long は「近いうちに」。改まった別れ。" },
+        { "en": "Same time next month?", "ja": "来月も同じ時間に？", "register": "casual", "style": "casual", "note": "具体的で気軽。習慣化しやすい。" },
+        { "en": "Is there a week that usually works for you?", "ja": "普段だとどの週がご都合よいですか。", "register": "neutral", "style": "existence", "note": "相手のリズムを聞く。次回が決まりやすい。" },
+        { "en": "I'll message you about next time.", "ja": "次回について連絡しますね。", "register": "neutral", "style": "vocab", "note": "自分から動くと明言。実現しやすくなる。" },
+        { "en": "This was great — let's not leave it another year.", "ja": "楽しかったです。また1年空けないようにしましょう。", "register": "polite", "style": "context", "note": "間が空いた相手に。次を約束する温かい一言。" },
+        { "en": "Whenever suits you — I'm easy.", "ja": "ご都合のよいときで結構です。私はいつでも。", "register": "polite", "style": "considerate", "note": "I'm easy は「こだわらない」。相手に合わせる姿勢。" }
+      ]
+    },
+    {
+      "id": "smalltalk-030", "category": "smalltalk", "difficulty": 2,
+      "place": "At a gathering", "listener": "someone sharing bad news",
+      "want": "You want to respond to bad news kindly.",
+      "situationJa": "悪い知らせに対して優しく応じたい。",
+      "tags": ["responding", "empathy"],
+      "answers": [
+        { "en": "I'm so sorry to hear that.", "ja": "それは本当にお気の毒です。", "register": "neutral", "style": "basic", "note": "最も基本の応答。必ず言えるようにしたい。" },
+        { "en": "That's awful.", "ja": "それはひどいですね。", "register": "casual", "style": "oneword", "note": "率直な共感。親しい相手に自然。" },
+        { "en": "That must be really difficult.", "ja": "本当につらいことでしょう。", "register": "neutral", "style": "basic", "note": "相手の感情を認める。安易な助言より価値がある。" },
+        { "en": "Is there anything I can do?", "ja": "何かできることはありますか。", "register": "polite", "style": "request", "note": "行動の申し出。実際に助けになる。" },
+        { "en": "I'm terribly sorry — please accept my sympathies.", "ja": "誠にお悔やみ申し上げます。", "register": "formal", "style": "formal", "note": "sympathies は「お悔やみ」。改まった場面で。" },
+        { "en": "Oh no, I'm sorry.", "ja": "そんな、お気の毒に。", "register": "casual", "style": "casual", "note": "自然な反射的反応。温かく伝わる。" },
+        { "en": "Is there anyone helping you with it?", "ja": "誰か助けてくれる人はいますか。", "register": "neutral", "style": "existence", "note": "支えの有無を確認する。具体的な心配。" },
+        { "en": "Take all the time you need.", "ja": "必要なだけ時間をお取りください。", "register": "polite", "style": "vocab", "note": "急かさない一言。職場でも私生活でも有効。" },
+        { "en": "You told me how close you were — I'm really sorry.", "ja": "とても親しかったと伺っていました。本当にお気の毒です。", "register": "polite", "style": "context", "note": "相手の話を覚えている。深い共感になる。" },
+        { "en": "I don't know what to say — but I'm thinking of you.", "ja": "何と言えばよいか分かりませんが、案じております。", "register": "polite", "style": "considerate", "note": "言葉が見つからないときの最も誠実な返し。" }
+      ]
+    }
+  ]
+}

@@ -125,6 +125,42 @@ function step(name, ok, detail) {
     step('カテゴリ一覧が出る', cats >= 1, `${cats} 件`);
     await shot('04-categories');
 
+    // カード内のテキストが重なっていないか。
+    // <span> を display:block にし忘れると名前と説明が同じ行に載る（実測で踏んだ）。
+    const overlap = await page.$$eval('.catcard', (cards) => {
+      for (const c of cards) {
+        const n = c.querySelector('.catcard__name');
+        const m = c.querySelector('.catcard__meta');
+        if (!n || !m) continue;
+        const a = n.getBoundingClientRect();
+        const b = m.getBoundingClientRect();
+        // 縦にも横にも重なっていたら不正
+        if (a.bottom > b.top + 1 && a.right > b.left + 1 && b.right > a.left + 1) {
+          return n.textContent.trim() + ' / ' + m.textContent.trim();
+        }
+      }
+      return null;
+    });
+    step('カード内のテキストが重なっていない', overlap === null, overlap || '');
+
+    // 寸法指定が効かず SVG が既定サイズで描かれると、カードを突き破って巨大化する。
+    // 実測でリングが 500px 超に膨らんだので、上限を機械で見張る。
+    const oversized = await page.$$eval('.catcard svg, .sitrow svg', (els) => {
+      for (const e of els) {
+        const r = e.getBoundingClientRect();
+        if (r.width > 80 || r.height > 80) {
+          return `${e.getAttribute('class') || e.tagName} ${Math.round(r.width)}x${Math.round(r.height)}`;
+        }
+      }
+      return null;
+    });
+    step('カード内の SVG が想定サイズに収まっている', oversized === null, oversized || '');
+
+    // カテゴリ一覧でも横スクロールが出ていないこと
+    const catOverflow = await page.evaluate(() =>
+      document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    step('カテゴリ一覧で横スクロールが発生しない', catOverflow <= 1, `${catOverflow}px`);
+
     // データが入っているカテゴリを直接開く（未作成カテゴリは空状態になる）
     await page.goto(BASE + '#/categories/transport', { waitUntil: 'networkidle' });
     await page.waitForSelector('.sitrow, .empty', { timeout: 10000 });

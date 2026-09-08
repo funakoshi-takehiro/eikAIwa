@@ -54,3 +54,10 @@ jobs:
           NODE_PATH="$(npm root -g)" \
           SMOKE_URL=http://localhost:8080/eng_std/ \
           node .github/tools/browser_smoke.js
+
+      - name: オフラインで学習できることを確認する
+        run: |
+          set -e
+          NODE_PATH="$(npm root -g)" \
+          SMOKE_URL=http://localhost:8080/eng_std/ \
+          node .github/tools/offline_test.js

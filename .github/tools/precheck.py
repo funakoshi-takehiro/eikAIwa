@@ -61,6 +61,9 @@ REGISTERS = {"casual", "neutral", "polite", "formal"}
 STYLES = {"oneword", "basic", "contraction", "request", "formal", "casual",
           "existence", "vocab", "context", "considerate", "indirect", "confirm",
           "offer", "apology", "suggest"}
+# 日本語文中に現れても正常なラテン文字語（必要になったら足す）
+ALLOWED_JA_LATIN = {"Wi-Fi", "iPhone", "iPad", "Web"}
+
 ANSWERS_PER_SITUATION = 10
 MIN_REGISTER_SPREAD = 3
 
@@ -130,11 +133,17 @@ def check_content():
 
             # situationJa に英単語が紛れ込んでいないか
             # （下書き時に英語のまま残した箇所が実際に1件あった）
+            # ただし SIM / ATM / PC のように日本語でもそのまま使う
+            # 全大文字の略語は正常なので除く。拾いたいのは "angry" のような
+            # 小文字の普通の英単語。
             sja = s.get("situationJa") or ""
-            m_en = re.search(r"[A-Za-z]{3,}", sja)
-            if m_en:
-                err("%s: situationJa に英単語が残っています: %r"
-                    % (where, m_en.group()))
+            for m_en in re.finditer(r"[A-Za-z][A-Za-z-]{2,}", sja):
+                w = m_en.group()
+                if w.isupper():
+                    continue          # SIM, ATM, JR などの略語
+                if w in ALLOWED_JA_LATIN:
+                    continue
+                err("%s: situationJa に英単語が残っています: %r" % (where, w))
 
             want = s.get("want", "")
             if not re.match(r"^You want to |^You want ", want):
