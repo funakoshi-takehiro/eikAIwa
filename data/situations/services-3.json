@@ -1,0 +1,1726 @@
+{
+  "category": "services",
+  "level": 3,
+  "situations": [
+    {
+      "id": "services-3-001",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "a customer service agent",
+      "want": "You want a refund you have already been refused twice.",
+      "situationJa": "二度断られた返金を、それでも求めたい。",
+      "tags": [
+        "complaints",
+        "refunds"
+      ],
+      "answers": [
+        {
+          "en": "I've called about this twice and been told no both times. I'd like to explain why I think that's wrong before you decide again. The item was described as waterproof and it isn't.",
+          "ja": "この件で2度電話し、いずれも断られました。改めてご判断いただく前に、なぜ不当と考えるかを説明させてください。防水と説明された品が、実際は違いました。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "経緯と論点を先に。話が最初から進む。"
+        },
+        {
+          "en": "The refusal was on the grounds that I'd used the item. I used it exactly as the description said it could be used. That's the whole basis of the complaint.",
+          "ja": "断られた理由は、使用済みであることでした。ただ、説明にあった使い方をそのままなぞっただけです。それが今回の申し立ての根拠です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "拒否理由に正面から答える。要点が絞れる。"
+        },
+        {
+          "en": "I know you didn't write the description and this isn't your decision alone. I'm not going to take it out on you. I would like to know who can overturn it, though.",
+          "ja": "説明文を書かれたのはあなたではなく、単独の判断でもないと承知しています。あなたに当たるつもりはありません。ただ、これを覆せるのがどなたかは知りたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者を味方にする。上位に届きやすい。"
+        },
+        {
+          "en": "Could you pass this to a supervisor rather than repeat the same answer? I've heard it twice and I understand it. What I need is someone who can make a different one.",
+          "ja": "同じ回答を繰り返すのではなく、責任者にお回しいただけますか。2度伺い、内容は理解しています。必要なのは、別の判断ができる方です。",
+          "register": "polite",
+          "style": "request",
+          "note": "権限のある人を求める。最も効果的な一手。"
+        },
+        {
+          "en": "I should like this treated as a formal complaint rather than a further enquiry. The product was not as described, which is the basis of my claim. Please confirm the reference number and the time limit for your response.",
+          "ja": "追加の問い合わせではなく、正式な苦情としてお取り扱いください。商品が説明と異なっていたことが、請求の根拠です。受付番号と回答期限をご確認いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "手続きに乗せる。対応が変わることが多い。"
+        },
+        {
+          "en": "Look, I've been told no twice and I still don't understand why. It said waterproof and it leaked on the first day. Can we start from there?",
+          "ja": "2度断られましたが、理由がまだ腑に落ちません。防水とありながら、初日に水が入りました。そこから始めませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に切り出す。話が単純になる。"
+        },
+        {
+          "en": "If a full refund isn't possible, I'd accept a replacement or a credit note. I'm not trying to get something for nothing. I just don't want to keep something that doesn't do what it said.",
+          "ja": "全額返金が難しければ、交換か商品券でも構いません。ただで得ようとしているのではありません。説明通りに機能しない品を、手元に置きたくないだけです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "着地点を広げる。合意に至りやすい。"
+        },
+        {
+          "en": "I'd rather not accept a twenty percent discount on a future order. That isn't a remedy for a product that didn't work. I'd like the refund or the replacement.",
+          "ja": "次回注文の2割引をお受けするのは避けたいです。機能しなかった商品への解決策になっていません。返金か交換をお願いします。",
+          "register": "polite",
+          "style": "decline",
+          "note": "中途半端な代替を断る。基準が明確。"
+        },
+        {
+          "en": "I've now spent about ninety minutes on this over three calls. Each time I've had to explain it from the beginning. That's a bigger problem than the item itself.",
+          "ja": "3度の通話で、これまでに90分ほど費やしました。そのたびに最初から説明し直しています。商品そのものより大きな問題です。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "手間を数字で示す。対応が動きやすい。"
+        },
+        {
+          "en": "Here's what I'd suggest. I'll email the photographs and the product description side by side today. You review it against your own listing and call me back by Friday.",
+          "ja": "こう提案します。本日中に、写真と商品説明を並べてメールでお送りします。御社の掲載内容と照らしてご確認の上、金曜までにご連絡ください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "検証の道筋を示す。話が前に進む。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-002",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a letting agency",
+      "listener": "an agent",
+      "want": "You want to dispute deductions from your deposit.",
+      "situationJa": "敷金からの差し引きに、異議を申し立てたい。",
+      "tags": [
+        "housing",
+        "disputes"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to go through the deductions one by one. Three of the six are for things that were in the inventory when I moved in. I've brought the check-in report with the photographs.",
+          "ja": "差し引きの項目を1つずつ確認したいです。6件のうち3件は、入居時の物件目録に記載のあったものです。写真付きの入居時報告書を持参しました。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "証拠を持参する。最も通りやすい進め方。"
+        },
+        {
+          "en": "The carpet mark is dated in the check-in photographs from March last year. The cleaning charge covers a service I paid for separately, and I have the receipt. That leaves one item I don't dispute.",
+          "ja": "絨毯の汚れは、昨年3月の入居時の写真に日付入りで写っています。清掃費は別途私が支払った作業と重複しており、領収書もあります。異議が無いのは残る1件だけです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "争う点と認める点を分ける。信用される。"
+        },
+        {
+          "en": "I understand the landlord has asked for these and you're passing them on. I'm not disputing your role in it. I'd like the evidence for each one so I can respond properly.",
+          "ja": "これらは家主の請求で、あなたはそれを伝える立場だと理解しています。その役割に異議はありません。きちんと回答できるよう、各項目の根拠をいただきたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者を責めない。協力が得られる。"
+        },
+        {
+          "en": "Could you send me the invoices for the cleaning and the carpet? An estimate isn't the same as a cost incurred. I'd like to see what was actually spent.",
+          "ja": "清掃と絨毯についての請求書をお送りいただけますか。見積もりは実際に生じた費用とは異なります。実際の支出額を確認したいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "証憑を求める。過大請求が減る。"
+        },
+        {
+          "en": "I wish to dispute four of the six proposed deductions. Three relate to pre-existing conditions recorded in the check-in inventory. I intend to refer the matter to the deposit scheme if it cannot be resolved here.",
+          "ja": "提示された6件の差し引きのうち、4件について異議を申し立てます。うち3件は入居時の目録に記載された既存の状態に関するものです。ここで解決に至らない場合は、敷金保全制度に付託する所存です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "制度への付託を予告する。実務的に強い。"
+        },
+        {
+          "en": "Three of these were already there when I moved in. I've got the photos with dates on them. Can we take those off?",
+          "ja": "このうち3件は、入居した時点で既にありました。日付入りの写真があります。それらは外していただけませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く事実で反論する。話が早い。"
+        },
+        {
+          "en": "I'll accept the charge for the broken blind without argument. In exchange I'd like the other three withdrawn. That seems a fair place to land.",
+          "ja": "壊れた日除けの費用は、異議なくお支払いします。その代わり、他の3件は取り下げていただきたいです。妥当な着地点だと思います。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "認める部分を先に示す。合意が早い。"
+        },
+        {
+          "en": "I'd rather not sign the deduction form today. Once I sign it, the scheme treats it as agreed. I'd like to see the invoices first.",
+          "ja": "本日、差し引きの同意書に署名するのは避けたいです。署名すれば、制度上は合意したものとして扱われます。まず請求書を確認したいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "署名の効果を知っていると示す。守りが固い。"
+        },
+        {
+          "en": "This is the second tenancy where the same cleaning charge has appeared. Last time it was withdrawn when I asked for the invoice. I'd rather not go through that again.",
+          "ja": "同じ清掃費が請求されたのは、これで2件目の賃貸です。前回は請求書を求めた時点で取り下げられました。同じことを繰り返したくありません。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。相手の対応が変わる。"
+        },
+        {
+          "en": "Let me propose a way through. I'll send my photographs and receipts by Wednesday, and you send the invoices by the same day. If we still disagree on Friday, we go to the scheme.",
+          "ja": "解決の道をご提案します。水曜までに私の写真と領収書をお送りし、同日までに請求書をお送りください。金曜の時点でなお折り合わなければ、保全制度に付託します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限と次の段階を示す。放置されない。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-003",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "a bank fraud team",
+      "want": "You want to report fraud on your account and get the money back.",
+      "situationJa": "不正利用を届け出て、返金を受けたい。",
+      "tags": [
+        "banking",
+        "fraud"
+      ],
+      "answers": [
+        {
+          "en": "There are four transactions on my card that I didn't make. They start on the second of this month and total about nine hundred. I still have the card in my hand.",
+          "ja": "身に覚えのない取引が、私のカードに4件あります。今月2日から始まり、合計はおよそ900です。カードは今も手元にあります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "件数、日付、金額、カードの所在。必要事項が揃う。"
+        },
+        {
+          "en": "I used the card at a petrol station on the first and nowhere else that week. The four transactions are all with the same online retailer. I've never bought anything from them.",
+          "ja": "1日に給油所で使ったのが最後で、その週は他に使っていません。4件の取引はすべて同じ通信販売業者です。そこで買い物をしたことはありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "使用歴を示す。調査が早く進む。"
+        },
+        {
+          "en": "I realise you have to ask me a lot of questions and I'll answer all of them. I'd just ask that the card is stopped first. Everything else can wait ten seconds.",
+          "ja": "多くの質問にお答えする必要があるのは承知しており、すべてお答えします。ただ、先にカードを止めていただきたいです。他はその10秒後で構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "優先順位を示す。被害の拡大を防ぐ。"
+        },
+        {
+          "en": "Could you stop the card and tell me the reference number before we go on? I'd like to be sure the account is safe while we talk. Then I'll answer whatever you need.",
+          "ja": "先へ進む前に、カードを止めて受付番号を教えていただけますか。話している間、口座が安全である確証が欲しいのです。その後は必要なことに何でもお答えします。",
+          "register": "polite",
+          "style": "request",
+          "note": "確認を求める。安心して手続きを進められる。"
+        },
+        {
+          "en": "I wish to report four unauthorised transactions on my account. They were made between the second and the fourth of this month, totalling nine hundred and twelve. Please confirm the card has been blocked and provide a case reference.",
+          "ja": "口座における不正な取引4件を届け出ます。今月2日から4日にかけて行われ、合計912です。カードの停止をご確認の上、受付番号をご教示ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な届出。記録がはっきり残る。"
+        },
+        {
+          "en": "There are four charges on my card that aren't mine. Same shop, all this week, about nine hundred in total. Can you stop the card right now?",
+          "ja": "身に覚えのない請求が4件、私のカードにあります。同じ店で、すべて今週、合計およそ900です。今すぐカードを止めていただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "緊急時に。要点だけを短く伝える。"
+        },
+        {
+          "en": "If the investigation takes longer than a few days, could you credit the amount provisionally? The rent goes out on the fifteenth and the account is now short. I'd repay it immediately if the claim fails.",
+          "ja": "調査に数日以上かかるようでしたら、暫定的に入金いただけませんか。15日に家賃の引き落としがあり、残高が不足しています。申し立てが認められなければ、直ちに返金します。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "仮入金を求める。実生活の被害を防ぐ。"
+        },
+        {
+          "en": "I'd rather not wait for a letter before the card is stopped. Anything else can go by post. The block needs to happen on this call.",
+          "ja": "カードの停止を、書面の到着まで待つのは避けたいです。他のことは郵送で構いません。停止だけは、この通話中に行っていただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "譲れない一点を明示する。確実に伝わる。"
+        },
+        {
+          "en": "I reported a suspicious message from this same retailer in July. I was told at the time there was nothing to act on. I'd like that noted, because it may be the same route.",
+          "ja": "7月にも同じ業者からの不審な連絡を届け出ました。当時は対応の必要は無いと言われました。同じ経路の可能性があるため、記録していただきたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "過去の届出に触れる。調査の手がかりになる。"
+        },
+        {
+          "en": "Could we do it in this order? Stop the card, give me the reference, then take the details of all four. I'll send the screenshots by secure message this afternoon.",
+          "ja": "この順で進めていただけますか。カードの停止、受付番号の発行、その後に4件の詳細です。画面の写しは本日午後、安全な連絡手段でお送りします。",
+          "register": "polite",
+          "style": "propose",
+          "note": "手順を提案する。抜けなく進む。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-004",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a garage",
+      "listener": "a mechanic",
+      "want": "You want to question a repair bill that is much higher than the quote.",
+      "situationJa": "見積もりより大幅に高い修理代に、説明を求めたい。",
+      "tags": [
+        "repairs",
+        "disputes"
+      ],
+      "answers": [
+        {
+          "en": "The quote was two hundred and forty and the bill is six hundred. I'd like to understand what changed before I pay. Could you take me through the extra items?",
+          "ja": "見積もりは240で、請求は600です。支払う前に、何が変わったのかを理解したいです。追加分の項目をご説明いただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "差額を数字で示す。説明を引き出せる。"
+        },
+        {
+          "en": "We agreed on the phone that you'd call me before doing anything over the quote. I didn't get a call. That's the part I'd like to sort out first.",
+          "ja": "見積もりを超える作業の前に電話をいただく、と電話で合意しました。連絡はありませんでした。まずその点を整理したいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "合意違反を指摘する。最も強い論拠。"
+        },
+        {
+          "en": "I'm not saying the work wasn't needed and I'm not questioning the quality. My issue is that I wasn't asked. If you'd called, I'd very likely have said yes.",
+          "ja": "作業が不要だったとも、質を疑うとも申し上げていません。問題は、確認が無かったことです。ご連絡いただいていれば、恐らく了承していました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "論点を手続きに絞る。喧嘩にならない。"
+        },
+        {
+          "en": "Could you show me the parts that were replaced? I'd also like the itemised labour hours rather than a single figure. I'm happy to wait while you print it.",
+          "ja": "交換された部品を見せていただけますか。工賃も一括ではなく、内訳を時間で示していただきたいです。印刷される間、待ちます。",
+          "register": "polite",
+          "style": "request",
+          "note": "証拠を求める。過大請求が減る。"
+        },
+        {
+          "en": "The written estimate was two hundred and forty pounds, and the invoice is six hundred and ten. No authorisation was sought for the additional work. I should be grateful for an itemised explanation before payment.",
+          "ja": "書面の見積もりは240、請求書は610となっております。追加作業について承認は求められておりません。お支払いの前に、内訳のご説明をいただきたく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "書面の記録に照らす。手続きとして強い。"
+        },
+        {
+          "en": "Hang on — the quote was two forty and this says six hundred. What happened? Nobody rang me.",
+          "ja": "少し待ってください。見積もりは240で、これは600です。何があったのですか。誰からも連絡がありませんでした。",
+          "register": "casual",
+          "style": "casual",
+          "note": "その場で率直に問う。話が早い。"
+        },
+        {
+          "en": "I'll pay the quoted amount today without argument. For the rest, I'd like us to agree a figure that reflects the fact I wasn't asked. Would half the difference be reasonable?",
+          "ja": "見積額は本日、異議なくお支払いします。残りは、確認が無かった点を反映した金額で合意したいです。差額の半分でいかがでしょうか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "支払いの意思を示して交渉する。現実的。"
+        },
+        {
+          "en": "I'd rather not pay the full amount today and argue about it afterwards. Once it's paid, I've lost the conversation. Let's settle the figure first.",
+          "ja": "本日全額を支払い、後から争うのは避けたいです。支払えば、話し合いの余地が無くなります。先に金額を決めましょう。",
+          "register": "polite",
+          "style": "decline",
+          "note": "支払いを保留する理由を示す。合理的。"
+        },
+        {
+          "en": "This is the second time a bill here has come in well above the quote. Last year it was the same pattern with the brakes. I'd like to agree how we handle it from now on.",
+          "ja": "こちらでの請求が見積もりを大きく上回るのは2度目です。昨年、制動装置でも同じことがありました。今後の進め方を決めておきたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを指摘する。今後の運用が変わる。"
+        },
+        {
+          "en": "Here's what I'd suggest. Print the itemised bill and mark which items were in the quote. I'll pay those now and we'll agree the rest by phone tomorrow.",
+          "ja": "こう提案します。内訳を印刷し、見積もりに含まれていた項目に印を付けてください。それらは今お支払いし、残りは明日、電話で決めましょう。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "その場を収める案。関係も壊れない。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-005",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "an insurance assessor",
+      "want": "You want to challenge a rejected insurance claim.",
+      "situationJa": "保険金の不支給の判断に、異議を述べたい。",
+      "tags": [
+        "insurance",
+        "disputes"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to challenge the decision on claim four-two-one. It was rejected as gradual damage, but the pipe burst on a single night. I have the plumber's report confirming that.",
+          "ja": "請求番号421の判断について、異議を申し立てたいです。経年劣化として不支給とされましたが、配管は一晩で破裂しました。それを裏付ける配管業者の報告書があります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "不支給理由に直接反論する。要点が明確。"
+        },
+        {
+          "en": "The policy excludes gradual damage but covers escape of water. The plumber's report describes a sudden failure at a joint. That puts it inside the cover rather than outside it.",
+          "ja": "約款は経年劣化を除外していますが、漏水は補償の対象です。業者の報告書には、接続部の突発的な破損と記されています。除外ではなく、補償の範囲に入ります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "約款の文言に当てる。最も強い論法。"
+        },
+        {
+          "en": "I appreciate you're applying the assessment you were given. I'm not disputing your judgement of it. What I'm saying is that the assessment itself doesn't match the plumber's findings.",
+          "ja": "お手元の評価に沿って判断されているのは承知しており、そのご判断を疑うものではありません。申し上げたいのは、評価そのものが業者の所見と合致していないことです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者ではなく資料を争う。冷静に進む。"
+        },
+        {
+          "en": "Could the claim be reassessed with the plumber's report included? I don't believe it was in front of the assessor. I'll send it again today if that helps.",
+          "ja": "業者の報告書を含めて、再評価いただけませんか。査定の際に手元に無かったのではないかと思います。必要であれば、本日中に再送します。",
+          "register": "polite",
+          "style": "request",
+          "note": "再評価を求める。実際に覆ることが多い。"
+        },
+        {
+          "en": "I wish to appeal the rejection of claim four-two-one. The policy excludes gradual deterioration but covers sudden escape of water, which is what the plumber's report describes. Please confirm the appeal has been registered and the time limit for a response.",
+          "ja": "請求番号421の不支給について、不服を申し立てます。約款は経年劣化を除外する一方、突発的な漏水は補償対象であり、業者の報告書はまさにそれを記しています。申立ての受理と、回答期限をご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な不服申立て。期限を確認するのが要点。"
+        },
+        {
+          "en": "I don't think this is gradual damage at all. The pipe went in one night and the plumber says so in writing. Can someone look at it again?",
+          "ja": "これは経年劣化ではないと思います。配管は一晩で破裂し、業者も書面でそう述べています。どなたかに再度見ていただけませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に要求する。話が単純になる。"
+        },
+        {
+          "en": "If the full claim isn't payable, could the flooring be considered separately? That damage is clearly from the water rather than the pipe itself. I'd accept a partial settlement on that basis.",
+          "ja": "全額の支払いが難しければ、床の被害だけ切り離してご検討いただけませんか。その損害は配管そのものではなく、水によるものと明らかです。その前提での一部支払いでも構いません。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "請求を分割する。全否定を避けられる。"
+        },
+        {
+          "en": "I'd rather not close the claim while the report hasn't been considered. Closing it now would mean appealing a decision made without the evidence. I'd like it kept open until the reassessment.",
+          "ja": "報告書が検討されないまま請求を終結するのは避けたいです。証拠を欠いた判断に対して不服を述べることになります。再評価まで、請求は継続としてください。",
+          "register": "polite",
+          "style": "decline",
+          "note": "終結を止める。権利を守る重要な一手。"
+        },
+        {
+          "en": "I sent the plumber's report on the eighth and again on the fifteenth. Neither is mentioned in the decision letter. That's why I'm questioning the process rather than just the outcome.",
+          "ja": "業者の報告書は8日に、再度15日にお送りしました。判断の通知には、そのいずれにも言及がありません。結論だけでなく、手続きを問うているのはそのためです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "手続きの不備を指摘する。再評価につながる。"
+        },
+        {
+          "en": "Let me propose the next steps. I'll resend the report and the photographs today with the claim number in the subject line. If the decision stands after reassessment, please send the reasons in writing so I can take it to the ombudsman.",
+          "ja": "次の手順をご提案します。本日、請求番号を件名に入れて報告書と写真を再送します。再評価後も判断が変わらない場合は、第三者機関に持ち込めるよう、理由を書面でお送りください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "次の段階まで示す。相手の対応が慎重になる。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-006",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a hair salon",
+      "listener": "a stylist",
+      "want": "You want to say you are unhappy with the cut without hurting them.",
+      "situationJa": "相手を傷つけずに、仕上がりへの不満を伝えたい。",
+      "tags": [
+        "complaints",
+        "personal"
+      ],
+      "answers": [
+        {
+          "en": "Could I say something before I go? It's shorter at the front than I'd pictured. I'd rather tell you now than say nothing and not come back.",
+          "ja": "帰る前に一言よろしいですか。前髪が想像より短くなっています。何も言わずに来なくなるより、今お伝えしたいです。",
+          "register": "polite",
+          "style": "explain",
+          "note": "その場で伝える理由を添える。誠実に響く。"
+        },
+        {
+          "en": "I asked for about two centimetres off and it's closer to five. I think we may have meant different things by a trim. That's as much my fault as anyone's.",
+          "ja": "2センチほどとお願いしましたが、5センチ近くになっています。整えるという言葉の理解が、互いに違ったのだと思います。私にも責任があります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "行き違いとして扱う。相手が構えない。"
+        },
+        {
+          "en": "The colour is exactly what I wanted and the back looks great. It's only the fringe I'm unsure about. I didn't want you to think I disliked the whole thing.",
+          "ja": "色はまさに希望通りで、後ろも素敵です。迷っているのは前髪だけです。全体が気に入らない、と思われたくありませんでした。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "良かった点を先に。指摘が受け入れられる。"
+        },
+        {
+          "en": "Could you take a little more off the sides to balance it? I'd rather work with what we have than start again. You'll know better than me what would even it out.",
+          "ja": "釣り合いを取るために、両側をもう少し切っていただけますか。やり直すより、今の状態から整えたいです。どうすれば揃うかは、私よりご存じかと思います。",
+          "register": "polite",
+          "style": "request",
+          "note": "解決を委ねる。相手の面子が立つ。"
+        },
+        {
+          "en": "I hope you will not mind my mentioning it. The length at the front is rather shorter than I had in mind. I should be grateful for your view on what can be done.",
+          "ja": "申し上げることをお許しいただければ幸いです。前髪の長さが、思っていたより短くなっております。どのような対応が可能か、ご意見を伺えますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "初めての店で。角を立てずに伝える。"
+        },
+        {
+          "en": "It's a bit shorter at the front than I expected. Not a disaster, just not what I pictured. Is there anything we can do?",
+          "ja": "前髪が思ったより少し短いです。大惨事ではありませんが、想像とは違いました。何かできることはありますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "軽く伝える。関係が良い相手に。"
+        },
+        {
+          "en": "I'm happy to pay in full today either way. If you can even it out now, that would be ideal. If not, could I come back in a fortnight when it's grown a little?",
+          "ja": "いずれにせよ、本日は全額お支払いします。今整えていただけるのが理想です。難しければ、少し伸びた2週間後に伺ってもよいですか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "支払いを先に約束する。誠意が伝わる。"
+        },
+        {
+          "en": "I'd rather not have it cut shorter again to fix it. I think that's how we got here. Could we leave it and reshape it next time?",
+          "ja": "直すためにさらに短く切るのは避けたいです。そうしてこうなったのだと思います。今回はこのままにして、次回に整えませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "悪化を防ぐ。丁寧に主導権を取る。"
+        },
+        {
+          "en": "I did say twice that I wanted to keep the length. I think it got lost while we were talking. That's why I'm mentioning it rather than letting it go.",
+          "ja": "長さを残したい、と2度申し上げました。会話の中で伝わらなかったのだと思います。だから流さずにお伝えしています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "事実を穏やかに述べる。次回に生きる。"
+        },
+        {
+          "en": "Could we do something different next time? I'll bring a photograph and we'll agree the length before you start. That would probably save us both the conversation.",
+          "ja": "次回は進め方を変えませんか。写真を持参し、始める前に長さを決めましょう。互いにこの会話をせずに済むはずです。",
+          "register": "polite",
+          "style": "propose",
+          "note": "再発を防ぐ提案。関係が続く。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-007",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "an internet provider",
+      "want": "You want compensation for two weeks without internet.",
+      "situationJa": "2週間の不通について、補償を求めたい。",
+      "tags": [
+        "utilities",
+        "compensation"
+      ],
+      "answers": [
+        {
+          "en": "The service has been down since the third, which is fourteen days. I work from home four days a week and I've had to pay for a desk elsewhere. I'd like to talk about compensation rather than the fault itself.",
+          "ja": "3日から不通で、14日間になります。週4日は在宅勤務のため、別の場所の席代を払っています。障害そのものではなく、補償についてお話ししたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "期間と実損を示す。交渉が具体的になる。"
+        },
+        {
+          "en": "Your own terms say compensation starts after two working days of total loss of service. We're now at ten working days. I'd like that applied without my having to ask again.",
+          "ja": "御社の規定では、完全な不通が2営業日を超えた時点から補償が始まります。現在10営業日目です。再度求めずとも適用いただきたいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "相手の規定を引く。最も通りやすい論法。"
+        },
+        {
+          "en": "I know the engineers have been out twice and it isn't for lack of effort. I'm not complaining about the people. It's the two weeks without a service I'm still paying for.",
+          "ja": "技術者の方が2度来てくださり、努力不足でないことは分かっています。人を責めているのではありません。支払いを続けながら2週間使えない、という点です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "現場を責めない。担当者が協力的になる。"
+        },
+        {
+          "en": "Could you tell me the daily rate of compensation and apply it from the third? I'd also like the desk costs considered, and I have the receipts. If they're outside the policy, please say so plainly.",
+          "ja": "1日あたりの補償額を教えていただき、3日から適用いただけますか。席代も考慮いただきたく、領収書もあります。規定の対象外であれば、その旨はっきりお伝えください。",
+          "register": "polite",
+          "style": "request",
+          "note": "求める内容を具体的に。回答がはっきりする。"
+        },
+        {
+          "en": "I am writing to claim compensation for a total loss of service from the third of this month. Under your published terms, compensation accrues after two working days. Please confirm the amount and the date it will be credited.",
+          "ja": "今月3日以降の完全な不通について、補償を請求いたします。御社の公表する規定では、2営業日経過後より補償が発生いたします。金額と入金日をご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "書面での請求に。そのまま使える。"
+        },
+        {
+          "en": "It's been two weeks with no internet and I'm still being billed. What compensation is there? Your terms say it starts after two working days.",
+          "ja": "2週間ネットが使えないまま、請求は続いています。補償はどうなりますか。規定では2営業日後から始まるとあります。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に要求する。話が短く済む。"
+        },
+        {
+          "en": "If the desk costs are outside the policy, I'd accept a credit for two months instead. That's roughly the same figure and it's simpler for both of us. Would that be possible?",
+          "ja": "席代が規定の対象外でしたら、代わりに2か月分の減額でも構いません。金額はほぼ同じで、双方にとって簡便です。可能でしょうか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "処理しやすい形を示す。合意が早い。"
+        },
+        {
+          "en": "I'd rather not accept a goodwill payment of twenty. That isn't compensation, it's an apology with a number on it. I'd like the rate in your own terms applied.",
+          "ja": "20の見舞金をお受けするのは避けたいです。補償ではなく、数字の付いたお詫びに過ぎません。御社の規定にある料率を適用いただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "低額の提示を断る。基準を明示するのが要点。"
+        },
+        {
+          "en": "I've called five times and been given four different fix dates. Two engineers arrived without the part. That's the reason I'm asking for compensation rather than waiting quietly.",
+          "ja": "5度電話し、4つの異なる復旧予定日を伝えられました。技術者2名は部品を持たずに来られました。静かに待つのではなく補償を求めているのは、そのためです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を並べる。要求の正当性が伝わる。"
+        },
+        {
+          "en": "Here's what I'd suggest. Apply the standard compensation from the third and confirm it by email today. I'll send the desk receipts separately and you can decide on those within a week.",
+          "ja": "こう提案します。3日から標準の補償を適用し、本日中にメールでご確認ください。席代の領収書は別途お送りしますので、1週間以内にご判断ください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "確実な部分を先に確定させる。話が進む。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-008",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a gym",
+      "listener": "a membership adviser",
+      "want": "You want to cancel a contract you were told you could not cancel.",
+      "situationJa": "解約できないと言われた契約を、それでも解約したい。",
+      "tags": [
+        "contracts",
+        "cancelling"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to cancel the membership and I've been told twice that I can't. I'd like to go through the contract with you and find out why. Could we look at the cancellation clause together?",
+          "ja": "会員契約を解約したいのですが、2度できないと言われました。契約書を一緒に確認し、その理由を知りたいです。解約条項を一緒に見ていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "条項に当たると宣言する。対応が変わる。"
+        },
+        {
+          "en": "The contract allows cancellation on a change of address over fifteen miles. I moved to Kobe in August and I have the tenancy agreement. That's the clause I'm relying on.",
+          "ja": "契約では、15マイルを超える転居があれば解約できるとされています。8月に神戸へ移り、賃貸契約書もあります。それが根拠とする条項です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "条項と事実を対にする。反論の余地が減る。"
+        },
+        {
+          "en": "I understand you're following what you've been told at the desk. I'm not asking you to make an exception. I'm asking whether the relocation clause applies to me.",
+          "ja": "窓口で伝えられた通りに対応されているのは理解しています。例外をお願いしているのではありません。転居に関する条項が私に当てはまるかを伺っています。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "例外要求と区別する。担当者が動きやすい。"
+        },
+        {
+          "en": "Could you show me where it says the contract can't be cancelled? I've read it twice and I can't find that. If I've missed it, I'll accept it straight away.",
+          "ja": "解約できないと記された箇所を示していただけますか。2度読みましたが見つかりません。私が見落としているなら、即座に受け入れます。",
+          "register": "polite",
+          "style": "request",
+          "note": "根拠の提示を求める。事実が明らかになる。"
+        },
+        {
+          "en": "I wish to give notice to terminate my membership under the relocation provision. I moved outside the fifteen-mile radius in August and can provide evidence. Please confirm the termination date in writing.",
+          "ja": "転居に関する規定に基づき、会員契約の解約を通知いたします。8月に15マイルの範囲外へ転居しており、証拠書類もご提出できます。解約日を書面でご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な解約通知。記録として機能する。"
+        },
+        {
+          "en": "I've moved to Kobe, so the relocation clause should cover me. I've been told twice that I can't cancel. Can we check the contract?",
+          "ja": "神戸へ引っ越したので、転居の条項に当たるはずです。2度、解約できないと言われました。契約書を確認できますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を出す。窓口で使いやすい。"
+        },
+        {
+          "en": "If cancellation isn't possible, could the membership be frozen instead? Six months would take me past the contract end. That would be an acceptable outcome for me.",
+          "ja": "解約が難しければ、代わりに休会にできませんか。6か月あれば、契約期間の満了を越えます。それであれば、こちらとしても納得できます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "代替の着地点を示す。合意しやすい。"
+        },
+        {
+          "en": "I'd rather not keep paying for eight months for something I can't reach. That isn't a threat, it's just the situation. If the clause doesn't apply, I'd like that in writing.",
+          "ja": "通えないものに8か月払い続けるのは避けたいです。脅しではなく、単に現状です。条項が当てはまらないのであれば、書面でいただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "書面を求める。次の手続きに備えられる。"
+        },
+        {
+          "en": "I sent the notice by email on the first and got no reply. I called on the eighth and was told to come in. I've now come in, so I'd like it resolved today.",
+          "ja": "1日にメールで通知しましたが、返信はありませんでした。8日に電話し、来店するよう言われました。こうして参りましたので、本日中に解決したいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。先送りされにくくなる。"
+        },
+        {
+          "en": "Could we settle it this way? You check the relocation clause with your manager today, and I'll email the tenancy agreement this afternoon. If it applies, the cancellation runs from the first of the month.",
+          "ja": "この形で解決できませんか。本日、責任者と転居の条項をご確認ください。私は午後に賃貸契約書をメールでお送りします。当てはまるのであれば、解約は当月1日からとしてください。",
+          "register": "polite",
+          "style": "propose",
+          "note": "双方の宿題を決める。話が確実に進む。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-009",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a doctor's surgery",
+      "listener": "a receptionist",
+      "want": "You want an urgent appointment when you are told there are none.",
+      "situationJa": "空きが無いと言われても、急ぎの受診をお願いしたい。",
+      "tags": [
+        "health",
+        "requesting"
+      ],
+      "answers": [
+        {
+          "en": "I understand there's nothing today, and I'd like to explain why I'm pushing. The pain has got worse each day for four days and I can't sleep. I'd rather not go to the emergency department for this.",
+          "ja": "本日は空きが無いと承知の上で、なぜ食い下がるかを説明させてください。4日間、痛みが日ごとに強まり、眠れていません。この件で救急を受診するのは避けたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "具体的な経過を示す。優先度が伝わる。"
+        },
+        {
+          "en": "I was seen for the same thing three weeks ago and told to come back if it worsened. It has, and that's why I'm here. I'm following the advice I was given.",
+          "ja": "3週間前に同じ症状で受診し、悪化したら再度来るよう言われました。悪化したため伺っています。指示に従っているだけです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "医師の指示を根拠にする。非常に有効。"
+        },
+        {
+          "en": "I know you're not the person deciding the appointments and it's a busy morning. I'm not trying to make your job harder. Could you tell me what would count as urgent enough?",
+          "ja": "予約を決めるお立場ではなく、忙しい朝であることも分かっています。お仕事を増やすつもりはありません。どの程度なら急ぎとして扱われるか、教えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "基準を尋ねる。受付が協力しやすくなる。"
+        },
+        {
+          "en": "Could a nurse or a duty doctor call me back today? I don't need a full appointment if someone can tell me whether this can wait. Five minutes on the phone would be enough.",
+          "ja": "本日、看護師か当番の医師からお電話をいただけませんか。待てる症状かどうか判断いただければ、通常の受診でなくても構いません。電話で5分あれば十分です。",
+          "register": "polite",
+          "style": "request",
+          "note": "小さな要求に落とす。実現しやすい。"
+        },
+        {
+          "en": "I should be grateful if this could be assessed as urgent. The symptoms have worsened over four days, and I was advised to return if that occurred. I am willing to attend at any time today.",
+          "ja": "急ぎの案件としてご判断いただけますと幸いです。症状は4日間で悪化しており、その場合は再来するよう指示を受けております。本日であれば、いつでも伺えます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった依頼。記録に残る言い方。"
+        },
+        {
+          "en": "It's got worse every day for four days now. The doctor told me to come back if that happened. Is there really nothing at all?",
+          "ja": "4日間、日ごとに悪化しています。そうなったら来るように、と医師に言われました。本当に何も空きは無いのでしょうか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に食い下がる。事実を繰り返すのが要点。"
+        },
+        {
+          "en": "I'll take a cancellation at any time today, including late afternoon. I can be here within twenty minutes. Could you put me on the list for that?",
+          "ja": "本日であれば、夕方遅くでも取り消しの枠に入ります。20分以内に伺えます。その一覧に加えていただけますか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "こちらの柔軟さを示す。枠が回ってきやすい。"
+        },
+        {
+          "en": "I'd rather not wait until next Thursday if it can be avoided. If that's genuinely the only option, I'll take it. But I'd like it recorded that I asked to be seen sooner.",
+          "ja": "避けられるのであれば、来週木曜まで待つのは控えたいです。それが唯一の選択肢であれば受け入れます。ただ、早期の受診を求めたことは記録していただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "記録を求める。後の経過に効く。"
+        },
+        {
+          "en": "I called at eight this morning and was cut off after twenty minutes. I called again at nine and the slots had gone. That's why I've come in rather than phoning again.",
+          "ja": "今朝8時に電話し、20分待って切れました。9時に再度かけた時には、枠が埋まっていました。電話ではなく来院したのはそのためです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "手を尽くしたと示す。対応が変わりやすい。"
+        },
+        {
+          "en": "Could we do it this way? Put me down for a callback today, and book the Thursday slot as a backup. If the callback settles it, I'll cancel Thursday myself.",
+          "ja": "この形でお願いできませんか。本日の折り返しの一覧に加えつつ、木曜の枠も予備として押さえてください。電話で解決すれば、木曜は私から取り消します。",
+          "register": "polite",
+          "style": "propose",
+          "note": "両立させる案。受付にも負担が少ない。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-010",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "a delivery company",
+      "want": "You want to trace a parcel that has been marked as delivered.",
+      "situationJa": "配達済みとなっている荷物の行方を、追ってほしい。",
+      "tags": [
+        "delivery",
+        "problems"
+      ],
+      "answers": [
+        {
+          "en": "The tracking says delivered at two fifteen on Tuesday and nothing arrived. I was at home all afternoon and the bell didn't go. I'd like to know where it was actually left.",
+          "ja": "追跡では火曜の14時15分に配達済みとありますが、何も届いていません。午後はずっと在宅で、呼び鈴も鳴りませんでした。実際にどこに置かれたのかを知りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "時刻と自分の所在を示す。調査が進む。"
+        },
+        {
+          "en": "There's a photograph on the tracking page but it isn't my door. The number on the door in the picture is thirty-two and I'm at twenty-three. I think it's gone to the wrong address.",
+          "ja": "追跡画面に写真がありますが、私の家の戸ではありません。写真の戸の番号は32で、私は23番です。誤配だと思われます。",
+          "register": "neutral",
+          "style": "context",
+          "note": "写真の矛盾を指摘する。決定的な証拠になる。"
+        },
+        {
+          "en": "I'm not assuming the driver did anything wrong. Two doors on this street have similar numbers and it happens often. I'd just like it found rather than a claim opened.",
+          "ja": "配達員に落ち度があったと決めつけてはいません。この通りには似た番号の家が2軒あり、よく起こります。請求手続きより、まず見つけていただきたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "非難せずに協力を求める。動いてもらいやすい。"
+        },
+        {
+          "en": "Could you contact the driver who made the delivery? They may remember which door it was. That would be faster than opening an investigation.",
+          "ja": "配達を担当された方に連絡していただけますか。どの戸だったか覚えておられるかもしれません。調査を開始するより早いはずです。",
+          "register": "polite",
+          "style": "request",
+          "note": "最短の解決策を提案する。実際に見つかる。"
+        },
+        {
+          "en": "I wish to report a parcel recorded as delivered which was not received. The tracking photograph shows a door which is not mine. Please confirm the delivery address recorded by the driver.",
+          "ja": "配達済みと記録されながら、受領していない荷物について届け出ます。追跡の写真には、私のものではない戸が写っています。配達員が記録した住所をご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な照会。記録が残り、調査が始まる。"
+        },
+        {
+          "en": "It says delivered but nothing turned up. The photo on the tracking isn't my door — it's number thirty-two. Could someone check with the driver?",
+          "ja": "配達済みとありますが、何も届いていません。追跡の写真は私の戸ではなく、32番の家です。配達員に確認していただけませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を伝える。電話で使いやすい。"
+        },
+        {
+          "en": "If it can't be traced by Friday, I'd like to move straight to a replacement. I'd rather not spend another week on it. Could we agree that now so I don't have to call again?",
+          "ja": "金曜までに見つからなければ、代替品の手配に進みたいです。これ以上1週間を費やしたくありません。再度電話せずに済むよう、今合意できませんか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "期限と次の手順を先に決める。手間が減る。"
+        },
+        {
+          "en": "I'd rather not be told to check with my neighbours again. I've asked all four and none of them has it. I'd like the driver contacted instead.",
+          "ja": "近隣に確認するよう再度案内されるのは避けたいです。4軒すべてに尋ね、どこにもありません。代わりに配達員へ確認していただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "済んだ手順を断る。同じ案内が止まる。"
+        },
+        {
+          "en": "This is the third parcel this year marked delivered to the wrong door. The other two turned up at number thirty-two as well. It may be worth flagging the address on the route.",
+          "ja": "誤った戸に配達済みとされた荷物は、今年3件目です。他の2件も32番の家に届いていました。配達経路上でその住所に注意書きを付ける価値があるかもしれません。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "根本原因を示す。再発が止まる。"
+        },
+        {
+          "en": "Could we agree the next steps now? You contact the driver today and call me back by tomorrow noon. If it's not found by then, you raise the replacement without me having to chase.",
+          "ja": "次の手順を今決めませんか。本日配達員に連絡し、明日の正午までにご返答ください。それまでに見つからなければ、私から催促せずとも代替の手配を進めてください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "催促を不要にする合意。実務的で有効。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-011",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a bank",
+      "listener": "a bank manager",
+      "want": "You want to explain your situation to get a loan decision reconsidered.",
+      "situationJa": "融資の判断を見直してもらうため、事情を説明したい。",
+      "tags": [
+        "banking",
+        "negotiating"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to ask you to look at the application again. It was declined on income stability, and I understand why the file looks that way. My income is contract-based but it hasn't fallen below a threshold in four years.",
+          "ja": "融資の申込を再度ご検討いただきたいです。収入の安定性を理由に否決され、書類上そう見える理由も理解できます。契約に基づく収入ですが、4年間、一定額を下回ったことはありません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "否決理由に直接答える。再考につながる。"
+        },
+        {
+          "en": "The system reads three employers in two years as instability. In my field, those were three consecutive renewals with the same agency. The pattern looks worse on paper than it is.",
+          "ja": "審査上は、2年で3社という記録が不安定と読まれます。私の業種では、同じ仲介会社を通じた3回の連続更新でした。実態より、書面上は悪く見えます。",
+          "register": "neutral",
+          "style": "context",
+          "note": "誤解される点を説明する。最も重要な補足。"
+        },
+        {
+          "en": "I appreciate the decision follows the criteria you have to apply. I'm not asking anyone to bend them. I'd like to know whether there's a route for cases the criteria read wrongly.",
+          "ja": "ご判断が、適用すべき基準に沿ったものであることは承知しています。基準を曲げてほしいのではありません。基準が実態を誤って読む事例のための経路があるか、伺いたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "例外要求と切り分ける。話が現実的になる。"
+        },
+        {
+          "en": "Could the application be reviewed with four years of contracts attached? The original submission only had two. I can bring the full set tomorrow morning.",
+          "ja": "4年分の契約書を添えて、申込を再審査いただけますか。当初の提出は2年分のみでした。明日の午前に一式お持ちできます。",
+          "register": "polite",
+          "style": "request",
+          "note": "追加資料で再審査を求める。実際に通ることがある。"
+        },
+        {
+          "en": "I should like to request a review of the decision on my application. The assessment appears to treat successive contract renewals as separate employments. I can provide four years of contracts and corresponding tax records.",
+          "ja": "私の申込に対する判断について、再審査をお願い申し上げます。審査は、連続した契約更新を別個の就業として扱っているように見受けられます。4年分の契約書と対応する納税記録をご提出できます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な再審査請求。記録として残る。"
+        },
+        {
+          "en": "Could you take another look at this? It was turned down for income stability, but those three jobs were renewals with the same agency. I've got four years of contracts.",
+          "ja": "もう一度ご検討いただけませんか。収入の安定性で否決されましたが、その3件は同じ仲介会社での更新です。4年分の契約書があります。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く事実を出す。窓口で使いやすい。"
+        },
+        {
+          "en": "If the full amount isn't possible, I'd take a smaller loan over a shorter term. Sixty percent would still work for what I need it for. I'd rather have something workable than nothing.",
+          "ja": "全額が難しければ、より短い期間で少額の融資でも構いません。6割あれば、目的は果たせます。何も無いより、実行できる形を選びたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "条件を下げる用意を示す。合意の余地が生まれる。"
+        },
+        {
+          "en": "I'd rather not reapply in six months and get the same result. If the criteria can't accommodate contract income, I'd like to know that plainly. Then I'll look elsewhere rather than wait.",
+          "ja": "6か月後に再申込して同じ結果になるのは避けたいです。基準が契約収入に対応できないのであれば、率直に教えてください。待つのではなく、他を当たります。",
+          "register": "polite",
+          "style": "decline",
+          "note": "はっきりした回答を求める。時間を無駄にしない。"
+        },
+        {
+          "en": "I've banked here for eleven years and the account has never been overdrawn. That doesn't appear anywhere in the decision. I'd like to understand what weight, if any, it carries.",
+          "ja": "11年こちらに口座があり、残高不足になったことは一度もありません。判断のどこにも、その点が現れていません。それがどの程度考慮されるのか理解したいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "実績が無視されたと指摘する。再考を促す。"
+        },
+        {
+          "en": "Here's what I'd propose. I'll bring the four years of contracts and the tax records on Thursday. You put it through as a review, and if it's declined again I'd like the reason in writing.",
+          "ja": "こう提案します。木曜に4年分の契約書と納税記録をお持ちします。再審査としてお通しいただき、再度否決の場合は理由を書面でいただきたいです。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "資料と手順を明示する。次につながる。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-012",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a repair shop",
+      "listener": "a technician",
+      "want": "You want to argue that a repair should be covered by warranty.",
+      "situationJa": "保証の対象であるはずだと、修理費について主張したい。",
+      "tags": [
+        "warranty",
+        "disputes"
+      ],
+      "answers": [
+        {
+          "en": "I think this should be covered by the warranty. The machine is fourteen months old and the warranty is two years. Could you tell me why it's been treated as chargeable?",
+          "ja": "これは保証の対象になるはずだと思います。購入から14か月で、保証は2年です。有償扱いとされた理由を教えていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "期間を先に示す。話が最短で進む。"
+        },
+        {
+          "en": "The note says accidental damage, but the casing isn't marked anywhere. The fault is that it stops after two minutes, which started on its own. Nothing was dropped or spilled.",
+          "ja": "備考には破損とありますが、外装に傷は一切ありません。不具合は2分で停止することで、自然に始まりました。落としても、こぼしてもいません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "判断の前提を否定する。事実で押す。"
+        },
+        {
+          "en": "I know you didn't make the warranty decision and you're relaying it. I'm not going to argue with you about it. I would like to know who assessed it and on what basis.",
+          "ja": "保証の判断をされたのはあなたではなく、伝える立場だと承知しています。あなたと争うつもりはありません。どなたが、どのような根拠で判断されたかを知りたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者を責めない。情報が得られる。"
+        },
+        {
+          "en": "Could I see the assessment note in full? I'd like to understand what was observed rather than just the conclusion. If it's clearly damage, I'll pay without further argument.",
+          "ja": "査定の記録を全文拝見できますか。結論だけでなく、何が観察されたかを理解したいです。明らかに破損であれば、これ以上争わずお支払いします。",
+          "register": "polite",
+          "style": "request",
+          "note": "根拠を確認する。引き際も示していて誠実。"
+        },
+        {
+          "en": "I should like the warranty position reviewed before I authorise a chargeable repair. The unit is fourteen months old and shows no external damage. Please confirm the grounds on which cover has been declined.",
+          "ja": "有償修理を承認する前に、保証の適用について再確認をお願いいたします。製品は購入から14か月で、外部に損傷はございません。保証が適用されない根拠をご提示ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "承認を保留する。記録に残る言い方。"
+        },
+        {
+          "en": "This should be under warranty, shouldn't it? It's fourteen months old and there's not a mark on it. Why is it being charged for?",
+          "ja": "これは保証の対象ではないでしょうか。購入から14か月で、傷ひとつありません。なぜ有償になるのですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に問う。話が単純になる。"
+        },
+        {
+          "en": "If the warranty genuinely doesn't cover it, could the labour be waived? I'd pay for the part without complaint. That feels like a fair split given the age of the machine.",
+          "ja": "保証が本当に及ばないのであれば、工賃を免除いただけませんか。部品代は異議なくお支払いします。製品の使用期間を考えれば、妥当な分担かと思います。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "折半を提案する。現場で受け入れられやすい。"
+        },
+        {
+          "en": "I'd rather not authorise the repair while the warranty question is open. Once I've paid, the question closes with it. Could we settle the cover first?",
+          "ja": "保証の判断が未確定のまま、修理を承認するのは避けたいです。支払えば、その論点も一緒に閉じてしまいます。まず保証の適用を決めませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "支払いの順序を守る。権利を失わない。"
+        },
+        {
+          "en": "The same fault was repaired under warranty in March. The paperwork from that repair is in the box. If it's the same failure, I'd expect the same treatment.",
+          "ja": "同じ不具合は3月に保証で修理されました。その際の書類も箱に入っています。同じ故障であれば、同じ扱いになるはずです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "前例を示す。極めて強い論拠になる。"
+        },
+        {
+          "en": "Could we do it this way? Send it back to the manufacturer for a warranty decision rather than deciding here. I'll wait the extra week, and I'll pay in full if they say the same.",
+          "ja": "この形で進められませんか。ここで判断せず、保証の可否は製造元に照会してください。1週間余分に待ちますし、同じ判断であれば全額お支払いします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "判断者を変える提案。覆ることがある。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-013",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a mobile phone shop",
+      "listener": "a sales assistant",
+      "want": "You want to resist a hard sell and buy only what you came for.",
+      "situationJa": "強い勧誘を断り、必要なものだけを買いたい。",
+      "tags": [
+        "shopping",
+        "boundaries"
+      ],
+      "answers": [
+        {
+          "en": "I've come in for a data-only card for one month. I'm not looking at handsets or contracts today. Could we do just that part?",
+          "ja": "1か月分の通信専用の契約に来ました。本日、端末や長期契約は検討していません。その部分だけで進めていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "範囲を最初に固定する。勧誘が減る。"
+        },
+        {
+          "en": "I'm here for six weeks and then I leave the country. A twenty-four month contract doesn't work whatever the monthly price is. That's why I keep saying no to it.",
+          "ja": "滞在は6週間で、その後は出国します。月額がいくらであれ、24か月の契約は成り立ちません。断り続けているのはそのためです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "断る理由を構造的に示す。勧誘が終わる。"
+        },
+        {
+          "en": "I know you're asked to offer these and I'm not annoyed with you. It's just not right for me. Let's do the card and I'll be out of your way.",
+          "ja": "そうしたご案内が求められているのは分かりますし、腹を立ててもいません。ただ、私には合わないのです。通信の契約だけ済ませて、お邪魔しないようにします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "販売員を責めない。空気が良くなる。"
+        },
+        {
+          "en": "Could you tell me the total, including any fees, before we go further? I'd like to know what I'm actually paying today. Then I can decide properly.",
+          "ja": "先に進む前に、手数料も含めた総額を教えていただけますか。本日実際に支払う金額を把握したいです。その上できちんと判断します。",
+          "register": "polite",
+          "style": "request",
+          "note": "総額を先に確認する。追加を防ぐ最良の一手。"
+        },
+        {
+          "en": "I should prefer to purchase only the one-month data card. I am not in a position to enter into a longer agreement. I would be grateful if we could complete that transaction.",
+          "ja": "1か月分の通信専用の契約のみを希望いたします。長期の契約を結べる状況にはございません。その手続きを進めていただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった断り。押し返しにくい。"
+        },
+        {
+          "en": "Just the one-month card, thanks. No contract, no handset. That's all I need today.",
+          "ja": "1か月分の契約だけで結構です。長期契約も端末も不要です。本日はそれだけです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く繰り返す。最も効果的な断り方。"
+        },
+        {
+          "en": "If there's a rolling monthly plan with no minimum term, I'd look at that. Anything with a fixed term is out. Do you have one?",
+          "ja": "最低契約期間の無い月ごとの契約があれば、検討します。期間の定めがあるものは対象外です。ご用意はありますか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "条件を明示する。無駄な提案が止まる。"
+        },
+        {
+          "en": "I'd rather not take the insurance, and I don't want to be asked again. I've thought about it and the answer won't change. Let's finish the card, please.",
+          "ja": "保証の加入は見送りますし、再度のご案内も不要です。検討した上での結論で、変わりません。契約の手続きを進めてください。",
+          "register": "polite",
+          "style": "decline",
+          "note": "繰り返しを止める。丁寧だが明確。"
+        },
+        {
+          "en": "You've offered the contract four times now and I've said no four times. I don't mind being asked once. I do mind starting over each time I answer.",
+          "ja": "長期契約のご案内は4度目で、4度お断りしました。一度尋ねられるのは構いません。答えるたびに最初からやり直されるのは困ります。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "回数を数える。効果が大きい。"
+        },
+        {
+          "en": "How about we do it in this order? Process the one-month card first, and then you can tell me about the contract for two minutes. I'll listen properly once the card is done.",
+          "ja": "この順で進めませんか。まず1か月分の契約を処理し、その後2分だけ長期契約のご説明を伺います。手続きが済んだら、きちんとお聞きします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "順序を決める。双方が納得できる。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-014",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "a utility company",
+      "want": "You want to arrange a payment plan for a bill you cannot pay.",
+      "situationJa": "支払えない請求について、分割の相談をしたい。",
+      "tags": [
+        "utilities",
+        "hardship"
+      ],
+      "answers": [
+        {
+          "en": "I've received a bill for four hundred and I can't pay it in one go. I'd like to arrange a payment plan rather than miss the date and be chased. I can manage about eighty a month.",
+          "ja": "400の請求を受け取りましたが、一括では支払えません。期日を落として督促を受けるより、分割の相談をしたいです。月に80ほどであれば可能です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "払える額を自分から出す。話が早い。"
+        },
+        {
+          "en": "My hours were cut in August and the bill covers the winter quarter. Nothing has changed about my intention to pay it. What's changed is how fast I can do it.",
+          "ja": "8月に勤務時間が減り、この請求は冬季分のものです。支払う意思には何の変化もありません。変わったのは、支払える速さです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "支払う意思を明示する。信用が保たれる。"
+        },
+        {
+          "en": "I know you hear this a lot and I'm not asking for the debt to be written off. I'd rather set something up now than default quietly. I'd like to keep this straightforward for both of us.",
+          "ja": "同じ話を多く聞かれているでしょうし、免除を求めているのではありません。黙って滞納するより、今取り決めをしたいのです。互いに面倒のない形にしたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "誠実な姿勢を示す。柔軟な対応を引き出す。"
+        },
+        {
+          "en": "Could we spread it over five months rather than two? Eighty a month I can commit to and keep. Two hundred a month I would fail at, and I'd rather not promise it.",
+          "ja": "2か月ではなく、5か月に分けていただけませんか。月80であれば約束を守れます。月200では守れないので、約束したくありません。",
+          "register": "polite",
+          "style": "request",
+          "note": "守れる額を提示する。信頼につながる。"
+        },
+        {
+          "en": "I should like to request a repayment arrangement for the outstanding balance. A reduction in my working hours has made payment in full impossible at this time. I can commit to eighty per month from the first of next month.",
+          "ja": "未払残高について、分割による返済のお取り決めをお願い申し上げます。勤務時間の減少により、現時点での全額のお支払いが困難な状況です。来月1日より、月80をお約束できます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な申し出。記録に残り、督促が止まる。"
+        },
+        {
+          "en": "I can't pay this all at once. Could we do eighty a month over five months? I'd rather sort it now than miss the date.",
+          "ja": "一括では支払えません。5か月に分けて、月80でお願いできませんか。期日を落とすより、今片付けたいです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を出す。電話で使いやすい。"
+        },
+        {
+          "en": "If five months is too long, I could do a hundred over four. Anything above that and I'd be borrowing to pay you. I'd rather agree something I can actually keep to.",
+          "ja": "5か月が長すぎるようでしたら、4か月で月100も可能です。それを超えると、支払うために借りることになります。実際に守れる約束をしたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "代案を1つだけ示す。合意が早い。"
+        },
+        {
+          "en": "I'd rather not agree to two hundred a month knowing I'd miss the second one. That would leave us both worse off. I'd like to agree a figure I can hold.",
+          "ja": "2回目を落とすと分かっていながら、月200に同意するのは避けたいです。互いにとって悪い結果になります。守れる金額で合意したいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "無理な合意を断る。誠実さが伝わる。"
+        },
+        {
+          "en": "I called on the tenth to arrange this and was told to wait for the final bill. The reminder arrived before anyone called me back. I'd like that noted so it isn't recorded as avoidance.",
+          "ja": "10日にこの件で電話し、最終請求を待つよう案内されました。折り返しの前に督促が届きました。滞納の意図と記録されないよう、経緯を残していただきたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "自分の対応の記録を残す。不利益を防ぐ。"
+        },
+        {
+          "en": "Could we set it up this way? Eighty a month by direct debit from the first, and a review in three months if my hours go back up. I'd pay the balance off early if that happens.",
+          "ja": "この形で設定できませんか。1日から口座振替で月80、勤務時間が戻れば3か月後に見直しを。その場合は、残額を早期に完済します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "見直しの条件も入れる。前向きに映る。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-015",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a car rental desk",
+      "listener": "an agent",
+      "want": "You want to refuse extra charges added at the counter.",
+      "situationJa": "窓口で追加された料金を、断りたい。",
+      "tags": [
+        "travel",
+        "boundaries"
+      ],
+      "answers": [
+        {
+          "en": "The booking confirmation says one hundred and ninety in total. The screen is showing three hundred and forty. Could you tell me what the extra items are?",
+          "ja": "予約確認書には合計190とあります。画面には340と表示されています。追加されている項目を教えていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "書面と画面を突き合わせる。最も強い出発点。"
+        },
+        {
+          "en": "The confirmation includes basic insurance and unlimited mileage. The extra insurance on the screen duplicates cover I already have through my card. That's why I don't want it.",
+          "ja": "確認書には基本の保険と走行距離無制限が含まれています。画面上の追加保険は、カードで既に持っている補償と重複します。だから不要なのです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "重複を指摘する。断る根拠が明確になる。"
+        },
+        {
+          "en": "I understand you're required to offer these and some people want them. I'm not questioning that. I just don't want them added without being asked.",
+          "ja": "ご案内が求められており、必要とされる方もいるのは理解しています。それを否定してはいません。ただ、確認なく追加されるのは避けたいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者を責めずに線を引く。摩擦が少ない。"
+        },
+        {
+          "en": "Could you remove the extra insurance and the fuel option? I'd like the total to match the confirmation. I'll sign once the figures agree.",
+          "ja": "追加保険と燃料の選択を外していただけますか。合計を確認書と一致させたいです。金額が合えば署名します。",
+          "register": "polite",
+          "style": "request",
+          "note": "外す項目を名指しする。作業が早い。"
+        },
+        {
+          "en": "I should like the additional items removed from the agreement. My booking confirmation states a total of one hundred and ninety, inclusive of insurance. I am not willing to sign for a different figure.",
+          "ja": "契約から追加の項目を削除していただきたく存じます。予約確認書には、保険込みで合計190と記載されております。異なる金額での署名には応じられません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "署名を拒む正当な理由。強く効く。"
+        },
+        {
+          "en": "That's not the price I booked. My confirmation says one ninety, not three forty. Can you take the extras off?",
+          "ja": "予約した金額と違います。確認書には340ではなく190とあります。追加分を外していただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に指摘する。短く済む。"
+        },
+        {
+          "en": "I'll take the fuel option if it's genuinely cheaper than filling up locally. The insurance I don't need at all. Could we do one and not the other?",
+          "ja": "燃料の選択は、現地で給油するより安いなら承ります。保険はまったく不要です。片方だけにできませんか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "全部を断らない。話がこじれない。"
+        },
+        {
+          "en": "I'd rather not take the extra insurance, and I understand the excess stays at my risk. I'm happy to sign something confirming that. I just don't want the cover.",
+          "ja": "追加保険は見送ります。免責額が自己負担のままである点も理解しています。その旨の書面には喜んで署名します。ただ、補償は不要です。",
+          "register": "polite",
+          "style": "decline",
+          "note": "危険を理解した上での拒否。押し返されにくい。"
+        },
+        {
+          "en": "The same thing happened at this desk in April. The extras were on the screen before I'd said anything. I'd rather they were offered than added.",
+          "ja": "4月にもこの窓口で同じことがありました。何も言わないうちに、追加分が画面に入っていました。追加ではなく、提案としてご案内いただきたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを指摘する。運用が変わることがある。"
+        },
+        {
+          "en": "Let's do it this way. Print the agreement at the confirmed total of one hundred and ninety, and I'll sign it now. If you'd like to explain the insurance afterwards, I'll listen.",
+          "ja": "この形で進めましょう。確認済みの190で契約書を印刷いただければ、今署名します。その後に保険のご説明をされたいのであれば、伺います。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "手続きを進めつつ譲らない。実務的で有効。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-016",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At an estate agency",
+      "listener": "an agent",
+      "want": "You want to negotiate the rent and the terms before signing.",
+      "situationJa": "署名の前に、家賃と条件を交渉したい。",
+      "tags": [
+        "housing",
+        "negotiating"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to take the flat, and I'd like to discuss two things first. The rent is about eight percent above the others on the same street. I'd also like the break clause at six months rather than twelve.",
+          "ja": "この物件を借りたいのですが、先に2点相談させてください。家賃が同じ通りの他の物件より8パーセントほど高いです。中途解約の条項も、12か月ではなく6か月にしたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "借りる意思を先に示す。交渉が前向きになる。"
+        },
+        {
+          "en": "Three comparable flats on this street let at around eleven hundred last month. This one is listed at twelve hundred with the same specification. That's the gap I'd like to talk about.",
+          "ja": "同じ通りの類似物件3件が、先月およそ1100で成約しています。この物件は同じ仕様で1200の掲載です。その差についてお話ししたいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "相場を根拠にする。交渉が具体的になる。"
+        },
+        {
+          "en": "I realise you act for the landlord and not for me. I'm not asking you to argue my case for free. I'd just like the offer put to them as it stands.",
+          "ja": "家主側の代理であって、私の側ではないと理解しています。無償で私のために交渉してほしいのではありません。ただ、この申し出をそのまま伝えていただきたいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の立場を認める。仲介が動きやすい。"
+        },
+        {
+          "en": "Could you put an offer of eleven fifty with a six-month break to the landlord? I'm ready to sign this week and I have references prepared. That should be worth something on a flat that's been empty for a month.",
+          "ja": "1150、6か月での中途解約という条件を家主にお伝えいただけますか。今週中に署名でき、保証人の書類も用意済みです。1か月空室の物件であれば、その点に価値があるはずです。",
+          "register": "polite",
+          "style": "request",
+          "note": "自分の強みを添える。通る確率が上がる。"
+        },
+        {
+          "en": "I should like to make a formal offer on the property. I propose eleven hundred and fifty per month, with a break clause exercisable at six months. I am able to proceed immediately and can provide references today.",
+          "ja": "本物件について、正式に申し込みを行いたく存じます。月額1150、6か月経過時に行使可能な中途解約条項を提案いたします。直ちに手続きが可能で、保証人の書類も本日ご提出できます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "書面の申し込みに。真剣さが伝わる。"
+        },
+        {
+          "en": "I like the flat, but twelve hundred is high for this street. Would the landlord take eleven fifty? I could sign this week.",
+          "ja": "物件は気に入っていますが、この通りで1200は高いです。家主は1150で応じられますか。今週中に署名できます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に切り出す。話が早く進む。"
+        },
+        {
+          "en": "If the rent can't move, could the break clause come down to six months instead? I'd rather have the flexibility than the hundred a month. Either one would work for me.",
+          "ja": "家賃を動かせないのであれば、中途解約の条項を6か月にできませんか。月100より、その柔軟性の方が価値があります。どちらか一方で構いません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "二者択一にする。相手が答えやすい。"
+        },
+        {
+          "en": "I'd rather not pay six weeks' deposit when five is the legal maximum here. That isn't a negotiating position, it's the rule. Everything else I'm flexible on.",
+          "ja": "この地域の法定上限が5週分である以上、6週分の敷金をお支払いするのは避けたいです。交渉上の立場ではなく、規則の話です。他の点は柔軟に対応します。",
+          "register": "polite",
+          "style": "decline",
+          "note": "規則を根拠に断る。争えない論拠。"
+        },
+        {
+          "en": "The listing has been up for five weeks and the price hasn't moved. Two viewings were cancelled while I was waiting for this one. I mention it because the market seems to agree with me.",
+          "ja": "掲載から5週間、価格は動いていません。この内見を待つ間に、2件の内見が取り消されました。市場も私と同じ見方をしているようなので、申し添えます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "市場の事実を示す。値下げの根拠になる。"
+        },
+        {
+          "en": "Here's what I'd propose. Put eleven fifty with a six-month break to the landlord today, and I'll hold the offer until Friday. If they say no to both, I'll take the flat at twelve hundred with the six-month break.",
+          "ja": "こう提案します。本日、1150と6か月の中途解約を家主にお伝えください。私は金曜まで申し出を維持します。両方とも難しければ、1200で6か月の中途解約付きとして契約します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "最終の着地点を先に見せる。成立が早い。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-017",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a post office",
+      "listener": "a clerk",
+      "want": "You want to claim for a valuable parcel that was lost in the post.",
+      "situationJa": "郵送中に紛失した高価な荷物について、補償を求めたい。",
+      "tags": [
+        "post",
+        "claims"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to make a claim for a parcel sent on the fourth that never arrived. It was sent by tracked delivery and the tracking stops at the sorting centre. The contents were worth about four hundred.",
+          "ja": "4日に発送し、届かなかった荷物について補償を請求したいです。追跡付きで発送し、追跡は仕分け拠点で止まっています。中身の価値はおよそ400です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "発送日、追跡、金額。必要事項が揃う。"
+        },
+        {
+          "en": "The tracking last updated on the sixth at the regional centre. Nothing has moved in eleven days and the recipient has heard nothing. I've already waited the fifteen working days the policy requires.",
+          "ja": "追跡の最終更新は6日、地域拠点でのものです。11日間動きが無く、受取人にも連絡はありません。規定で求められる15営業日は既に経過しています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "待機期間を満たしたと示す。門前払いを防ぐ。"
+        },
+        {
+          "en": "I know the claim has to go through a process and you can't decide it here. I'm not expecting an answer today. I would like to be sure the form is complete before I leave.",
+          "ja": "請求には手続きが必要で、この場でご判断いただけないのは承知しています。本日の回答は求めていません。ただ、退出前に書類が整っているかは確かめたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "窓口の役割を尊重する。協力が得られる。"
+        },
+        {
+          "en": "Could you check the form with me before I submit it? I'd rather fix anything missing now than have it returned in a fortnight. I've brought the receipt and the proof of value.",
+          "ja": "提出前に、書類を一緒にご確認いただけますか。2週間後に差し戻されるより、不足を今直したいです。領収書と価値の証明書も持参しています。",
+          "register": "polite",
+          "style": "request",
+          "note": "手戻りを防ぐ。実務的で歓迎される。"
+        },
+        {
+          "en": "I wish to submit a claim for a lost item posted on the fourth of this month. The tracking record ends at the regional sorting centre on the sixth. I attach proof of posting and proof of value.",
+          "ja": "今月4日に差し出し、紛失した品について補償を請求いたします。追跡記録は6日、地域仕分け拠点で終わっております。差出の証明と価値の証明を添付いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な請求。書面としてそのまま使える。"
+        },
+        {
+          "en": "A parcel I sent on the fourth never arrived. The tracking stopped at the sorting centre on the sixth. How do I claim for it?",
+          "ja": "4日に送った荷物が届いていません。追跡は6日、仕分け拠点で止まっています。どのように請求すればよいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く事情を伝える。窓口で使いやすい。"
+        },
+        {
+          "en": "If the full value isn't covered, I'd like to know the limit before I fill this in. There's no point claiming four hundred against a cap of fifty. I'd rather know now than in a month.",
+          "ja": "全額が対象でないのであれば、記入前に上限を知りたいです。上限が50であれば、400を請求しても意味がありません。1か月後より、今知りたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "上限を先に確認する。無駄が省ける。"
+        },
+        {
+          "en": "I'd rather not wait another fifteen days before the claim is opened. I've already waited the period the policy sets out. Could it be logged today?",
+          "ja": "請求の受付まで、さらに15日待つのは避けたいです。規定の期間は既に待ちました。本日中に受け付けていただけませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "追加の待機を断る。規定を根拠にする。"
+        },
+        {
+          "en": "I asked about this on the tenth and was told to wait five more days. I came back on the fifteenth and was told to wait for a letter. That's why I've brought everything with me today.",
+          "ja": "10日にも伺い、あと5日待つよう言われました。15日に再訪すると、書面を待つよう言われました。だから本日、すべて持参しました。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。同じ案内の繰り返しを止める。"
+        },
+        {
+          "en": "Could we do it this way? I'll submit the form and the evidence today and take a receipt for it. If there's no decision within twenty working days, I'll come back with that receipt.",
+          "ja": "この形でお願いできませんか。本日、書類と証拠を提出し、その控えをいただきます。20営業日以内に判断が出なければ、その控えを持って再度伺います。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "控えを取る。後の交渉で効く。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-018",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "a subscription service",
+      "want": "You want a refund for a subscription that renewed without notice.",
+      "situationJa": "通知なく更新された定期契約の返金を求めたい。",
+      "tags": [
+        "subscriptions",
+        "refunds"
+      ],
+      "answers": [
+        {
+          "en": "The annual subscription renewed on the first and I wasn't notified. I'd like it cancelled and refunded. I haven't used the service since March.",
+          "ja": "年間の定期契約が1日に更新されましたが、通知はありませんでした。解約と返金をお願いしたいです。3月以降、利用していません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "3点を簡潔に。要求が明確になる。"
+        },
+        {
+          "en": "Your terms say a reminder is sent seven days before renewal. Nothing arrived, and I've checked the spam folder too. That's the basis of the refund request rather than simple regret.",
+          "ja": "御社の規定では、更新の7日前に通知が送られることになっています。何も届いておらず、迷惑メールの欄も確認済みです。単なる後悔ではなく、それが返金請求の根拠です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "規定違反を指摘する。強い論拠になる。"
+        },
+        {
+          "en": "I'm sure the reminder is automated and this isn't anything you did. I'm not asking you to take responsibility for it. I would like it treated as a failed notification rather than a change of mind.",
+          "ja": "通知は自動で、あなたの落ち度ではないと承知しています。責任を負ってほしいのではありません。気が変わったのではなく、通知の不達として扱っていただきたいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "扱いの区分を求める。結論が変わる。"
+        },
+        {
+          "en": "Could you check whether the reminder was actually sent on the twenty-fifth? Your system should show it. If it was sent and I missed it, I'll accept a partial refund instead.",
+          "ja": "25日に通知が実際に送信されたか、確認していただけますか。御社の記録に残っているはずです。送信済みで私が見落としたのであれば、一部返金でも受け入れます。",
+          "register": "polite",
+          "style": "request",
+          "note": "確認と譲歩を同時に示す。誠実で通りやすい。"
+        },
+        {
+          "en": "I wish to cancel the subscription renewed on the first and request a full refund. Your terms provide for notification seven days in advance, which was not received. Please confirm the refund and the date it will be processed.",
+          "ja": "1日に更新された定期契約の解約と、全額の返金を請求いたします。御社の規定は7日前の通知を定めておりますが、受領しておりません。返金と、その処理日をご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な請求。記録として残る。"
+        },
+        {
+          "en": "It auto-renewed on the first and I never got a reminder. I haven't used it since March. Can I get a refund?",
+          "ja": "1日に自動更新されましたが、通知は届きませんでした。3月以降利用していません。返金は可能ですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を出す。電話で使いやすい。"
+        },
+        {
+          "en": "If a full refund isn't possible, I'd accept eleven months back. I've had one month of a service I didn't intend to buy. That seems a reasonable middle ground.",
+          "ja": "全額返金が難しければ、11か月分でも構いません。購入の意思が無かった契約を1か月使ったことになります。妥当な折衷案かと思います。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "合理的な線を示す。合意されやすい。"
+        },
+        {
+          "en": "I'd rather not take account credit instead of a refund. I'm not planning to use the service again, so the credit has no value to me. I'd like the money returned to the card.",
+          "ja": "返金ではなく、次回に使える残高をいただくのは避けたいです。再度利用する予定が無く、私には価値がありません。カードへの返金をお願いします。",
+          "register": "polite",
+          "style": "decline",
+          "note": "代替案を断る理由が明確。押し返せる。"
+        },
+        {
+          "en": "This is the second year the reminder hasn't arrived. Last year it was refunded on the same basis. I'd rather the notification was fixed than refunded again next year.",
+          "ja": "通知が届かなかったのは、これで2年目です。昨年も同じ理由で返金いただきました。来年また返金するより、通知の仕組みを直していただきたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "前例と根本原因を示す。返金が通りやすい。"
+        },
+        {
+          "en": "Could we settle it this way? Cancel the renewal today and refund eleven months to the card. Send me confirmation by email so I have it in writing.",
+          "ja": "この形で解決できませんか。本日更新を取り消し、11か月分をカードへ返金してください。書面として残るよう、確認をメールでお送りください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "具体的な合意案。その場で決まりやすい。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-019",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a service counter",
+      "listener": "a staff member",
+      "want": "You want to praise a member of staff so that it is recorded.",
+      "situationJa": "対応の良さを、記録に残る形で伝えたい。",
+      "tags": [
+        "praise",
+        "feedback"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to say something positive for once, and I'd like it recorded. Aya on the second floor spent forty minutes sorting out a problem that wasn't yours. I'd like her manager to know.",
+          "ja": "たまには良いことをお伝えしたく、記録に残していただきたいです。2階のアヤさんが、御社の落ち度ではない問題に40分を割いてくださいました。上長にお伝えいただきたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "誰が何をしたかを具体的に。記録として機能する。"
+        },
+        {
+          "en": "I'd been passed between three departments before I got to her. She was the only one who took ownership of it. That's the part I think is worth noting.",
+          "ja": "彼女にたどり着くまでに、3つの部署をたらい回しにされました。責任を持って引き受けてくださったのは彼女だけです。そこを記録する価値があると思います。",
+          "register": "neutral",
+          "style": "context",
+          "note": "対比で価値を示す。評価が伝わりやすい。"
+        },
+        {
+          "en": "I know people usually only come to this desk to complain. I've done that myself more than once. This is the opposite and I hope it reaches her.",
+          "ja": "この窓口には、普通は苦情を言いに来るのだと思います。私も何度かそうしました。今回は逆で、ご本人に届くことを願っています。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "一言添える。相手も気持ちよく受け取れる。"
+        },
+        {
+          "en": "Could you tell me how to send formal feedback? An email to a general address tends to disappear. I'd like this to reach the person who does her review.",
+          "ja": "正式な意見の送り方を教えていただけますか。共通の宛先へのメールは埋もれがちです。彼女の評価をされる方に届く形にしたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "届く経路を尋ねる。実際に評価につながる。"
+        },
+        {
+          "en": "I should like to record my appreciation for a member of your staff. Aya in the customer accounts team resolved a matter three other departments had not. I would be grateful if this could be passed to her line manager.",
+          "ja": "貴社の従業員の方について、感謝を記録させていただきたく存じます。顧客口座担当のアヤさんが、他の3部署で解決しなかった案件を処理してくださいました。直属の上長へお伝えいただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "書面での賞賛。人事記録に残りやすい。"
+        },
+        {
+          "en": "I just wanted to say Aya upstairs was brilliant. Forty minutes on something that wasn't even her job. Could you pass that on?",
+          "ja": "上の階のアヤさんが、本当に素晴らしかったとお伝えしたくて。ご自身の担当でもない件に40分割いてくださいました。お伝えいただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気軽に伝える。それでも十分価値がある。"
+        },
+        {
+          "en": "If a form is easier than a conversation, I'll fill one in now. Or I'll send an email if that's what actually gets read. Whichever is more likely to reach her manager.",
+          "ja": "口頭より書式の方が容易であれば、今記入します。実際に読まれるのがメールであれば、そちらを送ります。上長に届きやすい方で構いません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "相手の手間に合わせる。実現しやすい。"
+        },
+        {
+          "en": "I'd rather not just leave it as a comment on the survey. Those seem to go into a number rather than to a person. I'd like her name attached to it.",
+          "ja": "調査への一言として残すだけにはしたくありません。個人ではなく、数値に吸収されてしまう気がします。彼女の名前を添えて残したいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "形骸化した経路を断る。実効性を求める。"
+        },
+        {
+          "en": "I complained about this same account three times last year. Each time it was handled as a ticket rather than a problem. She was the first person to treat it as something to solve.",
+          "ja": "昨年、同じ口座について3度苦情を申し上げました。そのたびに、問題ではなく案件として処理されました。解決すべきことと捉えてくださったのは、彼女が初めてです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "対比で賞賛を強める。組織の課題も伝わる。"
+        },
+        {
+          "en": "Could I do both? I'll write it down for the file now, and if you give me an email address I'll send it to her manager too. I'd like it to count for her rather than just be filed.",
+          "ja": "両方させていただけますか。今こちらで記録用に書き、メールの宛先をいただければ上長にもお送りします。保管されるだけでなく、彼女の評価につながってほしいのです。",
+          "register": "polite",
+          "style": "propose",
+          "note": "確実に届く二重の手立て。効果が大きい。"
+        }
+      ]
+    },
+    {
+      "id": "services-3-020",
+      "category": "services",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "a council officer",
+      "want": "You want to escalate a complaint that has gone unanswered.",
+      "situationJa": "放置されたままの申し立てを、上位へ上げたい。",
+      "tags": [
+        "escalation",
+        "complaints"
+      ],
+      "answers": [
+        {
+          "en": "I submitted a complaint on the ninth of last month and I've had no response. The policy says twenty working days and we're at thirty-one. I'd like to escalate it rather than resubmit.",
+          "ja": "先月9日に申し立てを提出しましたが、回答がありません。規定では20営業日ですが、31営業日が経過しています。再提出ではなく、上位へ上げていただきたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "期限超過を数字で示す。上位に上がりやすい。"
+        },
+        {
+          "en": "I've called three times and been given a reference each time. Two of the references don't appear on your system now. That's part of why I'm asking for this to go to stage two.",
+          "ja": "3度電話し、そのたびに受付番号をいただきました。そのうち2件は、現在システムに存在しません。第2段階への移行を求めているのは、それも理由です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "手続きの不備を示す。上位審査の根拠になる。"
+        },
+        {
+          "en": "I understand you can't answer for the department that's gone quiet. I'm not asking you to. I'd like to know the escalation route and who owns it.",
+          "ja": "音沙汰の無い部署について、あなたが答えられないのは理解しています。求めてもいません。上位への経路と、その責任者を知りたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の権限内で頼む。話が進む。"
+        },
+        {
+          "en": "Could you register this as a stage two complaint today and give me the reference? I'd also like the name of the officer it goes to. I'll put the detail in writing this afternoon.",
+          "ja": "本日、第2段階の申し立てとして登録し、受付番号をいただけますか。担当される職員のお名前も伺いたいです。詳細は本日午後に書面でお送りします。",
+          "register": "polite",
+          "style": "request",
+          "note": "番号と担当者名を取る。放置されにくくなる。"
+        },
+        {
+          "en": "I wish to escalate complaint reference eight-one-four to stage two. No substantive response has been received within the twenty working days set out in your procedure. Please confirm the escalation and the officer responsible.",
+          "ja": "申し立て番号814について、第2段階への移行を求めます。貴所の手続きが定める20営業日以内に、実質的な回答を受領しておりません。移行のご確認と、担当職員をご教示ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な上申。手続きが動き出す。"
+        },
+        {
+          "en": "I complained on the ninth of last month and heard nothing. That's thirty-one working days against a twenty-day policy. Can this go to stage two?",
+          "ja": "先月9日に申し立てましたが、何の連絡もありません。20営業日の規定に対し、31営業日です。第2段階に上げていただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を出す。電話で通じやすい。"
+        },
+        {
+          "en": "If a substantive answer comes this week, I'd be happy to leave it at stage one. Otherwise I'd like it escalated on Friday. Could we agree that now?",
+          "ja": "今週中に実質的な回答があれば、第1段階のままで構いません。無ければ、金曜に上位へ上げていただきたいです。今その点で合意できますか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "猶予と期限を同時に置く。合理的に見える。"
+        },
+        {
+          "en": "I'd rather not submit the same complaint again as a new case. That resets the clock and loses the delay. I'd like the original reference carried forward.",
+          "ja": "同じ内容を新規案件として再提出するのは避けたいです。起算日が戻り、これまでの遅れが消えてしまいます。当初の受付番号を引き継いでいただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "再提出の不利益を理解している。守りが固い。"
+        },
+        {
+          "en": "In total I've spent about four hours on this across five calls. Each time I've explained it from the start to someone new. That's now a bigger issue than the original complaint.",
+          "ja": "5回の通話で、合計4時間ほど費やしました。そのたびに、初めての方へ一から説明しています。当初の申し立てより大きな問題になっています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "手間を数字で示す。対応が変わりやすい。"
+        },
+        {
+          "en": "Here's what I'd propose. Escalate it today with the original reference, and send me written confirmation by Friday. If nothing arrives, I'll take it to the ombudsman with the timeline attached.",
+          "ja": "こう提案します。当初の受付番号のまま本日上位へ上げ、金曜までに書面でご確認ください。届かなければ、経緯を添えて第三者機関に持ち込みます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "次の段階を明示する。相手が本気で動く。"
+        }
+      ]
+    }
+  ]
+}
