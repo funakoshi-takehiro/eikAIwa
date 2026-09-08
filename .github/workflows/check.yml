@@ -38,26 +38,40 @@ jobs:
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
+      # npx playwright install はブラウザ本体を落とすだけで、playwright
+      # パッケージ自体は入らない。require('playwright') を解決させるには
+      # グローバルにパッケージも入れる必要がある。
+      # （これを忘れて CI が MODULE_NOT_FOUND で落ちていた）
       - name: Playwright を取得
-        run: npx --yes playwright@1.56.1 install --with-deps chromium
+        run: |
+          set -e
+          npm install -g playwright@1.56.1
+          npx --yes playwright@1.56.1 install --with-deps chromium
+          NODE_PATH="$(npm root -g)" node -e "require('playwright')"
+          echo "playwright を解決できました"
 
-      - name: サブパス配信を再現してブラウザで一周する
+      # 通し確認とオフライン確認は同じサーバを使うので1ステップにまとめる。
+      # ステップを分けるとバックグラウンドのサーバが残るかどうかに依存して
+      # 不安定になる。
+      - name: ブラウザで一周し、オフラインでも学習できることを確認する
         run: |
           set -e
           mkdir -p /tmp/site/eng_std
-          cp -r . /tmp/site/eng_std/
+          # .git を含めると無駄に重いので除く
+          tar --exclude=.git -cf - . | (cd /tmp/site/eng_std && tar -xf -)
           python3 -m http.server 8080 -d /tmp/site >/dev/null 2>&1 &
           for i in $(seq 1 30); do
             curl -sf -o /dev/null http://localhost:8080/eng_std/index.html && break
             sleep 0.5
           done
-          NODE_PATH="$(npm root -g)" \
-          SMOKE_URL=http://localhost:8080/eng_std/ \
+          curl -sf -o /dev/null http://localhost:8080/eng_std/index.html \
+            || { echo "ローカルサーバが起動しませんでした"; exit 1; }
+
+          export NODE_PATH="$(npm root -g)"
+          export SMOKE_URL=http://localhost:8080/eng_std/
+
+          echo "── ブラウザ通し確認 ──"
           node .github/tools/browser_smoke.js
 
-      - name: オフラインで学習できることを確認する
-        run: |
-          set -e
-          NODE_PATH="$(npm root -g)" \
-          SMOKE_URL=http://localhost:8080/eng_std/ \
+          echo "── オフライン動作 ──"
           node .github/tools/offline_test.js
