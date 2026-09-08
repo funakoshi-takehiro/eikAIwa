@@ -1,0 +1,12 @@
+# ビルド工程を持たない構成のため、生成物はありません。
+# ここに載るのは OS / エディタ / 一時ファイルだけです。
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+node_modules/
+__pycache__/
+*.pyc
+/tmp/

@@ -1,0 +1,50 @@
+# GitHub Pages へのデプロイ
+#
+# ビルド工程が無いため、リポジトリ直下をそのまま配信する。
+# 唯一の防波堤である precheck.py を通らなければデプロイしない。
+#
+# 前提: リポジトリを public にし、Settings → Pages → Source を
+#       「GitHub Actions」にしておくこと。
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - claude/english-learning-app-plan-acnz6p
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # サプライチェーン対策としてコミットSHAで固定（Dependabot が更新を自動PR）
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: 静的チェック（これを通らなければ公開しない）
+        run: python3 .github/tools/precheck.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

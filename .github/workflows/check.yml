@@ -1,0 +1,56 @@
+# 静的チェックと、ブラウザでの通し確認。
+#
+# 依存パッケージはリポジトリに入れない（package.json を置かない）方針のため、
+# Playwright は npx でその場限りに取得する。
+# runner 標準の Python3 と Node だけで完結させている。
+name: check
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: 静的チェック
+        run: python3 .github/tools/precheck.py
+
+      - name: 書き込み範囲ガードの自己テスト
+        run: python3 .github/tools/guard_selftest.py
+
+      - name: JS の構文チェック
+        run: |
+          set -e
+          for f in $(find js sw.js -name '*.js' | sort); do
+            node --check "$f"
+          done
+          echo "全 JS の構文 OK"
+
+  browser-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Playwright を取得
+        run: npx --yes playwright@1.56.1 install --with-deps chromium
+
+      - name: サブパス配信を再現してブラウザで一周する
+        run: |
+          set -e
+          mkdir -p /tmp/site/eng_std
+          cp -r . /tmp/site/eng_std/
+          python3 -m http.server 8080 -d /tmp/site >/dev/null 2>&1 &
+          for i in $(seq 1 30); do
+            curl -sf -o /dev/null http://localhost:8080/eng_std/index.html && break
+            sleep 0.5
+          done
+          NODE_PATH="$(npm root -g)" \
+          SMOKE_URL=http://localhost:8080/eng_std/ \
+          node .github/tools/browser_smoke.js

@@ -1,0 +1,23 @@
+{
+  "name": "eikAIwa — 英語が口から出る練習",
+  "short_name": "eikAIwa",
+  "description": "状況を見て、自分の言葉を考えて口に出す。10通りの言い方と比べて身につける英会話トレーニング。オフラインで使えます。",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f9fbfc",
+  "theme_color": "#028DAE",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "今日の練習", "short_name": "練習", "url": "./#/practice/daily" },
+    { "name": "カテゴリ", "short_name": "カテゴリ", "url": "./#/categories" }
+  ]
+}

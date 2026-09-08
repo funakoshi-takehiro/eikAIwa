@@ -1,0 +1,480 @@
+{
+  "category": "transport",
+  "situations": [
+    {
+      "id": "transport-001", "category": "transport", "difficulty": 1,
+      "place": "At a train station", "listener": "a station attendant",
+      "want": "You want to find a restroom.",
+      "situationJa": "駅で駅員にトイレの場所を聞きたい。",
+      "tags": ["asking", "directions"],
+      "answers": [
+        { "en": "Restroom?", "ja": "トイレは？", "register": "casual", "style": "oneword", "note": "指をさしながらなら通じる。急いでいるときの最終手段。" },
+        { "en": "Excuse me, where is the restroom?", "ja": "すみません、トイレはどこですか。", "register": "neutral", "style": "basic", "note": "教科書どおりの基本形。まずこれが出れば十分。" },
+        { "en": "Excuse me, where's the restroom?", "ja": "すみません、トイレはどこですか。", "register": "neutral", "style": "contraction", "note": "where's と縮めるだけでぐっと自然になる。" },
+        { "en": "Could you tell me where the restroom is?", "ja": "トイレがどこか教えていただけますか。", "register": "polite", "style": "request", "note": "Could you 〜 は万能。迷ったらこれで角が立たない。" },
+        { "en": "I'm sorry to bother you, but would you mind telling me where the restroom is?", "ja": "お忙しいところすみません、トイレの場所を教えていただけないでしょうか。", "register": "formal", "style": "formal", "note": "かなり丁寧。忙しそうな相手に声をかけるときに。" },
+        { "en": "Hey, is there a restroom around here?", "ja": "ねえ、この辺にトイレある？", "register": "casual", "style": "casual", "note": "友人や同年代に。駅員相手にはくだけすぎ。" },
+        { "en": "Is there a restroom nearby?", "ja": "近くにトイレはありますか。", "register": "neutral", "style": "existence", "note": "「どこ」ではなく「あるか」を聞く型。無いかもしれない場所で便利。" },
+        { "en": "Excuse me, where's the toilet?", "ja": "すみません、お手洗いはどこですか。", "register": "neutral", "style": "vocab", "note": "toilet は英・豪では普通。米国では直接的すぎる響き。" },
+        { "en": "Sorry, I've been looking for the restroom. Do you know where it is?", "ja": "すみません、トイレを探しているんですが、どこかご存じですか。", "register": "polite", "style": "context", "note": "事情を一言添えると、相手も状況をつかみやすい。" },
+        { "en": "Excuse me, do you have a moment? I'm looking for the restroom.", "ja": "すみません、少しよろしいですか。トイレを探しています。", "register": "polite", "style": "considerate", "note": "まず相手の都合を確認する型。改札で忙しい駅員に有効。" }
+      ]
+    },
+    {
+      "id": "transport-002", "category": "transport", "difficulty": 1,
+      "place": "At a ticket counter", "listener": "a ticket agent",
+      "want": "You want to buy a one-way ticket to Oxford.",
+      "situationJa": "窓口でオックスフォードまでの片道切符を買いたい。",
+      "tags": ["buying", "ticket"],
+      "answers": [
+        { "en": "One to Oxford, please.", "ja": "オックスフォードまで1枚お願いします。", "register": "neutral", "style": "oneword", "note": "窓口ではこれで完全に通じる。実際いちばん多い言い方。" },
+        { "en": "One ticket to Oxford, please.", "ja": "オックスフォードまで切符を1枚ください。", "register": "neutral", "style": "basic", "note": "基本形。ticket を入れると誤解がない。" },
+        { "en": "A one-way ticket to Oxford, please.", "ja": "オックスフォードまで片道1枚お願いします。", "register": "neutral", "style": "basic", "note": "片道は one-way。往復は round trip（米）/ return（英）。" },
+        { "en": "Could I get a one-way to Oxford?", "ja": "オックスフォードまで片道をお願いできますか。", "register": "polite", "style": "request", "note": "Could I get 〜 は買い物全般で使える便利な型。" },
+        { "en": "I'd like a single to Oxford, please.", "ja": "オックスフォードまで片道を1枚お願いします。", "register": "polite", "style": "vocab", "note": "single は英国式の「片道」。往復は return。" },
+        { "en": "Can I have one to Oxford?", "ja": "オックスフォードまで1枚もらえますか。", "register": "casual", "style": "casual", "note": "軽い言い方。友達同士のような気安さ。" },
+        { "en": "I'd like to buy a one-way ticket to Oxford for today.", "ja": "本日のオックスフォード行き片道を1枚購入したいのですが。", "register": "formal", "style": "formal", "note": "日付まで添えるとやり取りが1往復減る。" },
+        { "en": "Do you have any tickets to Oxford leaving soon?", "ja": "まもなく出るオックスフォード行きの切符はありますか。", "register": "neutral", "style": "existence", "note": "時間を決めていないときはこの型が早い。" },
+        { "en": "I need to get to Oxford this afternoon. What are my options?", "ja": "今日の午後にオックスフォードへ行きたいのですが、どんな方法がありますか。", "register": "polite", "style": "context", "note": "目的だけ伝えて相手に提案してもらう。慣れない路線で有効。" },
+        { "en": "Hi, sorry — one-way to Oxford, and could you tell me which platform?", "ja": "すみません、オックスフォードまで片道と、それから何番線か教えていただけますか。", "register": "polite", "style": "considerate", "note": "ついでに聞きたいことをまとめる。窓口では歓迎される。" }
+      ]
+    },
+    {
+      "id": "transport-003", "category": "transport", "difficulty": 1,
+      "place": "In a station concourse", "listener": "a station attendant",
+      "want": "You want to know which platform your train leaves from.",
+      "situationJa": "自分の乗る電車が何番線から出るか知りたい。",
+      "tags": ["asking", "platform"],
+      "answers": [
+        { "en": "Platform for Oxford?", "ja": "オックスフォード行きは何番線ですか。", "register": "casual", "style": "oneword", "note": "切符を見せながらなら十分通じる。騒がしい駅で有効。" },
+        { "en": "Which platform is the train to Oxford?", "ja": "オックスフォード行きは何番線ですか。", "register": "neutral", "style": "basic", "note": "基本形。platform は米国では track とも言う。" },
+        { "en": "Which platform does the Oxford train leave from?", "ja": "オックスフォード行きはどの番線から出ますか。", "register": "neutral", "style": "basic", "note": "leave from を付けると「出発する」が明確になる。" },
+        { "en": "Could you tell me which platform I need for Oxford?", "ja": "オックスフォードへ行くには何番線か教えていただけますか。", "register": "polite", "style": "request", "note": "I need for 〜 で「自分がどこへ行くか」を伝えられる。" },
+        { "en": "Excuse me, would you mind telling me which platform the Oxford service departs from?", "ja": "恐れ入ります、オックスフォード行きが何番線から発車するか教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "service は英国の鉄道で「便」の意味。かなり改まった言い方。" },
+        { "en": "Hey, do you know what platform the Oxford train is on?", "ja": "ねえ、オックスフォード行きって何番線か分かる？", "register": "casual", "style": "casual", "note": "居合わせた乗客に聞くならこのくらいで自然。" },
+        { "en": "Is there a platform number for the 3:10 to Oxford yet?", "ja": "3時10分のオックスフォード行きの番線はもう出ていますか。", "register": "neutral", "style": "existence", "note": "発車間際まで番線が出ない駅がある。この型が実用的。" },
+        { "en": "Which track is the Oxford train on?", "ja": "オックスフォード行きは何番線ですか。", "register": "neutral", "style": "vocab", "note": "米国では platform より track が普通。" },
+        { "en": "Sorry, I can't find it on the board — which platform is the Oxford train?", "ja": "すみません、掲示板で見つけられなくて。オックスフォード行きは何番線でしょうか。", "register": "polite", "style": "context", "note": "自分で探した上で聞いていると伝わり、印象がよい。" },
+        { "en": "Excuse me, I have a train to Oxford at 3:10. Am I in the right place?", "ja": "すみません、3時10分のオックスフォード行きに乗るのですが、この場所で合っていますか。", "register": "polite", "style": "confirm", "note": "番線ではなく「合っているか」を聞く型。不安なときはこちらが安心。" }
+      ]
+    },
+    {
+      "id": "transport-004", "category": "transport", "difficulty": 1,
+      "place": "On a platform", "listener": "a passenger waiting nearby",
+      "want": "You want to check that this train goes to the airport.",
+      "situationJa": "ホームで、この電車が空港に行くか確かめたい。",
+      "tags": ["confirming", "train"],
+      "answers": [
+        { "en": "Airport? This train?", "ja": "空港？この電車？", "register": "casual", "style": "oneword", "note": "指さしながら。言葉が出ないときでもこれで確認できる。" },
+        { "en": "Does this train go to the airport?", "ja": "この電車は空港に行きますか。", "register": "neutral", "style": "basic", "note": "最も基本で最も使う形。丸暗記しておく価値がある。" },
+        { "en": "Is this the train to the airport?", "ja": "これは空港行きの電車ですか。", "register": "neutral", "style": "basic", "note": "「これが例の電車か」を確認する型。ほぼ同義。" },
+        { "en": "Could you tell me if this train goes to the airport?", "ja": "この電車が空港に行くか教えていただけますか。", "register": "polite", "style": "request", "note": "駅員や年上の人に丁寧に聞くとき。" },
+        { "en": "Excuse me, I wonder if you could tell me whether this service stops at the airport.", "ja": "恐れ入りますが、この便が空港に停まるかどうか教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "I wonder if 〜 は非常に丁寧。ビジネス場面向け。" },
+        { "en": "Hey, does this one go to the airport?", "ja": "ねえ、これって空港行く？", "register": "casual", "style": "casual", "note": "this one で「この電車」。くだけた場面で自然。" },
+        { "en": "Is there a stop at the airport on this line?", "ja": "この路線に空港の駅はありますか。", "register": "neutral", "style": "existence", "note": "そもそも路線が通っているかを確認する型。" },
+        { "en": "Does this train stop at the airport terminal?", "ja": "この電車は空港ターミナルに停まりますか。", "register": "neutral", "style": "vocab", "note": "go より stop の方が「停車するか」が正確に伝わる。" },
+        { "en": "Sorry, I'm trying to get to the airport. Is this the right train?", "ja": "すみません、空港へ行きたいのですが、この電車で合っていますか。", "register": "polite", "style": "context", "note": "行き先を先に言うと、違う場合に正解を教えてもらえる。" },
+        { "en": "Excuse me, sorry to bother you — is this the airport train, do you know?", "ja": "すみません、お邪魔します。これは空港行きの電車でしょうか、ご存じですか。", "register": "polite", "style": "considerate", "note": "do you know? を付けると「知らなくても構いません」の含みが出て柔らかい。" }
+      ]
+    },
+    {
+      "id": "transport-005", "category": "transport", "difficulty": 2,
+      "place": "On a train", "listener": "a conductor",
+      "want": "You want to explain that you got on the wrong train.",
+      "situationJa": "乗る電車を間違えたことを車掌に伝えたい。",
+      "tags": ["explaining", "trouble"],
+      "answers": [
+        { "en": "Wrong train. Sorry.", "ja": "電車、間違えました。すみません。", "register": "casual", "style": "oneword", "note": "切符を見せながら。焦っていてもこれだけは言える。" },
+        { "en": "I think I got on the wrong train.", "ja": "電車を乗り間違えたようです。", "register": "neutral", "style": "basic", "note": "I think を付けると断定を避けられて角が立たない。" },
+        { "en": "I'm on the wrong train. What should I do?", "ja": "電車を間違えました。どうすればいいですか。", "register": "neutral", "style": "basic", "note": "困っていることと求めていることを同時に伝えられる。" },
+        { "en": "Could you help me? I think I've taken the wrong train.", "ja": "助けていただけますか。電車を乗り間違えたようなのですが。", "register": "polite", "style": "request", "note": "まず助けを求めてから事情を言う。相手が身構えずに済む。" },
+        { "en": "I'm terribly sorry — it seems I've boarded the wrong service. Could you advise me?", "ja": "大変申し訳ありません、違う便に乗ってしまったようです。どうすればよいかご教示いただけますか。", "register": "formal", "style": "formal", "note": "board / service / advise はいずれも改まった語。" },
+        { "en": "Oh no, I think I'm on the wrong one.", "ja": "しまった、間違えたかも。", "register": "casual", "style": "casual", "note": "連れに向かって言うときの独り言に近い言い方。" },
+        { "en": "Is there a stop where I can change back?", "ja": "戻れる駅はありますか。", "register": "neutral", "style": "existence", "note": "謝るより先に解決策を聞く型。実用的。" },
+        { "en": "I've boarded the wrong train — where's the next stop?", "ja": "電車を間違えました。次はどこに停まりますか。", "register": "neutral", "style": "vocab", "note": "board は「乗車する」。get on よりやや硬い。" },
+        { "en": "Sorry, I was supposed to be going to Oxford, but I think this train goes somewhere else.", "ja": "すみません、オックスフォードへ行くはずだったのですが、この電車は違うところへ行くようで。", "register": "polite", "style": "context", "note": "行き先を伝えると、車掌が最短の戻り方を教えてくれる。" },
+        { "en": "Excuse me, could I check something with you? I may have gotten on the wrong train.", "ja": "すみません、ひとつ確認させていただけますか。電車を間違えたかもしれません。", "register": "polite", "style": "considerate", "note": "確認をお願いする形にすると、相手も対応しやすい。" }
+      ]
+    },
+    {
+      "id": "transport-006", "category": "transport", "difficulty": 2,
+      "place": "On a crowded train", "listener": "a passenger with a bag on the seat",
+      "want": "You want to ask the person to move their bag so you can sit.",
+      "situationJa": "座席に置かれた荷物をどけてもらいたい。",
+      "tags": ["requesting", "polite"],
+      "answers": [
+        { "en": "Is this seat taken?", "ja": "この席、空いていますか。", "register": "neutral", "style": "oneword", "note": "荷物をどけてとは言わずに済ませる定番。実際いちばん角が立たない。" },
+        { "en": "Excuse me, could you move your bag?", "ja": "すみません、荷物をどけていただけますか。", "register": "neutral", "style": "basic", "note": "直接的だが失礼ではない。混雑時なら当然の依頼。" },
+        { "en": "Excuse me, is anyone sitting here?", "ja": "すみません、ここ、どなたか座っていますか。", "register": "neutral", "style": "basic", "note": "人がいるかを聞く形。荷物に触れずに促せる。" },
+        { "en": "Would you mind moving your bag so I can sit down?", "ja": "座りたいので、荷物を動かしていただけますか。", "register": "polite", "style": "request", "note": "Would you mind 〜ing は最も丁寧な依頼の型のひとつ。" },
+        { "en": "I'm sorry to trouble you — would it be possible to sit here?", "ja": "お手数をおかけしますが、こちらに座らせていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "かなり丁寧。相手が年配の場合などに。" },
+        { "en": "Mind if I sit here?", "ja": "ここ、座ってもいい？", "register": "casual", "style": "casual", "note": "Do you を省いた口語。同年代なら自然。" },
+        { "en": "Is there room for one more here?", "ja": "ここ、もう一人座れますか。", "register": "neutral", "style": "existence", "note": "やわらかく空きを尋ねる。ベンチ席で使いやすい。" },
+        { "en": "Excuse me, is this spot free?", "ja": "すみません、ここは空いていますか。", "register": "neutral", "style": "vocab", "note": "free は「空いている」。taken の反対。" },
+        { "en": "Sorry, I've been standing a while — could I take this seat?", "ja": "すみません、ずっと立っていて。この席をお借りしてもいいですか。", "register": "polite", "style": "context", "note": "事情を添えると相手が動きやすい。" },
+        { "en": "Excuse me, I don't want to disturb you, but could I squeeze in here?", "ja": "すみません、お邪魔したくないのですが、ここに入らせてもらえますか。", "register": "polite", "style": "considerate", "note": "squeeze in は「詰めて入る」。混雑時にぴったり。" }
+      ]
+    },
+    {
+      "id": "transport-007", "category": "transport", "difficulty": 1,
+      "place": "At a taxi stand", "listener": "a taxi driver",
+      "want": "You want to know how much it costs to go to the airport.",
+      "situationJa": "空港までタクシーでいくらかかるか知りたい。",
+      "tags": ["asking", "price"],
+      "answers": [
+        { "en": "How much to the airport?", "ja": "空港までいくらですか。", "register": "casual", "style": "oneword", "note": "これで完全に通じる。タクシーでは最も普通。" },
+        { "en": "How much does it cost to go to the airport?", "ja": "空港まで行くのにいくらかかりますか。", "register": "neutral", "style": "basic", "note": "教科書的な完全形。ゆっくり言えば確実。" },
+        { "en": "What's the fare to the airport?", "ja": "空港までの運賃はいくらですか。", "register": "neutral", "style": "vocab", "note": "fare は交通機関の「運賃」。price より正確。" },
+        { "en": "Could you tell me roughly how much it is to the airport?", "ja": "空港までだいたいいくらか教えていただけますか。", "register": "polite", "style": "request", "note": "roughly を入れると「概算でいい」と伝わり答えやすい。" },
+        { "en": "Would you be able to give me an estimate for the fare to the airport?", "ja": "空港までの運賃の目安を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "estimate は「見積もり」。改まった聞き方。" },
+        { "en": "What'll it run me to the airport?", "ja": "空港までいくらくらいになる？", "register": "casual", "style": "casual", "note": "run someone は「〜の費用がかかる」の口語。米国でよく聞く。" },
+        { "en": "Is there a flat rate to the airport?", "ja": "空港までは定額料金がありますか。", "register": "neutral", "style": "existence", "note": "都市によっては空港定額がある。知っていると得。" },
+        { "en": "About how much would it be to the airport?", "ja": "空港までだいたいいくらになりますか。", "register": "neutral", "style": "basic", "note": "About を頭に置くだけで概算を求められる。" },
+        { "en": "I need to catch a flight at seven — how much would it be to the airport?", "ja": "7時の便に乗る必要があるのですが、空港までいくらでしょうか。", "register": "polite", "style": "context", "note": "時間の事情を伝えると、混雑を踏まえた答えが返ってくる。" },
+        { "en": "Excuse me, before we go — could I check the fare to the airport?", "ja": "すみません、出発の前に空港までの運賃を確認してもいいですか。", "register": "polite", "style": "considerate", "note": "乗る前に確認する型。あとでもめないための一言。" }
+      ]
+    },
+    {
+      "id": "transport-008", "category": "transport", "difficulty": 1,
+      "place": "In a taxi", "listener": "the driver",
+      "want": "You want to tell the driver the address of your hotel.",
+      "situationJa": "タクシーの運転手にホテルの住所を伝えたい。",
+      "tags": ["telling", "destination"],
+      "answers": [
+        { "en": "Grand Hotel, please.", "ja": "グランドホテルまでお願いします。", "register": "neutral", "style": "oneword", "note": "有名な行き先なら名前だけで十分。最も普通。" },
+        { "en": "Can you take me to the Grand Hotel?", "ja": "グランドホテルまで行ってもらえますか。", "register": "neutral", "style": "basic", "note": "基本形。take me to 〜 は丸ごと覚えたい。" },
+        { "en": "I'm going to 42 King Street, please.", "ja": "キング通り42番までお願いします。", "register": "neutral", "style": "basic", "note": "住所を言うときの形。番地→通りの順。" },
+        { "en": "Could you take me to this address, please?", "ja": "この住所までお願いできますか。", "register": "polite", "style": "request", "note": "紙やスマホの画面を見せながら。発音に自信がなくても確実。" },
+        { "en": "I'd like to go to the Grand Hotel on King Street, if you would.", "ja": "キング通りのグランドホテルまでお願いいたします。", "register": "formal", "style": "formal", "note": "if you would は改まった添え方。丁寧さが際立つ。" },
+        { "en": "Grand Hotel — you know it?", "ja": "グランドホテル、分かる？", "register": "casual", "style": "casual", "note": "気安い言い方。地元の運転手には通じやすい。" },
+        { "en": "Is the Grand Hotel far from here?", "ja": "グランドホテルはここから遠いですか。", "register": "neutral", "style": "existence", "note": "距離を先に確認したいときに。歩ける距離かも分かる。" },
+        { "en": "The Grand Hotel, please — it's near the station.", "ja": "グランドホテルまでお願いします。駅の近くです。", "register": "neutral", "style": "vocab", "note": "目印を添えると運転手が場所を特定しやすい。" },
+        { "en": "I'm staying at the Grand Hotel on King Street — could you take me there?", "ja": "キング通りのグランドホテルに泊まっているのですが、そこまでお願いできますか。", "register": "polite", "style": "context", "note": "宿泊先だと伝えると荷物の扱いも配慮してもらえる。" },
+        { "en": "Grand Hotel, please. Let me know if you need the address.", "ja": "グランドホテルまでお願いします。住所が必要でしたらお伝えします。", "register": "polite", "style": "considerate", "note": "相手が知らない場合に備える一言。やり取りが滑らかになる。" }
+      ]
+    },
+    {
+      "id": "transport-009", "category": "transport", "difficulty": 1,
+      "place": "In a taxi", "listener": "the driver",
+      "want": "You want the driver to stop right here.",
+      "situationJa": "タクシーをここで止めてほしい。",
+      "tags": ["requesting", "stop"],
+      "answers": [
+        { "en": "Here, please.", "ja": "ここでお願いします。", "register": "neutral", "style": "oneword", "note": "指をさしながら。最短で確実。" },
+        { "en": "You can stop here, please.", "ja": "ここで止めてください。", "register": "neutral", "style": "basic", "note": "基本形。You can で始めると命令調にならない。" },
+        { "en": "Please stop here.", "ja": "ここで止めてください。", "register": "neutral", "style": "basic", "note": "簡潔。急いでいるときはこれで十分。" },
+        { "en": "Could you stop just up here, please?", "ja": "この先で止めていただけますか。", "register": "polite", "style": "request", "note": "just up here は「すぐ先で」。実際の場面で頻出。" },
+        { "en": "Would you mind dropping me off at the corner?", "ja": "角で降ろしていただけますでしょうか。", "register": "formal", "style": "formal", "note": "drop off は「降ろす」。改まった依頼の形。" },
+        { "en": "This is good, thanks.", "ja": "ここで大丈夫です、ありがとう。", "register": "casual", "style": "casual", "note": "実際の英語圏で最もよく聞く自然な一言。" },
+        { "en": "Is there somewhere you can pull over around here?", "ja": "この辺りで停められる場所はありますか。", "register": "neutral", "style": "existence", "note": "pull over は「路肩に寄せる」。止めにくい道で有効。" },
+        { "en": "Anywhere along here is fine.", "ja": "この辺ならどこでも大丈夫です。", "register": "neutral", "style": "vocab", "note": "運転手に任せる言い方。交通量が多い道で親切。" },
+        { "en": "Actually, I can get out here — it'll be quicker than going around.", "ja": "やっぱりここで降ります。回るより早いので。", "register": "neutral", "style": "context", "note": "理由を添えると、途中下車が唐突にならない。" },
+        { "en": "Whenever it's safe to stop, could you let me out?", "ja": "止められるところで降ろしていただけますか。", "register": "polite", "style": "considerate", "note": "相手の安全に配慮した言い方。運転手に好まれる。" }
+      ]
+    },
+    {
+      "id": "transport-010", "category": "transport", "difficulty": 2,
+      "place": "At a ticket office", "listener": "a ticket agent",
+      "want": "You want to know if there is a cheaper day pass.",
+      "situationJa": "1日乗車券など、もっと安い切符がないか聞きたい。",
+      "tags": ["asking", "price"],
+      "answers": [
+        { "en": "Any day pass?", "ja": "1日券はありますか。", "register": "casual", "style": "oneword", "note": "短いが通じる。窓口が混んでいるときに。" },
+        { "en": "Is there a day pass?", "ja": "1日乗車券はありますか。", "register": "neutral", "style": "existence", "note": "「あるか」を聞く基本形。まずこれ。" },
+        { "en": "Do you have a cheaper ticket for the whole day?", "ja": "1日使える、もっと安い切符はありますか。", "register": "neutral", "style": "basic", "note": "名称を知らなくても中身で伝えられる。" },
+        { "en": "Could you tell me if there's a cheaper option?", "ja": "もっと安い方法があれば教えていただけますか。", "register": "polite", "style": "request", "note": "option と言えば券種でも経路でも受け取ってもらえる。" },
+        { "en": "I was wondering whether you offer any discounted passes for tourists.", "ja": "観光客向けの割引パスをご用意されているか伺いたいのですが。", "register": "formal", "style": "formal", "note": "I was wondering whether 〜 は非常に丁寧な切り出し。" },
+        { "en": "Is there anything cheaper?", "ja": "もっと安いのある？", "register": "casual", "style": "casual", "note": "ぶっきらぼうにならないよう、笑顔で言いたい。" },
+        { "en": "Are there any travel cards that cover the whole network?", "ja": "路線全体で使えるカードのようなものはありますか。", "register": "neutral", "style": "vocab", "note": "travel card / network は交通機関でよく使う語。" },
+        { "en": "What's the best value if I'll be riding several times today?", "ja": "今日何度か乗るなら、いちばんお得なのはどれですか。", "register": "neutral", "style": "basic", "note": "best value は「いちばんお得」。実用度が高い。" },
+        { "en": "I'll be going back and forth a few times today — is a pass worth it?", "ja": "今日は何度か往復する予定なのですが、パスを買う価値はありますか。", "register": "polite", "style": "context", "note": "使い方を伝えると、相手が最適な券種を選んでくれる。" },
+        { "en": "Before I buy, could I ask what the cheapest option would be?", "ja": "購入前に、いちばん安い方法を伺ってもよろしいですか。", "register": "polite", "style": "considerate", "note": "買う前に確認する丁寧な型。押しつけがましくない。" }
+      ]
+    },
+    {
+      "id": "transport-011", "category": "transport", "difficulty": 2,
+      "place": "At a station in the evening", "listener": "a station attendant",
+      "want": "You want to know when the last train leaves.",
+      "situationJa": "終電が何時か知りたい。",
+      "tags": ["asking", "time"],
+      "answers": [
+        { "en": "Last train?", "ja": "終電は？", "register": "casual", "style": "oneword", "note": "時計を指しながら。急いでいるときに。" },
+        { "en": "What time is the last train?", "ja": "終電は何時ですか。", "register": "neutral", "style": "basic", "note": "基本形。丸暗記しておきたい。" },
+        { "en": "When does the last train leave?", "ja": "終電は何時に出ますか。", "register": "neutral", "style": "basic", "note": "leave を使うと「発車時刻」が明確。" },
+        { "en": "Could you tell me what time the last train to Oxford is?", "ja": "オックスフォード行きの終電が何時か教えていただけますか。", "register": "polite", "style": "request", "note": "行き先を入れると正確な答えが返る。" },
+        { "en": "Would you happen to know the departure time of the final service tonight?", "ja": "本日最終便の発車時刻をご存じでしたら教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "Would you happen to know 〜 は丁寧かつ控えめ。" },
+        { "en": "Hey, do you know when the last one is?", "ja": "ねえ、最終って何時か分かる？", "register": "casual", "style": "casual", "note": "the last one で「最終電車」。友人同士で自然。" },
+        { "en": "Is there a train after eleven?", "ja": "11時以降の電車はありますか。", "register": "neutral", "style": "existence", "note": "具体的な時刻で聞くと判断が早い。" },
+        { "en": "How late do the trains run tonight?", "ja": "今夜は何時まで電車がありますか。", "register": "neutral", "style": "vocab", "note": "run は「運行する」。自然でよく使う。" },
+        { "en": "I'm meeting someone at ten — will I still be able to get the last train back?", "ja": "10時に人と会うのですが、終電には間に合いますか。", "register": "polite", "style": "context", "note": "予定を伝えると、間に合うかまで判断してもらえる。" },
+        { "en": "Sorry, one more thing — what time does the last train leave?", "ja": "すみません、もうひとつだけ。終電は何時でしょうか。", "register": "polite", "style": "considerate", "note": "追加で質問するときの前置き。会話を切りやすい。" }
+      ]
+    },
+    {
+      "id": "transport-012", "category": "transport", "difficulty": 2,
+      "place": "At a ticket gate", "listener": "a station attendant",
+      "want": "You want to explain that your card will not open the gate.",
+      "situationJa": "改札でカードが反応せず、通れないことを伝えたい。",
+      "tags": ["explaining", "trouble"],
+      "answers": [
+        { "en": "It's not working.", "ja": "反応しません。", "register": "casual", "style": "oneword", "note": "カードを見せながら。これだけで対応してもらえる。" },
+        { "en": "My card isn't working.", "ja": "カードが反応しません。", "register": "neutral", "style": "basic", "note": "基本形。何が問題かが一言で伝わる。" },
+        { "en": "The gate won't open with my card.", "ja": "カードで改札が開きません。", "register": "neutral", "style": "basic", "note": "gate を主語にすると状況が具体的になる。" },
+        { "en": "Could you help me? My card won't let me through.", "ja": "助けていただけますか。カードで通れないのです。", "register": "polite", "style": "request", "note": "先に助けを求めると、相手が動きやすい。" },
+        { "en": "I'm sorry to trouble you — it appears my card isn't being read at the gate.", "ja": "お手数をおかけします。改札でカードが読み取られていないようです。", "register": "formal", "style": "formal", "note": "it appears 〜 は断定を避けた丁寧な言い方。" },
+        { "en": "This thing won't let me in.", "ja": "これ、通してくれないんだけど。", "register": "casual", "style": "casual", "note": "軽い言い方。連れに言うときの独り言に近い。" },
+        { "en": "Is there something wrong with my card?", "ja": "カードに何か問題があるのでしょうか。", "register": "neutral", "style": "existence", "note": "原因を尋ねる型。残高不足かもしれないときに。" },
+        { "en": "My card keeps getting rejected.", "ja": "カードが何度もはじかれます。", "register": "neutral", "style": "vocab", "note": "reject は「受け付けない」。繰り返している状況が伝わる。" },
+        { "en": "I topped it up this morning, but the gate still won't open.", "ja": "今朝チャージしたのですが、それでも改札が開きません。", "register": "polite", "style": "context", "note": "top up は「チャージする」。試したことを言うと原因が絞れる。" },
+        { "en": "Excuse me, when you have a moment — my card isn't opening the gate.", "ja": "すみません、お手すきのときに。カードで改札が開かないのですが。", "register": "polite", "style": "considerate", "note": "急かさない前置き。混雑時の駅員に好まれる。" }
+      ]
+    },
+    {
+      "id": "transport-013", "category": "transport", "difficulty": 2,
+      "place": "On a train", "listener": "a fellow passenger",
+      "want": "You want to check whether you need to change trains.",
+      "situationJa": "乗り換えが必要かどうか確認したい。",
+      "tags": ["confirming", "transfer"],
+      "answers": [
+        { "en": "Direct? Or change?", "ja": "直通ですか、乗り換えですか。", "register": "casual", "style": "oneword", "note": "言葉が出ないときでも意図は伝わる。" },
+        { "en": "Do I need to change trains?", "ja": "乗り換えは必要ですか。", "register": "neutral", "style": "basic", "note": "基本形。change trains で「電車を乗り換える」。" },
+        { "en": "Is this train direct to Oxford?", "ja": "この電車はオックスフォードまで直通ですか。", "register": "neutral", "style": "basic", "note": "direct で「乗り換えなし」。肯定形で聞けて分かりやすい。" },
+        { "en": "Could you tell me if I have to change anywhere?", "ja": "どこかで乗り換える必要があるか教えていただけますか。", "register": "polite", "style": "request", "note": "anywhere を使うと「どこかで」が自然に表せる。" },
+        { "en": "Would you mind confirming whether this service requires a change?", "ja": "この便が乗り換えを要するかどうか、ご確認いただけますでしょうか。", "register": "formal", "style": "formal", "note": "require a change は改まった表現。掲示の英語でも見かける。" },
+        { "en": "Do I have to switch somewhere?", "ja": "どこかで乗り換えないとだめ？", "register": "casual", "style": "casual", "note": "switch も「乗り換える」。口語的。" },
+        { "en": "Is there a connection I need to make?", "ja": "乗り継ぎは必要ですか。", "register": "neutral", "style": "existence", "note": "connection は「乗り継ぎ」。空港でもそのまま使える。" },
+        { "en": "Where do I transfer for Oxford?", "ja": "オックスフォードへはどこで乗り換えますか。", "register": "neutral", "style": "vocab", "note": "transfer は米国でよく使う。乗り換え前提で聞く形。" },
+        { "en": "I'm heading to Oxford — do I stay on this one the whole way?", "ja": "オックスフォードへ向かっているのですが、このまま乗っていて大丈夫ですか。", "register": "polite", "style": "context", "note": "the whole way は「最後まで」。不安が正確に伝わる。" },
+        { "en": "Sorry to bother you — do you happen to know if this goes straight through?", "ja": "お邪魔してすみません、これが直通かどうかご存じですか。", "register": "polite", "style": "considerate", "note": "do you happen to know で「知らなくても大丈夫」の含み。" }
+      ]
+    },
+    {
+      "id": "transport-014", "category": "transport", "difficulty": 1,
+      "place": "On a bus", "listener": "the person sitting next to you",
+      "want": "You want to get past the person to reach the exit.",
+      "situationJa": "隣の人の前を通って降り口へ行きたい。",
+      "tags": ["requesting", "polite"],
+      "answers": [
+        { "en": "Excuse me.", "ja": "すみません。", "register": "neutral", "style": "oneword", "note": "これだけで通じる。英語圏では最も一般的。" },
+        { "en": "Excuse me, this is my stop.", "ja": "すみません、ここで降ります。", "register": "neutral", "style": "basic", "note": "理由を添える定番。相手も納得して動いてくれる。" },
+        { "en": "Sorry, can I get past?", "ja": "すみません、通れますか。", "register": "neutral", "style": "basic", "note": "get past は「通り抜ける」。狭い通路で頻出。" },
+        { "en": "Could I get by, please?", "ja": "通していただけますか。", "register": "polite", "style": "request", "note": "get by も「通る」。please を付けると柔らかい。" },
+        { "en": "I'm sorry, would you mind letting me through? I'm getting off here.", "ja": "恐れ入りますが、通していただけますでしょうか。ここで降ります。", "register": "formal", "style": "formal", "note": "let someone through は「通す」。丁寧に頼む形。" },
+        { "en": "Sorry, coming through.", "ja": "すみません、通ります。", "register": "casual", "style": "casual", "note": "混雑した車内で動きながら言う一言。" },
+        { "en": "Is there room for me to get out?", "ja": "出るすき間はありますか。", "register": "neutral", "style": "existence", "note": "とても混んでいて動けないときに。" },
+        { "en": "Excuse me, I need to squeeze past you.", "ja": "すみません、前を通らせてください。", "register": "neutral", "style": "vocab", "note": "squeeze past は「体を寄せて通る」。狭い場面にぴったり。" },
+        { "en": "Sorry, I'm getting off at the next stop — could I get past?", "ja": "すみません、次で降りるので通していただけますか。", "register": "polite", "style": "context", "note": "早めに伝えておくと、相手も準備できる。" },
+        { "en": "Excuse me, sorry to disturb you — my stop is coming up.", "ja": "すみません、お邪魔します。もうすぐ降りる駅なので。", "register": "polite", "style": "considerate", "note": "眠っている人や作業中の人に声をかけるときに。" }
+      ]
+    },
+    {
+      "id": "transport-015", "category": "transport", "difficulty": 1,
+      "place": "On a bus", "listener": "the bus driver",
+      "want": "You want the driver to tell you when to get off.",
+      "situationJa": "降りる場所が来たら教えてほしいと運転手に頼みたい。",
+      "tags": ["requesting", "help"],
+      "answers": [
+        { "en": "Tell me when? Museum.", "ja": "美術館、着いたら教えてください。", "register": "casual", "style": "oneword", "note": "文にならなくても地名を言えば伝わる。" },
+        { "en": "Could you tell me when we get to the museum?", "ja": "美術館に着いたら教えていただけますか。", "register": "polite", "style": "request", "note": "この場面の定番。丸ごと覚えておきたい。" },
+        { "en": "Please let me know when we reach the museum.", "ja": "美術館に着いたら知らせてください。", "register": "neutral", "style": "basic", "note": "let me know は「知らせる」。幅広く使える。" },
+        { "en": "I want to get off at the museum. Can you tell me when?", "ja": "美術館で降りたいです。着いたら教えてもらえますか。", "register": "neutral", "style": "basic", "note": "目的と依頼を分けて言うと明確。" },
+        { "en": "Would you mind letting me know when we arrive at the museum?", "ja": "美術館に到着しましたら、お知らせいただけますでしょうか。", "register": "formal", "style": "formal", "note": "Would you mind 〜ing で最も丁寧に頼める。" },
+        { "en": "Can you give me a shout at the museum?", "ja": "美術館のとこで声かけてもらえる？", "register": "casual", "style": "casual", "note": "give a shout は「声をかける」の口語。親しみのある言い方。" },
+        { "en": "Is there a stop near the museum?", "ja": "美術館の近くに停留所はありますか。", "register": "neutral", "style": "existence", "note": "そもそも停まるか分からないときはこちらが先。" },
+        { "en": "Which stop should I get off at for the museum?", "ja": "美術館へはどの停留所で降りればいいですか。", "register": "neutral", "style": "vocab", "note": "自分で判断したいときの型。掲示を見て降りられる。" },
+        { "en": "It's my first time here — could you let me know when it's the museum stop?", "ja": "初めて来たもので、美術館の停留所になったら教えていただけますか。", "register": "polite", "style": "context", "note": "初めてだと伝えると、たいてい親切にしてもらえる。" },
+        { "en": "Sorry to ask, but would you mind giving me a heads-up at the museum?", "ja": "お願いして恐縮ですが、美術館で一声かけていただけますか。", "register": "polite", "style": "considerate", "note": "heads-up は「前もっての知らせ」。よく使う口語。" }
+      ]
+    },
+    {
+      "id": "transport-016", "category": "transport", "difficulty": 3,
+      "place": "At a station office", "listener": "a staff member",
+      "want": "You want to report that you left a bag on the train.",
+      "situationJa": "電車に鞄を忘れたことを申し出たい。",
+      "tags": ["reporting", "lost"],
+      "answers": [
+        { "en": "I left my bag on the train.", "ja": "電車に鞄を忘れました。", "register": "neutral", "style": "basic", "note": "基本形。まずこれが言えれば話が始まる。" },
+        { "en": "Lost bag. On the train.", "ja": "鞄をなくしました。電車の中です。", "register": "casual", "style": "oneword", "note": "焦っていて文が組めないときでも伝わる。" },
+        { "en": "I think I left my bag on the train. Where's lost and found?", "ja": "電車に鞄を忘れたようです。遺失物はどこですか。", "register": "neutral", "style": "basic", "note": "lost and found は「遺失物取扱所」。覚えておきたい語。" },
+        { "en": "Could you help me? I've left a bag on the train.", "ja": "助けていただけますか。電車に鞄を置き忘れました。", "register": "polite", "style": "request", "note": "助けを求めてから状況を言うと落ち着いて伝えられる。" },
+        { "en": "I'm afraid I've left a piece of luggage on the train. Whom should I speak to?", "ja": "申し訳ありませんが、電車に荷物を置き忘れてしまいました。どなたに伺えばよろしいでしょうか。", "register": "formal", "style": "formal", "note": "I'm afraid 〜 は悪い知らせを切り出す丁寧な型。" },
+        { "en": "Ugh, I think I left my bag on the train.", "ja": "うわ、鞄を電車に忘れたかも。", "register": "casual", "style": "casual", "note": "連れに向かって言うときの自然な反応。" },
+        { "en": "Is there a lost property office here?", "ja": "こちらに遺失物の窓口はありますか。", "register": "neutral", "style": "existence", "note": "lost property は英国式。米国では lost and found。" },
+        { "en": "My bag is still on the train that just left. Can it be retrieved?", "ja": "今出た電車に鞄が残っています。取り戻せますか。", "register": "neutral", "style": "vocab", "note": "retrieve は「取り戻す」。事務的な場面で使われる。" },
+        { "en": "I got off at platform 3 about ten minutes ago and left a black backpack on the seat.", "ja": "10分ほど前に3番線で降りたのですが、座席に黒いリュックを置き忘れました。", "register": "polite", "style": "context", "note": "時刻・場所・特徴を先に言うと、探してもらえる確率が上がる。" },
+        { "en": "Sorry to bother you — I've left something on the train. Could you tell me what I should do?", "ja": "お手数をおかけします。電車に忘れ物をしました。どうすればよいか教えていただけますか。", "register": "polite", "style": "considerate", "note": "手順を尋ねる形。相手が案内しやすい。" }
+      ]
+    },
+    {
+      "id": "transport-017", "category": "transport", "difficulty": 1,
+      "place": "At an information desk", "listener": "a staff member",
+      "want": "You want to know how long the trip takes.",
+      "situationJa": "目的地までどのくらい時間がかかるか知りたい。",
+      "tags": ["asking", "time"],
+      "answers": [
+        { "en": "How long?", "ja": "どのくらいかかりますか。", "register": "casual", "style": "oneword", "note": "地図や切符を見せながらなら十分。" },
+        { "en": "How long does it take?", "ja": "どのくらい時間がかかりますか。", "register": "neutral", "style": "basic", "note": "最重要の基本形。あらゆる移動で使える。" },
+        { "en": "How long does it take to get to Oxford?", "ja": "オックスフォードまでどのくらいかかりますか。", "register": "neutral", "style": "basic", "note": "行き先を入れた完全形。" },
+        { "en": "Could you tell me roughly how long the journey is?", "ja": "所要時間はだいたいどのくらいか教えていただけますか。", "register": "polite", "style": "request", "note": "journey は「行程」。英国でよく使う。" },
+        { "en": "Would you be able to tell me the approximate travel time to Oxford?", "ja": "オックスフォードまでのおおよその所要時間を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "approximate travel time は案内表示でも使われる語。" },
+        { "en": "How long's that gonna take?", "ja": "それどのくらいかかる？", "register": "casual", "style": "casual", "note": "gonna は going to の口語。友人同士で。" },
+        { "en": "Is it a long trip?", "ja": "長い移動になりますか。", "register": "neutral", "style": "existence", "note": "ざっくり知りたいときに。答えが返しやすい。" },
+        { "en": "What's the travel time to Oxford?", "ja": "オックスフォードまでの所要時間はどのくらいですか。", "register": "neutral", "style": "vocab", "note": "travel time は簡潔で伝わりやすい。" },
+        { "en": "I have a meeting at two — will I make it if I leave now?", "ja": "2時に約束があるのですが、今出れば間に合いますか。", "register": "polite", "style": "context", "note": "目的を言うと、間に合うかまで答えてもらえる。" },
+        { "en": "Just so I can plan — about how long should I allow?", "ja": "予定を立てたいので、どのくらい見ておけばよいでしょうか。", "register": "polite", "style": "considerate", "note": "allow は「見込んでおく」。余裕を含めた時間を聞ける。" }
+      ]
+    },
+    {
+      "id": "transport-018", "category": "transport", "difficulty": 2,
+      "place": "Outside the airport terminal", "listener": "an information officer",
+      "want": "You want to find where the airport bus leaves from.",
+      "situationJa": "空港バスの乗り場がどこか知りたい。",
+      "tags": ["asking", "directions"],
+      "answers": [
+        { "en": "Airport bus?", "ja": "空港バスは？", "register": "casual", "style": "oneword", "note": "周りを見回しながら。短くても通じる。" },
+        { "en": "Where does the airport bus leave from?", "ja": "空港バスはどこから出ますか。", "register": "neutral", "style": "basic", "note": "leave from で乗り場を尋ねる基本形。" },
+        { "en": "Where is the bus stop for the city center?", "ja": "市内行きのバス乗り場はどこですか。", "register": "neutral", "style": "basic", "note": "行き先で言うほうが確実なことも多い。" },
+        { "en": "Could you tell me where I can catch the airport bus?", "ja": "空港バスにどこで乗れるか教えていただけますか。", "register": "polite", "style": "request", "note": "catch a bus は「バスに乗る」。自然な言い回し。" },
+        { "en": "Would you mind directing me to the shuttle bus stop?", "ja": "シャトルバス乗り場までの道をお教えいただけますでしょうか。", "register": "formal", "style": "formal", "note": "direct someone to 〜 は「〜への道を示す」。改まった語。" },
+        { "en": "Hey, where do I get the bus?", "ja": "ねえ、バスってどこで乗るの？", "register": "casual", "style": "casual", "note": "同行者や同年代の旅行者に。" },
+        { "en": "Is there a bus to the city from here?", "ja": "ここから市内行きのバスはありますか。", "register": "neutral", "style": "existence", "note": "そもそもあるかを確かめる型。初めての空港で有効。" },
+        { "en": "Which exit do I use for the shuttle bus?", "ja": "シャトルバスにはどの出口から行けばいいですか。", "register": "neutral", "style": "vocab", "note": "大きな空港では出口を聞くのがいちばん早い。" },
+        { "en": "I've just landed and I'm heading downtown — where's the bus from here?", "ja": "今着いたところで市内へ向かうのですが、バスはどこから出ますか。", "register": "polite", "style": "context", "note": "状況を言うと、バス以外の選択肢も教えてもらえる。" },
+        { "en": "Sorry to stop you — could you point me toward the airport bus?", "ja": "お呼び止めしてすみません、空港バスの方向を教えていただけますか。", "register": "polite", "style": "considerate", "note": "point me toward 〜 は「〜の方を示す」。歩いている人に。" }
+      ]
+    },
+    {
+      "id": "transport-019", "category": "transport", "difficulty": 3,
+      "place": "On a delayed platform", "listener": "a station attendant",
+      "want": "You want to find out why the train is delayed.",
+      "situationJa": "電車が遅れている理由を知りたい。",
+      "tags": ["asking", "trouble"],
+      "answers": [
+        { "en": "What's going on?", "ja": "何が起きているのですか。", "register": "casual", "style": "oneword", "note": "短いが状況説明を促せる。語気に注意。" },
+        { "en": "Why is the train delayed?", "ja": "なぜ電車が遅れているのですか。", "register": "neutral", "style": "basic", "note": "基本形。ただし直接的なので口調を柔らかく。" },
+        { "en": "Do you know what's causing the delay?", "ja": "遅延の原因をご存じですか。", "register": "neutral", "style": "basic", "note": "相手を責めない聞き方。実際に使いやすい。" },
+        { "en": "Could you tell me how long the delay is expected to be?", "ja": "遅れはどのくらいになる見込みか教えていただけますか。", "register": "polite", "style": "request", "note": "原因より「あとどれだけ」が知りたいときはこちら。" },
+        { "en": "I'm sorry to ask — would you happen to know when the service will resume?", "ja": "恐れ入りますが、運転再開の見込みをご存じでしょうか。", "register": "formal", "style": "formal", "note": "resume は「再開する」。アナウンスでも使われる。" },
+        { "en": "Any idea what's happening?", "ja": "何が起きてるか分かる？", "register": "casual", "style": "casual", "note": "居合わせた乗客との会話にちょうどよい。" },
+        { "en": "Is there any information about the delay?", "ja": "遅延について何か情報はありますか。", "register": "neutral", "style": "existence", "note": "駅員が把握していない場合にも角が立たない。" },
+        { "en": "Has there been an announcement about the delay?", "ja": "遅延についてのアナウンスはありましたか。", "register": "neutral", "style": "vocab", "note": "聞き逃した可能性を前提にした、感じのよい聞き方。" },
+        { "en": "I have a connection at four — do you think I'll still make it?", "ja": "4時に乗り継ぎがあるのですが、間に合うと思われますか。", "register": "polite", "style": "context", "note": "事情を伝えると、代替経路を案内してもらえることがある。" },
+        { "en": "I know it's not your fault — do you have any idea how long we'll be waiting?", "ja": "あなたのせいではないと承知していますが、どのくらい待つことになりそうでしょうか。", "register": "polite", "style": "considerate", "note": "駅員を責めていないと最初に示す。関係が悪くならない。" }
+      ]
+    },
+    {
+      "id": "transport-020", "category": "transport", "difficulty": 2,
+      "place": "At the station stairs", "listener": "a passer-by",
+      "want": "You want to ask someone to help you carry a heavy suitcase.",
+      "situationJa": "重いスーツケースを運ぶのを手伝ってほしい。",
+      "tags": ["requesting", "help"],
+      "answers": [
+        { "en": "Could you help me?", "ja": "手伝っていただけますか。", "register": "polite", "style": "oneword", "note": "短いが十分。スーツケースを指せば意図は明白。" },
+        { "en": "Excuse me, could you help me with my suitcase?", "ja": "すみません、スーツケースを手伝っていただけますか。", "register": "polite", "style": "basic", "note": "help me with 〜 は「〜を手伝う」。頻出の型。" },
+        { "en": "Can you give me a hand with this?", "ja": "これ、手を貸してもらえますか。", "register": "neutral", "style": "basic", "note": "give a hand は「手を貸す」。自然でよく使う。" },
+        { "en": "Would you mind helping me carry this up the stairs?", "ja": "これを階段の上まで運ぶのを手伝っていただけますでしょうか。", "register": "polite", "style": "request", "note": "何をしてほしいかまで言うと、相手が判断しやすい。" },
+        { "en": "I'm very sorry to trouble you — would you be able to help me with this case?", "ja": "大変恐縮ですが、こちらのケースを手伝っていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "見知らぬ人に頼むときの、最も丁寧な形。" },
+        { "en": "Hey, could you grab the other end?", "ja": "ねえ、そっち側を持ってもらえる？", "register": "casual", "style": "casual", "note": "連れや親しい人に。grab は「つかむ」。" },
+        { "en": "Is there a lift I could use instead?", "ja": "代わりに使えるエレベーターはありますか。", "register": "neutral", "style": "existence", "note": "人に頼む前の選択肢。lift は英、elevator は米。" },
+        { "en": "Sorry, this is heavier than I expected — could you help?", "ja": "すみません、思ったより重くて。手伝ってもらえますか。", "register": "neutral", "style": "vocab", "note": "than I expected は「思ったより」。自然な言い訳になる。" },
+        { "en": "Sorry, I hurt my back last week and can't lift this — could you help me?", "ja": "すみません、先週腰を痛めてしまい持ち上げられません。手伝っていただけますか。", "register": "polite", "style": "context", "note": "理由があると、頼まれた側も納得して助けやすい。" },
+        { "en": "Excuse me, only if you have a moment — could you help me lift this?", "ja": "すみません、お時間があればで構いませんが、これを持ち上げるのを手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "断る余地を残す言い方。押しつけがましくない。" }
+      ]
+    },
+    {
+      "id": "transport-021", "category": "transport", "difficulty": 2,
+      "place": "At a bike rental counter", "listener": "a staff member",
+      "want": "You want to know if you can take the bike on the train.",
+      "situationJa": "自転車を電車に持ち込めるか知りたい。",
+      "tags": ["asking", "rules"],
+      "answers": [
+        { "en": "Bike on the train — OK?", "ja": "自転車、電車に乗せられますか。", "register": "casual", "style": "oneword", "note": "自転車を指しながら。短くても通じる。" },
+        { "en": "Can I take my bike on the train?", "ja": "自転車を電車に持ち込めますか。", "register": "neutral", "style": "basic", "note": "基本形。take 〜 on で「持ち込む」。" },
+        { "en": "Are bikes allowed on the train?", "ja": "電車に自転車を持ち込むことはできますか。", "register": "neutral", "style": "basic", "note": "allowed は「許されている」。規則を尋ねる定番。" },
+        { "en": "Could you tell me whether bicycles are permitted on this line?", "ja": "この路線で自転車の持ち込みが認められているか教えていただけますか。", "register": "polite", "style": "request", "note": "permitted は allowed より硬い。案内表示でよく見る。" },
+        { "en": "I'd like to confirm the policy on carrying bicycles aboard. Could you advise?", "ja": "自転車の車内持ち込みに関する規定を確認したいのですが、ご教示いただけますか。", "register": "formal", "style": "formal", "note": "policy / aboard / advise はいずれも改まった語。" },
+        { "en": "Can I just wheel it on?", "ja": "そのまま押して乗っちゃっていい？", "register": "casual", "style": "casual", "note": "wheel it on は「押して乗せる」。口語的で自然。" },
+        { "en": "Is there a bike carriage on this train?", "ja": "この電車に自転車を置ける車両はありますか。", "register": "neutral", "style": "existence", "note": "carriage は「車両」（英）。米国では car。" },
+        { "en": "Do I need a separate ticket for the bike?", "ja": "自転車には別料金がかかりますか。", "register": "neutral", "style": "vocab", "note": "持ち込み可でも別料金の場合がある。先に確認したい。" },
+        { "en": "I'm riding out to the coast and taking the train back — is that possible with a bike?", "ja": "海まで走って帰りは電車のつもりなのですが、自転車と一緒でも大丈夫でしょうか。", "register": "polite", "style": "context", "note": "計画を伝えると、時間帯の制限なども教えてもらえる。" },
+        { "en": "Before I rent it, could I check if bikes are OK on trains?", "ja": "借りる前に、自転車が電車に乗せられるか確認してもよいですか。", "register": "polite", "style": "considerate", "note": "契約前に確認する型。トラブルを防げる。" }
+      ]
+    },
+    {
+      "id": "transport-022", "category": "transport", "difficulty": 3,
+      "place": "At a ticket office", "listener": "a ticket agent",
+      "want": "You want to get a refund for a ticket you cannot use.",
+      "situationJa": "使えなくなった切符の払い戻しを受けたい。",
+      "tags": ["requesting", "refund"],
+      "answers": [
+        { "en": "Refund, please?", "ja": "払い戻しをお願いできますか。", "register": "casual", "style": "oneword", "note": "切符を差し出しながら。要件は明確に伝わる。" },
+        { "en": "Can I get a refund for this ticket?", "ja": "この切符を払い戻してもらえますか。", "register": "neutral", "style": "basic", "note": "基本形。refund は名詞で「払い戻し」。" },
+        { "en": "I'd like to return this ticket, please.", "ja": "この切符を返却したいのですが。", "register": "neutral", "style": "basic", "note": "return を使うと角が立ちにくい。" },
+        { "en": "Could you tell me if this ticket is refundable?", "ja": "この切符が払い戻し可能か教えていただけますか。", "register": "polite", "style": "request", "note": "まず可否を聞く型。断られても気まずくならない。" },
+        { "en": "I'd like to enquire about a refund for this ticket, if that's possible.", "ja": "可能でしたら、こちらの切符の払い戻しについて伺いたいのですが。", "register": "formal", "style": "formal", "note": "enquire about 〜 は改まった「問い合わせる」。" },
+        { "en": "Any chance I can get my money back?", "ja": "お金って戻ってきたりする？", "register": "casual", "style": "casual", "note": "Any chance 〜 は「望みは薄いが一応」という含み。" },
+        { "en": "Is there any way to change this to another day?", "ja": "別の日に変更する方法はありますか。", "register": "neutral", "style": "existence", "note": "払い戻しが不可でも変更ならできることがある。" },
+        { "en": "What's your cancellation policy for this fare?", "ja": "この運賃の取消規定はどうなっていますか。", "register": "neutral", "style": "vocab", "note": "cancellation policy は「取消規定」。交渉の前提を確かめる。" },
+        { "en": "My meeting was cancelled, so I can't travel today — is a refund possible?", "ja": "打ち合わせが中止になり今日は行けなくなりました。払い戻しは可能でしょうか。", "register": "polite", "style": "context", "note": "事情を添えると、柔軟に対応してもらえることがある。" },
+        { "en": "I understand it may not be refundable — but could you check for me?", "ja": "払い戻しできないかもしれないとは思うのですが、確認していただけますか。", "register": "polite", "style": "considerate", "note": "先に理解を示すと、相手が親身になってくれやすい。" }
+      ]
+    },
+    {
+      "id": "transport-023", "category": "transport", "difficulty": 1,
+      "place": "Outside a station", "listener": "a passer-by",
+      "want": "You want to find the taxi stand.",
+      "situationJa": "タクシー乗り場を探している。",
+      "tags": ["asking", "directions"],
+      "answers": [
+        { "en": "Taxi?", "ja": "タクシーは？", "register": "casual", "style": "oneword", "note": "身振りと合わせれば通じる。言葉が出ないときの保険。" },
+        { "en": "Where is the taxi stand?", "ja": "タクシー乗り場はどこですか。", "register": "neutral", "style": "basic", "note": "基本形。taxi stand は「タクシー乗り場」。" },
+        { "en": "Where can I get a taxi?", "ja": "どこでタクシーに乗れますか。", "register": "neutral", "style": "basic", "note": "乗り場がない街でも答えが得られる、実用的な聞き方。" },
+        { "en": "Could you tell me where the taxi rank is?", "ja": "タクシー乗り場がどこか教えていただけますか。", "register": "polite", "style": "request", "note": "taxi rank は英国式。米国では taxi stand。" },
+        { "en": "Excuse me, would you mind pointing me toward the taxi rank?", "ja": "恐れ入りますが、タクシー乗り場の方向を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "point me toward 〜 は道を示してもらう丁寧な言い方。" },
+        { "en": "Hey, know where I can grab a cab?", "ja": "ねえ、タクシーどこで拾える？", "register": "casual", "style": "casual", "note": "cab は taxi の口語。grab a cab はよく使う組み合わせ。" },
+        { "en": "Is there a taxi stand near here?", "ja": "この近くにタクシー乗り場はありますか。", "register": "neutral", "style": "existence", "note": "無い可能性も含めて聞ける。返答しやすい形。" },
+        { "en": "Which exit should I take for the taxis?", "ja": "タクシーにはどの出口から出ればいいですか。", "register": "neutral", "style": "vocab", "note": "大きな駅では出口を聞くのがいちばん早い。" },
+        { "en": "I have a lot of luggage — where's the closest place to catch a taxi?", "ja": "荷物が多いのですが、いちばん近いタクシー乗り場はどこでしょうか。", "register": "polite", "style": "context", "note": "事情を言うと、最短の経路を教えてもらえる。" },
+        { "en": "Sorry to bother you — do you know where the taxis are?", "ja": "お邪魔してすみません、タクシー乗り場はご存じですか。", "register": "polite", "style": "considerate", "note": "do you know を付けると、知らない相手も答えやすい。" }
+      ]
+    },
+    {
+      "id": "transport-024", "category": "transport", "difficulty": 2,
+      "place": "In a taxi", "listener": "the driver",
+      "want": "You want to ask if you can pay by card.",
+      "situationJa": "タクシーでカード払いができるか確認したい。",
+      "tags": ["asking", "payment"],
+      "answers": [
+        { "en": "Card OK?", "ja": "カードは使えますか。", "register": "casual", "style": "oneword", "note": "カードを見せながら。世界中どこでも通じる。" },
+        { "en": "Can I pay by card?", "ja": "カードで払えますか。", "register": "neutral", "style": "basic", "note": "基本形。pay by card を丸ごと覚えておきたい。" },
+        { "en": "Do you take cards?", "ja": "カードは使えますか。", "register": "neutral", "style": "basic", "note": "take は「受け付ける」。店でもそのまま使える。" },
+        { "en": "Could you tell me if you accept credit cards?", "ja": "クレジットカードが使えるか教えていただけますか。", "register": "polite", "style": "request", "note": "accept は「受け付ける」。丁寧に確認する形。" },
+        { "en": "Would it be possible to settle the fare by card?", "ja": "運賃をカードでお支払いすることは可能でしょうか。", "register": "formal", "style": "formal", "note": "settle は「精算する」。かなり改まった言い方。" },
+        { "en": "You take card, right?", "ja": "カード使えるよね？", "register": "casual", "style": "casual", "note": "確認の right? を付けた口語。返事が早い。" },
+        { "en": "Is there a card reader in the car?", "ja": "車内にカード端末はありますか。", "register": "neutral", "style": "existence", "note": "実物があるかを聞く型。誤解が生じにくい。" },
+        { "en": "Is cash only, or can I tap?", "ja": "現金のみですか、それともタッチ決済できますか。", "register": "neutral", "style": "vocab", "note": "tap は「タッチ決済する」。近年よく使われる。" },
+        { "en": "I don't have much cash on me — would card be all right?", "ja": "現金の持ち合わせが少ないのですが、カードでも大丈夫でしょうか。", "register": "polite", "style": "context", "note": "事情を先に言うと、乗る前に判断してもらえる。" },
+        { "en": "Just checking before we set off — do you take cards?", "ja": "出発前に確認だけさせてください。カードは使えますか。", "register": "polite", "style": "considerate", "note": "set off は「出発する」。着いてから困らない。" }
+      ]
+    },
+    {
+      "id": "transport-025", "category": "transport", "difficulty": 2,
+      "place": "At a station", "listener": "a station attendant",
+      "want": "You want to know if there is an elevator you can use.",
+      "situationJa": "使えるエレベーターがあるか知りたい。",
+      "tags": ["asking", "accessibility"],
+      "answers": [
+        { "en": "Elevator?", "ja": "エレベーターは？", "register": "casual", "style": "oneword", "note": "荷物やベビーカーを指しながら。理由まで伝わる。" },
+        { "en": "Is there an elevator?", "ja": "エレベーターはありますか。", "register": "neutral", "style": "existence", "note": "基本形。まずこれ。" },
+        { "en": "Where is the elevator?", "ja": "エレベーターはどこですか。", "register": "neutral", "style": "basic", "note": "あることが分かっている場合はこちら。" },
+        { "en": "Could you tell me if there's a lift to the platform?", "ja": "ホームまでのエレベーターがあるか教えていただけますか。", "register": "polite", "style": "request", "note": "lift は英国式。行き先を添えると正確。" },
+        { "en": "Would you mind telling me whether there is step-free access to platform 2?", "ja": "2番線まで段差のない経路があるかお教えいただけますでしょうか。", "register": "formal", "style": "formal", "note": "step-free access は「段差のない経路」。案内表示でも使われる。" },
+        { "en": "Any elevator around?", "ja": "この辺にエレベーターある？", "register": "casual", "style": "casual", "note": "軽い聞き方。同行者や他の乗客に。" },
+        { "en": "Is there another way up without stairs?", "ja": "階段を使わずに上がる方法はありますか。", "register": "neutral", "style": "basic", "note": "エレベーターがなくてもスロープを教えてもらえる。" },
+        { "en": "Is the lift working today?", "ja": "本日エレベーターは稼働していますか。", "register": "neutral", "style": "vocab", "note": "故障中のことがある。先に確認しておくと安心。" },
+        { "en": "I have a stroller and a suitcase — is there a lift I can use?", "ja": "ベビーカーとスーツケースがあるのですが、使えるエレベーターはありますか。", "register": "polite", "style": "context", "note": "事情を伝えると、係員が付き添ってくれることもある。" },
+        { "en": "Sorry, could I ask — is there step-free access from here?", "ja": "すみません、伺ってもよいですか。ここから段差なしで行けますか。", "register": "polite", "style": "considerate", "note": "前置きを置くと、相手が身構えない。" }
+      ]
+    }
+  ]
+}

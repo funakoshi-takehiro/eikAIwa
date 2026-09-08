@@ -1,0 +1,598 @@
+/* ==========================================================================
+   eikAIwa — pAIr Mind デザインテーマ
+   トークンは pyhiroba/css/style.css の :root を出発点にしている
+   （コントラスト AA 監査済み・文字サイズ/行間スケール対応の最も成熟した版）。
+   ブランドは #028DAE 一色 + 28px の方眼紙グリッド + Zen Kaku Gothic New。
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* ブランド */
+  --accent:        #028DAE;
+  --accent-dk:     #01617a;
+  --accent-deep:   #015f78;
+  --accent-soft:   #e3f3f7;
+  --accent-border: #c8e8ef;
+
+  /* インク */
+  --ink:   #101418;
+  --ink-2: #2b3138;
+  --ink-3: #5b636c;
+  --ink-4: #6b727c;   /* AA(4.5:1) を満たすよう調整済みの値 */
+
+  /* サーフェス */
+  --bg:    #f9fbfc;
+  --paper: #ffffff;
+  --bg-2:  #f3f1ec;
+
+  /* 線 */
+  --line:   #e7e5e0;
+  --line-2: #efece6;
+
+  /* 状態色 */
+  --ok:    #1f8a4c;
+  --warn:  #b7791f;
+  --miss:  #c2410c;
+
+  /* 方眼グリッド */
+  --grid-line: rgba(2,141,174,0.04);
+  --grid-size: 28px;
+
+  /* フォント */
+  --font-ui: 'Zen Kaku Gothic New', system-ui, -apple-system, BlinkMacSystemFont,
+             'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+
+  /* 角丸 */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+
+  /* 影 */
+  --sh-sm:    0 1px 0 rgba(16,20,24,.04), 0 4px 12px -6px rgba(16,20,24,.08);
+  --sh:       0 1px 0 rgba(16,20,24,.04), 0 8px 28px -12px rgba(16,20,24,.10);
+  --sh-hover: 0 2px 0 rgba(16,20,24,.04), 0 12px 32px -8px rgba(16,20,24,.14);
+
+  --ease: cubic-bezier(.4, 0, .2, 1);
+
+  /* 表示設定（設定画面から変更・localStorage 保存）。既定 1 = 16px 相当 */
+  --text-scale: 1;
+  --line-scale: 1;
+
+  --tab-h: 62px;
+}
+
+:root[data-text="s"] { --text-scale: 0.9; }
+:root[data-text="l"] { --text-scale: 1.15; }
+:root[data-text="xl"]{ --text-scale: 1.3; }
+:root[data-line="s"] { --line-scale: 0.9; }
+:root[data-line="l"] { --line-scale: 1.15; }
+
+/* --------------------------------------------------------------------------
+   ダークモード
+   hAIchi 方式:「ダーク用トークンは [data-theme=dark] の中でだけ定義し、
+   利用側は var(--x, リテラル) と書く」…にしたいところだが、本アプリは
+   トークン数が少なくすべて :root で定義済みなので、素直に上書きする。
+   グリッド線とブランド色は暗背景でのコントラストを確保するため明るくする。
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --accent:        #35aecb;
+  --accent-dk:     #7fd0e2;
+  --accent-soft:   #0e2f38;
+  --accent-border: #1d4a58;
+
+  --ink:   #e8eaed;
+  --ink-2: #c9cfd6;
+  --ink-3: #9aa3ad;
+  --ink-4: #8b939e;
+
+  --bg:    #12161a;
+  --paper: #191e24;
+  --bg-2:  #21272e;
+
+  --line:   #2c333b;
+  --line-2: #272d35;
+
+  --ok:   #4cc272;
+  --warn: #f5b04b;
+  --miss: #f0705f;
+
+  --grid-line: rgba(53,174,203,0.05);
+
+  --sh-sm:    0 1px 0 rgba(0,0,0,.35), 0 4px 12px -6px rgba(0,0,0,.45);
+  --sh:       0 1px 0 rgba(0,0,0,.35), 0 8px 28px -12px rgba(0,0,0,.55);
+  --sh-hover: 0 2px 0 rgba(0,0,0,.35), 0 12px 32px -8px rgba(0,0,0,.6);
+}
+
+/* ==========================================================================
+   ベース
+   ========================================================================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* hidden 属性を必ず効かせる。
+   ブラウザ既定の [hidden]{display:none} は「作者スタイルシート」に負けるため、
+   .update-bar{display:flex} のようなクラス指定があると hidden が無視される。
+   実際これで、初回訪問から更新バーが出っぱなしになっていた。 */
+[hidden] { display: none !important; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(16px * var(--text-scale, 1));
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--font-ui);
+  font-feature-settings: "palt";       /* 日本語の字詰め */
+  font-size: 1rem;
+  line-height: calc(1.7 * var(--line-scale, 1));
+  line-break: strict;                  /* 行頭に長音符や小書き仮名が来ないように */
+  color: var(--ink);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  background-position: center top;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom, 0px));
+}
+
+h1, h2, h3, h4 { text-wrap: balance; font-weight: 500; line-height: 1.45; }
+a { color: inherit; }
+button, input, select, textarea { font-family: inherit; font-size: inherit; color: inherit; }
+img, svg { max-width: 100%; }
+/* 既定寸法(300x150)での描画事故を防ぐ全体の保険。
+   個別に width/height を当てている箇所はそちらが勝つ。 */
+svg { display: block; width: 1em; height: 1em; }
+.done__ic svg, .empty__ic svg, .hero__ring svg, .catcard__ring svg,
+.ring, .judge__ic svg, .tabbar__ic svg, .appbar__logo svg,
+.catcard__ic svg, .iconbtn svg { width: 100%; height: 100%; }
+
+/* ==========================================================================
+   アクセシビリティ
+   ========================================================================== */
+.skip-link {
+  position: fixed; top: -60px; left: 12px; z-index: 13000;
+  background: var(--accent-dk); color: #fff; padding: 10px 16px;
+  border-radius: 0 0 10px 10px; font-weight: 700; text-decoration: none;
+  transition: top .15s var(--ease);
+}
+.skip-link:focus { top: 0; }
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--accent-dk);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+.sr-only {
+  position: absolute !important; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; transition-delay: 0ms !important;
+  }
+}
+
+/* ==========================================================================
+   レイアウト
+   ========================================================================== */
+.main { display: block; }
+.app  { width: 100%; max-width: 560px; margin: 0 auto; padding: 16px 16px 32px; }
+.loading { padding: 48px 0; text-align: center; color: var(--ink-4); }
+
+.appbar {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-2);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.appbar__inner {
+  max-width: 560px; margin: 0 auto;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 16px; min-height: 52px;
+}
+.appbar__brand {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; color: var(--accent);
+}
+.appbar__logo { width: 22px; height: 22px; color: var(--accent); flex: 0 0 auto; }
+.appbar__name {
+  font-size: 1.06rem; font-weight: 500; letter-spacing: .01em;
+  color: var(--ink); white-space: nowrap;
+}
+.appbar__name b { color: var(--accent); font-weight: 700; }
+.appbar__spacer { flex: 1 1 auto; }
+.appbar__slot { display: flex; align-items: center; gap: 6px; }
+
+/* ==========================================================================
+   下部タブバー （既存2アプリには無いので本アプリで新規に作る）
+   ========================================================================== */
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.tabbar__item {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; min-height: var(--tab-h); padding: 6px 4px;
+  text-decoration: none; color: var(--ink-4);
+  transition: color .15s var(--ease);
+}
+.tabbar__ic { width: 23px; height: 23px; }
+.tabbar__label { font-size: .68rem; font-weight: 700; white-space: nowrap; letter-spacing: .02em; }
+.tabbar__item[aria-current="page"] { color: var(--accent); }
+.tabbar__item:active { background: var(--accent-soft); }
+
+/* ==========================================================================
+   共通パーツ
+   ========================================================================== */
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-sm);
+  padding: 18px;
+}
+a.card, button.card {
+  display: block; width: 100%; text-align: left; text-decoration: none;
+  cursor: pointer;
+  transition: transform .18s var(--ease), box-shadow .18s var(--ease),
+              border-color .18s var(--ease);
+}
+a.card:hover, button.card:hover { transform: translateY(-2px); box-shadow: var(--sh-hover); border-color: var(--accent-border); }
+a.card:active, button.card:active { transform: translateY(0); }
+
+.stack > * + * { margin-top: 12px; }
+.stack-lg > * + * { margin-top: 20px; }
+
+.eyebrow {
+  font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--accent);
+}
+.section-title {
+  font-size: .95rem; font-weight: 700; color: var(--ink-2);
+  letter-spacing: .04em; margin-bottom: 10px;
+}
+.muted { color: var(--ink-4); }
+.small { font-size: .82rem; }
+
+/* ボタン --------------------------------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 44px; padding: 0 20px;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+  font-weight: 700; font-size: .9rem; letter-spacing: .01em;
+  cursor: pointer; text-decoration: none;
+  white-space: nowrap;               /* 日本語が1文字ずつ折り返されるのを防ぐ */
+  transition: transform .15s var(--ease), box-shadow .15s var(--ease),
+              background .15s var(--ease), color .15s var(--ease);
+}
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 10px 24px -10px rgba(2,141,174,.5); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-ghost:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent-border); }
+.btn-quiet { background: transparent; color: var(--ink-3); border-color: transparent; min-height: 40px; padding: 0 12px; }
+.btn-quiet:hover:not(:disabled) { background: var(--bg-2); color: var(--ink); }
+.btn-lg { min-height: 56px; padding: 0 30px; font-size: 1rem; font-weight: 700; }
+.btn-block { width: 100%; }
+
+.iconbtn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: var(--r-pill);
+  background: transparent; border: 1px solid transparent; color: var(--ink-3);
+  cursor: pointer; transition: background .15s var(--ease), color .15s var(--ease);
+  flex: 0 0 auto;
+}
+.iconbtn:hover { background: var(--accent-soft); color: var(--accent); }
+.iconbtn svg { width: 20px; height: 20px; }
+.iconbtn[aria-pressed="true"] { color: var(--accent); }
+
+/* セグメント（設定の切替） ------------------------------------------------ */
+.seg { display: inline-flex; gap: 4px; padding: 4px; background: var(--bg-2); border-radius: 12px; flex-wrap: wrap; }
+.seg__btn {
+  appearance: none; border: 0; background: transparent; cursor: pointer;
+  font-size: .84rem; font-weight: 700; color: var(--ink-3);
+  padding: 9px 15px; border-radius: 9px; min-height: 40px;
+  white-space: nowrap;
+  transition: background .14s var(--ease), color .14s var(--ease), box-shadow .14s var(--ease);
+}
+.seg__btn[aria-pressed="true"] { background: var(--paper); color: var(--accent-dk); box-shadow: var(--sh-sm); }
+
+/* 丁寧さバッジ ----------------------------------------------------------
+   有彩色を増やさず、ブランド色の濃度と枠線だけで4段階を表す。
+   形（枠線の有無）も変えて、色覚に依存しないようにする。 */
+.reg {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: .68rem; font-weight: 700; letter-spacing: .04em;
+  padding: 3px 9px; border-radius: var(--r-pill);
+  white-space: nowrap; flex: 0 0 auto;
+}
+.reg::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.reg--casual  { background: transparent;                     color: var(--ink-4);  border: 1px dashed var(--line); }
+.reg--neutral { background: var(--accent-soft);              color: var(--accent-dk); border: 1px solid transparent; }
+.reg--polite  { background: color-mix(in srgb, var(--accent) 16%, var(--paper));
+                color: var(--accent-dk); border: 1px solid var(--accent-border); }
+.reg--formal  { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+
+/* 進捗リング ------------------------------------------------------------ */
+.ring { display: block; }
+.ring__track { stroke: var(--line); }
+.ring__value { stroke: var(--accent); stroke-linecap: round; transition: stroke-dashoffset .5s var(--ease); }
+
+/* 進捗バー -------------------------------------------------------------- */
+.pbar { height: 4px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.pbar__fill { height: 100%; background: var(--accent); border-radius: 999px; transition: width .3s var(--ease); }
+
+/* ==========================================================================
+   ホーム
+   ========================================================================== */
+.hero { display: flex; align-items: center; gap: 18px; }
+.hero__ring { position: relative; flex: 0 0 auto; width: 92px; height: 92px; }
+.hero__ringtext {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 0;
+}
+.hero__num { font-size: 1.5rem; font-weight: 700; line-height: 1; color: var(--ink); }
+.hero__den { font-size: .68rem; color: var(--ink-4); font-weight: 700; }
+.hero__body { min-width: 0; flex: 1 1 auto; }
+.hero__title { font-size: 1.02rem; font-weight: 700; margin-bottom: 3px; }
+.hero__sub { font-size: .82rem; color: var(--ink-4); }
+
+.statrow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0;
+           background: var(--paper); border: 1px solid var(--line);
+           border-radius: var(--r-md); overflow: hidden; box-shadow: var(--sh-sm); }
+.stat { padding: 14px 10px; text-align: center; border-right: 1px solid var(--line-2); }
+.stat:last-child { border-right: 0; }
+.stat__v { font-size: 1.3rem; font-weight: 700; line-height: 1.1; }
+.stat__v.accent { color: var(--accent); }
+.stat__l { font-size: .68rem; color: var(--ink-4); font-weight: 700; margin-top: 3px; }
+
+/* ==========================================================================
+   練習画面
+   ========================================================================== */
+.pr { display: flex; flex-direction: column; gap: 14px; }
+.pr__top { display: flex; align-items: center; gap: 10px; }
+.pr__count { font-size: .76rem; font-weight: 700; color: var(--ink-4); white-space: nowrap; }
+.pr__bar { flex: 1 1 auto; }
+
+/* 状況カード */
+.sit { padding: 22px 20px; }
+.sit__place {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .72rem; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+}
+/* インライン SVG には必ず寸法を与える。指定を忘れると既定の 300x150 で
+   描画され、隣のラベルが押し出されて折り返される（実測で踏んだ）。 */
+.sit__place svg { width: 15px; height: 15px; flex: 0 0 auto; }
+.sit__want {
+  font-size: 1.24rem; font-weight: 500; line-height: 1.55; color: var(--ink);
+  letter-spacing: .005em;
+}
+.sit__listener { margin-top: 12px; font-size: .84rem; color: var(--ink-3); }
+.sit__listener b { color: var(--ink-2); font-weight: 700; }
+.sit__ja {
+  margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--line);
+  font-size: .88rem; color: var(--ink-3);
+}
+.sit__jatoggle {
+  margin-top: 14px; display: inline-flex; align-items: center; gap: 6px;
+  background: none; border: 0; cursor: pointer; padding: 6px 0;
+  font-size: .8rem; font-weight: 700; color: var(--accent); min-height: 40px;
+  white-space: nowrap;   /* 日本語は1文字ずつ折り返せるので操作ラベルには必須 */
+}
+.sit__jatoggle svg { width: 17px; height: 17px; flex: 0 0 auto; }
+
+/* 考えるフェーズ */
+.think { text-align: center; padding: 4px 0; }
+.think__hint { font-size: .88rem; color: var(--ink-3); margin-bottom: 14px; }
+.think__timer { font-size: 2.4rem; font-weight: 700; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
+.think__timer.is-done { color: var(--ink-4); }
+
+.myans { width: 100%; min-height: 84px; padding: 12px 14px;
+         border: 1px solid var(--line); border-radius: var(--r-sm);
+         background: var(--paper); color: var(--ink); resize: vertical;
+         line-height: 1.6; }
+.myans::placeholder { color: var(--ink-4); }
+.myans:focus { border-color: var(--accent); }
+
+/* 解答リスト */
+.ans { border: 1px solid var(--line); border-radius: var(--r-md);
+       background: var(--paper); overflow: hidden; box-shadow: var(--sh-sm); }
+.ans__item { padding: 14px 16px; border-bottom: 1px solid var(--line-2); }
+.ans__item:last-child { border-bottom: 0; }
+.ans__head { display: flex; align-items: flex-start; gap: 8px; }
+.ans__en { flex: 1 1 auto; min-width: 0; font-size: 1rem; font-weight: 500;
+           line-height: 1.55; color: var(--ink); }
+.ans__meta { display: flex; align-items: center; gap: 6px; margin-top: 9px; flex-wrap: wrap; }
+.ans__note { font-size: .78rem; color: var(--ink-4); flex: 1 1 100%; }
+.ans__ja { margin-top: 7px; font-size: .84rem; color: var(--ink-3); }
+.ans__tools { display: flex; align-items: center; gap: 2px; flex: 0 0 auto; }
+
+/* 自己評価 */
+.judge { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.judge__btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px; min-height: 74px; padding: 10px 6px;
+  border-radius: var(--r-md); cursor: pointer; background: var(--paper);
+  border: 1px solid var(--line); color: var(--ink-2);
+  font-weight: 700; font-size: .8rem; white-space: nowrap;
+  transition: transform .15s var(--ease), box-shadow .15s var(--ease),
+              border-color .15s var(--ease), background .15s var(--ease);
+}
+.judge__btn:hover { transform: translateY(-2px); box-shadow: var(--sh-hover); }
+.judge__ic { width: 24px; height: 24px; }
+.judge__btn[data-j="got"]   { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); color: var(--accent-dk); }
+.judge__btn[data-j="close"] { border-style: dashed; }
+.judge__btn[data-j="miss"]  { }
+
+/* 完了画面 */
+.done { text-align: center; padding: 26px 12px; }
+.done__ic { width: 62px; height: 62px; margin: 0 auto 16px; color: var(--accent); }
+.judge__ic { width: 24px; height: 24px; }
+
+/* ==========================================================================
+   カテゴリ / リスト
+   ========================================================================== */
+.catlist { display: grid; gap: 10px; }
+.catcard { display: flex; align-items: center; gap: 14px; padding: 15px 16px; }
+.catcard__ic {
+  width: 44px; height: 44px; border-radius: 12px; flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+.catcard__ic svg { width: 22px; height: 22px; }
+.catcard__body { flex: 1 1 auto; min-width: 0; }
+.catcard__name { font-weight: 700; font-size: .95rem; }
+.catcard__meta { font-size: .74rem; color: var(--ink-4); margin-top: 2px; }
+.catcard__ring { flex: 0 0 auto; width: 38px; height: 38px; position: relative; }
+.catcard__pct { position: absolute; inset: 0; display: flex; align-items: center;
+                justify-content: center; font-size: .62rem; font-weight: 700; color: var(--ink-3); }
+
+.sitlist { display: grid; gap: 8px; }
+.sitrow { display: flex; align-items: center; gap: 12px; padding: 13px 15px; }
+.sitrow__body { flex: 1 1 auto; min-width: 0; }
+.sitrow__want { font-size: .9rem; font-weight: 500; line-height: 1.5; }
+.sitrow__place { font-size: .72rem; color: var(--ink-4); margin-top: 3px; }
+.sitrow__box {
+  flex: 0 0 auto; width: 10px; height: 10px; border-radius: 3px;
+  background: var(--line); border: 1px solid var(--line);
+}
+.sitrow__box[data-lv="0"] { background: transparent; }
+.sitrow__box[data-lv="1"] { background: color-mix(in srgb, var(--accent) 25%, var(--paper)); border-color: var(--accent-border); }
+.sitrow__box[data-lv="2"] { background: color-mix(in srgb, var(--accent) 45%, var(--paper)); border-color: var(--accent-border); }
+.sitrow__box[data-lv="3"] { background: color-mix(in srgb, var(--accent) 65%, var(--paper)); border-color: var(--accent); }
+.sitrow__box[data-lv="4"] { background: color-mix(in srgb, var(--accent) 82%, var(--paper)); border-color: var(--accent); }
+.sitrow__box[data-lv="5"] { background: var(--accent); border-color: var(--accent); }
+
+.empty { text-align: center; padding: 44px 20px; color: var(--ink-4); }
+.empty__ic { width: 46px; height: 46px; margin: 0 auto 14px; color: var(--line); }
+
+/* ==========================================================================
+   設定
+   ========================================================================== */
+.setrow { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line-2); flex-wrap: wrap; }
+.setrow:last-child { border-bottom: 0; }
+.setrow__body { flex: 1 1 180px; min-width: 0; }
+.setrow__name { font-weight: 700; font-size: .9rem; }
+.setrow__desc { font-size: .76rem; color: var(--ink-4); margin-top: 2px; }
+.setrow__ctl { flex: 0 0 auto; }
+
+.switch { position: relative; display: inline-block; width: 50px; height: 30px; flex: 0 0 auto; }
+.switch input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.switch__track { position: absolute; inset: 0; background: var(--line); border-radius: 999px;
+                 transition: background .18s var(--ease); pointer-events: none; }
+.switch__thumb { position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+                 background: var(--paper); border-radius: 50%; box-shadow: var(--sh-sm);
+                 transition: transform .18s var(--ease); pointer-events: none; }
+.switch input:checked ~ .switch__track { background: var(--accent); }
+.switch input:checked ~ .switch__thumb { transform: translateX(20px); }
+.switch input:focus-visible ~ .switch__track { outline: 3px solid var(--accent-dk); outline-offset: 2px; }
+
+select.sel {
+  min-height: 44px; padding: 0 34px 0 12px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--paper); cursor: pointer;
+  max-width: 190px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b636c' stroke-width='2' stroke-linecap='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;
+}
+
+/* ==========================================================================
+   更新バー / トースト / モーダル
+   ========================================================================== */
+.update-bar {
+  position: fixed; left: 0; right: 0; top: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  padding: 10px 14px calc(10px + env(safe-area-inset-top, 0px));
+  background: var(--accent); color: #fff; font-size: .84rem; font-weight: 700;
+}
+.update-bar__btn {
+  background: #fff; color: var(--accent-dk); border: 0; border-radius: 999px;
+  padding: 7px 15px; font-weight: 700; cursor: pointer; min-height: 36px; white-space: nowrap;
+}
+
+.toastwrap { position: fixed; left: 50%; transform: translateX(-50%);
+             bottom: calc(var(--tab-h) + env(safe-area-inset-bottom, 0px) + 14px);
+             z-index: 12500; display: flex; flex-direction: column; gap: 8px;
+             align-items: center; pointer-events: none; width: max-content; max-width: 92vw; }
+.toast { background: var(--ink); color: var(--paper); padding: 11px 18px;
+         border-radius: 999px; font-size: .84rem; font-weight: 700;
+         box-shadow: var(--sh); opacity: 0; transform: translateY(8px);
+         transition: opacity .2s var(--ease), transform .2s var(--ease); }
+.toast.show { opacity: 1; transform: translateY(0); }
+
+.modal-ov {
+  position: fixed; inset: 0; top: 0; right: 0; bottom: 0; left: 0;  /* 古い Safari 用 */
+  z-index: 12000; display: flex; align-items: center; justify-content: center; padding: 20px;
+  background: rgba(16,20,24,.42); backdrop-filter: blur(2px);
+  opacity: 0; transition: opacity .18s var(--ease);
+}
+.modal-ov.is-open { opacity: 1; }
+.modal {
+  width: 100%; max-width: 400px; background: var(--paper); border-radius: 18px;
+  padding: 26px 24px 20px; box-shadow: 0 24px 60px -12px rgba(16,20,24,.34);
+  text-align: center; transform: translateY(10px) scale(.97);
+  transition: transform .2s cubic-bezier(.22,1,.36,1);
+}
+.modal-ov.is-open .modal { transform: translateY(0) scale(1); }
+.modal__title { font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
+.modal__msg { font-size: .88rem; color: var(--ink-3); line-height: 1.7; white-space: pre-wrap; }
+.modal__foot { display: flex; gap: 8px; margin-top: 20px; }
+.modal__foot .btn { flex: 1 1 auto; }
+
+/* 入場アニメーション（ceoprofile の fadeSlideIn） */
+.fade-in { animation: fadeSlideIn .4s var(--ease) both; }
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   狭い画面
+   ========================================================================== */
+@media (max-width: 380px) {
+  .app { padding: 14px 12px 28px; }
+  .sit { padding: 18px 16px; }
+  .sit__want { font-size: 1.12rem; }
+  .judge__btn { font-size: .74rem; min-height: 68px; }
+  .tabbar__label { font-size: .64rem; }
+}
+
+/* ホバーできない端末ではホバー変形を無効化（タップ後に浮いたまま残るのを防ぐ） */
+@media (hover: none) {
+  a.card:hover, button.card:hover { transform: none; box-shadow: var(--sh-sm); border-color: var(--line); }
+  .btn-primary:hover:not(:disabled) { transform: none; }
+  .judge__btn:hover { transform: none; box-shadow: none; }
+}
+
+@media print {
+  .tabbar, .appbar, .update-bar, .toastwrap { display: none !important; }
+  body { background: none; padding: 0; }
+}

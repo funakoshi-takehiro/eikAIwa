@@ -1,0 +1,28 @@
+{
+  "$comment": "書き込み範囲を eng_std に限定する。詳細は .claude/hooks/guard-write-scope.py",
+  "permissions": {
+    "deny": [
+      "Write(//home/user/pairmind_hp/**)",
+      "Edit(//home/user/pairmind_hp/**)",
+      "Write(//home/user/haichi_webapp_2026_0510/**)",
+      "Edit(//home/user/haichi_webapp_2026_0510/**)",
+      "Write(//home/user/pyhiroba/**)",
+      "Edit(//home/user/pyhiroba/**)",
+      "Write(//home/user/funakoshi-takehiro/**)",
+      "Edit(//home/user/funakoshi-takehiro/**)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|NotebookEdit|MultiEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /home/user/eng_std/.claude/hooks/guard-write-scope.py"
+          }
+        ]
+      }
+    ]
+  }
+}
