@@ -6,7 +6,7 @@
 
 window.EIK = window.EIK || {};
 
-EIK.VERSION = '20260908g';
+EIK.VERSION = '20260908j';
 
 /* サイトのベースパスを実行時に解決する。
    ビルドが無いので base を埋め込めない。GitHub Pages のプロジェクトページ
@@ -100,6 +100,23 @@ EIK.ringSvg = function (pct, size, stroke) {
     '<circle class="ring__value" cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke-width="' + stroke + '" ' +
     'stroke-dasharray="' + c.toFixed(2) + '" stroke-dashoffset="' + off.toFixed(2) + '" ' +
     'transform="rotate(-90 ' + size / 2 + ' ' + size / 2 + ')"/></svg>';
+};
+
+/* 段階の表示。定義そのもの（文数の範囲など）は data/categories.json 側にあり、
+   ここはアプリ内で軽く使う分の写しに留める。 */
+EIK.LEVEL_STARS = { 1: '★', 2: '★★', 3: '★★★' };
+
+EIK.levelStars = function (level) {
+  return EIK.LEVEL_STARS[level] || EIK.LEVEL_STARS[1];
+};
+
+/* 状況 id から段階を読む。
+   id の形: transport-001（★） / transport-2-001（★★） / transport-3-001（★★★）
+   ブックマークやカテゴリ一覧から1問だけ開くとき、
+   設定中の段階と違っていても正しいファイルを読むために使う。 */
+EIK.levelFromId = function (id) {
+  var m = /-([23])-\d+$/.exec(String(id || ''));
+  return m ? parseInt(m[1], 10) : 1;
 };
 
 EIK.REGISTER_LABEL = {

@@ -6,8 +6,11 @@ EIK.Views.Home = function (ctx) {
   var app = ctx.app;
   app.innerHTML = '<div class="loading">読み込み中…</div>';
 
-  EIK.Data.loadAll().then(function (all) {
-    var st = EIK.Store.settings();
+  var st = EIK.Store.settings();
+  var level = st.level || 1;
+
+  EIK.Data.load(level).then(function (all) {
+    var lv = EIK.Data.levelMeta(level) || {};
     var s = EIK.SRS.stats(all);
     var todayN = EIK.Store.todayCount();
     var goal = Math.max(1, parseInt(st.dailyGoal, 10) || 10);
@@ -16,6 +19,8 @@ EIK.Views.Home = function (ctx) {
 
     app.innerHTML =
       '<div class="stack-lg fade-in">' +
+
+        levelPicker(level) +
 
         '<div class="card hero">' +
           '<div class="hero__ring">' +
@@ -35,9 +40,12 @@ EIK.Views.Home = function (ctx) {
           '</div>' +
         '</div>' +
 
-        '<a class="btn btn-primary btn-lg btn-block" href="#/practice/daily">' +
-          (due > 0 ? '今日の練習をはじめる（' + due + '問）' : '練習をはじめる') +
-        '</a>' +
+        (all.length
+          ? '<a class="btn btn-primary btn-lg btn-block" href="#/practice/daily">' +
+              (due > 0 ? '今日の練習をはじめる（' + due + '問）' : '練習をはじめる') +
+            '</a>'
+          : '<div class="card empty">' + EIK.escapeHtml(EIK.levelStars(level)) +
+            ' の問題はまだ準備中です。<br>上の段階を切り替えてお使いください。</div>') +
 
         '<div class="statrow">' +
           '<div class="stat"><div class="stat__v accent">' + s.learned + '</div><div class="stat__l">学習した問題</div></div>' +
@@ -46,7 +54,7 @@ EIK.Views.Home = function (ctx) {
         '</div>' +
 
         '<div>' +
-          '<div class="section-title">学習の進みぐあい</div>' +
+          '<div class="section-title">' + EIK.escapeHtml(EIK.levelStars(level)) + ' の進みぐあい</div>' +
           '<div class="card">' +
             '<div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:8px">' +
               '<span class="muted">全 ' + s.total + ' 問</span>' +
@@ -78,6 +86,8 @@ EIK.Views.Home = function (ctx) {
         '</div>' +
 
       '</div>';
+
+    wireLevelPicker(app);
   }).catch(function (e) {
     app.innerHTML = '<div class="card empty">データを読み込めませんでした。<br>' +
                     EIK.escapeHtml(e.message || e) + '</div>';
@@ -88,3 +98,44 @@ EIK.Views.Home = function (ctx) {
            'stroke-linecap="round" stroke-linejoin="round">' + inner + '</svg>';
   }
 };
+
+/* 段階の切り替え。ホームとカテゴリ一覧の両方から使う。 */
+EIK.levelPickerHtml = function (current) {
+  var levels = EIK.Data.allLevels();
+  if (!levels.length) {
+    levels = [{ level: 1, stars: '★' }, { level: 2, stars: '★★' }, { level: 3, stars: '★★★' }];
+  }
+  var meta = null;
+  var btns = levels.map(function (l) {
+    if (l.level === current) meta = l;
+    return '<button type="button" class="lv__btn" data-level="' + l.level + '" ' +
+           'aria-pressed="' + (l.level === current ? 'true' : 'false') + '">' +
+           EIK.escapeHtml(l.stars) + '</button>';
+  }).join('');
+  return '<div class="lv">' +
+    '<div class="lv__row">' +
+      '<span class="lv__label">難易度</span>' +
+      '<div class="lv__seg" role="group" aria-label="難易度">' + btns + '</div>' +
+    '</div>' +
+    (meta && meta.sentences
+      ? '<div class="lv__desc"><b>' + EIK.escapeHtml(meta.sentences) + 'で答える</b>' +
+        ' — ' + EIK.escapeHtml(meta.descJa || '') + '</div>'
+      : '') +
+  '</div>';
+};
+
+EIK.wireLevelPicker = function (root) {
+  Array.prototype.forEach.call(root.querySelectorAll('.lv__btn'), function (b) {
+    b.addEventListener('click', function () {
+      var lv = parseInt(b.getAttribute('data-level'), 10);
+      if (lv === (EIK.Store.settings().level || 1)) return;
+      EIK.Store.setSetting('level', lv);
+      EIK.Store.flush();
+      EIK.Router.render();
+    });
+  });
+};
+
+/* Home 内で使う短縮形 */
+function levelPicker(current) { return EIK.levelPickerHtml(current); }
+function wireLevelPicker(root) { return EIK.wireLevelPicker(root); }

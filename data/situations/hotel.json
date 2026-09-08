@@ -2,478 +2,2150 @@
   "category": "hotel",
   "situations": [
     {
-      "id": "hotel-001", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-001",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to check in.",
       "situationJa": "ホテルでチェックインしたい。",
-      "tags": ["checkin"],
+      "tags": [
+        "checkin"
+      ],
       "answers": [
-        { "en": "Checking in, please.", "ja": "チェックインをお願いします。", "register": "neutral", "style": "oneword", "note": "パスポートを出しながら。これで十分。" },
-        { "en": "I'd like to check in, please.", "ja": "チェックインをお願いします。", "register": "neutral", "style": "basic", "note": "基本形。丸ごと覚えたい。" },
-        { "en": "I have a reservation under Tanaka.", "ja": "田中の名前で予約しています。", "register": "neutral", "style": "basic", "note": "under 〜 で「〜の名前で」。これが最も実用的。" },
-        { "en": "Could I check in, please? The booking is under Tanaka.", "ja": "チェックインをお願いできますか。予約は田中です。", "register": "polite", "style": "request", "note": "要件と予約名を一度に。やり取りが減る。" },
-        { "en": "Good evening. I believe we have a reservation for two nights.", "ja": "こんばんは。2泊で予約しております。", "register": "formal", "style": "formal", "note": "挨拶から入る。高級ホテルで自然。" },
-        { "en": "Hi, checking in — Tanaka.", "ja": "こんにちは、チェックインです。田中です。", "register": "casual", "style": "casual", "note": "手早く済ませたいときに。十分丁寧。" },
-        { "en": "Is my room ready yet?", "ja": "部屋はもう用意できていますか。", "register": "neutral", "style": "existence", "note": "早めに着いたときに。荷物だけ預けることもできる。" },
-        { "en": "I booked through a website — the confirmation number is here.", "ja": "サイト経由で予約しました。確認番号はこちらです。", "register": "neutral", "style": "vocab", "note": "confirmation number は「予約確認番号」。見せると速い。" },
-        { "en": "We're a bit early — is it possible to check in now?", "ja": "少し早く着いたのですが、今チェックインできますか。", "register": "polite", "style": "context", "note": "早着時の定番。無理なら荷物預かりを提案してもらえる。" },
-        { "en": "No rush if the room isn't ready — we can leave our bags.", "ja": "部屋がまだでしたら急ぎません。荷物だけ預けられます。", "register": "polite", "style": "considerate", "note": "先に解決策を示す。フロントの負担が減る。" }
+        {
+          "en": "Checking in, please.",
+          "ja": "チェックインをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "パスポートを出しながら。これで十分。"
+        },
+        {
+          "en": "I'd like to check in, please.",
+          "ja": "チェックインをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。丸ごと覚えたい。"
+        },
+        {
+          "en": "I have a reservation under Tanaka.",
+          "ja": "田中の名前で予約しています。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "under 〜 で「〜の名前で」。これが最も実用的。"
+        },
+        {
+          "en": "Could I check in, please? The booking is under Tanaka.",
+          "ja": "チェックインをお願いできますか。予約は田中です。",
+          "register": "polite",
+          "style": "request",
+          "note": "要件と予約名を一度に。やり取りが減る。"
+        },
+        {
+          "en": "Good evening. I believe we have a reservation for two nights.",
+          "ja": "こんばんは。2泊で予約しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "挨拶から入る。高級ホテルで自然。"
+        },
+        {
+          "en": "Hi, checking in — Tanaka.",
+          "ja": "こんにちは、チェックインです。田中です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "手早く済ませたいときに。十分丁寧。"
+        },
+        {
+          "en": "Is my room ready yet?",
+          "ja": "部屋はもう用意できていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "早めに着いたときに。荷物だけ預けることもできる。"
+        },
+        {
+          "en": "I booked through a website — the confirmation number is here.",
+          "ja": "サイト経由で予約しました。確認番号はこちらです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "confirmation number は「予約確認番号」。見せると速い。"
+        },
+        {
+          "en": "We're a bit early — is it possible to check in now?",
+          "ja": "少し早く着いたのですが、今チェックインできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "早着時の定番。無理なら荷物預かりを提案してもらえる。"
+        },
+        {
+          "en": "No rush if the room isn't ready — we can leave our bags.",
+          "ja": "部屋がまだでしたら急ぎません。荷物だけ預けられます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "先に解決策を示す。フロントの負担が減る。"
+        }
       ]
     },
     {
-      "id": "hotel-002", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-002",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to leave your bags before check-in.",
       "situationJa": "チェックイン前に荷物を預けたい。",
-      "tags": ["requesting", "luggage"],
+      "tags": [
+        "requesting",
+        "luggage"
+      ],
       "answers": [
-        { "en": "Can I leave my bags?", "ja": "荷物を預けられますか。", "register": "neutral", "style": "basic", "note": "基本形。素直で伝わりやすい。" },
-        { "en": "Luggage storage?", "ja": "荷物を預かってもらえますか。", "register": "casual", "style": "oneword", "note": "スーツケースを指しながら。短くても通じる。" },
-        { "en": "Could I leave my luggage here until check-in?", "ja": "チェックインまで荷物を預けられますか。", "register": "polite", "style": "request", "note": "いつまでかを明示。丁寧で確実。" },
-        { "en": "Do you hold bags for guests?", "ja": "宿泊客の荷物を預かっていただけますか。", "register": "neutral", "style": "existence", "note": "hold は「預かる」。サービスの有無を確認する形。" },
-        { "en": "Would it be possible to store our luggage until the room is ready?", "ja": "部屋の準備が整うまで荷物をお預けすることは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。高級ホテルで自然。" },
-        { "en": "Mind if we drop our bags?", "ja": "荷物置いていってもいい？", "register": "casual", "style": "casual", "note": "drop は口語で「置く」。気さくな宿で。" },
-        { "en": "Is there a charge for storing bags?", "ja": "荷物の保管に料金はかかりますか。", "register": "neutral", "style": "vocab", "note": "有料の宿もある。先に確認したい。" },
-        { "en": "We'd like to leave these and come back around three.", "ja": "これを預けて、3時ごろに戻ります。", "register": "neutral", "style": "basic", "note": "戻る時刻を伝えると、宿側が管理しやすい。" },
-        { "en": "Our flight got in early and we can't check in yet — could we leave our bags?", "ja": "便が早く着いてしまいまだチェックインできません。荷物を預けられますか。", "register": "polite", "style": "context", "note": "事情を添えると快く応じてもらえる。" },
-        { "en": "Only if there's space — could we leave two suitcases?", "ja": "空きがあればで結構ですが、スーツケース2つを預けられますか。", "register": "polite", "style": "considerate", "note": "個数を伝え、断る余地も残す。丁寧な頼み方。" }
+        {
+          "en": "Can I leave my bags?",
+          "ja": "荷物を預けられますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。素直で伝わりやすい。"
+        },
+        {
+          "en": "Luggage storage?",
+          "ja": "荷物を預かってもらえますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "スーツケースを指しながら。短くても通じる。"
+        },
+        {
+          "en": "Could I leave my luggage here until check-in?",
+          "ja": "チェックインまで荷物を預けられますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "いつまでかを明示。丁寧で確実。"
+        },
+        {
+          "en": "Do you hold bags for guests?",
+          "ja": "宿泊客の荷物を預かっていただけますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "hold は「預かる」。サービスの有無を確認する形。"
+        },
+        {
+          "en": "Would it be possible to store our luggage until the room is ready?",
+          "ja": "部屋の準備が整うまで荷物をお預けすることは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。高級ホテルで自然。"
+        },
+        {
+          "en": "Mind if we drop our bags?",
+          "ja": "荷物置いていってもいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "drop は口語で「置く」。気さくな宿で。"
+        },
+        {
+          "en": "Is there a charge for storing bags?",
+          "ja": "荷物の保管に料金はかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "有料の宿もある。先に確認したい。"
+        },
+        {
+          "en": "We'd like to leave these and come back around three.",
+          "ja": "これを預けて、3時ごろに戻ります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "戻る時刻を伝えると、宿側が管理しやすい。"
+        },
+        {
+          "en": "Our flight got in early and we can't check in yet — could we leave our bags?",
+          "ja": "便が早く着いてしまいまだチェックインできません。荷物を預けられますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を添えると快く応じてもらえる。"
+        },
+        {
+          "en": "Only if there's space — could we leave two suitcases?",
+          "ja": "空きがあればで結構ですが、スーツケース2つを預けられますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "個数を伝え、断る余地も残す。丁寧な頼み方。"
+        }
       ]
     },
     {
-      "id": "hotel-003", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-003",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for a quieter room.",
       "situationJa": "もっと静かな部屋に替えてほしい。",
-      "tags": ["requesting", "room"],
+      "tags": [
+        "requesting",
+        "room"
+      ],
       "answers": [
-        { "en": "Could we have a quieter room?", "ja": "もっと静かな部屋にできますか。", "register": "polite", "style": "request", "note": "基本形。理由を添えるとなお良い。" },
-        { "en": "The room is very noisy.", "ja": "部屋がとてもうるさいです。", "register": "neutral", "style": "oneword", "note": "事実だけを述べる。相手が対応を提案してくれる。" },
-        { "en": "Is there a room away from the road?", "ja": "道路から離れた部屋はありますか。", "register": "neutral", "style": "existence", "note": "具体的な希望を出すと通りやすい。" },
-        { "en": "Would it be possible to move to a quieter room?", "ja": "静かな部屋に移らせていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。断られても気まずくない。" },
-        { "en": "Any chance of a room on a higher floor?", "ja": "上の階の部屋に替えてもらえたりしますか。", "register": "casual", "style": "casual", "note": "上階のほうが静かなことが多い。実用的な希望。" },
-        { "en": "We could hear the street all night — could we change rooms?", "ja": "一晩中通りの音が聞こえました。部屋を替えられますか。", "register": "neutral", "style": "context", "note": "具体的な事実を先に。対応してもらいやすい。" },
-        { "en": "Is there anything at the back of the building?", "ja": "建物の裏側の部屋はありますか。", "register": "neutral", "style": "vocab", "note": "at the back は「裏側」。静かな部屋の見つけ方。" },
-        { "en": "I'm a light sleeper — could we have somewhere quieter?", "ja": "眠りが浅いもので、もう少し静かな部屋にできますか。", "register": "polite", "style": "basic", "note": "light sleeper は「眠りが浅い人」。理由として自然。" },
-        { "en": "We have an early start tomorrow and need to sleep — is a quieter room possible?", "ja": "明日が早いのでよく眠りたいのですが、静かな部屋は可能でしょうか。", "register": "polite", "style": "confirm", "note": "必要性が明確だと、優先して対応してもらえる。" },
-        { "en": "I know the hotel is full — but if anything opens up, we'd appreciate a quieter room.", "ja": "満室なのは承知していますが、空きが出ましたら静かな部屋をお願いできれば幸いです。", "register": "polite", "style": "considerate", "note": "無理を言わない形。後で対応してもらえることがある。" }
+        {
+          "en": "Could we have a quieter room?",
+          "ja": "もっと静かな部屋にできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。理由を添えるとなお良い。"
+        },
+        {
+          "en": "The room is very noisy.",
+          "ja": "部屋がとてもうるさいです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "事実だけを述べる。相手が対応を提案してくれる。"
+        },
+        {
+          "en": "Is there a room away from the road?",
+          "ja": "道路から離れた部屋はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "具体的な希望を出すと通りやすい。"
+        },
+        {
+          "en": "Would it be possible to move to a quieter room?",
+          "ja": "静かな部屋に移らせていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。断られても気まずくない。"
+        },
+        {
+          "en": "Any chance of a room on a higher floor?",
+          "ja": "上の階の部屋に替えてもらえたりしますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "上階のほうが静かなことが多い。実用的な希望。"
+        },
+        {
+          "en": "We could hear the street all night — could we change rooms?",
+          "ja": "一晩中通りの音が聞こえました。部屋を替えられますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "具体的な事実を先に。対応してもらいやすい。"
+        },
+        {
+          "en": "Is there anything at the back of the building?",
+          "ja": "建物の裏側の部屋はありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "at the back は「裏側」。静かな部屋の見つけ方。"
+        },
+        {
+          "en": "I'm a light sleeper — could we have somewhere quieter?",
+          "ja": "眠りが浅いもので、もう少し静かな部屋にできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "light sleeper は「眠りが浅い人」。理由として自然。"
+        },
+        {
+          "en": "We have an early start tomorrow and need to sleep — is a quieter room possible?",
+          "ja": "明日が早いのでよく眠りたいのですが、静かな部屋は可能でしょうか。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "必要性が明確だと、優先して対応してもらえる。"
+        },
+        {
+          "en": "I know the hotel is full — but if anything opens up, we'd appreciate a quieter room.",
+          "ja": "満室なのは承知していますが、空きが出ましたら静かな部屋をお願いできれば幸いです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無理を言わない形。後で対応してもらえることがある。"
+        }
       ]
     },
     {
-      "id": "hotel-004", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-004",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to report that the air conditioning is not working.",
       "situationJa": "エアコンが効かないことを伝えたい。",
-      "tags": ["reporting", "trouble"],
+      "tags": [
+        "reporting",
+        "trouble"
+      ],
       "answers": [
-        { "en": "The air conditioning isn't working.", "ja": "エアコンが動きません。", "register": "neutral", "style": "basic", "note": "基本形。何が問題かが一言で伝わる。" },
-        { "en": "AC not working. Room 305.", "ja": "エアコンが動きません。305号室です。", "register": "casual", "style": "oneword", "note": "部屋番号を添えるのが重要。対応が速い。" },
-        { "en": "The air con in room 305 isn't cooling.", "ja": "305号室のエアコンが冷えません。", "register": "neutral", "style": "vocab", "note": "「動くが冷えない」を正確に伝えられる。" },
-        { "en": "Could someone come and look at the air conditioning?", "ja": "エアコンを見に来ていただけますか。", "register": "polite", "style": "request", "note": "次にどうしてほしいかまで伝わる。" },
-        { "en": "I'm afraid the air conditioning in our room doesn't seem to be functioning.", "ja": "恐れ入りますが、部屋のエアコンが作動していないようです。", "register": "formal", "style": "formal", "note": "function は「作動する」。改まった言い方。" },
-        { "en": "The AC's dead.", "ja": "エアコン、完全に止まってます。", "register": "casual", "style": "casual", "note": "dead は「まったく動かない」。強い表現。" },
-        { "en": "Is there a trick to the thermostat?", "ja": "温度調節に何かコツはありますか。", "register": "neutral", "style": "existence", "note": "操作方法の問題かもしれない。まず確認する型。" },
-        { "en": "It's quite warm in the room — could it be fixed tonight?", "ja": "部屋がかなり暑いのですが、今夜中に直りますか。", "register": "polite", "style": "basic", "note": "いつまでに必要かを伝える。優先度が上がる。" },
-        { "en": "We've tried the remote and the wall panel, but nothing happens.", "ja": "リモコンも壁のパネルも試しましたが、何も起きません。", "register": "neutral", "style": "context", "note": "試したことを言うと、原因の切り分けが速い。" },
-        { "en": "If it can't be fixed, would another room be possible?", "ja": "修理が難しいようでしたら、別の部屋は可能でしょうか。", "register": "polite", "style": "considerate", "note": "代替案を自分から示す。話が前に進む。" }
+        {
+          "en": "The air conditioning isn't working.",
+          "ja": "エアコンが動きません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。何が問題かが一言で伝わる。"
+        },
+        {
+          "en": "AC not working. Room 305.",
+          "ja": "エアコンが動きません。305号室です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "部屋番号を添えるのが重要。対応が速い。"
+        },
+        {
+          "en": "The air con in room 305 isn't cooling.",
+          "ja": "305号室のエアコンが冷えません。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "「動くが冷えない」を正確に伝えられる。"
+        },
+        {
+          "en": "Could someone come and look at the air conditioning?",
+          "ja": "エアコンを見に来ていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "次にどうしてほしいかまで伝わる。"
+        },
+        {
+          "en": "I'm afraid the air conditioning in our room doesn't seem to be functioning.",
+          "ja": "恐れ入りますが、部屋のエアコンが作動していないようです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "function は「作動する」。改まった言い方。"
+        },
+        {
+          "en": "The AC's dead.",
+          "ja": "エアコン、完全に止まってます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "dead は「まったく動かない」。強い表現。"
+        },
+        {
+          "en": "Is there a trick to the thermostat?",
+          "ja": "温度調節に何かコツはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "操作方法の問題かもしれない。まず確認する型。"
+        },
+        {
+          "en": "It's quite warm in the room — could it be fixed tonight?",
+          "ja": "部屋がかなり暑いのですが、今夜中に直りますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "いつまでに必要かを伝える。優先度が上がる。"
+        },
+        {
+          "en": "We've tried the remote and the wall panel, but nothing happens.",
+          "ja": "リモコンも壁のパネルも試しましたが、何も起きません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "試したことを言うと、原因の切り分けが速い。"
+        },
+        {
+          "en": "If it can't be fixed, would another room be possible?",
+          "ja": "修理が難しいようでしたら、別の部屋は可能でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "代替案を自分から示す。話が前に進む。"
+        }
       ]
     },
     {
-      "id": "hotel-005", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-005",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to know what time breakfast is served.",
       "situationJa": "朝食の時間を知りたい。",
-      "tags": ["asking", "facilities"],
+      "tags": [
+        "asking",
+        "facilities"
+      ],
       "answers": [
-        { "en": "Breakfast time?", "ja": "朝食は何時ですか。", "register": "casual", "style": "oneword", "note": "短くても通じる。チェックイン時に。" },
-        { "en": "What time is breakfast?", "ja": "朝食は何時ですか。", "register": "neutral", "style": "basic", "note": "基本形。最もよく使う。" },
-        { "en": "When is breakfast served?", "ja": "朝食は何時に提供されますか。", "register": "neutral", "style": "basic", "note": "serve は「提供する」。やや丁寧。" },
-        { "en": "Could you tell me the breakfast hours?", "ja": "朝食の時間帯を教えていただけますか。", "register": "polite", "style": "request", "note": "hours で「営業時間帯」。開始と終了が両方分かる。" },
-        { "en": "Would you mind telling me what time breakfast begins?", "ja": "朝食が何時から始まるか教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。高級ホテルで自然。" },
-        { "en": "When can we eat in the morning?", "ja": "朝は何時から食べられますか。", "register": "casual", "style": "casual", "note": "素朴な言い方。気さくな宿で。" },
-        { "en": "Is breakfast included in the rate?", "ja": "朝食は料金に含まれていますか。", "register": "neutral", "style": "existence", "note": "有料か無料かは重要。必ず確認したい。" },
-        { "en": "Where is breakfast served?", "ja": "朝食はどこでいただけますか。", "register": "neutral", "style": "vocab", "note": "場所も一緒に聞いておくと当日迷わない。" },
-        { "en": "We have a tour at seven — is breakfast open before then?", "ja": "7時にツアーがあるのですが、それより前に朝食は開いていますか。", "register": "polite", "style": "context", "note": "早朝の予定があるときに。弁当を用意してくれることも。" },
-        { "en": "Just so we don't miss it — what time does breakfast finish?", "ja": "逃さないように伺いますが、朝食は何時までですか。", "register": "polite", "style": "considerate", "note": "終了時刻のほうが実は重要。寝坊すると食べ損ねる。" }
+        {
+          "en": "Breakfast time?",
+          "ja": "朝食は何時ですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。チェックイン時に。"
+        },
+        {
+          "en": "What time is breakfast?",
+          "ja": "朝食は何時ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。最もよく使う。"
+        },
+        {
+          "en": "When is breakfast served?",
+          "ja": "朝食は何時に提供されますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "serve は「提供する」。やや丁寧。"
+        },
+        {
+          "en": "Could you tell me the breakfast hours?",
+          "ja": "朝食の時間帯を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "hours で「営業時間帯」。開始と終了が両方分かる。"
+        },
+        {
+          "en": "Would you mind telling me what time breakfast begins?",
+          "ja": "朝食が何時から始まるか教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。高級ホテルで自然。"
+        },
+        {
+          "en": "When can we eat in the morning?",
+          "ja": "朝は何時から食べられますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "素朴な言い方。気さくな宿で。"
+        },
+        {
+          "en": "Is breakfast included in the rate?",
+          "ja": "朝食は料金に含まれていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "有料か無料かは重要。必ず確認したい。"
+        },
+        {
+          "en": "Where is breakfast served?",
+          "ja": "朝食はどこでいただけますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "場所も一緒に聞いておくと当日迷わない。"
+        },
+        {
+          "en": "We have a tour at seven — is breakfast open before then?",
+          "ja": "7時にツアーがあるのですが、それより前に朝食は開いていますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "早朝の予定があるときに。弁当を用意してくれることも。"
+        },
+        {
+          "en": "Just so we don't miss it — what time does breakfast finish?",
+          "ja": "逃さないように伺いますが、朝食は何時までですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "終了時刻のほうが実は重要。寝坊すると食べ損ねる。"
+        }
       ]
     },
     {
-      "id": "hotel-006", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-006",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for a late check-out.",
       "situationJa": "チェックアウトを遅らせてほしい。",
-      "tags": ["requesting", "checkout"],
+      "tags": [
+        "requesting",
+        "checkout"
+      ],
       "answers": [
-        { "en": "Late check-out?", "ja": "レイトチェックアウトはできますか。", "register": "casual", "style": "oneword", "note": "業界用語なのでこれだけで通じる。" },
-        { "en": "Can we check out late?", "ja": "遅くチェックアウトできますか。", "register": "neutral", "style": "basic", "note": "基本形。素直で伝わりやすい。" },
-        { "en": "Is late check-out possible?", "ja": "レイトチェックアウトは可能ですか。", "register": "neutral", "style": "existence", "note": "可否から確認する。断られても気まずくない。" },
-        { "en": "Could we keep the room until two?", "ja": "2時まで部屋を使えますか。", "register": "polite", "style": "request", "note": "希望時刻を具体的に。話が早い。" },
-        { "en": "Would it be possible to arrange a later check-out time?", "ja": "チェックアウト時刻を遅らせていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった依頼。高級ホテルで自然。" },
-        { "en": "Any chance we could stay a bit longer?", "ja": "もう少し長くいられたりしますか。", "register": "casual", "style": "casual", "note": "控えめな依頼。断られる前提の柔らかさ。" },
-        { "en": "Is there a fee for late check-out?", "ja": "レイトチェックアウトに料金はかかりますか。", "register": "neutral", "style": "vocab", "note": "有料の宿も多い。先に確認したい。" },
-        { "en": "What time is check-out normally?", "ja": "通常のチェックアウトは何時ですか。", "register": "neutral", "style": "basic", "note": "まず基準を確認する。交渉の出発点になる。" },
-        { "en": "Our flight isn't until evening — could we check out later?", "ja": "便が夕方なので、遅くチェックアウトできますか。", "register": "polite", "style": "context", "note": "理由を添えると応じてもらいやすい。" },
-        { "en": "Only if it doesn't cause trouble — could we have an extra hour?", "ja": "ご迷惑でなければ、あと1時間いただけますか。", "register": "polite", "style": "considerate", "note": "1時間だけなら無料で応じてもらえることが多い。" }
+        {
+          "en": "Late check-out?",
+          "ja": "レイトチェックアウトはできますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "業界用語なのでこれだけで通じる。"
+        },
+        {
+          "en": "Can we check out late?",
+          "ja": "遅くチェックアウトできますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。素直で伝わりやすい。"
+        },
+        {
+          "en": "Is late check-out possible?",
+          "ja": "レイトチェックアウトは可能ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "可否から確認する。断られても気まずくない。"
+        },
+        {
+          "en": "Could we keep the room until two?",
+          "ja": "2時まで部屋を使えますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "希望時刻を具体的に。話が早い。"
+        },
+        {
+          "en": "Would it be possible to arrange a later check-out time?",
+          "ja": "チェックアウト時刻を遅らせていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった依頼。高級ホテルで自然。"
+        },
+        {
+          "en": "Any chance we could stay a bit longer?",
+          "ja": "もう少し長くいられたりしますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "控えめな依頼。断られる前提の柔らかさ。"
+        },
+        {
+          "en": "Is there a fee for late check-out?",
+          "ja": "レイトチェックアウトに料金はかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "有料の宿も多い。先に確認したい。"
+        },
+        {
+          "en": "What time is check-out normally?",
+          "ja": "通常のチェックアウトは何時ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "まず基準を確認する。交渉の出発点になる。"
+        },
+        {
+          "en": "Our flight isn't until evening — could we check out later?",
+          "ja": "便が夕方なので、遅くチェックアウトできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると応じてもらいやすい。"
+        },
+        {
+          "en": "Only if it doesn't cause trouble — could we have an extra hour?",
+          "ja": "ご迷惑でなければ、あと1時間いただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "1時間だけなら無料で応じてもらえることが多い。"
+        }
       ]
     },
     {
-      "id": "hotel-007", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-007",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to extend your stay by one night.",
       "situationJa": "宿泊を1泊延ばしたい。",
-      "tags": ["requesting", "booking"],
+      "tags": [
+        "requesting",
+        "booking"
+      ],
       "answers": [
-        { "en": "One more night, please.", "ja": "もう1泊お願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。フロントで通じる。" },
-        { "en": "Can I stay one more night?", "ja": "もう1泊できますか。", "register": "neutral", "style": "basic", "note": "基本形。素直で伝わる。" },
-        { "en": "I'd like to extend my stay by a night.", "ja": "滞在を1泊延長したいのですが。", "register": "neutral", "style": "vocab", "note": "extend one's stay は「滞在を延ばす」。正式な言い方。" },
-        { "en": "Could I book an additional night?", "ja": "もう1泊追加で予約できますか。", "register": "polite", "style": "request", "note": "additional は「追加の」。事務的で通りやすい。" },
-        { "en": "Would it be possible to remain in the same room for an extra night?", "ja": "同じ部屋のまま、もう1泊させていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "部屋移動を避けたいときに。改まった言い方。" },
-        { "en": "Any rooms free tomorrow night?", "ja": "明日の夜、空いている部屋ある？", "register": "casual", "style": "casual", "note": "気さくな宿で。空室確認から入る形。" },
-        { "en": "Do you have availability for tomorrow?", "ja": "明日の空室はありますか。", "register": "neutral", "style": "existence", "note": "availability は「空き状況」。ホテルでの定番語。" },
-        { "en": "What would the rate be for an extra night?", "ja": "1泊追加すると料金はいくらになりますか。", "register": "neutral", "style": "basic", "note": "延泊は料金が変わることが多い。先に確認したい。" },
-        { "en": "Our plans changed and we need one more night — is that possible?", "ja": "予定が変わってもう1泊必要になりました。可能でしょうか。", "register": "polite", "style": "context", "note": "事情を伝えると、融通を利かせてもらえることがある。" },
-        { "en": "If the same room isn't available, we're happy to move.", "ja": "同じ部屋が取れなければ、移動しても構いません。", "register": "polite", "style": "considerate", "note": "柔軟だと示すと、宿側が調整しやすい。" }
+        {
+          "en": "One more night, please.",
+          "ja": "もう1泊お願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。フロントで通じる。"
+        },
+        {
+          "en": "Can I stay one more night?",
+          "ja": "もう1泊できますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。素直で伝わる。"
+        },
+        {
+          "en": "I'd like to extend my stay by a night.",
+          "ja": "滞在を1泊延長したいのですが。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "extend one's stay は「滞在を延ばす」。正式な言い方。"
+        },
+        {
+          "en": "Could I book an additional night?",
+          "ja": "もう1泊追加で予約できますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "additional は「追加の」。事務的で通りやすい。"
+        },
+        {
+          "en": "Would it be possible to remain in the same room for an extra night?",
+          "ja": "同じ部屋のまま、もう1泊させていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "部屋移動を避けたいときに。改まった言い方。"
+        },
+        {
+          "en": "Any rooms free tomorrow night?",
+          "ja": "明日の夜、空いている部屋ある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな宿で。空室確認から入る形。"
+        },
+        {
+          "en": "Do you have availability for tomorrow?",
+          "ja": "明日の空室はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "availability は「空き状況」。ホテルでの定番語。"
+        },
+        {
+          "en": "What would the rate be for an extra night?",
+          "ja": "1泊追加すると料金はいくらになりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "延泊は料金が変わることが多い。先に確認したい。"
+        },
+        {
+          "en": "Our plans changed and we need one more night — is that possible?",
+          "ja": "予定が変わってもう1泊必要になりました。可能でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を伝えると、融通を利かせてもらえることがある。"
+        },
+        {
+          "en": "If the same room isn't available, we're happy to move.",
+          "ja": "同じ部屋が取れなければ、移動しても構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "柔軟だと示すと、宿側が調整しやすい。"
+        }
       ]
     },
     {
-      "id": "hotel-008", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-008",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for the wifi password.",
       "situationJa": "Wi-Fi のパスワードを聞きたい。",
-      "tags": ["asking", "facilities"],
+      "tags": [
+        "asking",
+        "facilities"
+      ],
       "answers": [
-        { "en": "Wifi password?", "ja": "Wi-Fi のパスワードは？", "register": "casual", "style": "oneword", "note": "スマホを見せながら。世界中で通じる。" },
-        { "en": "What's the wifi password?", "ja": "Wi-Fi のパスワードは何ですか。", "register": "neutral", "style": "basic", "note": "基本形。最もよく使う。" },
-        { "en": "Could I have the wifi password, please?", "ja": "Wi-Fi のパスワードを教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
-        { "en": "How do I connect to the wifi?", "ja": "Wi-Fi にはどう接続しますか。", "register": "neutral", "style": "basic", "note": "接続方法まで聞ける。認証画面がある宿もある。" },
-        { "en": "Would you mind telling me the network name and password?", "ja": "ネットワーク名とパスワードを教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "両方一度に。SSID が分かりにくい宿で有効。" },
-        { "en": "What's the wifi here?", "ja": "ここの Wi-Fi 何？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。気さくな宿で。" },
-        { "en": "Is the wifi free for guests?", "ja": "Wi-Fi は宿泊客は無料ですか。", "register": "neutral", "style": "existence", "note": "有料の宿もまだある。先に確認したい。" },
-        { "en": "Does the wifi reach the rooms?", "ja": "Wi-Fi は部屋まで届きますか。", "register": "neutral", "style": "vocab", "note": "ロビーだけ、という宿もある。実用的な確認。" },
-        { "en": "I need to join a video call tonight — is the wifi reliable?", "ja": "今夜ビデオ会議に参加するのですが、Wi-Fi は安定していますか。", "register": "polite", "style": "context", "note": "用途を言うと、有線や別回線を案内してもらえることも。" },
-        { "en": "Sorry to ask again — could you write down the password?", "ja": "何度もすみません、パスワードを書いていただけますか。", "register": "polite", "style": "considerate", "note": "聞き取りにくい文字列は書いてもらうのが確実。" }
+        {
+          "en": "Wifi password?",
+          "ja": "Wi-Fi のパスワードは？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "スマホを見せながら。世界中で通じる。"
+        },
+        {
+          "en": "What's the wifi password?",
+          "ja": "Wi-Fi のパスワードは何ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。最もよく使う。"
+        },
+        {
+          "en": "Could I have the wifi password, please?",
+          "ja": "Wi-Fi のパスワードを教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どこでも使える。"
+        },
+        {
+          "en": "How do I connect to the wifi?",
+          "ja": "Wi-Fi にはどう接続しますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "接続方法まで聞ける。認証画面がある宿もある。"
+        },
+        {
+          "en": "Would you mind telling me the network name and password?",
+          "ja": "ネットワーク名とパスワードを教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "両方一度に。SSID が分かりにくい宿で有効。"
+        },
+        {
+          "en": "What's the wifi here?",
+          "ja": "ここの Wi-Fi 何？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた口語。気さくな宿で。"
+        },
+        {
+          "en": "Is the wifi free for guests?",
+          "ja": "Wi-Fi は宿泊客は無料ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "有料の宿もまだある。先に確認したい。"
+        },
+        {
+          "en": "Does the wifi reach the rooms?",
+          "ja": "Wi-Fi は部屋まで届きますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "ロビーだけ、という宿もある。実用的な確認。"
+        },
+        {
+          "en": "I need to join a video call tonight — is the wifi reliable?",
+          "ja": "今夜ビデオ会議に参加するのですが、Wi-Fi は安定していますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "用途を言うと、有線や別回線を案内してもらえることも。"
+        },
+        {
+          "en": "Sorry to ask again — could you write down the password?",
+          "ja": "何度もすみません、パスワードを書いていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "聞き取りにくい文字列は書いてもらうのが確実。"
+        }
       ]
     },
     {
-      "id": "hotel-009", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-009",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask them to call a taxi for you.",
       "situationJa": "タクシーを呼んでほしい。",
-      "tags": ["requesting", "transport"],
+      "tags": [
+        "requesting",
+        "transport"
+      ],
       "answers": [
-        { "en": "A taxi, please.", "ja": "タクシーをお願いします。", "register": "neutral", "style": "oneword", "note": "フロントではこれで通じる。" },
-        { "en": "Could you call a taxi for me?", "ja": "タクシーを呼んでいただけますか。", "register": "polite", "style": "request", "note": "基本形。最もよく使う。" },
-        { "en": "Can you get me a taxi?", "ja": "タクシーを手配してもらえますか。", "register": "neutral", "style": "basic", "note": "get someone a taxi は「タクシーを手配する」。" },
-        { "en": "I'd like a taxi to the airport at seven.", "ja": "7時に空港までのタクシーをお願いします。", "register": "neutral", "style": "basic", "note": "時刻と行き先を一度に。手配が速い。" },
-        { "en": "Would it be possible to arrange a taxi for tomorrow morning?", "ja": "明朝のタクシーを手配していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "前日に頼むときの丁寧な形。" },
-        { "en": "Can you grab me a cab?", "ja": "タクシー呼んでもらえる？", "register": "casual", "style": "casual", "note": "cab は taxi の口語。気さくな宿で。" },
-        { "en": "Is there a taxi rank nearby?", "ja": "近くにタクシー乗り場はありますか。", "register": "neutral", "style": "existence", "note": "自分で拾えるなら早い。選択肢を増やせる。" },
-        { "en": "How long is the wait for a taxi usually?", "ja": "タクシーは普通どのくらい待ちますか。", "register": "neutral", "style": "vocab", "note": "出発時刻の逆算に必要。実用的。" },
-        { "en": "We need to be at the airport by nine — could you book a taxi accordingly?", "ja": "9時までに空港に着く必要があります。それに合わせて手配していただけますか。", "register": "polite", "style": "context", "note": "到着時刻を伝えると、宿側が出発時刻を決めてくれる。" },
-        { "en": "Whenever is convenient for you — could we arrange a taxi for the morning?", "ja": "ご都合のよいときで結構ですので、朝のタクシーを手配いただけますか。", "register": "polite", "style": "considerate", "note": "急かさない前置き。忙しいフロントに好まれる。" }
+        {
+          "en": "A taxi, please.",
+          "ja": "タクシーをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "フロントではこれで通じる。"
+        },
+        {
+          "en": "Could you call a taxi for me?",
+          "ja": "タクシーを呼んでいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。最もよく使う。"
+        },
+        {
+          "en": "Can you get me a taxi?",
+          "ja": "タクシーを手配してもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "get someone a taxi は「タクシーを手配する」。"
+        },
+        {
+          "en": "I'd like a taxi to the airport at seven.",
+          "ja": "7時に空港までのタクシーをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "時刻と行き先を一度に。手配が速い。"
+        },
+        {
+          "en": "Would it be possible to arrange a taxi for tomorrow morning?",
+          "ja": "明朝のタクシーを手配していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "前日に頼むときの丁寧な形。"
+        },
+        {
+          "en": "Can you grab me a cab?",
+          "ja": "タクシー呼んでもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "cab は taxi の口語。気さくな宿で。"
+        },
+        {
+          "en": "Is there a taxi rank nearby?",
+          "ja": "近くにタクシー乗り場はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "自分で拾えるなら早い。選択肢を増やせる。"
+        },
+        {
+          "en": "How long is the wait for a taxi usually?",
+          "ja": "タクシーは普通どのくらい待ちますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "出発時刻の逆算に必要。実用的。"
+        },
+        {
+          "en": "We need to be at the airport by nine — could you book a taxi accordingly?",
+          "ja": "9時までに空港に着く必要があります。それに合わせて手配していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "到着時刻を伝えると、宿側が出発時刻を決めてくれる。"
+        },
+        {
+          "en": "Whenever is convenient for you — could we arrange a taxi for the morning?",
+          "ja": "ご都合のよいときで結構ですので、朝のタクシーを手配いただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさない前置き。忙しいフロントに好まれる。"
+        }
       ]
     },
     {
-      "id": "hotel-010", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-010",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to say there is a problem with the bill.",
       "situationJa": "請求内容に問題があることを伝えたい。",
-      "tags": ["complaining", "payment"],
+      "tags": [
+        "complaining",
+        "payment"
+      ],
       "answers": [
-        { "en": "There's a mistake on the bill.", "ja": "請求に間違いがあります。", "register": "neutral", "style": "basic", "note": "率直だが失礼ではない。まずこれ。" },
-        { "en": "Sorry, this doesn't look right.", "ja": "すみません、これは合っていないようです。", "register": "neutral", "style": "oneword", "note": "明細を指しながら。柔らかく指摘できる。" },
-        { "en": "Could you check this charge for me?", "ja": "この請求を確認していただけますか。", "register": "polite", "style": "request", "note": "charge は「請求項目」。具体的に指せる。" },
-        { "en": "We didn't use the minibar — could you look into it?", "ja": "ミニバーは使っていません。ご確認いただけますか。", "register": "neutral", "style": "context", "note": "何が違うかを明示。解決が速い。" },
-        { "en": "I'm sorry to raise this, but I believe there may be an error on our invoice.", "ja": "申し上げにくいのですが、明細に誤りがあるように思われます。", "register": "formal", "style": "formal", "note": "invoice は「請求書」。最も丁寧な切り出し方。" },
-        { "en": "Hey, what's this charge?", "ja": "ねえ、この請求は何ですか。", "register": "casual", "style": "casual", "note": "口調によっては失礼になる。相手を選ぶ。" },
-        { "en": "Is there a breakdown of these charges?", "ja": "この請求の内訳はありますか。", "register": "neutral", "style": "existence", "note": "breakdown は「内訳」。自分で確認できて建設的。" },
-        { "en": "I was quoted a lower rate when I booked.", "ja": "予約時にはもっと安い料金と伺いました。", "register": "neutral", "style": "vocab", "note": "quote は「見積もる・提示する」。根拠を示す言い方。" },
-        { "en": "The booking confirmation says 120 a night, but this shows 150 — could you check?", "ja": "予約確認では1泊120でしたが、こちらは150になっています。ご確認いただけますか。", "register": "polite", "style": "confirm", "note": "根拠を示すと双方が納得しやすい。" },
-        { "en": "It may well be my misunderstanding — could we go through it together?", "ja": "私の思い違いかもしれませんが、一緒に確認していただけますか。", "register": "polite", "style": "considerate", "note": "自分の誤りの可能性を先に置く。相手が構えずに済む。" }
+        {
+          "en": "There's a mistake on the bill.",
+          "ja": "請求に間違いがあります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "率直だが失礼ではない。まずこれ。"
+        },
+        {
+          "en": "Sorry, this doesn't look right.",
+          "ja": "すみません、これは合っていないようです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "明細を指しながら。柔らかく指摘できる。"
+        },
+        {
+          "en": "Could you check this charge for me?",
+          "ja": "この請求を確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "charge は「請求項目」。具体的に指せる。"
+        },
+        {
+          "en": "We didn't use the minibar — could you look into it?",
+          "ja": "ミニバーは使っていません。ご確認いただけますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "何が違うかを明示。解決が速い。"
+        },
+        {
+          "en": "I'm sorry to raise this, but I believe there may be an error on our invoice.",
+          "ja": "申し上げにくいのですが、明細に誤りがあるように思われます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "invoice は「請求書」。最も丁寧な切り出し方。"
+        },
+        {
+          "en": "Hey, what's this charge?",
+          "ja": "ねえ、この請求は何ですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "口調によっては失礼になる。相手を選ぶ。"
+        },
+        {
+          "en": "Is there a breakdown of these charges?",
+          "ja": "この請求の内訳はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "breakdown は「内訳」。自分で確認できて建設的。"
+        },
+        {
+          "en": "I was quoted a lower rate when I booked.",
+          "ja": "予約時にはもっと安い料金と伺いました。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "quote は「見積もる・提示する」。根拠を示す言い方。"
+        },
+        {
+          "en": "The booking confirmation says 120 a night, but this shows 150 — could you check?",
+          "ja": "予約確認では1泊120でしたが、こちらは150になっています。ご確認いただけますか。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "根拠を示すと双方が納得しやすい。"
+        },
+        {
+          "en": "It may well be my misunderstanding — could we go through it together?",
+          "ja": "私の思い違いかもしれませんが、一緒に確認していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分の誤りの可能性を先に置く。相手が構えずに済む。"
+        }
       ]
     },
     {
-      "id": "hotel-011", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-011",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for an extra towel.",
       "situationJa": "タオルを追加でもらいたい。",
-      "tags": ["requesting", "room"],
+      "tags": [
+        "requesting",
+        "room"
+      ],
       "answers": [
-        { "en": "An extra towel, please.", "ja": "タオルを1枚追加でお願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。電話でも使える。" },
-        { "en": "Could we have some extra towels?", "ja": "タオルを追加でいただけますか。", "register": "polite", "style": "request", "note": "基本形。複数欲しいときは some を。" },
-        { "en": "Can I get another towel?", "ja": "タオルをもう1枚もらえますか。", "register": "neutral", "style": "basic", "note": "another で「もう1枚」。素直で伝わる。" },
-        { "en": "Do you have more towels available?", "ja": "タオルの追加はありますか。", "register": "neutral", "style": "existence", "note": "在庫を確認する形。無くても気まずくない。" },
-        { "en": "Would it be possible to have two more towels sent up?", "ja": "タオルを2枚お部屋までお持ちいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "send up は「部屋まで届ける」。ホテルでの定番。" },
-        { "en": "Could we grab a couple more towels?", "ja": "タオル、あと数枚もらえる？", "register": "casual", "style": "casual", "note": "a couple more は「あと2、3枚」。気さくな言い方。" },
-        { "en": "Room 305 — could we have extra towels, please?", "ja": "305号室ですが、タオルを追加でお願いできますか。", "register": "polite", "style": "vocab", "note": "部屋番号を先に言うのが電話での作法。" },
-        { "en": "We're three people and there are only two towels.", "ja": "3人いるのですが、タオルが2枚しかありません。", "register": "neutral", "style": "basic", "note": "理由が明快。すぐ対応してもらえる。" },
-        { "en": "We went swimming and used ours — could we have fresh ones?", "ja": "プールで使ってしまったので、新しいものをいただけますか。", "register": "polite", "style": "context", "note": "事情を添えると自然な会話になる。" },
-        { "en": "No rush — could someone bring towels whenever convenient?", "ja": "急ぎませんので、ご都合のよいときにタオルをお持ちいただけますか。", "register": "polite", "style": "considerate", "note": "急かさない一言。清掃が忙しい時間帯に。" }
+        {
+          "en": "An extra towel, please.",
+          "ja": "タオルを1枚追加でお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。電話でも使える。"
+        },
+        {
+          "en": "Could we have some extra towels?",
+          "ja": "タオルを追加でいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。複数欲しいときは some を。"
+        },
+        {
+          "en": "Can I get another towel?",
+          "ja": "タオルをもう1枚もらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "another で「もう1枚」。素直で伝わる。"
+        },
+        {
+          "en": "Do you have more towels available?",
+          "ja": "タオルの追加はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "在庫を確認する形。無くても気まずくない。"
+        },
+        {
+          "en": "Would it be possible to have two more towels sent up?",
+          "ja": "タオルを2枚お部屋までお持ちいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "send up は「部屋まで届ける」。ホテルでの定番。"
+        },
+        {
+          "en": "Could we grab a couple more towels?",
+          "ja": "タオル、あと数枚もらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "a couple more は「あと2、3枚」。気さくな言い方。"
+        },
+        {
+          "en": "Room 305 — could we have extra towels, please?",
+          "ja": "305号室ですが、タオルを追加でお願いできますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "部屋番号を先に言うのが電話での作法。"
+        },
+        {
+          "en": "We're three people and there are only two towels.",
+          "ja": "3人いるのですが、タオルが2枚しかありません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "理由が明快。すぐ対応してもらえる。"
+        },
+        {
+          "en": "We went swimming and used ours — could we have fresh ones?",
+          "ja": "プールで使ってしまったので、新しいものをいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を添えると自然な会話になる。"
+        },
+        {
+          "en": "No rush — could someone bring towels whenever convenient?",
+          "ja": "急ぎませんので、ご都合のよいときにタオルをお持ちいただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさない一言。清掃が忙しい時間帯に。"
+        }
       ]
     },
     {
-      "id": "hotel-012", "category": "hotel", "difficulty": 2,
-      "place": "In a hotel room", "listener": "the front desk on the phone",
+      "id": "hotel-012",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a hotel room",
+      "listener": "the front desk on the phone",
       "want": "You want to report that the hot water is not working.",
       "situationJa": "お湯が出ないことを電話で伝えたい。",
-      "tags": ["reporting", "trouble"],
+      "tags": [
+        "reporting",
+        "trouble"
+      ],
       "answers": [
-        { "en": "No hot water in room 305.", "ja": "305号室でお湯が出ません。", "register": "neutral", "style": "oneword", "note": "電話ではこの形が最も速い。部屋番号が先。" },
-        { "en": "There's no hot water in my room.", "ja": "部屋でお湯が出ません。", "register": "neutral", "style": "basic", "note": "基本形。まずこれ。" },
-        { "en": "The shower only runs cold.", "ja": "シャワーが水しか出ません。", "register": "neutral", "style": "vocab", "note": "run cold は「冷たい水が出る」。状況が正確。" },
-        { "en": "Could someone come and check the hot water?", "ja": "お湯を見に来ていただけますか。", "register": "polite", "style": "request", "note": "対応を明確に頼む形。" },
-        { "en": "I'm afraid there appears to be no hot water in room 305.", "ja": "恐れ入りますが、305号室でお湯が出ないようです。", "register": "formal", "style": "formal", "note": "appears to be で断定を避けた丁寧な報告。" },
-        { "en": "The water's freezing.", "ja": "水が冷たすぎます。", "register": "casual", "style": "casual", "note": "freezing は「凍えるほど冷たい」。強い表現。" },
-        { "en": "Is there a problem with the building's hot water?", "ja": "建物全体でお湯の問題がありますか。", "register": "neutral", "style": "existence", "note": "全館の問題なら待つしかない。切り分けに有効。" },
-        { "en": "How long does it usually take to heat up?", "ja": "普通どのくらいで温まりますか。", "register": "neutral", "style": "basic", "note": "単に時間がかかるだけの場合もある。まず確認。" },
-        { "en": "I've let it run for five minutes and it's still cold.", "ja": "5分出しっぱなしにしましたが、まだ冷たいままです。", "register": "neutral", "style": "context", "note": "試したことを言うと、原因の切り分けが速い。" },
-        { "en": "If it can't be fixed tonight, could we move rooms?", "ja": "今夜中に直らないようでしたら、部屋を替えられますか。", "register": "polite", "style": "considerate", "note": "代替案を自分から示す。話が前に進む。" }
+        {
+          "en": "No hot water in room 305.",
+          "ja": "305号室でお湯が出ません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "電話ではこの形が最も速い。部屋番号が先。"
+        },
+        {
+          "en": "There's no hot water in my room.",
+          "ja": "部屋でお湯が出ません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。まずこれ。"
+        },
+        {
+          "en": "The shower only runs cold.",
+          "ja": "シャワーが水しか出ません。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "run cold は「冷たい水が出る」。状況が正確。"
+        },
+        {
+          "en": "Could someone come and check the hot water?",
+          "ja": "お湯を見に来ていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "対応を明確に頼む形。"
+        },
+        {
+          "en": "I'm afraid there appears to be no hot water in room 305.",
+          "ja": "恐れ入りますが、305号室でお湯が出ないようです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "appears to be で断定を避けた丁寧な報告。"
+        },
+        {
+          "en": "The water's freezing.",
+          "ja": "水が冷たすぎます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "freezing は「凍えるほど冷たい」。強い表現。"
+        },
+        {
+          "en": "Is there a problem with the building's hot water?",
+          "ja": "建物全体でお湯の問題がありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "全館の問題なら待つしかない。切り分けに有効。"
+        },
+        {
+          "en": "How long does it usually take to heat up?",
+          "ja": "普通どのくらいで温まりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "単に時間がかかるだけの場合もある。まず確認。"
+        },
+        {
+          "en": "I've let it run for five minutes and it's still cold.",
+          "ja": "5分出しっぱなしにしましたが、まだ冷たいままです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "試したことを言うと、原因の切り分けが速い。"
+        },
+        {
+          "en": "If it can't be fixed tonight, could we move rooms?",
+          "ja": "今夜中に直らないようでしたら、部屋を替えられますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "代替案を自分から示す。話が前に進む。"
+        }
       ]
     },
     {
-      "id": "hotel-013", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-013",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for a recommendation for dinner nearby.",
       "situationJa": "近くの夕食のおすすめを聞きたい。",
-      "tags": ["asking", "recommendation"],
+      "tags": [
+        "asking",
+        "recommendation"
+      ],
       "answers": [
-        { "en": "Any good restaurants nearby?", "ja": "近くにおいしいお店はありますか。", "register": "neutral", "style": "oneword", "note": "短くて自然。フロントでの定番。" },
-        { "en": "Could you recommend somewhere for dinner?", "ja": "夕食におすすめの場所はありますか。", "register": "polite", "style": "request", "note": "基本形。丁寧で使いやすい。" },
-        { "en": "Where do you recommend eating around here?", "ja": "この辺りで食事はどこがおすすめですか。", "register": "neutral", "style": "basic", "note": "地元の人の意見が聞ける。旅の質が上がる。" },
-        { "en": "Is there anywhere local you'd suggest?", "ja": "地元で行くようなお店はありますか。", "register": "neutral", "style": "existence", "note": "観光客向けでない店を教えてもらえる。" },
-        { "en": "Might I ask where you would suggest for dinner this evening?", "ja": "今夜の夕食におすすめの場所を伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "改まった聞き方。高級ホテルで自然。" },
-        { "en": "Where do you eat around here?", "ja": "この辺だとどこで食べます？", "register": "casual", "style": "casual", "note": "相手個人に聞く形。本音の店を教えてもらえる。" },
-        { "en": "Somewhere within walking distance?", "ja": "歩いて行ける範囲でありますか。", "register": "neutral", "style": "vocab", "note": "within walking distance は「徒歩圏内」。条件を絞れる。" },
-        { "en": "Do we need a reservation for that place?", "ja": "そのお店は予約が必要ですか。", "register": "neutral", "style": "basic", "note": "勧められた後の必須確認。無駄足を防げる。" },
-        { "en": "We'd like something local and not too expensive — any suggestions?", "ja": "地元らしくて、高すぎない店がよいのですが、おすすめはありますか。", "register": "polite", "style": "context", "note": "条件を出すと的確な提案が返る。" },
-        { "en": "Only if you have a moment — where would you go for dinner?", "ja": "お時間があればで結構ですが、夕食ならどちらへ行かれますか。", "register": "polite", "style": "considerate", "note": "忙しいフロントに配慮した聞き方。" }
+        {
+          "en": "Any good restaurants nearby?",
+          "ja": "近くにおいしいお店はありますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて自然。フロントでの定番。"
+        },
+        {
+          "en": "Could you recommend somewhere for dinner?",
+          "ja": "夕食におすすめの場所はありますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。丁寧で使いやすい。"
+        },
+        {
+          "en": "Where do you recommend eating around here?",
+          "ja": "この辺りで食事はどこがおすすめですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "地元の人の意見が聞ける。旅の質が上がる。"
+        },
+        {
+          "en": "Is there anywhere local you'd suggest?",
+          "ja": "地元で行くようなお店はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "観光客向けでない店を教えてもらえる。"
+        },
+        {
+          "en": "Might I ask where you would suggest for dinner this evening?",
+          "ja": "今夜の夕食におすすめの場所を伺ってもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。高級ホテルで自然。"
+        },
+        {
+          "en": "Where do you eat around here?",
+          "ja": "この辺だとどこで食べます？",
+          "register": "casual",
+          "style": "casual",
+          "note": "相手個人に聞く形。本音の店を教えてもらえる。"
+        },
+        {
+          "en": "Somewhere within walking distance?",
+          "ja": "歩いて行ける範囲でありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "within walking distance は「徒歩圏内」。条件を絞れる。"
+        },
+        {
+          "en": "Do we need a reservation for that place?",
+          "ja": "そのお店は予約が必要ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "勧められた後の必須確認。無駄足を防げる。"
+        },
+        {
+          "en": "We'd like something local and not too expensive — any suggestions?",
+          "ja": "地元らしくて、高すぎない店がよいのですが、おすすめはありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "条件を出すと的確な提案が返る。"
+        },
+        {
+          "en": "Only if you have a moment — where would you go for dinner?",
+          "ja": "お時間があればで結構ですが、夕食ならどちらへ行かれますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "忙しいフロントに配慮した聞き方。"
+        }
       ]
     },
     {
-      "id": "hotel-014", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-014",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask them to hold a package for you.",
       "situationJa": "届く荷物を預かっておいてほしい。",
-      "tags": ["requesting", "service"],
+      "tags": [
+        "requesting",
+        "service"
+      ],
       "answers": [
-        { "en": "Could you hold a package for me?", "ja": "荷物を預かっていただけますか。", "register": "polite", "style": "request", "note": "hold は「保管する」。この場面の定番。" },
-        { "en": "A package is coming for me.", "ja": "私宛に荷物が届きます。", "register": "neutral", "style": "basic", "note": "事前に伝えておく形。まずこれ。" },
-        { "en": "Package for room 305.", "ja": "305号室宛の荷物です。", "register": "casual", "style": "oneword", "note": "受け取りに行くときに。短くて確実。" },
-        { "en": "Do you accept deliveries for guests?", "ja": "宿泊客宛の配達を受け取っていただけますか。", "register": "neutral", "style": "existence", "note": "断る宿もある。先に確認したい。" },
-        { "en": "Would it be possible for you to receive a parcel on my behalf?", "ja": "私に代わって荷物をお受け取りいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "on one's behalf は「〜に代わって」。改まった言い方。" },
-        { "en": "Can you sign for it if I'm out?", "ja": "留守のときに受け取りのサインをしてもらえますか。", "register": "casual", "style": "casual", "note": "sign for 〜 は「〜の受領サインをする」。実務的。" },
-        { "en": "Is there a charge for holding packages?", "ja": "荷物の預かりに料金はかかりますか。", "register": "neutral", "style": "vocab", "note": "有料の宿もある。念のため確認。" },
-        { "en": "It should arrive tomorrow under the name Tanaka.", "ja": "明日、田中の名前で届く予定です。", "register": "neutral", "style": "basic", "note": "名前と日付を伝えるのが最重要。取り違えを防ぐ。" },
-        { "en": "I've ordered something I need before I fly home — could you keep it at the desk?", "ja": "帰国前に必要なものを注文したのですが、フロントで預かっていただけますか。", "register": "polite", "style": "context", "note": "必要性を伝えると、丁寧に扱ってもらえる。" },
-        { "en": "If that's not something you do, no problem at all — I'll find another way.", "ja": "対応されていないようでしたら結構です。別の方法を考えます。", "register": "polite", "style": "considerate", "note": "断りやすくする一言。無理を強いない。" }
+        {
+          "en": "Could you hold a package for me?",
+          "ja": "荷物を預かっていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "hold は「保管する」。この場面の定番。"
+        },
+        {
+          "en": "A package is coming for me.",
+          "ja": "私宛に荷物が届きます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "事前に伝えておく形。まずこれ。"
+        },
+        {
+          "en": "Package for room 305.",
+          "ja": "305号室宛の荷物です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "受け取りに行くときに。短くて確実。"
+        },
+        {
+          "en": "Do you accept deliveries for guests?",
+          "ja": "宿泊客宛の配達を受け取っていただけますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "断る宿もある。先に確認したい。"
+        },
+        {
+          "en": "Would it be possible for you to receive a parcel on my behalf?",
+          "ja": "私に代わって荷物をお受け取りいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "on one's behalf は「〜に代わって」。改まった言い方。"
+        },
+        {
+          "en": "Can you sign for it if I'm out?",
+          "ja": "留守のときに受け取りのサインをしてもらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "sign for 〜 は「〜の受領サインをする」。実務的。"
+        },
+        {
+          "en": "Is there a charge for holding packages?",
+          "ja": "荷物の預かりに料金はかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "有料の宿もある。念のため確認。"
+        },
+        {
+          "en": "It should arrive tomorrow under the name Tanaka.",
+          "ja": "明日、田中の名前で届く予定です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "名前と日付を伝えるのが最重要。取り違えを防ぐ。"
+        },
+        {
+          "en": "I've ordered something I need before I fly home — could you keep it at the desk?",
+          "ja": "帰国前に必要なものを注文したのですが、フロントで預かっていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "必要性を伝えると、丁寧に扱ってもらえる。"
+        },
+        {
+          "en": "If that's not something you do, no problem at all — I'll find another way.",
+          "ja": "対応されていないようでしたら結構です。別の方法を考えます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断りやすくする一言。無理を強いない。"
+        }
       ]
     },
     {
-      "id": "hotel-015", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-015",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to check out.",
       "situationJa": "チェックアウトしたい。",
-      "tags": ["checkout"],
+      "tags": [
+        "checkout"
+      ],
       "answers": [
-        { "en": "Checking out, please.", "ja": "チェックアウトをお願いします。", "register": "neutral", "style": "oneword", "note": "鍵を差し出しながら。これで十分。" },
-        { "en": "I'd like to check out.", "ja": "チェックアウトをお願いします。", "register": "neutral", "style": "basic", "note": "基本形。丸ごと覚えたい。" },
-        { "en": "Checking out of room 305.", "ja": "305号室のチェックアウトです。", "register": "neutral", "style": "basic", "note": "部屋番号を添えると手続きが速い。" },
-        { "en": "Could I settle up, please?", "ja": "精算をお願いできますか。", "register": "polite", "style": "request", "note": "settle up は「精算する」。丁寧で自然。" },
-        { "en": "Good morning. We'd like to check out of room 305, please.", "ja": "おはようございます。305号室のチェックアウトをお願いいたします。", "register": "formal", "style": "formal", "note": "挨拶から入る。改まった宿で自然。" },
-        { "en": "We're heading off — checking out.", "ja": "出発します、チェックアウトで。", "register": "casual", "style": "casual", "note": "head off は「出発する」。気さくな宿で。" },
-        { "en": "Is there anything I need to sign?", "ja": "何かサインするものはありますか。", "register": "neutral", "style": "existence", "note": "手続きを確認する。スムーズに終えられる。" },
-        { "en": "Could I have a receipt, please?", "ja": "領収書をいただけますか。", "register": "polite", "style": "vocab", "note": "経費精算がある人には必須。忘れずに。" },
-        { "en": "We had a lovely stay — checking out of 305.", "ja": "とても快適でした。305号室のチェックアウトをお願いします。", "register": "polite", "style": "context", "note": "感謝を添えると、気持ちよく終われる。" },
-        { "en": "Whenever you're ready — we're checking out of 305.", "ja": "お手すきのときで結構です。305号室のチェックアウトをお願いします。", "register": "polite", "style": "considerate", "note": "混雑した朝のフロントで好まれる。" }
+        {
+          "en": "Checking out, please.",
+          "ja": "チェックアウトをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "鍵を差し出しながら。これで十分。"
+        },
+        {
+          "en": "I'd like to check out.",
+          "ja": "チェックアウトをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。丸ごと覚えたい。"
+        },
+        {
+          "en": "Checking out of room 305.",
+          "ja": "305号室のチェックアウトです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "部屋番号を添えると手続きが速い。"
+        },
+        {
+          "en": "Could I settle up, please?",
+          "ja": "精算をお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "settle up は「精算する」。丁寧で自然。"
+        },
+        {
+          "en": "Good morning. We'd like to check out of room 305, please.",
+          "ja": "おはようございます。305号室のチェックアウトをお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "挨拶から入る。改まった宿で自然。"
+        },
+        {
+          "en": "We're heading off — checking out.",
+          "ja": "出発します、チェックアウトで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "head off は「出発する」。気さくな宿で。"
+        },
+        {
+          "en": "Is there anything I need to sign?",
+          "ja": "何かサインするものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "手続きを確認する。スムーズに終えられる。"
+        },
+        {
+          "en": "Could I have a receipt, please?",
+          "ja": "領収書をいただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "経費精算がある人には必須。忘れずに。"
+        },
+        {
+          "en": "We had a lovely stay — checking out of 305.",
+          "ja": "とても快適でした。305号室のチェックアウトをお願いします。",
+          "register": "polite",
+          "style": "context",
+          "note": "感謝を添えると、気持ちよく終われる。"
+        },
+        {
+          "en": "Whenever you're ready — we're checking out of 305.",
+          "ja": "お手すきのときで結構です。305号室のチェックアウトをお願いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "混雑した朝のフロントで好まれる。"
+        }
       ]
     },
     {
-      "id": "hotel-016", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-016",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask if there is a gym or a pool.",
       "situationJa": "ジムやプールがあるか聞きたい。",
-      "tags": ["asking", "facilities"],
+      "tags": [
+        "asking",
+        "facilities"
+      ],
       "answers": [
-        { "en": "Is there a gym?", "ja": "ジムはありますか。", "register": "neutral", "style": "existence", "note": "基本形。まずこれ。" },
-        { "en": "Gym or pool?", "ja": "ジムかプールはありますか。", "register": "casual", "style": "oneword", "note": "短くても通じる。チェックイン時に。" },
-        { "en": "Do you have a fitness center?", "ja": "フィットネスセンターはありますか。", "register": "neutral", "style": "basic", "note": "米国では fitness center が一般的。" },
-        { "en": "Could you tell me what facilities are available?", "ja": "どのような施設があるか教えていただけますか。", "register": "polite", "style": "request", "note": "facilities は「設備」。一度に全部聞ける。" },
-        { "en": "Might I ask whether the hotel has a swimming pool?", "ja": "プールがあるかどうか伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "改まった聞き方。控えめで丁寧。" },
-        { "en": "Got a gym here?", "ja": "ここジムある？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。気さくな宿で。" },
-        { "en": "What are the pool hours?", "ja": "プールの利用時間は何時から何時までですか。", "register": "neutral", "style": "vocab", "note": "あることが分かっている場合はこちら。" },
-        { "en": "Is there an extra charge to use them?", "ja": "利用に追加料金はかかりますか。", "register": "neutral", "style": "basic", "note": "有料の宿もある。先に確認したい。" },
-        { "en": "I usually run in the morning — is there a gym, or somewhere nearby?", "ja": "朝に走ることが多いのですが、ジムか近くに走れる場所はありますか。", "register": "polite", "style": "context", "note": "目的を伝えると、代替案も教えてもらえる。" },
-        { "en": "No problem if not — but is there a gym in the hotel?", "ja": "無ければ構いませんが、館内にジムはありますか。", "register": "polite", "style": "considerate", "note": "無い場合に相手が謝らずに済む。" }
+        {
+          "en": "Is there a gym?",
+          "ja": "ジムはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "基本形。まずこれ。"
+        },
+        {
+          "en": "Gym or pool?",
+          "ja": "ジムかプールはありますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。チェックイン時に。"
+        },
+        {
+          "en": "Do you have a fitness center?",
+          "ja": "フィットネスセンターはありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "米国では fitness center が一般的。"
+        },
+        {
+          "en": "Could you tell me what facilities are available?",
+          "ja": "どのような施設があるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "facilities は「設備」。一度に全部聞ける。"
+        },
+        {
+          "en": "Might I ask whether the hotel has a swimming pool?",
+          "ja": "プールがあるかどうか伺ってもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。控えめで丁寧。"
+        },
+        {
+          "en": "Got a gym here?",
+          "ja": "ここジムある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた口語。気さくな宿で。"
+        },
+        {
+          "en": "What are the pool hours?",
+          "ja": "プールの利用時間は何時から何時までですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "あることが分かっている場合はこちら。"
+        },
+        {
+          "en": "Is there an extra charge to use them?",
+          "ja": "利用に追加料金はかかりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "有料の宿もある。先に確認したい。"
+        },
+        {
+          "en": "I usually run in the morning — is there a gym, or somewhere nearby?",
+          "ja": "朝に走ることが多いのですが、ジムか近くに走れる場所はありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "目的を伝えると、代替案も教えてもらえる。"
+        },
+        {
+          "en": "No problem if not — but is there a gym in the hotel?",
+          "ja": "無ければ構いませんが、館内にジムはありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無い場合に相手が謝らずに済む。"
+        }
       ]
     },
     {
-      "id": "hotel-017", "category": "hotel", "difficulty": 2,
-      "place": "In a hotel corridor", "listener": "a housekeeper",
+      "id": "hotel-017",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a hotel corridor",
+      "listener": "a housekeeper",
       "want": "You want to ask them not to clean your room today.",
       "situationJa": "今日は部屋の清掃をしないでほしい。",
-      "tags": ["requesting", "housekeeping"],
+      "tags": [
+        "requesting",
+        "housekeeping"
+      ],
       "answers": [
-        { "en": "No cleaning today, please.", "ja": "今日は清掃を結構です。", "register": "neutral", "style": "oneword", "note": "短くて確実。廊下で会ったときに。" },
-        { "en": "Could you skip our room today?", "ja": "今日は部屋の清掃を飛ばしていただけますか。", "register": "polite", "style": "request", "note": "skip は「飛ばす」。この場面の定番。" },
-        { "en": "We don't need housekeeping today.", "ja": "今日は清掃は不要です。", "register": "neutral", "style": "basic", "note": "housekeeping は「客室清掃」。ホテルでの正式な語。" },
-        { "en": "Could you come back tomorrow instead?", "ja": "代わりに明日来ていただけますか。", "register": "polite", "style": "basic", "note": "いつなら良いかまで伝える。相手が予定を立てやすい。" },
-        { "en": "Would it be possible to leave our room as it is today?", "ja": "本日はお部屋をそのままにしていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。丁寧に断れる。" },
-        { "en": "We're fine today, thanks.", "ja": "今日は大丈夫です、ありがとう。", "register": "casual", "style": "casual", "note": "短く柔らかい。廊下ですれ違うときに自然。" },
-        { "en": "Is there a do-not-disturb sign we could use?", "ja": "「起こさないでください」の札はありますか。", "register": "neutral", "style": "existence", "note": "毎回言わずに済む。実用的な解決策。" },
-        { "en": "Could we just have fresh towels instead?", "ja": "清掃の代わりに、タオルだけ交換していただけますか。", "register": "polite", "style": "vocab", "note": "必要なものだけ頼む。環境にも配慮した形。" },
-        { "en": "I'm working in the room today — could you skip it?", "ja": "今日は部屋で仕事をしているので、清掃は結構です。", "register": "polite", "style": "context", "note": "理由を添えると、相手も納得しやすい。" },
-        { "en": "Sorry to catch you in the hallway — we don't need cleaning today.", "ja": "廊下で呼び止めてすみません。今日は清掃は不要です。", "register": "polite", "style": "considerate", "note": "突然声をかけたことへの配慮。感じがよい。" }
+        {
+          "en": "No cleaning today, please.",
+          "ja": "今日は清掃を結構です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。廊下で会ったときに。"
+        },
+        {
+          "en": "Could you skip our room today?",
+          "ja": "今日は部屋の清掃を飛ばしていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "skip は「飛ばす」。この場面の定番。"
+        },
+        {
+          "en": "We don't need housekeeping today.",
+          "ja": "今日は清掃は不要です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "housekeeping は「客室清掃」。ホテルでの正式な語。"
+        },
+        {
+          "en": "Could you come back tomorrow instead?",
+          "ja": "代わりに明日来ていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "いつなら良いかまで伝える。相手が予定を立てやすい。"
+        },
+        {
+          "en": "Would it be possible to leave our room as it is today?",
+          "ja": "本日はお部屋をそのままにしていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。丁寧に断れる。"
+        },
+        {
+          "en": "We're fine today, thanks.",
+          "ja": "今日は大丈夫です、ありがとう。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く柔らかい。廊下ですれ違うときに自然。"
+        },
+        {
+          "en": "Is there a do-not-disturb sign we could use?",
+          "ja": "「起こさないでください」の札はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "毎回言わずに済む。実用的な解決策。"
+        },
+        {
+          "en": "Could we just have fresh towels instead?",
+          "ja": "清掃の代わりに、タオルだけ交換していただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "必要なものだけ頼む。環境にも配慮した形。"
+        },
+        {
+          "en": "I'm working in the room today — could you skip it?",
+          "ja": "今日は部屋で仕事をしているので、清掃は結構です。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、相手も納得しやすい。"
+        },
+        {
+          "en": "Sorry to catch you in the hallway — we don't need cleaning today.",
+          "ja": "廊下で呼び止めてすみません。今日は清掃は不要です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "突然声をかけたことへの配慮。感じがよい。"
+        }
       ]
     },
     {
-      "id": "hotel-018", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-018",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for a wake-up call.",
       "situationJa": "モーニングコールを頼みたい。",
-      "tags": ["requesting", "service"],
+      "tags": [
+        "requesting",
+        "service"
+      ],
       "answers": [
-        { "en": "A wake-up call at six, please.", "ja": "6時にモーニングコールをお願いします。", "register": "neutral", "style": "oneword", "note": "時刻を添えるのが必須。これで完結する。" },
-        { "en": "Could I have a wake-up call?", "ja": "モーニングコールをお願いできますか。", "register": "polite", "style": "request", "note": "wake-up call が正しい英語。morning call とは言わない。" },
-        { "en": "Can you wake me at six tomorrow?", "ja": "明日6時に起こしてもらえますか。", "register": "neutral", "style": "basic", "note": "素直な言い方。伝わりやすい。" },
-        { "en": "Do you offer wake-up calls?", "ja": "モーニングコールのサービスはありますか。", "register": "neutral", "style": "existence", "note": "小さな宿では無いこともある。先に確認。" },
-        { "en": "Would it be possible to arrange a wake-up call for six?", "ja": "6時にモーニングコールを手配していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。高級ホテルで自然。" },
-        { "en": "Could you give me a ring at six?", "ja": "6時に電話してもらえますか。", "register": "casual", "style": "casual", "note": "give a ring は「電話する」の口語。英国でよく使う。" },
-        { "en": "Is there an alarm clock in the room?", "ja": "部屋に目覚まし時計はありますか。", "register": "neutral", "style": "vocab", "note": "自力で起きられるなら頼まずに済む。" },
-        { "en": "Six a.m., room 305 — could you note that down?", "ja": "午前6時、305号室でお願いします。控えていただけますか。", "register": "polite", "style": "basic", "note": "時刻と部屋番号を明確に。伝達ミスを防ぐ。" },
-        { "en": "I have an early flight and I'm a heavy sleeper — could you call twice?", "ja": "早朝の便があり寝坊しがちなので、2回お電話いただけますか。", "register": "polite", "style": "context", "note": "heavy sleeper は「寝起きが悪い人」。実際に頼める。" },
-        { "en": "Only if it's no trouble — a wake-up call at six would be a great help.", "ja": "ご面倒でなければ、6時にモーニングコールをいただけると助かります。", "register": "polite", "style": "considerate", "note": "無理のない頼み方。感じがよい。" }
+        {
+          "en": "A wake-up call at six, please.",
+          "ja": "6時にモーニングコールをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "時刻を添えるのが必須。これで完結する。"
+        },
+        {
+          "en": "Could I have a wake-up call?",
+          "ja": "モーニングコールをお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "wake-up call が正しい英語。morning call とは言わない。"
+        },
+        {
+          "en": "Can you wake me at six tomorrow?",
+          "ja": "明日6時に起こしてもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "素直な言い方。伝わりやすい。"
+        },
+        {
+          "en": "Do you offer wake-up calls?",
+          "ja": "モーニングコールのサービスはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "小さな宿では無いこともある。先に確認。"
+        },
+        {
+          "en": "Would it be possible to arrange a wake-up call for six?",
+          "ja": "6時にモーニングコールを手配していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。高級ホテルで自然。"
+        },
+        {
+          "en": "Could you give me a ring at six?",
+          "ja": "6時に電話してもらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "give a ring は「電話する」の口語。英国でよく使う。"
+        },
+        {
+          "en": "Is there an alarm clock in the room?",
+          "ja": "部屋に目覚まし時計はありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "自力で起きられるなら頼まずに済む。"
+        },
+        {
+          "en": "Six a.m., room 305 — could you note that down?",
+          "ja": "午前6時、305号室でお願いします。控えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "時刻と部屋番号を明確に。伝達ミスを防ぐ。"
+        },
+        {
+          "en": "I have an early flight and I'm a heavy sleeper — could you call twice?",
+          "ja": "早朝の便があり寝坊しがちなので、2回お電話いただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "heavy sleeper は「寝起きが悪い人」。実際に頼める。"
+        },
+        {
+          "en": "Only if it's no trouble — a wake-up call at six would be a great help.",
+          "ja": "ご面倒でなければ、6時にモーニングコールをいただけると助かります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無理のない頼み方。感じがよい。"
+        }
       ]
     },
     {
-      "id": "hotel-019", "category": "hotel", "difficulty": 3,
-      "place": "At a hotel front desk", "listener": "a manager",
+      "id": "hotel-019",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At a hotel front desk",
+      "listener": "a manager",
       "want": "You want to complain that the room is not as advertised.",
       "situationJa": "部屋が説明と違うことを申し出たい。",
-      "tags": ["complaining", "serious"],
+      "tags": [
+        "complaining",
+        "serious"
+      ],
       "answers": [
-        { "en": "The room isn't what was advertised.", "ja": "部屋が説明と違います。", "register": "neutral", "style": "basic", "note": "事実を端的に。感情を交えないのが効果的。" },
-        { "en": "This isn't the room we booked.", "ja": "これは予約した部屋ではありません。", "register": "neutral", "style": "oneword", "note": "最も明快。予約画面を見せながら。" },
-        { "en": "Could you take a look at what we booked?", "ja": "私たちが予約した内容をご確認いただけますか。", "register": "polite", "style": "request", "note": "確認を促す形。責めずに事実を突き合わせられる。" },
-        { "en": "The listing said sea view, but the room faces a wall.", "ja": "掲載には海の眺めとありましたが、部屋は壁向きです。", "register": "neutral", "style": "context", "note": "具体的な相違点を挙げる。いちばん説得力がある。" },
-        { "en": "I'm afraid the room differs significantly from the description on your website.", "ja": "恐れ入りますが、お部屋がウェブサイトの説明と大きく異なっております。", "register": "formal", "style": "formal", "note": "differ from 〜 は「〜と異なる」。冷静で強い指摘。" },
-        { "en": "This really isn't what we paid for.", "ja": "これは支払った内容とは違います。", "register": "casual", "style": "casual", "note": "率直で強い。相手や場面を選ぶ。" },
-        { "en": "Is there another room that matches the description?", "ja": "説明どおりの部屋は他にありますか。", "register": "neutral", "style": "existence", "note": "解決策を求める形。建設的に話が進む。" },
-        { "en": "Would a partial refund be possible if no other room is available?", "ja": "他に部屋がないようでしたら、一部返金は可能でしょうか。", "register": "polite", "style": "vocab", "note": "partial refund は「一部返金」。現実的な落としどころ。" },
-        { "en": "We chose this hotel specifically for the balcony — could this be resolved?", "ja": "バルコニーがあることを理由にこちらを選びました。ご対応いただけますか。", "register": "polite", "style": "confirm", "note": "選んだ理由を示すと、要求の正当性が伝わる。" },
-        { "en": "I'm sure it wasn't intentional — but could we discuss the options?", "ja": "意図的ではないと思いますが、対応策をご相談できますか。", "register": "polite", "style": "considerate", "note": "相手の面目を保ちつつ交渉に入る。最も話がまとまりやすい。" }
+        {
+          "en": "The room isn't what was advertised.",
+          "ja": "部屋が説明と違います。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "事実を端的に。感情を交えないのが効果的。"
+        },
+        {
+          "en": "This isn't the room we booked.",
+          "ja": "これは予約した部屋ではありません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も明快。予約画面を見せながら。"
+        },
+        {
+          "en": "Could you take a look at what we booked?",
+          "ja": "私たちが予約した内容をご確認いただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "確認を促す形。責めずに事実を突き合わせられる。"
+        },
+        {
+          "en": "The listing said sea view, but the room faces a wall.",
+          "ja": "掲載には海の眺めとありましたが、部屋は壁向きです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "具体的な相違点を挙げる。いちばん説得力がある。"
+        },
+        {
+          "en": "I'm afraid the room differs significantly from the description on your website.",
+          "ja": "恐れ入りますが、お部屋がウェブサイトの説明と大きく異なっております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "differ from 〜 は「〜と異なる」。冷静で強い指摘。"
+        },
+        {
+          "en": "This really isn't what we paid for.",
+          "ja": "これは支払った内容とは違います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直で強い。相手や場面を選ぶ。"
+        },
+        {
+          "en": "Is there another room that matches the description?",
+          "ja": "説明どおりの部屋は他にありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "解決策を求める形。建設的に話が進む。"
+        },
+        {
+          "en": "Would a partial refund be possible if no other room is available?",
+          "ja": "他に部屋がないようでしたら、一部返金は可能でしょうか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "partial refund は「一部返金」。現実的な落としどころ。"
+        },
+        {
+          "en": "We chose this hotel specifically for the balcony — could this be resolved?",
+          "ja": "バルコニーがあることを理由にこちらを選びました。ご対応いただけますか。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "選んだ理由を示すと、要求の正当性が伝わる。"
+        },
+        {
+          "en": "I'm sure it wasn't intentional — but could we discuss the options?",
+          "ja": "意図的ではないと思いますが、対応策をご相談できますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の面目を保ちつつ交渉に入る。最も話がまとまりやすい。"
+        }
       ]
     },
     {
-      "id": "hotel-020", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-020",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask how to get to the train station.",
       "situationJa": "駅への行き方を聞きたい。",
-      "tags": ["asking", "directions"],
+      "tags": [
+        "asking",
+        "directions"
+      ],
       "answers": [
-        { "en": "How do I get to the station?", "ja": "駅へはどう行けばいいですか。", "register": "neutral", "style": "basic", "note": "基本形。最重要の型のひとつ。" },
-        { "en": "Station? Which way?", "ja": "駅はどちらですか。", "register": "casual", "style": "oneword", "note": "短くても通じる。地図を見せながら。" },
-        { "en": "Is the station within walking distance?", "ja": "駅は歩いて行ける距離ですか。", "register": "neutral", "style": "existence", "note": "歩けるかどうかが最初の判断。実用的。" },
-        { "en": "Could you tell me the best way to the station?", "ja": "駅へのいちばん良い行き方を教えていただけますか。", "register": "polite", "style": "request", "note": "best way と聞くと、手段まで提案してもらえる。" },
-        { "en": "Would you mind showing me on the map how to reach the station?", "ja": "地図で駅への行き方を示していただけますでしょうか。", "register": "formal", "style": "formal", "note": "地図に印を付けてもらうのが最も確実。" },
-        { "en": "Which way's the station?", "ja": "駅ってどっち？", "register": "casual", "style": "casual", "note": "非常に短い口語。気さくな宿で。" },
-        { "en": "How long does it take to walk there?", "ja": "歩いてどのくらいかかりますか。", "register": "neutral", "style": "vocab", "note": "時間が分かると計画が立てやすい。" },
-        { "en": "Is there a bus that goes to the station?", "ja": "駅へ行くバスはありますか。", "register": "neutral", "style": "basic", "note": "荷物が多いときの選択肢。" },
-        { "en": "We have heavy suitcases — what's the easiest way to the station?", "ja": "重いスーツケースがあるのですが、駅へのいちばん楽な行き方は何ですか。", "register": "polite", "style": "context", "note": "事情を言うと、タクシーなど適切な手段を勧めてもらえる。" },
-        { "en": "Sorry, one more question — how do we get to the station from here?", "ja": "すみません、もうひとつだけ。ここから駅へはどう行きますか。", "register": "polite", "style": "considerate", "note": "追加で質問するときの前置き。会話を切りやすい。" }
+        {
+          "en": "How do I get to the station?",
+          "ja": "駅へはどう行けばいいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。最重要の型のひとつ。"
+        },
+        {
+          "en": "Station? Which way?",
+          "ja": "駅はどちらですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。地図を見せながら。"
+        },
+        {
+          "en": "Is the station within walking distance?",
+          "ja": "駅は歩いて行ける距離ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "歩けるかどうかが最初の判断。実用的。"
+        },
+        {
+          "en": "Could you tell me the best way to the station?",
+          "ja": "駅へのいちばん良い行き方を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "best way と聞くと、手段まで提案してもらえる。"
+        },
+        {
+          "en": "Would you mind showing me on the map how to reach the station?",
+          "ja": "地図で駅への行き方を示していただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "地図に印を付けてもらうのが最も確実。"
+        },
+        {
+          "en": "Which way's the station?",
+          "ja": "駅ってどっち？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常に短い口語。気さくな宿で。"
+        },
+        {
+          "en": "How long does it take to walk there?",
+          "ja": "歩いてどのくらいかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "時間が分かると計画が立てやすい。"
+        },
+        {
+          "en": "Is there a bus that goes to the station?",
+          "ja": "駅へ行くバスはありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "荷物が多いときの選択肢。"
+        },
+        {
+          "en": "We have heavy suitcases — what's the easiest way to the station?",
+          "ja": "重いスーツケースがあるのですが、駅へのいちばん楽な行き方は何ですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと、タクシーなど適切な手段を勧めてもらえる。"
+        },
+        {
+          "en": "Sorry, one more question — how do we get to the station from here?",
+          "ja": "すみません、もうひとつだけ。ここから駅へはどう行きますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "追加で質問するときの前置き。会話を切りやすい。"
+        }
       ]
     },
     {
-      "id": "hotel-021", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-021",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask if the hotel can store your bags after check-out.",
       "situationJa": "チェックアウト後に荷物を預かってほしい。",
-      "tags": ["requesting", "luggage"],
+      "tags": [
+        "requesting",
+        "luggage"
+      ],
       "answers": [
-        { "en": "Can we leave our bags after check-out?", "ja": "チェックアウト後に荷物を預けられますか。", "register": "neutral", "style": "basic", "note": "基本形。最もよく使う場面。" },
-        { "en": "Bags until five?", "ja": "5時まで荷物を預かってもらえますか。", "register": "casual", "style": "oneword", "note": "時刻を添えると具体的。短くても通じる。" },
-        { "en": "Could you keep our luggage until this evening?", "ja": "夕方まで荷物を預かっていただけますか。", "register": "polite", "style": "request", "note": "いつまでかを明示。丁寧で確実。" },
-        { "en": "Do you have storage for guests who've checked out?", "ja": "チェックアウト後の宿泊客用に預かり場所はありますか。", "register": "neutral", "style": "existence", "note": "サービスの有無を確認する形。" },
-        { "en": "Would it be possible to store two suitcases until five o'clock?", "ja": "5時までスーツケース2つを保管していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "個数と時刻を明示。改まった依頼。" },
-        { "en": "Mind if we leave these here for the day?", "ja": "今日1日ここに置かせてもらってもいい？", "register": "casual", "style": "casual", "note": "気さくな宿で。短く済ませたいときに。" },
-        { "en": "Is there a fee for that?", "ja": "それに料金はかかりますか。", "register": "neutral", "style": "vocab", "note": "有料の宿もある。念のため確認したい。" },
-        { "en": "What time does the luggage room close?", "ja": "荷物室は何時に閉まりますか。", "register": "neutral", "style": "basic", "note": "受取に間に合わないと大変。必ず確認したい。" },
-        { "en": "Our flight isn't until nine tonight — could we leave our bags here?", "ja": "便が今夜9時なので、荷物を預けられますか。", "register": "polite", "style": "context", "note": "事情を言うと快く応じてもらえる。" },
-        { "en": "Only if there's room — could we leave two bags for the afternoon?", "ja": "空きがあればで結構ですが、午後の間だけ荷物2つを預けられますか。", "register": "polite", "style": "considerate", "note": "断る余地を残す。押しつけがましくない。" }
+        {
+          "en": "Can we leave our bags after check-out?",
+          "ja": "チェックアウト後に荷物を預けられますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。最もよく使う場面。"
+        },
+        {
+          "en": "Bags until five?",
+          "ja": "5時まで荷物を預かってもらえますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "時刻を添えると具体的。短くても通じる。"
+        },
+        {
+          "en": "Could you keep our luggage until this evening?",
+          "ja": "夕方まで荷物を預かっていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "いつまでかを明示。丁寧で確実。"
+        },
+        {
+          "en": "Do you have storage for guests who've checked out?",
+          "ja": "チェックアウト後の宿泊客用に預かり場所はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "サービスの有無を確認する形。"
+        },
+        {
+          "en": "Would it be possible to store two suitcases until five o'clock?",
+          "ja": "5時までスーツケース2つを保管していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "個数と時刻を明示。改まった依頼。"
+        },
+        {
+          "en": "Mind if we leave these here for the day?",
+          "ja": "今日1日ここに置かせてもらってもいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな宿で。短く済ませたいときに。"
+        },
+        {
+          "en": "Is there a fee for that?",
+          "ja": "それに料金はかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "有料の宿もある。念のため確認したい。"
+        },
+        {
+          "en": "What time does the luggage room close?",
+          "ja": "荷物室は何時に閉まりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "受取に間に合わないと大変。必ず確認したい。"
+        },
+        {
+          "en": "Our flight isn't until nine tonight — could we leave our bags here?",
+          "ja": "便が今夜9時なので、荷物を預けられますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと快く応じてもらえる。"
+        },
+        {
+          "en": "Only if there's room — could we leave two bags for the afternoon?",
+          "ja": "空きがあればで結構ですが、午後の間だけ荷物2つを預けられますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る余地を残す。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "hotel-022", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-022",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask for another room key.",
       "situationJa": "もう1枚ルームキーがほしい。",
-      "tags": ["requesting", "room"],
+      "tags": [
+        "requesting",
+        "room"
+      ],
       "answers": [
-        { "en": "Another key, please.", "ja": "鍵をもう1枚お願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。フロントで通じる。" },
-        { "en": "Could we have a second key card?", "ja": "カードキーをもう1枚いただけますか。", "register": "polite", "style": "request", "note": "key card は「カードキー」。正確に伝わる。" },
-        { "en": "Can I get an extra key for room 305?", "ja": "305号室の鍵を追加でもらえますか。", "register": "neutral", "style": "basic", "note": "部屋番号を添えると手続きが速い。" },
-        { "en": "Do you give two keys per room?", "ja": "1部屋につき鍵は2枚いただけますか。", "register": "neutral", "style": "existence", "note": "規定を確認する形。当然のように頼まずに済む。" },
-        { "en": "Would it be possible to have an additional key card issued?", "ja": "カードキーをもう1枚発行していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "issue は「発行する」。改まった言い方。" },
-        { "en": "Can we get one more key?", "ja": "鍵もう1枚もらえる？", "register": "casual", "style": "casual", "note": "気さくな言い方。手早い。" },
-        { "en": "My key has stopped working.", "ja": "鍵が反応しなくなりました。", "register": "neutral", "style": "vocab", "note": "再発行が必要な状況。カードキーはよく失効する。" },
-        { "en": "There are two of us and we'll be coming and going separately.", "ja": "2人おり、別々に出入りする予定です。", "register": "neutral", "style": "basic", "note": "理由が明快。2枚目を出してもらいやすい。" },
-        { "en": "My colleague will arrive later — could she have her own key?", "ja": "同僚が後から到着するのですが、彼女用の鍵をいただけますか。", "register": "polite", "style": "context", "note": "後から来る人の分を頼む形。事前に伝えると確実。" },
-        { "en": "If it's against policy, no problem — could we have a second key?", "ja": "規定で難しければ結構ですが、鍵をもう1枚いただけますか。", "register": "polite", "style": "considerate", "note": "規則を尊重する姿勢。相手が断りやすい。" }
+        {
+          "en": "Another key, please.",
+          "ja": "鍵をもう1枚お願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。フロントで通じる。"
+        },
+        {
+          "en": "Could we have a second key card?",
+          "ja": "カードキーをもう1枚いただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "key card は「カードキー」。正確に伝わる。"
+        },
+        {
+          "en": "Can I get an extra key for room 305?",
+          "ja": "305号室の鍵を追加でもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "部屋番号を添えると手続きが速い。"
+        },
+        {
+          "en": "Do you give two keys per room?",
+          "ja": "1部屋につき鍵は2枚いただけますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "規定を確認する形。当然のように頼まずに済む。"
+        },
+        {
+          "en": "Would it be possible to have an additional key card issued?",
+          "ja": "カードキーをもう1枚発行していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "issue は「発行する」。改まった言い方。"
+        },
+        {
+          "en": "Can we get one more key?",
+          "ja": "鍵もう1枚もらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな言い方。手早い。"
+        },
+        {
+          "en": "My key has stopped working.",
+          "ja": "鍵が反応しなくなりました。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "再発行が必要な状況。カードキーはよく失効する。"
+        },
+        {
+          "en": "There are two of us and we'll be coming and going separately.",
+          "ja": "2人おり、別々に出入りする予定です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "理由が明快。2枚目を出してもらいやすい。"
+        },
+        {
+          "en": "My colleague will arrive later — could she have her own key?",
+          "ja": "同僚が後から到着するのですが、彼女用の鍵をいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "後から来る人の分を頼む形。事前に伝えると確実。"
+        },
+        {
+          "en": "If it's against policy, no problem — could we have a second key?",
+          "ja": "規定で難しければ結構ですが、鍵をもう1枚いただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "規則を尊重する姿勢。相手が断りやすい。"
+        }
       ]
     },
     {
-      "id": "hotel-023", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-023",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask if you can cancel one night without a fee.",
       "situationJa": "1泊分を無料でキャンセルできるか聞きたい。",
-      "tags": ["asking", "cancellation"],
+      "tags": [
+        "asking",
+        "cancellation"
+      ],
       "answers": [
-        { "en": "Can I cancel one night?", "ja": "1泊分をキャンセルできますか。", "register": "neutral", "style": "basic", "note": "基本形。まずこれ。" },
-        { "en": "Cancellation fee?", "ja": "キャンセル料はかかりますか。", "register": "casual", "style": "oneword", "note": "短くて要点を突く。窓口で通じる。" },
-        { "en": "Is there a charge if I cancel tomorrow night?", "ja": "明日の夜をキャンセルすると料金はかかりますか。", "register": "neutral", "style": "existence", "note": "費用の有無を確認する形。判断が速い。" },
-        { "en": "Could you tell me your cancellation policy?", "ja": "キャンセル規定を教えていただけますか。", "register": "polite", "style": "request", "note": "cancellation policy は「取消規定」。交渉の前提。" },
-        { "en": "I'd like to enquire about cancelling one night of our booking.", "ja": "予約のうち1泊分の取消について伺いたいのですが。", "register": "formal", "style": "formal", "note": "enquire about 〜 は改まった「問い合わせる」。" },
-        { "en": "Any way to drop the last night?", "ja": "最後の1泊を外すことってできる？", "register": "casual", "style": "casual", "note": "drop は口語で「外す」。気さくな宿で。" },
-        { "en": "How far in advance do I need to cancel?", "ja": "何日前までにキャンセルすればよいですか。", "register": "neutral", "style": "vocab", "note": "in advance は「事前に」。次回のためにも知っておきたい。" },
-        { "en": "Would it be cheaper to shorten the booking or cancel and rebook?", "ja": "予約を短縮するのと、取り消して取り直すのとではどちらが安いですか。", "register": "neutral", "style": "basic", "note": "実務的な比較。金額差が大きいことがある。" },
-        { "en": "Our plans changed and we'll leave a day earlier — what are the options?", "ja": "予定が変わり1日早く発つことになりました。どのような選択肢がありますか。", "register": "polite", "style": "context", "note": "事情を伝えると、柔軟に対応してもらえることがある。" },
-        { "en": "I understand there may be a fee — I just wanted to check first.", "ja": "料金がかかる可能性は承知しています。まず確認したかっただけです。", "register": "polite", "style": "considerate", "note": "無理を言うつもりがないと示す。相手が答えやすい。" }
+        {
+          "en": "Can I cancel one night?",
+          "ja": "1泊分をキャンセルできますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。まずこれ。"
+        },
+        {
+          "en": "Cancellation fee?",
+          "ja": "キャンセル料はかかりますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くて要点を突く。窓口で通じる。"
+        },
+        {
+          "en": "Is there a charge if I cancel tomorrow night?",
+          "ja": "明日の夜をキャンセルすると料金はかかりますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "費用の有無を確認する形。判断が速い。"
+        },
+        {
+          "en": "Could you tell me your cancellation policy?",
+          "ja": "キャンセル規定を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "cancellation policy は「取消規定」。交渉の前提。"
+        },
+        {
+          "en": "I'd like to enquire about cancelling one night of our booking.",
+          "ja": "予約のうち1泊分の取消について伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "enquire about 〜 は改まった「問い合わせる」。"
+        },
+        {
+          "en": "Any way to drop the last night?",
+          "ja": "最後の1泊を外すことってできる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "drop は口語で「外す」。気さくな宿で。"
+        },
+        {
+          "en": "How far in advance do I need to cancel?",
+          "ja": "何日前までにキャンセルすればよいですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "in advance は「事前に」。次回のためにも知っておきたい。"
+        },
+        {
+          "en": "Would it be cheaper to shorten the booking or cancel and rebook?",
+          "ja": "予約を短縮するのと、取り消して取り直すのとではどちらが安いですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "実務的な比較。金額差が大きいことがある。"
+        },
+        {
+          "en": "Our plans changed and we'll leave a day earlier — what are the options?",
+          "ja": "予定が変わり1日早く発つことになりました。どのような選択肢がありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を伝えると、柔軟に対応してもらえることがある。"
+        },
+        {
+          "en": "I understand there may be a fee — I just wanted to check first.",
+          "ja": "料金がかかる可能性は承知しています。まず確認したかっただけです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無理を言うつもりがないと示す。相手が答えやすい。"
+        }
       ]
     },
     {
-      "id": "hotel-024", "category": "hotel", "difficulty": 1,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-024",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to thank them for a good stay.",
       "situationJa": "滞在が快適だったことへの感謝を伝えたい。",
-      "tags": ["thanking"],
+      "tags": [
+        "thanking"
+      ],
       "answers": [
-        { "en": "Thank you, we had a great stay.", "ja": "ありがとうございました。とても快適でした。", "register": "neutral", "style": "basic", "note": "チェックアウト時の定番。必ず言えるようにしたい。" },
-        { "en": "Everything was perfect, thank you.", "ja": "すべて完璧でした。ありがとうございました。", "register": "polite", "style": "oneword", "note": "短くても十分伝わる。感謝が届く。" },
-        { "en": "We really enjoyed our stay here.", "ja": "こちらでの滞在をとても楽しみました。", "register": "neutral", "style": "basic", "note": "enjoy one's stay は宿での決まり文句。" },
-        { "en": "Could you pass on our thanks to the staff?", "ja": "スタッフの皆さんにお礼をお伝えいただけますか。", "register": "polite", "style": "request", "note": "pass on 〜 は「伝える」。とても喜ばれる。" },
-        { "en": "We're most grateful for your hospitality during our stay.", "ja": "滞在中のおもてなしに深く感謝しております。", "register": "formal", "style": "formal", "note": "hospitality は「もてなし」。改まった感謝。" },
-        { "en": "This place was great, thanks!", "ja": "ここ、すごく良かったです。ありがとう！", "register": "casual", "style": "casual", "note": "素直で温かい。気さくな宿で自然。" },
-        { "en": "Is there somewhere I can leave a review?", "ja": "口コミを書ける場所はありますか。", "register": "neutral", "style": "existence", "note": "宿にとって最も価値のある感謝の形。" },
-        { "en": "The breakfast was especially good.", "ja": "特に朝食がすばらしかったです。", "register": "neutral", "style": "vocab", "note": "具体的に褒めると本気度が伝わる。" },
-        { "en": "You were very helpful when our flight was delayed — thank you.", "ja": "便が遅れたときに大変助けていただきました。ありがとうございました。", "register": "polite", "style": "context", "note": "具体的な出来事に触れると、心から伝わる。" },
-        { "en": "We'll definitely stay here again — thank you for everything.", "ja": "また必ず泊まりに来ます。いろいろとありがとうございました。", "register": "polite", "style": "considerate", "note": "再訪の意思は最高の褒め言葉になる。" }
+        {
+          "en": "Thank you, we had a great stay.",
+          "ja": "ありがとうございました。とても快適でした。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "チェックアウト時の定番。必ず言えるようにしたい。"
+        },
+        {
+          "en": "Everything was perfect, thank you.",
+          "ja": "すべて完璧でした。ありがとうございました。",
+          "register": "polite",
+          "style": "oneword",
+          "note": "短くても十分伝わる。感謝が届く。"
+        },
+        {
+          "en": "We really enjoyed our stay here.",
+          "ja": "こちらでの滞在をとても楽しみました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "enjoy one's stay は宿での決まり文句。"
+        },
+        {
+          "en": "Could you pass on our thanks to the staff?",
+          "ja": "スタッフの皆さんにお礼をお伝えいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "pass on 〜 は「伝える」。とても喜ばれる。"
+        },
+        {
+          "en": "We're most grateful for your hospitality during our stay.",
+          "ja": "滞在中のおもてなしに深く感謝しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "hospitality は「もてなし」。改まった感謝。"
+        },
+        {
+          "en": "This place was great, thanks!",
+          "ja": "ここ、すごく良かったです。ありがとう！",
+          "register": "casual",
+          "style": "casual",
+          "note": "素直で温かい。気さくな宿で自然。"
+        },
+        {
+          "en": "Is there somewhere I can leave a review?",
+          "ja": "口コミを書ける場所はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "宿にとって最も価値のある感謝の形。"
+        },
+        {
+          "en": "The breakfast was especially good.",
+          "ja": "特に朝食がすばらしかったです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "具体的に褒めると本気度が伝わる。"
+        },
+        {
+          "en": "You were very helpful when our flight was delayed — thank you.",
+          "ja": "便が遅れたときに大変助けていただきました。ありがとうございました。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的な出来事に触れると、心から伝わる。"
+        },
+        {
+          "en": "We'll definitely stay here again — thank you for everything.",
+          "ja": "また必ず泊まりに来ます。いろいろとありがとうございました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "再訪の意思は最高の褒め言葉になる。"
+        }
       ]
     },
     {
-      "id": "hotel-025", "category": "hotel", "difficulty": 2,
-      "place": "At a hotel front desk", "listener": "a receptionist",
+      "id": "hotel-025",
+      "category": "hotel",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel front desk",
+      "listener": "a receptionist",
       "want": "You want to ask if it is safe to walk back at night.",
       "situationJa": "夜に歩いて帰っても安全か聞きたい。",
-      "tags": ["asking", "safety"],
+      "tags": [
+        "asking",
+        "safety"
+      ],
       "answers": [
-        { "en": "Is it safe to walk at night?", "ja": "夜に歩いても安全ですか。", "register": "neutral", "style": "basic", "note": "基本形。旅先では遠慮せず聞いてよい。" },
-        { "en": "Safe to walk back?", "ja": "歩いて帰っても大丈夫ですか。", "register": "casual", "style": "oneword", "note": "短くても通じる。出かける前に。" },
-        { "en": "Would you recommend walking or taking a taxi?", "ja": "歩くのとタクシーとどちらがよいでしょうか。", "register": "polite", "style": "request", "note": "選択肢を示して聞く形。答えやすい。" },
-        { "en": "Are there any areas we should avoid?", "ja": "避けたほうがよい場所はありますか。", "register": "neutral", "style": "existence", "note": "具体的な助言が得られる。実用度が高い。" },
-        { "en": "Might I ask whether the area is safe to walk in after dark?", "ja": "日が暮れてからこの辺りを歩いても安全か伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "after dark は「日没後」。改まった聞き方。" },
-        { "en": "Is it OK to walk around here at night?", "ja": "夜この辺歩いて平気？", "register": "casual", "style": "casual", "note": "率直な口語。気さくなスタッフに。" },
-        { "en": "How long is the walk back from the restaurant?", "ja": "レストランから歩いてどのくらいですか。", "register": "neutral", "style": "vocab", "note": "距離が分かれば自分で判断できる。" },
-        { "en": "Should we book a taxi for the way back?", "ja": "帰りのタクシーを予約しておいたほうがよいですか。", "register": "neutral", "style": "basic", "note": "先手を打つ形。夜は捕まりにくい地域もある。" },
-        { "en": "We're going to a restaurant on the other side of the river — is it fine to walk back?", "ja": "川向こうのレストランへ行くのですが、歩いて戻っても大丈夫でしょうか。", "register": "polite", "style": "context", "note": "経路を伝えると、具体的な助言がもらえる。" },
-        { "en": "I don't want to be overcautious, but is the walk back all right at night?", "ja": "心配しすぎかもしれませんが、夜の帰り道は大丈夫でしょうか。", "register": "polite", "style": "considerate", "note": "神経質に見られたくないときの前置き。自然に聞ける。" }
+        {
+          "en": "Is it safe to walk at night?",
+          "ja": "夜に歩いても安全ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。旅先では遠慮せず聞いてよい。"
+        },
+        {
+          "en": "Safe to walk back?",
+          "ja": "歩いて帰っても大丈夫ですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。出かける前に。"
+        },
+        {
+          "en": "Would you recommend walking or taking a taxi?",
+          "ja": "歩くのとタクシーとどちらがよいでしょうか。",
+          "register": "polite",
+          "style": "request",
+          "note": "選択肢を示して聞く形。答えやすい。"
+        },
+        {
+          "en": "Are there any areas we should avoid?",
+          "ja": "避けたほうがよい場所はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "具体的な助言が得られる。実用度が高い。"
+        },
+        {
+          "en": "Might I ask whether the area is safe to walk in after dark?",
+          "ja": "日が暮れてからこの辺りを歩いても安全か伺ってもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "after dark は「日没後」。改まった聞き方。"
+        },
+        {
+          "en": "Is it OK to walk around here at night?",
+          "ja": "夜この辺歩いて平気？",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な口語。気さくなスタッフに。"
+        },
+        {
+          "en": "How long is the walk back from the restaurant?",
+          "ja": "レストランから歩いてどのくらいですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "距離が分かれば自分で判断できる。"
+        },
+        {
+          "en": "Should we book a taxi for the way back?",
+          "ja": "帰りのタクシーを予約しておいたほうがよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "先手を打つ形。夜は捕まりにくい地域もある。"
+        },
+        {
+          "en": "We're going to a restaurant on the other side of the river — is it fine to walk back?",
+          "ja": "川向こうのレストランへ行くのですが、歩いて戻っても大丈夫でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "経路を伝えると、具体的な助言がもらえる。"
+        },
+        {
+          "en": "I don't want to be overcautious, but is the walk back all right at night?",
+          "ja": "心配しすぎかもしれませんが、夜の帰り道は大丈夫でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "神経質に見られたくないときの前置き。自然に聞ける。"
+        }
       ]
     }
   ]

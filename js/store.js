@@ -17,7 +17,8 @@ EIK.Store = (function () {
       theme: 'auto',        // auto | light | dark
       textSize: 'm',        // s | m | l | xl
       lineHeight: 'm',      // s | m | l
-      dailyGoal: 10
+      dailyGoal: 10,
+      level: 1              // 練習する段階 ★=1 / ★★=2 / ★★★=3
     },
     /* progress[situationId] = { lv:0..5, due:'YYYY-MM-DD', seen:n, got:n, last:'YYYY-MM-DD' } */
     progress: {},

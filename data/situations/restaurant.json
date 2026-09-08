@@ -2,573 +2,2580 @@
   "category": "restaurant",
   "situations": [
     {
-      "id": "restaurant-001", "category": "restaurant", "difficulty": 1,
-      "place": "At the entrance of a restaurant", "listener": "a host",
+      "id": "restaurant-001",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At the entrance of a restaurant",
+      "listener": "a host",
       "want": "You want to get a table for two.",
       "situationJa": "レストランの入口で2人分の席を頼みたい。",
-      "tags": ["requesting", "seating"],
+      "tags": [
+        "requesting",
+        "seating"
+      ],
       "answers": [
-        { "en": "Two, please.", "ja": "2人です。", "register": "neutral", "style": "oneword", "note": "指を2本立てながら。実際いちばん多い言い方。" },
-        { "en": "A table for two, please.", "ja": "2人用のテーブルをお願いします。", "register": "neutral", "style": "basic", "note": "基本形。丸ごと覚えておきたい。" },
-        { "en": "Do you have a table for two?", "ja": "2人分の席はありますか。", "register": "neutral", "style": "existence", "note": "満席かもしれないときはこちらが自然。" },
-        { "en": "Could we get a table for two, please?", "ja": "2人用のテーブルをお願いできますか。", "register": "polite", "style": "request", "note": "Could we 〜 は連れがいるときの主語。" },
-        { "en": "Good evening. Would you have a table available for two?", "ja": "こんばんは。2名で空いているお席はございますでしょうか。", "register": "formal", "style": "formal", "note": "きちんとした店で。挨拶から入ると印象がよい。" },
-        { "en": "Hi, just the two of us.", "ja": "こんにちは、2人だけです。", "register": "casual", "style": "casual", "note": "just を付けると「少人数です」の含み。カジュアルな店で。" },
-        { "en": "Is there a wait for two?", "ja": "2人だとどのくらい待ちますか。", "register": "neutral", "style": "vocab", "note": "混んでいる店で。待ち時間の有無を先に確認できる。" },
-        { "en": "We're a party of two.", "ja": "2名のグループです。", "register": "neutral", "style": "vocab", "note": "party は「一行・グループ」。予約の場面でよく使う。" },
-        { "en": "We don't have a reservation, but there are two of us. Is that all right?", "ja": "予約はしていないのですが、2名です。大丈夫でしょうか。", "register": "polite", "style": "context", "note": "予約なしだと先に伝えると、話がこじれない。" },
-        { "en": "Hi, table for two if you have one — otherwise we can wait.", "ja": "2人分の席があればお願いします。無ければ待てます。", "register": "polite", "style": "considerate", "note": "待つ意思を示すと、店側が調整しやすい。" }
+        {
+          "en": "Two, please.",
+          "ja": "2人です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "指を2本立てながら。実際いちばん多い言い方。"
+        },
+        {
+          "en": "A table for two, please.",
+          "ja": "2人用のテーブルをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。丸ごと覚えておきたい。"
+        },
+        {
+          "en": "Do you have a table for two?",
+          "ja": "2人分の席はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "満席かもしれないときはこちらが自然。"
+        },
+        {
+          "en": "Could we get a table for two, please?",
+          "ja": "2人用のテーブルをお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "Could we 〜 は連れがいるときの主語。"
+        },
+        {
+          "en": "Good evening. Would you have a table available for two?",
+          "ja": "こんばんは。2名で空いているお席はございますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "きちんとした店で。挨拶から入ると印象がよい。"
+        },
+        {
+          "en": "Hi, just the two of us.",
+          "ja": "こんにちは、2人だけです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "just を付けると「少人数です」の含み。カジュアルな店で。"
+        },
+        {
+          "en": "Is there a wait for two?",
+          "ja": "2人だとどのくらい待ちますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "混んでいる店で。待ち時間の有無を先に確認できる。"
+        },
+        {
+          "en": "We're a party of two.",
+          "ja": "2名のグループです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "party は「一行・グループ」。予約の場面でよく使う。"
+        },
+        {
+          "en": "We don't have a reservation, but there are two of us. Is that all right?",
+          "ja": "予約はしていないのですが、2名です。大丈夫でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "予約なしだと先に伝えると、話がこじれない。"
+        },
+        {
+          "en": "Hi, table for two if you have one — otherwise we can wait.",
+          "ja": "2人分の席があればお願いします。無ければ待てます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "待つ意思を示すと、店側が調整しやすい。"
+        }
       ]
     },
     {
-      "id": "restaurant-002", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-002",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to order the dish you have chosen.",
       "situationJa": "決めた料理を注文したい。",
-      "tags": ["ordering"],
+      "tags": [
+        "ordering"
+      ],
       "answers": [
-        { "en": "This one, please.", "ja": "これをお願いします。", "register": "neutral", "style": "oneword", "note": "メニューを指しながら。発音に自信がなくても確実。" },
-        { "en": "I'll have the steak, please.", "ja": "ステーキをお願いします。", "register": "neutral", "style": "basic", "note": "I'll have 〜 は注文の定番。最重要の型。" },
-        { "en": "I'd like the steak, please.", "ja": "ステーキをいただきたいのですが。", "register": "polite", "style": "basic", "note": "I'd like は I'll have よりやや丁寧。" },
-        { "en": "Could I get the steak, please?", "ja": "ステーキをお願いできますか。", "register": "polite", "style": "request", "note": "米国のカジュアルな店で最もよく聞く形。" },
-        { "en": "I think I'll go with the steak, if I may.", "ja": "よろしければステーキにしようと思います。", "register": "formal", "style": "formal", "note": "go with 〜 は「〜に決める」。if I may で控えめに。" },
-        { "en": "I'll go for the steak.", "ja": "ステーキにします。", "register": "casual", "style": "casual", "note": "go for 〜 は口語で「〜を選ぶ」。英国でよく使う。" },
-        { "en": "Is the steak available today?", "ja": "本日ステーキはありますか。", "register": "neutral", "style": "existence", "note": "売り切れが心配なときに。頼む前の確認になる。" },
-        { "en": "Can I have the steak, medium rare?", "ja": "ステーキをミディアムレアでお願いします。", "register": "neutral", "style": "vocab", "note": "焼き加減は rare / medium rare / medium / well done。" },
-        { "en": "I've been wanting to try the steak — I'll have that.", "ja": "ステーキを食べてみたかったので、それにします。", "register": "neutral", "style": "context", "note": "会話が生まれる一言。店の人との距離が縮まる。" },
-        { "en": "We're ready to order whenever you are. I'll have the steak.", "ja": "いつでも注文できます。私はステーキをお願いします。", "register": "polite", "style": "considerate", "note": "相手の都合に合わせる前置き。忙しい店で好まれる。" }
+        {
+          "en": "This one, please.",
+          "ja": "これをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "メニューを指しながら。発音に自信がなくても確実。"
+        },
+        {
+          "en": "I'll have the steak, please.",
+          "ja": "ステーキをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I'll have 〜 は注文の定番。最重要の型。"
+        },
+        {
+          "en": "I'd like the steak, please.",
+          "ja": "ステーキをいただきたいのですが。",
+          "register": "polite",
+          "style": "basic",
+          "note": "I'd like は I'll have よりやや丁寧。"
+        },
+        {
+          "en": "Could I get the steak, please?",
+          "ja": "ステーキをお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "米国のカジュアルな店で最もよく聞く形。"
+        },
+        {
+          "en": "I think I'll go with the steak, if I may.",
+          "ja": "よろしければステーキにしようと思います。",
+          "register": "formal",
+          "style": "formal",
+          "note": "go with 〜 は「〜に決める」。if I may で控えめに。"
+        },
+        {
+          "en": "I'll go for the steak.",
+          "ja": "ステーキにします。",
+          "register": "casual",
+          "style": "casual",
+          "note": "go for 〜 は口語で「〜を選ぶ」。英国でよく使う。"
+        },
+        {
+          "en": "Is the steak available today?",
+          "ja": "本日ステーキはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "売り切れが心配なときに。頼む前の確認になる。"
+        },
+        {
+          "en": "Can I have the steak, medium rare?",
+          "ja": "ステーキをミディアムレアでお願いします。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "焼き加減は rare / medium rare / medium / well done。"
+        },
+        {
+          "en": "I've been wanting to try the steak — I'll have that.",
+          "ja": "ステーキを食べてみたかったので、それにします。",
+          "register": "neutral",
+          "style": "context",
+          "note": "会話が生まれる一言。店の人との距離が縮まる。"
+        },
+        {
+          "en": "We're ready to order whenever you are. I'll have the steak.",
+          "ja": "いつでも注文できます。私はステーキをお願いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の都合に合わせる前置き。忙しい店で好まれる。"
+        }
       ]
     },
     {
-      "id": "restaurant-003", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-003",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to explain that you cannot eat peanuts.",
       "situationJa": "ピーナッツが食べられないことを伝えたい。",
-      "tags": ["explaining", "allergy"],
+      "tags": [
+        "explaining",
+        "allergy"
+      ],
       "answers": [
-        { "en": "No peanuts, please.", "ja": "ピーナッツは抜きでお願いします。", "register": "neutral", "style": "oneword", "note": "短いが確実。アレルギーの重さは伝わらない点に注意。" },
-        { "en": "I'm allergic to peanuts.", "ja": "ピーナッツアレルギーがあります。", "register": "neutral", "style": "basic", "note": "最重要の一文。命に関わるので必ず言えるようにしたい。" },
-        { "en": "I have a peanut allergy. Does this dish contain any?", "ja": "ピーナッツアレルギーがあります。この料理に入っていますか。", "register": "neutral", "style": "basic", "note": "伝えるだけでなく確認まで。実務的に最も安全。" },
-        { "en": "Could you check whether this contains peanuts? I'm allergic.", "ja": "これにピーナッツが入っているか確認していただけますか。アレルギーがあるので。", "register": "polite", "style": "request", "note": "厨房への確認を明確に頼む形。" },
-        { "en": "I'm afraid I have a severe peanut allergy. Would it be possible to check with the kitchen?", "ja": "重度のピーナッツアレルギーがございます。厨房にご確認いただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "severe を入れると深刻さが正確に伝わる。" },
-        { "en": "I can't do peanuts.", "ja": "ピーナッツはだめなんです。", "register": "casual", "style": "casual", "note": "can't do 〜 は口語。ただし軽く聞こえるので医療的な場面では避ける。" },
-        { "en": "Are there any nuts in this?", "ja": "これにナッツ類は入っていますか。", "register": "neutral", "style": "existence", "note": "ピーナッツ以外も心配なときはこちら。" },
-        { "en": "I need to avoid peanuts and anything cooked in peanut oil.", "ja": "ピーナッツと、ピーナッツ油で調理したものを避ける必要があります。", "register": "neutral", "style": "vocab", "note": "油まで指定するのが実際には重要。見落とされやすい。" },
-        { "en": "I have a peanut allergy that's fairly serious, so I have to ask about every dish. Sorry about that.", "ja": "かなり重いピーナッツアレルギーがあるので、料理ごとに伺うことになります。申し訳ありません。", "register": "polite", "style": "context", "note": "先に断っておくと、何度も聞いても嫌がられにくい。" },
-        { "en": "Sorry to be difficult — could you let the kitchen know I'm allergic to peanuts?", "ja": "ご面倒をおかけしますが、ピーナッツアレルギーであることを厨房にお伝えいただけますか。", "register": "polite", "style": "considerate", "note": "厨房に伝わることが肝心。この一言で実際に事故が減る。" }
+        {
+          "en": "No peanuts, please.",
+          "ja": "ピーナッツは抜きでお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短いが確実。アレルギーの重さは伝わらない点に注意。"
+        },
+        {
+          "en": "I'm allergic to peanuts.",
+          "ja": "ピーナッツアレルギーがあります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最重要の一文。命に関わるので必ず言えるようにしたい。"
+        },
+        {
+          "en": "I have a peanut allergy. Does this dish contain any?",
+          "ja": "ピーナッツアレルギーがあります。この料理に入っていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "伝えるだけでなく確認まで。実務的に最も安全。"
+        },
+        {
+          "en": "Could you check whether this contains peanuts? I'm allergic.",
+          "ja": "これにピーナッツが入っているか確認していただけますか。アレルギーがあるので。",
+          "register": "polite",
+          "style": "request",
+          "note": "厨房への確認を明確に頼む形。"
+        },
+        {
+          "en": "I'm afraid I have a severe peanut allergy. Would it be possible to check with the kitchen?",
+          "ja": "重度のピーナッツアレルギーがございます。厨房にご確認いただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "severe を入れると深刻さが正確に伝わる。"
+        },
+        {
+          "en": "I can't do peanuts.",
+          "ja": "ピーナッツはだめなんです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "can't do 〜 は口語。ただし軽く聞こえるので医療的な場面では避ける。"
+        },
+        {
+          "en": "Are there any nuts in this?",
+          "ja": "これにナッツ類は入っていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "ピーナッツ以外も心配なときはこちら。"
+        },
+        {
+          "en": "I need to avoid peanuts and anything cooked in peanut oil.",
+          "ja": "ピーナッツと、ピーナッツ油で調理したものを避ける必要があります。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "油まで指定するのが実際には重要。見落とされやすい。"
+        },
+        {
+          "en": "I have a peanut allergy that's fairly serious, so I have to ask about every dish. Sorry about that.",
+          "ja": "かなり重いピーナッツアレルギーがあるので、料理ごとに伺うことになります。申し訳ありません。",
+          "register": "polite",
+          "style": "context",
+          "note": "先に断っておくと、何度も聞いても嫌がられにくい。"
+        },
+        {
+          "en": "Sorry to be difficult — could you let the kitchen know I'm allergic to peanuts?",
+          "ja": "ご面倒をおかけしますが、ピーナッツアレルギーであることを厨房にお伝えいただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "厨房に伝わることが肝心。この一言で実際に事故が減る。"
+        }
       ]
     },
     {
-      "id": "restaurant-004", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-004",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask what the server recommends.",
       "situationJa": "おすすめを聞きたい。",
-      "tags": ["asking", "recommendation"],
+      "tags": [
+        "asking",
+        "recommendation"
+      ],
       "answers": [
-        { "en": "Any recommendations?", "ja": "おすすめはありますか。", "register": "neutral", "style": "oneword", "note": "短くて自然。実際に最もよく使われる。" },
-        { "en": "What do you recommend?", "ja": "何がおすすめですか。", "register": "neutral", "style": "basic", "note": "基本形。丸暗記しておきたい。" },
-        { "en": "What's good here?", "ja": "ここは何がおいしいですか。", "register": "casual", "style": "casual", "note": "気さくな店で。親しみのある聞き方。" },
-        { "en": "Could you recommend something?", "ja": "何かおすすめしていただけますか。", "register": "polite", "style": "request", "note": "丁寧に頼む形。きちんとした店でも使える。" },
-        { "en": "Might I ask what you would recommend this evening?", "ja": "本日のおすすめを伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "Might I ask 〜 はかなり改まった切り出し。" },
-        { "en": "What's popular?", "ja": "人気があるのはどれですか。", "register": "neutral", "style": "basic", "note": "個人の好みではなく実績を聞く型。外しにくい。" },
-        { "en": "Is there anything the restaurant is known for?", "ja": "こちらの名物料理はありますか。", "register": "neutral", "style": "existence", "note": "known for 〜 は「〜で知られている」。旅先で有効。" },
-        { "en": "What's the house specialty?", "ja": "看板料理は何ですか。", "register": "neutral", "style": "vocab", "note": "house specialty は「その店の名物」。覚えておくと便利。" },
-        { "en": "It's my first time here — what would you suggest?", "ja": "初めて来たのですが、何がよいでしょうか。", "register": "polite", "style": "context", "note": "初めてだと伝えると、たいてい丁寧に教えてくれる。" },
-        { "en": "I like fish and I'm not too hungry — what would you suggest?", "ja": "魚が好きで、それほどお腹は空いていません。何がよいでしょうか。", "register": "polite", "style": "considerate", "note": "条件を先に出すと、的確な提案が返ってくる。" }
+        {
+          "en": "Any recommendations?",
+          "ja": "おすすめはありますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて自然。実際に最もよく使われる。"
+        },
+        {
+          "en": "What do you recommend?",
+          "ja": "何がおすすめですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。丸暗記しておきたい。"
+        },
+        {
+          "en": "What's good here?",
+          "ja": "ここは何がおいしいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。親しみのある聞き方。"
+        },
+        {
+          "en": "Could you recommend something?",
+          "ja": "何かおすすめしていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧に頼む形。きちんとした店でも使える。"
+        },
+        {
+          "en": "Might I ask what you would recommend this evening?",
+          "ja": "本日のおすすめを伺ってもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "Might I ask 〜 はかなり改まった切り出し。"
+        },
+        {
+          "en": "What's popular?",
+          "ja": "人気があるのはどれですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "個人の好みではなく実績を聞く型。外しにくい。"
+        },
+        {
+          "en": "Is there anything the restaurant is known for?",
+          "ja": "こちらの名物料理はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "known for 〜 は「〜で知られている」。旅先で有効。"
+        },
+        {
+          "en": "What's the house specialty?",
+          "ja": "看板料理は何ですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "house specialty は「その店の名物」。覚えておくと便利。"
+        },
+        {
+          "en": "It's my first time here — what would you suggest?",
+          "ja": "初めて来たのですが、何がよいでしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "初めてだと伝えると、たいてい丁寧に教えてくれる。"
+        },
+        {
+          "en": "I like fish and I'm not too hungry — what would you suggest?",
+          "ja": "魚が好きで、それほどお腹は空いていません。何がよいでしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "条件を先に出すと、的確な提案が返ってくる。"
+        }
       ]
     },
     {
-      "id": "restaurant-005", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-005",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask for the bill.",
       "situationJa": "会計をお願いしたい。",
-      "tags": ["requesting", "payment"],
+      "tags": [
+        "requesting",
+        "payment"
+      ],
       "answers": [
-        { "en": "Check, please.", "ja": "お会計をお願いします。", "register": "neutral", "style": "oneword", "note": "米国での定番。これだけで完全に通じる。" },
-        { "en": "Could we have the bill, please?", "ja": "お会計をお願いできますか。", "register": "polite", "style": "request", "note": "bill は英国式。丁寧で使いやすい。" },
-        { "en": "Can we get the check?", "ja": "お会計をお願いします。", "register": "neutral", "style": "basic", "note": "カジュアルな店で自然。" },
-        { "en": "We'd like to pay, please.", "ja": "支払いをお願いします。", "register": "polite", "style": "basic", "note": "「払いたい」と伝える形。会計方法を聞かれることが多い。" },
-        { "en": "Whenever you have a moment, could we settle up?", "ja": "お手すきのときで結構ですので、精算をお願いできますか。", "register": "formal", "style": "formal", "note": "settle up は「精算する」。急かさない丁寧な言い方。" },
-        { "en": "Can we settle up?", "ja": "会計いい？", "register": "casual", "style": "casual", "note": "気さくな店で。短く済ませたいときに。" },
-        { "en": "Is there a service charge included?", "ja": "サービス料は含まれていますか。", "register": "neutral", "style": "existence", "note": "チップの要否に関わる。会計前に確認したい。" },
-        { "en": "Could we get the check when you get a chance?", "ja": "お手が空いたときに会計をお願いします。", "register": "polite", "style": "vocab", "note": "when you get a chance は「都合のよいときに」。定番の緩衝語。" },
-        { "en": "We're in a bit of a hurry — could we have the bill?", "ja": "少し急いでおりまして、お会計をお願いできますか。", "register": "polite", "style": "context", "note": "事情を言うと優先して対応してもらえる。" },
-        { "en": "Sorry to interrupt — could we have the check, please?", "ja": "お邪魔してすみません、お会計をお願いできますか。", "register": "polite", "style": "considerate", "note": "他の客の対応中に声をかけるときに。" }
+        {
+          "en": "Check, please.",
+          "ja": "お会計をお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "米国での定番。これだけで完全に通じる。"
+        },
+        {
+          "en": "Could we have the bill, please?",
+          "ja": "お会計をお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "bill は英国式。丁寧で使いやすい。"
+        },
+        {
+          "en": "Can we get the check?",
+          "ja": "お会計をお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "カジュアルな店で自然。"
+        },
+        {
+          "en": "We'd like to pay, please.",
+          "ja": "支払いをお願いします。",
+          "register": "polite",
+          "style": "basic",
+          "note": "「払いたい」と伝える形。会計方法を聞かれることが多い。"
+        },
+        {
+          "en": "Whenever you have a moment, could we settle up?",
+          "ja": "お手すきのときで結構ですので、精算をお願いできますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "settle up は「精算する」。急かさない丁寧な言い方。"
+        },
+        {
+          "en": "Can we settle up?",
+          "ja": "会計いい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。短く済ませたいときに。"
+        },
+        {
+          "en": "Is there a service charge included?",
+          "ja": "サービス料は含まれていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "チップの要否に関わる。会計前に確認したい。"
+        },
+        {
+          "en": "Could we get the check when you get a chance?",
+          "ja": "お手が空いたときに会計をお願いします。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "when you get a chance は「都合のよいときに」。定番の緩衝語。"
+        },
+        {
+          "en": "We're in a bit of a hurry — could we have the bill?",
+          "ja": "少し急いでおりまして、お会計をお願いできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと優先して対応してもらえる。"
+        },
+        {
+          "en": "Sorry to interrupt — could we have the check, please?",
+          "ja": "お邪魔してすみません、お会計をお願いできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "他の客の対応中に声をかけるときに。"
+        }
       ]
     },
     {
-      "id": "restaurant-006", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-006",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to split the bill with your friend.",
       "situationJa": "友人と割り勘にしたい。",
-      "tags": ["requesting", "payment"],
+      "tags": [
+        "requesting",
+        "payment"
+      ],
       "answers": [
-        { "en": "Separate checks, please.", "ja": "お会計は別々でお願いします。", "register": "neutral", "style": "oneword", "note": "米国での定番。注文時に言うとなお良い。" },
-        { "en": "Can we split the bill?", "ja": "会計を分けてもらえますか。", "register": "neutral", "style": "basic", "note": "split the bill は「割り勘にする」。最重要の型。" },
-        { "en": "Could we pay separately, please?", "ja": "別々にお支払いできますか。", "register": "polite", "style": "request", "note": "丁寧な形。きちんとした店でも使える。" },
-        { "en": "We'd like to split it down the middle.", "ja": "半分ずつにしたいのですが。", "register": "neutral", "style": "vocab", "note": "down the middle は「きっちり半分」。金額を等分するとき。" },
-        { "en": "Would it be possible to have separate bills?", "ja": "お会計を別々にしていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "断られる可能性を織り込んだ丁寧な聞き方。" },
-        { "en": "Can we just split it?", "ja": "割り勘でいい？", "register": "casual", "style": "casual", "note": "連れに向かって確認するときにも使える。" },
-        { "en": "Is it possible to pay with two cards?", "ja": "カード2枚での支払いはできますか。", "register": "neutral", "style": "existence", "note": "実務的にはこの聞き方がいちばん通りやすい。" },
-        { "en": "Could you put half on each card?", "ja": "それぞれのカードに半分ずつお願いできますか。", "register": "polite", "style": "basic", "note": "具体的に指示する形。会計が速い。" },
-        { "en": "We're paying separately — I had the pasta and she had the salad.", "ja": "別々に払います。私がパスタで、彼女がサラダです。", "register": "neutral", "style": "context", "note": "内訳を言うと、店側が伝票を分けやすい。" },
-        { "en": "Sorry, I know it's extra work — could we split the bill?", "ja": "お手数なのは承知の上ですが、会計を分けていただけますか。", "register": "polite", "style": "considerate", "note": "手間を認める一言。混雑時ほど効く。" }
+        {
+          "en": "Separate checks, please.",
+          "ja": "お会計は別々でお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "米国での定番。注文時に言うとなお良い。"
+        },
+        {
+          "en": "Can we split the bill?",
+          "ja": "会計を分けてもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "split the bill は「割り勘にする」。最重要の型。"
+        },
+        {
+          "en": "Could we pay separately, please?",
+          "ja": "別々にお支払いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。きちんとした店でも使える。"
+        },
+        {
+          "en": "We'd like to split it down the middle.",
+          "ja": "半分ずつにしたいのですが。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "down the middle は「きっちり半分」。金額を等分するとき。"
+        },
+        {
+          "en": "Would it be possible to have separate bills?",
+          "ja": "お会計を別々にしていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "断られる可能性を織り込んだ丁寧な聞き方。"
+        },
+        {
+          "en": "Can we just split it?",
+          "ja": "割り勘でいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "連れに向かって確認するときにも使える。"
+        },
+        {
+          "en": "Is it possible to pay with two cards?",
+          "ja": "カード2枚での支払いはできますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "実務的にはこの聞き方がいちばん通りやすい。"
+        },
+        {
+          "en": "Could you put half on each card?",
+          "ja": "それぞれのカードに半分ずつお願いできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "具体的に指示する形。会計が速い。"
+        },
+        {
+          "en": "We're paying separately — I had the pasta and she had the salad.",
+          "ja": "別々に払います。私がパスタで、彼女がサラダです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "内訳を言うと、店側が伝票を分けやすい。"
+        },
+        {
+          "en": "Sorry, I know it's extra work — could we split the bill?",
+          "ja": "お手数なのは承知の上ですが、会計を分けていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手間を認める一言。混雑時ほど効く。"
+        }
       ]
     },
     {
-      "id": "restaurant-007", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-007",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to say that your order has not arrived yet.",
       "situationJa": "注文した料理がまだ来ていないことを伝えたい。",
-      "tags": ["complaining", "polite"],
+      "tags": [
+        "complaining",
+        "polite"
+      ],
       "answers": [
-        { "en": "Excuse me, our food?", "ja": "すみません、料理はまだでしょうか。", "register": "casual", "style": "oneword", "note": "短いが伝わる。責める調子にならないよう注意。" },
-        { "en": "Excuse me, our food hasn't come yet.", "ja": "すみません、料理がまだ来ていません。", "register": "neutral", "style": "basic", "note": "事実だけを述べる形。角が立ちにくい。" },
-        { "en": "Sorry, could you check on our order?", "ja": "すみません、注文の状況を確認していただけますか。", "register": "polite", "style": "request", "note": "check on 〜 は「様子を見る」。最も無難で効果的。" },
-        { "en": "We ordered about forty minutes ago — could you check?", "ja": "40分ほど前に注文したのですが、確認していただけますか。", "register": "polite", "style": "context", "note": "経過時間を言うと、店側が状況を把握しやすい。" },
-        { "en": "I'm sorry to trouble you, but would you mind checking on our main courses?", "ja": "お手数をおかけしますが、メインの料理をご確認いただけますでしょうか。", "register": "formal", "style": "formal", "note": "丁寧に伝えたいとき。苦情ではなく確認として届く。" },
-        { "en": "Hey, any idea how long our food will be?", "ja": "ねえ、料理あとどのくらいかかりそう？", "register": "casual", "style": "casual", "note": "気さくな店で。責めずに時間だけ聞ける。" },
-        { "en": "Is there a problem with our order?", "ja": "注文に何か問題がありましたか。", "register": "neutral", "style": "existence", "note": "相手を責めず、原因の可能性を尋ねる形。" },
-        { "en": "Could you tell us how much longer it will be?", "ja": "あとどのくらいかかるか教えていただけますか。", "register": "polite", "style": "vocab", "note": "待てるかどうかの判断材料になる。実用的。" },
-        { "en": "We have a train to catch at eight — will the food be ready before then?", "ja": "8時の電車に乗るのですが、それまでに料理は出ますか。", "register": "polite", "style": "considerate", "note": "事情を言うと、優先してもらえたりキャンセルの相談もできる。" },
-        { "en": "I know you're busy — could you just check whether our order went through?", "ja": "お忙しいのは承知していますが、注文が通っているかだけ確認いただけますか。", "register": "polite", "style": "confirm", "note": "「注文が通っていない」可能性を穏やかに指摘できる。" }
+        {
+          "en": "Excuse me, our food?",
+          "ja": "すみません、料理はまだでしょうか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短いが伝わる。責める調子にならないよう注意。"
+        },
+        {
+          "en": "Excuse me, our food hasn't come yet.",
+          "ja": "すみません、料理がまだ来ていません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "事実だけを述べる形。角が立ちにくい。"
+        },
+        {
+          "en": "Sorry, could you check on our order?",
+          "ja": "すみません、注文の状況を確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "check on 〜 は「様子を見る」。最も無難で効果的。"
+        },
+        {
+          "en": "We ordered about forty minutes ago — could you check?",
+          "ja": "40分ほど前に注文したのですが、確認していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "経過時間を言うと、店側が状況を把握しやすい。"
+        },
+        {
+          "en": "I'm sorry to trouble you, but would you mind checking on our main courses?",
+          "ja": "お手数をおかけしますが、メインの料理をご確認いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "丁寧に伝えたいとき。苦情ではなく確認として届く。"
+        },
+        {
+          "en": "Hey, any idea how long our food will be?",
+          "ja": "ねえ、料理あとどのくらいかかりそう？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。責めずに時間だけ聞ける。"
+        },
+        {
+          "en": "Is there a problem with our order?",
+          "ja": "注文に何か問題がありましたか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相手を責めず、原因の可能性を尋ねる形。"
+        },
+        {
+          "en": "Could you tell us how much longer it will be?",
+          "ja": "あとどのくらいかかるか教えていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "待てるかどうかの判断材料になる。実用的。"
+        },
+        {
+          "en": "We have a train to catch at eight — will the food be ready before then?",
+          "ja": "8時の電車に乗るのですが、それまでに料理は出ますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "事情を言うと、優先してもらえたりキャンセルの相談もできる。"
+        },
+        {
+          "en": "I know you're busy — could you just check whether our order went through?",
+          "ja": "お忙しいのは承知していますが、注文が通っているかだけ確認いただけますか。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "「注文が通っていない」可能性を穏やかに指摘できる。"
+        }
       ]
     },
     {
-      "id": "restaurant-008", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-008",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to say the dish is not what you ordered.",
       "situationJa": "頼んだものと違う料理が来たことを伝えたい。",
-      "tags": ["complaining", "polite"],
+      "tags": [
+        "complaining",
+        "polite"
+      ],
       "answers": [
-        { "en": "Sorry, this isn't mine.", "ja": "すみません、これは私のではありません。", "register": "neutral", "style": "oneword", "note": "簡潔で角が立たない。まずこれで十分。" },
-        { "en": "I think this is the wrong dish.", "ja": "料理が違うようです。", "register": "neutral", "style": "basic", "note": "I think を付けて断定を避けると柔らかい。" },
-        { "en": "Sorry, I ordered the chicken, not the fish.", "ja": "すみません、魚ではなくチキンを注文しました。", "register": "neutral", "style": "basic", "note": "正しい注文を言うと、やり直しが速い。" },
-        { "en": "Could you check the order? I think there's been a mix-up.", "ja": "注文をご確認いただけますか。取り違えがあったようです。", "register": "polite", "style": "request", "note": "mix-up は「取り違え」。誰も責めずに言える便利な語。" },
-        { "en": "I'm terribly sorry, but I believe this isn't what I ordered.", "ja": "大変恐縮ですが、これは注文したものではないように思います。", "register": "formal", "style": "formal", "note": "I believe 〜 で断定を避けた、最も丁寧な指摘。" },
-        { "en": "Oh, this isn't what I asked for.", "ja": "あ、これ頼んだのと違います。", "register": "casual", "style": "casual", "note": "気さくな店で。口調次第で失礼になるので笑顔で。" },
-        { "en": "Is this the chicken? I think I got the fish by mistake.", "ja": "これはチキンですか。魚が来てしまったようなのですが。", "register": "neutral", "style": "confirm", "note": "確認の形にすると、こちらの勘違いだった場合も気まずくない。" },
-        { "en": "I ordered the chicken — would it be possible to swap this?", "ja": "チキンを注文したのですが、取り替えていただけますか。", "register": "polite", "style": "vocab", "note": "swap は「取り替える」。次にどうしてほしいかまで伝わる。" },
-        { "en": "This looks great, but I actually ordered the chicken — sorry about that.", "ja": "おいしそうですが、実はチキンを注文していました。すみません。", "register": "polite", "style": "context", "note": "先に肯定してから訂正する。関係が悪くならない。" },
-        { "en": "No rush at all — but I think this was meant for another table.", "ja": "急ぎませんが、これは別のテーブルのものではないでしょうか。", "register": "polite", "style": "considerate", "note": "急かさず、相手のミスを直接責めない言い方。" }
+        {
+          "en": "Sorry, this isn't mine.",
+          "ja": "すみません、これは私のではありません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "簡潔で角が立たない。まずこれで十分。"
+        },
+        {
+          "en": "I think this is the wrong dish.",
+          "ja": "料理が違うようです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I think を付けて断定を避けると柔らかい。"
+        },
+        {
+          "en": "Sorry, I ordered the chicken, not the fish.",
+          "ja": "すみません、魚ではなくチキンを注文しました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "正しい注文を言うと、やり直しが速い。"
+        },
+        {
+          "en": "Could you check the order? I think there's been a mix-up.",
+          "ja": "注文をご確認いただけますか。取り違えがあったようです。",
+          "register": "polite",
+          "style": "request",
+          "note": "mix-up は「取り違え」。誰も責めずに言える便利な語。"
+        },
+        {
+          "en": "I'm terribly sorry, but I believe this isn't what I ordered.",
+          "ja": "大変恐縮ですが、これは注文したものではないように思います。",
+          "register": "formal",
+          "style": "formal",
+          "note": "I believe 〜 で断定を避けた、最も丁寧な指摘。"
+        },
+        {
+          "en": "Oh, this isn't what I asked for.",
+          "ja": "あ、これ頼んだのと違います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。口調次第で失礼になるので笑顔で。"
+        },
+        {
+          "en": "Is this the chicken? I think I got the fish by mistake.",
+          "ja": "これはチキンですか。魚が来てしまったようなのですが。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "確認の形にすると、こちらの勘違いだった場合も気まずくない。"
+        },
+        {
+          "en": "I ordered the chicken — would it be possible to swap this?",
+          "ja": "チキンを注文したのですが、取り替えていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "swap は「取り替える」。次にどうしてほしいかまで伝わる。"
+        },
+        {
+          "en": "This looks great, but I actually ordered the chicken — sorry about that.",
+          "ja": "おいしそうですが、実はチキンを注文していました。すみません。",
+          "register": "polite",
+          "style": "context",
+          "note": "先に肯定してから訂正する。関係が悪くならない。"
+        },
+        {
+          "en": "No rush at all — but I think this was meant for another table.",
+          "ja": "急ぎませんが、これは別のテーブルのものではないでしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさず、相手のミスを直接責めない言い方。"
+        }
       ]
     },
     {
-      "id": "restaurant-009", "category": "restaurant", "difficulty": 1,
-      "place": "At a cafe counter", "listener": "a barista",
+      "id": "restaurant-009",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a cafe counter",
+      "listener": "a barista",
       "want": "You want to order a coffee to take away.",
       "situationJa": "コーヒーを持ち帰りで注文したい。",
-      "tags": ["ordering", "cafe"],
+      "tags": [
+        "ordering",
+        "cafe"
+      ],
       "answers": [
-        { "en": "Coffee to go, please.", "ja": "コーヒーを持ち帰りでお願いします。", "register": "neutral", "style": "oneword", "note": "to go は米国式。これで完全に通じる。" },
-        { "en": "A coffee to take away, please.", "ja": "コーヒーを持ち帰りでお願いします。", "register": "neutral", "style": "vocab", "note": "take away は英国・豪州式。地域で使い分ける。" },
-        { "en": "Can I get a large coffee to go?", "ja": "コーヒーのラージを持ち帰りでお願いできますか。", "register": "neutral", "style": "basic", "note": "サイズを添えるとやり取りが1往復減る。" },
-        { "en": "Could I have a coffee to take away, please?", "ja": "コーヒーを持ち帰りでお願いできますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
-        { "en": "I'd like a coffee to go, if you would.", "ja": "コーヒーを持ち帰りでお願いいたします。", "register": "formal", "style": "formal", "note": "if you would を添えるとかなり改まる。" },
-        { "en": "Just a coffee, to go.", "ja": "コーヒーだけ、持ち帰りで。", "register": "casual", "style": "casual", "note": "just を付けると「それだけ」の含み。手早い。" },
-        { "en": "Do you have oat milk?", "ja": "オーツミルクはありますか。", "register": "neutral", "style": "existence", "note": "カフェでの定番の確認。牛乳が苦手なときに。" },
-        { "en": "One black coffee, no sugar, to go.", "ja": "ブラックコーヒーを砂糖なしで、持ち帰りでお願いします。", "register": "neutral", "style": "basic", "note": "指定をまとめて言うと速い。実用度が高い。" },
-        { "en": "I'm running to catch a train — could I get a coffee to go?", "ja": "電車に乗るので急いでいます。コーヒーを持ち帰りでお願いできますか。", "register": "polite", "style": "context", "note": "急いでいると伝えると、簡単なものを勧めてくれる。" },
-        { "en": "Whatever's quickest — a coffee to go, please.", "ja": "いちばん早いもので構いません。コーヒーを持ち帰りでお願いします。", "register": "polite", "style": "considerate", "note": "相手に任せる形。行列のできる店で歓迎される。" }
+        {
+          "en": "Coffee to go, please.",
+          "ja": "コーヒーを持ち帰りでお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "to go は米国式。これで完全に通じる。"
+        },
+        {
+          "en": "A coffee to take away, please.",
+          "ja": "コーヒーを持ち帰りでお願いします。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "take away は英国・豪州式。地域で使い分ける。"
+        },
+        {
+          "en": "Can I get a large coffee to go?",
+          "ja": "コーヒーのラージを持ち帰りでお願いできますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "サイズを添えるとやり取りが1往復減る。"
+        },
+        {
+          "en": "Could I have a coffee to take away, please?",
+          "ja": "コーヒーを持ち帰りでお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どこでも使える。"
+        },
+        {
+          "en": "I'd like a coffee to go, if you would.",
+          "ja": "コーヒーを持ち帰りでお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "if you would を添えるとかなり改まる。"
+        },
+        {
+          "en": "Just a coffee, to go.",
+          "ja": "コーヒーだけ、持ち帰りで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "just を付けると「それだけ」の含み。手早い。"
+        },
+        {
+          "en": "Do you have oat milk?",
+          "ja": "オーツミルクはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "カフェでの定番の確認。牛乳が苦手なときに。"
+        },
+        {
+          "en": "One black coffee, no sugar, to go.",
+          "ja": "ブラックコーヒーを砂糖なしで、持ち帰りでお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "指定をまとめて言うと速い。実用度が高い。"
+        },
+        {
+          "en": "I'm running to catch a train — could I get a coffee to go?",
+          "ja": "電車に乗るので急いでいます。コーヒーを持ち帰りでお願いできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "急いでいると伝えると、簡単なものを勧めてくれる。"
+        },
+        {
+          "en": "Whatever's quickest — a coffee to go, please.",
+          "ja": "いちばん早いもので構いません。コーヒーを持ち帰りでお願いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手に任せる形。行列のできる店で歓迎される。"
+        }
       ]
     },
     {
-      "id": "restaurant-010", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-010",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask for water.",
       "situationJa": "水がほしい。",
-      "tags": ["requesting", "drink"],
+      "tags": [
+        "requesting",
+        "drink"
+      ],
       "answers": [
-        { "en": "Water, please.", "ja": "お水をお願いします。", "register": "neutral", "style": "oneword", "note": "これで十分。どこでも通じる。" },
-        { "en": "Could I have some water, please?", "ja": "お水をいただけますか。", "register": "polite", "style": "request", "note": "some を付けるのが自然。a water とは普通言わない。" },
-        { "en": "Can we get some water?", "ja": "お水をもらえますか。", "register": "neutral", "style": "basic", "note": "テーブル全員分を頼むときの we。" },
-        { "en": "Just tap water is fine, thanks.", "ja": "水道水で結構です。", "register": "neutral", "style": "vocab", "note": "海外では有料の瓶入り水を出されることがある。この一言が効く。" },
-        { "en": "Would it be possible to have a glass of water?", "ja": "お水を一杯いただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった店で。a glass of と数えるのが正しい。" },
-        { "en": "Could we get some water when you have a sec?", "ja": "手が空いたらお水をもらえますか。", "register": "casual", "style": "casual", "note": "a sec は a second の口語。気さくな店で。" },
-        { "en": "Is the water still or sparkling?", "ja": "お水は炭酸なしですか、炭酸入りですか。", "register": "neutral", "style": "existence", "note": "欧州では必ず聞かれる。still が炭酸なし。" },
-        { "en": "Could we have a pitcher of water for the table?", "ja": "テーブルに水差しをいただけますか。", "register": "polite", "style": "basic", "note": "何度も頼まずに済む。人数が多いときに便利。" },
-        { "en": "Sorry, it's quite warm in here — could we get some water?", "ja": "すみません、少し暑くて。お水をいただけますか。", "register": "polite", "style": "context", "note": "理由を添えると自然な会話になる。" },
-        { "en": "No rush — could we have some water when you get a chance?", "ja": "急ぎませんので、お手すきのときにお水をお願いします。", "register": "polite", "style": "considerate", "note": "急かさない一言。忙しい店で好まれる。" }
+        {
+          "en": "Water, please.",
+          "ja": "お水をお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "これで十分。どこでも通じる。"
+        },
+        {
+          "en": "Could I have some water, please?",
+          "ja": "お水をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "some を付けるのが自然。a water とは普通言わない。"
+        },
+        {
+          "en": "Can we get some water?",
+          "ja": "お水をもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "テーブル全員分を頼むときの we。"
+        },
+        {
+          "en": "Just tap water is fine, thanks.",
+          "ja": "水道水で結構です。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "海外では有料の瓶入り水を出されることがある。この一言が効く。"
+        },
+        {
+          "en": "Would it be possible to have a glass of water?",
+          "ja": "お水を一杯いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった店で。a glass of と数えるのが正しい。"
+        },
+        {
+          "en": "Could we get some water when you have a sec?",
+          "ja": "手が空いたらお水をもらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "a sec は a second の口語。気さくな店で。"
+        },
+        {
+          "en": "Is the water still or sparkling?",
+          "ja": "お水は炭酸なしですか、炭酸入りですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "欧州では必ず聞かれる。still が炭酸なし。"
+        },
+        {
+          "en": "Could we have a pitcher of water for the table?",
+          "ja": "テーブルに水差しをいただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "何度も頼まずに済む。人数が多いときに便利。"
+        },
+        {
+          "en": "Sorry, it's quite warm in here — could we get some water?",
+          "ja": "すみません、少し暑くて。お水をいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると自然な会話になる。"
+        },
+        {
+          "en": "No rush — could we have some water when you get a chance?",
+          "ja": "急ぎませんので、お手すきのときにお水をお願いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさない一言。忙しい店で好まれる。"
+        }
       ]
     },
     {
-      "id": "restaurant-011", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-011",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask what is in a dish.",
       "situationJa": "料理に何が入っているか聞きたい。",
-      "tags": ["asking", "menu"],
+      "tags": [
+        "asking",
+        "menu"
+      ],
       "answers": [
-        { "en": "What's in this?", "ja": "これには何が入っていますか。", "register": "neutral", "style": "oneword", "note": "メニューを指しながら。短くて自然。" },
-        { "en": "What's in the soup?", "ja": "スープには何が入っていますか。", "register": "neutral", "style": "basic", "note": "料理名を入れた基本形。" },
-        { "en": "Could you tell me what's in this dish?", "ja": "この料理に何が入っているか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。アレルギーの確認にも使える。" },
-        { "en": "What are the main ingredients?", "ja": "主な材料は何ですか。", "register": "neutral", "style": "vocab", "note": "ingredients は「材料」。覚えておくと便利。" },
-        { "en": "I wonder if you could tell me what this dish contains.", "ja": "この料理に何が含まれているか教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "contain は「含む」。改まった場面で。" },
-        { "en": "What comes with it?", "ja": "何が付いてきますか。", "register": "casual", "style": "casual", "note": "付け合わせを聞く形。実用度が高い。" },
-        { "en": "Is there any dairy in this?", "ja": "これに乳製品は入っていますか。", "register": "neutral", "style": "existence", "note": "特定の食材を名指しで聞く型。確認が確実になる。" },
-        { "en": "How is it prepared?", "ja": "どのように調理されていますか。", "register": "neutral", "style": "basic", "note": "揚げ物か焼き物かなど、調理法を知りたいときに。" },
-        { "en": "I'm trying to eat less meat — is this dish vegetarian?", "ja": "肉を控えているのですが、これはベジタリアン向けですか。", "register": "polite", "style": "context", "note": "事情を言うと代替案も提案してもらえる。" },
-        { "en": "Sorry for all the questions — could you tell me what's in this one?", "ja": "たくさん質問してすみません。これには何が入っていますか。", "register": "polite", "style": "considerate", "note": "何度も聞くときの前置き。印象が悪くならない。" }
+        {
+          "en": "What's in this?",
+          "ja": "これには何が入っていますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "メニューを指しながら。短くて自然。"
+        },
+        {
+          "en": "What's in the soup?",
+          "ja": "スープには何が入っていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "料理名を入れた基本形。"
+        },
+        {
+          "en": "Could you tell me what's in this dish?",
+          "ja": "この料理に何が入っているか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。アレルギーの確認にも使える。"
+        },
+        {
+          "en": "What are the main ingredients?",
+          "ja": "主な材料は何ですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "ingredients は「材料」。覚えておくと便利。"
+        },
+        {
+          "en": "I wonder if you could tell me what this dish contains.",
+          "ja": "この料理に何が含まれているか教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "contain は「含む」。改まった場面で。"
+        },
+        {
+          "en": "What comes with it?",
+          "ja": "何が付いてきますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "付け合わせを聞く形。実用度が高い。"
+        },
+        {
+          "en": "Is there any dairy in this?",
+          "ja": "これに乳製品は入っていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "特定の食材を名指しで聞く型。確認が確実になる。"
+        },
+        {
+          "en": "How is it prepared?",
+          "ja": "どのように調理されていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "揚げ物か焼き物かなど、調理法を知りたいときに。"
+        },
+        {
+          "en": "I'm trying to eat less meat — is this dish vegetarian?",
+          "ja": "肉を控えているのですが、これはベジタリアン向けですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと代替案も提案してもらえる。"
+        },
+        {
+          "en": "Sorry for all the questions — could you tell me what's in this one?",
+          "ja": "たくさん質問してすみません。これには何が入っていますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "何度も聞くときの前置き。印象が悪くならない。"
+        }
       ]
     },
     {
-      "id": "restaurant-012", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-012",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to take the leftovers home.",
       "situationJa": "残った料理を持ち帰りたい。",
-      "tags": ["requesting", "takeaway"],
+      "tags": [
+        "requesting",
+        "takeaway"
+      ],
       "answers": [
-        { "en": "Can I take this home?", "ja": "これを持ち帰れますか。", "register": "neutral", "style": "basic", "note": "基本形。素直で伝わりやすい。" },
-        { "en": "A box, please.", "ja": "容器をお願いします。", "register": "casual", "style": "oneword", "note": "残りを指しながら。米国では通じる。" },
-        { "en": "Could we get a box for this?", "ja": "これを入れる容器をいただけますか。", "register": "polite", "style": "request", "note": "米国での定番。box が持ち帰り容器を指す。" },
-        { "en": "Could I have a doggy bag, please?", "ja": "持ち帰り用の袋をいただけますか。", "register": "neutral", "style": "vocab", "note": "doggy bag は古風だが今も通じる。国によっては使わない。" },
-        { "en": "Would it be possible to take the rest with me?", "ja": "残りを持ち帰らせていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "持ち帰り不可の店もあるため、可否を尋ねる形が無難。" },
-        { "en": "Can I wrap this up?", "ja": "これ包んでもらえる？", "register": "casual", "style": "casual", "note": "wrap up は「包む」。気さくな店で。" },
-        { "en": "Do you have containers for leftovers?", "ja": "残り物用の容器はありますか。", "register": "neutral", "style": "existence", "note": "container は容器全般。leftovers は「残り物」。" },
-        { "en": "It was delicious but too much — could I take the rest?", "ja": "とてもおいしかったのですが量が多くて。残りを持ち帰れますか。", "register": "polite", "style": "basic", "note": "褒めてから頼むと、残したことが失礼にならない。" },
-        { "en": "I'd hate to waste this — is it all right to take it with me?", "ja": "捨てるのは忍びないので、持ち帰ってもよろしいですか。", "register": "polite", "style": "context", "note": "I'd hate to waste 〜 は「無駄にしたくない」。好印象。" },
-        { "en": "If it's not too much trouble, could we take this to go?", "ja": "ご面倒でなければ、これを持ち帰りにできますか。", "register": "polite", "style": "considerate", "note": "断りやすい形にしておくと、店側も対応しやすい。" }
+        {
+          "en": "Can I take this home?",
+          "ja": "これを持ち帰れますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。素直で伝わりやすい。"
+        },
+        {
+          "en": "A box, please.",
+          "ja": "容器をお願いします。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "残りを指しながら。米国では通じる。"
+        },
+        {
+          "en": "Could we get a box for this?",
+          "ja": "これを入れる容器をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "米国での定番。box が持ち帰り容器を指す。"
+        },
+        {
+          "en": "Could I have a doggy bag, please?",
+          "ja": "持ち帰り用の袋をいただけますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "doggy bag は古風だが今も通じる。国によっては使わない。"
+        },
+        {
+          "en": "Would it be possible to take the rest with me?",
+          "ja": "残りを持ち帰らせていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "持ち帰り不可の店もあるため、可否を尋ねる形が無難。"
+        },
+        {
+          "en": "Can I wrap this up?",
+          "ja": "これ包んでもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "wrap up は「包む」。気さくな店で。"
+        },
+        {
+          "en": "Do you have containers for leftovers?",
+          "ja": "残り物用の容器はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "container は容器全般。leftovers は「残り物」。"
+        },
+        {
+          "en": "It was delicious but too much — could I take the rest?",
+          "ja": "とてもおいしかったのですが量が多くて。残りを持ち帰れますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "褒めてから頼むと、残したことが失礼にならない。"
+        },
+        {
+          "en": "I'd hate to waste this — is it all right to take it with me?",
+          "ja": "捨てるのは忍びないので、持ち帰ってもよろしいですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "I'd hate to waste 〜 は「無駄にしたくない」。好印象。"
+        },
+        {
+          "en": "If it's not too much trouble, could we take this to go?",
+          "ja": "ご面倒でなければ、これを持ち帰りにできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断りやすい形にしておくと、店側も対応しやすい。"
+        }
       ]
     },
     {
-      "id": "restaurant-013", "category": "restaurant", "difficulty": 1,
-      "place": "On the phone", "listener": "a restaurant staff member",
+      "id": "restaurant-013",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "On the phone",
+      "listener": "a restaurant staff member",
       "want": "You want to make a reservation for Friday evening.",
       "situationJa": "金曜の夜に予約を取りたい。",
-      "tags": ["booking", "phone"],
+      "tags": [
+        "booking",
+        "phone"
+      ],
       "answers": [
-        { "en": "A table for Friday, please.", "ja": "金曜に席をお願いします。", "register": "neutral", "style": "oneword", "note": "要件だけを先に言う。電話では有効。" },
-        { "en": "I'd like to make a reservation for Friday evening.", "ja": "金曜の夜に予約をお願いしたいのですが。", "register": "neutral", "style": "basic", "note": "予約の基本形。丸ごと覚えたい。" },
-        { "en": "Can I book a table for four on Friday at seven?", "ja": "金曜の7時に4名で予約できますか。", "register": "neutral", "style": "basic", "note": "人数と時刻を一度に伝える。やり取りが速い。" },
-        { "en": "Could I reserve a table for Friday evening, please?", "ja": "金曜の夜に予約をお願いできますか。", "register": "polite", "style": "request", "note": "reserve は「予約する」。丁寧で確実。" },
-        { "en": "Good afternoon. I'd like to enquire about availability for Friday evening.", "ja": "こんにちは。金曜の夜の空き状況について伺いたいのですが。", "register": "formal", "style": "formal", "note": "高級店への電話に。availability は「空き状況」。" },
-        { "en": "Any tables free Friday night?", "ja": "金曜の夜、空いてる席ある？", "register": "casual", "style": "casual", "note": "気さくな店に。短く済ませたいときに。" },
-        { "en": "Do you have anything available on Friday around seven?", "ja": "金曜の7時ごろ、空きはありますか。", "register": "neutral", "style": "existence", "note": "時間に幅を持たせる聞き方。取れる確率が上がる。" },
-        { "en": "What times do you have on Friday?", "ja": "金曜は何時が空いていますか。", "register": "neutral", "style": "vocab", "note": "こちらの希望を言わず選択肢をもらう。融通が利く。" },
-        { "en": "It's for a birthday, so we'd like a quiet table if possible.", "ja": "誕生日のお祝いなので、可能なら静かな席をお願いしたいです。", "register": "polite", "style": "context", "note": "目的を伝えると、席や演出に配慮してもらえる。" },
-        { "en": "If Friday's full, we could do Saturday — whichever works for you.", "ja": "金曜が満席なら土曜でも構いません。ご都合のよい方で。", "register": "polite", "style": "considerate", "note": "代替日を先に示すと、予約が成立しやすい。" }
+        {
+          "en": "A table for Friday, please.",
+          "ja": "金曜に席をお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "要件だけを先に言う。電話では有効。"
+        },
+        {
+          "en": "I'd like to make a reservation for Friday evening.",
+          "ja": "金曜の夜に予約をお願いしたいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "予約の基本形。丸ごと覚えたい。"
+        },
+        {
+          "en": "Can I book a table for four on Friday at seven?",
+          "ja": "金曜の7時に4名で予約できますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "人数と時刻を一度に伝える。やり取りが速い。"
+        },
+        {
+          "en": "Could I reserve a table for Friday evening, please?",
+          "ja": "金曜の夜に予約をお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "reserve は「予約する」。丁寧で確実。"
+        },
+        {
+          "en": "Good afternoon. I'd like to enquire about availability for Friday evening.",
+          "ja": "こんにちは。金曜の夜の空き状況について伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "高級店への電話に。availability は「空き状況」。"
+        },
+        {
+          "en": "Any tables free Friday night?",
+          "ja": "金曜の夜、空いてる席ある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店に。短く済ませたいときに。"
+        },
+        {
+          "en": "Do you have anything available on Friday around seven?",
+          "ja": "金曜の7時ごろ、空きはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "時間に幅を持たせる聞き方。取れる確率が上がる。"
+        },
+        {
+          "en": "What times do you have on Friday?",
+          "ja": "金曜は何時が空いていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "こちらの希望を言わず選択肢をもらう。融通が利く。"
+        },
+        {
+          "en": "It's for a birthday, so we'd like a quiet table if possible.",
+          "ja": "誕生日のお祝いなので、可能なら静かな席をお願いしたいです。",
+          "register": "polite",
+          "style": "context",
+          "note": "目的を伝えると、席や演出に配慮してもらえる。"
+        },
+        {
+          "en": "If Friday's full, we could do Saturday — whichever works for you.",
+          "ja": "金曜が満席なら土曜でも構いません。ご都合のよい方で。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "代替日を先に示すと、予約が成立しやすい。"
+        }
       ]
     },
     {
-      "id": "restaurant-014", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant", "listener": "a host",
+      "id": "restaurant-014",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant",
+      "listener": "a host",
       "want": "You want to change your reservation to a later time.",
       "situationJa": "予約の時間を遅らせたい。",
-      "tags": ["changing", "booking"],
+      "tags": [
+        "changing",
+        "booking"
+      ],
       "answers": [
-        { "en": "Can we move it later?", "ja": "時間を遅らせられますか。", "register": "casual", "style": "oneword", "note": "短くて伝わる。電話でも使える。" },
-        { "en": "I'd like to change my reservation to eight.", "ja": "予約を8時に変更したいのですが。", "register": "neutral", "style": "basic", "note": "希望時刻を先に言う。話が早い。" },
-        { "en": "Could we push our booking back by an hour?", "ja": "予約を1時間遅らせていただけますか。", "register": "polite", "style": "request", "note": "push back は「後ろにずらす」。よく使う言い回し。" },
-        { "en": "Is it possible to move our reservation to a later time?", "ja": "予約を遅い時間に変更することはできますか。", "register": "neutral", "style": "existence", "note": "可否から確認する形。断られても気まずくない。" },
-        { "en": "I'm terribly sorry for the short notice, but might we move our booking to eight?", "ja": "直前のご連絡で恐縮ですが、予約を8時に変更いただけますでしょうか。", "register": "formal", "style": "formal", "note": "short notice は「直前の連絡」。謝罪を先に置くのが礼儀。" },
-        { "en": "Any chance we could come a bit later?", "ja": "少し遅れて行くことってできる？", "register": "casual", "style": "casual", "note": "Any chance 〜 は控えめな依頼。断られる前提の柔らかさ。" },
-        { "en": "We're running late — could you hold the table for us?", "ja": "遅れそうなのですが、席を確保していただけますか。", "register": "polite", "style": "vocab", "note": "hold the table は「席を取っておく」。遅刻連絡の定番。" },
-        { "en": "Our meeting ran over — would eight o'clock still work?", "ja": "打ち合わせが長引きまして、8時でも大丈夫でしょうか。", "register": "polite", "style": "context", "note": "run over は「予定を超過する」。理由が明確に伝わる。" },
-        { "en": "We can cancel if that's easier — but we'd love to come at eight.", "ja": "難しければキャンセルでも構いませんが、できれば8時に伺いたいです。", "register": "polite", "style": "considerate", "note": "店側に逃げ道を残す。無理をさせない言い方。" },
-        { "en": "Whatever's easiest for you — we're flexible on the time.", "ja": "ご都合のよい時間で構いません。こちらは融通が利きます。", "register": "polite", "style": "confirm", "note": "flexible は「融通が利く」。相手に選ばせる型。" }
+        {
+          "en": "Can we move it later?",
+          "ja": "時間を遅らせられますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くて伝わる。電話でも使える。"
+        },
+        {
+          "en": "I'd like to change my reservation to eight.",
+          "ja": "予約を8時に変更したいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "希望時刻を先に言う。話が早い。"
+        },
+        {
+          "en": "Could we push our booking back by an hour?",
+          "ja": "予約を1時間遅らせていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "push back は「後ろにずらす」。よく使う言い回し。"
+        },
+        {
+          "en": "Is it possible to move our reservation to a later time?",
+          "ja": "予約を遅い時間に変更することはできますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "可否から確認する形。断られても気まずくない。"
+        },
+        {
+          "en": "I'm terribly sorry for the short notice, but might we move our booking to eight?",
+          "ja": "直前のご連絡で恐縮ですが、予約を8時に変更いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "short notice は「直前の連絡」。謝罪を先に置くのが礼儀。"
+        },
+        {
+          "en": "Any chance we could come a bit later?",
+          "ja": "少し遅れて行くことってできる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "Any chance 〜 は控えめな依頼。断られる前提の柔らかさ。"
+        },
+        {
+          "en": "We're running late — could you hold the table for us?",
+          "ja": "遅れそうなのですが、席を確保していただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "hold the table は「席を取っておく」。遅刻連絡の定番。"
+        },
+        {
+          "en": "Our meeting ran over — would eight o'clock still work?",
+          "ja": "打ち合わせが長引きまして、8時でも大丈夫でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "run over は「予定を超過する」。理由が明確に伝わる。"
+        },
+        {
+          "en": "We can cancel if that's easier — but we'd love to come at eight.",
+          "ja": "難しければキャンセルでも構いませんが、できれば8時に伺いたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "店側に逃げ道を残す。無理をさせない言い方。"
+        },
+        {
+          "en": "Whatever's easiest for you — we're flexible on the time.",
+          "ja": "ご都合のよい時間で構いません。こちらは融通が利きます。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "flexible は「融通が利く」。相手に選ばせる型。"
+        }
       ]
     },
     {
-      "id": "restaurant-015", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-015",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to say the food was delicious.",
       "situationJa": "料理がおいしかったと伝えたい。",
-      "tags": ["complimenting"],
+      "tags": [
+        "complimenting"
+      ],
       "answers": [
-        { "en": "That was delicious.", "ja": "とてもおいしかったです。", "register": "neutral", "style": "basic", "note": "最も使いやすい一言。必ず言えるようにしたい。" },
-        { "en": "Delicious, thank you.", "ja": "おいしかったです、ありがとう。", "register": "neutral", "style": "oneword", "note": "会計時にさっと言える。短くても十分伝わる。" },
-        { "en": "Everything was lovely, thank you.", "ja": "どれもすばらしかったです。ありがとうございました。", "register": "polite", "style": "basic", "note": "lovely は英国でよく使う。上品な響き。" },
-        { "en": "Could you pass my compliments to the chef?", "ja": "シェフにお褒めの言葉をお伝えいただけますか。", "register": "polite", "style": "request", "note": "compliments to the chef は決まり文句。とても喜ばれる。" },
-        { "en": "That was quite possibly the best meal we've had here. Thank you.", "ja": "こちらでいただいた中でも最高の食事でした。ありがとうございました。", "register": "formal", "style": "formal", "note": "改まった賛辞。記念日の食事などに。" },
-        { "en": "That was so good!", "ja": "すごくおいしかった！", "register": "casual", "style": "casual", "note": "素直な感想。気さくな店で自然。" },
-        { "en": "Is the chef here today? That was excellent.", "ja": "本日シェフはいらっしゃいますか。とてもすばらしかったです。", "register": "neutral", "style": "existence", "note": "直接伝えたいときに。小さな店で喜ばれる。" },
-        { "en": "The sauce was outstanding.", "ja": "ソースが格別でした。", "register": "neutral", "style": "vocab", "note": "具体的に褒めると本気度が伝わる。outstanding は「傑出した」。" },
-        { "en": "We came on a recommendation and it lived up to it. Thank you.", "ja": "勧められて来たのですが、期待どおりでした。ありがとうございました。", "register": "polite", "style": "context", "note": "live up to 〜 は「期待に応える」。店にとって嬉しい情報。" },
-        { "en": "We'll definitely be back — everything was wonderful.", "ja": "また必ず伺います。どれもすばらしかったです。", "register": "polite", "style": "considerate", "note": "再訪の意思は最高の褒め言葉になる。" }
+        {
+          "en": "That was delicious.",
+          "ja": "とてもおいしかったです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最も使いやすい一言。必ず言えるようにしたい。"
+        },
+        {
+          "en": "Delicious, thank you.",
+          "ja": "おいしかったです、ありがとう。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "会計時にさっと言える。短くても十分伝わる。"
+        },
+        {
+          "en": "Everything was lovely, thank you.",
+          "ja": "どれもすばらしかったです。ありがとうございました。",
+          "register": "polite",
+          "style": "basic",
+          "note": "lovely は英国でよく使う。上品な響き。"
+        },
+        {
+          "en": "Could you pass my compliments to the chef?",
+          "ja": "シェフにお褒めの言葉をお伝えいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "compliments to the chef は決まり文句。とても喜ばれる。"
+        },
+        {
+          "en": "That was quite possibly the best meal we've had here. Thank you.",
+          "ja": "こちらでいただいた中でも最高の食事でした。ありがとうございました。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった賛辞。記念日の食事などに。"
+        },
+        {
+          "en": "That was so good!",
+          "ja": "すごくおいしかった！",
+          "register": "casual",
+          "style": "casual",
+          "note": "素直な感想。気さくな店で自然。"
+        },
+        {
+          "en": "Is the chef here today? That was excellent.",
+          "ja": "本日シェフはいらっしゃいますか。とてもすばらしかったです。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "直接伝えたいときに。小さな店で喜ばれる。"
+        },
+        {
+          "en": "The sauce was outstanding.",
+          "ja": "ソースが格別でした。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "具体的に褒めると本気度が伝わる。outstanding は「傑出した」。"
+        },
+        {
+          "en": "We came on a recommendation and it lived up to it. Thank you.",
+          "ja": "勧められて来たのですが、期待どおりでした。ありがとうございました。",
+          "register": "polite",
+          "style": "context",
+          "note": "live up to 〜 は「期待に応える」。店にとって嬉しい情報。"
+        },
+        {
+          "en": "We'll definitely be back — everything was wonderful.",
+          "ja": "また必ず伺います。どれもすばらしかったです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "再訪の意思は最高の褒め言葉になる。"
+        }
       ]
     },
     {
-      "id": "restaurant-016", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-016",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask for a different table.",
       "situationJa": "別の席に替えてほしい。",
-      "tags": ["requesting", "seating"],
+      "tags": [
+        "requesting",
+        "seating"
+      ],
       "answers": [
-        { "en": "Could we sit over there?", "ja": "あちらに座れますか。", "register": "neutral", "style": "oneword", "note": "席を指しながら。いちばん伝わりやすい。" },
-        { "en": "Could we move to another table?", "ja": "別のテーブルに移れますか。", "register": "polite", "style": "request", "note": "基本形。理由を添えるとなお良い。" },
-        { "en": "Is that table by the window free?", "ja": "窓際のあの席は空いていますか。", "register": "neutral", "style": "existence", "note": "希望を具体的に言う。実際に通りやすい。" },
-        { "en": "Do you have a quieter table?", "ja": "もっと静かな席はありますか。", "register": "neutral", "style": "basic", "note": "条件で頼む形。店側が選びやすい。" },
-        { "en": "Would it be possible to be seated somewhere a little quieter?", "ja": "もう少し静かな席にご案内いただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "be seated は「席に案内される」。改まった言い方。" },
-        { "en": "Mind if we switch tables?", "ja": "席替えてもいい？", "register": "casual", "style": "casual", "note": "気さくな店で。Do you を省いた口語。" },
-        { "en": "It's a bit cold here — could we move?", "ja": "ここは少し寒いので、移動できますか。", "register": "neutral", "style": "context", "note": "理由があると快く応じてもらえる。" },
-        { "en": "Could we have a booth instead?", "ja": "代わりにボックス席にできますか。", "register": "neutral", "style": "vocab", "note": "booth は仕切りのある座席。米国のダイナーでよく使う。" },
-        { "en": "We're celebrating tonight — is there somewhere a bit nicer?", "ja": "今夜はお祝いなのですが、もう少し良い席はありますか。", "register": "polite", "style": "basic", "note": "目的を伝えると特別扱いしてもらえることがある。" },
-        { "en": "Only if it's no trouble — could we move away from the door?", "ja": "ご迷惑でなければ、ドアから離れた席に移れますか。", "register": "polite", "style": "considerate", "note": "断る余地を残す。混雑時に押しつけがましくない。" }
+        {
+          "en": "Could we sit over there?",
+          "ja": "あちらに座れますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "席を指しながら。いちばん伝わりやすい。"
+        },
+        {
+          "en": "Could we move to another table?",
+          "ja": "別のテーブルに移れますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。理由を添えるとなお良い。"
+        },
+        {
+          "en": "Is that table by the window free?",
+          "ja": "窓際のあの席は空いていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "希望を具体的に言う。実際に通りやすい。"
+        },
+        {
+          "en": "Do you have a quieter table?",
+          "ja": "もっと静かな席はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "条件で頼む形。店側が選びやすい。"
+        },
+        {
+          "en": "Would it be possible to be seated somewhere a little quieter?",
+          "ja": "もう少し静かな席にご案内いただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "be seated は「席に案内される」。改まった言い方。"
+        },
+        {
+          "en": "Mind if we switch tables?",
+          "ja": "席替えてもいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。Do you を省いた口語。"
+        },
+        {
+          "en": "It's a bit cold here — could we move?",
+          "ja": "ここは少し寒いので、移動できますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "理由があると快く応じてもらえる。"
+        },
+        {
+          "en": "Could we have a booth instead?",
+          "ja": "代わりにボックス席にできますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "booth は仕切りのある座席。米国のダイナーでよく使う。"
+        },
+        {
+          "en": "We're celebrating tonight — is there somewhere a bit nicer?",
+          "ja": "今夜はお祝いなのですが、もう少し良い席はありますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "目的を伝えると特別扱いしてもらえることがある。"
+        },
+        {
+          "en": "Only if it's no trouble — could we move away from the door?",
+          "ja": "ご迷惑でなければ、ドアから離れた席に移れますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る余地を残す。混雑時に押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "restaurant-017", "category": "restaurant", "difficulty": 2,
-      "place": "At a bar counter", "listener": "a bartender",
+      "id": "restaurant-017",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a bar counter",
+      "listener": "a bartender",
       "want": "You want to order a drink you have never had.",
       "situationJa": "飲んだことのない飲み物を頼みたい。",
-      "tags": ["ordering", "drink"],
+      "tags": [
+        "ordering",
+        "drink"
+      ],
       "answers": [
-        { "en": "What's good?", "ja": "何がおすすめですか。", "register": "casual", "style": "oneword", "note": "バーでは最も自然な切り出し。" },
-        { "en": "What would you recommend?", "ja": "何がおすすめですか。", "register": "neutral", "style": "basic", "note": "基本形。どんな店でも使える。" },
-        { "en": "I'll try whatever you suggest.", "ja": "おすすめのものを試してみます。", "register": "neutral", "style": "basic", "note": "相手に任せる型。会話が弾みやすい。" },
-        { "en": "Could you suggest something light?", "ja": "軽めのものを提案していただけますか。", "register": "polite", "style": "request", "note": "条件を出すと的確な提案が返る。" },
-        { "en": "I'm not familiar with these — might I ask what you would suggest?", "ja": "こちらに不案内でして、おすすめを伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "not familiar with 〜 は「よく知らない」。丁寧で角が立たない。" },
-        { "en": "Surprise me.", "ja": "お任せで。", "register": "casual", "style": "casual", "note": "バーテンダーに完全に任せる。信頼を示す言い方。" },
-        { "en": "Is there anything local I should try?", "ja": "地元のもので試すべきものはありますか。", "register": "neutral", "style": "existence", "note": "旅先で。土地のものを知る良いきっかけになる。" },
-        { "en": "What's on tap?", "ja": "生ビールは何がありますか。", "register": "neutral", "style": "vocab", "note": "on tap は「樽生の」。パブでの定番の一言。" },
-        { "en": "I usually drink white wine but I'd like to try something new.", "ja": "普段は白ワインですが、何か新しいものを試したいです。", "register": "neutral", "style": "context", "note": "好みを伝えると、外れの少ない提案がもらえる。" },
-        { "en": "Nothing too strong, if that's all right — what would you suggest?", "ja": "あまり強くないものがよいのですが、何がよいでしょうか。", "register": "polite", "style": "considerate", "note": "希望を控えめに伝える。無理なく断れる形。" }
+        {
+          "en": "What's good?",
+          "ja": "何がおすすめですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "バーでは最も自然な切り出し。"
+        },
+        {
+          "en": "What would you recommend?",
+          "ja": "何がおすすめですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。どんな店でも使える。"
+        },
+        {
+          "en": "I'll try whatever you suggest.",
+          "ja": "おすすめのものを試してみます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "相手に任せる型。会話が弾みやすい。"
+        },
+        {
+          "en": "Could you suggest something light?",
+          "ja": "軽めのものを提案していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "条件を出すと的確な提案が返る。"
+        },
+        {
+          "en": "I'm not familiar with these — might I ask what you would suggest?",
+          "ja": "こちらに不案内でして、おすすめを伺ってもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "not familiar with 〜 は「よく知らない」。丁寧で角が立たない。"
+        },
+        {
+          "en": "Surprise me.",
+          "ja": "お任せで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "バーテンダーに完全に任せる。信頼を示す言い方。"
+        },
+        {
+          "en": "Is there anything local I should try?",
+          "ja": "地元のもので試すべきものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "旅先で。土地のものを知る良いきっかけになる。"
+        },
+        {
+          "en": "What's on tap?",
+          "ja": "生ビールは何がありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "on tap は「樽生の」。パブでの定番の一言。"
+        },
+        {
+          "en": "I usually drink white wine but I'd like to try something new.",
+          "ja": "普段は白ワインですが、何か新しいものを試したいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "好みを伝えると、外れの少ない提案がもらえる。"
+        },
+        {
+          "en": "Nothing too strong, if that's all right — what would you suggest?",
+          "ja": "あまり強くないものがよいのですが、何がよいでしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "希望を控えめに伝える。無理なく断れる形。"
+        }
       ]
     },
     {
-      "id": "restaurant-018", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-018",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to say you need more time to decide.",
       "situationJa": "まだ決まっていないので少し待ってほしい。",
-      "tags": ["requesting", "time"],
+      "tags": [
+        "requesting",
+        "time"
+      ],
       "answers": [
-        { "en": "A few more minutes, please.", "ja": "もう少し時間をください。", "register": "neutral", "style": "oneword", "note": "簡潔で確実。まずこれ。" },
-        { "en": "Could we have a few more minutes?", "ja": "もう少しお時間をいただけますか。", "register": "polite", "style": "request", "note": "最も一般的で丁寧な形。" },
-        { "en": "We're not quite ready yet.", "ja": "まだ決まっていません。", "register": "neutral", "style": "basic", "note": "not quite で柔らかく。定番の返し方。" },
-        { "en": "We still need a minute, thanks.", "ja": "もう少しかかります、ありがとう。", "register": "neutral", "style": "basic", "note": "a minute は「ちょっと」。実際の1分ではない。" },
-        { "en": "Would you mind giving us a moment longer?", "ja": "もう少しお時間をいただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった店で。丁寧さが際立つ。" },
-        { "en": "Give us a sec.", "ja": "ちょっと待ってね。", "register": "casual", "style": "casual", "note": "非常にくだけた言い方。親しい相手や気さくな店で。" },
-        { "en": "Is there a set menu we should look at first?", "ja": "先に見ておくべきセットメニューはありますか。", "register": "neutral", "style": "existence", "note": "時間を稼ぎつつ情報も得られる、うまい返し。" },
-        { "en": "We're still deciding — could you come back in a bit?", "ja": "まだ迷っていますので、少ししてからまた来ていただけますか。", "register": "polite", "style": "vocab", "note": "come back in a bit で、いつ戻るかを明確にできる。" },
-        { "en": "There's a lot to choose from — could we have a little longer?", "ja": "選択肢が多くて。もう少しお時間をいただけますか。", "register": "polite", "style": "context", "note": "メニューを褒めながら時間をもらう。感じがよい。" },
-        { "en": "Sorry to keep you — a couple more minutes, if that's all right.", "ja": "お待たせしてすみません。あと2、3分よろしいでしょうか。", "register": "polite", "style": "considerate", "note": "待たせていることへの配慮。丁寧な印象になる。" }
+        {
+          "en": "A few more minutes, please.",
+          "ja": "もう少し時間をください。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "簡潔で確実。まずこれ。"
+        },
+        {
+          "en": "Could we have a few more minutes?",
+          "ja": "もう少しお時間をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "最も一般的で丁寧な形。"
+        },
+        {
+          "en": "We're not quite ready yet.",
+          "ja": "まだ決まっていません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "not quite で柔らかく。定番の返し方。"
+        },
+        {
+          "en": "We still need a minute, thanks.",
+          "ja": "もう少しかかります、ありがとう。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "a minute は「ちょっと」。実際の1分ではない。"
+        },
+        {
+          "en": "Would you mind giving us a moment longer?",
+          "ja": "もう少しお時間をいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった店で。丁寧さが際立つ。"
+        },
+        {
+          "en": "Give us a sec.",
+          "ja": "ちょっと待ってね。",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた言い方。親しい相手や気さくな店で。"
+        },
+        {
+          "en": "Is there a set menu we should look at first?",
+          "ja": "先に見ておくべきセットメニューはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "時間を稼ぎつつ情報も得られる、うまい返し。"
+        },
+        {
+          "en": "We're still deciding — could you come back in a bit?",
+          "ja": "まだ迷っていますので、少ししてからまた来ていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "come back in a bit で、いつ戻るかを明確にできる。"
+        },
+        {
+          "en": "There's a lot to choose from — could we have a little longer?",
+          "ja": "選択肢が多くて。もう少しお時間をいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "メニューを褒めながら時間をもらう。感じがよい。"
+        },
+        {
+          "en": "Sorry to keep you — a couple more minutes, if that's all right.",
+          "ja": "お待たせしてすみません。あと2、3分よろしいでしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "待たせていることへの配慮。丁寧な印象になる。"
+        }
       ]
     },
     {
-      "id": "restaurant-019", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-019",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask them to make the dish less spicy.",
       "situationJa": "辛さを控えめにしてほしいと頼みたい。",
-      "tags": ["requesting", "customizing"],
+      "tags": [
+        "requesting",
+        "customizing"
+      ],
       "answers": [
-        { "en": "Not spicy, please.", "ja": "辛くしないでください。", "register": "neutral", "style": "oneword", "note": "短くて確実。言葉が出ないときの保険。" },
-        { "en": "Could you make it less spicy?", "ja": "辛さを控えめにしていただけますか。", "register": "polite", "style": "request", "note": "基本形。丸ごと覚えておきたい。" },
-        { "en": "Can I have it mild?", "ja": "マイルドでお願いできますか。", "register": "neutral", "style": "basic", "note": "mild は「辛くない」。辛さの段階を選べる店で。" },
-        { "en": "I can't handle much heat.", "ja": "あまり辛いものは食べられません。", "register": "neutral", "style": "vocab", "note": "heat は「辛さ」。ネイティブがよく使う言い方。" },
-        { "en": "Would it be possible to have it prepared without chili?", "ja": "唐辛子を使わずに調理していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "具体的な食材を名指しすると確実。改まった言い方。" },
-        { "en": "Go easy on the spice for me.", "ja": "辛さは控えめにしてね。", "register": "casual", "style": "casual", "note": "go easy on 〜 は「〜を控えめに」。口語で便利。" },
-        { "en": "Is there a mild version of this?", "ja": "これの辛くないものはありますか。", "register": "neutral", "style": "existence", "note": "選択肢の有無から聞く形。無理を言わずに済む。" },
-        { "en": "How spicy is this normally?", "ja": "これは普通どのくらい辛いですか。", "register": "neutral", "style": "basic", "note": "まず基準を確かめる。頼むかどうかの判断ができる。" },
-        { "en": "I'd love to try it, but I'm not good with spice — could it be made milder?", "ja": "食べてみたいのですが辛いものが苦手で。控えめにできますか。", "register": "polite", "style": "context", "note": "食べたい意思を先に示すと、店側も応じやすい。" },
-        { "en": "Only if the kitchen can — could you make it a bit less spicy?", "ja": "厨房で対応できる範囲で構いませんが、少し辛さを抑えていただけますか。", "register": "polite", "style": "considerate", "note": "無理を強いない形。断られても気まずくない。" }
+        {
+          "en": "Not spicy, please.",
+          "ja": "辛くしないでください。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。言葉が出ないときの保険。"
+        },
+        {
+          "en": "Could you make it less spicy?",
+          "ja": "辛さを控えめにしていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。丸ごと覚えておきたい。"
+        },
+        {
+          "en": "Can I have it mild?",
+          "ja": "マイルドでお願いできますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "mild は「辛くない」。辛さの段階を選べる店で。"
+        },
+        {
+          "en": "I can't handle much heat.",
+          "ja": "あまり辛いものは食べられません。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "heat は「辛さ」。ネイティブがよく使う言い方。"
+        },
+        {
+          "en": "Would it be possible to have it prepared without chili?",
+          "ja": "唐辛子を使わずに調理していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "具体的な食材を名指しすると確実。改まった言い方。"
+        },
+        {
+          "en": "Go easy on the spice for me.",
+          "ja": "辛さは控えめにしてね。",
+          "register": "casual",
+          "style": "casual",
+          "note": "go easy on 〜 は「〜を控えめに」。口語で便利。"
+        },
+        {
+          "en": "Is there a mild version of this?",
+          "ja": "これの辛くないものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "選択肢の有無から聞く形。無理を言わずに済む。"
+        },
+        {
+          "en": "How spicy is this normally?",
+          "ja": "これは普通どのくらい辛いですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "まず基準を確かめる。頼むかどうかの判断ができる。"
+        },
+        {
+          "en": "I'd love to try it, but I'm not good with spice — could it be made milder?",
+          "ja": "食べてみたいのですが辛いものが苦手で。控えめにできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "食べたい意思を先に示すと、店側も応じやすい。"
+        },
+        {
+          "en": "Only if the kitchen can — could you make it a bit less spicy?",
+          "ja": "厨房で対応できる範囲で構いませんが、少し辛さを抑えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無理を強いない形。断られても気まずくない。"
+        }
       ]
     },
     {
-      "id": "restaurant-020", "category": "restaurant", "difficulty": 2,
-      "place": "At a busy restaurant", "listener": "a host",
+      "id": "restaurant-020",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a busy restaurant",
+      "listener": "a host",
       "want": "You want to know how long the wait is.",
       "situationJa": "どのくらい待つか知りたい。",
-      "tags": ["asking", "wait"],
+      "tags": [
+        "asking",
+        "wait"
+      ],
       "answers": [
-        { "en": "How long is the wait?", "ja": "どのくらい待ちますか。", "register": "neutral", "style": "basic", "note": "基本形。行列のある店で必須。" },
-        { "en": "How long?", "ja": "どのくらいですか。", "register": "casual", "style": "oneword", "note": "騒がしい店内で。短くても通じる。" },
-        { "en": "Roughly how long will it be?", "ja": "だいたいどのくらいになりますか。", "register": "neutral", "style": "basic", "note": "roughly で概算を求める。答えやすい。" },
-        { "en": "Could you tell me how long we'd have to wait?", "ja": "どのくらい待つことになるか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。きちんとした店でも使える。" },
-        { "en": "Would you happen to know the approximate waiting time?", "ja": "おおよその待ち時間をご存じでしょうか。", "register": "formal", "style": "formal", "note": "非常に丁寧。相手が分からなくても角が立たない。" },
-        { "en": "Are we looking at a long wait?", "ja": "長く待つ感じですか。", "register": "casual", "style": "casual", "note": "be looking at 〜 は「〜という見込み」。口語的。" },
-        { "en": "Is there a waiting list we can put our name on?", "ja": "名前を書いて待つリストはありますか。", "register": "neutral", "style": "existence", "note": "米国の人気店では定番。先に名前を入れておける。" },
-        { "en": "Do you take walk-ins?", "ja": "予約なしでも入れますか。", "register": "neutral", "style": "vocab", "note": "walk-in は「予約なしの客」。知っていると便利。" },
-        { "en": "We have a show at eight — would we be seated in time?", "ja": "8時に公演があるのですが、それまでに座れそうでしょうか。", "register": "polite", "style": "context", "note": "予定を伝えると、間に合うかまで判断してもらえる。" },
-        { "en": "We're happy to wait — just wondering roughly how long.", "ja": "待つのは構いません。だいたいどのくらいか知りたいだけです。", "register": "polite", "style": "considerate", "note": "急かしていないと示す。店側の負担が減る。" }
+        {
+          "en": "How long is the wait?",
+          "ja": "どのくらい待ちますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。行列のある店で必須。"
+        },
+        {
+          "en": "How long?",
+          "ja": "どのくらいですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "騒がしい店内で。短くても通じる。"
+        },
+        {
+          "en": "Roughly how long will it be?",
+          "ja": "だいたいどのくらいになりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "roughly で概算を求める。答えやすい。"
+        },
+        {
+          "en": "Could you tell me how long we'd have to wait?",
+          "ja": "どのくらい待つことになるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。きちんとした店でも使える。"
+        },
+        {
+          "en": "Would you happen to know the approximate waiting time?",
+          "ja": "おおよその待ち時間をご存じでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "非常に丁寧。相手が分からなくても角が立たない。"
+        },
+        {
+          "en": "Are we looking at a long wait?",
+          "ja": "長く待つ感じですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "be looking at 〜 は「〜という見込み」。口語的。"
+        },
+        {
+          "en": "Is there a waiting list we can put our name on?",
+          "ja": "名前を書いて待つリストはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "米国の人気店では定番。先に名前を入れておける。"
+        },
+        {
+          "en": "Do you take walk-ins?",
+          "ja": "予約なしでも入れますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "walk-in は「予約なしの客」。知っていると便利。"
+        },
+        {
+          "en": "We have a show at eight — would we be seated in time?",
+          "ja": "8時に公演があるのですが、それまでに座れそうでしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "予定を伝えると、間に合うかまで判断してもらえる。"
+        },
+        {
+          "en": "We're happy to wait — just wondering roughly how long.",
+          "ja": "待つのは構いません。だいたいどのくらいか知りたいだけです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かしていないと示す。店側の負担が減る。"
+        }
       ]
     },
     {
-      "id": "restaurant-021", "category": "restaurant", "difficulty": 1,
-      "place": "At a fast food counter", "listener": "a cashier",
+      "id": "restaurant-021",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a fast food counter",
+      "listener": "a cashier",
       "want": "You want to order a meal without onions.",
       "situationJa": "玉ねぎ抜きで注文したい。",
-      "tags": ["ordering", "customizing"],
+      "tags": [
+        "ordering",
+        "customizing"
+      ],
       "answers": [
-        { "en": "No onions, please.", "ja": "玉ねぎ抜きでお願いします。", "register": "neutral", "style": "oneword", "note": "ファストフードではこれが標準。最短で確実。" },
-        { "en": "Could I have it without onions?", "ja": "玉ねぎ抜きでお願いできますか。", "register": "polite", "style": "request", "note": "without 〜 は「〜なしで」。応用の効く型。" },
-        { "en": "Can you leave the onions off?", "ja": "玉ねぎを入れないでもらえますか。", "register": "neutral", "style": "basic", "note": "leave off は「入れない」。ネイティブがよく使う。" },
-        { "en": "Hold the onions.", "ja": "玉ねぎは抜きで。", "register": "casual", "style": "casual", "note": "hold 〜 は注文時の決まり文句。短く言える。" },
-        { "en": "Would it be possible to have it prepared without onions?", "ja": "玉ねぎを入れずにご用意いただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "きちんとした店向け。ファストフードでは丁寧すぎる。" },
-        { "en": "Is it possible to customize it?", "ja": "内容を変更できますか。", "register": "neutral", "style": "existence", "note": "変更可能かをまず確認する型。" },
-        { "en": "Does it come with onions?", "ja": "玉ねぎは入っていますか。", "register": "neutral", "style": "basic", "note": "come with 〜 は「〜が付いてくる」。先に確認できる。" },
-        { "en": "No onions and extra pickles, please.", "ja": "玉ねぎ抜きで、ピクルスを多めにお願いします。", "register": "neutral", "style": "vocab", "note": "extra 〜 は「〜を多めに」。まとめて言うと速い。" },
-        { "en": "I don't eat onions, so could you leave them out?", "ja": "玉ねぎを食べないので、抜いていただけますか。", "register": "polite", "style": "context", "note": "理由を添えると、忘れられにくい。" },
-        { "en": "Sorry to be picky — no onions, if that's OK.", "ja": "細かくてすみません、玉ねぎ抜きでお願いできますか。", "register": "polite", "style": "considerate", "note": "picky は「好みがうるさい」。先に断ると印象がよい。" }
+        {
+          "en": "No onions, please.",
+          "ja": "玉ねぎ抜きでお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "ファストフードではこれが標準。最短で確実。"
+        },
+        {
+          "en": "Could I have it without onions?",
+          "ja": "玉ねぎ抜きでお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "without 〜 は「〜なしで」。応用の効く型。"
+        },
+        {
+          "en": "Can you leave the onions off?",
+          "ja": "玉ねぎを入れないでもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "leave off は「入れない」。ネイティブがよく使う。"
+        },
+        {
+          "en": "Hold the onions.",
+          "ja": "玉ねぎは抜きで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "hold 〜 は注文時の決まり文句。短く言える。"
+        },
+        {
+          "en": "Would it be possible to have it prepared without onions?",
+          "ja": "玉ねぎを入れずにご用意いただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "きちんとした店向け。ファストフードでは丁寧すぎる。"
+        },
+        {
+          "en": "Is it possible to customize it?",
+          "ja": "内容を変更できますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "変更可能かをまず確認する型。"
+        },
+        {
+          "en": "Does it come with onions?",
+          "ja": "玉ねぎは入っていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "come with 〜 は「〜が付いてくる」。先に確認できる。"
+        },
+        {
+          "en": "No onions and extra pickles, please.",
+          "ja": "玉ねぎ抜きで、ピクルスを多めにお願いします。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "extra 〜 は「〜を多めに」。まとめて言うと速い。"
+        },
+        {
+          "en": "I don't eat onions, so could you leave them out?",
+          "ja": "玉ねぎを食べないので、抜いていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、忘れられにくい。"
+        },
+        {
+          "en": "Sorry to be picky — no onions, if that's OK.",
+          "ja": "細かくてすみません、玉ねぎ抜きでお願いできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "picky は「好みがうるさい」。先に断ると印象がよい。"
+        }
       ]
     },
     {
-      "id": "restaurant-022", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-022",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask if they have vegetarian options.",
       "situationJa": "ベジタリアン向けの料理があるか聞きたい。",
-      "tags": ["asking", "diet"],
+      "tags": [
+        "asking",
+        "diet"
+      ],
       "answers": [
-        { "en": "Anything vegetarian?", "ja": "ベジタリアン向けのものはありますか。", "register": "casual", "style": "oneword", "note": "短くて通じる。カジュアルな店で。" },
-        { "en": "Do you have vegetarian options?", "ja": "ベジタリアン向けの選択肢はありますか。", "register": "neutral", "style": "basic", "note": "基本形。海外ではよく通じる。" },
-        { "en": "Is there anything without meat?", "ja": "肉を使っていないものはありますか。", "register": "neutral", "style": "existence", "note": "vegetarian が通じにくい国ではこちらが確実。" },
-        { "en": "Could you tell me which dishes are vegetarian?", "ja": "どの料理がベジタリアン向けか教えていただけますか。", "register": "polite", "style": "request", "note": "具体的に案内してもらえる。実用的。" },
-        { "en": "I wonder if you might have any vegetarian dishes available.", "ja": "ベジタリアン向けのお料理がございますでしょうか。", "register": "formal", "style": "formal", "note": "改まった店で。控えめで丁寧。" },
-        { "en": "Got anything veggie?", "ja": "野菜系のものある？", "register": "casual", "style": "casual", "note": "veggie は vegetarian の口語。気さくな店で。" },
-        { "en": "Does the soup have meat stock in it?", "ja": "スープに肉のだしは使われていますか。", "register": "neutral", "style": "vocab", "note": "見落とされやすい点。厳格なベジタリアンには重要。" },
-        { "en": "Which of these could be made vegetarian?", "ja": "この中でベジタリアン向けにできるものはどれですか。", "register": "neutral", "style": "basic", "note": "既存の料理を変更してもらう発想。選択肢が広がる。" },
-        { "en": "I don't eat meat or fish — what would you suggest?", "ja": "肉も魚も食べないのですが、何がよいでしょうか。", "register": "polite", "style": "context", "note": "条件を明確にして提案を求める。いちばん確実。" },
-        { "en": "No problem if not — but do you have anything vegetarian?", "ja": "無ければ構いませんが、ベジタリアン向けのものはありますか。", "register": "polite", "style": "considerate", "note": "無い場合に相手が謝らずに済む。優しい聞き方。" }
+        {
+          "en": "Anything vegetarian?",
+          "ja": "ベジタリアン向けのものはありますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くて通じる。カジュアルな店で。"
+        },
+        {
+          "en": "Do you have vegetarian options?",
+          "ja": "ベジタリアン向けの選択肢はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。海外ではよく通じる。"
+        },
+        {
+          "en": "Is there anything without meat?",
+          "ja": "肉を使っていないものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "vegetarian が通じにくい国ではこちらが確実。"
+        },
+        {
+          "en": "Could you tell me which dishes are vegetarian?",
+          "ja": "どの料理がベジタリアン向けか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的に案内してもらえる。実用的。"
+        },
+        {
+          "en": "I wonder if you might have any vegetarian dishes available.",
+          "ja": "ベジタリアン向けのお料理がございますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった店で。控えめで丁寧。"
+        },
+        {
+          "en": "Got anything veggie?",
+          "ja": "野菜系のものある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "veggie は vegetarian の口語。気さくな店で。"
+        },
+        {
+          "en": "Does the soup have meat stock in it?",
+          "ja": "スープに肉のだしは使われていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "見落とされやすい点。厳格なベジタリアンには重要。"
+        },
+        {
+          "en": "Which of these could be made vegetarian?",
+          "ja": "この中でベジタリアン向けにできるものはどれですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "既存の料理を変更してもらう発想。選択肢が広がる。"
+        },
+        {
+          "en": "I don't eat meat or fish — what would you suggest?",
+          "ja": "肉も魚も食べないのですが、何がよいでしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "条件を明確にして提案を求める。いちばん確実。"
+        },
+        {
+          "en": "No problem if not — but do you have anything vegetarian?",
+          "ja": "無ければ構いませんが、ベジタリアン向けのものはありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無い場合に相手が謝らずに済む。優しい聞き方。"
+        }
       ]
     },
     {
-      "id": "restaurant-023", "category": "restaurant", "difficulty": 3,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-023",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to say there is a mistake on the bill.",
       "situationJa": "会計に間違いがあることを伝えたい。",
-      "tags": ["complaining", "payment"],
+      "tags": [
+        "complaining",
+        "payment"
+      ],
       "answers": [
-        { "en": "Excuse me, I think there's a mistake.", "ja": "すみません、間違いがあるようです。", "register": "neutral", "style": "basic", "note": "I think で断定を避ける。角が立たない。" },
-        { "en": "Sorry, this doesn't look right.", "ja": "すみません、これは合っていないようです。", "register": "neutral", "style": "oneword", "note": "伝票を指しながら。柔らかく指摘できる。" },
-        { "en": "Could you check the bill? I think we've been charged twice.", "ja": "伝票を確認していただけますか。二重に請求されているようです。", "register": "polite", "style": "request", "note": "charge は「請求する」。具体的に言うと解決が速い。" },
-        { "en": "We didn't order the wine — could you take a look?", "ja": "ワインは注文していないのですが、確認していただけますか。", "register": "neutral", "style": "context", "note": "何が違うかを明示する。いちばん実務的。" },
-        { "en": "I'm sorry to raise this, but I believe there may be an error on the bill.", "ja": "申し上げにくいのですが、お会計に誤りがあるように思われます。", "register": "formal", "style": "formal", "note": "raise は「話題に出す」。最も丁寧な切り出し方。" },
-        { "en": "Hey, I think this is wrong.", "ja": "ねえ、これ違うと思うんだけど。", "register": "casual", "style": "casual", "note": "気さくな店で。口調によっては失礼になるので注意。" },
-        { "en": "Is there a service charge on top of this?", "ja": "これにサービス料が上乗せされていますか。", "register": "neutral", "style": "existence", "note": "誤りではなく規定料金の場合もある。まず確認する型。" },
-        { "en": "Could you itemize this for us?", "ja": "内訳を出していただけますか。", "register": "polite", "style": "vocab", "note": "itemize は「明細にする」。原因が自分で確認できる。" },
-        { "en": "We only had two drinks, but I count four here — could you check?", "ja": "飲み物は2杯だけでしたが、4杯分になっています。ご確認いただけますか。", "register": "polite", "style": "confirm", "note": "根拠を示すと、双方が納得しやすい。" },
-        { "en": "It might be my mistake, but could we go through the bill together?", "ja": "私の勘違いかもしれませんが、一緒に伝票を確認できますか。", "register": "polite", "style": "considerate", "note": "自分の誤りの可能性を先に置く。相手が構えずに済む。" }
+        {
+          "en": "Excuse me, I think there's a mistake.",
+          "ja": "すみません、間違いがあるようです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I think で断定を避ける。角が立たない。"
+        },
+        {
+          "en": "Sorry, this doesn't look right.",
+          "ja": "すみません、これは合っていないようです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "伝票を指しながら。柔らかく指摘できる。"
+        },
+        {
+          "en": "Could you check the bill? I think we've been charged twice.",
+          "ja": "伝票を確認していただけますか。二重に請求されているようです。",
+          "register": "polite",
+          "style": "request",
+          "note": "charge は「請求する」。具体的に言うと解決が速い。"
+        },
+        {
+          "en": "We didn't order the wine — could you take a look?",
+          "ja": "ワインは注文していないのですが、確認していただけますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "何が違うかを明示する。いちばん実務的。"
+        },
+        {
+          "en": "I'm sorry to raise this, but I believe there may be an error on the bill.",
+          "ja": "申し上げにくいのですが、お会計に誤りがあるように思われます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "raise は「話題に出す」。最も丁寧な切り出し方。"
+        },
+        {
+          "en": "Hey, I think this is wrong.",
+          "ja": "ねえ、これ違うと思うんだけど。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。口調によっては失礼になるので注意。"
+        },
+        {
+          "en": "Is there a service charge on top of this?",
+          "ja": "これにサービス料が上乗せされていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "誤りではなく規定料金の場合もある。まず確認する型。"
+        },
+        {
+          "en": "Could you itemize this for us?",
+          "ja": "内訳を出していただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "itemize は「明細にする」。原因が自分で確認できる。"
+        },
+        {
+          "en": "We only had two drinks, but I count four here — could you check?",
+          "ja": "飲み物は2杯だけでしたが、4杯分になっています。ご確認いただけますか。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "根拠を示すと、双方が納得しやすい。"
+        },
+        {
+          "en": "It might be my mistake, but could we go through the bill together?",
+          "ja": "私の勘違いかもしれませんが、一緒に伝票を確認できますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分の誤りの可能性を先に置く。相手が構えずに済む。"
+        }
       ]
     },
     {
-      "id": "restaurant-024", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant", "listener": "a server",
+      "id": "restaurant-024",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant",
+      "listener": "a server",
       "want": "You want to find the restroom.",
       "situationJa": "お手洗いの場所を聞きたい。",
-      "tags": ["asking", "directions"],
+      "tags": [
+        "asking",
+        "directions"
+      ],
       "answers": [
-        { "en": "Restroom?", "ja": "お手洗いは？", "register": "casual", "style": "oneword", "note": "騒がしい店内で。短くても通じる。" },
-        { "en": "Where's the restroom?", "ja": "お手洗いはどこですか。", "register": "neutral", "style": "basic", "note": "米国での基本形。" },
-        { "en": "Where are the toilets?", "ja": "お手洗いはどこですか。", "register": "neutral", "style": "vocab", "note": "英国式。複数形で言うのが普通。" },
-        { "en": "Could you tell me where the restroom is?", "ja": "お手洗いの場所を教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
-        { "en": "Excuse me, would you mind pointing me to the washroom?", "ja": "恐れ入りますが、お手洗いの場所を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "washroom はカナダでよく使う。丁寧な響き。" },
-        { "en": "Where's the bathroom?", "ja": "お手洗いはどこですか。", "register": "casual", "style": "casual", "note": "米国の日常会話ではこれが最も一般的。" },
-        { "en": "Is there a restroom in here?", "ja": "店内にお手洗いはありますか。", "register": "neutral", "style": "existence", "note": "小さな店では外にあることも。先に確認できる。" },
-        { "en": "Do I need a key for the restroom?", "ja": "お手洗いに鍵は要りますか。", "register": "neutral", "style": "basic", "note": "欧米のカフェでは鍵が必要な店がある。実用的。" },
-        { "en": "Sorry, I've been looking for the restroom — where is it?", "ja": "すみません、お手洗いを探していまして、どちらでしょうか。", "register": "polite", "style": "context", "note": "探していたと伝えると、丁寧に案内してもらえる。" },
-        { "en": "Sorry to interrupt — where's the restroom?", "ja": "お邪魔してすみません、お手洗いはどちらですか。", "register": "polite", "style": "considerate", "note": "忙しそうな店員に声をかけるときの前置き。" }
+        {
+          "en": "Restroom?",
+          "ja": "お手洗いは？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "騒がしい店内で。短くても通じる。"
+        },
+        {
+          "en": "Where's the restroom?",
+          "ja": "お手洗いはどこですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "米国での基本形。"
+        },
+        {
+          "en": "Where are the toilets?",
+          "ja": "お手洗いはどこですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "英国式。複数形で言うのが普通。"
+        },
+        {
+          "en": "Could you tell me where the restroom is?",
+          "ja": "お手洗いの場所を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どこでも使える。"
+        },
+        {
+          "en": "Excuse me, would you mind pointing me to the washroom?",
+          "ja": "恐れ入りますが、お手洗いの場所を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "washroom はカナダでよく使う。丁寧な響き。"
+        },
+        {
+          "en": "Where's the bathroom?",
+          "ja": "お手洗いはどこですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "米国の日常会話ではこれが最も一般的。"
+        },
+        {
+          "en": "Is there a restroom in here?",
+          "ja": "店内にお手洗いはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "小さな店では外にあることも。先に確認できる。"
+        },
+        {
+          "en": "Do I need a key for the restroom?",
+          "ja": "お手洗いに鍵は要りますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "欧米のカフェでは鍵が必要な店がある。実用的。"
+        },
+        {
+          "en": "Sorry, I've been looking for the restroom — where is it?",
+          "ja": "すみません、お手洗いを探していまして、どちらでしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "探していたと伝えると、丁寧に案内してもらえる。"
+        },
+        {
+          "en": "Sorry to interrupt — where's the restroom?",
+          "ja": "お邪魔してすみません、お手洗いはどちらですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "忙しそうな店員に声をかけるときの前置き。"
+        }
       ]
     },
     {
-      "id": "restaurant-025", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "your friend",
+      "id": "restaurant-025",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "your friend",
       "want": "You want to offer to pay for the meal.",
       "situationJa": "食事代を自分が払うと申し出たい。",
-      "tags": ["offering", "payment"],
+      "tags": [
+        "offering",
+        "payment"
+      ],
       "answers": [
-        { "en": "It's on me.", "ja": "ここは私が持ちます。", "register": "casual", "style": "oneword", "note": "友人同士での定番。短くて気持ちが伝わる。" },
-        { "en": "Let me get this.", "ja": "ここは私が払います。", "register": "neutral", "style": "basic", "note": "get は「払う」の意味。自然でよく使う。" },
-        { "en": "I'll pay for this one.", "ja": "今回は私が払います。", "register": "neutral", "style": "basic", "note": "this one で「今回は」の含み。次は相手、という余地を残す。" },
-        { "en": "Please, let me treat you.", "ja": "ぜひごちそうさせてください。", "register": "polite", "style": "request", "note": "treat は「おごる」。丁寧で温かい響き。" },
-        { "en": "It would be my pleasure to take care of the bill.", "ja": "お会計は私にお任せいただければ幸いです。", "register": "formal", "style": "formal", "note": "接待などの改まった場面で。" },
-        { "en": "I got it.", "ja": "私が出すよ。", "register": "casual", "style": "casual", "note": "米国の口語。さっと会計に行くときに。" },
-        { "en": "Is there any chance you'd let me pay this time?", "ja": "今回は私に払わせてもらえませんか。", "register": "polite", "style": "existence", "note": "相手が断りそうなときに。押しつけがましくない。" },
-        { "en": "You got the last one, so this one's mine.", "ja": "前回はあなたが払ったので、今回は私です。", "register": "neutral", "style": "context", "note": "理由があると相手が受け入れやすい。" },
-        { "en": "You've done so much for me lately — please, let me.", "ja": "最近いろいろしてもらっているので、ぜひ払わせてください。", "register": "polite", "style": "vocab", "note": "感謝を理由にすると、断られにくい。" },
-        { "en": "I'd really like to get this — you can get the next one.", "ja": "ぜひここは私に。次はお願いします。", "register": "polite", "style": "considerate", "note": "次の機会を示す。相手の面目も立つ、最も角の立たない形。" }
+        {
+          "en": "It's on me.",
+          "ja": "ここは私が持ちます。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "友人同士での定番。短くて気持ちが伝わる。"
+        },
+        {
+          "en": "Let me get this.",
+          "ja": "ここは私が払います。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "get は「払う」の意味。自然でよく使う。"
+        },
+        {
+          "en": "I'll pay for this one.",
+          "ja": "今回は私が払います。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "this one で「今回は」の含み。次は相手、という余地を残す。"
+        },
+        {
+          "en": "Please, let me treat you.",
+          "ja": "ぜひごちそうさせてください。",
+          "register": "polite",
+          "style": "request",
+          "note": "treat は「おごる」。丁寧で温かい響き。"
+        },
+        {
+          "en": "It would be my pleasure to take care of the bill.",
+          "ja": "お会計は私にお任せいただければ幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "接待などの改まった場面で。"
+        },
+        {
+          "en": "I got it.",
+          "ja": "私が出すよ。",
+          "register": "casual",
+          "style": "casual",
+          "note": "米国の口語。さっと会計に行くときに。"
+        },
+        {
+          "en": "Is there any chance you'd let me pay this time?",
+          "ja": "今回は私に払わせてもらえませんか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "相手が断りそうなときに。押しつけがましくない。"
+        },
+        {
+          "en": "You got the last one, so this one's mine.",
+          "ja": "前回はあなたが払ったので、今回は私です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "理由があると相手が受け入れやすい。"
+        },
+        {
+          "en": "You've done so much for me lately — please, let me.",
+          "ja": "最近いろいろしてもらっているので、ぜひ払わせてください。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "感謝を理由にすると、断られにくい。"
+        },
+        {
+          "en": "I'd really like to get this — you can get the next one.",
+          "ja": "ぜひここは私に。次はお願いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "次の機会を示す。相手の面目も立つ、最も角の立たない形。"
+        }
       ]
     },
     {
-      "id": "restaurant-026", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-026",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask them to reheat a dish that came cold.",
       "situationJa": "冷めていた料理を温め直してほしい。",
-      "tags": ["complaining", "polite"],
+      "tags": [
+        "complaining",
+        "polite"
+      ],
       "answers": [
-        { "en": "Sorry, this is cold.", "ja": "すみません、これが冷たいです。", "register": "neutral", "style": "oneword", "note": "事実だけを述べる。責める調子にならない。" },
-        { "en": "Excuse me, this dish is a bit cold.", "ja": "すみません、この料理が少し冷たいのですが。", "register": "neutral", "style": "basic", "note": "a bit を入れると柔らかくなる。" },
-        { "en": "Could you heat this up, please?", "ja": "これを温めていただけますか。", "register": "polite", "style": "request", "note": "heat up は「温める」。次にどうしてほしいかまで伝わる。" },
-        { "en": "Would you mind warming this up for me?", "ja": "こちらを温めていただけますでしょうか。", "register": "polite", "style": "vocab", "note": "warm up も同じ意味。より柔らかい響き。" },
-        { "en": "I'm sorry to bother you, but I'm afraid this has gone cold.", "ja": "お手数をおかけしますが、こちらが冷めてしまっているようです。", "register": "formal", "style": "formal", "note": "gone cold は「冷めてしまった」。丁寧で角が立たない。" },
-        { "en": "This is stone cold.", "ja": "これ、完全に冷めてる。", "register": "casual", "style": "casual", "note": "stone cold は「冷え切った」。強い表現なので相手を選ぶ。" },
-        { "en": "Is it supposed to be served cold?", "ja": "これは冷たいまま出す料理でしょうか。", "register": "neutral", "style": "existence", "note": "冷製料理の可能性を確かめる。恥をかかずに済む。" },
-        { "en": "Could I get this warmed up? It's lost its heat.", "ja": "これを温め直していただけますか。冷めてしまっていて。", "register": "polite", "style": "basic", "note": "理由を添えた依頼。素直で伝わりやすい。" },
-        { "en": "It took a while to arrive and it's gone cold — could you warm it?", "ja": "少し時間がかかったせいか冷めています。温めていただけますか。", "register": "polite", "style": "context", "note": "経緯を添えると、店側も状況を理解しやすい。" },
-        { "en": "No complaints otherwise — could this just be warmed up?", "ja": "他は問題ありません。これだけ温めていただけますか。", "register": "polite", "style": "considerate", "note": "全体の不満ではないと示す。関係が悪くならない。" }
+        {
+          "en": "Sorry, this is cold.",
+          "ja": "すみません、これが冷たいです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "事実だけを述べる。責める調子にならない。"
+        },
+        {
+          "en": "Excuse me, this dish is a bit cold.",
+          "ja": "すみません、この料理が少し冷たいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "a bit を入れると柔らかくなる。"
+        },
+        {
+          "en": "Could you heat this up, please?",
+          "ja": "これを温めていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "heat up は「温める」。次にどうしてほしいかまで伝わる。"
+        },
+        {
+          "en": "Would you mind warming this up for me?",
+          "ja": "こちらを温めていただけますでしょうか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "warm up も同じ意味。より柔らかい響き。"
+        },
+        {
+          "en": "I'm sorry to bother you, but I'm afraid this has gone cold.",
+          "ja": "お手数をおかけしますが、こちらが冷めてしまっているようです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "gone cold は「冷めてしまった」。丁寧で角が立たない。"
+        },
+        {
+          "en": "This is stone cold.",
+          "ja": "これ、完全に冷めてる。",
+          "register": "casual",
+          "style": "casual",
+          "note": "stone cold は「冷え切った」。強い表現なので相手を選ぶ。"
+        },
+        {
+          "en": "Is it supposed to be served cold?",
+          "ja": "これは冷たいまま出す料理でしょうか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "冷製料理の可能性を確かめる。恥をかかずに済む。"
+        },
+        {
+          "en": "Could I get this warmed up? It's lost its heat.",
+          "ja": "これを温め直していただけますか。冷めてしまっていて。",
+          "register": "polite",
+          "style": "basic",
+          "note": "理由を添えた依頼。素直で伝わりやすい。"
+        },
+        {
+          "en": "It took a while to arrive and it's gone cold — could you warm it?",
+          "ja": "少し時間がかかったせいか冷めています。温めていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "経緯を添えると、店側も状況を理解しやすい。"
+        },
+        {
+          "en": "No complaints otherwise — could this just be warmed up?",
+          "ja": "他は問題ありません。これだけ温めていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "全体の不満ではないと示す。関係が悪くならない。"
+        }
       ]
     },
     {
-      "id": "restaurant-027", "category": "restaurant", "difficulty": 1,
-      "place": "At a cafe", "listener": "a person at a shared table",
+      "id": "restaurant-027",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a cafe",
+      "listener": "a person at a shared table",
       "want": "You want to ask if you can sit at the empty seat.",
       "situationJa": "相席の空いている席に座ってよいか聞きたい。",
-      "tags": ["asking", "polite"],
+      "tags": [
+        "asking",
+        "polite"
+      ],
       "answers": [
-        { "en": "Is this seat taken?", "ja": "この席は空いていますか。", "register": "neutral", "style": "oneword", "note": "最も一般的。丸ごと覚えたい。" },
-        { "en": "Excuse me, is anyone sitting here?", "ja": "すみません、ここはどなたか座っていますか。", "register": "neutral", "style": "basic", "note": "人がいるかを尋ねる形。丁寧で自然。" },
-        { "en": "Do you mind if I sit here?", "ja": "ここに座ってもよろしいですか。", "register": "polite", "style": "request", "note": "許可を求める型。相手を立てた言い方。" },
-        { "en": "Would it be all right if I took this seat?", "ja": "こちらの席をお借りしてもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "改まった場面で。とても丁寧。" },
-        { "en": "Mind if I join you?", "ja": "ご一緒してもいい？", "register": "casual", "style": "casual", "note": "気さくな言い方。相席が普通の店で自然。" },
-        { "en": "Is there room here?", "ja": "ここ、空いていますか。", "register": "neutral", "style": "existence", "note": "スペースの有無を聞く。混雑時に使いやすい。" },
-        { "en": "Is this chair free?", "ja": "この椅子は空いていますか。", "register": "neutral", "style": "vocab", "note": "椅子だけ借りたいときにも使える。" },
-        { "en": "Sorry, could I take this chair?", "ja": "すみません、この椅子をお借りできますか。", "register": "polite", "style": "basic", "note": "別の席へ運びたいときはこちら。" },
-        { "en": "Everywhere else is full — would you mind if I sat here?", "ja": "他が満席でして、ここに座らせていただいてもよろしいですか。", "register": "polite", "style": "context", "note": "事情を言うと、相手も受け入れやすい。" },
-        { "en": "Only if you don't mind — is this seat free?", "ja": "ご迷惑でなければですが、こちらの席は空いていますか。", "register": "polite", "style": "considerate", "note": "断る余地を明確に残す。押しつけがましくない。" }
+        {
+          "en": "Is this seat taken?",
+          "ja": "この席は空いていますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も一般的。丸ごと覚えたい。"
+        },
+        {
+          "en": "Excuse me, is anyone sitting here?",
+          "ja": "すみません、ここはどなたか座っていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "人がいるかを尋ねる形。丁寧で自然。"
+        },
+        {
+          "en": "Do you mind if I sit here?",
+          "ja": "ここに座ってもよろしいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "許可を求める型。相手を立てた言い方。"
+        },
+        {
+          "en": "Would it be all right if I took this seat?",
+          "ja": "こちらの席をお借りしてもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場面で。とても丁寧。"
+        },
+        {
+          "en": "Mind if I join you?",
+          "ja": "ご一緒してもいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな言い方。相席が普通の店で自然。"
+        },
+        {
+          "en": "Is there room here?",
+          "ja": "ここ、空いていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "スペースの有無を聞く。混雑時に使いやすい。"
+        },
+        {
+          "en": "Is this chair free?",
+          "ja": "この椅子は空いていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "椅子だけ借りたいときにも使える。"
+        },
+        {
+          "en": "Sorry, could I take this chair?",
+          "ja": "すみません、この椅子をお借りできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "別の席へ運びたいときはこちら。"
+        },
+        {
+          "en": "Everywhere else is full — would you mind if I sat here?",
+          "ja": "他が満席でして、ここに座らせていただいてもよろしいですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと、相手も受け入れやすい。"
+        },
+        {
+          "en": "Only if you don't mind — is this seat free?",
+          "ja": "ご迷惑でなければですが、こちらの席は空いていますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る余地を明確に残す。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "restaurant-028", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-028",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask about the portion size before ordering.",
       "situationJa": "注文前に量がどのくらいか聞きたい。",
-      "tags": ["asking", "menu"],
+      "tags": [
+        "asking",
+        "menu"
+      ],
       "answers": [
-        { "en": "Is it big?", "ja": "量は多いですか。", "register": "casual", "style": "oneword", "note": "短いが通じる。気さくな店で。" },
-        { "en": "How big is the portion?", "ja": "一人前はどのくらいの量ですか。", "register": "neutral", "style": "basic", "note": "portion は「一人前の量」。覚えておくと便利。" },
-        { "en": "Is this enough for two people?", "ja": "これは2人で足りますか。", "register": "neutral", "style": "basic", "note": "分け合うつもりのときに。実用度が高い。" },
-        { "en": "Could you tell me roughly how large the portions are?", "ja": "だいたいの分量を教えていただけますか。", "register": "polite", "style": "request", "note": "roughly を入れると答えやすい。" },
-        { "en": "Would you say the portions are on the larger side?", "ja": "分量は多めのほうでしょうか。", "register": "formal", "style": "formal", "note": "on the larger side は「どちらかといえば多め」。控えめな聞き方。" },
-        { "en": "Is it a lot?", "ja": "けっこう量ある？", "register": "casual", "style": "casual", "note": "友人との会話のような軽さ。" },
-        { "en": "Is there a smaller size?", "ja": "小さいサイズはありますか。", "register": "neutral", "style": "existence", "note": "量が多そうなときの現実的な選択肢。" },
-        { "en": "Would it be too much for one person?", "ja": "1人には多すぎますか。", "register": "neutral", "style": "vocab", "note": "残さずに済むかの判断材料になる。" },
-        { "en": "We're planning to share — is this dish big enough for that?", "ja": "分けて食べるつもりなのですが、この料理で足りますか。", "register": "polite", "style": "context", "note": "目的を伝えると的確な助言がもらえる。" },
-        { "en": "I don't want to waste food — how big is this one?", "ja": "食べ残したくないので伺いますが、これはどのくらいの量ですか。", "register": "polite", "style": "considerate", "note": "理由が誠実に伝わる。店側も丁寧に答えてくれる。" }
+        {
+          "en": "Is it big?",
+          "ja": "量は多いですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短いが通じる。気さくな店で。"
+        },
+        {
+          "en": "How big is the portion?",
+          "ja": "一人前はどのくらいの量ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "portion は「一人前の量」。覚えておくと便利。"
+        },
+        {
+          "en": "Is this enough for two people?",
+          "ja": "これは2人で足りますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "分け合うつもりのときに。実用度が高い。"
+        },
+        {
+          "en": "Could you tell me roughly how large the portions are?",
+          "ja": "だいたいの分量を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "roughly を入れると答えやすい。"
+        },
+        {
+          "en": "Would you say the portions are on the larger side?",
+          "ja": "分量は多めのほうでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "on the larger side は「どちらかといえば多め」。控えめな聞き方。"
+        },
+        {
+          "en": "Is it a lot?",
+          "ja": "けっこう量ある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "友人との会話のような軽さ。"
+        },
+        {
+          "en": "Is there a smaller size?",
+          "ja": "小さいサイズはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "量が多そうなときの現実的な選択肢。"
+        },
+        {
+          "en": "Would it be too much for one person?",
+          "ja": "1人には多すぎますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "残さずに済むかの判断材料になる。"
+        },
+        {
+          "en": "We're planning to share — is this dish big enough for that?",
+          "ja": "分けて食べるつもりなのですが、この料理で足りますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "目的を伝えると的確な助言がもらえる。"
+        },
+        {
+          "en": "I don't want to waste food — how big is this one?",
+          "ja": "食べ残したくないので伺いますが、これはどのくらいの量ですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "理由が誠実に伝わる。店側も丁寧に答えてくれる。"
+        }
       ]
     },
     {
-      "id": "restaurant-029", "category": "restaurant", "difficulty": 1,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-029",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to order the same thing as your friend.",
       "situationJa": "友人と同じものを注文したい。",
-      "tags": ["ordering"],
+      "tags": [
+        "ordering"
+      ],
       "answers": [
-        { "en": "Same for me, please.", "ja": "私も同じものをお願いします。", "register": "neutral", "style": "oneword", "note": "実際いちばんよく使う。短くて確実。" },
-        { "en": "I'll have the same, please.", "ja": "同じものをお願いします。", "register": "neutral", "style": "basic", "note": "基本形。丁寧すぎず砕けすぎず。" },
-        { "en": "Make that two, please.", "ja": "それを2つお願いします。", "register": "neutral", "style": "vocab", "note": "Make that two は決まり文句。スマートな言い方。" },
-        { "en": "Could I have the same, please?", "ja": "私も同じものをいただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。改まった店でも使える。" },
-        { "en": "I'll have the same, if I may.", "ja": "よろしければ私も同じものを。", "register": "formal", "style": "formal", "note": "if I may を添えると格式が上がる。" },
-        { "en": "Same here.", "ja": "私も同じで。", "register": "casual", "style": "casual", "note": "最も短い。気さくな店で自然。" },
-        { "en": "Is it possible to get that with a different side?", "ja": "付け合わせだけ変えることはできますか。", "register": "neutral", "style": "existence", "note": "同じ料理でも一部変えたいときに。" },
-        { "en": "Two of those, please.", "ja": "それを2つお願いします。", "register": "neutral", "style": "basic", "note": "指をさしながら。まとめて頼めて速い。" },
-        { "en": "That looked good when it came out — I'll have the same.", "ja": "出てきたときにおいしそうだったので、私も同じものを。", "register": "neutral", "style": "context", "note": "他の客の料理を見て決めたときに使える。" },
-        { "en": "Whatever she's having looks great — I'll have that too.", "ja": "彼女が頼んだものがおいしそうなので、私も同じものを。", "register": "polite", "style": "considerate", "note": "連れを立てる言い方。場が和む。" }
+        {
+          "en": "Same for me, please.",
+          "ja": "私も同じものをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "実際いちばんよく使う。短くて確実。"
+        },
+        {
+          "en": "I'll have the same, please.",
+          "ja": "同じものをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。丁寧すぎず砕けすぎず。"
+        },
+        {
+          "en": "Make that two, please.",
+          "ja": "それを2つお願いします。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "Make that two は決まり文句。スマートな言い方。"
+        },
+        {
+          "en": "Could I have the same, please?",
+          "ja": "私も同じものをいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。改まった店でも使える。"
+        },
+        {
+          "en": "I'll have the same, if I may.",
+          "ja": "よろしければ私も同じものを。",
+          "register": "formal",
+          "style": "formal",
+          "note": "if I may を添えると格式が上がる。"
+        },
+        {
+          "en": "Same here.",
+          "ja": "私も同じで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "最も短い。気さくな店で自然。"
+        },
+        {
+          "en": "Is it possible to get that with a different side?",
+          "ja": "付け合わせだけ変えることはできますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "同じ料理でも一部変えたいときに。"
+        },
+        {
+          "en": "Two of those, please.",
+          "ja": "それを2つお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "指をさしながら。まとめて頼めて速い。"
+        },
+        {
+          "en": "That looked good when it came out — I'll have the same.",
+          "ja": "出てきたときにおいしそうだったので、私も同じものを。",
+          "register": "neutral",
+          "style": "context",
+          "note": "他の客の料理を見て決めたときに使える。"
+        },
+        {
+          "en": "Whatever she's having looks great — I'll have that too.",
+          "ja": "彼女が頼んだものがおいしそうなので、私も同じものを。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "連れを立てる言い方。場が和む。"
+        }
       ]
     },
     {
-      "id": "restaurant-030", "category": "restaurant", "difficulty": 2,
-      "place": "At a restaurant table", "listener": "a server",
+      "id": "restaurant-030",
+      "category": "restaurant",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant table",
+      "listener": "a server",
       "want": "You want to ask whether tipping is expected.",
       "situationJa": "チップが必要かどうか知りたい。",
-      "tags": ["asking", "payment"],
+      "tags": [
+        "asking",
+        "payment"
+      ],
       "answers": [
-        { "en": "Is tip included?", "ja": "チップは含まれていますか。", "register": "neutral", "style": "oneword", "note": "短くて確実。まずこれで足りる。" },
-        { "en": "Is service included in the bill?", "ja": "お会計にサービス料は含まれていますか。", "register": "neutral", "style": "basic", "note": "欧州ではこの聞き方が一般的。" },
-        { "en": "Should I leave a tip?", "ja": "チップを置いたほうがよいですか。", "register": "neutral", "style": "basic", "note": "率直な聞き方。恥ずかしがらずに聞いてよい。" },
-        { "en": "Could you tell me if a gratuity has been added?", "ja": "サービス料が加算されているか教えていただけますか。", "register": "polite", "style": "request", "note": "gratuity はチップの正式な語。伝票にこう書かれる。" },
-        { "en": "Might I ask whether service is included?", "ja": "サービス料が含まれているか伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "改まった店で。控えめで丁寧。" },
-        { "en": "Do I need to tip here?", "ja": "ここではチップは要りますか。", "register": "casual", "style": "casual", "note": "率直な口語。旅行者として聞いても自然。" },
-        { "en": "Is there a standard amount people usually leave?", "ja": "みなさんどのくらい置くのが普通ですか。", "register": "neutral", "style": "existence", "note": "相場を聞く型。金額で迷わずに済む。" },
-        { "en": "What's customary here?", "ja": "こちらでは何が通例ですか。", "register": "neutral", "style": "vocab", "note": "customary は「慣習の」。土地の習慣を尋ねる上品な言い方。" },
-        { "en": "I'm visiting from Japan and I'm not sure about tipping here — could you tell me?", "ja": "日本から来ていてチップの習慣がよく分からないのですが、教えていただけますか。", "register": "polite", "style": "context", "note": "旅行者だと伝えると、親切に教えてもらえる。" },
-        { "en": "I don't want to get it wrong — is tipping expected here?", "ja": "失礼があるといけないので伺いますが、こちらではチップは必要でしょうか。", "register": "polite", "style": "considerate", "note": "配慮を示す前置き。相手も答えやすい。" }
+        {
+          "en": "Is tip included?",
+          "ja": "チップは含まれていますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。まずこれで足りる。"
+        },
+        {
+          "en": "Is service included in the bill?",
+          "ja": "お会計にサービス料は含まれていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "欧州ではこの聞き方が一般的。"
+        },
+        {
+          "en": "Should I leave a tip?",
+          "ja": "チップを置いたほうがよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "率直な聞き方。恥ずかしがらずに聞いてよい。"
+        },
+        {
+          "en": "Could you tell me if a gratuity has been added?",
+          "ja": "サービス料が加算されているか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "gratuity はチップの正式な語。伝票にこう書かれる。"
+        },
+        {
+          "en": "Might I ask whether service is included?",
+          "ja": "サービス料が含まれているか伺ってもよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった店で。控えめで丁寧。"
+        },
+        {
+          "en": "Do I need to tip here?",
+          "ja": "ここではチップは要りますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な口語。旅行者として聞いても自然。"
+        },
+        {
+          "en": "Is there a standard amount people usually leave?",
+          "ja": "みなさんどのくらい置くのが普通ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相場を聞く型。金額で迷わずに済む。"
+        },
+        {
+          "en": "What's customary here?",
+          "ja": "こちらでは何が通例ですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "customary は「慣習の」。土地の習慣を尋ねる上品な言い方。"
+        },
+        {
+          "en": "I'm visiting from Japan and I'm not sure about tipping here — could you tell me?",
+          "ja": "日本から来ていてチップの習慣がよく分からないのですが、教えていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "旅行者だと伝えると、親切に教えてもらえる。"
+        },
+        {
+          "en": "I don't want to get it wrong — is tipping expected here?",
+          "ja": "失礼があるといけないので伺いますが、こちらではチップは必要でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "配慮を示す前置き。相手も答えやすい。"
+        }
       ]
     }
   ]

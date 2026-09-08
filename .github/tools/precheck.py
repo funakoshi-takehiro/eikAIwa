@@ -54,18 +54,50 @@ def read(p):
 # ==========================================================================
 # 1. 問題データ
 # ==========================================================================
-REQUIRED_SIT = ["id", "category", "difficulty", "place", "listener", "want",
-                "situationJa", "answers"]
+REQUIRED_SIT = ["id", "category", "level", "difficulty", "place", "listener",
+                "want", "situationJa", "answers"]
 REQUIRED_ANS = ["en", "ja", "register", "style", "note"]
 REGISTERS = {"casual", "neutral", "polite", "formal"}
 STYLES = {"oneword", "basic", "contraction", "request", "formal", "casual",
           "existence", "vocab", "context", "considerate", "indirect", "confirm",
-          "offer", "apology", "suggest"}
+          "offer", "apology", "suggest", "explain", "negotiate", "propose",
+          "decline", "complain", "reassure"}
 # 日本語文中に現れても正常なラテン文字語（必要になったら足す）
-ALLOWED_JA_LATIN = {"Wi-Fi", "iPhone", "iPad", "Web"}
+ALLOWED_JA_LATIN = {"Wi-Fi", "iPhone", "iPad", "Web", "SNS"}
 
 ANSWERS_PER_SITUATION = 10
 MIN_REGISTER_SPREAD = 3
+
+# 段階ごとの、解答に期待される文の数。
+#   min / max … 各解答が満たすべき範囲
+#   exact_ratio … 「ちょうど exact 文」であってほしい解答の最低割合
+# ★ は 1文が基本。ただし「問題を述べる → どうすればよいか尋ねる」のように、
+# 2文にするほうが自然な場面が実在する（例: 電車を乗り間違えたと伝える）。
+# そこを不正にすると使える言い方を捨てることになるので、
+# 「半数以上が1文」かつ「どれも2文以内」に留めている。
+# ★★ との違いは、★★ が10件すべてちょうど2文であること。
+SENTENCE_RULES = {
+    1: {"min": 1, "max": 2, "exact": 1, "exact_ratio": 0.5},
+    2: {"min": 2, "max": 2, "exact": 2, "exact_ratio": 1.0},
+    3: {"min": 3, "max": 5, "exact": None, "exact_ratio": 0.0},
+}
+
+# 文末とみなさない略語。ここを見落とすと "a.m." を2文と数えてしまう。
+_ABBREV = re.compile(
+    r"\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|vs|etc|e\.g|i\.e|a\.m|p\.m|U\.S|U\.K)\.")
+
+
+def count_sentences(text):
+    """英文の文数を数える。'.' '?' '!' の連なりを1つの終端として扱う。"""
+    t = _ABBREV.sub("X", (text or "").strip())
+    t = t.replace("...", "\u2026")
+    n = len(re.findall(r"[.?!]+(?:\s|$)", t))
+    return max(1, n)
+
+
+def level_file(cat_id, level):
+    """★ は <id>.json、★★/★★★ は <id>-2.json / <id>-3.json。"""
+    return "data/situations/%s%s.json" % (cat_id, "" if level == 1 else "-%d" % level)
 
 
 def check_content():
@@ -75,135 +107,173 @@ def check_content():
         return
 
     try:
-        cats = json.loads(read(cat_path))["categories"]
+        doc = json.loads(read(cat_path))
+        cats = doc["categories"]
+        levels = doc.get("levels") or []
     except Exception as e:
         err("data/categories.json を読めません: %s" % e)
         return
 
+    level_ids = [l["level"] for l in levels] or [1]
+    for lv in level_ids:
+        if lv not in SENTENCE_RULES:
+            err("categories.json の段階 %r に対応する文数ルールがありません" % lv)
+
     seen_ids = {}
-    grand_total = 0
-    planned_total = 0
+    per_level = dict((lv, 0) for lv in level_ids)
+    planned = dict((lv, 0) for lv in level_ids)
 
-    for c in cats:
-        cid = c["id"]
-        planned = c.get("count", 0)
-        planned_total += planned
-        path = os.path.join(ROOT, "data", "situations", "%s.json" % cid)
+    for lv in level_ids:
+        rule = SENTENCE_RULES.get(lv, SENTENCE_RULES[1])
+        for c in cats:
+            cid = c["id"]
+            want_n = (c.get("counts") or {}).get(str(lv), 0)
+            planned[lv] += want_n
+            rel = level_file(cid, lv)
+            path = os.path.join(ROOT, rel)
 
-        if not os.path.exists(path):
-            warn("未作成: data/situations/%s.json （予定 %d 問）" % (cid, planned))
-            continue
-
-        try:
-            doc = json.loads(read(path))
-        except Exception as e:
-            err("%s: JSON を読めません: %s" % (rel(path), e))
-            continue
-
-        sits = doc.get("situations")
-        if not isinstance(sits, list):
-            err("%s: situations が配列ではありません" % rel(path))
-            continue
-
-        grand_total += len(sits)
-        if len(sits) != planned:
-            warn("%s: %d 問（categories.json の予定は %d 問）"
-                 % (rel(path), len(sits), planned))
-
-        for s in sits:
-            sid = s.get("id", "(id なし)")
-            where = "%s [%s]" % (rel(path), sid)
-
-            for k in REQUIRED_SIT:
-                if k not in s or s[k] in (None, ""):
-                    err("%s: 項目 '%s' がありません" % (where, k))
-
-            if sid in seen_ids:
-                err("%s: id が重複しています（%s にも存在）" % (where, seen_ids[sid]))
-            else:
-                seen_ids[sid] = rel(path)
-
-            if s.get("category") != cid:
-                err("%s: category が '%s' になっています（'%s' のはず）"
-                    % (where, s.get("category"), cid))
-
-            d = s.get("difficulty")
-            if d not in (1, 2, 3):
-                err("%s: difficulty は 1..3 のいずれか（現在 %r）" % (where, d))
-
-            # situationJa に英単語が紛れ込んでいないか
-            # （下書き時に英語のまま残した箇所が実際に1件あった）
-            # ただし SIM / ATM / PC のように日本語でもそのまま使う
-            # 全大文字の略語は正常なので除く。拾いたいのは "angry" のような
-            # 小文字の普通の英単語。
-            sja = s.get("situationJa") or ""
-            for m_en in re.finditer(r"[A-Za-z][A-Za-z-]{2,}", sja):
-                w = m_en.group()
-                if w.isupper():
-                    continue          # SIM, ATM, JR などの略語
-                if w in ALLOWED_JA_LATIN:
-                    continue
-                err("%s: situationJa に英単語が残っています: %r" % (where, w))
-
-            want = s.get("want", "")
-            if not re.match(r"^You want to |^You want ", want):
-                err("%s: want は 'You want to …' の形で書いてください（現在 %r）"
-                    % (where, want[:60]))
-            if not want.endswith("."):
-                err("%s: want はピリオドで終えてください" % where)
-
-            ans = s.get("answers")
-            if not isinstance(ans, list):
-                err("%s: answers が配列ではありません" % where)
+            if not os.path.exists(path):
+                if want_n:
+                    warn("未作成: %s （%s / 予定 %d 問）"
+                         % (rel, EIK_STARS.get(lv, "?"), want_n))
                 continue
 
-            if len(ans) != ANSWERS_PER_SITUATION:
-                err("%s: 解答が %d 件です（%d 件にしてください）"
-                    % (where, len(ans), ANSWERS_PER_SITUATION))
+            try:
+                d = json.loads(read(path))
+            except Exception as e:
+                err("%s: JSON を読めません: %s" % (rel, e))
+                continue
 
-            ens = []
-            regs = set()
-            for i, a in enumerate(ans):
-                aw = "%s answers[%d]" % (where, i)
-                for k in REQUIRED_ANS:
-                    if k not in a or a[k] in (None, ""):
-                        err("%s: 項目 '%s' がありません" % (aw, k))
-                r = a.get("register")
-                if r not in REGISTERS:
-                    err("%s: register が不正です: %r（%s のいずれか）"
-                        % (aw, r, "/".join(sorted(REGISTERS))))
-                else:
-                    regs.add(r)
-                st = a.get("style")
-                if st and st not in STYLES:
-                    warn("%s: 見慣れない style: %r" % (aw, st))
-                en = (a.get("en") or "").strip()
-                if en:
-                    ens.append(en.lower().rstrip(".?!"))
-                # 日本語訳に英字だけしか無い等の取り違えを拾う
-                ja = a.get("ja") or ""
-                if ja and not re.search(r"[ぁ-んァ-ヶ一-龠]", ja):
-                    err("%s: ja に日本語が含まれていません: %r" % (aw, ja[:40]))
-                # ハングルの混入。IME の取り違えで実際に1件混入したので機械で止める
-                for field in ("ja", "note"):
-                    v = a.get(field) or ""
-                    m = re.search(r"[\uac00-\ud7a3\u1100-\u11ff\u3130-\u318f]", v)
-                    if m:
-                        err("%s: %s にハングルが混入しています: %r"
-                            % (aw, field, m.group()))
+            sits = d.get("situations")
+            if not isinstance(sits, list):
+                err("%s: situations が配列ではありません" % rel)
+                continue
 
-            dup = set(x for x in ens if ens.count(x) > 1)
-            if dup:
-                err("%s: 同じ状況の中で英文が重複しています: %s"
-                    % (where, ", ".join(sorted(dup))[:120]))
+            per_level[lv] += len(sits)
+            if len(sits) != want_n:
+                warn("%s: %d 問（categories.json の予定は %d 問）"
+                     % (rel, len(sits), want_n))
 
-            if len(regs) < MIN_REGISTER_SPREAD:
-                err("%s: 丁寧さの幅が足りません（register が %d 種類、%d 種類以上必要）"
-                    " — 言い換えの羅列になっていないか確認してください"
-                    % (where, len(regs), MIN_REGISTER_SPREAD))
+            for s_ in sits:
+                check_situation(s_, rel, cid, lv, rule, seen_ids)
 
-    notes.append("状況 %d 問 / 予定 %d 問（解答 %d 件）"
-                 % (grand_total, planned_total, grand_total * ANSWERS_PER_SITUATION))
+    parts = []
+    for lv in level_ids:
+        parts.append("%s %d/%d問" % (EIK_STARS.get(lv, "?"), per_level[lv], planned[lv]))
+    total = sum(per_level.values())
+    notes.append("　".join(parts) + "　合計 %d問 / %d解答" % (total, total * ANSWERS_PER_SITUATION))
+
+
+EIK_STARS = {1: "★", 2: "★★", 3: "★★★"}
+
+
+def check_situation(s, rel, cid, lv, rule, seen_ids):
+    sid = s.get("id", "(id なし)")
+    where = "%s [%s]" % (rel, sid)
+
+    for k in REQUIRED_SIT:
+        if k not in s or s[k] in (None, ""):
+            err("%s: 項目 '%s' がありません" % (where, k))
+
+    if sid in seen_ids:
+        err("%s: id が重複しています（%s にも存在）" % (where, seen_ids[sid]))
+    else:
+        seen_ids[sid] = rel
+
+    if s.get("category") != cid:
+        err("%s: category が '%s' になっています（'%s' のはず）"
+            % (where, s.get("category"), cid))
+
+    if s.get("level") != lv:
+        err("%s: level が %r です（このファイルは %s なので %d のはず）"
+            % (where, s.get("level"), EIK_STARS.get(lv, "?"), lv))
+
+    # id にも段階が入っていること（ブックマークから段階を判別するのに使う）
+    expect_prefix = cid + ("-" if lv == 1 else "-%d-" % lv)
+    if not str(sid).startswith(expect_prefix):
+        err("%s: id は '%s…' で始めてください（段階を id から判別しています）"
+            % (where, expect_prefix))
+
+    d = s.get("difficulty")
+    if d not in (1, 2, 3):
+        err("%s: difficulty は 1..3 のいずれか（現在 %r）" % (where, d))
+
+    sja = s.get("situationJa") or ""
+    for m_en in re.finditer(r"[A-Za-z][A-Za-z-]{2,}", sja):
+        w = m_en.group()
+        if w.isupper() or w in ALLOWED_JA_LATIN:
+            continue
+        err("%s: situationJa に英単語が残っています: %r" % (where, w))
+
+    want = s.get("want", "")
+    if not re.match(r"^You want to |^You want ", want):
+        err("%s: want は 'You want to …' の形で書いてください（現在 %r）"
+            % (where, want[:60]))
+    if not want.endswith("."):
+        err("%s: want はピリオドで終えてください" % where)
+
+    ans = s.get("answers")
+    if not isinstance(ans, list):
+        err("%s: answers が配列ではありません" % where)
+        return
+
+    if len(ans) != ANSWERS_PER_SITUATION:
+        err("%s: 解答が %d 件です（%d 件にしてください）"
+            % (where, len(ans), ANSWERS_PER_SITUATION))
+
+    ens = []
+    regs = set()
+    exact_hits = 0
+    for i, a in enumerate(ans):
+        aw = "%s answers[%d]" % (where, i)
+        for k in REQUIRED_ANS:
+            if k not in a or a[k] in (None, ""):
+                err("%s: 項目 '%s' がありません" % (aw, k))
+        r = a.get("register")
+        if r not in REGISTERS:
+            err("%s: register が不正です: %r（%s のいずれか）"
+                % (aw, r, "/".join(sorted(REGISTERS))))
+        else:
+            regs.add(r)
+        st = a.get("style")
+        if st and st not in STYLES:
+            warn("%s: 見慣れない style: %r" % (aw, st))
+
+        en = (a.get("en") or "").strip()
+        if en:
+            ens.append(en.lower().rstrip(".?!"))
+            n = count_sentences(en)
+            if n < rule["min"] or n > rule["max"]:
+                err("%s: %s は %d〜%d文のはずですが %d文です: %r"
+                    % (aw, EIK_STARS.get(lv, "?"), rule["min"], rule["max"], n, en[:70]))
+            if rule["exact"] is not None and n == rule["exact"]:
+                exact_hits += 1
+
+        ja = a.get("ja") or ""
+        if ja and not re.search(r"[ぁ-んァ-ヶ一-龠]", ja):
+            err("%s: ja に日本語が含まれていません: %r" % (aw, ja[:40]))
+        for field in ("ja", "note"):
+            v = a.get(field) or ""
+            m = re.search(r"[\uac00-\ud7a3\u1100-\u11ff\u3130-\u318f]", v)
+            if m:
+                err("%s: %s にハングルが混入しています: %r" % (aw, field, m.group()))
+
+    dup = set(x for x in ens if ens.count(x) > 1)
+    if dup:
+        err("%s: 同じ状況の中で英文が重複しています: %s"
+            % (where, ", ".join(sorted(dup))[:120]))
+
+    if len(regs) < MIN_REGISTER_SPREAD:
+        err("%s: 丁寧さの幅が足りません（register が %d 種類、%d 種類以上必要）"
+            " — 言い換えの羅列になっていないか確認してください"
+            % (where, len(regs), MIN_REGISTER_SPREAD))
+
+    if rule["exact"] is not None and ens:
+        need = int(round(len(ens) * rule["exact_ratio"]))
+        if exact_hits < need:
+            err("%s: ちょうど%d文の解答が %d件しかありません（%d件以上必要）"
+                " — この段階は「%d文で答える」練習です"
+                % (where, rule["exact"], exact_hits, need, rule["exact"]))
 
 
 # ==========================================================================
@@ -311,11 +381,22 @@ def check_sw_precache():
         cat_path = os.path.join(ROOT, "data", "categories.json")
         if os.path.exists(cat_path):
             try:
-                real = set(c["id"] for c in json.loads(read(cat_path))["categories"])
+                doc = json.loads(read(cat_path))
+                real = set(c["id"] for c in doc["categories"])
                 if sw_cats != real:
                     err("sw.js の CATEGORY_IDS が categories.json と一致しません。"
                         "不足: %s / 余分: %s"
                         % (sorted(real - sw_cats) or "なし", sorted(sw_cats - real) or "なし"))
+                # 段階の一覧も揃っているか
+                m3 = re.search(r"const LEVELS = \[(.*?)\];", src, re.S)
+                if not m3:
+                    err("sw.js の LEVELS を読み取れません")
+                else:
+                    sw_levels = set(int(x) for x in re.findall(r"\d+", m3.group(1)))
+                    real_levels = set(l["level"] for l in (doc.get("levels") or []))
+                    if real_levels and sw_levels != real_levels:
+                        err("sw.js の LEVELS が categories.json と一致しません: %s vs %s"
+                            % (sorted(sw_levels), sorted(real_levels)))
             except Exception:
                 pass
     else:

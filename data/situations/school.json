@@ -2,288 +2,1283 @@
   "category": "school",
   "situations": [
     {
-      "id": "school-001", "category": "school", "difficulty": 1,
-      "place": "In a classroom", "listener": "a teacher",
+      "id": "school-001",
+      "category": "school",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a classroom",
+      "listener": "a teacher",
       "want": "You want to say you do not understand the explanation.",
       "situationJa": "説明が分からないと伝えたい。",
-      "tags": ["clarifying"],
+      "tags": [
+        "clarifying"
+      ],
       "answers": [
-        { "en": "Sorry, I don't understand.", "ja": "すみません、分かりません。", "register": "neutral", "style": "basic", "note": "率直で失礼にならない。まずこれ。" },
-        { "en": "Sorry, I'm lost.", "ja": "すみません、ついていけていません。", "register": "casual", "style": "oneword", "note": "I'm lost は「話が分からない」。自然な口語。" },
-        { "en": "Could you explain that again?", "ja": "もう一度説明していただけますか。", "register": "polite", "style": "request", "note": "最も使う頼み方。丁寧で自然。" },
-        { "en": "Could you go over that part once more?", "ja": "その部分をもう一度おさらいしていただけますか。", "register": "polite", "style": "basic", "note": "go over は「おさらいする」。範囲を絞れる。" },
-        { "en": "I'm afraid I didn't quite follow that section.", "ja": "恐れ入りますが、その箇所を十分理解できませんでした。", "register": "formal", "style": "formal", "note": "follow は「話について行く」。改まった場で。" },
-        { "en": "Wait, what?", "ja": "え、どういうこと？", "register": "casual", "style": "casual", "note": "非常にくだけた。親しい先生や友人に。" },
-        { "en": "Is there another way to think about it?", "ja": "別の考え方はありますか。", "register": "neutral", "style": "existence", "note": "説明の角度を変えてもらえる。効果的。" },
-        { "en": "Could you give an example?", "ja": "例を挙げていただけますか。", "register": "polite", "style": "vocab", "note": "抽象的な説明に対して。理解が一気に進む。" },
-        { "en": "I followed up to the second step, but I lost you after that.", "ja": "2段階目までは分かりましたが、その後が分かりませんでした。", "register": "polite", "style": "context", "note": "どこまで分かったかを示す。最も助かる質問。" },
-        { "en": "Sorry if it's obvious — could you explain it once more?", "ja": "分かりきったことでしたらすみません、もう一度お願いできますか。", "register": "polite", "style": "considerate", "note": "聞くことへの心理的な壁を下げる前置き。" }
+        {
+          "en": "Sorry, I don't understand.",
+          "ja": "すみません、分かりません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "率直で失礼にならない。まずこれ。"
+        },
+        {
+          "en": "Sorry, I'm lost.",
+          "ja": "すみません、ついていけていません。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "I'm lost は「話が分からない」。自然な口語。"
+        },
+        {
+          "en": "Could you explain that again?",
+          "ja": "もう一度説明していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "最も使う頼み方。丁寧で自然。"
+        },
+        {
+          "en": "Could you go over that part once more?",
+          "ja": "その部分をもう一度おさらいしていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "go over は「おさらいする」。範囲を絞れる。"
+        },
+        {
+          "en": "I'm afraid I didn't quite follow that section.",
+          "ja": "恐れ入りますが、その箇所を十分理解できませんでした。",
+          "register": "formal",
+          "style": "formal",
+          "note": "follow は「話について行く」。改まった場で。"
+        },
+        {
+          "en": "Wait, what?",
+          "ja": "え、どういうこと？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた。親しい先生や友人に。"
+        },
+        {
+          "en": "Is there another way to think about it?",
+          "ja": "別の考え方はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "説明の角度を変えてもらえる。効果的。"
+        },
+        {
+          "en": "Could you give an example?",
+          "ja": "例を挙げていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "抽象的な説明に対して。理解が一気に進む。"
+        },
+        {
+          "en": "I followed up to the second step, but I lost you after that.",
+          "ja": "2段階目までは分かりましたが、その後が分かりませんでした。",
+          "register": "polite",
+          "style": "context",
+          "note": "どこまで分かったかを示す。最も助かる質問。"
+        },
+        {
+          "en": "Sorry if it's obvious — could you explain it once more?",
+          "ja": "分かりきったことでしたらすみません、もう一度お願いできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "聞くことへの心理的な壁を下げる前置き。"
+        }
       ]
     },
     {
-      "id": "school-002", "category": "school", "difficulty": 2,
-      "place": "After class", "listener": "a teacher",
+      "id": "school-002",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "After class",
+      "listener": "a teacher",
       "want": "You want to ask for an extension on your assignment.",
       "situationJa": "課題の締切を延ばしてほしい。",
-      "tags": ["requesting", "deadline"],
+      "tags": [
+        "requesting",
+        "deadline"
+      ],
       "answers": [
-        { "en": "Could I have an extension?", "ja": "締切を延ばしていただけますか。", "register": "polite", "style": "request", "note": "extension は「延長」。学校での必須語。" },
-        { "en": "I need more time, I'm afraid.", "ja": "申し訳ありませんが、もう少し時間が必要です。", "register": "neutral", "style": "oneword", "note": "率直に伝える。まずこれ。" },
-        { "en": "Would it be possible to hand it in on Monday?", "ja": "月曜に提出することは可能でしょうか。", "register": "polite", "style": "basic", "note": "hand in は「提出する」。希望日を明示すると通りやすい。" },
-        { "en": "Is there a process for requesting an extension?", "ja": "延長を申請する手続きはありますか。", "register": "neutral", "style": "existence", "note": "正式な制度があることも。まず確認する形。" },
-        { "en": "I would like to request an extension to the submission deadline.", "ja": "提出期限の延長を申請したく存じます。", "register": "formal", "style": "formal", "note": "submission deadline は「提出期限」。正式な依頼。" },
-        { "en": "Any chance of a few more days?", "ja": "あと数日いただけたりしますか。", "register": "casual", "style": "casual", "note": "控えめな打診。断りやすい形。" },
-        { "en": "Will it affect my grade?", "ja": "成績に影響しますか。", "register": "neutral", "style": "vocab", "note": "延長の代償を確認する。判断材料になる。" },
-        { "en": "I've done most of it — I just need two more days.", "ja": "大半は終わっています。あと2日いただければ。", "register": "neutral", "style": "basic", "note": "進捗を示す。怠けているのではないと伝わる。" },
-        { "en": "I've been ill this week and haven't been able to finish — could I have until Monday?", "ja": "今週体調を崩して終えられませんでした。月曜までいただけますか。", "register": "polite", "style": "context", "note": "理由と希望日を一度に。最も通りやすい形。" },
-        { "en": "I understand if not — but would an extension be possible?", "ja": "難しければ承知します。延長は可能でしょうか。", "register": "polite", "style": "considerate", "note": "断られても受け入れる姿勢。印象がよい。" }
+        {
+          "en": "Could I have an extension?",
+          "ja": "締切を延ばしていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "extension は「延長」。学校での必須語。"
+        },
+        {
+          "en": "I need more time, I'm afraid.",
+          "ja": "申し訳ありませんが、もう少し時間が必要です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "率直に伝える。まずこれ。"
+        },
+        {
+          "en": "Would it be possible to hand it in on Monday?",
+          "ja": "月曜に提出することは可能でしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "hand in は「提出する」。希望日を明示すると通りやすい。"
+        },
+        {
+          "en": "Is there a process for requesting an extension?",
+          "ja": "延長を申請する手続きはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "正式な制度があることも。まず確認する形。"
+        },
+        {
+          "en": "I would like to request an extension to the submission deadline.",
+          "ja": "提出期限の延長を申請したく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "submission deadline は「提出期限」。正式な依頼。"
+        },
+        {
+          "en": "Any chance of a few more days?",
+          "ja": "あと数日いただけたりしますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "控えめな打診。断りやすい形。"
+        },
+        {
+          "en": "Will it affect my grade?",
+          "ja": "成績に影響しますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "延長の代償を確認する。判断材料になる。"
+        },
+        {
+          "en": "I've done most of it — I just need two more days.",
+          "ja": "大半は終わっています。あと2日いただければ。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "進捗を示す。怠けているのではないと伝わる。"
+        },
+        {
+          "en": "I've been ill this week and haven't been able to finish — could I have until Monday?",
+          "ja": "今週体調を崩して終えられませんでした。月曜までいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由と希望日を一度に。最も通りやすい形。"
+        },
+        {
+          "en": "I understand if not — but would an extension be possible?",
+          "ja": "難しければ承知します。延長は可能でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断られても受け入れる姿勢。印象がよい。"
+        }
       ]
     },
     {
-      "id": "school-003", "category": "school", "difficulty": 1,
-      "place": "In a classroom", "listener": "a teacher",
+      "id": "school-003",
+      "category": "school",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a classroom",
+      "listener": "a teacher",
       "want": "You want to ask how to spell a word.",
       "situationJa": "単語の綴りを聞きたい。",
-      "tags": ["asking"],
+      "tags": [
+        "asking"
+      ],
       "answers": [
-        { "en": "How do you spell that?", "ja": "それはどう綴りますか。", "register": "neutral", "style": "basic", "note": "基本形。あらゆる場面で使える。" },
-        { "en": "Spelling?", "ja": "綴りは？", "register": "casual", "style": "oneword", "note": "ノートを見せながら。短くても通じる。" },
-        { "en": "Could you spell that for me?", "ja": "綴りを教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。誰にでも使える。" },
-        { "en": "Is that with one L or two?", "ja": "それはLが1つですか、2つですか。", "register": "neutral", "style": "basic", "note": "具体的に確認する。最も確実。" },
-        { "en": "Would you mind writing that down?", "ja": "書いていただけますでしょうか。", "register": "formal", "style": "formal", "note": "聞き取りに頼らない。最も確実な方法。" },
-        { "en": "How's that spelled?", "ja": "それってどう書くの？", "register": "casual", "style": "casual", "note": "気さくな口語。友人同士で。" },
-        { "en": "Is there a silent letter in it?", "ja": "発音しない文字はありますか。", "register": "neutral", "style": "existence", "note": "英語の綴りの難所。良い質問になる。" },
-        { "en": "Could you say it letter by letter?", "ja": "1文字ずつ言っていただけますか。", "register": "polite", "style": "vocab", "note": "電話などで確実に伝える方法。" },
-        { "en": "I want to look it up later — how is it spelled?", "ja": "後で調べたいので、綴りを教えてください。", "register": "polite", "style": "context", "note": "理由を添えると自然。学習意欲も伝わる。" },
-        { "en": "Sorry, I know it's basic — how do you spell it?", "ja": "基本的なことですみません、綴りはどうでしょうか。", "register": "polite", "style": "considerate", "note": "聞きにくさを下げる前置き。" }
+        {
+          "en": "How do you spell that?",
+          "ja": "それはどう綴りますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。あらゆる場面で使える。"
+        },
+        {
+          "en": "Spelling?",
+          "ja": "綴りは？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "ノートを見せながら。短くても通じる。"
+        },
+        {
+          "en": "Could you spell that for me?",
+          "ja": "綴りを教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。誰にでも使える。"
+        },
+        {
+          "en": "Is that with one L or two?",
+          "ja": "それはLが1つですか、2つですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体的に確認する。最も確実。"
+        },
+        {
+          "en": "Would you mind writing that down?",
+          "ja": "書いていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "聞き取りに頼らない。最も確実な方法。"
+        },
+        {
+          "en": "How's that spelled?",
+          "ja": "それってどう書くの？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな口語。友人同士で。"
+        },
+        {
+          "en": "Is there a silent letter in it?",
+          "ja": "発音しない文字はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "英語の綴りの難所。良い質問になる。"
+        },
+        {
+          "en": "Could you say it letter by letter?",
+          "ja": "1文字ずつ言っていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "電話などで確実に伝える方法。"
+        },
+        {
+          "en": "I want to look it up later — how is it spelled?",
+          "ja": "後で調べたいので、綴りを教えてください。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると自然。学習意欲も伝わる。"
+        },
+        {
+          "en": "Sorry, I know it's basic — how do you spell it?",
+          "ja": "基本的なことですみません、綴りはどうでしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "聞きにくさを下げる前置き。"
+        }
       ]
     },
     {
-      "id": "school-004", "category": "school", "difficulty": 2,
-      "place": "In a classroom", "listener": "a teacher",
+      "id": "school-004",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a classroom",
+      "listener": "a teacher",
       "want": "You want to ask a question during the lesson.",
       "situationJa": "授業中に質問したい。",
-      "tags": ["asking"],
+      "tags": [
+        "asking"
+      ],
       "answers": [
-        { "en": "Could I ask a question?", "ja": "質問してもよいですか。", "register": "polite", "style": "request", "note": "基本形。授業中の定番。" },
-        { "en": "Sorry, quick question.", "ja": "すみません、手短に質問です。", "register": "neutral", "style": "oneword", "note": "短いと予告する。割り込みやすい。" },
-        { "en": "Can I ask something about the last slide?", "ja": "前のスライドについて質問してもよいですか。", "register": "neutral", "style": "basic", "note": "対象を明示。答えが的確になる。" },
-        { "en": "Is now a good time for questions?", "ja": "今、質問してもよいタイミングですか。", "register": "polite", "style": "existence", "note": "授業の流れを尊重する。丁寧。" },
-        { "en": "If I may, I have a question about the second point.", "ja": "よろしければ、2つ目の点について質問がございます。", "register": "formal", "style": "formal", "note": "改まった場で。上品な割り込み方。" },
-        { "en": "Quick question —", "ja": "手短に質問。", "register": "casual", "style": "casual", "note": "気さくな授業で。テンポよく聞ける。" },
-        { "en": "Should I save questions for the end?", "ja": "質問は最後にまとめたほうがよいですか。", "register": "polite", "style": "vocab", "note": "先生の進め方を確認する。配慮が伝わる。" },
-        { "en": "Could I come back to this after class?", "ja": "授業後に伺ってもよいですか。", "register": "polite", "style": "basic", "note": "授業を止めない選択。丁寧な配慮。" },
-        { "en": "You mentioned the exception earlier — could you say more about that?", "ja": "先ほど例外に触れられましたね。もう少し伺えますか。", "register": "polite", "style": "context", "note": "話を聞いている証拠になる。良い質問。" },
-        { "en": "I don't want to slow us down — but could I ask one thing?", "ja": "進行を遅らせたくないのですが、一点伺ってもよいですか。", "register": "polite", "style": "considerate", "note": "配慮を示す。歓迎される質問の仕方。" }
+        {
+          "en": "Could I ask a question?",
+          "ja": "質問してもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。授業中の定番。"
+        },
+        {
+          "en": "Sorry, quick question.",
+          "ja": "すみません、手短に質問です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短いと予告する。割り込みやすい。"
+        },
+        {
+          "en": "Can I ask something about the last slide?",
+          "ja": "前のスライドについて質問してもよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "対象を明示。答えが的確になる。"
+        },
+        {
+          "en": "Is now a good time for questions?",
+          "ja": "今、質問してもよいタイミングですか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "授業の流れを尊重する。丁寧。"
+        },
+        {
+          "en": "If I may, I have a question about the second point.",
+          "ja": "よろしければ、2つ目の点について質問がございます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。上品な割り込み方。"
+        },
+        {
+          "en": "Quick question —",
+          "ja": "手短に質問。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな授業で。テンポよく聞ける。"
+        },
+        {
+          "en": "Should I save questions for the end?",
+          "ja": "質問は最後にまとめたほうがよいですか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "先生の進め方を確認する。配慮が伝わる。"
+        },
+        {
+          "en": "Could I come back to this after class?",
+          "ja": "授業後に伺ってもよいですか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "授業を止めない選択。丁寧な配慮。"
+        },
+        {
+          "en": "You mentioned the exception earlier — could you say more about that?",
+          "ja": "先ほど例外に触れられましたね。もう少し伺えますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "話を聞いている証拠になる。良い質問。"
+        },
+        {
+          "en": "I don't want to slow us down — but could I ask one thing?",
+          "ja": "進行を遅らせたくないのですが、一点伺ってもよいですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "配慮を示す。歓迎される質問の仕方。"
+        }
       ]
     },
     {
-      "id": "school-005", "category": "school", "difficulty": 2,
-      "place": "After class", "listener": "a classmate",
+      "id": "school-005",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "After class",
+      "listener": "a classmate",
       "want": "You want to ask to borrow their notes.",
       "situationJa": "ノートを貸してほしい。",
-      "tags": ["requesting"],
+      "tags": [
+        "requesting"
+      ],
       "answers": [
-        { "en": "Could I borrow your notes?", "ja": "ノートを貸していただけますか。", "register": "polite", "style": "request", "note": "基本形。最も使う頼み方。" },
-        { "en": "Can I see your notes?", "ja": "ノートを見せてもらえますか。", "register": "neutral", "style": "basic", "note": "borrow より軽い。その場で見る場合に。" },
-        { "en": "Notes?", "ja": "ノート、いい？", "register": "casual", "style": "oneword", "note": "親しい友人に。最短。" },
-        { "en": "Would you mind sharing your notes from Tuesday?", "ja": "火曜のノートを共有していただけますでしょうか。", "register": "polite", "style": "basic", "note": "日付を明示。相手が探しやすい。" },
-        { "en": "I'd be very grateful if I could look at your notes.", "ja": "ノートを拝見できますと大変助かります。", "register": "formal", "style": "formal", "note": "改まった依頼。まだ親しくない相手に。" },
-        { "en": "Can I copy your notes?", "ja": "ノート写させて。", "register": "casual", "style": "casual", "note": "親しい友人に。率直な言い方。" },
-        { "en": "Is there anything I really missed?", "ja": "本当に押さえるべき点はありましたか。", "register": "neutral", "style": "existence", "note": "ノートを借りずに要点だけ聞ける。相手の負担が軽い。" },
-        { "en": "Could you send me a photo of them?", "ja": "写真を送っていただけますか。", "register": "polite", "style": "vocab", "note": "現実的で最も手軽。相手も返しやすい。" },
-        { "en": "I was ill on Tuesday — could I borrow your notes?", "ja": "火曜は体調を崩していました。ノートを貸していただけますか。", "register": "polite", "style": "context", "note": "理由を添えると、快く貸してもらえる。" },
-        { "en": "Only if you're not using them — could I have a look?", "ja": "使っていなければで結構ですが、見せていただけますか。", "register": "polite", "style": "considerate", "note": "相手の都合を先に。押しつけがましくない。" }
+        {
+          "en": "Could I borrow your notes?",
+          "ja": "ノートを貸していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。最も使う頼み方。"
+        },
+        {
+          "en": "Can I see your notes?",
+          "ja": "ノートを見せてもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "borrow より軽い。その場で見る場合に。"
+        },
+        {
+          "en": "Notes?",
+          "ja": "ノート、いい？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "親しい友人に。最短。"
+        },
+        {
+          "en": "Would you mind sharing your notes from Tuesday?",
+          "ja": "火曜のノートを共有していただけますでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "日付を明示。相手が探しやすい。"
+        },
+        {
+          "en": "I'd be very grateful if I could look at your notes.",
+          "ja": "ノートを拝見できますと大変助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった依頼。まだ親しくない相手に。"
+        },
+        {
+          "en": "Can I copy your notes?",
+          "ja": "ノート写させて。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい友人に。率直な言い方。"
+        },
+        {
+          "en": "Is there anything I really missed?",
+          "ja": "本当に押さえるべき点はありましたか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "ノートを借りずに要点だけ聞ける。相手の負担が軽い。"
+        },
+        {
+          "en": "Could you send me a photo of them?",
+          "ja": "写真を送っていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "現実的で最も手軽。相手も返しやすい。"
+        },
+        {
+          "en": "I was ill on Tuesday — could I borrow your notes?",
+          "ja": "火曜は体調を崩していました。ノートを貸していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、快く貸してもらえる。"
+        },
+        {
+          "en": "Only if you're not using them — could I have a look?",
+          "ja": "使っていなければで結構ですが、見せていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の都合を先に。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "school-006", "category": "school", "difficulty": 2,
-      "place": "In a seminar", "listener": "the group",
+      "id": "school-006",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a seminar",
+      "listener": "the group",
       "want": "You want to share your opinion in a discussion.",
       "situationJa": "議論で自分の意見を述べたい。",
-      "tags": ["opinion"],
+      "tags": [
+        "opinion"
+      ],
       "answers": [
-        { "en": "I think that…", "ja": "私は…だと思います。", "register": "neutral", "style": "oneword", "note": "最も基本。まずこれが言えれば参加できる。" },
-        { "en": "In my view, the second option is stronger.", "ja": "私の見方では、2つ目の案のほうが強いです。", "register": "neutral", "style": "basic", "note": "in my view は「私の見方では」。意見だと明示できる。" },
-        { "en": "Could I add a point here?", "ja": "ここで一点付け加えてもよいですか。", "register": "polite", "style": "request", "note": "割り込みつつ意見を出せる。丁寧。" },
-        { "en": "I'd argue that the data suggests otherwise.", "ja": "データはむしろ逆を示していると考えます。", "register": "neutral", "style": "vocab", "note": "I'd argue は「〜と論じたい」。学術的で説得力がある。" },
-        { "en": "If I may, I'd like to offer a different interpretation.", "ja": "よろしければ、別の解釈をお示ししたいと存じます。", "register": "formal", "style": "formal", "note": "interpretation は「解釈」。改まった場で。" },
-        { "en": "Yeah, I reckon so too.", "ja": "うん、私もそう思います。", "register": "casual", "style": "casual", "note": "reckon は英国・豪州の口語。気さくな議論で。" },
-        { "en": "Is there evidence for that, though?", "ja": "ただ、それを裏づける根拠はありますか。", "register": "neutral", "style": "existence", "note": "質問の形で異議を示す。学術的に有効。" },
-        { "en": "Building on what Anna said —", "ja": "アンナの意見に付け加えますと。", "register": "neutral", "style": "basic", "note": "build on は「〜を土台にする」。議論を発展させる型。" },
-        { "en": "In the reading, the author made a similar point about context.", "ja": "課題文献でも著者が文脈について同様の指摘をしていました。", "register": "polite", "style": "context", "note": "文献に触れる。準備してきたことが伝わる。" },
-        { "en": "I may be off base here — but could it also be read this way?", "ja": "的外れかもしれませんが、こうも読めないでしょうか。", "register": "polite", "style": "considerate", "note": "off base は「見当違い」。自信がなくても発言できる。" }
+        {
+          "en": "I think that…",
+          "ja": "私は…だと思います。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も基本。まずこれが言えれば参加できる。"
+        },
+        {
+          "en": "In my view, the second option is stronger.",
+          "ja": "私の見方では、2つ目の案のほうが強いです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "in my view は「私の見方では」。意見だと明示できる。"
+        },
+        {
+          "en": "Could I add a point here?",
+          "ja": "ここで一点付け加えてもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "割り込みつつ意見を出せる。丁寧。"
+        },
+        {
+          "en": "I'd argue that the data suggests otherwise.",
+          "ja": "データはむしろ逆を示していると考えます。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "I'd argue は「〜と論じたい」。学術的で説得力がある。"
+        },
+        {
+          "en": "If I may, I'd like to offer a different interpretation.",
+          "ja": "よろしければ、別の解釈をお示ししたいと存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "interpretation は「解釈」。改まった場で。"
+        },
+        {
+          "en": "Yeah, I reckon so too.",
+          "ja": "うん、私もそう思います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "reckon は英国・豪州の口語。気さくな議論で。"
+        },
+        {
+          "en": "Is there evidence for that, though?",
+          "ja": "ただ、それを裏づける根拠はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "質問の形で異議を示す。学術的に有効。"
+        },
+        {
+          "en": "Building on what Anna said —",
+          "ja": "アンナの意見に付け加えますと。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "build on は「〜を土台にする」。議論を発展させる型。"
+        },
+        {
+          "en": "In the reading, the author made a similar point about context.",
+          "ja": "課題文献でも著者が文脈について同様の指摘をしていました。",
+          "register": "polite",
+          "style": "context",
+          "note": "文献に触れる。準備してきたことが伝わる。"
+        },
+        {
+          "en": "I may be off base here — but could it also be read this way?",
+          "ja": "的外れかもしれませんが、こうも読めないでしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "off base は「見当違い」。自信がなくても発言できる。"
+        }
       ]
     },
     {
-      "id": "school-007", "category": "school", "difficulty": 2,
-      "place": "In an office hour", "listener": "a professor",
+      "id": "school-007",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In an office hour",
+      "listener": "a professor",
       "want": "You want to ask for advice on your essay topic.",
       "situationJa": "レポートの題材について助言がほしい。",
-      "tags": ["requesting", "advice"],
+      "tags": [
+        "requesting",
+        "advice"
+      ],
       "answers": [
-        { "en": "Could I get your advice on my topic?", "ja": "題材について助言をいただけますか。", "register": "polite", "style": "request", "note": "基本形。指導を求める定番。" },
-        { "en": "I'm not sure my topic works.", "ja": "自分の題材でよいか自信がありません。", "register": "neutral", "style": "oneword", "note": "率直に不安を伝える。相談が始まる。" },
-        { "en": "Would this be too broad for a 3,000-word essay?", "ja": "3,000語のレポートには広すぎるでしょうか。", "register": "neutral", "style": "basic", "note": "具体的に聞く。的確な助言がもらえる。" },
-        { "en": "Is there a angle you'd suggest narrowing to?", "ja": "絞り込むとしたら、どの切り口がよいでしょうか。", "register": "polite", "style": "existence", "note": "narrow down は「絞り込む」。実務的な相談。" },
-        { "en": "I'd very much appreciate your guidance on framing this question.", "ja": "この問いの立て方についてご指導いただけますと幸いです。", "register": "formal", "style": "formal", "note": "framing は「問いの立て方」。学術的な語。" },
-        { "en": "Does this topic sound OK to you?", "ja": "この題材、どう思われますか。", "register": "casual", "style": "casual", "note": "率直な聞き方。関係のよい指導教員に。" },
-        { "en": "Which of these two would you pick?", "ja": "この2つのどちらを選ばれますか。", "register": "neutral", "style": "vocab", "note": "選択肢を示す。答えやすく、判断が早い。" },
-        { "en": "What sources would you point me to?", "ja": "どの文献を当たるべきでしょうか。", "register": "neutral", "style": "basic", "note": "point someone to 〜 は「〜を示す」。次の一歩が明確になる。" },
-        { "en": "I want to write about urban policy but I'm struggling to narrow it down.", "ja": "都市政策について書きたいのですが、絞り込みに苦労しています。", "register": "polite", "style": "context", "note": "現在地を示す。最も有益な助言がもらえる。" },
-        { "en": "I know you're busy — even a quick steer would help.", "ja": "お忙しいところ恐縮です。少しの方向づけでも助かります。", "register": "polite", "style": "considerate", "note": "steer は「方向づけ」。負担の少ない頼み方。" }
+        {
+          "en": "Could I get your advice on my topic?",
+          "ja": "題材について助言をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。指導を求める定番。"
+        },
+        {
+          "en": "I'm not sure my topic works.",
+          "ja": "自分の題材でよいか自信がありません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "率直に不安を伝える。相談が始まる。"
+        },
+        {
+          "en": "Would this be too broad for a 3,000-word essay?",
+          "ja": "3,000語のレポートには広すぎるでしょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体的に聞く。的確な助言がもらえる。"
+        },
+        {
+          "en": "Is there a angle you'd suggest narrowing to?",
+          "ja": "絞り込むとしたら、どの切り口がよいでしょうか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "narrow down は「絞り込む」。実務的な相談。"
+        },
+        {
+          "en": "I'd very much appreciate your guidance on framing this question.",
+          "ja": "この問いの立て方についてご指導いただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "framing は「問いの立て方」。学術的な語。"
+        },
+        {
+          "en": "Does this topic sound OK to you?",
+          "ja": "この題材、どう思われますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な聞き方。関係のよい指導教員に。"
+        },
+        {
+          "en": "Which of these two would you pick?",
+          "ja": "この2つのどちらを選ばれますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "選択肢を示す。答えやすく、判断が早い。"
+        },
+        {
+          "en": "What sources would you point me to?",
+          "ja": "どの文献を当たるべきでしょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "point someone to 〜 は「〜を示す」。次の一歩が明確になる。"
+        },
+        {
+          "en": "I want to write about urban policy but I'm struggling to narrow it down.",
+          "ja": "都市政策について書きたいのですが、絞り込みに苦労しています。",
+          "register": "polite",
+          "style": "context",
+          "note": "現在地を示す。最も有益な助言がもらえる。"
+        },
+        {
+          "en": "I know you're busy — even a quick steer would help.",
+          "ja": "お忙しいところ恐縮です。少しの方向づけでも助かります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "steer は「方向づけ」。負担の少ない頼み方。"
+        }
       ]
     },
     {
-      "id": "school-008", "category": "school", "difficulty": 2,
-      "place": "In a classroom", "listener": "a teacher",
+      "id": "school-008",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a classroom",
+      "listener": "a teacher",
       "want": "You want to say you will be absent next week.",
       "situationJa": "来週欠席することを伝えたい。",
-      "tags": ["informing"],
+      "tags": [
+        "informing"
+      ],
       "answers": [
-        { "en": "I'll be absent next week.", "ja": "来週は欠席します。", "register": "neutral", "style": "basic", "note": "基本形。事前に伝えるのが礼儀。" },
-        { "en": "I can't come next Tuesday.", "ja": "来週火曜は来られません。", "register": "neutral", "style": "oneword", "note": "日付を明示。分かりやすい。" },
-        { "en": "Could I let you know I won't be here next week?", "ja": "来週欠席することをお伝えしてもよいですか。", "register": "polite", "style": "request", "note": "丁寧な切り出し。改まった場で。" },
-        { "en": "Is there anything I should do to catch up?", "ja": "遅れを取り戻すために何かすべきことはありますか。", "register": "polite", "style": "existence", "note": "欠席の連絡と併せて。責任感が伝わる。" },
-        { "en": "I wish to inform you that I shall be absent from next week's session.", "ja": "来週の授業を欠席いたしますことをお知らせ申し上げます。", "register": "formal", "style": "formal", "note": "改まった通知。書面でも使える。" },
-        { "en": "I'm going to miss next week.", "ja": "来週は出られません。", "register": "casual", "style": "casual", "note": "miss は「欠席する」。口語的で自然。" },
-        { "en": "Will the class be recorded?", "ja": "授業は録画されますか。", "register": "neutral", "style": "vocab", "note": "欠席時の実用的な確認。追いつく手段になる。" },
-        { "en": "Could I still submit the assignment on time?", "ja": "課題は予定通り提出してもよいですか。", "register": "polite", "style": "basic", "note": "課題の扱いを確認。忘れがちだが重要。" },
-        { "en": "I have a family commitment abroad, so I'll miss Tuesday's class.", "ja": "海外での家族の予定があり、火曜の授業を欠席します。", "register": "polite", "style": "context", "note": "理由を添えると、配慮してもらえる。" },
-        { "en": "I'll make sure I'm caught up before the following week.", "ja": "翌週までには必ず追いつきます。", "register": "polite", "style": "considerate", "note": "先に約束する。信頼される欠席連絡。" }
+        {
+          "en": "I'll be absent next week.",
+          "ja": "来週は欠席します。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。事前に伝えるのが礼儀。"
+        },
+        {
+          "en": "I can't come next Tuesday.",
+          "ja": "来週火曜は来られません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "日付を明示。分かりやすい。"
+        },
+        {
+          "en": "Could I let you know I won't be here next week?",
+          "ja": "来週欠席することをお伝えしてもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な切り出し。改まった場で。"
+        },
+        {
+          "en": "Is there anything I should do to catch up?",
+          "ja": "遅れを取り戻すために何かすべきことはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "欠席の連絡と併せて。責任感が伝わる。"
+        },
+        {
+          "en": "I wish to inform you that I shall be absent from next week's session.",
+          "ja": "来週の授業を欠席いたしますことをお知らせ申し上げます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった通知。書面でも使える。"
+        },
+        {
+          "en": "I'm going to miss next week.",
+          "ja": "来週は出られません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "miss は「欠席する」。口語的で自然。"
+        },
+        {
+          "en": "Will the class be recorded?",
+          "ja": "授業は録画されますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "欠席時の実用的な確認。追いつく手段になる。"
+        },
+        {
+          "en": "Could I still submit the assignment on time?",
+          "ja": "課題は予定通り提出してもよいですか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "課題の扱いを確認。忘れがちだが重要。"
+        },
+        {
+          "en": "I have a family commitment abroad, so I'll miss Tuesday's class.",
+          "ja": "海外での家族の予定があり、火曜の授業を欠席します。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、配慮してもらえる。"
+        },
+        {
+          "en": "I'll make sure I'm caught up before the following week.",
+          "ja": "翌週までには必ず追いつきます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "先に約束する。信頼される欠席連絡。"
+        }
       ]
     },
     {
-      "id": "school-009", "category": "school", "difficulty": 2,
-      "place": "In a group project", "listener": "a classmate",
+      "id": "school-009",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a group project",
+      "listener": "a classmate",
       "want": "You want to divide the work fairly.",
       "situationJa": "作業を公平に分担したい。",
-      "tags": ["organizing"],
+      "tags": [
+        "organizing"
+      ],
       "answers": [
-        { "en": "How should we split this up?", "ja": "どう分担しましょうか。", "register": "neutral", "style": "basic", "note": "split up は「分ける」。共同作業の定番。" },
-        { "en": "Shall we divide it in three?", "ja": "3つに分けましょうか。", "register": "neutral", "style": "oneword", "note": "具体的な案を出す。話が進む。" },
-        { "en": "Could we agree who does what?", "ja": "誰が何をするか決めませんか。", "register": "polite", "style": "request", "note": "who does what は「担当分け」。最も重要な合意。" },
-        { "en": "Is there a part you'd prefer to take?", "ja": "希望する担当はありますか。", "register": "polite", "style": "existence", "note": "相手の希望を先に聞く。円滑に進む。" },
-        { "en": "Perhaps we might allocate the sections according to our strengths.", "ja": "各自の得意分野に応じて分担を割り振ってはいかがでしょうか。", "register": "formal", "style": "formal", "note": "allocate は「割り当てる」。改まった提案。" },
-        { "en": "Who wants to do what?", "ja": "誰が何をやる？", "register": "casual", "style": "casual", "note": "率直で気さく。友人同士で自然。" },
-        { "en": "I'm happy to take the data section.", "ja": "私はデータの部分を担当します。", "register": "neutral", "style": "vocab", "note": "自分から名乗り出る。信頼される。" },
-        { "en": "Shall we set deadlines for each part?", "ja": "各パートの締切を決めませんか。", "register": "polite", "style": "basic", "note": "分担より重要なことも。破綻を防げる。" },
-        { "en": "There are four sections and three of us — shall we each take one and share the last?", "ja": "4つのパートで3人です。1つずつ担当して最後を分担しませんか。", "register": "polite", "style": "context", "note": "具体的な案。すぐ合意に至る。" },
-        { "en": "I don't mind which part — whatever's left is fine with me.", "ja": "どの部分でも構いません。残ったところで結構です。", "register": "polite", "style": "considerate", "note": "柔軟な姿勢。もめずに決まる。" }
+        {
+          "en": "How should we split this up?",
+          "ja": "どう分担しましょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "split up は「分ける」。共同作業の定番。"
+        },
+        {
+          "en": "Shall we divide it in three?",
+          "ja": "3つに分けましょうか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "具体的な案を出す。話が進む。"
+        },
+        {
+          "en": "Could we agree who does what?",
+          "ja": "誰が何をするか決めませんか。",
+          "register": "polite",
+          "style": "request",
+          "note": "who does what は「担当分け」。最も重要な合意。"
+        },
+        {
+          "en": "Is there a part you'd prefer to take?",
+          "ja": "希望する担当はありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "相手の希望を先に聞く。円滑に進む。"
+        },
+        {
+          "en": "Perhaps we might allocate the sections according to our strengths.",
+          "ja": "各自の得意分野に応じて分担を割り振ってはいかがでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "allocate は「割り当てる」。改まった提案。"
+        },
+        {
+          "en": "Who wants to do what?",
+          "ja": "誰が何をやる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直で気さく。友人同士で自然。"
+        },
+        {
+          "en": "I'm happy to take the data section.",
+          "ja": "私はデータの部分を担当します。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "自分から名乗り出る。信頼される。"
+        },
+        {
+          "en": "Shall we set deadlines for each part?",
+          "ja": "各パートの締切を決めませんか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "分担より重要なことも。破綻を防げる。"
+        },
+        {
+          "en": "There are four sections and three of us — shall we each take one and share the last?",
+          "ja": "4つのパートで3人です。1つずつ担当して最後を分担しませんか。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的な案。すぐ合意に至る。"
+        },
+        {
+          "en": "I don't mind which part — whatever's left is fine with me.",
+          "ja": "どの部分でも構いません。残ったところで結構です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "柔軟な姿勢。もめずに決まる。"
+        }
       ]
     },
     {
-      "id": "school-010", "category": "school", "difficulty": 3,
-      "place": "In an office hour", "listener": "a professor",
+      "id": "school-010",
+      "category": "school",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In an office hour",
+      "listener": "a professor",
       "want": "You want to ask why you got a low grade.",
       "situationJa": "成績が低かった理由を聞きたい。",
-      "tags": ["asking", "feedback"],
+      "tags": [
+        "asking",
+        "feedback"
+      ],
       "answers": [
-        { "en": "Could you explain the grade?", "ja": "評価についてご説明いただけますか。", "register": "polite", "style": "request", "note": "冷静で建設的。抗議ではなく理解を求める形。" },
-        { "en": "I'd like to understand where I lost marks.", "ja": "どこで点を落としたか理解したいのですが。", "register": "neutral", "style": "basic", "note": "lose marks は「減点される」。学ぶ姿勢が伝わる。" },
-        { "en": "What could I have done better?", "ja": "どうすればもっと良くできたでしょうか。", "register": "neutral", "style": "oneword", "note": "最も建設的な問い。次に活きる。" },
-        { "en": "Is there feedback I could look at?", "ja": "見られる講評はありますか。", "register": "neutral", "style": "existence", "note": "書面の講評があることも。まず確認。" },
-        { "en": "I'd be grateful for guidance on how to improve for the next assignment.", "ja": "次の課題に向けた改善点をご教示いただけますと幸いです。", "register": "formal", "style": "formal", "note": "未来に焦点を当てる。最も好印象。" },
-        { "en": "I was surprised by the mark, to be honest.", "ja": "正直、この評価には驚きました。", "register": "casual", "style": "casual", "note": "率直だが攻撃的でない。関係のよい教員に。" },
-        { "en": "Was there a problem with the structure or the argument?", "ja": "構成と論証、どちらに問題がありましたか。", "register": "neutral", "style": "vocab", "note": "選択肢を示す。的確な講評が返る。" },
-        { "en": "Is there a process if I wanted it reviewed?", "ja": "再評価を求める手続きはありますか。", "register": "polite", "style": "basic", "note": "制度を確認する形。感情的にならずに済む。" },
-        { "en": "I spent a long time on the analysis, so I'd like to know where it fell short.", "ja": "分析にかなり時間をかけたので、どこが不十分だったか知りたいです。", "register": "polite", "style": "context", "note": "fall short は「及ばない」。努力を示しつつ学べる。" },
-        { "en": "I'm not challenging it — I just want to learn from it.", "ja": "異議を唱えたいのではなく、学びたいだけです。", "register": "polite", "style": "considerate", "note": "意図を明示。教員が率直に話しやすくなる。" }
+        {
+          "en": "Could you explain the grade?",
+          "ja": "評価についてご説明いただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "冷静で建設的。抗議ではなく理解を求める形。"
+        },
+        {
+          "en": "I'd like to understand where I lost marks.",
+          "ja": "どこで点を落としたか理解したいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "lose marks は「減点される」。学ぶ姿勢が伝わる。"
+        },
+        {
+          "en": "What could I have done better?",
+          "ja": "どうすればもっと良くできたでしょうか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も建設的な問い。次に活きる。"
+        },
+        {
+          "en": "Is there feedback I could look at?",
+          "ja": "見られる講評はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "書面の講評があることも。まず確認。"
+        },
+        {
+          "en": "I'd be grateful for guidance on how to improve for the next assignment.",
+          "ja": "次の課題に向けた改善点をご教示いただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "未来に焦点を当てる。最も好印象。"
+        },
+        {
+          "en": "I was surprised by the mark, to be honest.",
+          "ja": "正直、この評価には驚きました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直だが攻撃的でない。関係のよい教員に。"
+        },
+        {
+          "en": "Was there a problem with the structure or the argument?",
+          "ja": "構成と論証、どちらに問題がありましたか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "選択肢を示す。的確な講評が返る。"
+        },
+        {
+          "en": "Is there a process if I wanted it reviewed?",
+          "ja": "再評価を求める手続きはありますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "制度を確認する形。感情的にならずに済む。"
+        },
+        {
+          "en": "I spent a long time on the analysis, so I'd like to know where it fell short.",
+          "ja": "分析にかなり時間をかけたので、どこが不十分だったか知りたいです。",
+          "register": "polite",
+          "style": "context",
+          "note": "fall short は「及ばない」。努力を示しつつ学べる。"
+        },
+        {
+          "en": "I'm not challenging it — I just want to learn from it.",
+          "ja": "異議を唱えたいのではなく、学びたいだけです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "意図を明示。教員が率直に話しやすくなる。"
+        }
       ]
     },
     {
-      "id": "school-011", "category": "school", "difficulty": 1,
-      "place": "In a classroom", "listener": "a teacher",
+      "id": "school-011",
+      "category": "school",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a classroom",
+      "listener": "a teacher",
       "want": "You want to ask what the homework is.",
       "situationJa": "宿題が何か確認したい。",
-      "tags": ["asking"],
+      "tags": [
+        "asking"
+      ],
       "answers": [
-        { "en": "What's the homework?", "ja": "宿題は何ですか。", "register": "neutral", "style": "basic", "note": "基本形。まずこれ。" },
-        { "en": "Homework?", "ja": "宿題は？", "register": "casual", "style": "oneword", "note": "短くても通じる。授業の終わりに。" },
-        { "en": "Could you tell me what we need to do for next time?", "ja": "次回までに何をすべきか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。範囲まで教えてもらえる。" },
-        { "en": "Is there anything to prepare for next week?", "ja": "来週までに準備するものはありますか。", "register": "neutral", "style": "existence", "note": "宿題以外の準備も確認できる。" },
-        { "en": "Would you mind confirming the assignment for next week?", "ja": "来週の課題を確認していただけますでしょうか。", "register": "formal", "style": "formal", "note": "assignment は「課題」。改まった確認。" },
-        { "en": "What are we meant to do?", "ja": "何をやることになっていますか。", "register": "casual", "style": "casual", "note": "be meant to 〜 は「〜することになっている」。口語的。" },
-        { "en": "When is it due?", "ja": "締切はいつですか。", "register": "neutral", "style": "vocab", "note": "due は「提出期限の」。内容と同じくらい重要。" },
-        { "en": "Which chapters should we read?", "ja": "どの章を読めばよいですか。", "register": "neutral", "style": "basic", "note": "具体的に聞く。取り違えを防げる。" },
-        { "en": "I missed the last part of class — what's the homework?", "ja": "授業の最後を聞き逃しました。宿題は何でしょうか。", "register": "polite", "style": "context", "note": "理由を添えると自然。聞き直しやすい。" },
-        { "en": "Sorry, just to be sure — what exactly is due Friday?", "ja": "すみません、念のため。金曜締切のものは正確には何でしょうか。", "register": "polite", "style": "considerate", "note": "確認したい姿勢が伝わる。丁寧。" }
+        {
+          "en": "What's the homework?",
+          "ja": "宿題は何ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。まずこれ。"
+        },
+        {
+          "en": "Homework?",
+          "ja": "宿題は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。授業の終わりに。"
+        },
+        {
+          "en": "Could you tell me what we need to do for next time?",
+          "ja": "次回までに何をすべきか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。範囲まで教えてもらえる。"
+        },
+        {
+          "en": "Is there anything to prepare for next week?",
+          "ja": "来週までに準備するものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "宿題以外の準備も確認できる。"
+        },
+        {
+          "en": "Would you mind confirming the assignment for next week?",
+          "ja": "来週の課題を確認していただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "assignment は「課題」。改まった確認。"
+        },
+        {
+          "en": "What are we meant to do?",
+          "ja": "何をやることになっていますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "be meant to 〜 は「〜することになっている」。口語的。"
+        },
+        {
+          "en": "When is it due?",
+          "ja": "締切はいつですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "due は「提出期限の」。内容と同じくらい重要。"
+        },
+        {
+          "en": "Which chapters should we read?",
+          "ja": "どの章を読めばよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体的に聞く。取り違えを防げる。"
+        },
+        {
+          "en": "I missed the last part of class — what's the homework?",
+          "ja": "授業の最後を聞き逃しました。宿題は何でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると自然。聞き直しやすい。"
+        },
+        {
+          "en": "Sorry, just to be sure — what exactly is due Friday?",
+          "ja": "すみません、念のため。金曜締切のものは正確には何でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "確認したい姿勢が伝わる。丁寧。"
+        }
       ]
     },
     {
-      "id": "school-012", "category": "school", "difficulty": 2,
-      "place": "In a study group", "listener": "a classmate",
+      "id": "school-012",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a study group",
+      "listener": "a classmate",
       "want": "You want to explain a concept to a classmate.",
       "situationJa": "概念を同級生に説明したい。",
-      "tags": ["explaining"],
+      "tags": [
+        "explaining"
+      ],
       "answers": [
-        { "en": "Let me explain it this way.", "ja": "こう説明させてください。", "register": "neutral", "style": "oneword", "note": "説明の切り出し。分かりやすい前置き。" },
-        { "en": "Think of it like this:", "ja": "こう考えてみてください。", "register": "neutral", "style": "basic", "note": "比喩を導く定番。理解が進みやすい。" },
-        { "en": "Could I try explaining it?", "ja": "説明してみてもよいですか。", "register": "polite", "style": "request", "note": "押しつけがましくない。相手が受け入れやすい。" },
-        { "en": "The key point is that the two are inversely related.", "ja": "要点は、両者が反比例の関係にあることです。", "register": "neutral", "style": "vocab", "note": "the key point is 〜 で要点を明示。効果的。" },
-        { "en": "If I may, I'll take it from the beginning.", "ja": "よろしければ、最初からお話しします。", "register": "formal", "style": "formal", "note": "改まった説明の始め方。丁寧。" },
-        { "en": "Basically, it just means the cost goes up.", "ja": "要するに、費用が上がるということです。", "register": "casual", "style": "casual", "note": "basically は要約の合図。気さくで分かりやすい。" },
-        { "en": "Is it the first part or the second that's unclear?", "ja": "分からないのは前半ですか、後半ですか。", "register": "neutral", "style": "existence", "note": "説明の前に相手の状態を確認する。最も効率的。" },
-        { "en": "Let me give you an example.", "ja": "例を挙げますね。", "register": "neutral", "style": "basic", "note": "具体例は最強の説明手段。" },
-        { "en": "I struggled with this too, so let me show you what helped me.", "ja": "私も苦労したので、役立った考え方をお見せします。", "register": "polite", "style": "context", "note": "共感から入る。相手が安心して聞ける。" },
-        { "en": "Stop me if I'm going too fast.", "ja": "早すぎたら止めてください。", "register": "polite", "style": "considerate", "note": "相手のペースを尊重する。良い説明者の一言。" }
+        {
+          "en": "Let me explain it this way.",
+          "ja": "こう説明させてください。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "説明の切り出し。分かりやすい前置き。"
+        },
+        {
+          "en": "Think of it like this:",
+          "ja": "こう考えてみてください。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "比喩を導く定番。理解が進みやすい。"
+        },
+        {
+          "en": "Could I try explaining it?",
+          "ja": "説明してみてもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "押しつけがましくない。相手が受け入れやすい。"
+        },
+        {
+          "en": "The key point is that the two are inversely related.",
+          "ja": "要点は、両者が反比例の関係にあることです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "the key point is 〜 で要点を明示。効果的。"
+        },
+        {
+          "en": "If I may, I'll take it from the beginning.",
+          "ja": "よろしければ、最初からお話しします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった説明の始め方。丁寧。"
+        },
+        {
+          "en": "Basically, it just means the cost goes up.",
+          "ja": "要するに、費用が上がるということです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "basically は要約の合図。気さくで分かりやすい。"
+        },
+        {
+          "en": "Is it the first part or the second that's unclear?",
+          "ja": "分からないのは前半ですか、後半ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "説明の前に相手の状態を確認する。最も効率的。"
+        },
+        {
+          "en": "Let me give you an example.",
+          "ja": "例を挙げますね。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体例は最強の説明手段。"
+        },
+        {
+          "en": "I struggled with this too, so let me show you what helped me.",
+          "ja": "私も苦労したので、役立った考え方をお見せします。",
+          "register": "polite",
+          "style": "context",
+          "note": "共感から入る。相手が安心して聞ける。"
+        },
+        {
+          "en": "Stop me if I'm going too fast.",
+          "ja": "早すぎたら止めてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手のペースを尊重する。良い説明者の一言。"
+        }
       ]
     },
     {
-      "id": "school-013", "category": "school", "difficulty": 2,
-      "place": "At the library", "listener": "a librarian",
+      "id": "school-013",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At the library",
+      "listener": "a librarian",
       "want": "You want to find a book for your research.",
       "situationJa": "研究用の本を探している。",
-      "tags": ["asking", "research"],
+      "tags": [
+        "asking",
+        "research"
+      ],
       "answers": [
-        { "en": "I'm looking for a book on urban policy.", "ja": "都市政策の本を探しています。", "register": "neutral", "style": "basic", "note": "分野を明示。案内が的確になる。" },
-        { "en": "Where's the history section?", "ja": "歴史の棚はどこですか。", "register": "neutral", "style": "oneword", "note": "section は「分野の棚」。図書館での基本。" },
-        { "en": "Could you help me find some sources?", "ja": "文献を探すのを手伝っていただけますか。", "register": "polite", "style": "request", "note": "source は「資料・文献」。研究での必須語。" },
-        { "en": "Do you have anything on Japanese architecture?", "ja": "日本建築に関するものはありますか。", "register": "neutral", "style": "existence", "note": "在庫を確認する形。まずこれ。" },
-        { "en": "I'd be grateful for assistance locating material on this subject.", "ja": "この主題の資料を探すのにお力添えいただけますと幸いです。", "register": "formal", "style": "formal", "note": "locate material は「資料を見つける」。改まった依頼。" },
-        { "en": "Got anything on this?", "ja": "これについて何かある？", "register": "casual", "style": "casual", "note": "非常にくだけた。気さくな図書館で。" },
-        { "en": "Is it available as an ebook?", "ja": "電子書籍でも読めますか。", "register": "neutral", "style": "vocab", "note": "貸出中でも読めることがある。実用的。" },
-        { "en": "Could you show me how to search the catalogue?", "ja": "蔵書検索の使い方を教えていただけますか。", "register": "polite", "style": "basic", "note": "catalogue は「蔵書目録」。次から自分でできる。" },
-        { "en": "I'm writing an essay on housing policy and need academic sources.", "ja": "住宅政策のレポートを書いていて、学術文献が必要です。", "register": "polite", "style": "context", "note": "目的を伝えると、適切な資料を勧めてもらえる。" },
-        { "en": "Whenever you have a moment — could you point me in the right direction?", "ja": "お手すきのときで結構です。方向を示していただけますか。", "register": "polite", "style": "considerate", "note": "急かさない。忙しい司書に好まれる。" }
+        {
+          "en": "I'm looking for a book on urban policy.",
+          "ja": "都市政策の本を探しています。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "分野を明示。案内が的確になる。"
+        },
+        {
+          "en": "Where's the history section?",
+          "ja": "歴史の棚はどこですか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "section は「分野の棚」。図書館での基本。"
+        },
+        {
+          "en": "Could you help me find some sources?",
+          "ja": "文献を探すのを手伝っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "source は「資料・文献」。研究での必須語。"
+        },
+        {
+          "en": "Do you have anything on Japanese architecture?",
+          "ja": "日本建築に関するものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "在庫を確認する形。まずこれ。"
+        },
+        {
+          "en": "I'd be grateful for assistance locating material on this subject.",
+          "ja": "この主題の資料を探すのにお力添えいただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "locate material は「資料を見つける」。改まった依頼。"
+        },
+        {
+          "en": "Got anything on this?",
+          "ja": "これについて何かある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた。気さくな図書館で。"
+        },
+        {
+          "en": "Is it available as an ebook?",
+          "ja": "電子書籍でも読めますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "貸出中でも読めることがある。実用的。"
+        },
+        {
+          "en": "Could you show me how to search the catalogue?",
+          "ja": "蔵書検索の使い方を教えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "catalogue は「蔵書目録」。次から自分でできる。"
+        },
+        {
+          "en": "I'm writing an essay on housing policy and need academic sources.",
+          "ja": "住宅政策のレポートを書いていて、学術文献が必要です。",
+          "register": "polite",
+          "style": "context",
+          "note": "目的を伝えると、適切な資料を勧めてもらえる。"
+        },
+        {
+          "en": "Whenever you have a moment — could you point me in the right direction?",
+          "ja": "お手すきのときで結構です。方向を示していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさない。忙しい司書に好まれる。"
+        }
       ]
     },
     {
-      "id": "school-014", "category": "school", "difficulty": 2,
-      "place": "In a classroom", "listener": "a teacher",
+      "id": "school-014",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a classroom",
+      "listener": "a teacher",
       "want": "You want to ask if you can record the lesson.",
       "situationJa": "授業を録音してよいか聞きたい。",
-      "tags": ["asking", "permission"],
+      "tags": [
+        "asking",
+        "permission"
+      ],
       "answers": [
-        { "en": "Could I record this?", "ja": "録音してもよいですか。", "register": "polite", "style": "request", "note": "基本形。必ず許可を取るべき場面。" },
-        { "en": "Is it OK to record?", "ja": "録音は大丈夫ですか。", "register": "neutral", "style": "oneword", "note": "短くて自然。まずこれ。" },
-        { "en": "Would you mind if I recorded the lecture?", "ja": "講義を録音してもよろしいでしょうか。", "register": "polite", "style": "basic", "note": "Would you mind 〜 は最も丁寧な許可の求め方。" },
-        { "en": "Is there a policy on recording lectures?", "ja": "講義の録音について規則はありますか。", "register": "neutral", "style": "existence", "note": "制度から確認する。丁寧で確実。" },
-        { "en": "I should like to ask permission to record today's session.", "ja": "本日の授業の録音許可をいただきたく存じます。", "register": "formal", "style": "formal", "note": "改まった許可願い。書面でも使える。" },
-        { "en": "Mind if I record?", "ja": "録音してもいい？", "register": "casual", "style": "casual", "note": "気さくな授業で。短く済む。" },
-        { "en": "Are the lectures recorded already?", "ja": "講義はすでに録画されていますか。", "register": "neutral", "style": "vocab", "note": "既に録画があれば自分で録る必要がない。" },
-        { "en": "It's just for my own revision.", "ja": "自分の復習のためだけです。", "register": "neutral", "style": "basic", "note": "revision は英国で「復習」。用途を明示すると安心される。" },
-        { "en": "English isn't my first language, so a recording would really help.", "ja": "英語が母語ではないので、録音があると大変助かります。", "register": "polite", "style": "context", "note": "理由が明確。許可されやすい。" },
-        { "en": "Of course, no problem if you'd rather I didn't.", "ja": "もちろん、お望みでなければ結構です。", "register": "polite", "style": "considerate", "note": "断る余地を明示。押しつけがましくない。" }
+        {
+          "en": "Could I record this?",
+          "ja": "録音してもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。必ず許可を取るべき場面。"
+        },
+        {
+          "en": "Is it OK to record?",
+          "ja": "録音は大丈夫ですか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて自然。まずこれ。"
+        },
+        {
+          "en": "Would you mind if I recorded the lecture?",
+          "ja": "講義を録音してもよろしいでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "Would you mind 〜 は最も丁寧な許可の求め方。"
+        },
+        {
+          "en": "Is there a policy on recording lectures?",
+          "ja": "講義の録音について規則はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "制度から確認する。丁寧で確実。"
+        },
+        {
+          "en": "I should like to ask permission to record today's session.",
+          "ja": "本日の授業の録音許可をいただきたく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった許可願い。書面でも使える。"
+        },
+        {
+          "en": "Mind if I record?",
+          "ja": "録音してもいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな授業で。短く済む。"
+        },
+        {
+          "en": "Are the lectures recorded already?",
+          "ja": "講義はすでに録画されていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "既に録画があれば自分で録る必要がない。"
+        },
+        {
+          "en": "It's just for my own revision.",
+          "ja": "自分の復習のためだけです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "revision は英国で「復習」。用途を明示すると安心される。"
+        },
+        {
+          "en": "English isn't my first language, so a recording would really help.",
+          "ja": "英語が母語ではないので、録音があると大変助かります。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由が明確。許可されやすい。"
+        },
+        {
+          "en": "Of course, no problem if you'd rather I didn't.",
+          "ja": "もちろん、お望みでなければ結構です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る余地を明示。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "school-015", "category": "school", "difficulty": 2,
-      "place": "After an exam", "listener": "a classmate",
+      "id": "school-015",
+      "category": "school",
+      "level": 1,
+      "difficulty": 2,
+      "place": "After an exam",
+      "listener": "a classmate",
       "want": "You want to ask how their exam went.",
       "situationJa": "試験どうだったか聞きたい。",
-      "tags": ["asking"],
+      "tags": [
+        "asking"
+      ],
       "answers": [
-        { "en": "How did it go?", "ja": "どうでしたか。", "register": "neutral", "style": "oneword", "note": "最も基本。あらゆる場面で使える。" },
-        { "en": "How was the exam?", "ja": "試験はどうでしたか。", "register": "neutral", "style": "basic", "note": "対象を明示。分かりやすい。" },
-        { "en": "Was it what you expected?", "ja": "予想通りでしたか。", "register": "neutral", "style": "basic", "note": "会話が広がる聞き方。答えやすい。" },
-        { "en": "Could I ask what came up?", "ja": "何が出たか伺ってもよいですか。", "register": "polite", "style": "request", "note": "come up は「出題される」。まだ受けていない人には配慮を。" },
-        { "en": "I hope it went well for you.", "ja": "うまくいっていればよいのですが。", "register": "formal", "style": "formal", "note": "結果を聞かずに気遣う。相手が答えたくない場合にも安全。" },
-        { "en": "How'd you find it?", "ja": "どうだった？", "register": "casual", "style": "casual", "note": "find は「感じる」。英国でよく使う口語。" },
-        { "en": "Was there anything unexpected?", "ja": "予想外のことはありましたか。", "register": "neutral", "style": "existence", "note": "具体的な会話になる。情報も得られる。" },
-        { "en": "Did you get through all the questions?", "ja": "全問解けましたか。", "register": "neutral", "style": "vocab", "note": "get through は「やり終える」。共感が生まれる質問。" },
-        { "en": "You were worried about the essay section — how was it?", "ja": "論述の部分を心配していましたね。どうでしたか。", "register": "polite", "style": "context", "note": "相手の不安を覚えている。関係が深まる。" },
-        { "en": "No need to relive it if you'd rather not — but how did it go?", "ja": "思い出したくなければ結構ですが、どうでしたか。", "register": "polite", "style": "considerate", "note": "うまくいかなかった場合への配慮。優しい聞き方。" }
+        {
+          "en": "How did it go?",
+          "ja": "どうでしたか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も基本。あらゆる場面で使える。"
+        },
+        {
+          "en": "How was the exam?",
+          "ja": "試験はどうでしたか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "対象を明示。分かりやすい。"
+        },
+        {
+          "en": "Was it what you expected?",
+          "ja": "予想通りでしたか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "会話が広がる聞き方。答えやすい。"
+        },
+        {
+          "en": "Could I ask what came up?",
+          "ja": "何が出たか伺ってもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "come up は「出題される」。まだ受けていない人には配慮を。"
+        },
+        {
+          "en": "I hope it went well for you.",
+          "ja": "うまくいっていればよいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "結果を聞かずに気遣う。相手が答えたくない場合にも安全。"
+        },
+        {
+          "en": "How'd you find it?",
+          "ja": "どうだった？",
+          "register": "casual",
+          "style": "casual",
+          "note": "find は「感じる」。英国でよく使う口語。"
+        },
+        {
+          "en": "Was there anything unexpected?",
+          "ja": "予想外のことはありましたか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "具体的な会話になる。情報も得られる。"
+        },
+        {
+          "en": "Did you get through all the questions?",
+          "ja": "全問解けましたか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "get through は「やり終える」。共感が生まれる質問。"
+        },
+        {
+          "en": "You were worried about the essay section — how was it?",
+          "ja": "論述の部分を心配していましたね。どうでしたか。",
+          "register": "polite",
+          "style": "context",
+          "note": "相手の不安を覚えている。関係が深まる。"
+        },
+        {
+          "en": "No need to relive it if you'd rather not — but how did it go?",
+          "ja": "思い出したくなければ結構ですが、どうでしたか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "うまくいかなかった場合への配慮。優しい聞き方。"
+        }
       ]
     }
   ]

@@ -2,573 +2,2572 @@
   "category": "workplace",
   "situations": [
     {
-      "id": "workplace-001", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-001",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask a colleague for help with a task.",
       "situationJa": "同僚に仕事を手伝ってほしいと頼みたい。",
-      "tags": ["requesting", "help"],
+      "tags": [
+        "requesting",
+        "help"
+      ],
       "answers": [
-        { "en": "Could you give me a hand?", "ja": "手を貸していただけますか。", "register": "neutral", "style": "oneword", "note": "give a hand は「手を貸す」。職場での定番。" },
-        { "en": "Could you help me with this?", "ja": "これを手伝っていただけますか。", "register": "polite", "style": "request", "note": "基本形。help me with 〜 を丸ごと覚えたい。" },
-        { "en": "Do you have a minute to help me?", "ja": "少し手伝っていただく時間はありますか。", "register": "neutral", "style": "basic", "note": "相手の都合を先に確認する。断りやすい形。" },
-        { "en": "Would you mind taking a look at this with me?", "ja": "これを一緒に見ていただけますでしょうか。", "register": "polite", "style": "basic", "note": "take a look は「見る」。負担が軽く聞こえる。" },
-        { "en": "I'd be very grateful if you could assist me with this report.", "ja": "この報告書についてご支援いただけますと大変助かります。", "register": "formal", "style": "formal", "note": "assist は help より硬い。改まった依頼。" },
-        { "en": "Can you help me out here?", "ja": "ちょっと助けてもらえる？", "register": "casual", "style": "casual", "note": "help out は口語。親しい同僚に。" },
-        { "en": "Is anyone free to help with this?", "ja": "これを手伝える方はいますか。", "register": "neutral", "style": "existence", "note": "特定の人を指名しない形。押しつけにならない。" },
-        { "en": "Could you walk me through this part?", "ja": "この部分を一緒に見ながら教えていただけますか。", "register": "polite", "style": "vocab", "note": "walk someone through は「順を追って説明する」。頻出。" },
-        { "en": "I'm stuck on the data section and it's due tomorrow — could you help?", "ja": "データの部分で行き詰まっていて、明日締切なんです。手伝っていただけますか。", "register": "polite", "style": "context", "note": "何に困っているかと期限を言う。相手が判断しやすい。" },
-        { "en": "Only if you have time — could you help me with this?", "ja": "お時間があればで結構ですが、これを手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "断る余地を残す。忙しい相手にも頼みやすい。" }
+        {
+          "en": "Could you give me a hand?",
+          "ja": "手を貸していただけますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "give a hand は「手を貸す」。職場での定番。"
+        },
+        {
+          "en": "Could you help me with this?",
+          "ja": "これを手伝っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。help me with 〜 を丸ごと覚えたい。"
+        },
+        {
+          "en": "Do you have a minute to help me?",
+          "ja": "少し手伝っていただく時間はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "相手の都合を先に確認する。断りやすい形。"
+        },
+        {
+          "en": "Would you mind taking a look at this with me?",
+          "ja": "これを一緒に見ていただけますでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "take a look は「見る」。負担が軽く聞こえる。"
+        },
+        {
+          "en": "I'd be very grateful if you could assist me with this report.",
+          "ja": "この報告書についてご支援いただけますと大変助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "assist は help より硬い。改まった依頼。"
+        },
+        {
+          "en": "Can you help me out here?",
+          "ja": "ちょっと助けてもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "help out は口語。親しい同僚に。"
+        },
+        {
+          "en": "Is anyone free to help with this?",
+          "ja": "これを手伝える方はいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "特定の人を指名しない形。押しつけにならない。"
+        },
+        {
+          "en": "Could you walk me through this part?",
+          "ja": "この部分を一緒に見ながら教えていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "walk someone through は「順を追って説明する」。頻出。"
+        },
+        {
+          "en": "I'm stuck on the data section and it's due tomorrow — could you help?",
+          "ja": "データの部分で行き詰まっていて、明日締切なんです。手伝っていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "何に困っているかと期限を言う。相手が判断しやすい。"
+        },
+        {
+          "en": "Only if you have time — could you help me with this?",
+          "ja": "お時間があればで結構ですが、これを手伝っていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る余地を残す。忙しい相手にも頼みやすい。"
+        }
       ]
     },
     {
-      "id": "workplace-002", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-002",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to say you cannot take on more work right now.",
       "situationJa": "今は追加の仕事を引き受けられないと伝えたい。",
-      "tags": ["declining", "workload"],
+      "tags": [
+        "declining",
+        "workload"
+      ],
       "answers": [
-        { "en": "I'm at capacity right now.", "ja": "今は手一杯です。", "register": "neutral", "style": "vocab", "note": "at capacity は「容量いっぱい」。職場で角が立たない表現。" },
-        { "en": "I can't take that on right now.", "ja": "今それを引き受けることはできません。", "register": "neutral", "style": "oneword", "note": "明確に断る形。理由を添えるとなお良い。" },
-        { "en": "I have a lot on at the moment — could we discuss priorities?", "ja": "今かなり抱えていまして、優先順位を相談できますか。", "register": "polite", "style": "request", "note": "断るのではなく優先順位の相談にする。最も建設的。" },
-        { "en": "I'd like to help, but my schedule is full this week.", "ja": "お手伝いしたいのですが、今週は予定が埋まっています。", "register": "neutral", "style": "basic", "note": "意欲を示してから断る。印象が悪くならない。" },
-        { "en": "I'm afraid my current workload wouldn't allow me to do this justice.", "ja": "恐れ入りますが、現在の業務量ではこれに十分対応できません。", "register": "formal", "style": "formal", "note": "do it justice は「きちんとやり遂げる」。質を理由にした断り方。" },
-        { "en": "I'm swamped at the moment.", "ja": "今、手が回らないんです。", "register": "casual", "style": "casual", "note": "swamped は「忙殺されている」。同僚同士で自然。" },
-        { "en": "Is there any flexibility on the deadline?", "ja": "締切に融通は利きますか。", "register": "neutral", "style": "existence", "note": "断らずに条件を変える提案。受け入れられやすい。" },
-        { "en": "Could this wait until next week?", "ja": "来週まで待てるでしょうか。", "register": "polite", "style": "basic", "note": "時期をずらす提案。断るより前向きに響く。" },
-        { "en": "I'm finishing the client report by Thursday — could this go to someone else?", "ja": "木曜までに顧客向け報告書を仕上げます。これは他の方にお願いできますか。", "register": "polite", "style": "context", "note": "既存の仕事を示すと、判断材料になる。" },
-        { "en": "I want to do this properly, so I'd rather not rush it — can we talk about timing?", "ja": "きちんとやりたいので急ぎたくありません。時期を相談できますか。", "register": "polite", "style": "considerate", "note": "質へのこだわりとして伝える。上司も納得しやすい。" }
+        {
+          "en": "I'm at capacity right now.",
+          "ja": "今は手一杯です。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "at capacity は「容量いっぱい」。職場で角が立たない表現。"
+        },
+        {
+          "en": "I can't take that on right now.",
+          "ja": "今それを引き受けることはできません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "明確に断る形。理由を添えるとなお良い。"
+        },
+        {
+          "en": "I have a lot on at the moment — could we discuss priorities?",
+          "ja": "今かなり抱えていまして、優先順位を相談できますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "断るのではなく優先順位の相談にする。最も建設的。"
+        },
+        {
+          "en": "I'd like to help, but my schedule is full this week.",
+          "ja": "お手伝いしたいのですが、今週は予定が埋まっています。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "意欲を示してから断る。印象が悪くならない。"
+        },
+        {
+          "en": "I'm afraid my current workload wouldn't allow me to do this justice.",
+          "ja": "恐れ入りますが、現在の業務量ではこれに十分対応できません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "do it justice は「きちんとやり遂げる」。質を理由にした断り方。"
+        },
+        {
+          "en": "I'm swamped at the moment.",
+          "ja": "今、手が回らないんです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "swamped は「忙殺されている」。同僚同士で自然。"
+        },
+        {
+          "en": "Is there any flexibility on the deadline?",
+          "ja": "締切に融通は利きますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "断らずに条件を変える提案。受け入れられやすい。"
+        },
+        {
+          "en": "Could this wait until next week?",
+          "ja": "来週まで待てるでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "時期をずらす提案。断るより前向きに響く。"
+        },
+        {
+          "en": "I'm finishing the client report by Thursday — could this go to someone else?",
+          "ja": "木曜までに顧客向け報告書を仕上げます。これは他の方にお願いできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "既存の仕事を示すと、判断材料になる。"
+        },
+        {
+          "en": "I want to do this properly, so I'd rather not rush it — can we talk about timing?",
+          "ja": "きちんとやりたいので急ぎたくありません。時期を相談できますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "質へのこだわりとして伝える。上司も納得しやすい。"
+        }
       ]
     },
     {
-      "id": "workplace-003", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-003",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to report that a project will be delayed.",
       "situationJa": "案件が遅れることを報告したい。",
-      "tags": ["reporting", "bad news"],
+      "tags": [
+        "reporting",
+        "bad news"
+      ],
       "answers": [
-        { "en": "The project is going to be late.", "ja": "案件が遅れます。", "register": "neutral", "style": "oneword", "note": "率直で明確。まず結論から伝える。" },
-        { "en": "We're going to miss the deadline.", "ja": "締切に間に合いません。", "register": "neutral", "style": "basic", "note": "miss the deadline は「締切に間に合わない」。定番。" },
-        { "en": "I wanted to let you know the timeline has slipped.", "ja": "予定が後ろにずれたことをお伝えしておきます。", "register": "neutral", "style": "vocab", "note": "slip は「ずれ込む」。柔らかく事実を伝えられる。" },
-        { "en": "Could I update you on the schedule? We're running behind.", "ja": "進捗をご報告してもよいですか。予定より遅れています。", "register": "polite", "style": "request", "note": "run behind は「予定より遅れる」。報告の切り出しに。" },
-        { "en": "I'm afraid we won't be able to deliver by the agreed date.", "ja": "恐れ入りますが、合意した期日までの納品が難しい見込みです。", "register": "formal", "style": "formal", "note": "改まった報告。顧客への連絡にも使える。" },
-        { "en": "We're not going to make it.", "ja": "間に合わなさそうです。", "register": "casual", "style": "casual", "note": "make it は「間に合う」。同僚同士で自然。" },
-        { "en": "Is there any room to move the deadline?", "ja": "締切をずらす余地はありますか。", "register": "neutral", "style": "existence", "note": "問題提起と同時に解決策を探る形。" },
-        { "en": "We need two more weeks to finish properly.", "ja": "きちんと仕上げるにはあと2週間必要です。", "register": "neutral", "style": "basic", "note": "必要な期間を具体的に示す。判断しやすい。" },
-        { "en": "The vendor delivered late, so we've lost a week — I propose moving to the 20th.", "ja": "業者の納品が遅れ1週間失いました。20日への変更を提案します。", "register": "polite", "style": "context", "note": "原因と対案をセットで。最も評価される報告の形。" },
-        { "en": "I should have flagged this sooner — here's where we are and what I suggest.", "ja": "もっと早くお伝えすべきでした。現状と提案をお話しします。", "register": "polite", "style": "considerate", "note": "flag は「注意喚起する」。非を認めつつ前に進める。" }
+        {
+          "en": "The project is going to be late.",
+          "ja": "案件が遅れます。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "率直で明確。まず結論から伝える。"
+        },
+        {
+          "en": "We're going to miss the deadline.",
+          "ja": "締切に間に合いません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "miss the deadline は「締切に間に合わない」。定番。"
+        },
+        {
+          "en": "I wanted to let you know the timeline has slipped.",
+          "ja": "予定が後ろにずれたことをお伝えしておきます。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "slip は「ずれ込む」。柔らかく事実を伝えられる。"
+        },
+        {
+          "en": "Could I update you on the schedule? We're running behind.",
+          "ja": "進捗をご報告してもよいですか。予定より遅れています。",
+          "register": "polite",
+          "style": "request",
+          "note": "run behind は「予定より遅れる」。報告の切り出しに。"
+        },
+        {
+          "en": "I'm afraid we won't be able to deliver by the agreed date.",
+          "ja": "恐れ入りますが、合意した期日までの納品が難しい見込みです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった報告。顧客への連絡にも使える。"
+        },
+        {
+          "en": "We're not going to make it.",
+          "ja": "間に合わなさそうです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "make it は「間に合う」。同僚同士で自然。"
+        },
+        {
+          "en": "Is there any room to move the deadline?",
+          "ja": "締切をずらす余地はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "問題提起と同時に解決策を探る形。"
+        },
+        {
+          "en": "We need two more weeks to finish properly.",
+          "ja": "きちんと仕上げるにはあと2週間必要です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "必要な期間を具体的に示す。判断しやすい。"
+        },
+        {
+          "en": "The vendor delivered late, so we've lost a week — I propose moving to the 20th.",
+          "ja": "業者の納品が遅れ1週間失いました。20日への変更を提案します。",
+          "register": "polite",
+          "style": "context",
+          "note": "原因と対案をセットで。最も評価される報告の形。"
+        },
+        {
+          "en": "I should have flagged this sooner — here's where we are and what I suggest.",
+          "ja": "もっと早くお伝えすべきでした。現状と提案をお話しします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "flag は「注意喚起する」。非を認めつつ前に進める。"
+        }
       ]
     },
     {
-      "id": "workplace-004", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-004",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask what a term in the document means.",
       "situationJa": "資料の用語の意味を聞きたい。",
-      "tags": ["asking", "clarifying"],
+      "tags": [
+        "asking",
+        "clarifying"
+      ],
       "answers": [
-        { "en": "What does this mean?", "ja": "これはどういう意味ですか。", "register": "neutral", "style": "oneword", "note": "指をさしながら。最も基本。" },
-        { "en": "Could you explain what this term means?", "ja": "この用語の意味を説明していただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。会議中でも使える。" },
-        { "en": "Sorry, I'm not familiar with this term.", "ja": "すみません、この用語に馴染みがありません。", "register": "neutral", "style": "basic", "note": "not familiar with 〜 は「よく知らない」。恥ずかしくない言い方。" },
-        { "en": "What's meant by 'churn' here?", "ja": "ここでの churn は何を指しますか。", "register": "neutral", "style": "basic", "note": "語を具体的に挙げる。答えが的確になる。" },
-        { "en": "Would you mind clarifying what this refers to?", "ja": "これが何を指すのかご説明いただけますでしょうか。", "register": "formal", "style": "formal", "note": "clarify は「明確にする」。会議での定番。" },
-        { "en": "What's that in plain English?", "ja": "分かりやすく言うと何ですか。", "register": "casual", "style": "casual", "note": "in plain English は「平易な言葉で」。専門用語に対して。" },
-        { "en": "Is there a definition somewhere in the document?", "ja": "資料のどこかに定義はありますか。", "register": "neutral", "style": "existence", "note": "自分で調べる姿勢も示せる。" },
-        { "en": "Are we using it the same way the client does?", "ja": "顧客と同じ意味で使っていますか。", "register": "neutral", "style": "vocab", "note": "用語の食い違いは事故のもと。鋭い確認。" },
-        { "en": "I've seen this used differently before — how are we defining it here?", "ja": "以前は違う意味で使われているのを見ました。ここではどう定義していますか。", "register": "polite", "style": "context", "note": "自分の知識も示しつつ確認する。建設的。" },
-        { "en": "Sorry if this is obvious — what does this term mean?", "ja": "分かりきったことでしたらすみません、この用語はどういう意味ですか。", "register": "polite", "style": "considerate", "note": "聞くことへの心理的な壁を下げる前置き。" }
+        {
+          "en": "What does this mean?",
+          "ja": "これはどういう意味ですか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "指をさしながら。最も基本。"
+        },
+        {
+          "en": "Could you explain what this term means?",
+          "ja": "この用語の意味を説明していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。会議中でも使える。"
+        },
+        {
+          "en": "Sorry, I'm not familiar with this term.",
+          "ja": "すみません、この用語に馴染みがありません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "not familiar with 〜 は「よく知らない」。恥ずかしくない言い方。"
+        },
+        {
+          "en": "What's meant by 'churn' here?",
+          "ja": "ここでの churn は何を指しますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "語を具体的に挙げる。答えが的確になる。"
+        },
+        {
+          "en": "Would you mind clarifying what this refers to?",
+          "ja": "これが何を指すのかご説明いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "clarify は「明確にする」。会議での定番。"
+        },
+        {
+          "en": "What's that in plain English?",
+          "ja": "分かりやすく言うと何ですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "in plain English は「平易な言葉で」。専門用語に対して。"
+        },
+        {
+          "en": "Is there a definition somewhere in the document?",
+          "ja": "資料のどこかに定義はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "自分で調べる姿勢も示せる。"
+        },
+        {
+          "en": "Are we using it the same way the client does?",
+          "ja": "顧客と同じ意味で使っていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "用語の食い違いは事故のもと。鋭い確認。"
+        },
+        {
+          "en": "I've seen this used differently before — how are we defining it here?",
+          "ja": "以前は違う意味で使われているのを見ました。ここではどう定義していますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "自分の知識も示しつつ確認する。建設的。"
+        },
+        {
+          "en": "Sorry if this is obvious — what does this term mean?",
+          "ja": "分かりきったことでしたらすみません、この用語はどういう意味ですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "聞くことへの心理的な壁を下げる前置き。"
+        }
       ]
     },
     {
-      "id": "workplace-005", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-005",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to ask for time off next week.",
       "situationJa": "来週休みを取りたいと伝えたい。",
-      "tags": ["requesting", "leave"],
+      "tags": [
+        "requesting",
+        "leave"
+      ],
       "answers": [
-        { "en": "Could I take Friday off?", "ja": "金曜に休みをいただけますか。", "register": "polite", "style": "request", "note": "take 〜 off は「〜を休む」。最も使う型。" },
-        { "en": "I'd like to take next Tuesday off.", "ja": "来週火曜に休みを取りたいのですが。", "register": "neutral", "style": "basic", "note": "希望を明確に伝える形。" },
-        { "en": "Day off Friday?", "ja": "金曜、休んでもいいですか。", "register": "casual", "style": "oneword", "note": "気さくな職場で。短く済ませたいときに。" },
-        { "en": "Would it be possible to take a day of leave next week?", "ja": "来週1日休暇をいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "leave は「休暇」の正式な語。改まった依頼。" },
-        { "en": "Any chance I could take Friday off?", "ja": "金曜って休めたりしますか。", "register": "casual", "style": "casual", "note": "Any chance 〜 は控えめな打診。断りやすい。" },
-        { "en": "Is there anything that would make Friday difficult?", "ja": "金曜に休むと支障がある予定はありますか。", "register": "neutral", "style": "existence", "note": "相手の都合から確認する。配慮が伝わる。" },
-        { "en": "I have leave remaining — could I use a day next week?", "ja": "有給が残っているのですが、来週1日使えますか。", "register": "neutral", "style": "vocab", "note": "leave remaining は「残りの休暇」。正当性が伝わる。" },
-        { "en": "I'll finish the report before I go.", "ja": "休む前に報告書は仕上げます。", "register": "neutral", "style": "basic", "note": "業務の担保を示す。承認されやすくなる。" },
-        { "en": "My family is visiting from Japan — could I take Friday off?", "ja": "日本から家族が来るので、金曜に休みをいただけますか。", "register": "polite", "style": "context", "note": "理由を添えると、上司も判断しやすい。" },
-        { "en": "If Friday is bad, I'm flexible on the day.", "ja": "金曜が難しければ、日にちは調整できます。", "register": "polite", "style": "considerate", "note": "柔軟だと示すと、たいてい通る。" }
+        {
+          "en": "Could I take Friday off?",
+          "ja": "金曜に休みをいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "take 〜 off は「〜を休む」。最も使う型。"
+        },
+        {
+          "en": "I'd like to take next Tuesday off.",
+          "ja": "来週火曜に休みを取りたいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "希望を明確に伝える形。"
+        },
+        {
+          "en": "Day off Friday?",
+          "ja": "金曜、休んでもいいですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "気さくな職場で。短く済ませたいときに。"
+        },
+        {
+          "en": "Would it be possible to take a day of leave next week?",
+          "ja": "来週1日休暇をいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "leave は「休暇」の正式な語。改まった依頼。"
+        },
+        {
+          "en": "Any chance I could take Friday off?",
+          "ja": "金曜って休めたりしますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "Any chance 〜 は控えめな打診。断りやすい。"
+        },
+        {
+          "en": "Is there anything that would make Friday difficult?",
+          "ja": "金曜に休むと支障がある予定はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相手の都合から確認する。配慮が伝わる。"
+        },
+        {
+          "en": "I have leave remaining — could I use a day next week?",
+          "ja": "有給が残っているのですが、来週1日使えますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "leave remaining は「残りの休暇」。正当性が伝わる。"
+        },
+        {
+          "en": "I'll finish the report before I go.",
+          "ja": "休む前に報告書は仕上げます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "業務の担保を示す。承認されやすくなる。"
+        },
+        {
+          "en": "My family is visiting from Japan — could I take Friday off?",
+          "ja": "日本から家族が来るので、金曜に休みをいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、上司も判断しやすい。"
+        },
+        {
+          "en": "If Friday is bad, I'm flexible on the day.",
+          "ja": "金曜が難しければ、日にちは調整できます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "柔軟だと示すと、たいてい通る。"
+        }
       ]
     },
     {
-      "id": "workplace-006", "category": "workplace", "difficulty": 3,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-006",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to disagree with their idea without offending them.",
       "situationJa": "相手を傷つけずに意見に反対したい。",
-      "tags": ["disagreeing", "polite"],
+      "tags": [
+        "disagreeing",
+        "polite"
+      ],
       "answers": [
-        { "en": "I see it a bit differently.", "ja": "私は少し違う見方をしています。", "register": "neutral", "style": "oneword", "note": "最も角の立たない反対の切り出し。" },
-        { "en": "I'm not sure I agree.", "ja": "同意できるかどうか分かりません。", "register": "neutral", "style": "basic", "note": "I'm not sure で断定を避ける。柔らかく反対できる。" },
-        { "en": "That's a fair point, but I have a concern.", "ja": "もっともですが、懸念があります。", "register": "polite", "style": "basic", "note": "まず認めてから述べる。最も効果的な型。" },
-        { "en": "Could I offer a different perspective?", "ja": "別の視点をお示ししてもよいですか。", "register": "polite", "style": "request", "note": "perspective は「視点」。対立ではなく追加として提示できる。" },
-        { "en": "I do take your point, though I wonder whether there might be another approach.", "ja": "おっしゃることは理解しますが、別の方法もあるのではないかと思います。", "register": "formal", "style": "formal", "note": "take your point は「言い分は分かる」。非常に丁寧な反論。" },
-        { "en": "Hmm, I'm not sold on that.", "ja": "うーん、それにはあまり納得していません。", "register": "casual", "style": "casual", "note": "not sold on 〜 は「納得していない」。親しい同僚に。" },
-        { "en": "Is there a risk we're missing something here?", "ja": "何か見落としている恐れはありませんか。", "register": "neutral", "style": "existence", "note": "誰も責めずに問題提起できる。会議で有効。" },
-        { "en": "What happens if the numbers don't hold?", "ja": "数字が想定どおりにならなかったらどうなりますか。", "register": "neutral", "style": "vocab", "note": "質問の形で弱点を突く。相手が自分で気づける。" },
-        { "en": "We tried something similar last year and it didn't land — could we look at why?", "ja": "昨年似たことを試してうまくいきませんでした。理由を確認できますか。", "register": "polite", "style": "context", "note": "事実に基づく反論。感情的にならずに済む。" },
-        { "en": "I might be missing something — could you help me understand the reasoning?", "ja": "私が見落としているかもしれません。考え方を教えていただけますか。", "register": "polite", "style": "considerate", "note": "自分の理解不足として聞く。最も摩擦が少ない。" }
+        {
+          "en": "I see it a bit differently.",
+          "ja": "私は少し違う見方をしています。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も角の立たない反対の切り出し。"
+        },
+        {
+          "en": "I'm not sure I agree.",
+          "ja": "同意できるかどうか分かりません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I'm not sure で断定を避ける。柔らかく反対できる。"
+        },
+        {
+          "en": "That's a fair point, but I have a concern.",
+          "ja": "もっともですが、懸念があります。",
+          "register": "polite",
+          "style": "basic",
+          "note": "まず認めてから述べる。最も効果的な型。"
+        },
+        {
+          "en": "Could I offer a different perspective?",
+          "ja": "別の視点をお示ししてもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "perspective は「視点」。対立ではなく追加として提示できる。"
+        },
+        {
+          "en": "I do take your point, though I wonder whether there might be another approach.",
+          "ja": "おっしゃることは理解しますが、別の方法もあるのではないかと思います。",
+          "register": "formal",
+          "style": "formal",
+          "note": "take your point は「言い分は分かる」。非常に丁寧な反論。"
+        },
+        {
+          "en": "Hmm, I'm not sold on that.",
+          "ja": "うーん、それにはあまり納得していません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "not sold on 〜 は「納得していない」。親しい同僚に。"
+        },
+        {
+          "en": "Is there a risk we're missing something here?",
+          "ja": "何か見落としている恐れはありませんか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "誰も責めずに問題提起できる。会議で有効。"
+        },
+        {
+          "en": "What happens if the numbers don't hold?",
+          "ja": "数字が想定どおりにならなかったらどうなりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "質問の形で弱点を突く。相手が自分で気づける。"
+        },
+        {
+          "en": "We tried something similar last year and it didn't land — could we look at why?",
+          "ja": "昨年似たことを試してうまくいきませんでした。理由を確認できますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事実に基づく反論。感情的にならずに済む。"
+        },
+        {
+          "en": "I might be missing something — could you help me understand the reasoning?",
+          "ja": "私が見落としているかもしれません。考え方を教えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分の理解不足として聞く。最も摩擦が少ない。"
+        }
       ]
     },
     {
-      "id": "workplace-007", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-007",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to apologize for a mistake you made.",
       "situationJa": "自分のミスを謝りたい。",
-      "tags": ["apologizing"],
+      "tags": [
+        "apologizing"
+      ],
       "answers": [
-        { "en": "I'm sorry — that was my mistake.", "ja": "すみません、私のミスです。", "register": "neutral", "style": "basic", "note": "率直に認める。信頼を守る最短の道。" },
-        { "en": "That was on me.", "ja": "私の責任です。", "register": "casual", "style": "oneword", "note": "on me は「自分の責任」。潔い響き。" },
-        { "en": "I apologize for the error.", "ja": "誤りをお詫びします。", "register": "polite", "style": "basic", "note": "apologize は formal 寄り。書面でも使える。" },
-        { "en": "I'm sorry — I'll fix it right away.", "ja": "すみません、すぐに直します。", "register": "neutral", "style": "request", "note": "謝罪と対応をセットに。最も信頼される形。" },
-        { "en": "I do apologize for the oversight and any inconvenience it has caused.", "ja": "見落としとそれによるご不便をお詫び申し上げます。", "register": "formal", "style": "formal", "note": "oversight は「見落とし」。顧客向けにも使える。" },
-        { "en": "Sorry, my bad.", "ja": "ごめん、私のせいです。", "register": "casual", "style": "casual", "note": "my bad は非常にくだけた口語。親しい同僚にのみ。" },
-        { "en": "Is there anything I can do to put it right?", "ja": "挽回のためにできることはありますか。", "register": "polite", "style": "existence", "note": "put it right は「正す」。前向きな姿勢が伝わる。" },
-        { "en": "I've already corrected the file and resent it.", "ja": "すでにファイルを修正して再送しました。", "register": "neutral", "style": "vocab", "note": "対応済みだと伝える。謝罪より価値が高いことも。" },
-        { "en": "I misread the spec and used last quarter's figures — I've corrected it.", "ja": "仕様を読み違えて前四半期の数字を使いました。修正済みです。", "register": "polite", "style": "context", "note": "原因と対応を簡潔に。言い訳にならない伝え方。" },
-        { "en": "I'll make sure it doesn't happen again — sorry for the trouble.", "ja": "二度と起きないようにします。ご迷惑をおかけしました。", "register": "polite", "style": "considerate", "note": "再発防止まで言うと、信頼が回復しやすい。" }
+        {
+          "en": "I'm sorry — that was my mistake.",
+          "ja": "すみません、私のミスです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "率直に認める。信頼を守る最短の道。"
+        },
+        {
+          "en": "That was on me.",
+          "ja": "私の責任です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "on me は「自分の責任」。潔い響き。"
+        },
+        {
+          "en": "I apologize for the error.",
+          "ja": "誤りをお詫びします。",
+          "register": "polite",
+          "style": "basic",
+          "note": "apologize は formal 寄り。書面でも使える。"
+        },
+        {
+          "en": "I'm sorry — I'll fix it right away.",
+          "ja": "すみません、すぐに直します。",
+          "register": "neutral",
+          "style": "request",
+          "note": "謝罪と対応をセットに。最も信頼される形。"
+        },
+        {
+          "en": "I do apologize for the oversight and any inconvenience it has caused.",
+          "ja": "見落としとそれによるご不便をお詫び申し上げます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "oversight は「見落とし」。顧客向けにも使える。"
+        },
+        {
+          "en": "Sorry, my bad.",
+          "ja": "ごめん、私のせいです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "my bad は非常にくだけた口語。親しい同僚にのみ。"
+        },
+        {
+          "en": "Is there anything I can do to put it right?",
+          "ja": "挽回のためにできることはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "put it right は「正す」。前向きな姿勢が伝わる。"
+        },
+        {
+          "en": "I've already corrected the file and resent it.",
+          "ja": "すでにファイルを修正して再送しました。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "対応済みだと伝える。謝罪より価値が高いことも。"
+        },
+        {
+          "en": "I misread the spec and used last quarter's figures — I've corrected it.",
+          "ja": "仕様を読み違えて前四半期の数字を使いました。修正済みです。",
+          "register": "polite",
+          "style": "context",
+          "note": "原因と対応を簡潔に。言い訳にならない伝え方。"
+        },
+        {
+          "en": "I'll make sure it doesn't happen again — sorry for the trouble.",
+          "ja": "二度と起きないようにします。ご迷惑をおかけしました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "再発防止まで言うと、信頼が回復しやすい。"
+        }
       ]
     },
     {
-      "id": "workplace-008", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-008",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask them to send you the file.",
       "situationJa": "ファイルを送ってほしいと頼みたい。",
-      "tags": ["requesting"],
+      "tags": [
+        "requesting"
+      ],
       "answers": [
-        { "en": "Could you send me the file?", "ja": "ファイルを送っていただけますか。", "register": "polite", "style": "request", "note": "基本形。職場で最も使う依頼のひとつ。" },
-        { "en": "Send me the file?", "ja": "ファイル送ってもらえますか。", "register": "casual", "style": "oneword", "note": "親しい同僚に。短く済む。" },
-        { "en": "Can you email me the latest version?", "ja": "最新版をメールで送ってもらえますか。", "register": "neutral", "style": "basic", "note": "latest version は「最新版」。取り違えを防ぐ。" },
-        { "en": "Would you mind sharing the file with me?", "ja": "ファイルを共有していただけますでしょうか。", "register": "polite", "style": "basic", "note": "share は「共有する」。クラウド前提の職場で自然。" },
-        { "en": "I'd be grateful if you could forward me the document.", "ja": "その資料を転送していただけますと助かります。", "register": "formal", "style": "formal", "note": "forward は「転送する」。改まった依頼。" },
-        { "en": "Chuck me the file when you get a sec?", "ja": "手が空いたらファイル送っといて。", "register": "casual", "style": "casual", "note": "chuck は英国の口語で「投げる・送る」。かなり砕けた表現。" },
-        { "en": "Is the file somewhere I can access it myself?", "ja": "自分でアクセスできる場所にありますか。", "register": "neutral", "style": "existence", "note": "相手の手間を省く。気が利いた聞き方。" },
-        { "en": "Could you cc me on that thread?", "ja": "そのやり取りに私を cc していただけますか。", "register": "polite", "style": "vocab", "note": "cc は動詞としても使う。職場の必須表現。" },
-        { "en": "I need it for the client call at three — could you send it before then?", "ja": "3時の顧客との通話で必要です。それまでに送っていただけますか。", "register": "polite", "style": "context", "note": "期限と理由を添える。優先してもらえる。" },
-        { "en": "No rush — whenever you get a chance, could you send the file?", "ja": "急ぎません。お手すきのときにファイルを送っていただけますか。", "register": "polite", "style": "considerate", "note": "急かさない一言。忙しい相手に好まれる。" }
+        {
+          "en": "Could you send me the file?",
+          "ja": "ファイルを送っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。職場で最も使う依頼のひとつ。"
+        },
+        {
+          "en": "Send me the file?",
+          "ja": "ファイル送ってもらえますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "親しい同僚に。短く済む。"
+        },
+        {
+          "en": "Can you email me the latest version?",
+          "ja": "最新版をメールで送ってもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "latest version は「最新版」。取り違えを防ぐ。"
+        },
+        {
+          "en": "Would you mind sharing the file with me?",
+          "ja": "ファイルを共有していただけますでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "share は「共有する」。クラウド前提の職場で自然。"
+        },
+        {
+          "en": "I'd be grateful if you could forward me the document.",
+          "ja": "その資料を転送していただけますと助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "forward は「転送する」。改まった依頼。"
+        },
+        {
+          "en": "Chuck me the file when you get a sec?",
+          "ja": "手が空いたらファイル送っといて。",
+          "register": "casual",
+          "style": "casual",
+          "note": "chuck は英国の口語で「投げる・送る」。かなり砕けた表現。"
+        },
+        {
+          "en": "Is the file somewhere I can access it myself?",
+          "ja": "自分でアクセスできる場所にありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相手の手間を省く。気が利いた聞き方。"
+        },
+        {
+          "en": "Could you cc me on that thread?",
+          "ja": "そのやり取りに私を cc していただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "cc は動詞としても使う。職場の必須表現。"
+        },
+        {
+          "en": "I need it for the client call at three — could you send it before then?",
+          "ja": "3時の顧客との通話で必要です。それまでに送っていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "期限と理由を添える。優先してもらえる。"
+        },
+        {
+          "en": "No rush — whenever you get a chance, could you send the file?",
+          "ja": "急ぎません。お手すきのときにファイルを送っていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさない一言。忙しい相手に好まれる。"
+        }
       ]
     },
     {
-      "id": "workplace-009", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a new colleague",
+      "id": "workplace-009",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a new colleague",
       "want": "You want to introduce yourself to a new colleague.",
       "situationJa": "新しい同僚に自己紹介したい。",
-      "tags": ["greeting", "introduction"],
+      "tags": [
+        "greeting",
+        "introduction"
+      ],
       "answers": [
-        { "en": "Hi, I'm Ken.", "ja": "こんにちは、ケンです。", "register": "casual", "style": "oneword", "note": "最も基本。名前だけでも会話が始まる。" },
-        { "en": "Hi, I'm Ken. I work in marketing.", "ja": "こんにちは、ケンです。マーケティングにいます。", "register": "neutral", "style": "basic", "note": "所属を添えると関係が分かりやすい。" },
-        { "en": "Nice to meet you. I'm Ken from the design team.", "ja": "はじめまして。デザインチームのケンです。", "register": "neutral", "style": "basic", "note": "職場での定番。丁寧すぎず砕けすぎず。" },
-        { "en": "Welcome! Let me know if you need anything — I'm Ken.", "ja": "ようこそ。何かあれば言ってください。ケンです。", "register": "polite", "style": "request", "note": "歓迎の言葉を先に。新人にとって心強い。" },
-        { "en": "It's a pleasure to meet you. I'm Ken, and I look after the analytics side.", "ja": "お会いできて光栄です。ケンと申しまして、分析まわりを担当しております。", "register": "formal", "style": "formal", "note": "look after 〜 は「〜を担当する」。改まった自己紹介。" },
-        { "en": "Hey, I'm Ken — you must be the new starter.", "ja": "こんにちは、ケンです。新しく入られた方ですね。", "register": "casual", "style": "casual", "note": "new starter は英国で「新入社員」。気さくな声かけ。" },
-        { "en": "Is this your first week?", "ja": "今週が初週ですか。", "register": "neutral", "style": "existence", "note": "相手に話させる質問。会話が続きやすい。" },
-        { "en": "I sit just over there if you ever need a hand.", "ja": "すぐそこに座っているので、困ったら声をかけてください。", "register": "neutral", "style": "vocab", "note": "sit は職場で「席がある」。実用的な情報。" },
-        { "en": "I joined last year, so I remember how it feels — I'm Ken.", "ja": "私も昨年入ったので気持ちが分かります。ケンです。", "register": "polite", "style": "context", "note": "共感を示す。新人が話しかけやすくなる。" },
-        { "en": "I won't keep you — but I'm Ken, and do come and say hello anytime.", "ja": "お引き止めしませんが、ケンです。いつでも声をかけてください。", "register": "polite", "style": "considerate", "note": "相手の時間に配慮しつつ関係を開く。" }
+        {
+          "en": "Hi, I'm Ken.",
+          "ja": "こんにちは、ケンです。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "最も基本。名前だけでも会話が始まる。"
+        },
+        {
+          "en": "Hi, I'm Ken. I work in marketing.",
+          "ja": "こんにちは、ケンです。マーケティングにいます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "所属を添えると関係が分かりやすい。"
+        },
+        {
+          "en": "Nice to meet you. I'm Ken from the design team.",
+          "ja": "はじめまして。デザインチームのケンです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "職場での定番。丁寧すぎず砕けすぎず。"
+        },
+        {
+          "en": "Welcome! Let me know if you need anything — I'm Ken.",
+          "ja": "ようこそ。何かあれば言ってください。ケンです。",
+          "register": "polite",
+          "style": "request",
+          "note": "歓迎の言葉を先に。新人にとって心強い。"
+        },
+        {
+          "en": "It's a pleasure to meet you. I'm Ken, and I look after the analytics side.",
+          "ja": "お会いできて光栄です。ケンと申しまして、分析まわりを担当しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "look after 〜 は「〜を担当する」。改まった自己紹介。"
+        },
+        {
+          "en": "Hey, I'm Ken — you must be the new starter.",
+          "ja": "こんにちは、ケンです。新しく入られた方ですね。",
+          "register": "casual",
+          "style": "casual",
+          "note": "new starter は英国で「新入社員」。気さくな声かけ。"
+        },
+        {
+          "en": "Is this your first week?",
+          "ja": "今週が初週ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相手に話させる質問。会話が続きやすい。"
+        },
+        {
+          "en": "I sit just over there if you ever need a hand.",
+          "ja": "すぐそこに座っているので、困ったら声をかけてください。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "sit は職場で「席がある」。実用的な情報。"
+        },
+        {
+          "en": "I joined last year, so I remember how it feels — I'm Ken.",
+          "ja": "私も昨年入ったので気持ちが分かります。ケンです。",
+          "register": "polite",
+          "style": "context",
+          "note": "共感を示す。新人が話しかけやすくなる。"
+        },
+        {
+          "en": "I won't keep you — but I'm Ken, and do come and say hello anytime.",
+          "ja": "お引き止めしませんが、ケンです。いつでも声をかけてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の時間に配慮しつつ関係を開く。"
+        }
       ]
     },
     {
-      "id": "workplace-010", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-010",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask how their weekend was.",
       "situationJa": "同僚に週末どうだったか聞きたい。",
-      "tags": ["smalltalk"],
+      "tags": [
+        "smalltalk"
+      ],
       "answers": [
-        { "en": "How was your weekend?", "ja": "週末はどうでしたか。", "register": "neutral", "style": "basic", "note": "月曜の定番。これが言えると関係が作れる。" },
-        { "en": "Good weekend?", "ja": "週末よかった？", "register": "casual", "style": "oneword", "note": "短くて自然。すれ違いざまに。" },
-        { "en": "Did you get up to anything at the weekend?", "ja": "週末は何かされましたか。", "register": "neutral", "style": "vocab", "note": "get up to 〜 は英国で「〜をして過ごす」。自然な言い回し。" },
-        { "en": "How did the weekend treat you?", "ja": "週末はいかがでしたか。", "register": "casual", "style": "casual", "note": "少し洒落た言い方。親しい同僚に。" },
-        { "en": "I hope you had a pleasant weekend.", "ja": "良い週末を過ごされたことと思います。", "register": "formal", "style": "formal", "note": "改まった挨拶。目上の相手に。" },
-        { "en": "Get up to much?", "ja": "何かした？", "register": "casual", "style": "basic", "note": "非常に短い口語。英国でよく聞く。" },
-        { "en": "Anything nice planned for next weekend?", "ja": "次の週末は何か予定はありますか。", "register": "neutral", "style": "existence", "note": "未来の話は答えやすい。会話が続く。" },
-        { "en": "Did you manage to get some rest?", "ja": "少し休めましたか。", "register": "polite", "style": "request", "note": "忙しそうな同僚への気遣い。温かい印象。" },
-        { "en": "You mentioned you were going hiking — how was it?", "ja": "ハイキングに行くとおっしゃっていましたね。どうでしたか。", "register": "polite", "style": "context", "note": "前の会話を覚えている。関係が深まる最良の型。" },
-        { "en": "No need to answer if you're busy — but how was your weekend?", "ja": "お忙しければ結構ですが、週末はいかがでしたか。", "register": "polite", "style": "considerate", "note": "相手の状況に配慮した声かけ。" }
+        {
+          "en": "How was your weekend?",
+          "ja": "週末はどうでしたか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "月曜の定番。これが言えると関係が作れる。"
+        },
+        {
+          "en": "Good weekend?",
+          "ja": "週末よかった？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くて自然。すれ違いざまに。"
+        },
+        {
+          "en": "Did you get up to anything at the weekend?",
+          "ja": "週末は何かされましたか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "get up to 〜 は英国で「〜をして過ごす」。自然な言い回し。"
+        },
+        {
+          "en": "How did the weekend treat you?",
+          "ja": "週末はいかがでしたか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "少し洒落た言い方。親しい同僚に。"
+        },
+        {
+          "en": "I hope you had a pleasant weekend.",
+          "ja": "良い週末を過ごされたことと思います。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった挨拶。目上の相手に。"
+        },
+        {
+          "en": "Get up to much?",
+          "ja": "何かした？",
+          "register": "casual",
+          "style": "basic",
+          "note": "非常に短い口語。英国でよく聞く。"
+        },
+        {
+          "en": "Anything nice planned for next weekend?",
+          "ja": "次の週末は何か予定はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "未来の話は答えやすい。会話が続く。"
+        },
+        {
+          "en": "Did you manage to get some rest?",
+          "ja": "少し休めましたか。",
+          "register": "polite",
+          "style": "request",
+          "note": "忙しそうな同僚への気遣い。温かい印象。"
+        },
+        {
+          "en": "You mentioned you were going hiking — how was it?",
+          "ja": "ハイキングに行くとおっしゃっていましたね。どうでしたか。",
+          "register": "polite",
+          "style": "context",
+          "note": "前の会話を覚えている。関係が深まる最良の型。"
+        },
+        {
+          "en": "No need to answer if you're busy — but how was your weekend?",
+          "ja": "お忙しければ結構ですが、週末はいかがでしたか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の状況に配慮した声かけ。"
+        }
       ]
     },
     {
-      "id": "workplace-011", "category": "workplace", "difficulty": 3,
-      "place": "In a one-on-one", "listener": "your manager",
+      "id": "workplace-011",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In a one-on-one",
+      "listener": "your manager",
       "want": "You want to ask for a raise.",
       "situationJa": "昇給をお願いしたい。",
-      "tags": ["requesting", "negotiation"],
+      "tags": [
+        "requesting",
+        "negotiation"
+      ],
       "answers": [
-        { "en": "I'd like to discuss my salary.", "ja": "給与についてご相談したいのですが。", "register": "neutral", "style": "basic", "note": "切り出しとして最も無難。落ち着いて言える。" },
-        { "en": "Could we talk about my compensation?", "ja": "報酬についてお話しできますか。", "register": "polite", "style": "request", "note": "compensation は「報酬全般」。salary より広い。" },
-        { "en": "Is there room to review my salary this cycle?", "ja": "今期、給与を見直す余地はありますか。", "register": "neutral", "style": "existence", "note": "review は「見直す」。押しつけがましくない。" },
-        { "en": "I'd like to make a case for a raise.", "ja": "昇給についてお願いしたいことがあります。", "register": "neutral", "style": "vocab", "note": "make a case for 〜 は「〜を論拠を示して主張する」。" },
-        { "en": "I'd appreciate the opportunity to discuss my remuneration.", "ja": "報酬についてご相談する機会をいただけますと幸いです。", "register": "formal", "style": "formal", "note": "remuneration は非常に硬い「報酬」。改まった場面で。" },
-        { "en": "Can we talk about money at some point?", "ja": "いつかお金の話をできますか。", "register": "casual", "style": "casual", "note": "率直。関係が良い上司にのみ。" },
-        { "en": "What would it take to move to the next band?", "ja": "次の等級に上がるには何が必要でしょうか。", "register": "neutral", "style": "basic", "note": "band は「給与等級」。要求ではなく相談として通る。" },
-        { "en": "How are salary decisions usually made here?", "ja": "こちらでは給与はどのように決まりますか。", "register": "neutral", "style": "confirm", "note": "仕組みから聞く。交渉の前段として有効。" },
-        { "en": "I've taken on the client account and grown it 30% — could we review my salary?", "ja": "顧客案件を引き継ぎ30%成長させました。給与を見直していただけますか。", "register": "polite", "style": "context", "note": "実績を数字で示す。最も説得力のある形。" },
-        { "en": "I know budgets are tight — but could we discuss it when the time is right?", "ja": "予算が厳しいのは承知しています。適切な時期にご相談できますか。", "register": "polite", "style": "considerate", "note": "会社の事情を汲む。関係を壊さずに要望を残せる。" }
+        {
+          "en": "I'd like to discuss my salary.",
+          "ja": "給与についてご相談したいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "切り出しとして最も無難。落ち着いて言える。"
+        },
+        {
+          "en": "Could we talk about my compensation?",
+          "ja": "報酬についてお話しできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "compensation は「報酬全般」。salary より広い。"
+        },
+        {
+          "en": "Is there room to review my salary this cycle?",
+          "ja": "今期、給与を見直す余地はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "review は「見直す」。押しつけがましくない。"
+        },
+        {
+          "en": "I'd like to make a case for a raise.",
+          "ja": "昇給についてお願いしたいことがあります。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "make a case for 〜 は「〜を論拠を示して主張する」。"
+        },
+        {
+          "en": "I'd appreciate the opportunity to discuss my remuneration.",
+          "ja": "報酬についてご相談する機会をいただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "remuneration は非常に硬い「報酬」。改まった場面で。"
+        },
+        {
+          "en": "Can we talk about money at some point?",
+          "ja": "いつかお金の話をできますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直。関係が良い上司にのみ。"
+        },
+        {
+          "en": "What would it take to move to the next band?",
+          "ja": "次の等級に上がるには何が必要でしょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "band は「給与等級」。要求ではなく相談として通る。"
+        },
+        {
+          "en": "How are salary decisions usually made here?",
+          "ja": "こちらでは給与はどのように決まりますか。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "仕組みから聞く。交渉の前段として有効。"
+        },
+        {
+          "en": "I've taken on the client account and grown it 30% — could we review my salary?",
+          "ja": "顧客案件を引き継ぎ30%成長させました。給与を見直していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "実績を数字で示す。最も説得力のある形。"
+        },
+        {
+          "en": "I know budgets are tight — but could we discuss it when the time is right?",
+          "ja": "予算が厳しいのは承知しています。適切な時期にご相談できますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "会社の事情を汲む。関係を壊さずに要望を残せる。"
+        }
       ]
     },
     {
-      "id": "workplace-012", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-012",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask them to speak more slowly.",
       "situationJa": "もう少しゆっくり話してほしいと頼みたい。",
-      "tags": ["requesting", "clarifying"],
+      "tags": [
+        "requesting",
+        "clarifying"
+      ],
       "answers": [
-        { "en": "Could you slow down a bit?", "ja": "少しゆっくりお願いできますか。", "register": "polite", "style": "request", "note": "最も自然な頼み方。失礼にならない。" },
-        { "en": "Sorry, a bit slower?", "ja": "すみません、もう少しゆっくり？", "register": "casual", "style": "oneword", "note": "短くて済む。会議中でも言いやすい。" },
-        { "en": "Sorry, I didn't catch all of that.", "ja": "すみません、全部は聞き取れませんでした。", "register": "neutral", "style": "basic", "note": "相手が自然に繰り返してくれる。角が立たない。" },
-        { "en": "Could you repeat the last part?", "ja": "最後の部分をもう一度お願いできますか。", "register": "polite", "style": "basic", "note": "範囲を限定すると相手の負担が少ない。" },
-        { "en": "I do apologize — would you mind speaking a little more slowly?", "ja": "申し訳ありません、少しゆっくりお話しいただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった場面で。丁寧さが際立つ。" },
-        { "en": "Whoa, slow down!", "ja": "ちょっと、待って！", "register": "casual", "style": "casual", "note": "非常にくだけた。親しい同僚にのみ。" },
-        { "en": "Is there a written version I could look at?", "ja": "文書になっているものはありますか。", "register": "neutral", "style": "existence", "note": "聞き取りに頼らない解決策。実務的。" },
-        { "en": "Could you put that in the chat?", "ja": "それをチャットに書いていただけますか。", "register": "polite", "style": "vocab", "note": "オンライン会議での実用的な依頼。" },
-        { "en": "English isn't my first language, so I sometimes need it a bit slower.", "ja": "英語が母語ではないので、少しゆっくりだと助かります。", "register": "polite", "style": "context", "note": "一度伝えておくと、以降ずっと配慮してもらえる。" },
-        { "en": "I want to make sure I've understood — could you go through that again?", "ja": "理解できているか確認したいので、もう一度お願いできますか。", "register": "polite", "style": "considerate", "note": "理解への意欲として伝わる。前向きな印象。" }
+        {
+          "en": "Could you slow down a bit?",
+          "ja": "少しゆっくりお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "最も自然な頼み方。失礼にならない。"
+        },
+        {
+          "en": "Sorry, a bit slower?",
+          "ja": "すみません、もう少しゆっくり？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くて済む。会議中でも言いやすい。"
+        },
+        {
+          "en": "Sorry, I didn't catch all of that.",
+          "ja": "すみません、全部は聞き取れませんでした。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "相手が自然に繰り返してくれる。角が立たない。"
+        },
+        {
+          "en": "Could you repeat the last part?",
+          "ja": "最後の部分をもう一度お願いできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "範囲を限定すると相手の負担が少ない。"
+        },
+        {
+          "en": "I do apologize — would you mind speaking a little more slowly?",
+          "ja": "申し訳ありません、少しゆっくりお話しいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場面で。丁寧さが際立つ。"
+        },
+        {
+          "en": "Whoa, slow down!",
+          "ja": "ちょっと、待って！",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた。親しい同僚にのみ。"
+        },
+        {
+          "en": "Is there a written version I could look at?",
+          "ja": "文書になっているものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "聞き取りに頼らない解決策。実務的。"
+        },
+        {
+          "en": "Could you put that in the chat?",
+          "ja": "それをチャットに書いていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "オンライン会議での実用的な依頼。"
+        },
+        {
+          "en": "English isn't my first language, so I sometimes need it a bit slower.",
+          "ja": "英語が母語ではないので、少しゆっくりだと助かります。",
+          "register": "polite",
+          "style": "context",
+          "note": "一度伝えておくと、以降ずっと配慮してもらえる。"
+        },
+        {
+          "en": "I want to make sure I've understood — could you go through that again?",
+          "ja": "理解できているか確認したいので、もう一度お願いできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "理解への意欲として伝わる。前向きな印象。"
+        }
       ]
     },
     {
-      "id": "workplace-013", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-013",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to praise their work.",
       "situationJa": "同僚の仕事を褒めたい。",
-      "tags": ["complimenting"],
+      "tags": [
+        "complimenting"
+      ],
       "answers": [
-        { "en": "Great work on that.", "ja": "あれ、よくできていましたね。", "register": "neutral", "style": "oneword", "note": "短いが十分伝わる。日常的に使いたい。" },
-        { "en": "That presentation was really good.", "ja": "あのプレゼン、とても良かったです。", "register": "neutral", "style": "basic", "note": "対象を具体的に。本気度が伝わる。" },
-        { "en": "You did a great job with the client.", "ja": "顧客対応、見事でした。", "register": "neutral", "style": "basic", "note": "do a great job は褒め言葉の定番。" },
-        { "en": "Could I say — that was really well handled.", "ja": "ひとこと申し上げると、見事な対応でした。", "register": "polite", "style": "request", "note": "well handled は「うまく処理された」。落ち着いた賛辞。" },
-        { "en": "I must say, the report was exceptionally thorough.", "ja": "報告書は非常に緻密で、感服いたしました。", "register": "formal", "style": "formal", "note": "thorough は「徹底した」。改まった賛辞。" },
-        { "en": "Nice one!", "ja": "やるね！", "register": "casual", "style": "casual", "note": "英国の口語。気さくで温かい。" },
-        { "en": "Is there anything you'd do differently next time?", "ja": "次回、変えたいところはありますか。", "register": "neutral", "style": "existence", "note": "褒めた上で成長を促す。上司向けの型。" },
-        { "en": "The way you handled that question was impressive.", "ja": "あの質問への対応が見事でした。", "register": "neutral", "style": "vocab", "note": "具体的な場面を挙げる。最も心に残る褒め方。" },
-        { "en": "The client mentioned how clear your explanation was.", "ja": "顧客が、あなたの説明の分かりやすさを褒めていました。", "register": "polite", "style": "context", "note": "第三者の評価を伝える。何より嬉しい褒め方。" },
-        { "en": "I know it took a lot of work — it really showed.", "ja": "大変だったと思います。それがよく表れていました。", "register": "polite", "style": "considerate", "note": "労力を認める。結果だけでなく過程を見ている。" }
+        {
+          "en": "Great work on that.",
+          "ja": "あれ、よくできていましたね。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短いが十分伝わる。日常的に使いたい。"
+        },
+        {
+          "en": "That presentation was really good.",
+          "ja": "あのプレゼン、とても良かったです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "対象を具体的に。本気度が伝わる。"
+        },
+        {
+          "en": "You did a great job with the client.",
+          "ja": "顧客対応、見事でした。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "do a great job は褒め言葉の定番。"
+        },
+        {
+          "en": "Could I say — that was really well handled.",
+          "ja": "ひとこと申し上げると、見事な対応でした。",
+          "register": "polite",
+          "style": "request",
+          "note": "well handled は「うまく処理された」。落ち着いた賛辞。"
+        },
+        {
+          "en": "I must say, the report was exceptionally thorough.",
+          "ja": "報告書は非常に緻密で、感服いたしました。",
+          "register": "formal",
+          "style": "formal",
+          "note": "thorough は「徹底した」。改まった賛辞。"
+        },
+        {
+          "en": "Nice one!",
+          "ja": "やるね！",
+          "register": "casual",
+          "style": "casual",
+          "note": "英国の口語。気さくで温かい。"
+        },
+        {
+          "en": "Is there anything you'd do differently next time?",
+          "ja": "次回、変えたいところはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "褒めた上で成長を促す。上司向けの型。"
+        },
+        {
+          "en": "The way you handled that question was impressive.",
+          "ja": "あの質問への対応が見事でした。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "具体的な場面を挙げる。最も心に残る褒め方。"
+        },
+        {
+          "en": "The client mentioned how clear your explanation was.",
+          "ja": "顧客が、あなたの説明の分かりやすさを褒めていました。",
+          "register": "polite",
+          "style": "context",
+          "note": "第三者の評価を伝える。何より嬉しい褒め方。"
+        },
+        {
+          "en": "I know it took a lot of work — it really showed.",
+          "ja": "大変だったと思います。それがよく表れていました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "労力を認める。結果だけでなく過程を見ている。"
+        }
       ]
     },
     {
-      "id": "workplace-014", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-014",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask if they have time for a quick chat.",
       "situationJa": "少し話す時間があるか聞きたい。",
-      "tags": ["requesting", "time"],
+      "tags": [
+        "requesting",
+        "time"
+      ],
       "answers": [
-        { "en": "Do you have a minute?", "ja": "少しお時間ありますか。", "register": "neutral", "style": "oneword", "note": "職場での定番。最も使う切り出し。" },
-        { "en": "Have you got a second?", "ja": "ちょっといいですか。", "register": "casual", "style": "casual", "note": "英国でよく使う。気さくで自然。" },
-        { "en": "Could I grab you for five minutes?", "ja": "5分ほどお時間いただけますか。", "register": "polite", "style": "request", "note": "grab someone は「捕まえる」の口語。時間を明示すると通りやすい。" },
-        { "en": "Are you free to talk now?", "ja": "今、話す時間はありますか。", "register": "neutral", "style": "basic", "note": "率直で明確。相手が答えやすい。" },
-        { "en": "Would you have a moment at some point today?", "ja": "本日のどこかでお時間をいただけますでしょうか。", "register": "formal", "style": "formal", "note": "at some point today で相手に選ばせる。丁寧。" },
-        { "en": "Got a sec?", "ja": "ちょっといい？", "register": "casual", "style": "oneword", "note": "非常に短い。親しい同僚に。" },
-        { "en": "Is there a good time to catch you today?", "ja": "本日、お話しできる良い時間はありますか。", "register": "neutral", "style": "existence", "note": "catch someone は「捕まえて話す」。押しつけがましくない。" },
-        { "en": "Shall I put something in your calendar?", "ja": "予定を入れておきましょうか。", "register": "polite", "style": "vocab", "note": "忙しい相手には正式に押さえるほうが確実。" },
-        { "en": "It's about the client deck — do you have five minutes?", "ja": "顧客向け資料の件です。5分ほどよろしいですか。", "register": "polite", "style": "context", "note": "用件を先に言うと、相手が優先度を判断できる。" },
-        { "en": "No rush at all — whenever suits you.", "ja": "急ぎませんので、ご都合のよいときに。", "register": "polite", "style": "considerate", "note": "相手のペースに任せる。信頼される言い方。" }
+        {
+          "en": "Do you have a minute?",
+          "ja": "少しお時間ありますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "職場での定番。最も使う切り出し。"
+        },
+        {
+          "en": "Have you got a second?",
+          "ja": "ちょっといいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "英国でよく使う。気さくで自然。"
+        },
+        {
+          "en": "Could I grab you for five minutes?",
+          "ja": "5分ほどお時間いただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "grab someone は「捕まえる」の口語。時間を明示すると通りやすい。"
+        },
+        {
+          "en": "Are you free to talk now?",
+          "ja": "今、話す時間はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "率直で明確。相手が答えやすい。"
+        },
+        {
+          "en": "Would you have a moment at some point today?",
+          "ja": "本日のどこかでお時間をいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "at some point today で相手に選ばせる。丁寧。"
+        },
+        {
+          "en": "Got a sec?",
+          "ja": "ちょっといい？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "非常に短い。親しい同僚に。"
+        },
+        {
+          "en": "Is there a good time to catch you today?",
+          "ja": "本日、お話しできる良い時間はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "catch someone は「捕まえて話す」。押しつけがましくない。"
+        },
+        {
+          "en": "Shall I put something in your calendar?",
+          "ja": "予定を入れておきましょうか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "忙しい相手には正式に押さえるほうが確実。"
+        },
+        {
+          "en": "It's about the client deck — do you have five minutes?",
+          "ja": "顧客向け資料の件です。5分ほどよろしいですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "用件を先に言うと、相手が優先度を判断できる。"
+        },
+        {
+          "en": "No rush at all — whenever suits you.",
+          "ja": "急ぎませんので、ご都合のよいときに。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手のペースに任せる。信頼される言い方。"
+        }
       ]
     },
     {
-      "id": "workplace-015", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-015",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to check what the priority is.",
       "situationJa": "何を優先すべきか確認したい。",
-      "tags": ["asking", "priority"],
+      "tags": [
+        "asking",
+        "priority"
+      ],
       "answers": [
-        { "en": "Which should I do first?", "ja": "どれを先にやるべきですか。", "register": "neutral", "style": "basic", "note": "端的で明確。迷ったらこれ。" },
-        { "en": "What's the priority?", "ja": "優先すべきはどれですか。", "register": "neutral", "style": "oneword", "note": "短くて実用的。職場での定番。" },
-        { "en": "Could you help me prioritize these?", "ja": "これらの優先順位を整理していただけますか。", "register": "polite", "style": "request", "note": "prioritize は「優先順位をつける」。相談の形にできる。" },
-        { "en": "If I can only finish one today, which should it be?", "ja": "今日1つしか終わらないとしたら、どれにすべきですか。", "register": "neutral", "style": "basic", "note": "制約を示して選ばせる。最も答えやすい形。" },
-        { "en": "I'd appreciate your guidance on which task takes precedence.", "ja": "どの業務を優先すべきかご指示いただけますと助かります。", "register": "formal", "style": "formal", "note": "take precedence は「優先する」。改まった言い方。" },
-        { "en": "What's most urgent?", "ja": "いちばん急ぐのは何ですか。", "register": "casual", "style": "casual", "note": "短くて実用的。忙しい上司にも聞きやすい。" },
-        { "en": "Is anything on this list less critical than the others?", "ja": "この中で、他より重要度が低いものはありますか。", "register": "neutral", "style": "existence", "note": "外せるものを探す。現実的な問いかけ。" },
-        { "en": "Can any of these slip to next week?", "ja": "この中で来週にずらせるものはありますか。", "register": "neutral", "style": "vocab", "note": "slip は「後ろにずれる」。負荷調整の相談。" },
-        { "en": "I have the report, the deck, and the data review — which comes first?", "ja": "報告書と資料とデータ確認があります。どれが先でしょうか。", "register": "polite", "style": "context", "note": "抱えているものを列挙する。判断材料が揃う。" },
-        { "en": "I want to spend my time where it matters most — what would you say?", "ja": "いちばん意味のあるところに時間を使いたいのですが、どうお考えですか。", "register": "polite", "style": "considerate", "note": "姿勢が伝わる。上司から信頼される問い方。" }
+        {
+          "en": "Which should I do first?",
+          "ja": "どれを先にやるべきですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "端的で明確。迷ったらこれ。"
+        },
+        {
+          "en": "What's the priority?",
+          "ja": "優先すべきはどれですか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて実用的。職場での定番。"
+        },
+        {
+          "en": "Could you help me prioritize these?",
+          "ja": "これらの優先順位を整理していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "prioritize は「優先順位をつける」。相談の形にできる。"
+        },
+        {
+          "en": "If I can only finish one today, which should it be?",
+          "ja": "今日1つしか終わらないとしたら、どれにすべきですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "制約を示して選ばせる。最も答えやすい形。"
+        },
+        {
+          "en": "I'd appreciate your guidance on which task takes precedence.",
+          "ja": "どの業務を優先すべきかご指示いただけますと助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "take precedence は「優先する」。改まった言い方。"
+        },
+        {
+          "en": "What's most urgent?",
+          "ja": "いちばん急ぐのは何ですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短くて実用的。忙しい上司にも聞きやすい。"
+        },
+        {
+          "en": "Is anything on this list less critical than the others?",
+          "ja": "この中で、他より重要度が低いものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "外せるものを探す。現実的な問いかけ。"
+        },
+        {
+          "en": "Can any of these slip to next week?",
+          "ja": "この中で来週にずらせるものはありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "slip は「後ろにずれる」。負荷調整の相談。"
+        },
+        {
+          "en": "I have the report, the deck, and the data review — which comes first?",
+          "ja": "報告書と資料とデータ確認があります。どれが先でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "抱えているものを列挙する。判断材料が揃う。"
+        },
+        {
+          "en": "I want to spend my time where it matters most — what would you say?",
+          "ja": "いちばん意味のあるところに時間を使いたいのですが、どうお考えですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "姿勢が伝わる。上司から信頼される問い方。"
+        }
       ]
     },
     {
-      "id": "workplace-016", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-016",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to say you will be working from home tomorrow.",
       "situationJa": "明日は在宅勤務だと伝えたい。",
-      "tags": ["informing"],
+      "tags": [
+        "informing"
+      ],
       "answers": [
-        { "en": "I'm working from home tomorrow.", "ja": "明日は在宅で働きます。", "register": "neutral", "style": "basic", "note": "基本形。work from home が標準表現。" },
-        { "en": "WFH tomorrow.", "ja": "明日は在宅です。", "register": "casual", "style": "oneword", "note": "WFH は work from home の略。チャットで頻出。" },
-        { "en": "I'll be remote tomorrow.", "ja": "明日はリモートです。", "register": "neutral", "style": "vocab", "note": "remote は「遠隔勤務の」。近年よく使われる。" },
-        { "en": "Just to let you know, I'll be at home tomorrow.", "ja": "お知らせまでに、明日は自宅で作業します。", "register": "polite", "style": "request", "note": "Just to let you know は連絡の定番の前置き。" },
-        { "en": "I wanted to inform you that I'll be working remotely tomorrow.", "ja": "明日は遠隔で勤務いたしますことをお知らせします。", "register": "formal", "style": "formal", "note": "改まった連絡。上司や社外向けに。" },
-        { "en": "I'm at home tomorrow, by the way.", "ja": "ちなみに明日は家にいます。", "register": "casual", "style": "casual", "note": "会話のついでに伝える。気さくな職場で。" },
-        { "en": "Is there anything you need from me before then?", "ja": "それまでに私から必要なものはありますか。", "register": "polite", "style": "existence", "note": "先回りの配慮。信頼される伝え方。" },
-        { "en": "I'll be on Slack all day if you need me.", "ja": "必要でしたら一日中 Slack にいます。", "register": "neutral", "style": "basic", "note": "連絡手段を添える。在宅の不安を消せる。" },
-        { "en": "I have a delivery coming, so I'll work from home tomorrow.", "ja": "配達があるので、明日は在宅で働きます。", "register": "polite", "style": "context", "note": "理由を添えると、納得感が高まる。" },
-        { "en": "Let me know if that causes any problems.", "ja": "何か支障があればお知らせください。", "register": "polite", "style": "considerate", "note": "相手に異議を挟む余地を残す。丁寧な締め方。" }
+        {
+          "en": "I'm working from home tomorrow.",
+          "ja": "明日は在宅で働きます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。work from home が標準表現。"
+        },
+        {
+          "en": "WFH tomorrow.",
+          "ja": "明日は在宅です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "WFH は work from home の略。チャットで頻出。"
+        },
+        {
+          "en": "I'll be remote tomorrow.",
+          "ja": "明日はリモートです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "remote は「遠隔勤務の」。近年よく使われる。"
+        },
+        {
+          "en": "Just to let you know, I'll be at home tomorrow.",
+          "ja": "お知らせまでに、明日は自宅で作業します。",
+          "register": "polite",
+          "style": "request",
+          "note": "Just to let you know は連絡の定番の前置き。"
+        },
+        {
+          "en": "I wanted to inform you that I'll be working remotely tomorrow.",
+          "ja": "明日は遠隔で勤務いたしますことをお知らせします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった連絡。上司や社外向けに。"
+        },
+        {
+          "en": "I'm at home tomorrow, by the way.",
+          "ja": "ちなみに明日は家にいます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "会話のついでに伝える。気さくな職場で。"
+        },
+        {
+          "en": "Is there anything you need from me before then?",
+          "ja": "それまでに私から必要なものはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "先回りの配慮。信頼される伝え方。"
+        },
+        {
+          "en": "I'll be on Slack all day if you need me.",
+          "ja": "必要でしたら一日中 Slack にいます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "連絡手段を添える。在宅の不安を消せる。"
+        },
+        {
+          "en": "I have a delivery coming, so I'll work from home tomorrow.",
+          "ja": "配達があるので、明日は在宅で働きます。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、納得感が高まる。"
+        },
+        {
+          "en": "Let me know if that causes any problems.",
+          "ja": "何か支障があればお知らせください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手に異議を挟む余地を残す。丁寧な締め方。"
+        }
       ]
     },
     {
-      "id": "workplace-017", "category": "workplace", "difficulty": 3,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-017",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to point out an error in their work kindly.",
       "situationJa": "同僚の資料の誤りを、角を立てずに指摘したい。",
-      "tags": ["feedback", "polite"],
+      "tags": [
+        "feedback",
+        "polite"
+      ],
       "answers": [
-        { "en": "I think there might be a typo here.", "ja": "ここに誤字があるかもしれません。", "register": "neutral", "style": "basic", "note": "might be で断定を避ける。最も角が立たない。" },
-        { "en": "Small thing — this number looks off.", "ja": "些細なことですが、この数字が合わない気がします。", "register": "neutral", "style": "oneword", "note": "small thing と前置きすると相手が構えない。" },
-        { "en": "Could you double-check this figure?", "ja": "この数値を再確認していただけますか。", "register": "polite", "style": "request", "note": "確認を促す形。誰も責めずに済む。" },
-        { "en": "Am I reading this right? It looks like the total doesn't add up.", "ja": "私の読み違いでしょうか。合計が合わないように見えます。", "register": "polite", "style": "basic", "note": "自分の誤りの可能性を先に置く。最も摩擦が少ない。" },
-        { "en": "I may be mistaken, but I believe this section needs revisiting.", "ja": "私の思い違いかもしれませんが、この箇所は見直しが必要かと存じます。", "register": "formal", "style": "formal", "note": "revisit は「見直す」。改まった指摘。" },
-        { "en": "Hey, I think this bit's wrong.", "ja": "ねえ、ここ間違ってると思う。", "register": "casual", "style": "casual", "note": "親しい同僚にのみ。関係ができていないと角が立つ。" },
-        { "en": "Is this figure from the latest data?", "ja": "この数値は最新データからですか。", "register": "neutral", "style": "existence", "note": "質問の形にすると、相手が自分で気づける。" },
-        { "en": "Should this say Q3 rather than Q2?", "ja": "ここは第2四半期ではなく第3四半期ではないでしょうか。", "register": "neutral", "style": "vocab", "note": "正しい案を示す。修正が速い。" },
-        { "en": "I cross-checked against the source and got a different number — could we look together?", "ja": "元データと突き合わせたら違う数字になりました。一緒に確認できますか。", "register": "polite", "style": "context", "note": "根拠を示しつつ共同作業にする。最も建設的。" },
-        { "en": "Everything else looks great — just this one thing.", "ja": "他はすべてすばらしいです。この一点だけです。", "register": "polite", "style": "considerate", "note": "全体を認めてから指摘する。相手の意欲を保てる。" }
+        {
+          "en": "I think there might be a typo here.",
+          "ja": "ここに誤字があるかもしれません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "might be で断定を避ける。最も角が立たない。"
+        },
+        {
+          "en": "Small thing — this number looks off.",
+          "ja": "些細なことですが、この数字が合わない気がします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "small thing と前置きすると相手が構えない。"
+        },
+        {
+          "en": "Could you double-check this figure?",
+          "ja": "この数値を再確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "確認を促す形。誰も責めずに済む。"
+        },
+        {
+          "en": "Am I reading this right? It looks like the total doesn't add up.",
+          "ja": "私の読み違いでしょうか。合計が合わないように見えます。",
+          "register": "polite",
+          "style": "basic",
+          "note": "自分の誤りの可能性を先に置く。最も摩擦が少ない。"
+        },
+        {
+          "en": "I may be mistaken, but I believe this section needs revisiting.",
+          "ja": "私の思い違いかもしれませんが、この箇所は見直しが必要かと存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "revisit は「見直す」。改まった指摘。"
+        },
+        {
+          "en": "Hey, I think this bit's wrong.",
+          "ja": "ねえ、ここ間違ってると思う。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい同僚にのみ。関係ができていないと角が立つ。"
+        },
+        {
+          "en": "Is this figure from the latest data?",
+          "ja": "この数値は最新データからですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "質問の形にすると、相手が自分で気づける。"
+        },
+        {
+          "en": "Should this say Q3 rather than Q2?",
+          "ja": "ここは第2四半期ではなく第3四半期ではないでしょうか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "正しい案を示す。修正が速い。"
+        },
+        {
+          "en": "I cross-checked against the source and got a different number — could we look together?",
+          "ja": "元データと突き合わせたら違う数字になりました。一緒に確認できますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "根拠を示しつつ共同作業にする。最も建設的。"
+        },
+        {
+          "en": "Everything else looks great — just this one thing.",
+          "ja": "他はすべてすばらしいです。この一点だけです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "全体を認めてから指摘する。相手の意欲を保てる。"
+        }
       ]
     },
     {
-      "id": "workplace-018", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-018",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask them to cover for you while you are away.",
       "situationJa": "不在の間、代わりに対応してほしいと頼みたい。",
-      "tags": ["requesting", "cover"],
+      "tags": [
+        "requesting",
+        "cover"
+      ],
       "answers": [
-        { "en": "Could you cover for me?", "ja": "代わりに対応していただけますか。", "register": "polite", "style": "request", "note": "cover for someone は「代理を務める」。職場の必須表現。" },
-        { "en": "Cover for me Friday?", "ja": "金曜、代わってもらえますか。", "register": "casual", "style": "oneword", "note": "親しい同僚に。日付を添えると具体的。" },
-        { "en": "Would you be able to handle my calls while I'm out?", "ja": "不在中の電話対応をお願いできますか。", "register": "polite", "style": "basic", "note": "何をしてほしいかを明示。相手が判断しやすい。" },
-        { "en": "Could you keep an eye on the inbox for me?", "ja": "受信箱を見ていていただけますか。", "register": "polite", "style": "vocab", "note": "keep an eye on 〜 は「見ておく」。負担が軽く聞こえる。" },
-        { "en": "I'd be very grateful if you could look after things while I'm away.", "ja": "不在中のことをお任せできますと大変助かります。", "register": "formal", "style": "formal", "note": "look after 〜 は「面倒を見る」。改まった依頼。" },
-        { "en": "Can you hold the fort?", "ja": "留守を頼める？", "register": "casual", "style": "casual", "note": "hold the fort は「留守を守る」の慣用句。親しみのある表現。" },
-        { "en": "Is there anyone else who could cover if you're busy?", "ja": "ご都合が悪ければ、他に代われる方はいますか。", "register": "neutral", "style": "existence", "note": "相手に逃げ道を用意する。押しつけにならない。" },
-        { "en": "I'll leave notes on everything before I go.", "ja": "出る前にすべてメモを残しておきます。", "register": "neutral", "style": "basic", "note": "負担を減らす約束。引き受けてもらいやすい。" },
-        { "en": "I'm out Thursday and Friday for a conference — could you cover the client emails?", "ja": "木金は会議で不在です。顧客メールの対応をお願いできますか。", "register": "polite", "style": "context", "note": "期間と範囲を明示。最も引き受けやすい頼み方。" },
-        { "en": "Happy to return the favor whenever you need it.", "ja": "必要なときはいつでもお返しします。", "register": "polite", "style": "considerate", "note": "return the favor は「恩返しする」。関係が続く一言。" }
+        {
+          "en": "Could you cover for me?",
+          "ja": "代わりに対応していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "cover for someone は「代理を務める」。職場の必須表現。"
+        },
+        {
+          "en": "Cover for me Friday?",
+          "ja": "金曜、代わってもらえますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "親しい同僚に。日付を添えると具体的。"
+        },
+        {
+          "en": "Would you be able to handle my calls while I'm out?",
+          "ja": "不在中の電話対応をお願いできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "何をしてほしいかを明示。相手が判断しやすい。"
+        },
+        {
+          "en": "Could you keep an eye on the inbox for me?",
+          "ja": "受信箱を見ていていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "keep an eye on 〜 は「見ておく」。負担が軽く聞こえる。"
+        },
+        {
+          "en": "I'd be very grateful if you could look after things while I'm away.",
+          "ja": "不在中のことをお任せできますと大変助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "look after 〜 は「面倒を見る」。改まった依頼。"
+        },
+        {
+          "en": "Can you hold the fort?",
+          "ja": "留守を頼める？",
+          "register": "casual",
+          "style": "casual",
+          "note": "hold the fort は「留守を守る」の慣用句。親しみのある表現。"
+        },
+        {
+          "en": "Is there anyone else who could cover if you're busy?",
+          "ja": "ご都合が悪ければ、他に代われる方はいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相手に逃げ道を用意する。押しつけにならない。"
+        },
+        {
+          "en": "I'll leave notes on everything before I go.",
+          "ja": "出る前にすべてメモを残しておきます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "負担を減らす約束。引き受けてもらいやすい。"
+        },
+        {
+          "en": "I'm out Thursday and Friday for a conference — could you cover the client emails?",
+          "ja": "木金は会議で不在です。顧客メールの対応をお願いできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "期間と範囲を明示。最も引き受けやすい頼み方。"
+        },
+        {
+          "en": "Happy to return the favor whenever you need it.",
+          "ja": "必要なときはいつでもお返しします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "return the favor は「恩返しする」。関係が続く一言。"
+        }
       ]
     },
     {
-      "id": "workplace-019", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-019",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to thank them for their help.",
       "situationJa": "手伝ってくれたことへの感謝を伝えたい。",
-      "tags": ["thanking"],
+      "tags": [
+        "thanking"
+      ],
       "answers": [
-        { "en": "Thanks so much for your help.", "ja": "手伝っていただいてありがとうございます。", "register": "neutral", "style": "basic", "note": "最も基本。日常的に使いたい。" },
-        { "en": "Thanks, that was a big help.", "ja": "ありがとう、とても助かりました。", "register": "neutral", "style": "oneword", "note": "a big help は「大きな助け」。素直で温かい。" },
-        { "en": "I really appreciate you taking the time.", "ja": "お時間を割いていただき本当に感謝しています。", "register": "polite", "style": "basic", "note": "時間への感謝は特に響く。" },
-        { "en": "Could I buy you a coffee sometime?", "ja": "今度コーヒーでもごちそうさせてください。", "register": "polite", "style": "request", "note": "具体的なお返しの申し出。関係が深まる。" },
-        { "en": "I'm most grateful for your assistance with this.", "ja": "この件でのご支援に深く感謝申し上げます。", "register": "formal", "style": "formal", "note": "改まった感謝。書面でも使える。" },
-        { "en": "You're a lifesaver.", "ja": "本当に助かりました。", "register": "casual", "style": "casual", "note": "lifesaver は「救世主」。親しい同僚への感謝。" },
-        { "en": "Is there anything I can do for you in return?", "ja": "何かお返しできることはありますか。", "register": "polite", "style": "existence", "note": "in return は「お返しに」。誠実な申し出。" },
-        { "en": "That saved me hours.", "ja": "何時間も節約できました。", "register": "neutral", "style": "vocab", "note": "具体的な効果を伝える。感謝が実感として伝わる。" },
-        { "en": "I was stuck all morning and you sorted it in ten minutes — thank you.", "ja": "午前中ずっと詰まっていたのを10分で解決していただきました。ありがとうございます。", "register": "polite", "style": "context", "note": "具体的に語ると、感謝の重みが伝わる。" },
-        { "en": "I know you were busy too — thanks for making the time.", "ja": "あなたもお忙しかったのに、時間を作っていただきありがとうございます。", "register": "polite", "style": "considerate", "note": "相手の状況を認める。最も心に残る感謝。" }
+        {
+          "en": "Thanks so much for your help.",
+          "ja": "手伝っていただいてありがとうございます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最も基本。日常的に使いたい。"
+        },
+        {
+          "en": "Thanks, that was a big help.",
+          "ja": "ありがとう、とても助かりました。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "a big help は「大きな助け」。素直で温かい。"
+        },
+        {
+          "en": "I really appreciate you taking the time.",
+          "ja": "お時間を割いていただき本当に感謝しています。",
+          "register": "polite",
+          "style": "basic",
+          "note": "時間への感謝は特に響く。"
+        },
+        {
+          "en": "Could I buy you a coffee sometime?",
+          "ja": "今度コーヒーでもごちそうさせてください。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的なお返しの申し出。関係が深まる。"
+        },
+        {
+          "en": "I'm most grateful for your assistance with this.",
+          "ja": "この件でのご支援に深く感謝申し上げます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった感謝。書面でも使える。"
+        },
+        {
+          "en": "You're a lifesaver.",
+          "ja": "本当に助かりました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "lifesaver は「救世主」。親しい同僚への感謝。"
+        },
+        {
+          "en": "Is there anything I can do for you in return?",
+          "ja": "何かお返しできることはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "in return は「お返しに」。誠実な申し出。"
+        },
+        {
+          "en": "That saved me hours.",
+          "ja": "何時間も節約できました。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "具体的な効果を伝える。感謝が実感として伝わる。"
+        },
+        {
+          "en": "I was stuck all morning and you sorted it in ten minutes — thank you.",
+          "ja": "午前中ずっと詰まっていたのを10分で解決していただきました。ありがとうございます。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的に語ると、感謝の重みが伝わる。"
+        },
+        {
+          "en": "I know you were busy too — thanks for making the time.",
+          "ja": "あなたもお忙しかったのに、時間を作っていただきありがとうございます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の状況を認める。最も心に残る感謝。"
+        }
       ]
     },
     {
-      "id": "workplace-020", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-020",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to ask for feedback on your work.",
       "situationJa": "自分の仕事について意見をもらいたい。",
-      "tags": ["requesting", "feedback"],
+      "tags": [
+        "requesting",
+        "feedback"
+      ],
       "answers": [
-        { "en": "Could I get your feedback on this?", "ja": "これについてご意見をいただけますか。", "register": "polite", "style": "request", "note": "基本形。職場で最も使う頼み方。" },
-        { "en": "Any thoughts?", "ja": "何かお考えはありますか。", "register": "casual", "style": "oneword", "note": "短くて自然。資料を見せながら。" },
-        { "en": "How did I do?", "ja": "どうだったでしょうか。", "register": "neutral", "style": "basic", "note": "終わった仕事について。素直で好印象。" },
-        { "en": "Is there anything I could have done better?", "ja": "もっとうまくできた点はありますか。", "register": "polite", "style": "existence", "note": "改善点を求める形。成長意欲が伝わる。" },
-        { "en": "I'd welcome any feedback you might have on my approach.", "ja": "私の進め方についてご意見を頂戴できますと幸いです。", "register": "formal", "style": "formal", "note": "welcome は「歓迎する」。改まった依頼。" },
-        { "en": "What did you think?", "ja": "どう思われました？", "register": "casual", "style": "casual", "note": "率直な聞き方。関係が良ければ自然。" },
-        { "en": "Was the level of detail about right?", "ja": "詳しさの度合いは適切でしたか。", "register": "neutral", "style": "vocab", "note": "具体的な観点で聞く。答えやすく実用的。" },
-        { "en": "What would you like me to do differently next time?", "ja": "次回はどこを変えるとよいでしょうか。", "register": "neutral", "style": "basic", "note": "未来志向。相手も言いやすい。" },
-        { "en": "The client seemed happy, but I'd like your honest view on the structure.", "ja": "顧客は満足そうでしたが、構成について率直なご意見を伺いたいです。", "register": "polite", "style": "context", "note": "観点を絞る。有益な意見が返ってくる。" },
-        { "en": "Don't hold back — I'd rather hear it now than later.", "ja": "遠慮なくおっしゃってください。後より今のほうがよいので。", "register": "polite", "style": "considerate", "note": "hold back は「遠慮する」。率直な意見を引き出せる。" }
+        {
+          "en": "Could I get your feedback on this?",
+          "ja": "これについてご意見をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。職場で最も使う頼み方。"
+        },
+        {
+          "en": "Any thoughts?",
+          "ja": "何かお考えはありますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くて自然。資料を見せながら。"
+        },
+        {
+          "en": "How did I do?",
+          "ja": "どうだったでしょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "終わった仕事について。素直で好印象。"
+        },
+        {
+          "en": "Is there anything I could have done better?",
+          "ja": "もっとうまくできた点はありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "改善点を求める形。成長意欲が伝わる。"
+        },
+        {
+          "en": "I'd welcome any feedback you might have on my approach.",
+          "ja": "私の進め方についてご意見を頂戴できますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "welcome は「歓迎する」。改まった依頼。"
+        },
+        {
+          "en": "What did you think?",
+          "ja": "どう思われました？",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な聞き方。関係が良ければ自然。"
+        },
+        {
+          "en": "Was the level of detail about right?",
+          "ja": "詳しさの度合いは適切でしたか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "具体的な観点で聞く。答えやすく実用的。"
+        },
+        {
+          "en": "What would you like me to do differently next time?",
+          "ja": "次回はどこを変えるとよいでしょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "未来志向。相手も言いやすい。"
+        },
+        {
+          "en": "The client seemed happy, but I'd like your honest view on the structure.",
+          "ja": "顧客は満足そうでしたが、構成について率直なご意見を伺いたいです。",
+          "register": "polite",
+          "style": "context",
+          "note": "観点を絞る。有益な意見が返ってくる。"
+        },
+        {
+          "en": "Don't hold back — I'd rather hear it now than later.",
+          "ja": "遠慮なくおっしゃってください。後より今のほうがよいので。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "hold back は「遠慮する」。率直な意見を引き出せる。"
+        }
       ]
     },
     {
-      "id": "workplace-021", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-021",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to invite a colleague to lunch.",
       "situationJa": "同僚を昼食に誘いたい。",
-      "tags": ["inviting"],
+      "tags": [
+        "inviting"
+      ],
       "answers": [
-        { "en": "Want to grab lunch?", "ja": "お昼、一緒にどうですか。", "register": "casual", "style": "oneword", "note": "grab lunch は「昼を食べに行く」。最も自然な誘い方。" },
-        { "en": "Would you like to get lunch together?", "ja": "一緒にお昼はいかがですか。", "register": "polite", "style": "request", "note": "丁寧な誘い方。初対面の同僚にも。" },
-        { "en": "Are you free for lunch today?", "ja": "今日、お昼のご都合はいかがですか。", "register": "neutral", "style": "basic", "note": "都合を聞く形。断りやすくて親切。" },
-        { "en": "A few of us are going for lunch — join us?", "ja": "何人かで昼に行きます。ご一緒しませんか。", "register": "neutral", "style": "basic", "note": "集団の誘い。参加のハードルが下がる。" },
-        { "en": "Would you care to join us for lunch?", "ja": "お昼をご一緒にいかがでしょうか。", "register": "formal", "style": "formal", "note": "care to 〜 は改まった「〜しませんか」。" },
-        { "en": "Lunch?", "ja": "昼どう？", "register": "casual", "style": "casual", "note": "最短。親しい同僚に。" },
-        { "en": "Is there anywhere you've been wanting to try?", "ja": "行ってみたいお店はありますか。", "register": "neutral", "style": "existence", "note": "相手に選ばせる。会話が弾む。" },
-        { "en": "I'm heading out around twelve if you fancy it.", "ja": "12時ごろに出ますので、よければご一緒に。", "register": "neutral", "style": "vocab", "note": "fancy は英国で「〜したい気がする」。押しつけがましくない。" },
-        { "en": "You mentioned you like ramen — there's a good place nearby.", "ja": "ラーメンがお好きとおっしゃっていましたね。近くに良い店があります。", "register": "polite", "style": "context", "note": "相手の話を覚えている。誘いが自然になる。" },
-        { "en": "No worries if you're busy — but lunch sometime?", "ja": "お忙しければ結構ですが、いつかお昼でも。", "register": "polite", "style": "considerate", "note": "断りやすくする。関係を壊さない誘い方。" }
+        {
+          "en": "Want to grab lunch?",
+          "ja": "お昼、一緒にどうですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "grab lunch は「昼を食べに行く」。最も自然な誘い方。"
+        },
+        {
+          "en": "Would you like to get lunch together?",
+          "ja": "一緒にお昼はいかがですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な誘い方。初対面の同僚にも。"
+        },
+        {
+          "en": "Are you free for lunch today?",
+          "ja": "今日、お昼のご都合はいかがですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "都合を聞く形。断りやすくて親切。"
+        },
+        {
+          "en": "A few of us are going for lunch — join us?",
+          "ja": "何人かで昼に行きます。ご一緒しませんか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "集団の誘い。参加のハードルが下がる。"
+        },
+        {
+          "en": "Would you care to join us for lunch?",
+          "ja": "お昼をご一緒にいかがでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "care to 〜 は改まった「〜しませんか」。"
+        },
+        {
+          "en": "Lunch?",
+          "ja": "昼どう？",
+          "register": "casual",
+          "style": "casual",
+          "note": "最短。親しい同僚に。"
+        },
+        {
+          "en": "Is there anywhere you've been wanting to try?",
+          "ja": "行ってみたいお店はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "相手に選ばせる。会話が弾む。"
+        },
+        {
+          "en": "I'm heading out around twelve if you fancy it.",
+          "ja": "12時ごろに出ますので、よければご一緒に。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "fancy は英国で「〜したい気がする」。押しつけがましくない。"
+        },
+        {
+          "en": "You mentioned you like ramen — there's a good place nearby.",
+          "ja": "ラーメンがお好きとおっしゃっていましたね。近くに良い店があります。",
+          "register": "polite",
+          "style": "context",
+          "note": "相手の話を覚えている。誘いが自然になる。"
+        },
+        {
+          "en": "No worries if you're busy — but lunch sometime?",
+          "ja": "お忙しければ結構ですが、いつかお昼でも。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断りやすくする。関係を壊さない誘い方。"
+        }
       ]
     },
     {
-      "id": "workplace-022", "category": "workplace", "difficulty": 3,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-022",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to raise a concern about the team's workload.",
       "situationJa": "チームの業務量について懸念を伝えたい。",
-      "tags": ["raising", "concern"],
+      "tags": [
+        "raising",
+        "concern"
+      ],
       "answers": [
-        { "en": "I have a concern about the workload.", "ja": "業務量について懸念があります。", "register": "neutral", "style": "basic", "note": "率直だが冷静。切り出しとして適切。" },
-        { "en": "Could we talk about capacity?", "ja": "対応能力についてお話しできますか。", "register": "polite", "style": "request", "note": "capacity は「対応できる量」。感情を避けた表現。" },
-        { "en": "The team is stretched at the moment.", "ja": "チームは今、手一杯の状態です。", "register": "neutral", "style": "vocab", "note": "stretched は「限界近くまで引き伸ばされた」。的確な語。" },
-        { "en": "I wanted to flag something before it becomes a problem.", "ja": "問題になる前にお伝えしておきたいことがあります。", "register": "polite", "style": "oneword", "note": "flag は「注意喚起する」。前向きな切り出し。" },
-        { "en": "I'd like to raise a concern regarding the current allocation of work.", "ja": "現在の業務配分について懸念をお伝えしたいと存じます。", "register": "formal", "style": "formal", "note": "allocation は「配分」。改まった問題提起。" },
-        { "en": "People are burning out.", "ja": "みんな疲弊しています。", "register": "casual", "style": "casual", "note": "burn out は「燃え尽きる」。強い表現なので使いどころに注意。" },
-        { "en": "Is there scope to bring in extra help?", "ja": "追加の人手を入れる余地はありますか。", "register": "neutral", "style": "existence", "note": "scope は「余地」。解決策の提案として。" },
-        { "en": "Could we look at what to deprioritize?", "ja": "何の優先度を下げるか検討できますか。", "register": "polite", "style": "basic", "note": "deprioritize は「優先度を下げる」。現実的な提案。" },
-        { "en": "Three people have worked weekends this month — I'm worried about sustainability.", "ja": "今月3人が週末も働いています。持続可能性を心配しています。", "register": "polite", "style": "context", "note": "事実を示して懸念を述べる。最も説得力がある。" },
-        { "en": "I know the targets matter — I just want us to hit them without losing people.", "ja": "目標が重要なのは承知しています。人を失わずに達成したいのです。", "register": "polite", "style": "considerate", "note": "会社の目的に沿った形で懸念を出す。受け入れられやすい。" }
+        {
+          "en": "I have a concern about the workload.",
+          "ja": "業務量について懸念があります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "率直だが冷静。切り出しとして適切。"
+        },
+        {
+          "en": "Could we talk about capacity?",
+          "ja": "対応能力についてお話しできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "capacity は「対応できる量」。感情を避けた表現。"
+        },
+        {
+          "en": "The team is stretched at the moment.",
+          "ja": "チームは今、手一杯の状態です。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "stretched は「限界近くまで引き伸ばされた」。的確な語。"
+        },
+        {
+          "en": "I wanted to flag something before it becomes a problem.",
+          "ja": "問題になる前にお伝えしておきたいことがあります。",
+          "register": "polite",
+          "style": "oneword",
+          "note": "flag は「注意喚起する」。前向きな切り出し。"
+        },
+        {
+          "en": "I'd like to raise a concern regarding the current allocation of work.",
+          "ja": "現在の業務配分について懸念をお伝えしたいと存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "allocation は「配分」。改まった問題提起。"
+        },
+        {
+          "en": "People are burning out.",
+          "ja": "みんな疲弊しています。",
+          "register": "casual",
+          "style": "casual",
+          "note": "burn out は「燃え尽きる」。強い表現なので使いどころに注意。"
+        },
+        {
+          "en": "Is there scope to bring in extra help?",
+          "ja": "追加の人手を入れる余地はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "scope は「余地」。解決策の提案として。"
+        },
+        {
+          "en": "Could we look at what to deprioritize?",
+          "ja": "何の優先度を下げるか検討できますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "deprioritize は「優先度を下げる」。現実的な提案。"
+        },
+        {
+          "en": "Three people have worked weekends this month — I'm worried about sustainability.",
+          "ja": "今月3人が週末も働いています。持続可能性を心配しています。",
+          "register": "polite",
+          "style": "context",
+          "note": "事実を示して懸念を述べる。最も説得力がある。"
+        },
+        {
+          "en": "I know the targets matter — I just want us to hit them without losing people.",
+          "ja": "目標が重要なのは承知しています。人を失わずに達成したいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "会社の目的に沿った形で懸念を出す。受け入れられやすい。"
+        }
       ]
     },
     {
-      "id": "workplace-023", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-023",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask them to keep something confidential.",
       "situationJa": "内密にしてほしいと頼みたい。",
-      "tags": ["requesting", "confidentiality"],
+      "tags": [
+        "requesting",
+        "confidentiality"
+      ],
       "answers": [
-        { "en": "Could you keep this between us?", "ja": "これは私たちの間だけにしていただけますか。", "register": "polite", "style": "request", "note": "between us は「内緒で」。最も自然な頼み方。" },
-        { "en": "Please keep this confidential.", "ja": "これは内密にお願いします。", "register": "neutral", "style": "basic", "note": "confidential は「機密の」。正式で明確。" },
-        { "en": "This is just between you and me.", "ja": "これはあなたと私だけの話です。", "register": "neutral", "style": "oneword", "note": "打ち明ける前の定番の前置き。" },
-        { "en": "Would you mind not sharing this for now?", "ja": "今のところは共有しないでいただけますでしょうか。", "register": "polite", "style": "basic", "note": "for now を付けると期限付きだと分かる。" },
-        { "en": "I'd be grateful if this could remain confidential for the time being.", "ja": "当面のところ内密にしていただけますと幸いです。", "register": "formal", "style": "formal", "note": "for the time being は「当面」。改まった依頼。" },
-        { "en": "Don't tell anyone yet, OK?", "ja": "まだ誰にも言わないでね。", "register": "casual", "style": "casual", "note": "親しい同僚に。軽い響きなので重要案件には不向き。" },
-        { "en": "Is there anyone who needs to know at this stage?", "ja": "この段階で知っておくべき人はいますか。", "register": "neutral", "style": "existence", "note": "共有範囲を一緒に決める形。実務的。" },
-        { "en": "It's not public yet.", "ja": "まだ公表されていません。", "register": "neutral", "style": "vocab", "note": "事実を述べるだけで、暗に口止めできる。" },
-        { "en": "The announcement goes out Friday, so please hold off until then.", "ja": "発表は金曜なので、それまではお控えください。", "register": "polite", "style": "context", "note": "hold off は「控える」。期限が明確で守られやすい。" },
-        { "en": "I trust you — I just wanted to say it out loud.", "ja": "信頼しています。念のため口に出しておきたかっただけです。", "register": "polite", "style": "considerate", "note": "相手を疑っていないと示す。関係を損なわない。" }
+        {
+          "en": "Could you keep this between us?",
+          "ja": "これは私たちの間だけにしていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "between us は「内緒で」。最も自然な頼み方。"
+        },
+        {
+          "en": "Please keep this confidential.",
+          "ja": "これは内密にお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "confidential は「機密の」。正式で明確。"
+        },
+        {
+          "en": "This is just between you and me.",
+          "ja": "これはあなたと私だけの話です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "打ち明ける前の定番の前置き。"
+        },
+        {
+          "en": "Would you mind not sharing this for now?",
+          "ja": "今のところは共有しないでいただけますでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "for now を付けると期限付きだと分かる。"
+        },
+        {
+          "en": "I'd be grateful if this could remain confidential for the time being.",
+          "ja": "当面のところ内密にしていただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "for the time being は「当面」。改まった依頼。"
+        },
+        {
+          "en": "Don't tell anyone yet, OK?",
+          "ja": "まだ誰にも言わないでね。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい同僚に。軽い響きなので重要案件には不向き。"
+        },
+        {
+          "en": "Is there anyone who needs to know at this stage?",
+          "ja": "この段階で知っておくべき人はいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "共有範囲を一緒に決める形。実務的。"
+        },
+        {
+          "en": "It's not public yet.",
+          "ja": "まだ公表されていません。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "事実を述べるだけで、暗に口止めできる。"
+        },
+        {
+          "en": "The announcement goes out Friday, so please hold off until then.",
+          "ja": "発表は金曜なので、それまではお控えください。",
+          "register": "polite",
+          "style": "context",
+          "note": "hold off は「控える」。期限が明確で守られやすい。"
+        },
+        {
+          "en": "I trust you — I just wanted to say it out loud.",
+          "ja": "信頼しています。念のため口に出しておきたかっただけです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を疑っていないと示す。関係を損なわない。"
+        }
       ]
     },
     {
-      "id": "workplace-024", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-024",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask what happened in the meeting you missed.",
       "situationJa": "欠席した会議で何があったか聞きたい。",
-      "tags": ["asking", "catchup"],
+      "tags": [
+        "asking",
+        "catchup"
+      ],
       "answers": [
-        { "en": "What did I miss?", "ja": "何を聞き逃しましたか。", "register": "neutral", "style": "oneword", "note": "短くて自然。職場での定番。" },
-        { "en": "How did the meeting go?", "ja": "会議はどうでしたか。", "register": "neutral", "style": "basic", "note": "全体の様子を聞く形。会話が始まりやすい。" },
-        { "en": "Could you fill me in on the meeting?", "ja": "会議の内容を教えていただけますか。", "register": "polite", "style": "request", "note": "fill someone in は「経緯を教える」。職場の必須表現。" },
-        { "en": "Was anything decided?", "ja": "何か決まりましたか。", "register": "neutral", "style": "basic", "note": "結論を先に聞く。効率的。" },
-        { "en": "Would you mind summarizing what was discussed?", "ja": "話し合われた内容をまとめていただけますでしょうか。", "register": "formal", "style": "formal", "note": "summarize は「要約する」。改まった依頼。" },
-        { "en": "Anything I need to know?", "ja": "知っておくべきことある？", "register": "casual", "style": "casual", "note": "短くて実用的。忙しい同僚にも聞きやすい。" },
-        { "en": "Are there any actions for me?", "ja": "私がやるべきことはありますか。", "register": "neutral", "style": "existence", "note": "action は「対応事項」。最も実務的な質問。" },
-        { "en": "Were the minutes circulated?", "ja": "議事録は共有されましたか。", "register": "neutral", "style": "vocab", "note": "minutes は「議事録」。人に聞かずに済む方法。" },
-        { "en": "I had a client call, so I missed it — did the budget come up?", "ja": "顧客との通話で出られませんでした。予算の話は出ましたか。", "register": "polite", "style": "context", "note": "欠席理由と関心事を伝える。的確な情報がもらえる。" },
-        { "en": "No rush — just the headlines when you have a moment.", "ja": "急ぎません。お手すきのときに要点だけで結構です。", "register": "polite", "style": "considerate", "note": "headlines は「要点」。相手の負担を減らす配慮。" }
+        {
+          "en": "What did I miss?",
+          "ja": "何を聞き逃しましたか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて自然。職場での定番。"
+        },
+        {
+          "en": "How did the meeting go?",
+          "ja": "会議はどうでしたか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "全体の様子を聞く形。会話が始まりやすい。"
+        },
+        {
+          "en": "Could you fill me in on the meeting?",
+          "ja": "会議の内容を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "fill someone in は「経緯を教える」。職場の必須表現。"
+        },
+        {
+          "en": "Was anything decided?",
+          "ja": "何か決まりましたか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "結論を先に聞く。効率的。"
+        },
+        {
+          "en": "Would you mind summarizing what was discussed?",
+          "ja": "話し合われた内容をまとめていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "summarize は「要約する」。改まった依頼。"
+        },
+        {
+          "en": "Anything I need to know?",
+          "ja": "知っておくべきことある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "短くて実用的。忙しい同僚にも聞きやすい。"
+        },
+        {
+          "en": "Are there any actions for me?",
+          "ja": "私がやるべきことはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "action は「対応事項」。最も実務的な質問。"
+        },
+        {
+          "en": "Were the minutes circulated?",
+          "ja": "議事録は共有されましたか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "minutes は「議事録」。人に聞かずに済む方法。"
+        },
+        {
+          "en": "I had a client call, so I missed it — did the budget come up?",
+          "ja": "顧客との通話で出られませんでした。予算の話は出ましたか。",
+          "register": "polite",
+          "style": "context",
+          "note": "欠席理由と関心事を伝える。的確な情報がもらえる。"
+        },
+        {
+          "en": "No rush — just the headlines when you have a moment.",
+          "ja": "急ぎません。お手すきのときに要点だけで結構です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "headlines は「要点」。相手の負担を減らす配慮。"
+        }
       ]
     },
     {
-      "id": "workplace-025", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-025",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to say you agree with their suggestion.",
       "situationJa": "相手の提案に賛成だと伝えたい。",
-      "tags": ["agreeing"],
+      "tags": [
+        "agreeing"
+      ],
       "answers": [
-        { "en": "I agree.", "ja": "賛成です。", "register": "neutral", "style": "oneword", "note": "最も基本。会議ではっきり言えると価値がある。" },
-        { "en": "That makes sense to me.", "ja": "私には筋が通って聞こえます。", "register": "neutral", "style": "basic", "note": "make sense は「筋が通る」。自然でよく使う。" },
-        { "en": "I think that's the right call.", "ja": "それが正しい判断だと思います。", "register": "neutral", "style": "basic", "note": "the right call は「正しい判断」。支持が明確。" },
-        { "en": "Could we go with that approach?", "ja": "その方針で進めませんか。", "register": "polite", "style": "request", "note": "賛成しつつ次に進める。会議を動かせる。" },
-        { "en": "I'm entirely in agreement with that proposal.", "ja": "その提案に全面的に賛同いたします。", "register": "formal", "style": "formal", "note": "in agreement with 〜 は改まった賛意。" },
-        { "en": "Yeah, I'm on board.", "ja": "ええ、賛成です。", "register": "casual", "style": "casual", "note": "on board は「賛同している」。気さくな職場で。" },
-        { "en": "Is there any downside we should check?", "ja": "確認すべき欠点はありますか。", "register": "neutral", "style": "existence", "note": "賛成しつつ慎重さも示す。信頼される。" },
-        { "en": "That's exactly what I was going to suggest.", "ja": "まさに私が提案しようと思っていたことです。", "register": "neutral", "style": "vocab", "note": "強い賛同。相手を持ち上げる効果もある。" },
-        { "en": "We tried that with the last client and it worked well — I agree.", "ja": "前の顧客で試してうまくいきました。賛成です。", "register": "polite", "style": "context", "note": "経験に基づく賛成。提案の説得力が増す。" },
-        { "en": "I agree, and I'd add one small thing.", "ja": "賛成です。ひとつだけ付け加えさせてください。", "register": "polite", "style": "considerate", "note": "賛成を明示してから補足する。建設的で好印象。" }
+        {
+          "en": "I agree.",
+          "ja": "賛成です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も基本。会議ではっきり言えると価値がある。"
+        },
+        {
+          "en": "That makes sense to me.",
+          "ja": "私には筋が通って聞こえます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "make sense は「筋が通る」。自然でよく使う。"
+        },
+        {
+          "en": "I think that's the right call.",
+          "ja": "それが正しい判断だと思います。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "the right call は「正しい判断」。支持が明確。"
+        },
+        {
+          "en": "Could we go with that approach?",
+          "ja": "その方針で進めませんか。",
+          "register": "polite",
+          "style": "request",
+          "note": "賛成しつつ次に進める。会議を動かせる。"
+        },
+        {
+          "en": "I'm entirely in agreement with that proposal.",
+          "ja": "その提案に全面的に賛同いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "in agreement with 〜 は改まった賛意。"
+        },
+        {
+          "en": "Yeah, I'm on board.",
+          "ja": "ええ、賛成です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "on board は「賛同している」。気さくな職場で。"
+        },
+        {
+          "en": "Is there any downside we should check?",
+          "ja": "確認すべき欠点はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "賛成しつつ慎重さも示す。信頼される。"
+        },
+        {
+          "en": "That's exactly what I was going to suggest.",
+          "ja": "まさに私が提案しようと思っていたことです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "強い賛同。相手を持ち上げる効果もある。"
+        },
+        {
+          "en": "We tried that with the last client and it worked well — I agree.",
+          "ja": "前の顧客で試してうまくいきました。賛成です。",
+          "register": "polite",
+          "style": "context",
+          "note": "経験に基づく賛成。提案の説得力が増す。"
+        },
+        {
+          "en": "I agree, and I'd add one small thing.",
+          "ja": "賛成です。ひとつだけ付け加えさせてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "賛成を明示してから補足する。建設的で好印象。"
+        }
       ]
     },
     {
-      "id": "workplace-026", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-026",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask them to be quieter.",
       "situationJa": "少し静かにしてほしいと頼みたい。",
-      "tags": ["requesting", "polite"],
+      "tags": [
+        "requesting",
+        "polite"
+      ],
       "answers": [
-        { "en": "Sorry, could you keep it down a bit?", "ja": "すみません、少し声を抑えていただけますか。", "register": "polite", "style": "request", "note": "keep it down は「音量を下げる」。最も自然な頼み方。" },
-        { "en": "Sorry, I'm struggling to concentrate.", "ja": "すみません、集中しづらくて。", "register": "neutral", "style": "oneword", "note": "自分の状況として伝える。相手を責めない。" },
-        { "en": "Would you mind taking that call in the booth?", "ja": "その通話は個室でお願いできますでしょうか。", "register": "polite", "style": "basic", "note": "代替場所を示す。最も摩擦が少ない。" },
-        { "en": "I'm on a deadline — could we keep the volume down?", "ja": "締切が迫っていまして、音量を下げていただけますか。", "register": "polite", "style": "context", "note": "理由を添えると、相手も納得しやすい。" },
-        { "en": "I do apologize, but would it be possible to speak a little more quietly?", "ja": "恐れ入りますが、もう少し小さな声でお話しいただけますでしょうか。", "register": "formal", "style": "formal", "note": "非常に丁寧。関係ができていない相手に。" },
-        { "en": "Guys, a bit quieter?", "ja": "みんな、もう少し静かに？", "register": "casual", "style": "casual", "note": "親しいチーム内で。軽く言えるのが利点。" },
-        { "en": "Is there a free meeting room you could use?", "ja": "空いている会議室はありますか。", "register": "neutral", "style": "existence", "note": "解決策を提示する形。角が立たない。" },
-        { "en": "I might move to a quiet area myself, actually.", "ja": "むしろ私が静かな場所へ移ろうかと思います。", "register": "neutral", "style": "vocab", "note": "自分が動く選択肢。誰も傷つけずに済む。" },
-        { "en": "I'm writing something that needs focus — could we keep it down for an hour?", "ja": "集中が要る作業をしています。1時間ほど静かにできますか。", "register": "polite", "style": "basic", "note": "期間を区切ると受け入れられやすい。" },
-        { "en": "Not a problem at all normally — just today, if you don't mind.", "ja": "普段は全く気にならないのですが、今日だけお願いできますか。", "register": "polite", "style": "considerate", "note": "普段は問題ないと示す。関係を損なわない。" }
+        {
+          "en": "Sorry, could you keep it down a bit?",
+          "ja": "すみません、少し声を抑えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "keep it down は「音量を下げる」。最も自然な頼み方。"
+        },
+        {
+          "en": "Sorry, I'm struggling to concentrate.",
+          "ja": "すみません、集中しづらくて。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "自分の状況として伝える。相手を責めない。"
+        },
+        {
+          "en": "Would you mind taking that call in the booth?",
+          "ja": "その通話は個室でお願いできますでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "代替場所を示す。最も摩擦が少ない。"
+        },
+        {
+          "en": "I'm on a deadline — could we keep the volume down?",
+          "ja": "締切が迫っていまして、音量を下げていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、相手も納得しやすい。"
+        },
+        {
+          "en": "I do apologize, but would it be possible to speak a little more quietly?",
+          "ja": "恐れ入りますが、もう少し小さな声でお話しいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "非常に丁寧。関係ができていない相手に。"
+        },
+        {
+          "en": "Guys, a bit quieter?",
+          "ja": "みんな、もう少し静かに？",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しいチーム内で。軽く言えるのが利点。"
+        },
+        {
+          "en": "Is there a free meeting room you could use?",
+          "ja": "空いている会議室はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "解決策を提示する形。角が立たない。"
+        },
+        {
+          "en": "I might move to a quiet area myself, actually.",
+          "ja": "むしろ私が静かな場所へ移ろうかと思います。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "自分が動く選択肢。誰も傷つけずに済む。"
+        },
+        {
+          "en": "I'm writing something that needs focus — could we keep it down for an hour?",
+          "ja": "集中が要る作業をしています。1時間ほど静かにできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "期間を区切ると受け入れられやすい。"
+        },
+        {
+          "en": "Not a problem at all normally — just today, if you don't mind.",
+          "ja": "普段は全く気にならないのですが、今日だけお願いできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "普段は問題ないと示す。関係を損なわない。"
+        }
       ]
     },
     {
-      "id": "workplace-027", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "your manager",
+      "id": "workplace-027",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "your manager",
       "want": "You want to volunteer for a new project.",
       "situationJa": "新しい案件に立候補したい。",
-      "tags": ["offering"],
+      "tags": [
+        "offering"
+      ],
       "answers": [
-        { "en": "I'd like to be involved.", "ja": "私も関わりたいです。", "register": "neutral", "style": "oneword", "note": "端的で意欲が伝わる。まずこれ。" },
-        { "en": "I'd be interested in working on that.", "ja": "その案件に関わることに興味があります。", "register": "neutral", "style": "basic", "note": "押しつけがましくない立候補の定番。" },
-        { "en": "Could I put my name forward for that project?", "ja": "その案件に立候補してもよいですか。", "register": "polite", "style": "request", "note": "put one's name forward は「立候補する」。丁寧な表現。" },
-        { "en": "Is there room for me on that team?", "ja": "そのチームに入る余地はありますか。", "register": "neutral", "style": "existence", "note": "余地を聞く形。断られても気まずくない。" },
-        { "en": "I would welcome the opportunity to contribute to that initiative.", "ja": "その取り組みに貢献する機会をいただけますと幸いです。", "register": "formal", "style": "formal", "note": "initiative は「取り組み」。改まった申し出。" },
-        { "en": "Count me in.", "ja": "私も入れてください。", "register": "casual", "style": "casual", "note": "count me in は「参加する」。気さくで前向き。" },
-        { "en": "What skills are you looking for on that one?", "ja": "その案件ではどんな力を求めていますか。", "register": "neutral", "style": "vocab", "note": "適性を確認してから手を挙げる。賢い聞き方。" },
-        { "en": "I have capacity from next month.", "ja": "来月から余力があります。", "register": "neutral", "style": "basic", "note": "時期を示すと現実的な提案になる。" },
-        { "en": "I did something similar at my last company — I'd love to help.", "ja": "前職で似たことをしました。ぜひお手伝いしたいです。", "register": "polite", "style": "context", "note": "経験を示す。採用されやすくなる。" },
-        { "en": "Only if it's useful to you — but I'd be glad to help.", "ja": "お役に立つならばですが、喜んでお手伝いします。", "register": "polite", "style": "considerate", "note": "押しつけにならない申し出。断りやすい形。" }
+        {
+          "en": "I'd like to be involved.",
+          "ja": "私も関わりたいです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "端的で意欲が伝わる。まずこれ。"
+        },
+        {
+          "en": "I'd be interested in working on that.",
+          "ja": "その案件に関わることに興味があります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "押しつけがましくない立候補の定番。"
+        },
+        {
+          "en": "Could I put my name forward for that project?",
+          "ja": "その案件に立候補してもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "put one's name forward は「立候補する」。丁寧な表現。"
+        },
+        {
+          "en": "Is there room for me on that team?",
+          "ja": "そのチームに入る余地はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "余地を聞く形。断られても気まずくない。"
+        },
+        {
+          "en": "I would welcome the opportunity to contribute to that initiative.",
+          "ja": "その取り組みに貢献する機会をいただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "initiative は「取り組み」。改まった申し出。"
+        },
+        {
+          "en": "Count me in.",
+          "ja": "私も入れてください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "count me in は「参加する」。気さくで前向き。"
+        },
+        {
+          "en": "What skills are you looking for on that one?",
+          "ja": "その案件ではどんな力を求めていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "適性を確認してから手を挙げる。賢い聞き方。"
+        },
+        {
+          "en": "I have capacity from next month.",
+          "ja": "来月から余力があります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "時期を示すと現実的な提案になる。"
+        },
+        {
+          "en": "I did something similar at my last company — I'd love to help.",
+          "ja": "前職で似たことをしました。ぜひお手伝いしたいです。",
+          "register": "polite",
+          "style": "context",
+          "note": "経験を示す。採用されやすくなる。"
+        },
+        {
+          "en": "Only if it's useful to you — but I'd be glad to help.",
+          "ja": "お役に立つならばですが、喜んでお手伝いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "押しつけにならない申し出。断りやすい形。"
+        }
       ]
     },
     {
-      "id": "workplace-028", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-028",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to say goodbye at the end of the day.",
       "situationJa": "退社するときに挨拶したい。",
-      "tags": ["greeting"],
+      "tags": [
+        "greeting"
+      ],
       "answers": [
-        { "en": "See you tomorrow.", "ja": "また明日。", "register": "neutral", "style": "oneword", "note": "最も基本。毎日使う。" },
-        { "en": "Have a good evening.", "ja": "よい夜を。", "register": "neutral", "style": "basic", "note": "丁寧で温かい。誰にでも使える。" },
-        { "en": "I'm heading off — see you tomorrow.", "ja": "帰ります。また明日。", "register": "neutral", "style": "basic", "note": "head off は「出発する」。退社の定番。" },
-        { "en": "Is there anything you need before I go?", "ja": "帰る前に何か必要なことはありますか。", "register": "polite", "style": "existence", "note": "気配りが伝わる。信頼される一言。" },
-        { "en": "I'll be off now. Have a pleasant evening.", "ja": "失礼いたします。よい夜をお過ごしください。", "register": "formal", "style": "formal", "note": "改まった挨拶。目上の相手に。" },
-        { "en": "Right, I'm off. Night!", "ja": "では帰ります。おやすみ！", "register": "casual", "style": "casual", "note": "英国の口語。気さくな職場で。" },
-        { "en": "Have a good one.", "ja": "よい時間を。", "register": "casual", "style": "vocab", "note": "米国の口語。時間帯を問わず使える便利な挨拶。" },
-        { "en": "I'll pick this up first thing tomorrow.", "ja": "これは明日いちばんに取りかかります。", "register": "neutral", "style": "request", "note": "仕掛かりの仕事を残すときに。安心してもらえる。" },
-        { "en": "I've sent you the draft — have a look whenever suits.", "ja": "草案を送りました。ご都合のよいときにご覧ください。", "register": "polite", "style": "context", "note": "引き継ぎを添えた挨拶。実務的で丁寧。" },
-        { "en": "Don't stay too late — see you tomorrow.", "ja": "遅くまで残らないでくださいね。また明日。", "register": "polite", "style": "considerate", "note": "相手を気遣う一言。関係が温かくなる。" }
+        {
+          "en": "See you tomorrow.",
+          "ja": "また明日。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最も基本。毎日使う。"
+        },
+        {
+          "en": "Have a good evening.",
+          "ja": "よい夜を。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "丁寧で温かい。誰にでも使える。"
+        },
+        {
+          "en": "I'm heading off — see you tomorrow.",
+          "ja": "帰ります。また明日。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "head off は「出発する」。退社の定番。"
+        },
+        {
+          "en": "Is there anything you need before I go?",
+          "ja": "帰る前に何か必要なことはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "気配りが伝わる。信頼される一言。"
+        },
+        {
+          "en": "I'll be off now. Have a pleasant evening.",
+          "ja": "失礼いたします。よい夜をお過ごしください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった挨拶。目上の相手に。"
+        },
+        {
+          "en": "Right, I'm off. Night!",
+          "ja": "では帰ります。おやすみ！",
+          "register": "casual",
+          "style": "casual",
+          "note": "英国の口語。気さくな職場で。"
+        },
+        {
+          "en": "Have a good one.",
+          "ja": "よい時間を。",
+          "register": "casual",
+          "style": "vocab",
+          "note": "米国の口語。時間帯を問わず使える便利な挨拶。"
+        },
+        {
+          "en": "I'll pick this up first thing tomorrow.",
+          "ja": "これは明日いちばんに取りかかります。",
+          "register": "neutral",
+          "style": "request",
+          "note": "仕掛かりの仕事を残すときに。安心してもらえる。"
+        },
+        {
+          "en": "I've sent you the draft — have a look whenever suits.",
+          "ja": "草案を送りました。ご都合のよいときにご覧ください。",
+          "register": "polite",
+          "style": "context",
+          "note": "引き継ぎを添えた挨拶。実務的で丁寧。"
+        },
+        {
+          "en": "Don't stay too late — see you tomorrow.",
+          "ja": "遅くまで残らないでくださいね。また明日。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を気遣う一言。関係が温かくなる。"
+        }
       ]
     },
     {
-      "id": "workplace-029", "category": "workplace", "difficulty": 3,
-      "place": "In the office", "listener": "a colleague",
+      "id": "workplace-029",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In the office",
+      "listener": "a colleague",
       "want": "You want to ask them to stop taking credit for your work.",
       "situationJa": "自分の成果を横取りするのをやめてほしいと伝えたい。",
-      "tags": ["confronting", "serious"],
+      "tags": [
+        "confronting",
+        "serious"
+      ],
       "answers": [
-        { "en": "Could we talk about the presentation?", "ja": "先ほどのプレゼンについてお話しできますか。", "register": "polite", "style": "request", "note": "まず場を作る。いきなり本題に入らないほうが良い。" },
-        { "en": "I felt my contribution wasn't mentioned.", "ja": "私の貢献が触れられていないと感じました。", "register": "neutral", "style": "basic", "note": "I felt で主観として述べる。相手を責めずに済む。" },
-        { "en": "I'd like my work to be credited.", "ja": "私の仕事は私の名前で扱っていただきたいです。", "register": "neutral", "style": "oneword", "note": "credit は「功績を認める」。明確だが冷静。" },
-        { "en": "Could we make sure the team knows who did what?", "ja": "誰が何をしたかチームに正しく伝わるようにできますか。", "register": "polite", "style": "basic", "note": "個人攻撃ではなく仕組みの話にする。角が立たない。" },
-        { "en": "I'd appreciate it if my involvement could be acknowledged going forward.", "ja": "今後は私の関与についてもご言及いただけますと幸いです。", "register": "formal", "style": "formal", "note": "acknowledge は「認める」。改まった申し入れ。" },
-        { "en": "That was my analysis, actually.", "ja": "あれは実は私の分析です。", "register": "casual", "style": "casual", "note": "その場で軽く訂正する。強すぎず事実は示せる。" },
-        { "en": "Was there a reason my name wasn't on it?", "ja": "私の名前が入っていなかった理由はありますか。", "register": "neutral", "style": "existence", "note": "質問の形にする。相手に説明の機会を与えられる。" },
-        { "en": "Next time, shall we present it together?", "ja": "次回は一緒に発表しませんか。", "register": "polite", "style": "vocab", "note": "未来の提案として解決する。最も摩擦が少ない。" },
-        { "en": "I built the model and ran the numbers, so I was surprised not to be mentioned.", "ja": "モデルを作り数値も出したので、言及がなく驚きました。", "register": "polite", "style": "context", "note": "事実を示す。感情ではなく記録で語れる。" },
-        { "en": "I'm sure it wasn't intentional — but could we sort this out?", "ja": "意図的ではないと思いますが、整理させていただけますか。", "register": "polite", "style": "considerate", "note": "相手の面目を保つ。関係を壊さずに解決できる。" }
+        {
+          "en": "Could we talk about the presentation?",
+          "ja": "先ほどのプレゼンについてお話しできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "まず場を作る。いきなり本題に入らないほうが良い。"
+        },
+        {
+          "en": "I felt my contribution wasn't mentioned.",
+          "ja": "私の貢献が触れられていないと感じました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I felt で主観として述べる。相手を責めずに済む。"
+        },
+        {
+          "en": "I'd like my work to be credited.",
+          "ja": "私の仕事は私の名前で扱っていただきたいです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "credit は「功績を認める」。明確だが冷静。"
+        },
+        {
+          "en": "Could we make sure the team knows who did what?",
+          "ja": "誰が何をしたかチームに正しく伝わるようにできますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "個人攻撃ではなく仕組みの話にする。角が立たない。"
+        },
+        {
+          "en": "I'd appreciate it if my involvement could be acknowledged going forward.",
+          "ja": "今後は私の関与についてもご言及いただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "acknowledge は「認める」。改まった申し入れ。"
+        },
+        {
+          "en": "That was my analysis, actually.",
+          "ja": "あれは実は私の分析です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "その場で軽く訂正する。強すぎず事実は示せる。"
+        },
+        {
+          "en": "Was there a reason my name wasn't on it?",
+          "ja": "私の名前が入っていなかった理由はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "質問の形にする。相手に説明の機会を与えられる。"
+        },
+        {
+          "en": "Next time, shall we present it together?",
+          "ja": "次回は一緒に発表しませんか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "未来の提案として解決する。最も摩擦が少ない。"
+        },
+        {
+          "en": "I built the model and ran the numbers, so I was surprised not to be mentioned.",
+          "ja": "モデルを作り数値も出したので、言及がなく驚きました。",
+          "register": "polite",
+          "style": "context",
+          "note": "事実を示す。感情ではなく記録で語れる。"
+        },
+        {
+          "en": "I'm sure it wasn't intentional — but could we sort this out?",
+          "ja": "意図的ではないと思いますが、整理させていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の面目を保つ。関係を壊さずに解決できる。"
+        }
       ]
     },
     {
-      "id": "workplace-030", "category": "workplace", "difficulty": 2,
-      "place": "In the office", "listener": "a colleague who is leaving",
+      "id": "workplace-030",
+      "category": "workplace",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In the office",
+      "listener": "a colleague who is leaving",
       "want": "You want to wish a departing colleague well.",
       "situationJa": "退職する同僚に別れの言葉をかけたい。",
-      "tags": ["farewell"],
+      "tags": [
+        "farewell"
+      ],
       "answers": [
-        { "en": "All the best!", "ja": "お元気で！", "register": "neutral", "style": "oneword", "note": "別れの定番。カードにも書ける。" },
-        { "en": "Good luck with the new role.", "ja": "新しい仕事、頑張ってください。", "register": "neutral", "style": "basic", "note": "role は「職務」。次の場所に触れる形。" },
-        { "en": "It's been great working with you.", "ja": "ご一緒できてよかったです。", "register": "neutral", "style": "basic", "note": "最も心に残る一言。必ず言いたい。" },
-        { "en": "Could we stay in touch?", "ja": "連絡を取り合いませんか。", "register": "polite", "style": "request", "note": "stay in touch は「連絡を保つ」。関係が続く。" },
-        { "en": "It has been a genuine pleasure working alongside you.", "ja": "ご一緒に働けたことは本当に光栄でした。", "register": "formal", "style": "formal", "note": "alongside は「並んで」。改まった別れの言葉。" },
-        { "en": "We'll miss you!", "ja": "寂しくなります！", "register": "casual", "style": "casual", "note": "素直な気持ち。温かく伝わる。" },
-        { "en": "Is there anything you need from me before you go?", "ja": "出られる前に、私から必要なことはありますか。", "register": "polite", "style": "existence", "note": "実務的な気遣い。引き継ぎ時に助かる。" },
-        { "en": "You've left the team in a much better place.", "ja": "あなたのおかげでチームは確実に良くなりました。", "register": "polite", "style": "vocab", "note": "貢献を具体的に認める。最高の餞の言葉。" },
-        { "en": "I learned a lot from how you handled the client work — thank you.", "ja": "顧客対応の進め方から多くを学びました。ありがとうございました。", "register": "polite", "style": "context", "note": "具体的に語ると、本気の感謝が伝わる。" },
-        { "en": "Don't be a stranger — let me know how it goes.", "ja": "疎遠にならないでくださいね。近況を聞かせてください。", "register": "polite", "style": "considerate", "note": "Don't be a stranger は「また連絡してね」の慣用句。" }
+        {
+          "en": "All the best!",
+          "ja": "お元気で！",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "別れの定番。カードにも書ける。"
+        },
+        {
+          "en": "Good luck with the new role.",
+          "ja": "新しい仕事、頑張ってください。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "role は「職務」。次の場所に触れる形。"
+        },
+        {
+          "en": "It's been great working with you.",
+          "ja": "ご一緒できてよかったです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最も心に残る一言。必ず言いたい。"
+        },
+        {
+          "en": "Could we stay in touch?",
+          "ja": "連絡を取り合いませんか。",
+          "register": "polite",
+          "style": "request",
+          "note": "stay in touch は「連絡を保つ」。関係が続く。"
+        },
+        {
+          "en": "It has been a genuine pleasure working alongside you.",
+          "ja": "ご一緒に働けたことは本当に光栄でした。",
+          "register": "formal",
+          "style": "formal",
+          "note": "alongside は「並んで」。改まった別れの言葉。"
+        },
+        {
+          "en": "We'll miss you!",
+          "ja": "寂しくなります！",
+          "register": "casual",
+          "style": "casual",
+          "note": "素直な気持ち。温かく伝わる。"
+        },
+        {
+          "en": "Is there anything you need from me before you go?",
+          "ja": "出られる前に、私から必要なことはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "実務的な気遣い。引き継ぎ時に助かる。"
+        },
+        {
+          "en": "You've left the team in a much better place.",
+          "ja": "あなたのおかげでチームは確実に良くなりました。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "貢献を具体的に認める。最高の餞の言葉。"
+        },
+        {
+          "en": "I learned a lot from how you handled the client work — thank you.",
+          "ja": "顧客対応の進め方から多くを学びました。ありがとうございました。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的に語ると、本気の感謝が伝わる。"
+        },
+        {
+          "en": "Don't be a stranger — let me know how it goes.",
+          "ja": "疎遠にならないでくださいね。近況を聞かせてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "Don't be a stranger は「また連絡してね」の慣用句。"
+        }
       ]
     }
   ]

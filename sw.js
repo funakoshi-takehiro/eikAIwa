@@ -18,7 +18,7 @@
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-20260908g';
+const VERSION = 'eikaiwa-20260908j';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 
@@ -59,9 +59,16 @@ const CATEGORY_IDS = [
   'health', 'workplace', 'meeting', 'school', 'smalltalk', 'services', 'trouble'
 ];
 
+// 難易度は3段階。ファイル名は ★ が <id>.json、★★ / ★★★ が <id>-2.json / <id>-3.json。
+const LEVELS = [1, 2, 3];
+
 function precacheUrls() {
   const urls = SHELL.map((p) => BASE + p);
-  CATEGORY_IDS.forEach((id) => urls.push(BASE + 'data/situations/' + id + '.json'));
+  CATEGORY_IDS.forEach((id) => {
+    LEVELS.forEach((lv) => {
+      urls.push(BASE + 'data/situations/' + id + (lv === 1 ? '' : '-' + lv) + '.json');
+    });
+  });
   return urls;
 }
 

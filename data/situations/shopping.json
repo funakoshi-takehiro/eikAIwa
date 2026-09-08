@@ -2,478 +2,2148 @@
   "category": "shopping",
   "situations": [
     {
-      "id": "shopping-001", "category": "shopping", "difficulty": 1,
-      "place": "In a clothing shop", "listener": "a shop assistant",
+      "id": "shopping-001",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a clothing shop",
+      "listener": "a shop assistant",
       "want": "You want to try on a shirt.",
       "situationJa": "シャツを試着したい。",
-      "tags": ["requesting", "fitting"],
+      "tags": [
+        "requesting",
+        "fitting"
+      ],
       "answers": [
-        { "en": "Can I try this on?", "ja": "これを試着できますか。", "register": "neutral", "style": "basic", "note": "基本形。買い物で最も使う一文のひとつ。" },
-        { "en": "Fitting room?", "ja": "試着室はどこですか。", "register": "casual", "style": "oneword", "note": "服を持ちながら。短くても完全に通じる。" },
-        { "en": "Could I try this on, please?", "ja": "これを試着させていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どんな店でも使える。" },
-        { "en": "Where's the fitting room?", "ja": "試着室はどこですか。", "register": "neutral", "style": "basic", "note": "fitting room が標準。米国では dressing room とも。" },
-        { "en": "Would it be possible to try this on before I decide?", "ja": "決める前に試着させていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "高級店で。買う前提でないことも伝わる。" },
-        { "en": "Mind if I try it on?", "ja": "試着してもいい？", "register": "casual", "style": "casual", "note": "気さくな店で。Do you を省いた口語。" },
-        { "en": "Is there a limit on how many I can take in?", "ja": "持ち込める枚数に制限はありますか。", "register": "neutral", "style": "existence", "note": "店によって制限がある。先に確認できる。" },
-        { "en": "Could I try these two in the fitting room?", "ja": "この2枚を試着室で試せますか。", "register": "polite", "style": "vocab", "note": "枚数を明示。持ち込み制限のある店で。" },
-        { "en": "I'm between sizes — could I try both?", "ja": "サイズが微妙なので、両方試してもいいですか。", "register": "polite", "style": "context", "note": "between sizes は「サイズの中間」。よくある事情。" },
-        { "en": "If it's not too much trouble — could I try this on?", "ja": "ご面倒でなければ、試着させていただけますか。", "register": "polite", "style": "considerate", "note": "混雑時に。押しつけがましくない。" }
+        {
+          "en": "Can I try this on?",
+          "ja": "これを試着できますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。買い物で最も使う一文のひとつ。"
+        },
+        {
+          "en": "Fitting room?",
+          "ja": "試着室はどこですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "服を持ちながら。短くても完全に通じる。"
+        },
+        {
+          "en": "Could I try this on, please?",
+          "ja": "これを試着させていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どんな店でも使える。"
+        },
+        {
+          "en": "Where's the fitting room?",
+          "ja": "試着室はどこですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "fitting room が標準。米国では dressing room とも。"
+        },
+        {
+          "en": "Would it be possible to try this on before I decide?",
+          "ja": "決める前に試着させていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "高級店で。買う前提でないことも伝わる。"
+        },
+        {
+          "en": "Mind if I try it on?",
+          "ja": "試着してもいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。Do you を省いた口語。"
+        },
+        {
+          "en": "Is there a limit on how many I can take in?",
+          "ja": "持ち込める枚数に制限はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "店によって制限がある。先に確認できる。"
+        },
+        {
+          "en": "Could I try these two in the fitting room?",
+          "ja": "この2枚を試着室で試せますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "枚数を明示。持ち込み制限のある店で。"
+        },
+        {
+          "en": "I'm between sizes — could I try both?",
+          "ja": "サイズが微妙なので、両方試してもいいですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "between sizes は「サイズの中間」。よくある事情。"
+        },
+        {
+          "en": "If it's not too much trouble — could I try this on?",
+          "ja": "ご面倒でなければ、試着させていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "混雑時に。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "shopping-002", "category": "shopping", "difficulty": 1,
-      "place": "In a clothing shop", "listener": "a shop assistant",
+      "id": "shopping-002",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a clothing shop",
+      "listener": "a shop assistant",
       "want": "You want a larger size.",
       "situationJa": "もっと大きいサイズがほしい。",
-      "tags": ["requesting", "size"],
+      "tags": [
+        "requesting",
+        "size"
+      ],
       "answers": [
-        { "en": "A larger size, please.", "ja": "もっと大きいサイズをお願いします。", "register": "neutral", "style": "oneword", "note": "服を持ちながら。これで十分。" },
-        { "en": "Do you have this in a large?", "ja": "これのLサイズはありますか。", "register": "neutral", "style": "basic", "note": "in a large で「Lサイズで」。最もよく使う型。" },
-        { "en": "Could I get this in a bigger size?", "ja": "これのもっと大きいサイズをいただけますか。", "register": "polite", "style": "request", "note": "サイズ名が分からないときに便利。" },
-        { "en": "Is this available in a larger size?", "ja": "これは大きいサイズもありますか。", "register": "neutral", "style": "existence", "note": "在庫を確認する形。無くても気まずくない。" },
-        { "en": "Would you happen to have this in a size up?", "ja": "こちらのワンサイズ上はございますでしょうか。", "register": "formal", "style": "formal", "note": "a size up は「ワンサイズ上」。控えめで丁寧。" },
-        { "en": "Got this in a bigger one?", "ja": "これの大きいのある？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。気さくな店で。" },
-        { "en": "This is a bit tight — do you have the next size?", "ja": "少しきついので、次のサイズはありますか。", "register": "neutral", "style": "context", "note": "理由を添えると、店員が別の提案もしてくれる。" },
-        { "en": "What sizes do you have in stock?", "ja": "在庫にはどのサイズがありますか。", "register": "neutral", "style": "vocab", "note": "in stock は「在庫がある」。一度に把握できる。" },
-        { "en": "I usually take a medium, but this runs small — could I try a large?", "ja": "普段はMですが、これは小さめのようです。Lを試せますか。", "register": "polite", "style": "basic", "note": "run small は「小さめの作り」。試着後の会話で頻出。" },
-        { "en": "No worries if not — is there a larger size anywhere?", "ja": "無ければ構いませんが、大きいサイズはどこかにありますか。", "register": "polite", "style": "considerate", "note": "在庫がない場合に相手が謝らずに済む。" }
+        {
+          "en": "A larger size, please.",
+          "ja": "もっと大きいサイズをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "服を持ちながら。これで十分。"
+        },
+        {
+          "en": "Do you have this in a large?",
+          "ja": "これのLサイズはありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "in a large で「Lサイズで」。最もよく使う型。"
+        },
+        {
+          "en": "Could I get this in a bigger size?",
+          "ja": "これのもっと大きいサイズをいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "サイズ名が分からないときに便利。"
+        },
+        {
+          "en": "Is this available in a larger size?",
+          "ja": "これは大きいサイズもありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "在庫を確認する形。無くても気まずくない。"
+        },
+        {
+          "en": "Would you happen to have this in a size up?",
+          "ja": "こちらのワンサイズ上はございますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "a size up は「ワンサイズ上」。控えめで丁寧。"
+        },
+        {
+          "en": "Got this in a bigger one?",
+          "ja": "これの大きいのある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた口語。気さくな店で。"
+        },
+        {
+          "en": "This is a bit tight — do you have the next size?",
+          "ja": "少しきついので、次のサイズはありますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "理由を添えると、店員が別の提案もしてくれる。"
+        },
+        {
+          "en": "What sizes do you have in stock?",
+          "ja": "在庫にはどのサイズがありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "in stock は「在庫がある」。一度に把握できる。"
+        },
+        {
+          "en": "I usually take a medium, but this runs small — could I try a large?",
+          "ja": "普段はMですが、これは小さめのようです。Lを試せますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "run small は「小さめの作り」。試着後の会話で頻出。"
+        },
+        {
+          "en": "No worries if not — is there a larger size anywhere?",
+          "ja": "無ければ構いませんが、大きいサイズはどこかにありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "在庫がない場合に相手が謝らずに済む。"
+        }
       ]
     },
     {
-      "id": "shopping-003", "category": "shopping", "difficulty": 1,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-003",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to know how much something costs.",
       "situationJa": "値段を知りたい。",
-      "tags": ["asking", "price"],
+      "tags": [
+        "asking",
+        "price"
+      ],
       "answers": [
-        { "en": "How much is this?", "ja": "これはいくらですか。", "register": "neutral", "style": "basic", "note": "最重要の一文。世界中で通じる。" },
-        { "en": "How much?", "ja": "いくらですか。", "register": "casual", "style": "oneword", "note": "指をさしながら。市場などで自然。" },
-        { "en": "Could you tell me the price of this?", "ja": "これの値段を教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。高級店でも使える。" },
-        { "en": "What does this cost?", "ja": "これはいくらしますか。", "register": "neutral", "style": "basic", "note": "cost を使った形。同じ意味で言い換えできる。" },
-        { "en": "Would you mind telling me how much this is?", "ja": "こちらのお値段を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。値札がないときに。" },
-        { "en": "What's this one?", "ja": "これいくら？", "register": "casual", "style": "casual", "note": "非常に短い口語。文脈があれば通じる。" },
-        { "en": "Is there a discount on this?", "ja": "これは割引がありますか。", "register": "neutral", "style": "existence", "note": "セール品かどうかを確認できる。" },
-        { "en": "Does that include tax?", "ja": "それは税込みですか。", "register": "neutral", "style": "vocab", "note": "米国では表示が税抜。必ず確認したい。" },
-        { "en": "There's no price tag on this one — how much is it?", "ja": "これには値札がないのですが、いくらですか。", "register": "polite", "style": "context", "note": "状況を説明すると、店員が調べてくれる。" },
-        { "en": "Sorry to bother you — could you check the price of this?", "ja": "お邪魔してすみません、これの値段を調べていただけますか。", "register": "polite", "style": "considerate", "note": "調べる手間をかけることへの配慮。" }
+        {
+          "en": "How much is this?",
+          "ja": "これはいくらですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最重要の一文。世界中で通じる。"
+        },
+        {
+          "en": "How much?",
+          "ja": "いくらですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "指をさしながら。市場などで自然。"
+        },
+        {
+          "en": "Could you tell me the price of this?",
+          "ja": "これの値段を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。高級店でも使える。"
+        },
+        {
+          "en": "What does this cost?",
+          "ja": "これはいくらしますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "cost を使った形。同じ意味で言い換えできる。"
+        },
+        {
+          "en": "Would you mind telling me how much this is?",
+          "ja": "こちらのお値段を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。値札がないときに。"
+        },
+        {
+          "en": "What's this one?",
+          "ja": "これいくら？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常に短い口語。文脈があれば通じる。"
+        },
+        {
+          "en": "Is there a discount on this?",
+          "ja": "これは割引がありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "セール品かどうかを確認できる。"
+        },
+        {
+          "en": "Does that include tax?",
+          "ja": "それは税込みですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "米国では表示が税抜。必ず確認したい。"
+        },
+        {
+          "en": "There's no price tag on this one — how much is it?",
+          "ja": "これには値札がないのですが、いくらですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "状況を説明すると、店員が調べてくれる。"
+        },
+        {
+          "en": "Sorry to bother you — could you check the price of this?",
+          "ja": "お邪魔してすみません、これの値段を調べていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "調べる手間をかけることへの配慮。"
+        }
       ]
     },
     {
-      "id": "shopping-004", "category": "shopping", "difficulty": 2,
-      "place": "At a checkout", "listener": "a cashier",
+      "id": "shopping-004",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a checkout",
+      "listener": "a cashier",
       "want": "You want to pay by card.",
       "situationJa": "カードで支払いたい。",
-      "tags": ["paying"],
+      "tags": [
+        "paying"
+      ],
       "answers": [
-        { "en": "Card, please.", "ja": "カードでお願いします。", "register": "neutral", "style": "oneword", "note": "カードを差し出しながら。最短で確実。" },
-        { "en": "Can I pay by card?", "ja": "カードで支払えますか。", "register": "neutral", "style": "basic", "note": "基本形。丸ごと覚えたい。" },
-        { "en": "Do you take cards?", "ja": "カードは使えますか。", "register": "neutral", "style": "existence", "note": "現金のみの店もある。先に確認できる。" },
-        { "en": "Could I pay by credit card, please?", "ja": "クレジットカードで支払えますか。", "register": "polite", "style": "request", "note": "丁寧な形。改まった店でも使える。" },
-        { "en": "Would it be possible to settle this by card?", "ja": "こちらをカードで精算することは可能でしょうか。", "register": "formal", "style": "formal", "note": "settle は「精算する」。かなり改まった言い方。" },
-        { "en": "I'll tap.", "ja": "タッチで払います。", "register": "casual", "style": "casual", "note": "tap は「タッチ決済する」。近年の日常語。" },
-        { "en": "Is there a minimum for card payments?", "ja": "カード払いに最低金額はありますか。", "register": "neutral", "style": "vocab", "note": "小さな店では最低額がある。知っていると便利。" },
-        { "en": "Do you accept contactless?", "ja": "タッチ決済は使えますか。", "register": "neutral", "style": "basic", "note": "contactless は「非接触決済」。欧州で一般的な語。" },
-        { "en": "I don't have local currency — is card all right?", "ja": "現地通貨を持っていないのですが、カードで大丈夫ですか。", "register": "polite", "style": "context", "note": "旅行者としての事情。理解してもらいやすい。" },
-        { "en": "Cash if you'd prefer — but is card OK?", "ja": "現金のほうがよろしければそうしますが、カードでも大丈夫ですか。", "register": "polite", "style": "considerate", "note": "手数料を嫌う小さな店への配慮。好印象。" }
+        {
+          "en": "Card, please.",
+          "ja": "カードでお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "カードを差し出しながら。最短で確実。"
+        },
+        {
+          "en": "Can I pay by card?",
+          "ja": "カードで支払えますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。丸ごと覚えたい。"
+        },
+        {
+          "en": "Do you take cards?",
+          "ja": "カードは使えますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "現金のみの店もある。先に確認できる。"
+        },
+        {
+          "en": "Could I pay by credit card, please?",
+          "ja": "クレジットカードで支払えますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。改まった店でも使える。"
+        },
+        {
+          "en": "Would it be possible to settle this by card?",
+          "ja": "こちらをカードで精算することは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "settle は「精算する」。かなり改まった言い方。"
+        },
+        {
+          "en": "I'll tap.",
+          "ja": "タッチで払います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "tap は「タッチ決済する」。近年の日常語。"
+        },
+        {
+          "en": "Is there a minimum for card payments?",
+          "ja": "カード払いに最低金額はありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "小さな店では最低額がある。知っていると便利。"
+        },
+        {
+          "en": "Do you accept contactless?",
+          "ja": "タッチ決済は使えますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "contactless は「非接触決済」。欧州で一般的な語。"
+        },
+        {
+          "en": "I don't have local currency — is card all right?",
+          "ja": "現地通貨を持っていないのですが、カードで大丈夫ですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "旅行者としての事情。理解してもらいやすい。"
+        },
+        {
+          "en": "Cash if you'd prefer — but is card OK?",
+          "ja": "現金のほうがよろしければそうしますが、カードでも大丈夫ですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手数料を嫌う小さな店への配慮。好印象。"
+        }
       ]
     },
     {
-      "id": "shopping-005", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-005",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to return an item you bought.",
       "situationJa": "買った商品を返品したい。",
-      "tags": ["returning"],
+      "tags": [
+        "returning"
+      ],
       "answers": [
-        { "en": "I'd like to return this.", "ja": "これを返品したいのですが。", "register": "neutral", "style": "basic", "note": "基本形。レシートを添えながら。" },
-        { "en": "Return, please.", "ja": "返品をお願いします。", "register": "casual", "style": "oneword", "note": "商品とレシートを出しながら。短くても通じる。" },
-        { "en": "Could I return this? I have the receipt.", "ja": "これを返品できますか。レシートはあります。", "register": "polite", "style": "request", "note": "レシートの有無を先に言うと話が速い。" },
-        { "en": "Is it possible to return this?", "ja": "これは返品できますか。", "register": "neutral", "style": "existence", "note": "可否から確認する形。断られても気まずくない。" },
-        { "en": "I'd like to enquire about returning this item, if that's possible.", "ja": "可能でしたら、こちらの返品について伺いたいのですが。", "register": "formal", "style": "formal", "note": "改まった言い方。高級店で自然。" },
-        { "en": "Can I bring this back?", "ja": "これ返せますか。", "register": "casual", "style": "casual", "note": "bring back は口語で「返す」。気さくな店で。" },
-        { "en": "What's your return policy?", "ja": "返品規定はどうなっていますか。", "register": "neutral", "style": "vocab", "note": "return policy は「返品規定」。まず確認する型。" },
-        { "en": "Could I exchange it for a different size instead?", "ja": "代わりに別のサイズと交換できますか。", "register": "polite", "style": "basic", "note": "返品より交換のほうが応じてもらいやすい。" },
-        { "en": "I bought this yesterday but it doesn't fit — can I return it?", "ja": "昨日買ったのですがサイズが合いませんでした。返品できますか。", "register": "polite", "style": "context", "note": "理由と時期を添える。最も通りやすい形。" },
-        { "en": "I understand if it's past the window — could you check for me?", "ja": "期限を過ぎていれば仕方ありませんが、確認していただけますか。", "register": "polite", "style": "considerate", "note": "window は「受付期間」。無理を言わない姿勢が伝わる。" }
+        {
+          "en": "I'd like to return this.",
+          "ja": "これを返品したいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。レシートを添えながら。"
+        },
+        {
+          "en": "Return, please.",
+          "ja": "返品をお願いします。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "商品とレシートを出しながら。短くても通じる。"
+        },
+        {
+          "en": "Could I return this? I have the receipt.",
+          "ja": "これを返品できますか。レシートはあります。",
+          "register": "polite",
+          "style": "request",
+          "note": "レシートの有無を先に言うと話が速い。"
+        },
+        {
+          "en": "Is it possible to return this?",
+          "ja": "これは返品できますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "可否から確認する形。断られても気まずくない。"
+        },
+        {
+          "en": "I'd like to enquire about returning this item, if that's possible.",
+          "ja": "可能でしたら、こちらの返品について伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。高級店で自然。"
+        },
+        {
+          "en": "Can I bring this back?",
+          "ja": "これ返せますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "bring back は口語で「返す」。気さくな店で。"
+        },
+        {
+          "en": "What's your return policy?",
+          "ja": "返品規定はどうなっていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "return policy は「返品規定」。まず確認する型。"
+        },
+        {
+          "en": "Could I exchange it for a different size instead?",
+          "ja": "代わりに別のサイズと交換できますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "返品より交換のほうが応じてもらいやすい。"
+        },
+        {
+          "en": "I bought this yesterday but it doesn't fit — can I return it?",
+          "ja": "昨日買ったのですがサイズが合いませんでした。返品できますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由と時期を添える。最も通りやすい形。"
+        },
+        {
+          "en": "I understand if it's past the window — could you check for me?",
+          "ja": "期限を過ぎていれば仕方ありませんが、確認していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "window は「受付期間」。無理を言わない姿勢が伝わる。"
+        }
       ]
     },
     {
-      "id": "shopping-006", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-006",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask if they have another color.",
       "situationJa": "別の色があるか聞きたい。",
-      "tags": ["asking", "stock"],
+      "tags": [
+        "asking",
+        "stock"
+      ],
       "answers": [
-        { "en": "Another color?", "ja": "他の色はありますか。", "register": "casual", "style": "oneword", "note": "商品を持ちながら。短くても通じる。" },
-        { "en": "Do you have this in another color?", "ja": "これの別の色はありますか。", "register": "neutral", "style": "basic", "note": "基本形。in another color を丸ごと覚えたい。" },
-        { "en": "Does this come in blue?", "ja": "これは青もありますか。", "register": "neutral", "style": "basic", "note": "come in 〜 は「〜の色で展開している」。自然な言い方。" },
-        { "en": "Could you tell me what colors this comes in?", "ja": "これはどんな色があるか教えていただけますか。", "register": "polite", "style": "request", "note": "一度に全部聞ける。効率的。" },
-        { "en": "Would you happen to have this in a darker shade?", "ja": "こちらの濃い色合いはございますでしょうか。", "register": "formal", "style": "formal", "note": "shade は「色合い」。上品な言い方。" },
-        { "en": "Got any other colors?", "ja": "他の色ある？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。気さくな店で。" },
-        { "en": "Is the black one in stock?", "ja": "黒は在庫がありますか。", "register": "neutral", "style": "existence", "note": "色を指定して在庫を確認する形。" },
-        { "en": "Do you have more in the back?", "ja": "バックヤードに在庫はありますか。", "register": "neutral", "style": "vocab", "note": "in the back は「店の奥・倉庫」。実際によく使う。" },
-        { "en": "I like the style but not the color — is there another option?", "ja": "形は好きなのですが色が好みではなくて。他の選択肢はありますか。", "register": "polite", "style": "context", "note": "好みを伝えると、似た商品も提案してもらえる。" },
-        { "en": "No problem if this is all you have — but is there another color?", "ja": "これだけでしたら構いませんが、他の色はありますか。", "register": "polite", "style": "considerate", "note": "無い場合に相手が気まずくならない。" }
+        {
+          "en": "Another color?",
+          "ja": "他の色はありますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "商品を持ちながら。短くても通じる。"
+        },
+        {
+          "en": "Do you have this in another color?",
+          "ja": "これの別の色はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。in another color を丸ごと覚えたい。"
+        },
+        {
+          "en": "Does this come in blue?",
+          "ja": "これは青もありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "come in 〜 は「〜の色で展開している」。自然な言い方。"
+        },
+        {
+          "en": "Could you tell me what colors this comes in?",
+          "ja": "これはどんな色があるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "一度に全部聞ける。効率的。"
+        },
+        {
+          "en": "Would you happen to have this in a darker shade?",
+          "ja": "こちらの濃い色合いはございますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "shade は「色合い」。上品な言い方。"
+        },
+        {
+          "en": "Got any other colors?",
+          "ja": "他の色ある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた口語。気さくな店で。"
+        },
+        {
+          "en": "Is the black one in stock?",
+          "ja": "黒は在庫がありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "色を指定して在庫を確認する形。"
+        },
+        {
+          "en": "Do you have more in the back?",
+          "ja": "バックヤードに在庫はありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "in the back は「店の奥・倉庫」。実際によく使う。"
+        },
+        {
+          "en": "I like the style but not the color — is there another option?",
+          "ja": "形は好きなのですが色が好みではなくて。他の選択肢はありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "好みを伝えると、似た商品も提案してもらえる。"
+        },
+        {
+          "en": "No problem if this is all you have — but is there another color?",
+          "ja": "これだけでしたら構いませんが、他の色はありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無い場合に相手が気まずくならない。"
+        }
       ]
     },
     {
-      "id": "shopping-007", "category": "shopping", "difficulty": 2,
-      "place": "At a market stall", "listener": "a vendor",
+      "id": "shopping-007",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a market stall",
+      "listener": "a vendor",
       "want": "You want to ask for a lower price.",
       "situationJa": "値引きを交渉したい。",
-      "tags": ["negotiating", "price"],
+      "tags": [
+        "negotiating",
+        "price"
+      ],
       "answers": [
-        { "en": "Any discount?", "ja": "少し安くなりますか。", "register": "casual", "style": "oneword", "note": "市場での定番。短くて角が立たない。" },
-        { "en": "Could you do a better price?", "ja": "もう少し安くなりませんか。", "register": "neutral", "style": "basic", "note": "do a better price は交渉の決まり文句。" },
-        { "en": "Is there any room on the price?", "ja": "値段に融通は利きますか。", "register": "neutral", "style": "existence", "note": "room は「余地」。上品に値引きを打診できる。" },
-        { "en": "Would you consider twenty for this?", "ja": "これを20でいかがでしょうか。", "register": "polite", "style": "request", "note": "具体的な金額を提示する。交渉が進みやすい。" },
-        { "en": "I wonder whether there might be any flexibility on the price.", "ja": "お値段に融通が利くかどうか伺えますでしょうか。", "register": "formal", "style": "formal", "note": "flexibility は「融通」。非常に丁寧な打診。" },
-        { "en": "Can you knock a bit off?", "ja": "ちょっと安くしてもらえる？", "register": "casual", "style": "casual", "note": "knock off は「値引きする」。市場で自然。" },
-        { "en": "What's your best price?", "ja": "いちばん安くしていくらですか。", "register": "neutral", "style": "vocab", "note": "交渉の定番。相手から金額を出させる形。" },
-        { "en": "If I take two, could you do a deal?", "ja": "2つ買ったら安くなりますか。", "register": "neutral", "style": "basic", "note": "まとめ買いは最も通りやすい交渉材料。" },
-        { "en": "I saw something similar for less down the street — could you match it?", "ja": "近くで似たものがもっと安く出ていました。同じ値段にできますか。", "register": "polite", "style": "context", "note": "match は「同額にする」。根拠を示した交渉。" },
-        { "en": "No pressure at all — but is the price negotiable?", "ja": "無理でしたら結構ですが、値段の交渉はできますか。", "register": "polite", "style": "considerate", "note": "negotiable は「交渉可能な」。押しつけがましくない。" }
+        {
+          "en": "Any discount?",
+          "ja": "少し安くなりますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "市場での定番。短くて角が立たない。"
+        },
+        {
+          "en": "Could you do a better price?",
+          "ja": "もう少し安くなりませんか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "do a better price は交渉の決まり文句。"
+        },
+        {
+          "en": "Is there any room on the price?",
+          "ja": "値段に融通は利きますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "room は「余地」。上品に値引きを打診できる。"
+        },
+        {
+          "en": "Would you consider twenty for this?",
+          "ja": "これを20でいかがでしょうか。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な金額を提示する。交渉が進みやすい。"
+        },
+        {
+          "en": "I wonder whether there might be any flexibility on the price.",
+          "ja": "お値段に融通が利くかどうか伺えますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "flexibility は「融通」。非常に丁寧な打診。"
+        },
+        {
+          "en": "Can you knock a bit off?",
+          "ja": "ちょっと安くしてもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "knock off は「値引きする」。市場で自然。"
+        },
+        {
+          "en": "What's your best price?",
+          "ja": "いちばん安くしていくらですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "交渉の定番。相手から金額を出させる形。"
+        },
+        {
+          "en": "If I take two, could you do a deal?",
+          "ja": "2つ買ったら安くなりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "まとめ買いは最も通りやすい交渉材料。"
+        },
+        {
+          "en": "I saw something similar for less down the street — could you match it?",
+          "ja": "近くで似たものがもっと安く出ていました。同じ値段にできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "match は「同額にする」。根拠を示した交渉。"
+        },
+        {
+          "en": "No pressure at all — but is the price negotiable?",
+          "ja": "無理でしたら結構ですが、値段の交渉はできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "negotiable は「交渉可能な」。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "shopping-008", "category": "shopping", "difficulty": 1,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-008",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to say you are just looking.",
       "situationJa": "見ているだけだと伝えたい。",
-      "tags": ["declining", "polite"],
+      "tags": [
+        "declining",
+        "polite"
+      ],
       "answers": [
-        { "en": "Just looking, thanks.", "ja": "見ているだけです、ありがとう。", "register": "neutral", "style": "oneword", "note": "世界中で通じる定番。これだけで十分。" },
-        { "en": "I'm just browsing, thank you.", "ja": "ちょっと見ているだけです。ありがとうございます。", "register": "polite", "style": "basic", "note": "browse は「見て回る」。丁寧で自然。" },
-        { "en": "I'm fine, thanks.", "ja": "大丈夫です、ありがとう。", "register": "neutral", "style": "basic", "note": "声をかけられたときの最も簡単な返し。" },
-        { "en": "Thanks, I'll let you know if I need anything.", "ja": "ありがとうございます。必要でしたらお声がけします。", "register": "polite", "style": "request", "note": "関係を保ちつつ断れる。最も感じがよい。" },
-        { "en": "Thank you, I'm just having a look for the moment.", "ja": "ありがとうございます。今は少し拝見しているところです。", "register": "formal", "style": "formal", "note": "for the moment は「今のところ」。改まった店で。" },
-        { "en": "Just having a look.", "ja": "ちょっと見てるだけ。", "register": "casual", "style": "casual", "note": "英国でよく使う。気さくで自然。" },
-        { "en": "Is it all right if I look around?", "ja": "見て回っても大丈夫ですか。", "register": "neutral", "style": "existence", "note": "小さな店で。丁寧に入店したいときに。" },
-        { "en": "I'm not sure what I'm after yet.", "ja": "まだ何を探しているか決まっていなくて。", "register": "neutral", "style": "vocab", "note": "what I'm after は「探しているもの」。自然な口語。" },
-        { "en": "I'm just getting ideas at the moment — thank you though.", "ja": "今は参考に見ているだけです。でもありがとうございます。", "register": "polite", "style": "context", "note": "理由を添えると、しつこくされにくい。" },
-        { "en": "Thanks for asking — I'll come find you if I have questions.", "ja": "お声がけありがとうございます。質問があればこちらから伺います。", "register": "polite", "style": "considerate", "note": "店員の顔を立てる。関係が良くなる。" }
+        {
+          "en": "Just looking, thanks.",
+          "ja": "見ているだけです、ありがとう。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "世界中で通じる定番。これだけで十分。"
+        },
+        {
+          "en": "I'm just browsing, thank you.",
+          "ja": "ちょっと見ているだけです。ありがとうございます。",
+          "register": "polite",
+          "style": "basic",
+          "note": "browse は「見て回る」。丁寧で自然。"
+        },
+        {
+          "en": "I'm fine, thanks.",
+          "ja": "大丈夫です、ありがとう。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "声をかけられたときの最も簡単な返し。"
+        },
+        {
+          "en": "Thanks, I'll let you know if I need anything.",
+          "ja": "ありがとうございます。必要でしたらお声がけします。",
+          "register": "polite",
+          "style": "request",
+          "note": "関係を保ちつつ断れる。最も感じがよい。"
+        },
+        {
+          "en": "Thank you, I'm just having a look for the moment.",
+          "ja": "ありがとうございます。今は少し拝見しているところです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "for the moment は「今のところ」。改まった店で。"
+        },
+        {
+          "en": "Just having a look.",
+          "ja": "ちょっと見てるだけ。",
+          "register": "casual",
+          "style": "casual",
+          "note": "英国でよく使う。気さくで自然。"
+        },
+        {
+          "en": "Is it all right if I look around?",
+          "ja": "見て回っても大丈夫ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "小さな店で。丁寧に入店したいときに。"
+        },
+        {
+          "en": "I'm not sure what I'm after yet.",
+          "ja": "まだ何を探しているか決まっていなくて。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "what I'm after は「探しているもの」。自然な口語。"
+        },
+        {
+          "en": "I'm just getting ideas at the moment — thank you though.",
+          "ja": "今は参考に見ているだけです。でもありがとうございます。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、しつこくされにくい。"
+        },
+        {
+          "en": "Thanks for asking — I'll come find you if I have questions.",
+          "ja": "お声がけありがとうございます。質問があればこちらから伺います。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "店員の顔を立てる。関係が良くなる。"
+        }
       ]
     },
     {
-      "id": "shopping-009", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-009",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask if they can order the item for you.",
       "situationJa": "在庫がない商品を取り寄せてもらいたい。",
-      "tags": ["requesting", "stock"],
+      "tags": [
+        "requesting",
+        "stock"
+      ],
       "answers": [
-        { "en": "Can you order it for me?", "ja": "取り寄せてもらえますか。", "register": "neutral", "style": "basic", "note": "基本形。order は「取り寄せる」。" },
-        { "en": "Order it in?", "ja": "取り寄せはできますか。", "register": "casual", "style": "oneword", "note": "order in は「入荷させる」。短く言える。" },
-        { "en": "Could you order this in my size?", "ja": "私のサイズで取り寄せていただけますか。", "register": "polite", "style": "request", "note": "条件を明示。手配が確実になる。" },
-        { "en": "Is it possible to have it sent from another store?", "ja": "他の店舗から取り寄せることはできますか。", "register": "neutral", "style": "existence", "note": "店舗間移動なら早いことが多い。実用的。" },
-        { "en": "Would you be able to arrange for one to be brought in?", "ja": "1点お取り寄せいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "arrange for 〜 は「手配する」。改まった依頼。" },
-        { "en": "Can you get one in for me?", "ja": "1つ入れてもらえる？", "register": "casual", "style": "casual", "note": "get in は口語で「入荷させる」。気さくな店で。" },
-        { "en": "How long would it take?", "ja": "どのくらいかかりますか。", "register": "neutral", "style": "vocab", "note": "取り寄せを頼む前の必須確認。旅行者には重要。" },
-        { "en": "Do I need to pay in advance?", "ja": "前払いは必要ですか。", "register": "neutral", "style": "basic", "note": "in advance は「前払いで」。条件を確認する。" },
-        { "en": "I'm leaving on Friday — could it arrive before then?", "ja": "金曜に発つのですが、それまでに届きますか。", "register": "polite", "style": "context", "note": "期限を伝えるのが最重要。無駄な手配を防げる。" },
-        { "en": "Only if it's straightforward — could you order one in?", "ja": "簡単にできるようでしたらで結構ですが、取り寄せていただけますか。", "register": "polite", "style": "considerate", "note": "手間をかけさせない配慮。断りやすい形。" }
+        {
+          "en": "Can you order it for me?",
+          "ja": "取り寄せてもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。order は「取り寄せる」。"
+        },
+        {
+          "en": "Order it in?",
+          "ja": "取り寄せはできますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "order in は「入荷させる」。短く言える。"
+        },
+        {
+          "en": "Could you order this in my size?",
+          "ja": "私のサイズで取り寄せていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "条件を明示。手配が確実になる。"
+        },
+        {
+          "en": "Is it possible to have it sent from another store?",
+          "ja": "他の店舗から取り寄せることはできますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "店舗間移動なら早いことが多い。実用的。"
+        },
+        {
+          "en": "Would you be able to arrange for one to be brought in?",
+          "ja": "1点お取り寄せいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "arrange for 〜 は「手配する」。改まった依頼。"
+        },
+        {
+          "en": "Can you get one in for me?",
+          "ja": "1つ入れてもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "get in は口語で「入荷させる」。気さくな店で。"
+        },
+        {
+          "en": "How long would it take?",
+          "ja": "どのくらいかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "取り寄せを頼む前の必須確認。旅行者には重要。"
+        },
+        {
+          "en": "Do I need to pay in advance?",
+          "ja": "前払いは必要ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "in advance は「前払いで」。条件を確認する。"
+        },
+        {
+          "en": "I'm leaving on Friday — could it arrive before then?",
+          "ja": "金曜に発つのですが、それまでに届きますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "期限を伝えるのが最重要。無駄な手配を防げる。"
+        },
+        {
+          "en": "Only if it's straightforward — could you order one in?",
+          "ja": "簡単にできるようでしたらで結構ですが、取り寄せていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手間をかけさせない配慮。断りやすい形。"
+        }
       ]
     },
     {
-      "id": "shopping-010", "category": "shopping", "difficulty": 1,
-      "place": "At a supermarket", "listener": "a staff member",
+      "id": "shopping-010",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a supermarket",
+      "listener": "a staff member",
       "want": "You want to find where the milk is.",
       "situationJa": "牛乳の売り場を探している。",
-      "tags": ["asking", "directions"],
+      "tags": [
+        "asking",
+        "directions"
+      ],
       "answers": [
-        { "en": "Where's the milk?", "ja": "牛乳はどこですか。", "register": "neutral", "style": "basic", "note": "基本形。スーパーで最もよく使う。" },
-        { "en": "Milk?", "ja": "牛乳は？", "register": "casual", "style": "oneword", "note": "短くても通じる。急いでいるときに。" },
-        { "en": "Which aisle is the milk in?", "ja": "牛乳は何番の通路にありますか。", "register": "neutral", "style": "vocab", "note": "aisle は「通路」。スーパーでは番号で案内される。" },
-        { "en": "Could you tell me where I can find milk?", "ja": "牛乳がどこにあるか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
-        { "en": "Excuse me, would you mind directing me to the dairy section?", "ja": "恐れ入りますが、乳製品売り場を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "dairy section は「乳製品売り場」。正確な語。" },
-        { "en": "Milk — that way?", "ja": "牛乳ってあっち？", "register": "casual", "style": "casual", "note": "指さしながら。すれ違いざまに聞ける。" },
-        { "en": "Do you have oat milk as well?", "ja": "オーツミルクもありますか。", "register": "neutral", "style": "existence", "note": "特定の商品を探すときの型。" },
-        { "en": "Is the milk near the eggs?", "ja": "牛乳は卵の近くですか。", "register": "neutral", "style": "basic", "note": "見当を付けて確認する形。会話が短く済む。" },
-        { "en": "I've been round twice and can't find the milk — where is it?", "ja": "2周したのですが牛乳が見つかりません。どこにありますか。", "register": "polite", "style": "context", "note": "探した上でと伝えると、丁寧に案内してもらえる。" },
-        { "en": "Sorry to stop you — could you point me to the milk?", "ja": "お呼び止めしてすみません、牛乳の場所を教えていただけますか。", "register": "polite", "style": "considerate", "note": "作業中の店員に声をかけるときの前置き。" }
+        {
+          "en": "Where's the milk?",
+          "ja": "牛乳はどこですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。スーパーで最もよく使う。"
+        },
+        {
+          "en": "Milk?",
+          "ja": "牛乳は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。急いでいるときに。"
+        },
+        {
+          "en": "Which aisle is the milk in?",
+          "ja": "牛乳は何番の通路にありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "aisle は「通路」。スーパーでは番号で案内される。"
+        },
+        {
+          "en": "Could you tell me where I can find milk?",
+          "ja": "牛乳がどこにあるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どこでも使える。"
+        },
+        {
+          "en": "Excuse me, would you mind directing me to the dairy section?",
+          "ja": "恐れ入りますが、乳製品売り場を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "dairy section は「乳製品売り場」。正確な語。"
+        },
+        {
+          "en": "Milk — that way?",
+          "ja": "牛乳ってあっち？",
+          "register": "casual",
+          "style": "casual",
+          "note": "指さしながら。すれ違いざまに聞ける。"
+        },
+        {
+          "en": "Do you have oat milk as well?",
+          "ja": "オーツミルクもありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "特定の商品を探すときの型。"
+        },
+        {
+          "en": "Is the milk near the eggs?",
+          "ja": "牛乳は卵の近くですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "見当を付けて確認する形。会話が短く済む。"
+        },
+        {
+          "en": "I've been round twice and can't find the milk — where is it?",
+          "ja": "2周したのですが牛乳が見つかりません。どこにありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "探した上でと伝えると、丁寧に案内してもらえる。"
+        },
+        {
+          "en": "Sorry to stop you — could you point me to the milk?",
+          "ja": "お呼び止めしてすみません、牛乳の場所を教えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "作業中の店員に声をかけるときの前置き。"
+        }
       ]
     },
     {
-      "id": "shopping-011", "category": "shopping", "difficulty": 1,
-      "place": "At a checkout", "listener": "a cashier",
+      "id": "shopping-011",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a checkout",
+      "listener": "a cashier",
       "want": "You want to say you do not need a bag.",
       "situationJa": "袋は不要だと伝えたい。",
-      "tags": ["declining"],
+      "tags": [
+        "declining"
+      ],
       "answers": [
-        { "en": "No bag, thanks.", "ja": "袋は結構です。", "register": "neutral", "style": "oneword", "note": "最短で確実。世界中で通じる。" },
-        { "en": "I don't need a bag, thank you.", "ja": "袋は要りません。ありがとうございます。", "register": "polite", "style": "basic", "note": "丁寧な形。感じがよい。" },
-        { "en": "I have my own bag.", "ja": "自分の袋を持っています。", "register": "neutral", "style": "basic", "note": "エコバッグを見せながら。理由が明確。" },
-        { "en": "Could I skip the bag, please?", "ja": "袋なしでお願いできますか。", "register": "polite", "style": "request", "note": "skip は「省く」。柔らかい断り方。" },
-        { "en": "I won't need a bag, thank you very much.", "ja": "袋は不要です。ありがとうございます。", "register": "formal", "style": "formal", "note": "改まった言い方。丁寧に断れる。" },
-        { "en": "I'm good, thanks.", "ja": "大丈夫です、ありがとう。", "register": "casual", "style": "casual", "note": "米国でよく使う断り方。自然で短い。" },
-        { "en": "Is there a charge for bags here?", "ja": "こちらでは袋は有料ですか。", "register": "neutral", "style": "existence", "note": "有料の国が増えている。確認しておくと安心。" },
-        { "en": "I'll just carry it.", "ja": "そのまま持ちます。", "register": "neutral", "style": "vocab", "note": "1点だけのときに自然。" },
-        { "en": "I'm trying to use less plastic — no bag, thanks.", "ja": "プラスチックを減らしたいので、袋は結構です。", "register": "polite", "style": "context", "note": "理由を添えると自然な会話になる。" },
-        { "en": "Save it for someone else — I don't need one.", "ja": "他の方に使ってください。私は要りません。", "register": "polite", "style": "considerate", "note": "配慮を示す一言。感じがよい。" }
+        {
+          "en": "No bag, thanks.",
+          "ja": "袋は結構です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最短で確実。世界中で通じる。"
+        },
+        {
+          "en": "I don't need a bag, thank you.",
+          "ja": "袋は要りません。ありがとうございます。",
+          "register": "polite",
+          "style": "basic",
+          "note": "丁寧な形。感じがよい。"
+        },
+        {
+          "en": "I have my own bag.",
+          "ja": "自分の袋を持っています。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "エコバッグを見せながら。理由が明確。"
+        },
+        {
+          "en": "Could I skip the bag, please?",
+          "ja": "袋なしでお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "skip は「省く」。柔らかい断り方。"
+        },
+        {
+          "en": "I won't need a bag, thank you very much.",
+          "ja": "袋は不要です。ありがとうございます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。丁寧に断れる。"
+        },
+        {
+          "en": "I'm good, thanks.",
+          "ja": "大丈夫です、ありがとう。",
+          "register": "casual",
+          "style": "casual",
+          "note": "米国でよく使う断り方。自然で短い。"
+        },
+        {
+          "en": "Is there a charge for bags here?",
+          "ja": "こちらでは袋は有料ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "有料の国が増えている。確認しておくと安心。"
+        },
+        {
+          "en": "I'll just carry it.",
+          "ja": "そのまま持ちます。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "1点だけのときに自然。"
+        },
+        {
+          "en": "I'm trying to use less plastic — no bag, thanks.",
+          "ja": "プラスチックを減らしたいので、袋は結構です。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると自然な会話になる。"
+        },
+        {
+          "en": "Save it for someone else — I don't need one.",
+          "ja": "他の方に使ってください。私は要りません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "配慮を示す一言。感じがよい。"
+        }
       ]
     },
     {
-      "id": "shopping-012", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-012",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask for a gift wrap.",
       "situationJa": "贈答用の包装をお願いしたい。",
-      "tags": ["requesting", "service"],
+      "tags": [
+        "requesting",
+        "service"
+      ],
       "answers": [
-        { "en": "Gift wrap, please.", "ja": "贈答用に包んでください。", "register": "neutral", "style": "oneword", "note": "短くて確実。レジで通じる。" },
-        { "en": "Could you gift wrap this?", "ja": "これを贈答用に包んでいただけますか。", "register": "polite", "style": "request", "note": "基本形。gift wrap は動詞としても使える。" },
-        { "en": "It's a gift — could you wrap it?", "ja": "贈り物なので、包んでいただけますか。", "register": "neutral", "style": "basic", "note": "理由を先に。値札を外してもらえることも。" },
-        { "en": "Do you offer gift wrapping?", "ja": "ギフト包装のサービスはありますか。", "register": "neutral", "style": "existence", "note": "サービスの有無を確認する形。" },
-        { "en": "Would it be possible to have this gift wrapped?", "ja": "こちらを贈答用にお包みいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。高級店で自然。" },
-        { "en": "Can you wrap it up nice?", "ja": "きれいに包んでもらえる？", "register": "casual", "style": "casual", "note": "気さくな言い方。小さな店で自然。" },
-        { "en": "Is there a charge for wrapping?", "ja": "包装に料金はかかりますか。", "register": "neutral", "style": "vocab", "note": "有料の店もある。先に確認したい。" },
-        { "en": "Could you remove the price tag as well?", "ja": "値札も外していただけますか。", "register": "polite", "style": "basic", "note": "贈り物では必須の一言。忘れずに。" },
-        { "en": "It's for my mother's birthday — could you make it look nice?", "ja": "母の誕生日用なので、きれいに包んでいただけますか。", "register": "polite", "style": "context", "note": "用途を伝えると、丁寧に仕上げてもらえる。" },
-        { "en": "If you're busy I can do it myself — but could you wrap this?", "ja": "お忙しければ自分でやりますが、包んでいただけますか。", "register": "polite", "style": "considerate", "note": "混雑時への配慮。押しつけがましくない。" }
+        {
+          "en": "Gift wrap, please.",
+          "ja": "贈答用に包んでください。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。レジで通じる。"
+        },
+        {
+          "en": "Could you gift wrap this?",
+          "ja": "これを贈答用に包んでいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。gift wrap は動詞としても使える。"
+        },
+        {
+          "en": "It's a gift — could you wrap it?",
+          "ja": "贈り物なので、包んでいただけますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "理由を先に。値札を外してもらえることも。"
+        },
+        {
+          "en": "Do you offer gift wrapping?",
+          "ja": "ギフト包装のサービスはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "サービスの有無を確認する形。"
+        },
+        {
+          "en": "Would it be possible to have this gift wrapped?",
+          "ja": "こちらを贈答用にお包みいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。高級店で自然。"
+        },
+        {
+          "en": "Can you wrap it up nice?",
+          "ja": "きれいに包んでもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな言い方。小さな店で自然。"
+        },
+        {
+          "en": "Is there a charge for wrapping?",
+          "ja": "包装に料金はかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "有料の店もある。先に確認したい。"
+        },
+        {
+          "en": "Could you remove the price tag as well?",
+          "ja": "値札も外していただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "贈り物では必須の一言。忘れずに。"
+        },
+        {
+          "en": "It's for my mother's birthday — could you make it look nice?",
+          "ja": "母の誕生日用なので、きれいに包んでいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "用途を伝えると、丁寧に仕上げてもらえる。"
+        },
+        {
+          "en": "If you're busy I can do it myself — but could you wrap this?",
+          "ja": "お忙しければ自分でやりますが、包んでいただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "混雑時への配慮。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "shopping-013", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-013",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask about tax-free shopping.",
       "situationJa": "免税手続きについて聞きたい。",
-      "tags": ["asking", "tax"],
+      "tags": [
+        "asking",
+        "tax"
+      ],
       "answers": [
-        { "en": "Tax free?", "ja": "免税はできますか。", "register": "casual", "style": "oneword", "note": "パスポートを見せながら。世界中で通じる。" },
-        { "en": "Do you do tax-free shopping?", "ja": "免税販売はしていますか。", "register": "neutral", "style": "basic", "note": "基本形。旅行者として必ず聞きたい。" },
-        { "en": "Can I claim the tax back?", "ja": "税金の還付は受けられますか。", "register": "neutral", "style": "basic", "note": "claim back は「還付を請求する」。正確な言い方。" },
-        { "en": "Could you tell me how the tax refund works here?", "ja": "こちらの免税手続きについて教えていただけますか。", "register": "polite", "style": "request", "note": "tax refund は「税金還付」。手順まで聞ける。" },
-        { "en": "I'd like to enquire about VAT refund procedures for visitors.", "ja": "旅行者向けの付加価値税還付の手続きについて伺いたいのですが。", "register": "formal", "style": "formal", "note": "VAT は欧州の付加価値税。正式な用語。" },
-        { "en": "Can I get the tax off?", "ja": "税抜きにできる？", "register": "casual", "style": "casual", "note": "非常にくだけた言い方。小さな店で。" },
-        { "en": "Is there a minimum purchase for tax free?", "ja": "免税には最低購入額がありますか。", "register": "neutral", "style": "existence", "note": "国によって基準額がある。重要な確認。" },
-        { "en": "Do I need my passport for this?", "ja": "これにパスポートは必要ですか。", "register": "neutral", "style": "vocab", "note": "たいてい必要。持っていないと手続きできない。" },
-        { "en": "I'm flying home on Friday — where do I process the refund at the airport?", "ja": "金曜に帰国します。空港のどこで還付手続きをしますか。", "register": "polite", "style": "context", "note": "空港での手続き場所を先に知っておくと慌てない。" },
-        { "en": "No problem if you don't offer it — do you do tax free?", "ja": "対応されていなければ結構ですが、免税はありますか。", "register": "polite", "style": "considerate", "note": "小さな店では扱っていないことも。気まずくならない。" }
+        {
+          "en": "Tax free?",
+          "ja": "免税はできますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "パスポートを見せながら。世界中で通じる。"
+        },
+        {
+          "en": "Do you do tax-free shopping?",
+          "ja": "免税販売はしていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。旅行者として必ず聞きたい。"
+        },
+        {
+          "en": "Can I claim the tax back?",
+          "ja": "税金の還付は受けられますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "claim back は「還付を請求する」。正確な言い方。"
+        },
+        {
+          "en": "Could you tell me how the tax refund works here?",
+          "ja": "こちらの免税手続きについて教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "tax refund は「税金還付」。手順まで聞ける。"
+        },
+        {
+          "en": "I'd like to enquire about VAT refund procedures for visitors.",
+          "ja": "旅行者向けの付加価値税還付の手続きについて伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "VAT は欧州の付加価値税。正式な用語。"
+        },
+        {
+          "en": "Can I get the tax off?",
+          "ja": "税抜きにできる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた言い方。小さな店で。"
+        },
+        {
+          "en": "Is there a minimum purchase for tax free?",
+          "ja": "免税には最低購入額がありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "国によって基準額がある。重要な確認。"
+        },
+        {
+          "en": "Do I need my passport for this?",
+          "ja": "これにパスポートは必要ですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "たいてい必要。持っていないと手続きできない。"
+        },
+        {
+          "en": "I'm flying home on Friday — where do I process the refund at the airport?",
+          "ja": "金曜に帰国します。空港のどこで還付手続きをしますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "空港での手続き場所を先に知っておくと慌てない。"
+        },
+        {
+          "en": "No problem if you don't offer it — do you do tax free?",
+          "ja": "対応されていなければ結構ですが、免税はありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "小さな店では扱っていないことも。気まずくならない。"
+        }
       ]
     },
     {
-      "id": "shopping-014", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-014",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask for help finding a gift.",
       "situationJa": "贈り物選びを手伝ってほしい。",
-      "tags": ["requesting", "recommendation"],
+      "tags": [
+        "requesting",
+        "recommendation"
+      ],
       "answers": [
-        { "en": "Could you help me find a gift?", "ja": "贈り物選びを手伝っていただけますか。", "register": "polite", "style": "request", "note": "基本形。店員は喜んで助けてくれる。" },
-        { "en": "I'm looking for a gift.", "ja": "贈り物を探しています。", "register": "neutral", "style": "oneword", "note": "これだけで店員が動いてくれる。まずこれ。" },
-        { "en": "What would you suggest for a gift?", "ja": "贈り物には何がよいでしょうか。", "register": "neutral", "style": "basic", "note": "提案を求める形。選択肢が広がる。" },
-        { "en": "Do you have anything popular as a gift?", "ja": "贈り物として人気のものはありますか。", "register": "neutral", "style": "existence", "note": "実績のあるものを聞く。外しにくい。" },
-        { "en": "I wonder whether you might help me choose something as a present.", "ja": "贈り物選びをお手伝いいただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。高級店で自然。" },
-        { "en": "Any ideas for a present?", "ja": "プレゼントに何かいいのある？", "register": "casual", "style": "casual", "note": "気さくな店で。会話が弾みやすい。" },
-        { "en": "What's typical from this area?", "ja": "この地域らしいものは何ですか。", "register": "neutral", "style": "vocab", "note": "旅先の土産選びに。地元らしさが手に入る。" },
-        { "en": "Something under thirty pounds, if possible.", "ja": "できれば30ポンド以内で。", "register": "neutral", "style": "basic", "note": "予算を先に伝えるのが最も効率的。" },
-        { "en": "It's for a colleague who likes cooking — any suggestions?", "ja": "料理好きの同僚への贈り物です。何かおすすめはありますか。", "register": "polite", "style": "context", "note": "相手と好みを伝えると、的確な提案がもらえる。" },
-        { "en": "Only if you have time — could you help me pick something out?", "ja": "お時間があればで結構ですが、選ぶのを手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "忙しい店員への配慮。丁寧な頼み方。" }
+        {
+          "en": "Could you help me find a gift?",
+          "ja": "贈り物選びを手伝っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。店員は喜んで助けてくれる。"
+        },
+        {
+          "en": "I'm looking for a gift.",
+          "ja": "贈り物を探しています。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "これだけで店員が動いてくれる。まずこれ。"
+        },
+        {
+          "en": "What would you suggest for a gift?",
+          "ja": "贈り物には何がよいでしょうか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "提案を求める形。選択肢が広がる。"
+        },
+        {
+          "en": "Do you have anything popular as a gift?",
+          "ja": "贈り物として人気のものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "実績のあるものを聞く。外しにくい。"
+        },
+        {
+          "en": "I wonder whether you might help me choose something as a present.",
+          "ja": "贈り物選びをお手伝いいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。高級店で自然。"
+        },
+        {
+          "en": "Any ideas for a present?",
+          "ja": "プレゼントに何かいいのある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな店で。会話が弾みやすい。"
+        },
+        {
+          "en": "What's typical from this area?",
+          "ja": "この地域らしいものは何ですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "旅先の土産選びに。地元らしさが手に入る。"
+        },
+        {
+          "en": "Something under thirty pounds, if possible.",
+          "ja": "できれば30ポンド以内で。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "予算を先に伝えるのが最も効率的。"
+        },
+        {
+          "en": "It's for a colleague who likes cooking — any suggestions?",
+          "ja": "料理好きの同僚への贈り物です。何かおすすめはありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "相手と好みを伝えると、的確な提案がもらえる。"
+        },
+        {
+          "en": "Only if you have time — could you help me pick something out?",
+          "ja": "お時間があればで結構ですが、選ぶのを手伝っていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "忙しい店員への配慮。丁寧な頼み方。"
+        }
       ]
     },
     {
-      "id": "shopping-015", "category": "shopping", "difficulty": 2,
-      "place": "At a checkout", "listener": "a cashier",
+      "id": "shopping-015",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a checkout",
+      "listener": "a cashier",
       "want": "You want to say the price is different from the label.",
       "situationJa": "表示と会計の値段が違うことを伝えたい。",
-      "tags": ["complaining", "price"],
+      "tags": [
+        "complaining",
+        "price"
+      ],
       "answers": [
-        { "en": "The label said twenty.", "ja": "表示は20でした。", "register": "neutral", "style": "oneword", "note": "事実だけを述べる。責める調子にならない。" },
-        { "en": "I think the price is different on the shelf.", "ja": "棚の値段と違うようです。", "register": "neutral", "style": "basic", "note": "I think で断定を避ける。角が立たない。" },
-        { "en": "Could you check the price on this?", "ja": "これの値段を確認していただけますか。", "register": "polite", "style": "request", "note": "確認を頼む形。最も無難で効果的。" },
-        { "en": "It was marked at twenty on the display.", "ja": "陳列では20と表示されていました。", "register": "neutral", "style": "vocab", "note": "marked at 〜 は「〜と表示されていた」。正確な言い方。" },
-        { "en": "I'm sorry to mention it, but I believe this was priced differently on the shelf.", "ja": "申し上げにくいのですが、棚では別の価格が表示されていたように思います。", "register": "formal", "style": "formal", "note": "最も丁寧な指摘。相手を責めない。" },
-        { "en": "That's more than I thought.", "ja": "思っていたより高いですね。", "register": "casual", "style": "casual", "note": "柔らかく疑問を示せる。押しが弱いのが利点。" },
-        { "en": "Is the discount still on?", "ja": "割引はまだ適用されていますか。", "register": "neutral", "style": "existence", "note": "セールが終わっている可能性を確認する形。" },
-        { "en": "Could someone check the shelf price for me?", "ja": "どなたかに棚の値段を確認していただけますか。", "register": "polite", "style": "basic", "note": "確認作業を頼む形。実務的に速い。" },
-        { "en": "There was a sign saying twenty percent off — does that apply here?", "ja": "20%引きの表示がありましたが、これは対象ですか。", "register": "polite", "style": "context", "note": "根拠を示すと、双方が確認しやすい。" },
-        { "en": "It may be my mistake — but could you double-check the price?", "ja": "私の勘違いかもしれませんが、値段を再確認していただけますか。", "register": "polite", "style": "considerate", "note": "自分の誤りの可能性を先に置く。もめずに済む。" }
+        {
+          "en": "The label said twenty.",
+          "ja": "表示は20でした。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "事実だけを述べる。責める調子にならない。"
+        },
+        {
+          "en": "I think the price is different on the shelf.",
+          "ja": "棚の値段と違うようです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I think で断定を避ける。角が立たない。"
+        },
+        {
+          "en": "Could you check the price on this?",
+          "ja": "これの値段を確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "確認を頼む形。最も無難で効果的。"
+        },
+        {
+          "en": "It was marked at twenty on the display.",
+          "ja": "陳列では20と表示されていました。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "marked at 〜 は「〜と表示されていた」。正確な言い方。"
+        },
+        {
+          "en": "I'm sorry to mention it, but I believe this was priced differently on the shelf.",
+          "ja": "申し上げにくいのですが、棚では別の価格が表示されていたように思います。",
+          "register": "formal",
+          "style": "formal",
+          "note": "最も丁寧な指摘。相手を責めない。"
+        },
+        {
+          "en": "That's more than I thought.",
+          "ja": "思っていたより高いですね。",
+          "register": "casual",
+          "style": "casual",
+          "note": "柔らかく疑問を示せる。押しが弱いのが利点。"
+        },
+        {
+          "en": "Is the discount still on?",
+          "ja": "割引はまだ適用されていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "セールが終わっている可能性を確認する形。"
+        },
+        {
+          "en": "Could someone check the shelf price for me?",
+          "ja": "どなたかに棚の値段を確認していただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "確認作業を頼む形。実務的に速い。"
+        },
+        {
+          "en": "There was a sign saying twenty percent off — does that apply here?",
+          "ja": "20%引きの表示がありましたが、これは対象ですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "根拠を示すと、双方が確認しやすい。"
+        },
+        {
+          "en": "It may be my mistake — but could you double-check the price?",
+          "ja": "私の勘違いかもしれませんが、値段を再確認していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分の誤りの可能性を先に置く。もめずに済む。"
+        }
       ]
     },
     {
-      "id": "shopping-016", "category": "shopping", "difficulty": 1,
-      "place": "In a shoe shop", "listener": "a shop assistant",
+      "id": "shopping-016",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a shoe shop",
+      "listener": "a shop assistant",
       "want": "You want to try these shoes in size 42.",
       "situationJa": "この靴の42サイズを試したい。",
-      "tags": ["requesting", "size"],
+      "tags": [
+        "requesting",
+        "size"
+      ],
       "answers": [
-        { "en": "Size 42, please.", "ja": "42サイズをお願いします。", "register": "neutral", "style": "oneword", "note": "靴を持ちながら。これで十分。" },
-        { "en": "Do you have these in a 42?", "ja": "これの42はありますか。", "register": "neutral", "style": "basic", "note": "基本形。in a 42 で「42サイズで」。" },
-        { "en": "Could I try these in a 42?", "ja": "これの42を試させていただけますか。", "register": "polite", "style": "request", "note": "試着まで含めた依頼。丁寧で自然。" },
-        { "en": "Is a 42 available in this style?", "ja": "この型で42はありますか。", "register": "neutral", "style": "existence", "note": "在庫を確認する形。" },
-        { "en": "Would you happen to have these in a European 42?", "ja": "こちらのヨーロッパサイズ42はございますでしょうか。", "register": "formal", "style": "formal", "note": "サイズ表記は国で違う。明示すると誤解がない。" },
-        { "en": "Got these in a 42?", "ja": "これの42ある？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。気さくな店で。" },
-        { "en": "What size is this one?", "ja": "これは何サイズですか。", "register": "neutral", "style": "vocab", "note": "手に取った靴のサイズを確認する。" },
-        { "en": "Could I try a 42 and a 43?", "ja": "42と43を両方試せますか。", "register": "polite", "style": "basic", "note": "2サイズ試すのは普通。遠慮しなくてよい。" },
-        { "en": "I'm a 42 in most brands — would these run true to size?", "ja": "たいていのブランドで42なのですが、これはサイズ通りですか。", "register": "polite", "style": "context", "note": "run true to size は「表示通りのサイズ感」。有用な質問。" },
-        { "en": "Whenever you have a moment — could I try these in a 42?", "ja": "お手すきのときで結構です。これの42を試せますか。", "register": "polite", "style": "considerate", "note": "混雑時に。急かさない言い方。" }
+        {
+          "en": "Size 42, please.",
+          "ja": "42サイズをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "靴を持ちながら。これで十分。"
+        },
+        {
+          "en": "Do you have these in a 42?",
+          "ja": "これの42はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。in a 42 で「42サイズで」。"
+        },
+        {
+          "en": "Could I try these in a 42?",
+          "ja": "これの42を試させていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "試着まで含めた依頼。丁寧で自然。"
+        },
+        {
+          "en": "Is a 42 available in this style?",
+          "ja": "この型で42はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "在庫を確認する形。"
+        },
+        {
+          "en": "Would you happen to have these in a European 42?",
+          "ja": "こちらのヨーロッパサイズ42はございますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "サイズ表記は国で違う。明示すると誤解がない。"
+        },
+        {
+          "en": "Got these in a 42?",
+          "ja": "これの42ある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた口語。気さくな店で。"
+        },
+        {
+          "en": "What size is this one?",
+          "ja": "これは何サイズですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "手に取った靴のサイズを確認する。"
+        },
+        {
+          "en": "Could I try a 42 and a 43?",
+          "ja": "42と43を両方試せますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "2サイズ試すのは普通。遠慮しなくてよい。"
+        },
+        {
+          "en": "I'm a 42 in most brands — would these run true to size?",
+          "ja": "たいていのブランドで42なのですが、これはサイズ通りですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "run true to size は「表示通りのサイズ感」。有用な質問。"
+        },
+        {
+          "en": "Whenever you have a moment — could I try these in a 42?",
+          "ja": "お手すきのときで結構です。これの42を試せますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "混雑時に。急かさない言い方。"
+        }
       ]
     },
     {
-      "id": "shopping-017", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-017",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask if the item can be shipped to your country.",
       "situationJa": "商品を自国に発送してもらえるか聞きたい。",
-      "tags": ["asking", "shipping"],
+      "tags": [
+        "asking",
+        "shipping"
+      ],
       "answers": [
-        { "en": "Do you ship to Japan?", "ja": "日本まで発送していますか。", "register": "neutral", "style": "basic", "note": "基本形。ship to 〜 で「〜へ発送する」。" },
-        { "en": "Shipping to Japan?", "ja": "日本への発送はできますか。", "register": "casual", "style": "oneword", "note": "短くても通じる。まずこれ。" },
-        { "en": "Could you send this to Japan for me?", "ja": "これを日本へ送っていただけますか。", "register": "polite", "style": "request", "note": "丁寧な依頼。個別対応してもらえることも。" },
-        { "en": "Is international shipping available?", "ja": "海外発送はありますか。", "register": "neutral", "style": "existence", "note": "international shipping は「海外発送」。正式な語。" },
-        { "en": "I'd like to enquire whether you dispatch orders overseas.", "ja": "海外への発送を承っていらっしゃるか伺いたいのですが。", "register": "formal", "style": "formal", "note": "dispatch は「発送する」。改まった商業用語。" },
-        { "en": "Can you post it to Japan?", "ja": "日本に郵送できる？", "register": "casual", "style": "casual", "note": "post は英国式の「郵送する」。米国では mail。" },
-        { "en": "How much would shipping cost?", "ja": "送料はいくらかかりますか。", "register": "neutral", "style": "vocab", "note": "送料が商品より高いこともある。必ず確認。" },
-        { "en": "How long would it take to arrive?", "ja": "届くまでどのくらいかかりますか。", "register": "neutral", "style": "basic", "note": "到着時期の確認。贈り物なら特に重要。" },
-        { "en": "It's too big for my suitcase — could it be shipped instead?", "ja": "スーツケースに入らないので、発送していただけますか。", "register": "polite", "style": "context", "note": "事情を言うと、店側が方法を探してくれる。" },
-        { "en": "No problem if not — but do you ship abroad?", "ja": "対応されていなければ結構ですが、海外発送はしていますか。", "register": "polite", "style": "considerate", "note": "断りやすくする一言。小さな店への配慮。" }
+        {
+          "en": "Do you ship to Japan?",
+          "ja": "日本まで発送していますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。ship to 〜 で「〜へ発送する」。"
+        },
+        {
+          "en": "Shipping to Japan?",
+          "ja": "日本への発送はできますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。まずこれ。"
+        },
+        {
+          "en": "Could you send this to Japan for me?",
+          "ja": "これを日本へ送っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な依頼。個別対応してもらえることも。"
+        },
+        {
+          "en": "Is international shipping available?",
+          "ja": "海外発送はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "international shipping は「海外発送」。正式な語。"
+        },
+        {
+          "en": "I'd like to enquire whether you dispatch orders overseas.",
+          "ja": "海外への発送を承っていらっしゃるか伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "dispatch は「発送する」。改まった商業用語。"
+        },
+        {
+          "en": "Can you post it to Japan?",
+          "ja": "日本に郵送できる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "post は英国式の「郵送する」。米国では mail。"
+        },
+        {
+          "en": "How much would shipping cost?",
+          "ja": "送料はいくらかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "送料が商品より高いこともある。必ず確認。"
+        },
+        {
+          "en": "How long would it take to arrive?",
+          "ja": "届くまでどのくらいかかりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "到着時期の確認。贈り物なら特に重要。"
+        },
+        {
+          "en": "It's too big for my suitcase — could it be shipped instead?",
+          "ja": "スーツケースに入らないので、発送していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと、店側が方法を探してくれる。"
+        },
+        {
+          "en": "No problem if not — but do you ship abroad?",
+          "ja": "対応されていなければ結構ですが、海外発送はしていますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断りやすくする一言。小さな店への配慮。"
+        }
       ]
     },
     {
-      "id": "shopping-018", "category": "shopping", "difficulty": 1,
-      "place": "At a checkout", "listener": "a cashier",
+      "id": "shopping-018",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a checkout",
+      "listener": "a cashier",
       "want": "You want to ask for a receipt.",
       "situationJa": "レシートをもらいたい。",
-      "tags": ["requesting"],
+      "tags": [
+        "requesting"
+      ],
       "answers": [
-        { "en": "Receipt, please.", "ja": "レシートをお願いします。", "register": "neutral", "style": "oneword", "note": "最短で確実。どこでも通じる。" },
-        { "en": "Could I have a receipt, please?", "ja": "レシートをいただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。改まった店でも使える。" },
-        { "en": "Can I get a receipt?", "ja": "レシートをもらえますか。", "register": "neutral", "style": "basic", "note": "素直で伝わりやすい。" },
-        { "en": "Do you have a paper receipt?", "ja": "紙のレシートはありますか。", "register": "neutral", "style": "existence", "note": "電子レシートのみの店が増えている。" },
-        { "en": "Would it be possible to have an itemized receipt?", "ja": "明細付きの領収書をいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "itemized は「明細の」。経費精算に必要なことが多い。" },
-        { "en": "Can I grab the receipt?", "ja": "レシートもらえる？", "register": "casual", "style": "casual", "note": "気さくな言い方。手早く済ませたいときに。" },
-        { "en": "Could I have it emailed instead?", "ja": "代わりにメールで送っていただけますか。", "register": "polite", "style": "vocab", "note": "紙を減らしたいときに。多くの店で対応している。" },
-        { "en": "Could you put the company name on it?", "ja": "会社名を入れていただけますか。", "register": "polite", "style": "basic", "note": "経費で落とすときに必要。忘れずに。" },
-        { "en": "I need it for expenses — could I have a receipt?", "ja": "経費精算に必要なので、領収書をいただけますか。", "register": "polite", "style": "context", "note": "理由を言うと、正式な形式で出してもらえる。" },
-        { "en": "Sorry, one more thing — could I have the receipt?", "ja": "すみません、もうひとつだけ。レシートをいただけますか。", "register": "polite", "style": "considerate", "note": "会計後に思い出したときの前置き。" }
+        {
+          "en": "Receipt, please.",
+          "ja": "レシートをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "最短で確実。どこでも通じる。"
+        },
+        {
+          "en": "Could I have a receipt, please?",
+          "ja": "レシートをいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。改まった店でも使える。"
+        },
+        {
+          "en": "Can I get a receipt?",
+          "ja": "レシートをもらえますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "素直で伝わりやすい。"
+        },
+        {
+          "en": "Do you have a paper receipt?",
+          "ja": "紙のレシートはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "電子レシートのみの店が増えている。"
+        },
+        {
+          "en": "Would it be possible to have an itemized receipt?",
+          "ja": "明細付きの領収書をいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "itemized は「明細の」。経費精算に必要なことが多い。"
+        },
+        {
+          "en": "Can I grab the receipt?",
+          "ja": "レシートもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな言い方。手早く済ませたいときに。"
+        },
+        {
+          "en": "Could I have it emailed instead?",
+          "ja": "代わりにメールで送っていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "紙を減らしたいときに。多くの店で対応している。"
+        },
+        {
+          "en": "Could you put the company name on it?",
+          "ja": "会社名を入れていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "経費で落とすときに必要。忘れずに。"
+        },
+        {
+          "en": "I need it for expenses — could I have a receipt?",
+          "ja": "経費精算に必要なので、領収書をいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を言うと、正式な形式で出してもらえる。"
+        },
+        {
+          "en": "Sorry, one more thing — could I have the receipt?",
+          "ja": "すみません、もうひとつだけ。レシートをいただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "会計後に思い出したときの前置き。"
+        }
       ]
     },
     {
-      "id": "shopping-019", "category": "shopping", "difficulty": 2,
-      "place": "In an electronics shop", "listener": "a shop assistant",
+      "id": "shopping-019",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In an electronics shop",
+      "listener": "a shop assistant",
       "want": "You want to ask whether it works in Japan.",
       "situationJa": "日本で使えるか確認したい。",
-      "tags": ["asking", "compatibility"],
+      "tags": [
+        "asking",
+        "compatibility"
+      ],
       "answers": [
-        { "en": "Does this work in Japan?", "ja": "これは日本で使えますか。", "register": "neutral", "style": "basic", "note": "基本形。電化製品を買う前の必須確認。" },
-        { "en": "Japan OK?", "ja": "日本で大丈夫ですか。", "register": "casual", "style": "oneword", "note": "商品を指しながら。短くても通じる。" },
-        { "en": "Will this work with Japanese voltage?", "ja": "日本の電圧で使えますか。", "register": "neutral", "style": "vocab", "note": "voltage は「電圧」。日本は100Vで特殊。" },
-        { "en": "Could you tell me if this is compatible in Japan?", "ja": "これが日本で使えるか教えていただけますか。", "register": "polite", "style": "request", "note": "compatible は「互換性がある」。正確な語。" },
-        { "en": "I'd like to confirm whether this model is suitable for use in Japan.", "ja": "この機種が日本での使用に適しているか確認したいのですが。", "register": "formal", "style": "formal", "note": "suitable for use は「使用に適する」。改まった言い方。" },
-        { "en": "Can I use this back home?", "ja": "これ、地元で使える？", "register": "casual", "style": "casual", "note": "back home は「自国で」。口語的で自然。" },
-        { "en": "Is there a warranty that covers Japan?", "ja": "日本でも有効な保証はありますか。", "register": "neutral", "style": "existence", "note": "国際保証の有無。高額品では重要。" },
-        { "en": "Do I need an adapter?", "ja": "変換アダプターは必要ですか。", "register": "neutral", "style": "basic", "note": "プラグの形状が違う。忘れがちな確認。" },
-        { "en": "I'm taking it back to Japan — will it work there?", "ja": "日本に持ち帰るのですが、そこで使えますか。", "register": "polite", "style": "context", "note": "用途を明示すると、注意点まで教えてもらえる。" },
-        { "en": "I'd rather check before buying — is it usable in Japan?", "ja": "買う前に確認しておきたいのですが、日本で使えますか。", "register": "polite", "style": "considerate", "note": "慎重な姿勢を示す。丁寧に説明してもらえる。" }
+        {
+          "en": "Does this work in Japan?",
+          "ja": "これは日本で使えますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。電化製品を買う前の必須確認。"
+        },
+        {
+          "en": "Japan OK?",
+          "ja": "日本で大丈夫ですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "商品を指しながら。短くても通じる。"
+        },
+        {
+          "en": "Will this work with Japanese voltage?",
+          "ja": "日本の電圧で使えますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "voltage は「電圧」。日本は100Vで特殊。"
+        },
+        {
+          "en": "Could you tell me if this is compatible in Japan?",
+          "ja": "これが日本で使えるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "compatible は「互換性がある」。正確な語。"
+        },
+        {
+          "en": "I'd like to confirm whether this model is suitable for use in Japan.",
+          "ja": "この機種が日本での使用に適しているか確認したいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "suitable for use は「使用に適する」。改まった言い方。"
+        },
+        {
+          "en": "Can I use this back home?",
+          "ja": "これ、地元で使える？",
+          "register": "casual",
+          "style": "casual",
+          "note": "back home は「自国で」。口語的で自然。"
+        },
+        {
+          "en": "Is there a warranty that covers Japan?",
+          "ja": "日本でも有効な保証はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "国際保証の有無。高額品では重要。"
+        },
+        {
+          "en": "Do I need an adapter?",
+          "ja": "変換アダプターは必要ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "プラグの形状が違う。忘れがちな確認。"
+        },
+        {
+          "en": "I'm taking it back to Japan — will it work there?",
+          "ja": "日本に持ち帰るのですが、そこで使えますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "用途を明示すると、注意点まで教えてもらえる。"
+        },
+        {
+          "en": "I'd rather check before buying — is it usable in Japan?",
+          "ja": "買う前に確認しておきたいのですが、日本で使えますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "慎重な姿勢を示す。丁寧に説明してもらえる。"
+        }
       ]
     },
     {
-      "id": "shopping-020", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-020",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to say you will think about it and leave politely.",
       "situationJa": "検討したいと伝えて丁寧に店を出たい。",
-      "tags": ["declining", "polite"],
+      "tags": [
+        "declining",
+        "polite"
+      ],
       "answers": [
-        { "en": "I'll think about it, thanks.", "ja": "検討します、ありがとうございます。", "register": "neutral", "style": "basic", "note": "最も一般的。角を立てずに断れる。" },
-        { "en": "Thanks, I'll have a think.", "ja": "ありがとうございます、少し考えてみます。", "register": "neutral", "style": "oneword", "note": "have a think は英国式。柔らかい響き。" },
-        { "en": "I'd like to look around a bit more first.", "ja": "もう少し他も見てから決めたいと思います。", "register": "polite", "style": "basic", "note": "正直で失礼にならない。相手も納得しやすい。" },
-        { "en": "Could I take a photo so I can think it over?", "ja": "検討したいので写真を撮ってもよいですか。", "register": "polite", "style": "request", "note": "本当に検討する意思が伝わる。店員も納得する。" },
-        { "en": "Thank you for your help — I'd like to consider it before deciding.", "ja": "ご案内ありがとうございました。決める前に検討させてください。", "register": "formal", "style": "formal", "note": "丁寧に締める。高級店で自然。" },
-        { "en": "I might come back for it.", "ja": "また来るかもしれません。", "register": "casual", "style": "casual", "note": "気軽な締め方。実際に戻ることもある。" },
-        { "en": "Will it still be here tomorrow?", "ja": "明日もまだありますか。", "register": "neutral", "style": "existence", "note": "在庫を確認しつつ、検討の意思も伝わる。" },
-        { "en": "Could you hold it for me until this evening?", "ja": "夕方まで取り置きしていただけますか。", "register": "polite", "style": "vocab", "note": "hold は「取り置く」。本気度が高いときに。" },
-        { "en": "It's lovely, but it's more than I planned to spend today.", "ja": "とても素敵ですが、今日の予算より高くて。", "register": "polite", "style": "context", "note": "正直な理由。値引きにつながることもある。" },
-        { "en": "Thanks so much for your time — I'll have a think and come back.", "ja": "お時間をいただきありがとうございました。検討してまた伺います。", "register": "polite", "style": "considerate", "note": "時間を割いてもらったことへの感謝。最も感じがよい。" }
+        {
+          "en": "I'll think about it, thanks.",
+          "ja": "検討します、ありがとうございます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最も一般的。角を立てずに断れる。"
+        },
+        {
+          "en": "Thanks, I'll have a think.",
+          "ja": "ありがとうございます、少し考えてみます。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "have a think は英国式。柔らかい響き。"
+        },
+        {
+          "en": "I'd like to look around a bit more first.",
+          "ja": "もう少し他も見てから決めたいと思います。",
+          "register": "polite",
+          "style": "basic",
+          "note": "正直で失礼にならない。相手も納得しやすい。"
+        },
+        {
+          "en": "Could I take a photo so I can think it over?",
+          "ja": "検討したいので写真を撮ってもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "本当に検討する意思が伝わる。店員も納得する。"
+        },
+        {
+          "en": "Thank you for your help — I'd like to consider it before deciding.",
+          "ja": "ご案内ありがとうございました。決める前に検討させてください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "丁寧に締める。高級店で自然。"
+        },
+        {
+          "en": "I might come back for it.",
+          "ja": "また来るかもしれません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気軽な締め方。実際に戻ることもある。"
+        },
+        {
+          "en": "Will it still be here tomorrow?",
+          "ja": "明日もまだありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "在庫を確認しつつ、検討の意思も伝わる。"
+        },
+        {
+          "en": "Could you hold it for me until this evening?",
+          "ja": "夕方まで取り置きしていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "hold は「取り置く」。本気度が高いときに。"
+        },
+        {
+          "en": "It's lovely, but it's more than I planned to spend today.",
+          "ja": "とても素敵ですが、今日の予算より高くて。",
+          "register": "polite",
+          "style": "context",
+          "note": "正直な理由。値引きにつながることもある。"
+        },
+        {
+          "en": "Thanks so much for your time — I'll have a think and come back.",
+          "ja": "お時間をいただきありがとうございました。検討してまた伺います。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "時間を割いてもらったことへの感謝。最も感じがよい。"
+        }
       ]
     },
     {
-      "id": "shopping-021", "category": "shopping", "difficulty": 1,
-      "place": "In a bakery", "listener": "a shop assistant",
+      "id": "shopping-021",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a bakery",
+      "listener": "a shop assistant",
       "want": "You want to buy two of the bread on display.",
       "situationJa": "並んでいるパンを2つ買いたい。",
-      "tags": ["ordering"],
+      "tags": [
+        "ordering"
+      ],
       "answers": [
-        { "en": "Two of those, please.", "ja": "あれを2つお願いします。", "register": "neutral", "style": "oneword", "note": "指をさしながら。パン屋での定番。" },
-        { "en": "Could I have two of these, please?", "ja": "これを2つお願いできますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
-        { "en": "I'll take two, please.", "ja": "2つください。", "register": "neutral", "style": "basic", "note": "take は「買う」。買い物での定番。" },
-        { "en": "Two of the round ones, please.", "ja": "丸いのを2つお願いします。", "register": "neutral", "style": "vocab", "note": "名前が分からないときは形で伝える。実用的。" },
-        { "en": "Might I have two of those, please?", "ja": "あちらを2つ頂戴できますでしょうか。", "register": "formal", "style": "formal", "note": "Might I 〜 は非常に丁寧。上品な店で。" },
-        { "en": "Two, please.", "ja": "2つで。", "register": "casual", "style": "casual", "note": "最短。指をさしながらで十分通じる。" },
-        { "en": "Are there any left of the seeded loaf?", "ja": "雑穀パンはまだ残っていますか。", "register": "neutral", "style": "existence", "note": "売り切れ間際のときに。loaf は「一斤」。" },
-        { "en": "Could you slice them for me?", "ja": "スライスしていただけますか。", "register": "polite", "style": "basic", "note": "パン屋では頼めることが多い。知っていると便利。" },
-        { "en": "These are for breakfast tomorrow — will they keep overnight?", "ja": "明日の朝食用なのですが、一晩持ちますか。", "register": "polite", "style": "context", "note": "用途を伝えると、日持ちする商品を勧めてもらえる。" },
-        { "en": "Whichever two look best to you — I'll trust your judgment.", "ja": "おすすめの2つでお願いします。お任せします。", "register": "polite", "style": "considerate", "note": "店員を信頼する言い方。会話が弾む。" }
+        {
+          "en": "Two of those, please.",
+          "ja": "あれを2つお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "指をさしながら。パン屋での定番。"
+        },
+        {
+          "en": "Could I have two of these, please?",
+          "ja": "これを2つお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どこでも使える。"
+        },
+        {
+          "en": "I'll take two, please.",
+          "ja": "2つください。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "take は「買う」。買い物での定番。"
+        },
+        {
+          "en": "Two of the round ones, please.",
+          "ja": "丸いのを2つお願いします。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "名前が分からないときは形で伝える。実用的。"
+        },
+        {
+          "en": "Might I have two of those, please?",
+          "ja": "あちらを2つ頂戴できますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "Might I 〜 は非常に丁寧。上品な店で。"
+        },
+        {
+          "en": "Two, please.",
+          "ja": "2つで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "最短。指をさしながらで十分通じる。"
+        },
+        {
+          "en": "Are there any left of the seeded loaf?",
+          "ja": "雑穀パンはまだ残っていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "売り切れ間際のときに。loaf は「一斤」。"
+        },
+        {
+          "en": "Could you slice them for me?",
+          "ja": "スライスしていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "パン屋では頼めることが多い。知っていると便利。"
+        },
+        {
+          "en": "These are for breakfast tomorrow — will they keep overnight?",
+          "ja": "明日の朝食用なのですが、一晩持ちますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "用途を伝えると、日持ちする商品を勧めてもらえる。"
+        },
+        {
+          "en": "Whichever two look best to you — I'll trust your judgment.",
+          "ja": "おすすめの2つでお願いします。お任せします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "店員を信頼する言い方。会話が弾む。"
+        }
       ]
     },
     {
-      "id": "shopping-022", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-022",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask what the material is.",
       "situationJa": "素材が何か知りたい。",
-      "tags": ["asking", "product"],
+      "tags": [
+        "asking",
+        "product"
+      ],
       "answers": [
-        { "en": "What's this made of?", "ja": "これは何でできていますか。", "register": "neutral", "style": "basic", "note": "基本形。made of 〜 で「〜でできている」。" },
-        { "en": "Material?", "ja": "素材は？", "register": "casual", "style": "oneword", "note": "タグを指しながら。短くても通じる。" },
-        { "en": "Is this cotton?", "ja": "これは綿ですか。", "register": "neutral", "style": "basic", "note": "推測を確認する形。会話が短く済む。" },
-        { "en": "Could you tell me what the material is?", "ja": "素材を教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どんな店でも使える。" },
-        { "en": "Would you mind telling me the fabric composition?", "ja": "生地の組成を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "fabric composition は「生地の混率」。専門的で正確。" },
-        { "en": "What's it made from?", "ja": "何でできてるの？", "register": "casual", "style": "casual", "note": "made from も同じ意味。口語的。" },
-        { "en": "Is there any wool in it?", "ja": "ウールは入っていますか。", "register": "neutral", "style": "existence", "note": "アレルギーやチクチク感が気になるときに。" },
-        { "en": "Can it be machine washed?", "ja": "洗濯機で洗えますか。", "register": "neutral", "style": "vocab", "note": "素材より実用的な質問。買った後で困らない。" },
-        { "en": "I have sensitive skin, so I try to avoid synthetics — what is this?", "ja": "肌が敏感なので化学繊維を避けています。これは何ですか。", "register": "polite", "style": "context", "note": "理由を言うと、代替品も提案してもらえる。" },
-        { "en": "Sorry, I couldn't find the label — what's the material?", "ja": "すみません、タグが見つからなくて。素材は何ですか。", "register": "polite", "style": "considerate", "note": "自分で探した上でと伝わり、印象がよい。" }
+        {
+          "en": "What's this made of?",
+          "ja": "これは何でできていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。made of 〜 で「〜でできている」。"
+        },
+        {
+          "en": "Material?",
+          "ja": "素材は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "タグを指しながら。短くても通じる。"
+        },
+        {
+          "en": "Is this cotton?",
+          "ja": "これは綿ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "推測を確認する形。会話が短く済む。"
+        },
+        {
+          "en": "Could you tell me what the material is?",
+          "ja": "素材を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どんな店でも使える。"
+        },
+        {
+          "en": "Would you mind telling me the fabric composition?",
+          "ja": "生地の組成を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "fabric composition は「生地の混率」。専門的で正確。"
+        },
+        {
+          "en": "What's it made from?",
+          "ja": "何でできてるの？",
+          "register": "casual",
+          "style": "casual",
+          "note": "made from も同じ意味。口語的。"
+        },
+        {
+          "en": "Is there any wool in it?",
+          "ja": "ウールは入っていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "アレルギーやチクチク感が気になるときに。"
+        },
+        {
+          "en": "Can it be machine washed?",
+          "ja": "洗濯機で洗えますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "素材より実用的な質問。買った後で困らない。"
+        },
+        {
+          "en": "I have sensitive skin, so I try to avoid synthetics — what is this?",
+          "ja": "肌が敏感なので化学繊維を避けています。これは何ですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を言うと、代替品も提案してもらえる。"
+        },
+        {
+          "en": "Sorry, I couldn't find the label — what's the material?",
+          "ja": "すみません、タグが見つからなくて。素材は何ですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分で探した上でと伝わり、印象がよい。"
+        }
       ]
     },
     {
-      "id": "shopping-023", "category": "shopping", "difficulty": 2,
-      "place": "At a checkout", "listener": "a cashier",
+      "id": "shopping-023",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a checkout",
+      "listener": "a cashier",
       "want": "You want to remove one item from your purchase.",
       "situationJa": "買うのをやめる商品を1つ外したい。",
-      "tags": ["changing", "checkout"],
+      "tags": [
+        "changing",
+        "checkout"
+      ],
       "answers": [
-        { "en": "Not this one, thanks.", "ja": "これはやめておきます。", "register": "neutral", "style": "oneword", "note": "商品を戻しながら。短くて確実。" },
-        { "en": "Could you take this one off?", "ja": "これを外していただけますか。", "register": "polite", "style": "request", "note": "take off は「会計から外す」。この場面の定番。" },
-        { "en": "I've changed my mind about this one.", "ja": "これは気が変わりました。", "register": "neutral", "style": "basic", "note": "change one's mind は「気が変わる」。自然な言い方。" },
-        { "en": "I'll leave this one, thanks.", "ja": "これは置いていきます。ありがとう。", "register": "neutral", "style": "basic", "note": "leave は「買わずに置いておく」。柔らかい。" },
-        { "en": "Would it be possible to remove this item from the total?", "ja": "こちらの商品を合計から外していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。会計が始まっている場合に。" },
-        { "en": "Actually, scrap that one.", "ja": "やっぱりそれ、なしで。", "register": "casual", "style": "casual", "note": "scrap は口語で「取りやめる」。気さくな店で。" },
-        { "en": "Is it too late to take it off?", "ja": "外すにはもう遅いですか。", "register": "neutral", "style": "existence", "note": "会計後だと手続きが必要なことも。先に確認。" },
-        { "en": "Could you void that item?", "ja": "その商品を取り消していただけますか。", "register": "polite", "style": "vocab", "note": "void は「取り消す」。レジの正式な用語。" },
-        { "en": "It's more than I thought — could I leave this one?", "ja": "思ったより高かったので、これはやめてもいいですか。", "register": "polite", "style": "context", "note": "正直な理由。誰も気まずくならない。" },
-        { "en": "Sorry to make extra work — could you take this off, please?", "ja": "余計なお手間をかけてすみません、これを外していただけますか。", "register": "polite", "style": "considerate", "note": "手間への配慮。混雑時ほど効く。" }
+        {
+          "en": "Not this one, thanks.",
+          "ja": "これはやめておきます。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "商品を戻しながら。短くて確実。"
+        },
+        {
+          "en": "Could you take this one off?",
+          "ja": "これを外していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "take off は「会計から外す」。この場面の定番。"
+        },
+        {
+          "en": "I've changed my mind about this one.",
+          "ja": "これは気が変わりました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "change one's mind は「気が変わる」。自然な言い方。"
+        },
+        {
+          "en": "I'll leave this one, thanks.",
+          "ja": "これは置いていきます。ありがとう。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "leave は「買わずに置いておく」。柔らかい。"
+        },
+        {
+          "en": "Would it be possible to remove this item from the total?",
+          "ja": "こちらの商品を合計から外していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。会計が始まっている場合に。"
+        },
+        {
+          "en": "Actually, scrap that one.",
+          "ja": "やっぱりそれ、なしで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "scrap は口語で「取りやめる」。気さくな店で。"
+        },
+        {
+          "en": "Is it too late to take it off?",
+          "ja": "外すにはもう遅いですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "会計後だと手続きが必要なことも。先に確認。"
+        },
+        {
+          "en": "Could you void that item?",
+          "ja": "その商品を取り消していただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "void は「取り消す」。レジの正式な用語。"
+        },
+        {
+          "en": "It's more than I thought — could I leave this one?",
+          "ja": "思ったより高かったので、これはやめてもいいですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "正直な理由。誰も気まずくならない。"
+        },
+        {
+          "en": "Sorry to make extra work — could you take this off, please?",
+          "ja": "余計なお手間をかけてすみません、これを外していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手間への配慮。混雑時ほど効く。"
+        }
       ]
     },
     {
-      "id": "shopping-024", "category": "shopping", "difficulty": 1,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-024",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to know what time the shop closes.",
       "situationJa": "閉店時間を知りたい。",
-      "tags": ["asking", "hours"],
+      "tags": [
+        "asking",
+        "hours"
+      ],
       "answers": [
-        { "en": "What time do you close?", "ja": "何時に閉まりますか。", "register": "neutral", "style": "basic", "note": "基本形。旅先で必ず使う。" },
-        { "en": "Closing time?", "ja": "閉店は何時ですか。", "register": "casual", "style": "oneword", "note": "短くても通じる。急いでいるときに。" },
-        { "en": "How late are you open?", "ja": "何時まで開いていますか。", "register": "neutral", "style": "basic", "note": "how late 〜 は自然でよく使う。" },
-        { "en": "Could you tell me your opening hours?", "ja": "営業時間を教えていただけますか。", "register": "polite", "style": "request", "note": "opening hours で開店と閉店の両方が分かる。" },
-        { "en": "Would you mind telling me what time you close today?", "ja": "本日の閉店時刻を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "日によって違うことがある。today を入れると正確。" },
-        { "en": "When do you shut?", "ja": "いつ閉まる？", "register": "casual", "style": "casual", "note": "shut は英国の口語。気さくな響き。" },
-        { "en": "Are you open on Sundays?", "ja": "日曜も開いていますか。", "register": "neutral", "style": "existence", "note": "曜日で違う。旅行の計画に必要。" },
-        { "en": "Is the last entry earlier than closing?", "ja": "最終入場は閉店より早いですか。", "register": "neutral", "style": "vocab", "note": "施設では入場締切が別にある。重要な確認。" },
-        { "en": "I'd like to come back after dinner — will you still be open?", "ja": "夕食後にまた来たいのですが、まだ開いていますか。", "register": "polite", "style": "context", "note": "予定を伝えると、間に合うかまで教えてもらえる。" },
-        { "en": "Sorry, just one thing — what time do you close?", "ja": "すみません、ひとつだけ。何時に閉まりますか。", "register": "polite", "style": "considerate", "note": "帰り際に聞くときの前置き。会話を切りやすい。" }
+        {
+          "en": "What time do you close?",
+          "ja": "何時に閉まりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。旅先で必ず使う。"
+        },
+        {
+          "en": "Closing time?",
+          "ja": "閉店は何時ですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短くても通じる。急いでいるときに。"
+        },
+        {
+          "en": "How late are you open?",
+          "ja": "何時まで開いていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "how late 〜 は自然でよく使う。"
+        },
+        {
+          "en": "Could you tell me your opening hours?",
+          "ja": "営業時間を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "opening hours で開店と閉店の両方が分かる。"
+        },
+        {
+          "en": "Would you mind telling me what time you close today?",
+          "ja": "本日の閉店時刻を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "日によって違うことがある。today を入れると正確。"
+        },
+        {
+          "en": "When do you shut?",
+          "ja": "いつ閉まる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "shut は英国の口語。気さくな響き。"
+        },
+        {
+          "en": "Are you open on Sundays?",
+          "ja": "日曜も開いていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "曜日で違う。旅行の計画に必要。"
+        },
+        {
+          "en": "Is the last entry earlier than closing?",
+          "ja": "最終入場は閉店より早いですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "施設では入場締切が別にある。重要な確認。"
+        },
+        {
+          "en": "I'd like to come back after dinner — will you still be open?",
+          "ja": "夕食後にまた来たいのですが、まだ開いていますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "予定を伝えると、間に合うかまで教えてもらえる。"
+        },
+        {
+          "en": "Sorry, just one thing — what time do you close?",
+          "ja": "すみません、ひとつだけ。何時に閉まりますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "帰り際に聞くときの前置き。会話を切りやすい。"
+        }
       ]
     },
     {
-      "id": "shopping-025", "category": "shopping", "difficulty": 2,
-      "place": "In a shop", "listener": "a shop assistant",
+      "id": "shopping-025",
+      "category": "shopping",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a shop",
+      "listener": "a shop assistant",
       "want": "You want to ask if the item is on sale.",
       "situationJa": "セール対象かどうか聞きたい。",
-      "tags": ["asking", "price"],
+      "tags": [
+        "asking",
+        "price"
+      ],
       "answers": [
-        { "en": "Is this on sale?", "ja": "これはセール対象ですか。", "register": "neutral", "style": "basic", "note": "基本形。on sale は「セール中」。" },
-        { "en": "On sale?", "ja": "セールですか。", "register": "casual", "style": "oneword", "note": "商品を持ちながら。短くても通じる。" },
-        { "en": "Is this included in the sale?", "ja": "これはセールに含まれますか。", "register": "neutral", "style": "basic", "note": "対象外の商品もある。正確に確認できる。" },
-        { "en": "Could you tell me if there's a discount on this?", "ja": "これに割引があるか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
-        { "en": "Would you happen to know whether this qualifies for the promotion?", "ja": "こちらがキャンペーンの対象かどうかご存じでしょうか。", "register": "formal", "style": "formal", "note": "qualify for 〜 は「〜の対象になる」。正確な語。" },
-        { "en": "Is this one cheap now?", "ja": "これ今安くなってる？", "register": "casual", "style": "casual", "note": "率直な口語。気さくな店で。" },
-        { "en": "Are there any offers on at the moment?", "ja": "今、何かお得な企画はありますか。", "register": "neutral", "style": "existence", "note": "offer は「特典・値引き」。英国でよく使う。" },
-        { "en": "When does the sale end?", "ja": "セールはいつまでですか。", "register": "neutral", "style": "vocab", "note": "後日出直す判断ができる。実用的。" },
-        { "en": "I saw a sign about twenty percent off — does that cover this?", "ja": "20%引きの表示を見たのですが、これも対象ですか。", "register": "polite", "style": "context", "note": "根拠を示すと、確認してもらいやすい。" },
-        { "en": "Just checking before I decide — is this discounted?", "ja": "決める前に確認だけさせてください。これは割引されますか。", "register": "polite", "style": "considerate", "note": "買う意思を示しつつ確認。店員も丁寧に応じる。" }
+        {
+          "en": "Is this on sale?",
+          "ja": "これはセール対象ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。on sale は「セール中」。"
+        },
+        {
+          "en": "On sale?",
+          "ja": "セールですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "商品を持ちながら。短くても通じる。"
+        },
+        {
+          "en": "Is this included in the sale?",
+          "ja": "これはセールに含まれますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "対象外の商品もある。正確に確認できる。"
+        },
+        {
+          "en": "Could you tell me if there's a discount on this?",
+          "ja": "これに割引があるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。どこでも使える。"
+        },
+        {
+          "en": "Would you happen to know whether this qualifies for the promotion?",
+          "ja": "こちらがキャンペーンの対象かどうかご存じでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "qualify for 〜 は「〜の対象になる」。正確な語。"
+        },
+        {
+          "en": "Is this one cheap now?",
+          "ja": "これ今安くなってる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な口語。気さくな店で。"
+        },
+        {
+          "en": "Are there any offers on at the moment?",
+          "ja": "今、何かお得な企画はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "offer は「特典・値引き」。英国でよく使う。"
+        },
+        {
+          "en": "When does the sale end?",
+          "ja": "セールはいつまでですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "後日出直す判断ができる。実用的。"
+        },
+        {
+          "en": "I saw a sign about twenty percent off — does that cover this?",
+          "ja": "20%引きの表示を見たのですが、これも対象ですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "根拠を示すと、確認してもらいやすい。"
+        },
+        {
+          "en": "Just checking before I decide — is this discounted?",
+          "ja": "決める前に確認だけさせてください。これは割引されますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "買う意思を示しつつ確認。店員も丁寧に応じる。"
+        }
       ]
     }
   ]

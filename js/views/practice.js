@@ -16,7 +16,12 @@ EIK.Views.Practice = function (ctx) {
 
   app.innerHTML = '<div class="loading">問題を準備しています…</div>';
 
-  EIK.Data.loadAll().then(function (all) {
+  var st0 = EIK.Store.settings();
+  // 1問だけ開くときは、その問題が属する段階を id から判断する。
+  // 設定中の段階と違ってもブックマークから直接開けるようにするため。
+  var wantLevel = (mode === 'one') ? EIK.levelFromId(arg) : (st0.level || 1);
+
+  EIK.Data.load(wantLevel).then(function (all) {
     var st = EIK.Store.settings();
     var queue = buildQueue(mode, arg, all, st);
 
@@ -44,7 +49,7 @@ EIK.Views.Practice = function (ctx) {
         '<div class="pr fade-in">' +
           topBar(i + 1, queue.length) +
           sitCard(s, showJa) +
-          thinkBlock(st) +
+          thinkBlock(st, s) +
         '</div>';
 
       wireJaToggle(s);
@@ -133,8 +138,7 @@ EIK.Views.Practice = function (ctx) {
       return all.filter(function (s) { return ids.indexOf(s.id) >= 0; });
     }
     if (mode === 'one') {
-      var one = all.filter(function (s) { return s.id === arg; });
-      return one;
+      return all.filter(function (s) { return s.id === arg; });
     }
     // shuffle
     return EIK.shuffle(all).slice(0, limit);
@@ -157,19 +161,28 @@ EIK.Views.Practice = function (ctx) {
         '<div class="sit__ja" id="jabox" hidden>' + EIK.escapeHtml(s.situationJa || '') + '</div>';
 
     return '<div class="card sit">' +
-             '<div class="sit__place">' + icPin() + ' ' + EIK.escapeHtml(s.place) + '</div>' +
+             '<div class="sit__head">' +
+               '<div class="sit__place">' + icPin() + ' ' + EIK.escapeHtml(s.place) + '</div>' +
+               '<span class="lvbadge lvbadge--' + (s.level || 1) + '">' +
+                 EIK.escapeHtml(EIK.levelStars(s.level || 1)) + '</span>' +
+             '</div>' +
              '<div class="sit__want">' + EIK.escapeHtml(s.want) + '</div>' +
              '<div class="sit__listener">相手: <b>' + EIK.escapeHtml(s.listener) + '</b></div>' +
              jaBlock +
            '</div>';
   }
 
-  function thinkBlock(st) {
+  function thinkBlock(st, sit) {
     var timer = st.countdown > 0
       ? '<div class="think__timer" id="timer">' + st.countdown + '</div>'
       : '<div class="think__timer is-done" id="timer" aria-hidden="true">—</div>';
+    var lv = EIK.Data.levelMeta(sit.level || 1);
+    var target = lv && lv.sentences
+      ? '<p class="think__target">目安: <b>' + EIK.escapeHtml(lv.sentences) + '</b></p>'
+      : '';
     return '<div class="card think">' +
              '<p class="think__hint">この状況で、あなたなら何と言いますか。<br><b>声に出して</b>言ってみてください。</p>' +
+             target +
              timer +
            '</div>' +
            (st.showMyAnswer

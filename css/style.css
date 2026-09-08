@@ -323,6 +323,46 @@ a.card:active, button.card:active { transform: translateY(0); }
 }
 .seg__btn[aria-pressed="true"] { background: var(--paper); color: var(--accent-dk); box-shadow: var(--sh-sm); }
 
+/* 難易度の切り替え ------------------------------------------------------
+   ★ / ★★ / ★★★ は「答えに期待される文の数」を表す。
+   数が増えるほど、事情の説明や交渉まで自分で組み立てることになる。 */
+.lv { display: flex; flex-direction: column; gap: 8px; }
+.lv__row { display: flex; align-items: center; gap: 10px; }
+.lv__label {
+  font-size: .74rem; font-weight: 700; color: var(--ink-4);
+  letter-spacing: .06em; white-space: nowrap; flex: 0 0 auto;
+}
+.lv__seg {
+  display: flex; gap: 4px; padding: 4px; flex: 1 1 auto;
+  background: var(--bg-2); border-radius: 12px;
+}
+.lv__btn {
+  appearance: none; border: 0; background: transparent; cursor: pointer;
+  flex: 1 1 0; min-height: 40px; padding: 8px 6px; border-radius: 9px;
+  font-size: .88rem; font-weight: 700; letter-spacing: .04em;
+  color: var(--ink-4); white-space: nowrap;
+  transition: background .14s var(--ease), color .14s var(--ease), box-shadow .14s var(--ease);
+}
+.lv__btn[aria-pressed="true"] {
+  background: var(--paper); color: var(--accent-dk); box-shadow: var(--sh-sm);
+}
+.lv__desc { font-size: .76rem; color: var(--ink-4); line-height: 1.65; }
+.lv__desc b { color: var(--ink-2); font-weight: 700; }
+
+/* 状況カードに出す難易度。濃度だけで段階を表し、色数は増やさない。 */
+.lvbadge {
+  flex: 0 0 auto; white-space: nowrap;
+  font-size: .7rem; font-weight: 700; letter-spacing: .04em;
+  padding: 3px 9px; border-radius: var(--r-pill);
+  border: 1px solid var(--accent-border);
+}
+.lvbadge--1 { background: transparent;                                  color: var(--ink-4); border-style: dashed; }
+.lvbadge--2 { background: var(--accent-soft);                            color: var(--accent-dk); }
+.lvbadge--3 { background: color-mix(in srgb, var(--accent) 18%, var(--paper)); color: var(--accent-dk); border-color: var(--accent); }
+
+/* 準備中のカテゴリは、押せるが控えめに見せる */
+a.catcard.is-pending { opacity: .62; }
+
 /* 丁寧さバッジ ----------------------------------------------------------
    有彩色を増やさず、ブランド色の濃度と枠線だけで4段階を表す。
    形（枠線の有無）も変えて、色覚に依存しないようにする。 */
@@ -382,6 +422,9 @@ a.card:active, button.card:active { transform: translateY(0); }
 
 /* 状況カード */
 .sit { padding: 22px 20px; }
+.sit__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.sit__head .sit__place { margin-bottom: 0; }
+.sit__head + .sit__want { margin-top: 12px; }
 .sit__place {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: .72rem; font-weight: 700; letter-spacing: .1em;
@@ -411,6 +454,10 @@ a.card:active, button.card:active { transform: translateY(0); }
 /* 考えるフェーズ */
 .think { text-align: center; padding: 4px 0; }
 .think__hint { font-size: .88rem; color: var(--ink-3); margin-bottom: 14px; }
+.think__target {
+  font-size: .78rem; color: var(--ink-4); margin-bottom: 12px;
+}
+.think__target b { color: var(--accent-dk); font-weight: 700; }
 .think__timer { font-size: 2.4rem; font-weight: 700; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
 .think__timer.is-done { color: var(--ink-4); }
 

@@ -2,478 +2,2152 @@
   "category": "airport",
   "situations": [
     {
-      "id": "airport-001", "category": "airport", "difficulty": 1,
-      "place": "At a check-in counter", "listener": "a check-in agent",
+      "id": "airport-001",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a check-in counter",
+      "listener": "a check-in agent",
       "want": "You want to check in for your flight to London.",
       "situationJa": "ロンドン行きの便のチェックインをしたい。",
-      "tags": ["checkin"],
+      "tags": [
+        "checkin"
+      ],
       "answers": [
-        { "en": "Check in for London, please.", "ja": "ロンドン行きのチェックインをお願いします。", "register": "neutral", "style": "oneword", "note": "パスポートを差し出しながら。これで十分。" },
-        { "en": "I'd like to check in for the flight to London.", "ja": "ロンドン行きの便のチェックインをお願いします。", "register": "neutral", "style": "basic", "note": "基本形。check in for 〜 を丸ごと覚えたい。" },
-        { "en": "I'm checking in for flight BA6 to London.", "ja": "ロンドン行き BA6 便のチェックインです。", "register": "neutral", "style": "basic", "note": "便名を言うと確認が速い。搭乗券を見せながら。" },
-        { "en": "Could I check in here for London?", "ja": "こちらでロンドン行きのチェックインはできますか。", "register": "polite", "style": "request", "note": "カウンターを間違えている可能性があるときに。" },
-        { "en": "Good morning. I'd like to check in for the London service, please.", "ja": "おはようございます。ロンドン行きの便のチェックインをお願いいたします。", "register": "formal", "style": "formal", "note": "挨拶から入ると印象がよい。service は「便」。" },
-        { "en": "Hi, checking in for London.", "ja": "こんにちは、ロンドン行きのチェックインです。", "register": "casual", "style": "casual", "note": "動詞の -ing 形だけで済ませる口語。手早い。" },
-        { "en": "Is this the right counter for London?", "ja": "ロンドン行きはこちらのカウンターで合っていますか。", "register": "neutral", "style": "existence", "note": "並ぶ前に確認できる。時間の無駄を防ぐ。" },
-        { "en": "I've already checked in online — I just need to drop my bag.", "ja": "オンラインでチェックイン済みで、荷物を預けたいだけです。", "register": "neutral", "style": "vocab", "note": "bag drop は「手荷物預けのみ」。専用列があることが多い。" },
-        { "en": "I'm connecting in Dubai — do I need to collect my bag there?", "ja": "ドバイで乗り継ぎますが、そこで荷物を受け取る必要がありますか。", "register": "polite", "style": "context", "note": "乗り継ぎがあるときの最重要確認。忘れると空港で慌てる。" },
-        { "en": "Sorry, I'm not sure of the procedure — could you help me check in?", "ja": "すみません、手順がよく分からないのですが、チェックインを手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "不慣れだと伝えると、丁寧に案内してもらえる。" }
+        {
+          "en": "Check in for London, please.",
+          "ja": "ロンドン行きのチェックインをお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "パスポートを差し出しながら。これで十分。"
+        },
+        {
+          "en": "I'd like to check in for the flight to London.",
+          "ja": "ロンドン行きの便のチェックインをお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。check in for 〜 を丸ごと覚えたい。"
+        },
+        {
+          "en": "I'm checking in for flight BA6 to London.",
+          "ja": "ロンドン行き BA6 便のチェックインです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "便名を言うと確認が速い。搭乗券を見せながら。"
+        },
+        {
+          "en": "Could I check in here for London?",
+          "ja": "こちらでロンドン行きのチェックインはできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "カウンターを間違えている可能性があるときに。"
+        },
+        {
+          "en": "Good morning. I'd like to check in for the London service, please.",
+          "ja": "おはようございます。ロンドン行きの便のチェックインをお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "挨拶から入ると印象がよい。service は「便」。"
+        },
+        {
+          "en": "Hi, checking in for London.",
+          "ja": "こんにちは、ロンドン行きのチェックインです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "動詞の -ing 形だけで済ませる口語。手早い。"
+        },
+        {
+          "en": "Is this the right counter for London?",
+          "ja": "ロンドン行きはこちらのカウンターで合っていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "並ぶ前に確認できる。時間の無駄を防ぐ。"
+        },
+        {
+          "en": "I've already checked in online — I just need to drop my bag.",
+          "ja": "オンラインでチェックイン済みで、荷物を預けたいだけです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "bag drop は「手荷物預けのみ」。専用列があることが多い。"
+        },
+        {
+          "en": "I'm connecting in Dubai — do I need to collect my bag there?",
+          "ja": "ドバイで乗り継ぎますが、そこで荷物を受け取る必要がありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "乗り継ぎがあるときの最重要確認。忘れると空港で慌てる。"
+        },
+        {
+          "en": "Sorry, I'm not sure of the procedure — could you help me check in?",
+          "ja": "すみません、手順がよく分からないのですが、チェックインを手伝っていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "不慣れだと伝えると、丁寧に案内してもらえる。"
+        }
       ]
     },
     {
-      "id": "airport-002", "category": "airport", "difficulty": 1,
-      "place": "At a check-in counter", "listener": "a check-in agent",
+      "id": "airport-002",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At a check-in counter",
+      "listener": "a check-in agent",
       "want": "You want a window seat.",
       "situationJa": "窓側の席を希望したい。",
-      "tags": ["requesting", "seat"],
+      "tags": [
+        "requesting",
+        "seat"
+      ],
       "answers": [
-        { "en": "Window, please.", "ja": "窓側でお願いします。", "register": "neutral", "style": "oneword", "note": "聞かれたときの返答としては完璧。" },
-        { "en": "Could I have a window seat?", "ja": "窓側の席をお願いできますか。", "register": "polite", "style": "request", "note": "基本形。最も使いやすい。" },
-        { "en": "I'd like a window seat if possible.", "ja": "できれば窓側の席をお願いします。", "register": "neutral", "style": "basic", "note": "if possible を付けると無理な要求に聞こえない。" },
-        { "en": "Do you have any window seats left?", "ja": "窓側の席は残っていますか。", "register": "neutral", "style": "existence", "note": "満席の可能性を織り込んだ聞き方。" },
-        { "en": "Would it be possible to be seated by the window?", "ja": "窓側のお席にしていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。断られても気まずくない。" },
-        { "en": "Window if you've got one.", "ja": "窓側があればそれで。", "register": "casual", "style": "casual", "note": "気さくな言い方。カウンターでは十分通じる。" },
-        { "en": "Is there anything in an exit row?", "ja": "非常口列に空きはありますか。", "register": "neutral", "style": "vocab", "note": "exit row は足元が広い。長距離便では狙う価値がある。" },
-        { "en": "Anywhere except the middle seat, please.", "ja": "真ん中の席以外でお願いします。", "register": "neutral", "style": "basic", "note": "避けたいものを言う型。条件が緩く通りやすい。" },
-        { "en": "It's a long flight and I'd like to sleep — could I have a window seat?", "ja": "長時間の便で眠りたいので、窓側の席をお願いできますか。", "register": "polite", "style": "context", "note": "理由を添えると配慮してもらいやすい。" },
-        { "en": "No problem if not — but is a window seat available?", "ja": "無ければ構いませんが、窓側の席は空いていますか。", "register": "polite", "style": "considerate", "note": "無い場合に相手が謝らずに済む。" }
+        {
+          "en": "Window, please.",
+          "ja": "窓側でお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "聞かれたときの返答としては完璧。"
+        },
+        {
+          "en": "Could I have a window seat?",
+          "ja": "窓側の席をお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。最も使いやすい。"
+        },
+        {
+          "en": "I'd like a window seat if possible.",
+          "ja": "できれば窓側の席をお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "if possible を付けると無理な要求に聞こえない。"
+        },
+        {
+          "en": "Do you have any window seats left?",
+          "ja": "窓側の席は残っていますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "満席の可能性を織り込んだ聞き方。"
+        },
+        {
+          "en": "Would it be possible to be seated by the window?",
+          "ja": "窓側のお席にしていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。断られても気まずくない。"
+        },
+        {
+          "en": "Window if you've got one.",
+          "ja": "窓側があればそれで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな言い方。カウンターでは十分通じる。"
+        },
+        {
+          "en": "Is there anything in an exit row?",
+          "ja": "非常口列に空きはありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "exit row は足元が広い。長距離便では狙う価値がある。"
+        },
+        {
+          "en": "Anywhere except the middle seat, please.",
+          "ja": "真ん中の席以外でお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "避けたいものを言う型。条件が緩く通りやすい。"
+        },
+        {
+          "en": "It's a long flight and I'd like to sleep — could I have a window seat?",
+          "ja": "長時間の便で眠りたいので、窓側の席をお願いできますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると配慮してもらいやすい。"
+        },
+        {
+          "en": "No problem if not — but is a window seat available?",
+          "ja": "無ければ構いませんが、窓側の席は空いていますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無い場合に相手が謝らずに済む。"
+        }
       ]
     },
     {
-      "id": "airport-003", "category": "airport", "difficulty": 2,
-      "place": "At a check-in counter", "listener": "a check-in agent",
+      "id": "airport-003",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a check-in counter",
+      "listener": "a check-in agent",
       "want": "You want to know if your bag is over the weight limit.",
       "situationJa": "荷物が重量制限を超えていないか確認したい。",
-      "tags": ["asking", "baggage"],
+      "tags": [
+        "asking",
+        "baggage"
+      ],
       "answers": [
-        { "en": "Is it too heavy?", "ja": "重すぎますか。", "register": "casual", "style": "oneword", "note": "秤に載せた直後に。短くて通じる。" },
-        { "en": "Is my bag over the limit?", "ja": "荷物は制限を超えていますか。", "register": "neutral", "style": "basic", "note": "over the limit は「制限超過」。覚えておきたい。" },
-        { "en": "What's the weight limit for checked bags?", "ja": "預け荷物の重量制限は何キロですか。", "register": "neutral", "style": "basic", "note": "checked bag は「預け荷物」。先に確認できる。" },
-        { "en": "Could you tell me how much my bag weighs?", "ja": "荷物の重さを教えていただけますか。", "register": "polite", "style": "request", "note": "数字が分かれば自分で調整できる。" },
-        { "en": "Would you mind letting me know if I'm over the allowance?", "ja": "許容量を超えているようでしたらお知らせいただけますでしょうか。", "register": "formal", "style": "formal", "note": "allowance は「許容量」。航空券の規定でよく使う語。" },
-        { "en": "Am I over?", "ja": "オーバーしてる？", "register": "casual", "style": "casual", "note": "非常に短いが、秤の前なら完全に通じる。" },
-        { "en": "Is there an extra charge if it's over?", "ja": "超過した場合、追加料金はかかりますか。", "register": "neutral", "style": "existence", "note": "金額次第で荷物を詰め替える判断ができる。" },
-        { "en": "How much is the excess baggage fee?", "ja": "超過手荷物料金はいくらですか。", "register": "neutral", "style": "vocab", "note": "excess baggage fee は「超過手荷物料金」。空港での定番。" },
-        { "en": "I bought a few things on the trip — is it over the limit now?", "ja": "旅行中に少し買い物をしたのですが、制限を超えていますか。", "register": "polite", "style": "context", "note": "事情を言うと、詰め替えの提案をしてもらえることがある。" },
-        { "en": "If it's over, I can move some things into my carry-on.", "ja": "超過しているなら、手荷物に移せます。", "register": "polite", "style": "considerate", "note": "解決策を先に示す。カウンターでの対応が速くなる。" }
+        {
+          "en": "Is it too heavy?",
+          "ja": "重すぎますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "秤に載せた直後に。短くて通じる。"
+        },
+        {
+          "en": "Is my bag over the limit?",
+          "ja": "荷物は制限を超えていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "over the limit は「制限超過」。覚えておきたい。"
+        },
+        {
+          "en": "What's the weight limit for checked bags?",
+          "ja": "預け荷物の重量制限は何キロですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "checked bag は「預け荷物」。先に確認できる。"
+        },
+        {
+          "en": "Could you tell me how much my bag weighs?",
+          "ja": "荷物の重さを教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "数字が分かれば自分で調整できる。"
+        },
+        {
+          "en": "Would you mind letting me know if I'm over the allowance?",
+          "ja": "許容量を超えているようでしたらお知らせいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "allowance は「許容量」。航空券の規定でよく使う語。"
+        },
+        {
+          "en": "Am I over?",
+          "ja": "オーバーしてる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常に短いが、秤の前なら完全に通じる。"
+        },
+        {
+          "en": "Is there an extra charge if it's over?",
+          "ja": "超過した場合、追加料金はかかりますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "金額次第で荷物を詰め替える判断ができる。"
+        },
+        {
+          "en": "How much is the excess baggage fee?",
+          "ja": "超過手荷物料金はいくらですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "excess baggage fee は「超過手荷物料金」。空港での定番。"
+        },
+        {
+          "en": "I bought a few things on the trip — is it over the limit now?",
+          "ja": "旅行中に少し買い物をしたのですが、制限を超えていますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "事情を言うと、詰め替えの提案をしてもらえることがある。"
+        },
+        {
+          "en": "If it's over, I can move some things into my carry-on.",
+          "ja": "超過しているなら、手荷物に移せます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "解決策を先に示す。カウンターでの対応が速くなる。"
+        }
       ]
     },
     {
-      "id": "airport-004", "category": "airport", "difficulty": 1,
-      "place": "In the terminal", "listener": "an airport staff member",
+      "id": "airport-004",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In the terminal",
+      "listener": "an airport staff member",
       "want": "You want to find your departure gate.",
       "situationJa": "搭乗ゲートの場所を知りたい。",
-      "tags": ["asking", "directions"],
+      "tags": [
+        "asking",
+        "directions"
+      ],
       "answers": [
-        { "en": "Gate 24?", "ja": "24番ゲートは？", "register": "casual", "style": "oneword", "note": "搭乗券を見せながら。急いでいるときに。" },
-        { "en": "Where is gate 24?", "ja": "24番ゲートはどこですか。", "register": "neutral", "style": "basic", "note": "基本形。ゲート番号を添えるのが確実。" },
-        { "en": "How do I get to gate 24?", "ja": "24番ゲートへはどう行けばいいですか。", "register": "neutral", "style": "basic", "note": "行き方まで聞ける。広い空港で有効。" },
-        { "en": "Could you tell me where gate 24 is?", "ja": "24番ゲートの場所を教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。誰にでも使える。" },
-        { "en": "Excuse me, would you mind directing me to gate 24?", "ja": "恐れ入りますが、24番ゲートへの行き方を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "direct someone to 〜 は改まった言い方。" },
-        { "en": "Which way to gate 24?", "ja": "24番ゲートはどっちですか。", "register": "casual", "style": "casual", "note": "短くて実用的。歩きながらでも言える。" },
-        { "en": "Is gate 24 in this terminal?", "ja": "24番ゲートはこのターミナルにありますか。", "register": "neutral", "style": "existence", "note": "ターミナル移動が必要かを先に確認できる。重要。" },
-        { "en": "How long does it take to walk to gate 24?", "ja": "24番ゲートまで歩いてどのくらいかかりますか。", "register": "neutral", "style": "vocab", "note": "大空港では20分以上かかることも。時間の把握に。" },
-        { "en": "My flight boards in twenty minutes — what's the fastest way to gate 24?", "ja": "20分後に搭乗開始なのですが、24番ゲートへの最短経路を教えてください。", "register": "polite", "style": "context", "note": "急いでいると伝えると、近道を教えてもらえる。" },
-        { "en": "Sorry to stop you — could you point me toward gate 24?", "ja": "お呼び止めしてすみません、24番ゲートの方向を教えていただけますか。", "register": "polite", "style": "considerate", "note": "歩いているスタッフに声をかけるときの前置き。" }
+        {
+          "en": "Gate 24?",
+          "ja": "24番ゲートは？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "搭乗券を見せながら。急いでいるときに。"
+        },
+        {
+          "en": "Where is gate 24?",
+          "ja": "24番ゲートはどこですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。ゲート番号を添えるのが確実。"
+        },
+        {
+          "en": "How do I get to gate 24?",
+          "ja": "24番ゲートへはどう行けばいいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "行き方まで聞ける。広い空港で有効。"
+        },
+        {
+          "en": "Could you tell me where gate 24 is?",
+          "ja": "24番ゲートの場所を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。誰にでも使える。"
+        },
+        {
+          "en": "Excuse me, would you mind directing me to gate 24?",
+          "ja": "恐れ入りますが、24番ゲートへの行き方を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "direct someone to 〜 は改まった言い方。"
+        },
+        {
+          "en": "Which way to gate 24?",
+          "ja": "24番ゲートはどっちですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短くて実用的。歩きながらでも言える。"
+        },
+        {
+          "en": "Is gate 24 in this terminal?",
+          "ja": "24番ゲートはこのターミナルにありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "ターミナル移動が必要かを先に確認できる。重要。"
+        },
+        {
+          "en": "How long does it take to walk to gate 24?",
+          "ja": "24番ゲートまで歩いてどのくらいかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "大空港では20分以上かかることも。時間の把握に。"
+        },
+        {
+          "en": "My flight boards in twenty minutes — what's the fastest way to gate 24?",
+          "ja": "20分後に搭乗開始なのですが、24番ゲートへの最短経路を教えてください。",
+          "register": "polite",
+          "style": "context",
+          "note": "急いでいると伝えると、近道を教えてもらえる。"
+        },
+        {
+          "en": "Sorry to stop you — could you point me toward gate 24?",
+          "ja": "お呼び止めしてすみません、24番ゲートの方向を教えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "歩いているスタッフに声をかけるときの前置き。"
+        }
       ]
     },
     {
-      "id": "airport-005", "category": "airport", "difficulty": 2,
-      "place": "At security", "listener": "a security officer",
+      "id": "airport-005",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At security",
+      "listener": "a security officer",
       "want": "You want to ask whether you need to take out your laptop.",
       "situationJa": "パソコンを出す必要があるか聞きたい。",
-      "tags": ["asking", "security"],
+      "tags": [
+        "asking",
+        "security"
+      ],
       "answers": [
-        { "en": "Laptop out?", "ja": "パソコンは出しますか。", "register": "casual", "style": "oneword", "note": "パソコンを持ち上げながら。保安検査ではこれで十分。" },
-        { "en": "Do I need to take out my laptop?", "ja": "パソコンを出す必要がありますか。", "register": "neutral", "style": "basic", "note": "基本形。空港ごとに規則が違うので必ず聞きたい。" },
-        { "en": "Should I take my laptop out of the bag?", "ja": "パソコンを鞄から出したほうがいいですか。", "register": "neutral", "style": "basic", "note": "具体的に言うと誤解がない。" },
-        { "en": "Could you tell me what needs to come out?", "ja": "何を出す必要があるか教えていただけますか。", "register": "polite", "style": "request", "note": "パソコン以外も一度に確認できる。効率的。" },
-        { "en": "Would you like me to remove my laptop and liquids?", "ja": "パソコンと液体物を出したほうがよろしいでしょうか。", "register": "formal", "style": "formal", "note": "先回りして申し出る形。検査がスムーズになる。" },
-        { "en": "Laptop stays in?", "ja": "パソコンは入れたままでいい？", "register": "casual", "style": "casual", "note": "出さなくてよい空港も増えている。確認は必要。" },
-        { "en": "Is there anything else I need to take out?", "ja": "他に出すものはありますか。", "register": "neutral", "style": "existence", "note": "やり直しを防ぐ一言。列を止めずに済む。" },
-        { "en": "Do liquids need to go in a separate tray?", "ja": "液体物は別のトレーに入れますか。", "register": "neutral", "style": "vocab", "note": "tray は「トレー」。液体の扱いは空港差が大きい。" },
-        { "en": "I have a laptop and a tablet — do both need to come out?", "ja": "パソコンとタブレットがあるのですが、両方出しますか。", "register": "polite", "style": "context", "note": "持ち物を具体的に言うと、正確な指示がもらえる。" },
-        { "en": "Just checking so I don't hold up the line — laptop out?", "ja": "列を止めないよう確認したいのですが、パソコンは出しますか。", "register": "polite", "style": "considerate", "note": "配慮を示す前置き。係員に好感を持たれる。" }
+        {
+          "en": "Laptop out?",
+          "ja": "パソコンは出しますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "パソコンを持ち上げながら。保安検査ではこれで十分。"
+        },
+        {
+          "en": "Do I need to take out my laptop?",
+          "ja": "パソコンを出す必要がありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。空港ごとに規則が違うので必ず聞きたい。"
+        },
+        {
+          "en": "Should I take my laptop out of the bag?",
+          "ja": "パソコンを鞄から出したほうがいいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体的に言うと誤解がない。"
+        },
+        {
+          "en": "Could you tell me what needs to come out?",
+          "ja": "何を出す必要があるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "パソコン以外も一度に確認できる。効率的。"
+        },
+        {
+          "en": "Would you like me to remove my laptop and liquids?",
+          "ja": "パソコンと液体物を出したほうがよろしいでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "先回りして申し出る形。検査がスムーズになる。"
+        },
+        {
+          "en": "Laptop stays in?",
+          "ja": "パソコンは入れたままでいい？",
+          "register": "casual",
+          "style": "casual",
+          "note": "出さなくてよい空港も増えている。確認は必要。"
+        },
+        {
+          "en": "Is there anything else I need to take out?",
+          "ja": "他に出すものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "やり直しを防ぐ一言。列を止めずに済む。"
+        },
+        {
+          "en": "Do liquids need to go in a separate tray?",
+          "ja": "液体物は別のトレーに入れますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "tray は「トレー」。液体の扱いは空港差が大きい。"
+        },
+        {
+          "en": "I have a laptop and a tablet — do both need to come out?",
+          "ja": "パソコンとタブレットがあるのですが、両方出しますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "持ち物を具体的に言うと、正確な指示がもらえる。"
+        },
+        {
+          "en": "Just checking so I don't hold up the line — laptop out?",
+          "ja": "列を止めないよう確認したいのですが、パソコンは出しますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "配慮を示す前置き。係員に好感を持たれる。"
+        }
       ]
     },
     {
-      "id": "airport-006", "category": "airport", "difficulty": 2,
-      "place": "At a gate", "listener": "a gate agent",
+      "id": "airport-006",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a gate",
+      "listener": "a gate agent",
       "want": "You want to know why the flight is delayed.",
       "situationJa": "便が遅れている理由を知りたい。",
-      "tags": ["asking", "delay"],
+      "tags": [
+        "asking",
+        "delay"
+      ],
       "answers": [
-        { "en": "Any update?", "ja": "何か情報はありますか。", "register": "casual", "style": "oneword", "note": "短く状況を促せる。責める調子にならない。" },
-        { "en": "Why is the flight delayed?", "ja": "なぜ便が遅れているのですか。", "register": "neutral", "style": "basic", "note": "直接的。口調を柔らかくして使いたい。" },
-        { "en": "Do you know what's causing the delay?", "ja": "遅延の原因は分かりますか。", "register": "neutral", "style": "basic", "note": "相手を責めない形。実際に使いやすい。" },
-        { "en": "Could you tell me how long the delay is expected to be?", "ja": "遅延はどのくらいの見込みか教えていただけますか。", "register": "polite", "style": "request", "note": "原因より時間が知りたいときはこちら。" },
-        { "en": "I'm sorry to ask — would you have any information on the new departure time?", "ja": "恐れ入りますが、新しい出発時刻の情報はございますでしょうか。", "register": "formal", "style": "formal", "note": "departure time は「出発時刻」。丁寧で角が立たない。" },
-        { "en": "Any idea when we'll board?", "ja": "搭乗はいつごろになりそう？", "register": "casual", "style": "casual", "note": "他の乗客との会話にもちょうどよい。" },
-        { "en": "Is there any chance it will be cancelled?", "ja": "欠航になる可能性はありますか。", "register": "neutral", "style": "existence", "note": "最悪の事態を確認する。代替便の相談に移れる。" },
-        { "en": "Will this affect my connection in Dubai?", "ja": "ドバイでの乗り継ぎに影響しますか。", "register": "neutral", "style": "vocab", "note": "connection は「乗り継ぎ」。遅延時の最重要確認。" },
-        { "en": "I have a connecting flight at nine — should I speak to someone about rebooking?", "ja": "9時に乗り継ぎ便があるのですが、変更について誰かに相談すべきでしょうか。", "register": "polite", "style": "context", "note": "早めに動くと代替便を確保しやすい。実務的に重要。" },
-        { "en": "I know it's out of your hands — is there any update you can share?", "ja": "どうにもならないことは承知していますが、共有できる情報はありますか。", "register": "polite", "style": "considerate", "note": "out of your hands は「あなたの手に負えない」。係員を責めない一言。" }
+        {
+          "en": "Any update?",
+          "ja": "何か情報はありますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短く状況を促せる。責める調子にならない。"
+        },
+        {
+          "en": "Why is the flight delayed?",
+          "ja": "なぜ便が遅れているのですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "直接的。口調を柔らかくして使いたい。"
+        },
+        {
+          "en": "Do you know what's causing the delay?",
+          "ja": "遅延の原因は分かりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "相手を責めない形。実際に使いやすい。"
+        },
+        {
+          "en": "Could you tell me how long the delay is expected to be?",
+          "ja": "遅延はどのくらいの見込みか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "原因より時間が知りたいときはこちら。"
+        },
+        {
+          "en": "I'm sorry to ask — would you have any information on the new departure time?",
+          "ja": "恐れ入りますが、新しい出発時刻の情報はございますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "departure time は「出発時刻」。丁寧で角が立たない。"
+        },
+        {
+          "en": "Any idea when we'll board?",
+          "ja": "搭乗はいつごろになりそう？",
+          "register": "casual",
+          "style": "casual",
+          "note": "他の乗客との会話にもちょうどよい。"
+        },
+        {
+          "en": "Is there any chance it will be cancelled?",
+          "ja": "欠航になる可能性はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "最悪の事態を確認する。代替便の相談に移れる。"
+        },
+        {
+          "en": "Will this affect my connection in Dubai?",
+          "ja": "ドバイでの乗り継ぎに影響しますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "connection は「乗り継ぎ」。遅延時の最重要確認。"
+        },
+        {
+          "en": "I have a connecting flight at nine — should I speak to someone about rebooking?",
+          "ja": "9時に乗り継ぎ便があるのですが、変更について誰かに相談すべきでしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "早めに動くと代替便を確保しやすい。実務的に重要。"
+        },
+        {
+          "en": "I know it's out of your hands — is there any update you can share?",
+          "ja": "どうにもならないことは承知していますが、共有できる情報はありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "out of your hands は「あなたの手に負えない」。係員を責めない一言。"
+        }
       ]
     },
     {
-      "id": "airport-007", "category": "airport", "difficulty": 3,
-      "place": "At a transfer desk", "listener": "an airline agent",
+      "id": "airport-007",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At a transfer desk",
+      "listener": "an airline agent",
       "want": "You want to rebook because you missed your connection.",
       "situationJa": "乗り継ぎに間に合わず、便を取り直したい。",
-      "tags": ["requesting", "trouble"],
+      "tags": [
+        "requesting",
+        "trouble"
+      ],
       "answers": [
-        { "en": "I missed my connection.", "ja": "乗り継ぎに間に合いませんでした。", "register": "neutral", "style": "basic", "note": "まずこれ。状況が一言で伝わる。" },
-        { "en": "Missed my flight. Need to rebook.", "ja": "便に乗り遅れました。取り直しが必要です。", "register": "casual", "style": "oneword", "note": "焦っていて文が組めないときでも伝わる。" },
-        { "en": "I need to be rebooked on the next flight to London.", "ja": "次のロンドン行きに変更をお願いします。", "register": "neutral", "style": "basic", "note": "rebook は「予約を取り直す」。要件が明確。" },
-        { "en": "Could you help me get on the next available flight?", "ja": "次に乗れる便を手配していただけますか。", "register": "polite", "style": "request", "note": "next available flight は空港での定番表現。" },
-        { "en": "My inbound flight was delayed and I've missed my connection. Could you advise me on the options?", "ja": "到着便が遅れて乗り継ぎに間に合いませんでした。選択肢をご教示いただけますか。", "register": "formal", "style": "formal", "note": "inbound flight は「到着便」。責任の所在も伝わる。" },
-        { "en": "I just missed it — what can I do?", "ja": "たった今乗り遅れてしまって、どうすればいいですか。", "register": "casual", "style": "casual", "note": "率直な言い方。助けを求める気持ちが伝わる。" },
-        { "en": "Is there another flight tonight?", "ja": "今夜、他の便はありますか。", "register": "neutral", "style": "existence", "note": "まず選択肢の有無を確認する。話が早い。" },
-        { "en": "Would I be entitled to a hotel if there's nothing until tomorrow?", "ja": "明日まで便がない場合、ホテルの手配は受けられますか。", "register": "neutral", "style": "vocab", "note": "be entitled to 〜 は「〜を受ける権利がある」。航空会社都合なら請求できる。" },
-        { "en": "The delay was on your side, so I'd like to be rebooked at no extra cost.", "ja": "遅延は御社側の事情でしたので、追加費用なしでの変更をお願いします。", "register": "polite", "style": "context", "note": "根拠を明示して交渉する。丁寧だが譲らない言い方。" },
-        { "en": "I understand it's busy — I'll take whatever you can find.", "ja": "混雑しているのは承知しています。空いている便なら何でも構いません。", "register": "polite", "style": "considerate", "note": "柔軟だと示すと、優先して探してもらえることがある。" }
+        {
+          "en": "I missed my connection.",
+          "ja": "乗り継ぎに間に合いませんでした。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "まずこれ。状況が一言で伝わる。"
+        },
+        {
+          "en": "Missed my flight. Need to rebook.",
+          "ja": "便に乗り遅れました。取り直しが必要です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "焦っていて文が組めないときでも伝わる。"
+        },
+        {
+          "en": "I need to be rebooked on the next flight to London.",
+          "ja": "次のロンドン行きに変更をお願いします。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "rebook は「予約を取り直す」。要件が明確。"
+        },
+        {
+          "en": "Could you help me get on the next available flight?",
+          "ja": "次に乗れる便を手配していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "next available flight は空港での定番表現。"
+        },
+        {
+          "en": "My inbound flight was delayed and I've missed my connection. Could you advise me on the options?",
+          "ja": "到着便が遅れて乗り継ぎに間に合いませんでした。選択肢をご教示いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "inbound flight は「到着便」。責任の所在も伝わる。"
+        },
+        {
+          "en": "I just missed it — what can I do?",
+          "ja": "たった今乗り遅れてしまって、どうすればいいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な言い方。助けを求める気持ちが伝わる。"
+        },
+        {
+          "en": "Is there another flight tonight?",
+          "ja": "今夜、他の便はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "まず選択肢の有無を確認する。話が早い。"
+        },
+        {
+          "en": "Would I be entitled to a hotel if there's nothing until tomorrow?",
+          "ja": "明日まで便がない場合、ホテルの手配は受けられますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "be entitled to 〜 は「〜を受ける権利がある」。航空会社都合なら請求できる。"
+        },
+        {
+          "en": "The delay was on your side, so I'd like to be rebooked at no extra cost.",
+          "ja": "遅延は御社側の事情でしたので、追加費用なしでの変更をお願いします。",
+          "register": "polite",
+          "style": "context",
+          "note": "根拠を明示して交渉する。丁寧だが譲らない言い方。"
+        },
+        {
+          "en": "I understand it's busy — I'll take whatever you can find.",
+          "ja": "混雑しているのは承知しています。空いている便なら何でも構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "柔軟だと示すと、優先して探してもらえることがある。"
+        }
       ]
     },
     {
-      "id": "airport-008", "category": "airport", "difficulty": 2,
-      "place": "On the plane", "listener": "a flight attendant",
+      "id": "airport-008",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "On the plane",
+      "listener": "a flight attendant",
       "want": "You want to ask for a blanket.",
       "situationJa": "毛布をもらいたい。",
-      "tags": ["requesting", "inflight"],
+      "tags": [
+        "requesting",
+        "inflight"
+      ],
       "answers": [
-        { "en": "A blanket, please.", "ja": "毛布をお願いします。", "register": "neutral", "style": "oneword", "note": "機内ではこれで十分。最短で確実。" },
-        { "en": "Could I have a blanket, please?", "ja": "毛布をいただけますか。", "register": "polite", "style": "request", "note": "基本形。丁寧で使いやすい。" },
-        { "en": "Do you have any blankets?", "ja": "毛布はありますか。", "register": "neutral", "style": "existence", "note": "在庫がないこともある。この形なら気まずくない。" },
-        { "en": "Excuse me, may I have a blanket?", "ja": "すみません、毛布をいただけますか。", "register": "polite", "style": "basic", "note": "may I は丁寧。機内では自然。" },
-        { "en": "I'm sorry to trouble you — would it be possible to have a blanket?", "ja": "お手数をおかけしますが、毛布をいただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "非常に丁寧。忙しそうなときに。" },
-        { "en": "Can I grab a blanket?", "ja": "毛布もらえますか。", "register": "casual", "style": "casual", "note": "grab は口語で「もらう・取る」。気さくな響き。" },
-        { "en": "It's a little cold — could I get a blanket?", "ja": "少し寒いので、毛布をいただけますか。", "register": "neutral", "style": "context", "note": "理由を添える。温度調整をしてもらえることもある。" },
-        { "en": "Could I have an extra blanket?", "ja": "毛布をもう1枚いただけますか。", "register": "polite", "style": "vocab", "note": "extra は「追加の」。2枚目を頼むときに。" },
-        { "en": "My child is cold — could we have a blanket?", "ja": "子どもが寒がっているので、毛布をいただけますか。", "register": "polite", "style": "basic", "note": "同行者のために頼む形。優先してもらえることが多い。" },
-        { "en": "Whenever you have a moment — could I have a blanket?", "ja": "お手すきのときで結構です。毛布をいただけますか。", "register": "polite", "style": "considerate", "note": "急かさない一言。サービス中の客室乗務員に好まれる。" }
+        {
+          "en": "A blanket, please.",
+          "ja": "毛布をお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "機内ではこれで十分。最短で確実。"
+        },
+        {
+          "en": "Could I have a blanket, please?",
+          "ja": "毛布をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。丁寧で使いやすい。"
+        },
+        {
+          "en": "Do you have any blankets?",
+          "ja": "毛布はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "在庫がないこともある。この形なら気まずくない。"
+        },
+        {
+          "en": "Excuse me, may I have a blanket?",
+          "ja": "すみません、毛布をいただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "may I は丁寧。機内では自然。"
+        },
+        {
+          "en": "I'm sorry to trouble you — would it be possible to have a blanket?",
+          "ja": "お手数をおかけしますが、毛布をいただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "非常に丁寧。忙しそうなときに。"
+        },
+        {
+          "en": "Can I grab a blanket?",
+          "ja": "毛布もらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "grab は口語で「もらう・取る」。気さくな響き。"
+        },
+        {
+          "en": "It's a little cold — could I get a blanket?",
+          "ja": "少し寒いので、毛布をいただけますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "理由を添える。温度調整をしてもらえることもある。"
+        },
+        {
+          "en": "Could I have an extra blanket?",
+          "ja": "毛布をもう1枚いただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "extra は「追加の」。2枚目を頼むときに。"
+        },
+        {
+          "en": "My child is cold — could we have a blanket?",
+          "ja": "子どもが寒がっているので、毛布をいただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "同行者のために頼む形。優先してもらえることが多い。"
+        },
+        {
+          "en": "Whenever you have a moment — could I have a blanket?",
+          "ja": "お手すきのときで結構です。毛布をいただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急かさない一言。サービス中の客室乗務員に好まれる。"
+        }
       ]
     },
     {
-      "id": "airport-009", "category": "airport", "difficulty": 1,
-      "place": "On the plane", "listener": "a flight attendant",
+      "id": "airport-009",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "On the plane",
+      "listener": "a flight attendant",
       "want": "You want to ask for water during the flight.",
       "situationJa": "機内で水がほしい。",
-      "tags": ["requesting", "inflight"],
+      "tags": [
+        "requesting",
+        "inflight"
+      ],
       "answers": [
-        { "en": "Water, please.", "ja": "お水をお願いします。", "register": "neutral", "style": "oneword", "note": "機内サービスではこれで完璧。" },
-        { "en": "Could I have some water, please?", "ja": "お水をいただけますか。", "register": "polite", "style": "request", "note": "some を付けるのが自然。丁寧で使いやすい。" },
-        { "en": "May I have a glass of water?", "ja": "お水を一杯いただけますか。", "register": "polite", "style": "basic", "note": "a glass of と数えるのが正しい。" },
-        { "en": "Still water, please — no ice.", "ja": "炭酸なしのお水を、氷抜きでお願いします。", "register": "neutral", "style": "vocab", "note": "細かい指定を一度に。やり取りが減る。" },
-        { "en": "Would it be possible to have some water when you have a moment?", "ja": "お手すきの際にお水をいただけますでしょうか。", "register": "formal", "style": "formal", "note": "サービス時間外に頼むときの丁寧な形。" },
-        { "en": "Can I get a water?", "ja": "水もらえますか。", "register": "casual", "style": "casual", "note": "口語では a water とも言う。文法的には砕けた形。" },
-        { "en": "Is there water available at the back?", "ja": "後方でお水をいただけますか。", "register": "neutral", "style": "existence", "note": "長距離便では後方のギャレーに水が置かれている。" },
-        { "en": "Could I have a bottle of water for later?", "ja": "後で飲む用にペットボトルの水をいただけますか。", "register": "polite", "style": "basic", "note": "何度も頼まずに済む。長距離便で実用的。" },
-        { "en": "I'm feeling a bit dehydrated — could I have some water?", "ja": "少し脱水気味なので、お水をいただけますか。", "register": "polite", "style": "context", "note": "体調を伝えると、多めに持ってきてもらえる。" },
-        { "en": "No rush at all — just some water when you pass by.", "ja": "急ぎません。通りかかったときにお水をいただければ。", "register": "polite", "style": "considerate", "note": "呼び止めずに済む言い方。乗務員の負担が減る。" }
+        {
+          "en": "Water, please.",
+          "ja": "お水をお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "機内サービスではこれで完璧。"
+        },
+        {
+          "en": "Could I have some water, please?",
+          "ja": "お水をいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "some を付けるのが自然。丁寧で使いやすい。"
+        },
+        {
+          "en": "May I have a glass of water?",
+          "ja": "お水を一杯いただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "a glass of と数えるのが正しい。"
+        },
+        {
+          "en": "Still water, please — no ice.",
+          "ja": "炭酸なしのお水を、氷抜きでお願いします。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "細かい指定を一度に。やり取りが減る。"
+        },
+        {
+          "en": "Would it be possible to have some water when you have a moment?",
+          "ja": "お手すきの際にお水をいただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "サービス時間外に頼むときの丁寧な形。"
+        },
+        {
+          "en": "Can I get a water?",
+          "ja": "水もらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "口語では a water とも言う。文法的には砕けた形。"
+        },
+        {
+          "en": "Is there water available at the back?",
+          "ja": "後方でお水をいただけますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "長距離便では後方のギャレーに水が置かれている。"
+        },
+        {
+          "en": "Could I have a bottle of water for later?",
+          "ja": "後で飲む用にペットボトルの水をいただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "何度も頼まずに済む。長距離便で実用的。"
+        },
+        {
+          "en": "I'm feeling a bit dehydrated — could I have some water?",
+          "ja": "少し脱水気味なので、お水をいただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "体調を伝えると、多めに持ってきてもらえる。"
+        },
+        {
+          "en": "No rush at all — just some water when you pass by.",
+          "ja": "急ぎません。通りかかったときにお水をいただければ。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "呼び止めずに済む言い方。乗務員の負担が減る。"
+        }
       ]
     },
     {
-      "id": "airport-010", "category": "airport", "difficulty": 2,
-      "place": "On the plane", "listener": "the passenger next to you",
+      "id": "airport-010",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "On the plane",
+      "listener": "the passenger next to you",
       "want": "You want to ask them to swap seats so you can sit with your family.",
       "situationJa": "家族と並んで座るため、席を替わってもらいたい。",
-      "tags": ["requesting", "polite"],
+      "tags": [
+        "requesting",
+        "polite"
+      ],
       "answers": [
-        { "en": "Would you mind swapping seats?", "ja": "席を替わっていただけますか。", "register": "polite", "style": "request", "note": "swap seats は「席を交換する」。この場面の定番。" },
-        { "en": "Could we switch seats?", "ja": "席を替われますか。", "register": "neutral", "style": "basic", "note": "switch も同じ意味。短くて言いやすい。" },
-        { "en": "Sorry, could I ask a favor?", "ja": "すみません、お願いがあるのですが。", "register": "polite", "style": "oneword", "note": "本題の前に置く。相手が身構えずに聞ける。" },
-        { "en": "I'm sorry to ask, but would you consider changing seats with me?", "ja": "恐れ入りますが、席を替わっていただくことをご検討いただけますでしょうか。", "register": "formal", "style": "formal", "note": "consider を使うと押しつけがましさが消える。" },
-        { "en": "Any chance you'd swap?", "ja": "替わってもらえたりする？", "register": "casual", "style": "casual", "note": "Any chance 〜 は「望みは薄いが」という控えめさ。" },
-        { "en": "Is there any way we could sit together?", "ja": "並んで座れる方法はありますか。", "register": "neutral", "style": "existence", "note": "乗務員に相談するときにも使える。" },
-        { "en": "My seat is 12A — it's a window seat, if that's better for you.", "ja": "私の席は12Aで窓側です。そちらのほうがよろしければ。", "register": "neutral", "style": "vocab", "note": "条件を提示する。相手に利がある形にすると通りやすい。" },
-        { "en": "I'm traveling with my daughter and we got split up — could we swap?", "ja": "娘と一緒なのですが席が離れてしまいまして、替わっていただけますか。", "register": "polite", "style": "context", "note": "理由が明確だと、たいてい快く応じてもらえる。" },
-        { "en": "Please don't feel obliged — but would you be willing to swap?", "ja": "ご無理でしたら結構ですが、席を替わっていただくことは可能でしょうか。", "register": "polite", "style": "considerate", "note": "don't feel obliged は「義務に感じないで」。断りやすくする配慮。" },
-        { "en": "Thank you so much — I really appreciate it.", "ja": "本当にありがとうございます。助かりました。", "register": "polite", "style": "confirm", "note": "応じてもらえたら必ず言う。長時間隣り合うので関係が大切。" }
+        {
+          "en": "Would you mind swapping seats?",
+          "ja": "席を替わっていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "swap seats は「席を交換する」。この場面の定番。"
+        },
+        {
+          "en": "Could we switch seats?",
+          "ja": "席を替われますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "switch も同じ意味。短くて言いやすい。"
+        },
+        {
+          "en": "Sorry, could I ask a favor?",
+          "ja": "すみません、お願いがあるのですが。",
+          "register": "polite",
+          "style": "oneword",
+          "note": "本題の前に置く。相手が身構えずに聞ける。"
+        },
+        {
+          "en": "I'm sorry to ask, but would you consider changing seats with me?",
+          "ja": "恐れ入りますが、席を替わっていただくことをご検討いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "consider を使うと押しつけがましさが消える。"
+        },
+        {
+          "en": "Any chance you'd swap?",
+          "ja": "替わってもらえたりする？",
+          "register": "casual",
+          "style": "casual",
+          "note": "Any chance 〜 は「望みは薄いが」という控えめさ。"
+        },
+        {
+          "en": "Is there any way we could sit together?",
+          "ja": "並んで座れる方法はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "乗務員に相談するときにも使える。"
+        },
+        {
+          "en": "My seat is 12A — it's a window seat, if that's better for you.",
+          "ja": "私の席は12Aで窓側です。そちらのほうがよろしければ。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "条件を提示する。相手に利がある形にすると通りやすい。"
+        },
+        {
+          "en": "I'm traveling with my daughter and we got split up — could we swap?",
+          "ja": "娘と一緒なのですが席が離れてしまいまして、替わっていただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由が明確だと、たいてい快く応じてもらえる。"
+        },
+        {
+          "en": "Please don't feel obliged — but would you be willing to swap?",
+          "ja": "ご無理でしたら結構ですが、席を替わっていただくことは可能でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "don't feel obliged は「義務に感じないで」。断りやすくする配慮。"
+        },
+        {
+          "en": "Thank you so much — I really appreciate it.",
+          "ja": "本当にありがとうございます。助かりました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "応じてもらえたら必ず言う。長時間隣り合うので関係が大切。"
+        }
       ]
     },
     {
-      "id": "airport-011", "category": "airport", "difficulty": 2,
-      "place": "At passport control", "listener": "an immigration officer",
+      "id": "airport-011",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At passport control",
+      "listener": "an immigration officer",
       "want": "You want to explain the purpose of your visit.",
       "situationJa": "入国審査で訪問の目的を説明したい。",
-      "tags": ["explaining", "immigration"],
+      "tags": [
+        "explaining",
+        "immigration"
+      ],
       "answers": [
-        { "en": "Tourism.", "ja": "観光です。", "register": "neutral", "style": "oneword", "note": "入国審査ではこれで十分。余計なことは言わない。" },
-        { "en": "I'm here on vacation.", "ja": "休暇で来ました。", "register": "neutral", "style": "basic", "note": "米国では vacation、英国では holiday。" },
-        { "en": "I'm here for business.", "ja": "仕事で来ました。", "register": "neutral", "style": "basic", "note": "出張の場合。会社名を聞かれることがある。" },
-        { "en": "I'm attending a conference for three days.", "ja": "3日間の会議に出席します。", "register": "neutral", "style": "vocab", "note": "具体的に言うと、追加質問が減る。" },
-        { "en": "I'm visiting for tourism and will be staying for ten days.", "ja": "観光目的で、10日間滞在する予定です。", "register": "polite", "style": "basic", "note": "目的と期間を一度に。審査がスムーズになる。" },
-        { "en": "Just visiting.", "ja": "ただの旅行です。", "register": "casual", "style": "casual", "note": "短いが通じる。ぶっきらぼうに聞こえないよう注意。" },
-        { "en": "Is there anything else you need from me?", "ja": "他に必要なものはありますか。", "register": "polite", "style": "existence", "note": "書類を求められたときに。協力的な姿勢が伝わる。" },
-        { "en": "I have my return ticket and hotel booking here if you need them.", "ja": "必要でしたら、復路の航空券とホテルの予約をお見せできます。", "register": "polite", "style": "request", "note": "先回りして示す。疑われたときに効果的。" },
-        { "en": "I'm visiting a friend who lives in London for a week.", "ja": "ロンドンに住んでいる友人を1週間訪ねます。", "register": "neutral", "style": "context", "note": "訪問先が明確だと信頼されやすい。" },
-        { "en": "Sorry, could you repeat the question? I want to make sure I answer correctly.", "ja": "すみません、質問をもう一度お願いできますか。正確にお答えしたいので。", "register": "polite", "style": "considerate", "note": "聞き取れなかったときに。曖昧に答えるより遥かに良い。" }
+        {
+          "en": "Tourism.",
+          "ja": "観光です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "入国審査ではこれで十分。余計なことは言わない。"
+        },
+        {
+          "en": "I'm here on vacation.",
+          "ja": "休暇で来ました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "米国では vacation、英国では holiday。"
+        },
+        {
+          "en": "I'm here for business.",
+          "ja": "仕事で来ました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "出張の場合。会社名を聞かれることがある。"
+        },
+        {
+          "en": "I'm attending a conference for three days.",
+          "ja": "3日間の会議に出席します。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "具体的に言うと、追加質問が減る。"
+        },
+        {
+          "en": "I'm visiting for tourism and will be staying for ten days.",
+          "ja": "観光目的で、10日間滞在する予定です。",
+          "register": "polite",
+          "style": "basic",
+          "note": "目的と期間を一度に。審査がスムーズになる。"
+        },
+        {
+          "en": "Just visiting.",
+          "ja": "ただの旅行です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短いが通じる。ぶっきらぼうに聞こえないよう注意。"
+        },
+        {
+          "en": "Is there anything else you need from me?",
+          "ja": "他に必要なものはありますか。",
+          "register": "polite",
+          "style": "existence",
+          "note": "書類を求められたときに。協力的な姿勢が伝わる。"
+        },
+        {
+          "en": "I have my return ticket and hotel booking here if you need them.",
+          "ja": "必要でしたら、復路の航空券とホテルの予約をお見せできます。",
+          "register": "polite",
+          "style": "request",
+          "note": "先回りして示す。疑われたときに効果的。"
+        },
+        {
+          "en": "I'm visiting a friend who lives in London for a week.",
+          "ja": "ロンドンに住んでいる友人を1週間訪ねます。",
+          "register": "neutral",
+          "style": "context",
+          "note": "訪問先が明確だと信頼されやすい。"
+        },
+        {
+          "en": "Sorry, could you repeat the question? I want to make sure I answer correctly.",
+          "ja": "すみません、質問をもう一度お願いできますか。正確にお答えしたいので。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "聞き取れなかったときに。曖昧に答えるより遥かに良い。"
+        }
       ]
     },
     {
-      "id": "airport-012", "category": "airport", "difficulty": 3,
-      "place": "At a baggage claim office", "listener": "an airline staff member",
+      "id": "airport-012",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At a baggage claim office",
+      "listener": "an airline staff member",
       "want": "You want to report that your suitcase did not arrive.",
       "situationJa": "スーツケースが出てこないことを届け出たい。",
-      "tags": ["reporting", "baggage"],
+      "tags": [
+        "reporting",
+        "baggage"
+      ],
       "answers": [
-        { "en": "My bag didn't arrive.", "ja": "荷物が出てきませんでした。", "register": "neutral", "style": "basic", "note": "まずこれ。状況が一言で伝わる。" },
-        { "en": "Lost bag.", "ja": "荷物が見つかりません。", "register": "casual", "style": "oneword", "note": "焦っていても言える。窓口では通じる。" },
-        { "en": "My suitcase wasn't on the belt.", "ja": "スーツケースがベルトに出てきませんでした。", "register": "neutral", "style": "basic", "note": "belt は「回転ベルト」。状況が具体的に伝わる。" },
-        { "en": "Could you help me? My checked bag is missing.", "ja": "助けていただけますか。預けた荷物が見当たりません。", "register": "polite", "style": "request", "note": "助けを求めてから状況を説明すると落ち着ける。" },
-        { "en": "I'm afraid my luggage has not arrived. Could you look into it?", "ja": "恐れ入りますが、荷物が到着していないようです。お調べいただけますか。", "register": "formal", "style": "formal", "note": "look into 〜 は「調査する」。丁寧で実務的。" },
-        { "en": "My bag never showed up.", "ja": "荷物が全然出てこなかったんです。", "register": "casual", "style": "casual", "note": "show up は「現れる」。口語的で自然。" },
-        { "en": "Is there a chance it's on the next flight?", "ja": "次の便に載っている可能性はありますか。", "register": "neutral", "style": "existence", "note": "乗り継ぎ便では実際によくある。落ち着いて確認したい。" },
-        { "en": "I need to file a claim for a missing bag.", "ja": "紛失荷物の届出をしたいのですが。", "register": "neutral", "style": "vocab", "note": "file a claim は「届出を出す」。補償の手続きに必要。" },
-        { "en": "It's a black hard-shell case with a red tag. I flew in from Dubai on BA6.", "ja": "赤いタグの付いた黒いハードケースです。ドバイからBA6便で来ました。", "register": "polite", "style": "context", "note": "特徴と便名を先に言うと、捜索が速い。" },
-        { "en": "I'm staying at the Grand Hotel for three nights — could it be delivered there?", "ja": "3泊グランドホテルに滞在します。そちらへ届けていただけますか。", "register": "polite", "style": "considerate", "note": "受取先を伝える。見つかった後の手続きが省ける。" }
+        {
+          "en": "My bag didn't arrive.",
+          "ja": "荷物が出てきませんでした。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "まずこれ。状況が一言で伝わる。"
+        },
+        {
+          "en": "Lost bag.",
+          "ja": "荷物が見つかりません。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "焦っていても言える。窓口では通じる。"
+        },
+        {
+          "en": "My suitcase wasn't on the belt.",
+          "ja": "スーツケースがベルトに出てきませんでした。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "belt は「回転ベルト」。状況が具体的に伝わる。"
+        },
+        {
+          "en": "Could you help me? My checked bag is missing.",
+          "ja": "助けていただけますか。預けた荷物が見当たりません。",
+          "register": "polite",
+          "style": "request",
+          "note": "助けを求めてから状況を説明すると落ち着ける。"
+        },
+        {
+          "en": "I'm afraid my luggage has not arrived. Could you look into it?",
+          "ja": "恐れ入りますが、荷物が到着していないようです。お調べいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "look into 〜 は「調査する」。丁寧で実務的。"
+        },
+        {
+          "en": "My bag never showed up.",
+          "ja": "荷物が全然出てこなかったんです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "show up は「現れる」。口語的で自然。"
+        },
+        {
+          "en": "Is there a chance it's on the next flight?",
+          "ja": "次の便に載っている可能性はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "乗り継ぎ便では実際によくある。落ち着いて確認したい。"
+        },
+        {
+          "en": "I need to file a claim for a missing bag.",
+          "ja": "紛失荷物の届出をしたいのですが。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "file a claim は「届出を出す」。補償の手続きに必要。"
+        },
+        {
+          "en": "It's a black hard-shell case with a red tag. I flew in from Dubai on BA6.",
+          "ja": "赤いタグの付いた黒いハードケースです。ドバイからBA6便で来ました。",
+          "register": "polite",
+          "style": "context",
+          "note": "特徴と便名を先に言うと、捜索が速い。"
+        },
+        {
+          "en": "I'm staying at the Grand Hotel for three nights — could it be delivered there?",
+          "ja": "3泊グランドホテルに滞在します。そちらへ届けていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "受取先を伝える。見つかった後の手続きが省ける。"
+        }
       ]
     },
     {
-      "id": "airport-013", "category": "airport", "difficulty": 2,
-      "place": "At a duty-free shop", "listener": "a shop assistant",
+      "id": "airport-013",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a duty-free shop",
+      "listener": "a shop assistant",
       "want": "You want to ask if you can carry this bottle on the plane.",
       "situationJa": "この瓶を機内に持ち込めるか確認したい。",
-      "tags": ["asking", "rules"],
+      "tags": [
+        "asking",
+        "rules"
+      ],
       "answers": [
-        { "en": "Can I take this on the plane?", "ja": "これを機内に持ち込めますか。", "register": "neutral", "style": "basic", "note": "基本形。乗り継ぎがあるときは必ず確認したい。" },
-        { "en": "Carry-on OK?", "ja": "機内持ち込みは大丈夫ですか。", "register": "casual", "style": "oneword", "note": "瓶を指しながら。短くても通じる。" },
-        { "en": "Is this allowed in hand luggage?", "ja": "これは手荷物に入れられますか。", "register": "neutral", "style": "basic", "note": "hand luggage は英国式。米国では carry-on。" },
-        { "en": "Could you tell me if I can take this through security?", "ja": "これを保安検査に通せるか教えていただけますか。", "register": "polite", "style": "request", "note": "検査を通せるかが本質。この聞き方が正確。" },
-        { "en": "Would this be permitted on board given that I have a connection?", "ja": "乗り継ぎがあるのですが、これは機内に持ち込めますでしょうか。", "register": "formal", "style": "formal", "note": "乗り継ぎ空港で再検査があると没収されることがある。" },
-        { "en": "Am I OK to fly with this?", "ja": "これ持って飛行機乗れますか。", "register": "casual", "style": "casual", "note": "口語的で自然。気さくな店員に。" },
-        { "en": "Is there a limit on liquids?", "ja": "液体物に制限はありますか。", "register": "neutral", "style": "existence", "note": "一般的な規則を確認する型。" },
-        { "en": "Will it be sealed in a security bag?", "ja": "保安用の袋で封をしてもらえますか。", "register": "neutral", "style": "vocab", "note": "免税店の封印袋なら乗り継ぎでも通せることが多い。" },
-        { "en": "I'm connecting in Dubai — will this still be allowed there?", "ja": "ドバイで乗り継ぎますが、そこでも持ち込めますか。", "register": "polite", "style": "context", "note": "乗り継ぎ地を明示するのが最重要。ここで没収が起きる。" },
-        { "en": "I'd rather not have it confiscated — is it definitely allowed?", "ja": "没収されたくないので伺いますが、確実に持ち込めますか。", "register": "polite", "style": "considerate", "note": "confiscate は「没収する」。念押ししたいときに。" }
+        {
+          "en": "Can I take this on the plane?",
+          "ja": "これを機内に持ち込めますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。乗り継ぎがあるときは必ず確認したい。"
+        },
+        {
+          "en": "Carry-on OK?",
+          "ja": "機内持ち込みは大丈夫ですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "瓶を指しながら。短くても通じる。"
+        },
+        {
+          "en": "Is this allowed in hand luggage?",
+          "ja": "これは手荷物に入れられますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "hand luggage は英国式。米国では carry-on。"
+        },
+        {
+          "en": "Could you tell me if I can take this through security?",
+          "ja": "これを保安検査に通せるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "検査を通せるかが本質。この聞き方が正確。"
+        },
+        {
+          "en": "Would this be permitted on board given that I have a connection?",
+          "ja": "乗り継ぎがあるのですが、これは機内に持ち込めますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "乗り継ぎ空港で再検査があると没収されることがある。"
+        },
+        {
+          "en": "Am I OK to fly with this?",
+          "ja": "これ持って飛行機乗れますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "口語的で自然。気さくな店員に。"
+        },
+        {
+          "en": "Is there a limit on liquids?",
+          "ja": "液体物に制限はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "一般的な規則を確認する型。"
+        },
+        {
+          "en": "Will it be sealed in a security bag?",
+          "ja": "保安用の袋で封をしてもらえますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "免税店の封印袋なら乗り継ぎでも通せることが多い。"
+        },
+        {
+          "en": "I'm connecting in Dubai — will this still be allowed there?",
+          "ja": "ドバイで乗り継ぎますが、そこでも持ち込めますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "乗り継ぎ地を明示するのが最重要。ここで没収が起きる。"
+        },
+        {
+          "en": "I'd rather not have it confiscated — is it definitely allowed?",
+          "ja": "没収されたくないので伺いますが、確実に持ち込めますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "confiscate は「没収する」。念押ししたいときに。"
+        }
       ]
     },
     {
-      "id": "airport-014", "category": "airport", "difficulty": 1,
-      "place": "In the terminal", "listener": "an airport staff member",
+      "id": "airport-014",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In the terminal",
+      "listener": "an airport staff member",
       "want": "You want to find a place to charge your phone.",
       "situationJa": "スマホを充電できる場所を探している。",
-      "tags": ["asking", "facilities"],
+      "tags": [
+        "asking",
+        "facilities"
+      ],
       "answers": [
-        { "en": "Where can I charge my phone?", "ja": "どこでスマホを充電できますか。", "register": "neutral", "style": "basic", "note": "基本形。空港では必須の一言。" },
-        { "en": "Charging point?", "ja": "充電できる場所は？", "register": "casual", "style": "oneword", "note": "スマホを見せながら。短くても通じる。" },
-        { "en": "Is there somewhere to charge my phone?", "ja": "スマホを充電できる場所はありますか。", "register": "neutral", "style": "existence", "note": "無い可能性を含めて聞ける。" },
-        { "en": "Could you tell me where the charging stations are?", "ja": "充電スタンドの場所を教えていただけますか。", "register": "polite", "style": "request", "note": "charging station は空港でよく見る設備名。" },
-        { "en": "Would you happen to know where I could find a power outlet?", "ja": "コンセントのある場所をご存じでしょうか。", "register": "formal", "style": "formal", "note": "power outlet は「コンセント」。米国式。英国では socket。" },
-        { "en": "Any plugs around here?", "ja": "この辺にコンセントある？", "register": "casual", "style": "casual", "note": "plug は口語でコンセントを指すこともある。" },
-        { "en": "Do the seats near the gate have outlets?", "ja": "ゲート近くの座席にコンセントはありますか。", "register": "neutral", "style": "basic", "note": "具体的に聞くと移動の無駄が減る。" },
-        { "en": "Is there a lounge with charging facilities?", "ja": "充電設備のあるラウンジはありますか。", "register": "neutral", "style": "vocab", "note": "有料ラウンジが選択肢になることも。" },
-        { "en": "My phone's about to die and I need it for my boarding pass — where can I charge it?", "ja": "スマホの電池が切れそうで、搭乗券に必要なんです。どこで充電できますか。", "register": "polite", "style": "context", "note": "緊急性を伝えると、優先的に案内してもらえる。" },
-        { "en": "Sorry to bother you — do you know where I could charge my phone?", "ja": "お邪魔してすみません、スマホを充電できる場所をご存じですか。", "register": "polite", "style": "considerate", "note": "do you know を付けると、知らない相手も答えやすい。" }
+        {
+          "en": "Where can I charge my phone?",
+          "ja": "どこでスマホを充電できますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。空港では必須の一言。"
+        },
+        {
+          "en": "Charging point?",
+          "ja": "充電できる場所は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "スマホを見せながら。短くても通じる。"
+        },
+        {
+          "en": "Is there somewhere to charge my phone?",
+          "ja": "スマホを充電できる場所はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "無い可能性を含めて聞ける。"
+        },
+        {
+          "en": "Could you tell me where the charging stations are?",
+          "ja": "充電スタンドの場所を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "charging station は空港でよく見る設備名。"
+        },
+        {
+          "en": "Would you happen to know where I could find a power outlet?",
+          "ja": "コンセントのある場所をご存じでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "power outlet は「コンセント」。米国式。英国では socket。"
+        },
+        {
+          "en": "Any plugs around here?",
+          "ja": "この辺にコンセントある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "plug は口語でコンセントを指すこともある。"
+        },
+        {
+          "en": "Do the seats near the gate have outlets?",
+          "ja": "ゲート近くの座席にコンセントはありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体的に聞くと移動の無駄が減る。"
+        },
+        {
+          "en": "Is there a lounge with charging facilities?",
+          "ja": "充電設備のあるラウンジはありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "有料ラウンジが選択肢になることも。"
+        },
+        {
+          "en": "My phone's about to die and I need it for my boarding pass — where can I charge it?",
+          "ja": "スマホの電池が切れそうで、搭乗券に必要なんです。どこで充電できますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "緊急性を伝えると、優先的に案内してもらえる。"
+        },
+        {
+          "en": "Sorry to bother you — do you know where I could charge my phone?",
+          "ja": "お邪魔してすみません、スマホを充電できる場所をご存じですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "do you know を付けると、知らない相手も答えやすい。"
+        }
       ]
     },
     {
-      "id": "airport-015", "category": "airport", "difficulty": 2,
-      "place": "At an airline desk", "listener": "an airline agent",
+      "id": "airport-015",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At an airline desk",
+      "listener": "an airline agent",
       "want": "You want to ask about upgrading your seat.",
       "situationJa": "座席のアップグレードについて聞きたい。",
-      "tags": ["asking", "upgrade"],
+      "tags": [
+        "asking",
+        "upgrade"
+      ],
       "answers": [
-        { "en": "Any upgrades available?", "ja": "アップグレードはできますか。", "register": "neutral", "style": "oneword", "note": "短くて実用的。カウンターで自然。" },
-        { "en": "Can I upgrade my seat?", "ja": "席をアップグレードできますか。", "register": "neutral", "style": "basic", "note": "基本形。まずこれ。" },
-        { "en": "How much would it cost to upgrade to business?", "ja": "ビジネスへのアップグレードはいくらかかりますか。", "register": "neutral", "style": "basic", "note": "料金を先に聞く。判断が速い。" },
-        { "en": "Could you tell me if there's space in premium economy?", "ja": "プレミアムエコノミーに空きがあるか教えていただけますか。", "register": "polite", "style": "request", "note": "クラスを具体的に指定すると答えが早い。" },
-        { "en": "I was wondering whether an upgrade might be available on this flight.", "ja": "この便でアップグレードが可能かどうか伺いたいのですが。", "register": "formal", "style": "formal", "note": "非常に丁寧。断られても気まずくない。" },
-        { "en": "Any chance of a bump up?", "ja": "アップグレードできたりする？", "register": "casual", "style": "casual", "note": "bump up は口語で「格上げ」。親しみのある言い方。" },
-        { "en": "Is there an upgrade using miles?", "ja": "マイルでのアップグレードはできますか。", "register": "neutral", "style": "existence", "note": "現金以外の方法を確認する。マイル会員なら必須。" },
-        { "en": "What's the fare difference to business class?", "ja": "ビジネスクラスとの差額はいくらですか。", "register": "neutral", "style": "vocab", "note": "fare difference は「運賃差額」。交渉の基準になる。" },
-        { "en": "It's an overnight flight and I have meetings tomorrow — is an upgrade possible?", "ja": "夜行便で明日は会議があります。アップグレードは可能でしょうか。", "register": "polite", "style": "context", "note": "理由を添えると、空きがあれば便宜を図ってもらえることも。" },
-        { "en": "No pressure if it's not possible — but is an upgrade an option?", "ja": "難しければ結構ですが、アップグレードという選択肢はありますか。", "register": "polite", "style": "considerate", "note": "断りやすい形にする。押しつけがましくない。" }
+        {
+          "en": "Any upgrades available?",
+          "ja": "アップグレードはできますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて実用的。カウンターで自然。"
+        },
+        {
+          "en": "Can I upgrade my seat?",
+          "ja": "席をアップグレードできますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。まずこれ。"
+        },
+        {
+          "en": "How much would it cost to upgrade to business?",
+          "ja": "ビジネスへのアップグレードはいくらかかりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "料金を先に聞く。判断が速い。"
+        },
+        {
+          "en": "Could you tell me if there's space in premium economy?",
+          "ja": "プレミアムエコノミーに空きがあるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "クラスを具体的に指定すると答えが早い。"
+        },
+        {
+          "en": "I was wondering whether an upgrade might be available on this flight.",
+          "ja": "この便でアップグレードが可能かどうか伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "非常に丁寧。断られても気まずくない。"
+        },
+        {
+          "en": "Any chance of a bump up?",
+          "ja": "アップグレードできたりする？",
+          "register": "casual",
+          "style": "casual",
+          "note": "bump up は口語で「格上げ」。親しみのある言い方。"
+        },
+        {
+          "en": "Is there an upgrade using miles?",
+          "ja": "マイルでのアップグレードはできますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "現金以外の方法を確認する。マイル会員なら必須。"
+        },
+        {
+          "en": "What's the fare difference to business class?",
+          "ja": "ビジネスクラスとの差額はいくらですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "fare difference は「運賃差額」。交渉の基準になる。"
+        },
+        {
+          "en": "It's an overnight flight and I have meetings tomorrow — is an upgrade possible?",
+          "ja": "夜行便で明日は会議があります。アップグレードは可能でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "理由を添えると、空きがあれば便宜を図ってもらえることも。"
+        },
+        {
+          "en": "No pressure if it's not possible — but is an upgrade an option?",
+          "ja": "難しければ結構ですが、アップグレードという選択肢はありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断りやすい形にする。押しつけがましくない。"
+        }
       ]
     },
     {
-      "id": "airport-016", "category": "airport", "difficulty": 1,
-      "place": "In the terminal", "listener": "an airport staff member",
+      "id": "airport-016",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "In the terminal",
+      "listener": "an airport staff member",
       "want": "You want to find where to get the airport wifi.",
       "situationJa": "空港の Wi-Fi の使い方を知りたい。",
-      "tags": ["asking", "facilities"],
+      "tags": [
+        "asking",
+        "facilities"
+      ],
       "answers": [
-        { "en": "Wifi password?", "ja": "Wi-Fi のパスワードは？", "register": "casual", "style": "oneword", "note": "スマホを見せながら。短くて通じる。" },
-        { "en": "How do I connect to the wifi?", "ja": "Wi-Fi にはどう接続しますか。", "register": "neutral", "style": "basic", "note": "基本形。接続方法まで聞ける。" },
-        { "en": "Is there free wifi here?", "ja": "無料の Wi-Fi はありますか。", "register": "neutral", "style": "existence", "note": "有料の空港もある。先に確認したい。" },
-        { "en": "Could you tell me how to get online?", "ja": "ネットにつなぐ方法を教えていただけますか。", "register": "polite", "style": "request", "note": "get online は「ネットにつなぐ」。汎用的。" },
-        { "en": "Would you mind telling me the network name for the airport wifi?", "ja": "空港 Wi-Fi のネットワーク名を教えていただけますでしょうか。", "register": "formal", "style": "formal", "note": "network name は SSID のこと。丁寧な聞き方。" },
-        { "en": "What's the wifi here?", "ja": "ここの Wi-Fi 何？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。同行者や若いスタッフに。" },
-        { "en": "Do I need a code to connect?", "ja": "接続にコードは必要ですか。", "register": "neutral", "style": "basic", "note": "認証方式を確認する。搭乗券番号が要る空港もある。" },
-        { "en": "Is the wifi limited to a certain time?", "ja": "Wi-Fi には時間制限がありますか。", "register": "neutral", "style": "vocab", "note": "無料は30分まで、といった制限がある空港が多い。" },
-        { "en": "I need to check in online before boarding — how do I get on the wifi?", "ja": "搭乗前にオンラインで手続きが必要なのですが、Wi-Fi にはどうつなぎますか。", "register": "polite", "style": "context", "note": "必要な理由を言うと、丁寧に手伝ってもらえる。" },
-        { "en": "Sorry to trouble you — could you help me get on the wifi?", "ja": "お手数ですが、Wi-Fi への接続を手伝っていただけますか。", "register": "polite", "style": "considerate", "note": "操作を手伝ってもらいたいときに。" }
+        {
+          "en": "Wifi password?",
+          "ja": "Wi-Fi のパスワードは？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "スマホを見せながら。短くて通じる。"
+        },
+        {
+          "en": "How do I connect to the wifi?",
+          "ja": "Wi-Fi にはどう接続しますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。接続方法まで聞ける。"
+        },
+        {
+          "en": "Is there free wifi here?",
+          "ja": "無料の Wi-Fi はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "有料の空港もある。先に確認したい。"
+        },
+        {
+          "en": "Could you tell me how to get online?",
+          "ja": "ネットにつなぐ方法を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "get online は「ネットにつなぐ」。汎用的。"
+        },
+        {
+          "en": "Would you mind telling me the network name for the airport wifi?",
+          "ja": "空港 Wi-Fi のネットワーク名を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "network name は SSID のこと。丁寧な聞き方。"
+        },
+        {
+          "en": "What's the wifi here?",
+          "ja": "ここの Wi-Fi 何？",
+          "register": "casual",
+          "style": "casual",
+          "note": "非常にくだけた口語。同行者や若いスタッフに。"
+        },
+        {
+          "en": "Do I need a code to connect?",
+          "ja": "接続にコードは必要ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "認証方式を確認する。搭乗券番号が要る空港もある。"
+        },
+        {
+          "en": "Is the wifi limited to a certain time?",
+          "ja": "Wi-Fi には時間制限がありますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "無料は30分まで、といった制限がある空港が多い。"
+        },
+        {
+          "en": "I need to check in online before boarding — how do I get on the wifi?",
+          "ja": "搭乗前にオンラインで手続きが必要なのですが、Wi-Fi にはどうつなぎますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "必要な理由を言うと、丁寧に手伝ってもらえる。"
+        },
+        {
+          "en": "Sorry to trouble you — could you help me get on the wifi?",
+          "ja": "お手数ですが、Wi-Fi への接続を手伝っていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "操作を手伝ってもらいたいときに。"
+        }
       ]
     },
     {
-      "id": "airport-017", "category": "airport", "difficulty": 2,
-      "place": "At a gate", "listener": "a gate agent",
+      "id": "airport-017",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a gate",
+      "listener": "a gate agent",
       "want": "You want to check that your bag will fit as carry-on.",
       "situationJa": "この鞄が機内持ち込みサイズか確認したい。",
-      "tags": ["confirming", "baggage"],
+      "tags": [
+        "confirming",
+        "baggage"
+      ],
       "answers": [
-        { "en": "Is this OK as carry-on?", "ja": "これは機内持ち込みで大丈夫ですか。", "register": "neutral", "style": "basic", "note": "鞄を見せながら。実用的で確実。" },
-        { "en": "Too big?", "ja": "大きすぎますか。", "register": "casual", "style": "oneword", "note": "サイズ枠の前で。短くても通じる。" },
-        { "en": "Will this fit in the overhead bin?", "ja": "これは頭上の収納棚に入りますか。", "register": "neutral", "style": "vocab", "note": "overhead bin は「頭上の物入れ」。機内での定番語。" },
-        { "en": "Could you check if my bag is within the size limit?", "ja": "鞄がサイズ制限内か確認していただけますか。", "register": "polite", "style": "request", "note": "size limit は「サイズ制限」。丁寧に確認できる。" },
-        { "en": "Would you mind confirming whether this meets the cabin baggage requirements?", "ja": "こちらが機内持ち込み手荷物の規定を満たしているかご確認いただけますでしょうか。", "register": "formal", "style": "formal", "note": "cabin baggage は「機内持ち込み手荷物」。改まった語。" },
-        { "en": "Am I good with this one?", "ja": "これで大丈夫？", "register": "casual", "style": "casual", "note": "気さくな言い方。混雑した搭乗口で手早く。" },
-        { "en": "Is there a size limit for carry-ons?", "ja": "機内持ち込みにサイズ制限はありますか。", "register": "neutral", "style": "existence", "note": "規定そのものを確認する型。" },
-        { "en": "Do I need to check this in instead?", "ja": "これは預けたほうがよいですか。", "register": "neutral", "style": "basic", "note": "次にどうすべきかまで聞ける。判断が速い。" },
-        { "en": "I've flown with this bag before, but the plane looks smaller today — is it OK?", "ja": "この鞄で何度か飛んでいますが、今日は機体が小さそうです。大丈夫でしょうか。", "register": "polite", "style": "context", "note": "小型機では持ち込めないことがある。先に確認すると安心。" },
-        { "en": "Happy to check it if needed — is this within the limit?", "ja": "必要なら預けても構いません。これは制限内でしょうか。", "register": "polite", "style": "considerate", "note": "協力的な姿勢を示すと、対応が柔らかくなる。" }
+        {
+          "en": "Is this OK as carry-on?",
+          "ja": "これは機内持ち込みで大丈夫ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "鞄を見せながら。実用的で確実。"
+        },
+        {
+          "en": "Too big?",
+          "ja": "大きすぎますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "サイズ枠の前で。短くても通じる。"
+        },
+        {
+          "en": "Will this fit in the overhead bin?",
+          "ja": "これは頭上の収納棚に入りますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "overhead bin は「頭上の物入れ」。機内での定番語。"
+        },
+        {
+          "en": "Could you check if my bag is within the size limit?",
+          "ja": "鞄がサイズ制限内か確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "size limit は「サイズ制限」。丁寧に確認できる。"
+        },
+        {
+          "en": "Would you mind confirming whether this meets the cabin baggage requirements?",
+          "ja": "こちらが機内持ち込み手荷物の規定を満たしているかご確認いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "cabin baggage は「機内持ち込み手荷物」。改まった語。"
+        },
+        {
+          "en": "Am I good with this one?",
+          "ja": "これで大丈夫？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな言い方。混雑した搭乗口で手早く。"
+        },
+        {
+          "en": "Is there a size limit for carry-ons?",
+          "ja": "機内持ち込みにサイズ制限はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "規定そのものを確認する型。"
+        },
+        {
+          "en": "Do I need to check this in instead?",
+          "ja": "これは預けたほうがよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "次にどうすべきかまで聞ける。判断が速い。"
+        },
+        {
+          "en": "I've flown with this bag before, but the plane looks smaller today — is it OK?",
+          "ja": "この鞄で何度か飛んでいますが、今日は機体が小さそうです。大丈夫でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "小型機では持ち込めないことがある。先に確認すると安心。"
+        },
+        {
+          "en": "Happy to check it if needed — is this within the limit?",
+          "ja": "必要なら預けても構いません。これは制限内でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "協力的な姿勢を示すと、対応が柔らかくなる。"
+        }
       ]
     },
     {
-      "id": "airport-018", "category": "airport", "difficulty": 2,
-      "place": "On the plane", "listener": "a flight attendant",
+      "id": "airport-018",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "On the plane",
+      "listener": "a flight attendant",
       "want": "You want to ask about the special meal you ordered.",
       "situationJa": "事前に頼んだ特別食について確認したい。",
-      "tags": ["asking", "inflight"],
+      "tags": [
+        "asking",
+        "inflight"
+      ],
       "answers": [
-        { "en": "I ordered a special meal.", "ja": "特別食を頼んでいます。", "register": "neutral", "style": "basic", "note": "まずこれ。乗務員が確認してくれる。" },
-        { "en": "Vegetarian meal?", "ja": "ベジタリアン食は？", "register": "casual", "style": "oneword", "note": "配膳時に。短くても伝わる。" },
-        { "en": "I requested a vegetarian meal when I booked.", "ja": "予約時にベジタリアン食を希望しました。", "register": "neutral", "style": "basic", "note": "いつ頼んだかを言うと、記録を確認しやすい。" },
-        { "en": "Could you check whether my special meal is on board?", "ja": "特別食が搭載されているか確認していただけますか。", "register": "polite", "style": "request", "note": "on board は「機内に積まれている」。実務的な聞き方。" },
-        { "en": "I believe I requested a gluten-free meal. Would you be able to confirm?", "ja": "グルテンフリー食を希望していたと思うのですが、ご確認いただけますでしょうか。", "register": "formal", "style": "formal", "note": "I believe で断定を避けた丁寧な確認。" },
-        { "en": "Did my meal come through?", "ja": "私の食事、来てますか。", "register": "casual", "style": "casual", "note": "come through は「手配が通る」。口語的。" },
-        { "en": "Is there a vegetarian option if my meal didn't load?", "ja": "特別食が積まれていない場合、ベジタリアン向けの代わりはありますか。", "register": "neutral", "style": "existence", "note": "手配漏れは実際によくある。代替を先に確認しておく。" },
-        { "en": "I have a nut allergy — was that noted on my booking?", "ja": "ナッツアレルギーがあるのですが、予約に記載されていますか。", "register": "neutral", "style": "vocab", "note": "アレルギーは命に関わる。必ず確認したい。" },
-        { "en": "I don't eat meat, so I asked for a vegetarian meal — could you check my seat number?", "ja": "肉を食べないのでベジタリアン食を頼みました。座席番号で確認していただけますか。", "register": "polite", "style": "context", "note": "座席番号を添えると照合が速い。" },
-        { "en": "It's fine if not — but did a special meal come through for 12A?", "ja": "無ければ結構ですが、12Aの特別食は来ていますか。", "register": "polite", "style": "considerate", "note": "無い場合に乗務員が謝らずに済む言い方。" }
+        {
+          "en": "I ordered a special meal.",
+          "ja": "特別食を頼んでいます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "まずこれ。乗務員が確認してくれる。"
+        },
+        {
+          "en": "Vegetarian meal?",
+          "ja": "ベジタリアン食は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "配膳時に。短くても伝わる。"
+        },
+        {
+          "en": "I requested a vegetarian meal when I booked.",
+          "ja": "予約時にベジタリアン食を希望しました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "いつ頼んだかを言うと、記録を確認しやすい。"
+        },
+        {
+          "en": "Could you check whether my special meal is on board?",
+          "ja": "特別食が搭載されているか確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "on board は「機内に積まれている」。実務的な聞き方。"
+        },
+        {
+          "en": "I believe I requested a gluten-free meal. Would you be able to confirm?",
+          "ja": "グルテンフリー食を希望していたと思うのですが、ご確認いただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "I believe で断定を避けた丁寧な確認。"
+        },
+        {
+          "en": "Did my meal come through?",
+          "ja": "私の食事、来てますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "come through は「手配が通る」。口語的。"
+        },
+        {
+          "en": "Is there a vegetarian option if my meal didn't load?",
+          "ja": "特別食が積まれていない場合、ベジタリアン向けの代わりはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "手配漏れは実際によくある。代替を先に確認しておく。"
+        },
+        {
+          "en": "I have a nut allergy — was that noted on my booking?",
+          "ja": "ナッツアレルギーがあるのですが、予約に記載されていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "アレルギーは命に関わる。必ず確認したい。"
+        },
+        {
+          "en": "I don't eat meat, so I asked for a vegetarian meal — could you check my seat number?",
+          "ja": "肉を食べないのでベジタリアン食を頼みました。座席番号で確認していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "座席番号を添えると照合が速い。"
+        },
+        {
+          "en": "It's fine if not — but did a special meal come through for 12A?",
+          "ja": "無ければ結構ですが、12Aの特別食は来ていますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "無い場合に乗務員が謝らずに済む言い方。"
+        }
       ]
     },
     {
-      "id": "airport-019", "category": "airport", "difficulty": 1,
-      "place": "At the airport", "listener": "an information officer",
+      "id": "airport-019",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At the airport",
+      "listener": "an information officer",
       "want": "You want to find the currency exchange.",
       "situationJa": "両替所を探している。",
-      "tags": ["asking", "directions"],
+      "tags": [
+        "asking",
+        "directions"
+      ],
       "answers": [
-        { "en": "Currency exchange?", "ja": "両替所は？", "register": "casual", "style": "oneword", "note": "紙幣を見せながら。短くても通じる。" },
-        { "en": "Where can I exchange money?", "ja": "どこで両替できますか。", "register": "neutral", "style": "basic", "note": "基本形。exchange money を丸ごと覚えたい。" },
-        { "en": "Is there a currency exchange in this terminal?", "ja": "このターミナルに両替所はありますか。", "register": "neutral", "style": "existence", "note": "無い場合に備えた聞き方。ATM を勧められることも。" },
-        { "en": "Could you tell me where the exchange counter is?", "ja": "両替カウンターの場所を教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。誰にでも使える。" },
-        { "en": "Would you happen to know where I could change some money?", "ja": "両替できる場所をご存じでしょうか。", "register": "formal", "style": "formal", "note": "change money も「両替する」。控えめで丁寧。" },
-        { "en": "Where do I swap my yen?", "ja": "円ってどこで替えられる？", "register": "casual", "style": "casual", "note": "swap は口語。気さくな相手に。" },
-        { "en": "Is there an ATM nearby instead?", "ja": "代わりに近くに ATM はありますか。", "register": "neutral", "style": "basic", "note": "レートは ATM のほうが有利なことが多い。実用的。" },
-        { "en": "What's the rate for yen to pounds?", "ja": "円からポンドへのレートはいくらですか。", "register": "neutral", "style": "vocab", "note": "rate は「為替レート」。両替前に必ず確認したい。" },
-        { "en": "I need some local cash for a taxi — where's the nearest exchange?", "ja": "タクシー用に現地通貨が必要なのですが、いちばん近い両替所はどこですか。", "register": "polite", "style": "context", "note": "用途を言うと、少額なら ATM を勧められるなど助言がもらえる。" },
-        { "en": "Sorry to bother you — do you know where I can change money?", "ja": "お邪魔してすみません、両替できる場所をご存じですか。", "register": "polite", "style": "considerate", "note": "知らない相手でも答えやすい形。" }
+        {
+          "en": "Currency exchange?",
+          "ja": "両替所は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "紙幣を見せながら。短くても通じる。"
+        },
+        {
+          "en": "Where can I exchange money?",
+          "ja": "どこで両替できますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。exchange money を丸ごと覚えたい。"
+        },
+        {
+          "en": "Is there a currency exchange in this terminal?",
+          "ja": "このターミナルに両替所はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "無い場合に備えた聞き方。ATM を勧められることも。"
+        },
+        {
+          "en": "Could you tell me where the exchange counter is?",
+          "ja": "両替カウンターの場所を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧な形。誰にでも使える。"
+        },
+        {
+          "en": "Would you happen to know where I could change some money?",
+          "ja": "両替できる場所をご存じでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "change money も「両替する」。控えめで丁寧。"
+        },
+        {
+          "en": "Where do I swap my yen?",
+          "ja": "円ってどこで替えられる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "swap は口語。気さくな相手に。"
+        },
+        {
+          "en": "Is there an ATM nearby instead?",
+          "ja": "代わりに近くに ATM はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "レートは ATM のほうが有利なことが多い。実用的。"
+        },
+        {
+          "en": "What's the rate for yen to pounds?",
+          "ja": "円からポンドへのレートはいくらですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "rate は「為替レート」。両替前に必ず確認したい。"
+        },
+        {
+          "en": "I need some local cash for a taxi — where's the nearest exchange?",
+          "ja": "タクシー用に現地通貨が必要なのですが、いちばん近い両替所はどこですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "用途を言うと、少額なら ATM を勧められるなど助言がもらえる。"
+        },
+        {
+          "en": "Sorry to bother you — do you know where I can change money?",
+          "ja": "お邪魔してすみません、両替できる場所をご存じですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "知らない相手でも答えやすい形。"
+        }
       ]
     },
     {
-      "id": "airport-020", "category": "airport", "difficulty": 2,
-      "place": "At the gate", "listener": "a gate agent",
+      "id": "airport-020",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At the gate",
+      "listener": "a gate agent",
       "want": "You want to board early because you are traveling with a small child.",
       "situationJa": "小さな子ども連れなので先に搭乗したい。",
-      "tags": ["requesting", "boarding"],
+      "tags": [
+        "requesting",
+        "boarding"
+      ],
       "answers": [
-        { "en": "Can we board early?", "ja": "先に搭乗できますか。", "register": "neutral", "style": "basic", "note": "基本形。子どもを見せながら言えば十分。" },
-        { "en": "Priority boarding?", "ja": "優先搭乗はできますか。", "register": "casual", "style": "oneword", "note": "priority boarding は「優先搭乗」。空港での定番語。" },
-        { "en": "Do you offer early boarding for families?", "ja": "家族連れの優先搭乗はありますか。", "register": "neutral", "style": "existence", "note": "制度の有無を確認する形。無くても気まずくない。" },
-        { "en": "Could we board early? We're traveling with a toddler.", "ja": "先に搭乗できますか。小さな子どもを連れています。", "register": "polite", "style": "request", "note": "理由を添えるのが最も効果的。toddler は「幼児」。" },
-        { "en": "Would it be possible to board ahead of the main group with a small child?", "ja": "小さな子ども連れですが、一般搭乗より先に搭乗させていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "ahead of 〜 は「〜より先に」。改まった言い方。" },
-        { "en": "Any chance we can get on first?", "ja": "先に乗せてもらえたりする？", "register": "casual", "style": "casual", "note": "控えめで気さくな依頼。" },
-        { "en": "We need extra time to get settled — could we board first?", "ja": "落ち着くのに時間がかかるので、先に搭乗できますか。", "register": "polite", "style": "context", "note": "get settled は「落ち着く」。必要性が具体的に伝わる。" },
-        { "en": "Is family boarding announced separately?", "ja": "家族連れの搭乗は別に案内されますか。", "register": "neutral", "style": "vocab", "note": "案内を聞き逃さないための確認。" },
-        { "en": "My daughter gets anxious in crowds — could we board before the rush?", "ja": "娘が人混みを怖がるので、混雑前に搭乗できますか。", "register": "polite", "style": "basic", "note": "具体的な事情は最も説得力がある。" },
-        { "en": "Only if it's allowed — could we board a little earlier?", "ja": "認められていればで構いませんが、少し早く搭乗できますか。", "register": "polite", "style": "considerate", "note": "規則に従う姿勢を示す。係員が判断しやすい。" }
+        {
+          "en": "Can we board early?",
+          "ja": "先に搭乗できますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。子どもを見せながら言えば十分。"
+        },
+        {
+          "en": "Priority boarding?",
+          "ja": "優先搭乗はできますか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "priority boarding は「優先搭乗」。空港での定番語。"
+        },
+        {
+          "en": "Do you offer early boarding for families?",
+          "ja": "家族連れの優先搭乗はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "制度の有無を確認する形。無くても気まずくない。"
+        },
+        {
+          "en": "Could we board early? We're traveling with a toddler.",
+          "ja": "先に搭乗できますか。小さな子どもを連れています。",
+          "register": "polite",
+          "style": "request",
+          "note": "理由を添えるのが最も効果的。toddler は「幼児」。"
+        },
+        {
+          "en": "Would it be possible to board ahead of the main group with a small child?",
+          "ja": "小さな子ども連れですが、一般搭乗より先に搭乗させていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "ahead of 〜 は「〜より先に」。改まった言い方。"
+        },
+        {
+          "en": "Any chance we can get on first?",
+          "ja": "先に乗せてもらえたりする？",
+          "register": "casual",
+          "style": "casual",
+          "note": "控えめで気さくな依頼。"
+        },
+        {
+          "en": "We need extra time to get settled — could we board first?",
+          "ja": "落ち着くのに時間がかかるので、先に搭乗できますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "get settled は「落ち着く」。必要性が具体的に伝わる。"
+        },
+        {
+          "en": "Is family boarding announced separately?",
+          "ja": "家族連れの搭乗は別に案内されますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "案内を聞き逃さないための確認。"
+        },
+        {
+          "en": "My daughter gets anxious in crowds — could we board before the rush?",
+          "ja": "娘が人混みを怖がるので、混雑前に搭乗できますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "具体的な事情は最も説得力がある。"
+        },
+        {
+          "en": "Only if it's allowed — could we board a little earlier?",
+          "ja": "認められていればで構いませんが、少し早く搭乗できますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "規則に従う姿勢を示す。係員が判断しやすい。"
+        }
       ]
     },
     {
-      "id": "airport-021", "category": "airport", "difficulty": 2,
-      "place": "On the plane", "listener": "the passenger in front of you",
+      "id": "airport-021",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "On the plane",
+      "listener": "the passenger in front of you",
       "want": "You want to ask them to raise their seat during the meal.",
       "situationJa": "食事の間、前の席の背もたれを起こしてほしい。",
-      "tags": ["requesting", "polite"],
+      "tags": [
+        "requesting",
+        "polite"
+      ],
       "answers": [
-        { "en": "Excuse me, could you raise your seat a little?", "ja": "すみません、背もたれを少し起こしていただけますか。", "register": "polite", "style": "request", "note": "a little を付けると要求が軽くなる。最も無難。" },
-        { "en": "Sorry, your seat is quite far back.", "ja": "すみません、背もたれがかなり倒れていまして。", "register": "neutral", "style": "oneword", "note": "事実を述べるだけ。相手が自分で気づける。" },
-        { "en": "Would you mind putting your seat up during the meal?", "ja": "食事の間、背もたれを起こしていただけますでしょうか。", "register": "polite", "style": "basic", "note": "期間を限定すると、相手が受け入れやすい。" },
-        { "en": "I'm sorry to bother you — I can't quite reach my tray.", "ja": "お邪魔してすみません、テーブルに手が届かなくて。", "register": "polite", "style": "context", "note": "困っている事実だけを伝える。責めずに済む。" },
-        { "en": "I do apologize, but would it be possible to bring your seat forward slightly?", "ja": "大変恐縮ですが、背もたれを少し前にしていただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "最も丁寧。相手が年配のときなどに。" },
-        { "en": "Hey, could you move up a bit?", "ja": "ねえ、少し起こしてもらえる？", "register": "casual", "style": "casual", "note": "気さくだが、初対面ではぶっきらぼうに響くこともある。" },
-        { "en": "Is there any way I could get a bit more room?", "ja": "もう少し空間を確保する方法はありますか。", "register": "neutral", "style": "existence", "note": "乗務員に相談するときにも使える。直接言いにくいときに。" },
-        { "en": "Could you put your seat back up for the meal service?", "ja": "食事サービスの間、背もたれを戻していただけますか。", "register": "polite", "style": "vocab", "note": "meal service という理由づけは正当性が高い。" },
-        { "en": "Sorry, I've got a tray of food here — could you come forward a little?", "ja": "すみません、食事が載っているもので、少し前にしていただけますか。", "register": "polite", "style": "basic", "note": "状況を見せながら言うと、すぐ理解してもらえる。" },
-        { "en": "No problem once the trays are cleared — just for now, if you don't mind.", "ja": "食事が下げられたら戻して構いません。今だけお願いできますか。", "register": "polite", "style": "considerate", "note": "相手の権利を尊重した言い方。もめにくい。" }
+        {
+          "en": "Excuse me, could you raise your seat a little?",
+          "ja": "すみません、背もたれを少し起こしていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "a little を付けると要求が軽くなる。最も無難。"
+        },
+        {
+          "en": "Sorry, your seat is quite far back.",
+          "ja": "すみません、背もたれがかなり倒れていまして。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "事実を述べるだけ。相手が自分で気づける。"
+        },
+        {
+          "en": "Would you mind putting your seat up during the meal?",
+          "ja": "食事の間、背もたれを起こしていただけますでしょうか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "期間を限定すると、相手が受け入れやすい。"
+        },
+        {
+          "en": "I'm sorry to bother you — I can't quite reach my tray.",
+          "ja": "お邪魔してすみません、テーブルに手が届かなくて。",
+          "register": "polite",
+          "style": "context",
+          "note": "困っている事実だけを伝える。責めずに済む。"
+        },
+        {
+          "en": "I do apologize, but would it be possible to bring your seat forward slightly?",
+          "ja": "大変恐縮ですが、背もたれを少し前にしていただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "最も丁寧。相手が年配のときなどに。"
+        },
+        {
+          "en": "Hey, could you move up a bit?",
+          "ja": "ねえ、少し起こしてもらえる？",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくだが、初対面ではぶっきらぼうに響くこともある。"
+        },
+        {
+          "en": "Is there any way I could get a bit more room?",
+          "ja": "もう少し空間を確保する方法はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "乗務員に相談するときにも使える。直接言いにくいときに。"
+        },
+        {
+          "en": "Could you put your seat back up for the meal service?",
+          "ja": "食事サービスの間、背もたれを戻していただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "meal service という理由づけは正当性が高い。"
+        },
+        {
+          "en": "Sorry, I've got a tray of food here — could you come forward a little?",
+          "ja": "すみません、食事が載っているもので、少し前にしていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "状況を見せながら言うと、すぐ理解してもらえる。"
+        },
+        {
+          "en": "No problem once the trays are cleared — just for now, if you don't mind.",
+          "ja": "食事が下げられたら戻して構いません。今だけお願いできますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の権利を尊重した言い方。もめにくい。"
+        }
       ]
     },
     {
-      "id": "airport-022", "category": "airport", "difficulty": 3,
-      "place": "At an airline desk", "listener": "an airline agent",
+      "id": "airport-022",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At an airline desk",
+      "listener": "an airline agent",
       "want": "You want to ask for compensation for a long delay.",
       "situationJa": "長時間の遅延に対する補償について聞きたい。",
-      "tags": ["requesting", "compensation"],
+      "tags": [
+        "requesting",
+        "compensation"
+      ],
       "answers": [
-        { "en": "Is there compensation for this?", "ja": "これに対する補償はありますか。", "register": "neutral", "style": "existence", "note": "まず制度の有無を確認する。角が立たない切り出し。" },
-        { "en": "Am I entitled to compensation?", "ja": "補償を受ける権利はありますか。", "register": "neutral", "style": "basic", "note": "be entitled to 〜 は「〜の権利がある」。正確な言い方。" },
-        { "en": "What are my options here?", "ja": "どのような選択肢がありますか。", "register": "neutral", "style": "oneword", "note": "補償に限らず提案を引き出せる。柔軟な聞き方。" },
-        { "en": "Could you tell me what the airline offers for a delay of this length?", "ja": "この長さの遅延に対して、航空会社は何を提供されますか。", "register": "polite", "style": "request", "note": "会社の規定を尋ねる形。事務的で通りやすい。" },
-        { "en": "I'd like to enquire about compensation under EU261, if applicable.", "ja": "該当するようでしたら、EU261 に基づく補償について伺いたいのですが。", "register": "formal", "style": "formal", "note": "欧州便では EU261 が根拠になる。知っていると交渉が早い。" },
-        { "en": "Do we get anything for this?", "ja": "これって何か出るんですか。", "register": "casual", "style": "casual", "note": "率直な口語。相手を選ぶので口調に注意。" },
-        { "en": "Are meal vouchers provided?", "ja": "食事券は支給されますか。", "register": "neutral", "style": "vocab", "note": "meal voucher は「食事券」。まず出るのはこれ。" },
-        { "en": "Will accommodation be arranged if we're delayed overnight?", "ja": "一晩の遅延になる場合、宿泊は手配されますか。", "register": "neutral", "style": "basic", "note": "accommodation は「宿泊施設」。長時間遅延では重要。" },
-        { "en": "We've been here six hours and I've missed a paid booking — what can be done?", "ja": "6時間待っており、有料の予約も無駄になりました。何か対応いただけますか。", "register": "polite", "style": "context", "note": "実損を具体的に述べる。交渉の説得力が上がる。" },
-        { "en": "I know this isn't your fault — could you tell me the process for claiming?", "ja": "あなたの責任ではないと承知しています。申請の手順を教えていただけますか。", "register": "polite", "style": "considerate", "note": "係員を責めない。結果的にいちばん協力してもらえる。" }
+        {
+          "en": "Is there compensation for this?",
+          "ja": "これに対する補償はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "まず制度の有無を確認する。角が立たない切り出し。"
+        },
+        {
+          "en": "Am I entitled to compensation?",
+          "ja": "補償を受ける権利はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "be entitled to 〜 は「〜の権利がある」。正確な言い方。"
+        },
+        {
+          "en": "What are my options here?",
+          "ja": "どのような選択肢がありますか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "補償に限らず提案を引き出せる。柔軟な聞き方。"
+        },
+        {
+          "en": "Could you tell me what the airline offers for a delay of this length?",
+          "ja": "この長さの遅延に対して、航空会社は何を提供されますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "会社の規定を尋ねる形。事務的で通りやすい。"
+        },
+        {
+          "en": "I'd like to enquire about compensation under EU261, if applicable.",
+          "ja": "該当するようでしたら、EU261 に基づく補償について伺いたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "欧州便では EU261 が根拠になる。知っていると交渉が早い。"
+        },
+        {
+          "en": "Do we get anything for this?",
+          "ja": "これって何か出るんですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な口語。相手を選ぶので口調に注意。"
+        },
+        {
+          "en": "Are meal vouchers provided?",
+          "ja": "食事券は支給されますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "meal voucher は「食事券」。まず出るのはこれ。"
+        },
+        {
+          "en": "Will accommodation be arranged if we're delayed overnight?",
+          "ja": "一晩の遅延になる場合、宿泊は手配されますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "accommodation は「宿泊施設」。長時間遅延では重要。"
+        },
+        {
+          "en": "We've been here six hours and I've missed a paid booking — what can be done?",
+          "ja": "6時間待っており、有料の予約も無駄になりました。何か対応いただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "実損を具体的に述べる。交渉の説得力が上がる。"
+        },
+        {
+          "en": "I know this isn't your fault — could you tell me the process for claiming?",
+          "ja": "あなたの責任ではないと承知しています。申請の手順を教えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "係員を責めない。結果的にいちばん協力してもらえる。"
+        }
       ]
     },
     {
-      "id": "airport-023", "category": "airport", "difficulty": 1,
-      "place": "At the airport", "listener": "an information officer",
+      "id": "airport-023",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 1,
+      "place": "At the airport",
+      "listener": "an information officer",
       "want": "You want to find a place to leave your luggage for the day.",
       "situationJa": "1日荷物を預けられる場所を探している。",
-      "tags": ["asking", "facilities"],
+      "tags": [
+        "asking",
+        "facilities"
+      ],
       "answers": [
-        { "en": "Luggage storage?", "ja": "荷物預かり所は？", "register": "casual", "style": "oneword", "note": "スーツケースを指しながら。短くても通じる。" },
-        { "en": "Where can I leave my luggage?", "ja": "どこに荷物を預けられますか。", "register": "neutral", "style": "basic", "note": "基本形。leave は「置いておく」。" },
-        { "en": "Is there a luggage storage service here?", "ja": "こちらに荷物預かりのサービスはありますか。", "register": "neutral", "style": "existence", "note": "無い空港もある。この形なら気まずくない。" },
-        { "en": "Could you tell me where the left luggage office is?", "ja": "手荷物一時預かり所の場所を教えていただけますか。", "register": "polite", "style": "request", "note": "left luggage は英国式の「一時預かり」。" },
-        { "en": "Would you happen to know whether there are lockers available?", "ja": "コインロッカーがあるかご存じでしょうか。", "register": "formal", "style": "formal", "note": "locker は「ロッカー」。安く済むことが多い。" },
-        { "en": "Anywhere I can dump my bags?", "ja": "荷物を置ける場所ある？", "register": "casual", "style": "casual", "note": "dump は口語で「置く」。かなりくだけた言い方。" },
-        { "en": "How much does it cost per day?", "ja": "1日いくらかかりますか。", "register": "neutral", "style": "basic", "note": "料金を先に確認する。判断が速い。" },
-        { "en": "Until what time is it open?", "ja": "何時まで開いていますか。", "register": "neutral", "style": "vocab", "note": "受取時刻に間に合わないと大変。必ず確認したい。" },
-        { "en": "I have a nine-hour layover and want to see the city — where can I store my bags?", "ja": "9時間の乗り継ぎ時間があり街を見たいのですが、荷物はどこに預けられますか。", "register": "polite", "style": "context", "note": "layover は「乗り継ぎ待ち時間」。事情が明確に伝わる。" },
-        { "en": "Sorry to trouble you — is there somewhere I could leave a suitcase?", "ja": "お手数ですが、スーツケースを預けられる場所はありますか。", "register": "polite", "style": "considerate", "note": "丁寧な切り出し。誰にでも聞ける。" }
+        {
+          "en": "Luggage storage?",
+          "ja": "荷物預かり所は？",
+          "register": "casual",
+          "style": "oneword",
+          "note": "スーツケースを指しながら。短くても通じる。"
+        },
+        {
+          "en": "Where can I leave my luggage?",
+          "ja": "どこに荷物を預けられますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "基本形。leave は「置いておく」。"
+        },
+        {
+          "en": "Is there a luggage storage service here?",
+          "ja": "こちらに荷物預かりのサービスはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "無い空港もある。この形なら気まずくない。"
+        },
+        {
+          "en": "Could you tell me where the left luggage office is?",
+          "ja": "手荷物一時預かり所の場所を教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "left luggage は英国式の「一時預かり」。"
+        },
+        {
+          "en": "Would you happen to know whether there are lockers available?",
+          "ja": "コインロッカーがあるかご存じでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "locker は「ロッカー」。安く済むことが多い。"
+        },
+        {
+          "en": "Anywhere I can dump my bags?",
+          "ja": "荷物を置ける場所ある？",
+          "register": "casual",
+          "style": "casual",
+          "note": "dump は口語で「置く」。かなりくだけた言い方。"
+        },
+        {
+          "en": "How much does it cost per day?",
+          "ja": "1日いくらかかりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "料金を先に確認する。判断が速い。"
+        },
+        {
+          "en": "Until what time is it open?",
+          "ja": "何時まで開いていますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "受取時刻に間に合わないと大変。必ず確認したい。"
+        },
+        {
+          "en": "I have a nine-hour layover and want to see the city — where can I store my bags?",
+          "ja": "9時間の乗り継ぎ時間があり街を見たいのですが、荷物はどこに預けられますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "layover は「乗り継ぎ待ち時間」。事情が明確に伝わる。"
+        },
+        {
+          "en": "Sorry to trouble you — is there somewhere I could leave a suitcase?",
+          "ja": "お手数ですが、スーツケースを預けられる場所はありますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "丁寧な切り出し。誰にでも聞ける。"
+        }
       ]
     },
     {
-      "id": "airport-024", "category": "airport", "difficulty": 2,
-      "place": "At customs", "listener": "a customs officer",
+      "id": "airport-024",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At customs",
+      "listener": "a customs officer",
       "want": "You want to declare the gifts you are carrying.",
       "situationJa": "税関で持っている土産を申告したい。",
-      "tags": ["declaring", "customs"],
+      "tags": [
+        "declaring",
+        "customs"
+      ],
       "answers": [
-        { "en": "I have something to declare.", "ja": "申告するものがあります。", "register": "neutral", "style": "basic", "note": "税関での定番。まずこれが言えれば十分。" },
-        { "en": "Gifts to declare.", "ja": "土産を申告します。", "register": "casual", "style": "oneword", "note": "短いが伝わる。書類を見せながら。" },
-        { "en": "I'm carrying some gifts. Should I declare them?", "ja": "土産を持っています。申告が必要ですか。", "register": "neutral", "style": "basic", "note": "判断を委ねる形。誠実な印象になる。" },
-        { "en": "Could you tell me whether these need to be declared?", "ja": "これらを申告する必要があるか教えていただけますか。", "register": "polite", "style": "request", "note": "分からないときは正直に聞くのがいちばん安全。" },
-        { "en": "I'd like to declare some items I purchased abroad.", "ja": "海外で購入した品物を申告したいのですが。", "register": "formal", "style": "formal", "note": "purchase abroad は「海外で購入する」。改まった言い方。" },
-        { "en": "Just some presents for family.", "ja": "家族への土産だけです。", "register": "casual", "style": "casual", "note": "中身を聞かれたときの自然な返答。" },
-        { "en": "Is there a limit on the value of gifts?", "ja": "土産の金額に上限はありますか。", "register": "neutral", "style": "existence", "note": "免税枠を確認する。超えると課税される。" },
-        { "en": "These are two bottles of wine and some chocolates.", "ja": "ワイン2本とチョコレートです。", "register": "neutral", "style": "vocab", "note": "中身を具体的に。隠さないのが最も安全。" },
-        { "en": "I bought these in Dubai for about a hundred pounds in total.", "ja": "ドバイで合計100ポンドほどで購入しました。", "register": "polite", "style": "context", "note": "購入地と金額を先に言うと、審査が速い。" },
-        { "en": "I wasn't sure of the rules, so I'd rather declare everything.", "ja": "規則が分からなかったので、すべて申告しておきたいです。", "register": "polite", "style": "considerate", "note": "正直な姿勢が最も信頼される。トラブルを避ける最善策。" }
+        {
+          "en": "I have something to declare.",
+          "ja": "申告するものがあります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "税関での定番。まずこれが言えれば十分。"
+        },
+        {
+          "en": "Gifts to declare.",
+          "ja": "土産を申告します。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "短いが伝わる。書類を見せながら。"
+        },
+        {
+          "en": "I'm carrying some gifts. Should I declare them?",
+          "ja": "土産を持っています。申告が必要ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "判断を委ねる形。誠実な印象になる。"
+        },
+        {
+          "en": "Could you tell me whether these need to be declared?",
+          "ja": "これらを申告する必要があるか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "分からないときは正直に聞くのがいちばん安全。"
+        },
+        {
+          "en": "I'd like to declare some items I purchased abroad.",
+          "ja": "海外で購入した品物を申告したいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "purchase abroad は「海外で購入する」。改まった言い方。"
+        },
+        {
+          "en": "Just some presents for family.",
+          "ja": "家族への土産だけです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "中身を聞かれたときの自然な返答。"
+        },
+        {
+          "en": "Is there a limit on the value of gifts?",
+          "ja": "土産の金額に上限はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "免税枠を確認する。超えると課税される。"
+        },
+        {
+          "en": "These are two bottles of wine and some chocolates.",
+          "ja": "ワイン2本とチョコレートです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "中身を具体的に。隠さないのが最も安全。"
+        },
+        {
+          "en": "I bought these in Dubai for about a hundred pounds in total.",
+          "ja": "ドバイで合計100ポンドほどで購入しました。",
+          "register": "polite",
+          "style": "context",
+          "note": "購入地と金額を先に言うと、審査が速い。"
+        },
+        {
+          "en": "I wasn't sure of the rules, so I'd rather declare everything.",
+          "ja": "規則が分からなかったので、すべて申告しておきたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "正直な姿勢が最も信頼される。トラブルを避ける最善策。"
+        }
       ]
     },
     {
-      "id": "airport-025", "category": "airport", "difficulty": 2,
-      "place": "At the airport", "listener": "a staff member",
+      "id": "airport-025",
+      "category": "airport",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At the airport",
+      "listener": "a staff member",
       "want": "You want to ask for a wheelchair for your parent.",
       "situationJa": "親のために車椅子を手配してほしい。",
-      "tags": ["requesting", "assistance"],
+      "tags": [
+        "requesting",
+        "assistance"
+      ],
       "answers": [
-        { "en": "Wheelchair, please.", "ja": "車椅子をお願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。急いでいるときに。" },
-        { "en": "Could we get a wheelchair?", "ja": "車椅子をお願いできますか。", "register": "polite", "style": "request", "note": "基本形。丁寧で使いやすい。" },
-        { "en": "My mother needs a wheelchair.", "ja": "母に車椅子が必要です。", "register": "neutral", "style": "basic", "note": "誰のためかを明示。手配が速い。" },
-        { "en": "Is wheelchair assistance available?", "ja": "車椅子の介助サービスはありますか。", "register": "neutral", "style": "existence", "note": "wheelchair assistance は空港の正式なサービス名。" },
-        { "en": "Would it be possible to arrange wheelchair assistance to the gate?", "ja": "ゲートまでの車椅子介助を手配していただくことは可能でしょうか。", "register": "formal", "style": "formal", "note": "行き先まで指定すると、確実に手配される。" },
-        { "en": "Can someone help my mum get to the gate?", "ja": "母がゲートまで行くのを手伝ってもらえますか。", "register": "casual", "style": "casual", "note": "mum は英国式。親しみのある言い方。" },
-        { "en": "She can walk short distances but not far — what can be arranged?", "ja": "短い距離なら歩けますが長くは無理です。どのような手配が可能でしょうか。", "register": "polite", "style": "context", "note": "状態を具体的に伝えると、適切な支援が受けられる。" },
-        { "en": "Do we need to have requested this in advance?", "ja": "事前に申し込んでおく必要がありましたか。", "register": "neutral", "style": "vocab", "note": "in advance は「事前に」。次回のためにも確認したい。" },
-        { "en": "We have a connection in Dubai — could assistance be arranged there too?", "ja": "ドバイで乗り継ぎがあるのですが、そちらでも介助を手配できますか。", "register": "polite", "style": "basic", "note": "乗り継ぎ先まで手配できる。忘れずに頼みたい。" },
-        { "en": "Thank you — I know it takes time to arrange, and we're not in a hurry.", "ja": "ありがとうございます。手配に時間がかかるのは承知していますので、急ぎません。", "register": "polite", "style": "considerate", "note": "待つ姿勢を示すと、スタッフの負担が減る。" }
+        {
+          "en": "Wheelchair, please.",
+          "ja": "車椅子をお願いします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "短くて確実。急いでいるときに。"
+        },
+        {
+          "en": "Could we get a wheelchair?",
+          "ja": "車椅子をお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "基本形。丁寧で使いやすい。"
+        },
+        {
+          "en": "My mother needs a wheelchair.",
+          "ja": "母に車椅子が必要です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "誰のためかを明示。手配が速い。"
+        },
+        {
+          "en": "Is wheelchair assistance available?",
+          "ja": "車椅子の介助サービスはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "wheelchair assistance は空港の正式なサービス名。"
+        },
+        {
+          "en": "Would it be possible to arrange wheelchair assistance to the gate?",
+          "ja": "ゲートまでの車椅子介助を手配していただくことは可能でしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "行き先まで指定すると、確実に手配される。"
+        },
+        {
+          "en": "Can someone help my mum get to the gate?",
+          "ja": "母がゲートまで行くのを手伝ってもらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "mum は英国式。親しみのある言い方。"
+        },
+        {
+          "en": "She can walk short distances but not far — what can be arranged?",
+          "ja": "短い距離なら歩けますが長くは無理です。どのような手配が可能でしょうか。",
+          "register": "polite",
+          "style": "context",
+          "note": "状態を具体的に伝えると、適切な支援が受けられる。"
+        },
+        {
+          "en": "Do we need to have requested this in advance?",
+          "ja": "事前に申し込んでおく必要がありましたか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "in advance は「事前に」。次回のためにも確認したい。"
+        },
+        {
+          "en": "We have a connection in Dubai — could assistance be arranged there too?",
+          "ja": "ドバイで乗り継ぎがあるのですが、そちらでも介助を手配できますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "乗り継ぎ先まで手配できる。忘れずに頼みたい。"
+        },
+        {
+          "en": "Thank you — I know it takes time to arrange, and we're not in a hurry.",
+          "ja": "ありがとうございます。手配に時間がかかるのは承知していますので、急ぎません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "待つ姿勢を示すと、スタッフの負担が減る。"
+        }
       ]
     }
   ]

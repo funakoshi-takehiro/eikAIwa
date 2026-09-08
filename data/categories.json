@@ -1,18 +1,190 @@
 {
-  "version": 1,
+  "version": 2,
+  "levels": [
+    {
+      "level": 1,
+      "stars": "★",
+      "nameJa": "ひとことで",
+      "descJa": "用件をひとことで伝える。まずここから。",
+      "sentences": "1文",
+      "min": 1,
+      "max": 2
+    },
+    {
+      "level": 2,
+      "stars": "★★",
+      "nameJa": "2文で",
+      "descJa": "事情を添えて頼む。用件だけでは足りない場面。",
+      "sentences": "2文",
+      "min": 2,
+      "max": 2
+    },
+    {
+      "level": 3,
+      "stars": "★★★",
+      "nameJa": "3文以上で",
+      "descJa": "説明・交渉・提案まで、まとめて組み立てる。",
+      "sentences": "3〜5文",
+      "min": 3,
+      "max": 5
+    }
+  ],
   "categories": [
-    { "id": "airport",    "nameJa": "空港・機内",           "nameEn": "Airport & Flight",   "icon": "plane",  "count": 25, "descJa": "チェックイン、保安検査、乗り継ぎ、機内での頼みごと。" },
-    { "id": "transport",  "nameJa": "交通・移動",           "nameEn": "Getting Around",     "icon": "train",  "count": 25, "descJa": "駅、切符、バス、タクシー。乗り間違えたときの立て直しまで。" },
-    { "id": "hotel",      "nameJa": "ホテル・宿泊",         "nameEn": "Hotel & Stay",       "icon": "bed",    "count": 25, "descJa": "チェックイン、部屋の不具合、延泊、荷物預け。" },
-    { "id": "restaurant", "nameJa": "レストラン・カフェ",   "nameEn": "Eating Out",         "icon": "food",   "count": 30, "descJa": "注文、アレルギー、取り分け、会計。カフェでの一言も。" },
-    { "id": "shopping",   "nameJa": "買い物・支払い",       "nameEn": "Shopping",           "icon": "bag",    "count": 25, "descJa": "試着、サイズ、値段、返品交換、支払い方法。" },
-    { "id": "directions", "nameJa": "道案内・場所",         "nameEn": "Directions",         "icon": "map",    "count": 20, "descJa": "道をたずねる、道を教える、迷ったときの助けの求め方。" },
-    { "id": "health",     "nameJa": "体調・病院・薬局",     "nameEn": "Health",             "icon": "health", "count": 20, "descJa": "症状を伝える、薬を買う、予約を取る。" },
-    { "id": "workplace",  "nameJa": "職場・同僚との会話",   "nameEn": "At Work",            "icon": "office", "count": 30, "descJa": "依頼、相談、断り方、報告、雑談。日々のやりとり。" },
-    { "id": "meeting",    "nameJa": "会議・電話・オンライン","nameEn": "Meetings & Calls",   "icon": "call",   "count": 20, "descJa": "発言を割り込む、聞き返す、確認する、まとめる。" },
-    { "id": "school",     "nameJa": "学校・学習",           "nameEn": "School & Learning",  "icon": "school", "count": 15, "descJa": "質問する、わからないと言う、締切の相談。" },
-    { "id": "smalltalk",  "nameJa": "友人・雑談",           "nameEn": "Small Talk",         "icon": "chat",   "count": 30, "descJa": "初対面、天気、週末の話、誘う・断る、褒める。" },
-    { "id": "services",   "nameJa": "生活サービス",         "nameEn": "Everyday Services",  "icon": "life",   "count": 20, "descJa": "銀行、郵便、美容院、宅配、携帯の契約。" },
-    { "id": "trouble",    "nameJa": "緊急・トラブル",       "nameEn": "Trouble & Emergency","icon": "alert",  "count": 15, "descJa": "紛失、盗難、事故、体調急変。助けを求める言い方。" }
+    {
+      "id": "airport",
+      "nameJa": "空港・機内",
+      "nameEn": "Airport & Flight",
+      "icon": "plane",
+      "counts": {
+        "1": 25,
+        "2": 25,
+        "3": 25
+      },
+      "descJa": "チェックイン、保安検査、乗り継ぎ、機内での頼みごと。"
+    },
+    {
+      "id": "transport",
+      "nameJa": "交通・移動",
+      "nameEn": "Getting Around",
+      "icon": "train",
+      "counts": {
+        "1": 25,
+        "2": 25,
+        "3": 25
+      },
+      "descJa": "駅、切符、バス、タクシー。乗り間違えたときの立て直しまで。"
+    },
+    {
+      "id": "hotel",
+      "nameJa": "ホテル・宿泊",
+      "nameEn": "Hotel & Stay",
+      "icon": "bed",
+      "counts": {
+        "1": 25,
+        "2": 25,
+        "3": 25
+      },
+      "descJa": "チェックイン、部屋の不具合、延泊、荷物預け。"
+    },
+    {
+      "id": "restaurant",
+      "nameJa": "レストラン・カフェ",
+      "nameEn": "Eating Out",
+      "icon": "food",
+      "counts": {
+        "1": 30,
+        "2": 30,
+        "3": 30
+      },
+      "descJa": "注文、アレルギー、取り分け、会計。カフェでの一言も。"
+    },
+    {
+      "id": "shopping",
+      "nameJa": "買い物・支払い",
+      "nameEn": "Shopping",
+      "icon": "bag",
+      "counts": {
+        "1": 25,
+        "2": 25,
+        "3": 25
+      },
+      "descJa": "試着、サイズ、値段、返品交換、支払い方法。"
+    },
+    {
+      "id": "directions",
+      "nameJa": "道案内・場所",
+      "nameEn": "Directions",
+      "icon": "map",
+      "counts": {
+        "1": 20,
+        "2": 20,
+        "3": 20
+      },
+      "descJa": "道をたずねる、道を教える、迷ったときの助けの求め方。"
+    },
+    {
+      "id": "health",
+      "nameJa": "体調・病院・薬局",
+      "nameEn": "Health",
+      "icon": "health",
+      "counts": {
+        "1": 20,
+        "2": 20,
+        "3": 20
+      },
+      "descJa": "症状を伝える、薬を買う、予約を取る。"
+    },
+    {
+      "id": "workplace",
+      "nameJa": "職場・同僚との会話",
+      "nameEn": "At Work",
+      "icon": "office",
+      "counts": {
+        "1": 30,
+        "2": 30,
+        "3": 30
+      },
+      "descJa": "依頼、相談、断り方、報告、雑談。日々のやりとり。"
+    },
+    {
+      "id": "meeting",
+      "nameJa": "会議・電話・オンライン",
+      "nameEn": "Meetings & Calls",
+      "icon": "call",
+      "counts": {
+        "1": 20,
+        "2": 20,
+        "3": 20
+      },
+      "descJa": "発言を割り込む、聞き返す、確認する、まとめる。"
+    },
+    {
+      "id": "school",
+      "nameJa": "学校・学習",
+      "nameEn": "School & Learning",
+      "icon": "school",
+      "counts": {
+        "1": 15,
+        "2": 15,
+        "3": 15
+      },
+      "descJa": "質問する、わからないと言う、締切の相談。"
+    },
+    {
+      "id": "smalltalk",
+      "nameJa": "友人・雑談",
+      "nameEn": "Small Talk",
+      "icon": "chat",
+      "counts": {
+        "1": 30,
+        "2": 30,
+        "3": 30
+      },
+      "descJa": "初対面、天気、週末の話、誘う・断る、褒める。"
+    },
+    {
+      "id": "services",
+      "nameJa": "生活サービス",
+      "nameEn": "Everyday Services",
+      "icon": "life",
+      "counts": {
+        "1": 20,
+        "2": 20,
+        "3": 20
+      },
+      "descJa": "銀行、郵便、美容院、宅配、携帯の契約。"
+    },
+    {
+      "id": "trouble",
+      "nameJa": "緊急・トラブル",
+      "nameEn": "Trouble & Emergency",
+      "icon": "alert",
+      "counts": {
+        "1": 15,
+        "2": 15,
+        "3": 15
+      },
+      "descJa": "紛失、盗難、事故、体調急変。助けを求める言い方。"
+    }
   ]
 }

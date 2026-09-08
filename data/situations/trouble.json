@@ -2,288 +2,1291 @@
   "category": "trouble",
   "situations": [
     {
-      "id": "trouble-001", "category": "trouble", "difficulty": 2,
-      "place": "At a police station", "listener": "a police officer",
+      "id": "trouble-001",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a police station",
+      "listener": "a police officer",
       "want": "You want to report that your wallet was stolen.",
       "situationJa": "財布を盗まれたと届け出たい。",
-      "tags": ["reporting", "theft"],
+      "tags": [
+        "reporting",
+        "theft"
+      ],
       "answers": [
-        { "en": "My wallet was stolen.", "ja": "財布を盗まれました。", "register": "neutral", "style": "basic", "note": "最重要の一文。落ち着いて言えるようにしたい。" },
-        { "en": "Stolen wallet.", "ja": "財布の盗難です。", "register": "casual", "style": "oneword", "note": "動転していても言える。窓口では通じる。" },
-        { "en": "I'd like to report a theft.", "ja": "盗難を届け出たいのですが。", "register": "neutral", "style": "basic", "note": "theft は「窃盗」。正式な届出の言い方。" },
-        { "en": "Could you help me? My wallet has been stolen.", "ja": "助けていただけますか。財布を盗まれました。", "register": "polite", "style": "request", "note": "助けを求めてから状況を言う。落ち着いて話せる。" },
-        { "en": "I wish to report the theft of my wallet, which occurred this afternoon.", "ja": "本日午後に発生した財布の盗難を届け出たく存じます。", "register": "formal", "style": "formal", "note": "occur は「発生する」。正式な届出に適した表現。" },
-        { "en": "Someone took my wallet.", "ja": "誰かに財布を取られました。", "register": "casual", "style": "casual", "note": "率直な口語。状況が伝わる。" },
-        { "en": "Is there a form I need to fill in?", "ja": "記入すべき用紙はありますか。", "register": "neutral", "style": "existence", "note": "保険請求には届出書類が必要。必ず確認したい。" },
-        { "en": "I need a crime reference number for my insurance.", "ja": "保険用に受理番号が必要です。", "register": "neutral", "style": "vocab", "note": "crime reference number は英国での「受理番号」。保険に必須。" },
-        { "en": "It happened on the train around three, between Oxford and Reading.", "ja": "3時ごろ、オックスフォードとレディングの間の電車で起きました。", "register": "polite", "style": "context", "note": "時刻と場所を具体的に。捜査と保険の両方に必要。" },
-        { "en": "I know it's unlikely to be found — but I need it on record.", "ja": "見つかる見込みは薄いと思いますが、記録に残す必要があります。", "register": "polite", "style": "considerate", "note": "現実的な期待を示す。手続きが円滑に進む。" }
+        {
+          "en": "My wallet was stolen.",
+          "ja": "財布を盗まれました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最重要の一文。落ち着いて言えるようにしたい。"
+        },
+        {
+          "en": "Stolen wallet.",
+          "ja": "財布の盗難です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "動転していても言える。窓口では通じる。"
+        },
+        {
+          "en": "I'd like to report a theft.",
+          "ja": "盗難を届け出たいのですが。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "theft は「窃盗」。正式な届出の言い方。"
+        },
+        {
+          "en": "Could you help me? My wallet has been stolen.",
+          "ja": "助けていただけますか。財布を盗まれました。",
+          "register": "polite",
+          "style": "request",
+          "note": "助けを求めてから状況を言う。落ち着いて話せる。"
+        },
+        {
+          "en": "I wish to report the theft of my wallet, which occurred this afternoon.",
+          "ja": "本日午後に発生した財布の盗難を届け出たく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "occur は「発生する」。正式な届出に適した表現。"
+        },
+        {
+          "en": "Someone took my wallet.",
+          "ja": "誰かに財布を取られました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な口語。状況が伝わる。"
+        },
+        {
+          "en": "Is there a form I need to fill in?",
+          "ja": "記入すべき用紙はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "保険請求には届出書類が必要。必ず確認したい。"
+        },
+        {
+          "en": "I need a crime reference number for my insurance.",
+          "ja": "保険用に受理番号が必要です。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "crime reference number は英国での「受理番号」。保険に必須。"
+        },
+        {
+          "en": "It happened on the train around three, between Oxford and Reading.",
+          "ja": "3時ごろ、オックスフォードとレディングの間の電車で起きました。",
+          "register": "polite",
+          "style": "context",
+          "note": "時刻と場所を具体的に。捜査と保険の両方に必要。"
+        },
+        {
+          "en": "I know it's unlikely to be found — but I need it on record.",
+          "ja": "見つかる見込みは薄いと思いますが、記録に残す必要があります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "現実的な期待を示す。手続きが円滑に進む。"
+        }
       ]
     },
     {
-      "id": "trouble-002", "category": "trouble", "difficulty": 3,
-      "place": "On the street", "listener": "a passer-by",
+      "id": "trouble-002",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 3,
+      "place": "On the street",
+      "listener": "a passer-by",
       "want": "You want to ask for help in an emergency.",
       "situationJa": "緊急時に助けを求めたい。",
-      "tags": ["emergency"],
+      "tags": [
+        "emergency"
+      ],
       "answers": [
-        { "en": "Help!", "ja": "助けて！", "register": "casual", "style": "oneword", "note": "最短。緊急時に確実に声が出る一語。" },
-        { "en": "I need help.", "ja": "助けが必要です。", "register": "neutral", "style": "basic", "note": "落ち着いて助けを求める形。" },
-        { "en": "Please call an ambulance.", "ja": "救急車を呼んでください。", "register": "neutral", "style": "basic", "note": "具体的に何をしてほしいか言う。最も有効。" },
-        { "en": "Could you call the police, please?", "ja": "警察を呼んでいただけますか。", "register": "polite", "style": "request", "note": "特定の人に頼むと動いてもらいやすい。" },
-        { "en": "I require urgent assistance — could you telephone for help?", "ja": "緊急の支援が必要です。助けを呼んでいただけますか。", "register": "formal", "style": "formal", "note": "urgent assistance は「緊急の支援」。改まった状況で。" },
-        { "en": "Somebody help, please!", "ja": "誰か助けてください！", "register": "casual", "style": "casual", "note": "周囲に呼びかける。人が多い場所で有効。" },
-        { "en": "Is there a doctor here?", "ja": "この中にお医者さんはいますか。", "register": "neutral", "style": "existence", "note": "医療が必要なときの定番。実際に助かることがある。" },
-        { "en": "You in the blue jacket — could you call 999?", "ja": "青い上着の方、999に電話していただけますか。", "register": "neutral", "style": "vocab", "note": "特定の人を指名する。傍観者効果を避けられる。" },
-        { "en": "My friend has collapsed and isn't responding — please call for help.", "ja": "友人が倒れて反応がありません。助けを呼んでください。", "register": "polite", "style": "context", "note": "状況を簡潔に。相手が的確に動ける。" },
-        { "en": "I'm sorry to grab you — but I need help right now.", "ja": "急に呼び止めてすみません。今すぐ助けが必要です。", "register": "polite", "style": "considerate", "note": "緊急時でも一言添えると相手が身構えない。" }
+        {
+          "en": "Help!",
+          "ja": "助けて！",
+          "register": "casual",
+          "style": "oneword",
+          "note": "最短。緊急時に確実に声が出る一語。"
+        },
+        {
+          "en": "I need help.",
+          "ja": "助けが必要です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "落ち着いて助けを求める形。"
+        },
+        {
+          "en": "Please call an ambulance.",
+          "ja": "救急車を呼んでください。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "具体的に何をしてほしいか言う。最も有効。"
+        },
+        {
+          "en": "Could you call the police, please?",
+          "ja": "警察を呼んでいただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "特定の人に頼むと動いてもらいやすい。"
+        },
+        {
+          "en": "I require urgent assistance — could you telephone for help?",
+          "ja": "緊急の支援が必要です。助けを呼んでいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "urgent assistance は「緊急の支援」。改まった状況で。"
+        },
+        {
+          "en": "Somebody help, please!",
+          "ja": "誰か助けてください！",
+          "register": "casual",
+          "style": "casual",
+          "note": "周囲に呼びかける。人が多い場所で有効。"
+        },
+        {
+          "en": "Is there a doctor here?",
+          "ja": "この中にお医者さんはいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "医療が必要なときの定番。実際に助かることがある。"
+        },
+        {
+          "en": "You in the blue jacket — could you call 999?",
+          "ja": "青い上着の方、999に電話していただけますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "特定の人を指名する。傍観者効果を避けられる。"
+        },
+        {
+          "en": "My friend has collapsed and isn't responding — please call for help.",
+          "ja": "友人が倒れて反応がありません。助けを呼んでください。",
+          "register": "polite",
+          "style": "context",
+          "note": "状況を簡潔に。相手が的確に動ける。"
+        },
+        {
+          "en": "I'm sorry to grab you — but I need help right now.",
+          "ja": "急に呼び止めてすみません。今すぐ助けが必要です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "緊急時でも一言添えると相手が身構えない。"
+        }
       ]
     },
     {
-      "id": "trouble-003", "category": "trouble", "difficulty": 2,
-      "place": "At a lost property office", "listener": "a staff member",
+      "id": "trouble-003",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a lost property office",
+      "listener": "a staff member",
       "want": "You want to describe the item you lost.",
       "situationJa": "なくしたものの特徴を説明したい。",
-      "tags": ["describing"],
+      "tags": [
+        "describing"
+      ],
       "answers": [
-        { "en": "It's a black backpack.", "ja": "黒いリュックです。", "register": "neutral", "style": "oneword", "note": "色と種類。最も基本の説明。" },
-        { "en": "It's a small blue umbrella with a wooden handle.", "ja": "木の柄が付いた小さな青い傘です。", "register": "neutral", "style": "basic", "note": "色・大きさ・特徴の順。分かりやすい。" },
-        { "en": "Could I describe it to you?", "ja": "特徴をお伝えしてもよいですか。", "register": "polite", "style": "request", "note": "説明の切り出し。丁寧で自然。" },
-        { "en": "It has my name written inside.", "ja": "内側に名前が書いてあります。", "register": "neutral", "style": "vocab", "note": "所有を証明できる決定的な情報。" },
-        { "en": "It is a leather wallet, brown, containing identification.", "ja": "身分証の入った茶色の革製の財布です。", "register": "formal", "style": "formal", "note": "identification は「身分証」。正式な届出向け。" },
-        { "en": "Kind of a beat-up green rucksack.", "ja": "少しくたびれた緑のリュックです。", "register": "casual", "style": "casual", "note": "beat-up は「使い込んだ」。特徴として有効。" },
-        { "en": "Is there anything matching that description?", "ja": "その説明に合うものはありますか。", "register": "neutral", "style": "existence", "note": "matching that description は「その特徴に合う」。定型句。" },
-        { "en": "There's a red keyring attached to it.", "ja": "赤いキーホルダーが付いています。", "register": "neutral", "style": "basic", "note": "細かい特徴が識別の決め手になる。" },
-        { "en": "I left it on the 3:10 train from Oxford, in carriage four.", "ja": "オックスフォード発3時10分の電車の4号車に置き忘れました。", "register": "polite", "style": "context", "note": "便と車両を伝える。捜索の精度が上がる。" },
-        { "en": "I can prove it's mine if it turns up — the photos are on my phone.", "ja": "見つかれば自分のものだと証明できます。写真がスマホにあります。", "register": "polite", "style": "considerate", "note": "所有証明の用意を示す。受け渡しが円滑になる。" }
+        {
+          "en": "It's a black backpack.",
+          "ja": "黒いリュックです。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "色と種類。最も基本の説明。"
+        },
+        {
+          "en": "It's a small blue umbrella with a wooden handle.",
+          "ja": "木の柄が付いた小さな青い傘です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "色・大きさ・特徴の順。分かりやすい。"
+        },
+        {
+          "en": "Could I describe it to you?",
+          "ja": "特徴をお伝えしてもよいですか。",
+          "register": "polite",
+          "style": "request",
+          "note": "説明の切り出し。丁寧で自然。"
+        },
+        {
+          "en": "It has my name written inside.",
+          "ja": "内側に名前が書いてあります。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "所有を証明できる決定的な情報。"
+        },
+        {
+          "en": "It is a leather wallet, brown, containing identification.",
+          "ja": "身分証の入った茶色の革製の財布です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "identification は「身分証」。正式な届出向け。"
+        },
+        {
+          "en": "Kind of a beat-up green rucksack.",
+          "ja": "少しくたびれた緑のリュックです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "beat-up は「使い込んだ」。特徴として有効。"
+        },
+        {
+          "en": "Is there anything matching that description?",
+          "ja": "その説明に合うものはありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "matching that description は「その特徴に合う」。定型句。"
+        },
+        {
+          "en": "There's a red keyring attached to it.",
+          "ja": "赤いキーホルダーが付いています。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "細かい特徴が識別の決め手になる。"
+        },
+        {
+          "en": "I left it on the 3:10 train from Oxford, in carriage four.",
+          "ja": "オックスフォード発3時10分の電車の4号車に置き忘れました。",
+          "register": "polite",
+          "style": "context",
+          "note": "便と車両を伝える。捜索の精度が上がる。"
+        },
+        {
+          "en": "I can prove it's mine if it turns up — the photos are on my phone.",
+          "ja": "見つかれば自分のものだと証明できます。写真がスマホにあります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "所有証明の用意を示す。受け渡しが円滑になる。"
+        }
       ]
     },
     {
-      "id": "trouble-004", "category": "trouble", "difficulty": 3,
-      "place": "At the roadside", "listener": "an emergency operator",
+      "id": "trouble-004",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At the roadside",
+      "listener": "an emergency operator",
       "want": "You want to report a car accident.",
       "situationJa": "交通事故を通報したい。",
-      "tags": ["emergency", "reporting"],
+      "tags": [
+        "emergency",
+        "reporting"
+      ],
       "answers": [
-        { "en": "There's been an accident.", "ja": "事故が起きました。", "register": "neutral", "style": "basic", "note": "通報の第一声。最も基本。" },
-        { "en": "Car accident, Park Street.", "ja": "パーク通りで交通事故です。", "register": "casual", "style": "oneword", "note": "場所を最優先で伝える。動転していても言える。" },
-        { "en": "I'd like to report a road traffic accident.", "ja": "交通事故を通報したいのですが。", "register": "neutral", "style": "vocab", "note": "road traffic accident は正式な「交通事故」。" },
-        { "en": "Could you send an ambulance to Park Street?", "ja": "パーク通りに救急車をお願いできますか。", "register": "polite", "style": "request", "note": "必要な支援を明示。対応が速い。" },
-        { "en": "I wish to report a collision involving two vehicles on Park Street.", "ja": "パーク通りで車両2台の衝突事故が発生したことを通報いたします。", "register": "formal", "style": "formal", "note": "collision は「衝突」。正式な通報表現。" },
-        { "en": "Two cars have crashed.", "ja": "車2台が衝突しました。", "register": "casual", "style": "casual", "note": "率直で分かりやすい。状況が即座に伝わる。" },
-        { "en": "Is anyone else calling this in?", "ja": "他に通報している人はいますか。", "register": "neutral", "style": "existence", "note": "重複通報を避ける。冷静さが伝わる。" },
-        { "en": "Two people are injured but conscious.", "ja": "2名が負傷していますが意識はあります。", "register": "neutral", "style": "basic", "note": "conscious は「意識がある」。優先度の判断に直結。" },
-        { "en": "It happened five minutes ago outside the station — the road is blocked.", "ja": "5分ほど前に駅の外で起きました。道路が塞がっています。", "register": "polite", "style": "context", "note": "時刻・場所・状況。最も有用な通報。" },
-        { "en": "I'll stay here until they arrive — what should I do meanwhile?", "ja": "到着まで現場にいます。それまでに何をすべきですか。", "register": "polite", "style": "considerate", "note": "指示を仰ぐ。二次被害を防げる。" }
+        {
+          "en": "There's been an accident.",
+          "ja": "事故が起きました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "通報の第一声。最も基本。"
+        },
+        {
+          "en": "Car accident, Park Street.",
+          "ja": "パーク通りで交通事故です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "場所を最優先で伝える。動転していても言える。"
+        },
+        {
+          "en": "I'd like to report a road traffic accident.",
+          "ja": "交通事故を通報したいのですが。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "road traffic accident は正式な「交通事故」。"
+        },
+        {
+          "en": "Could you send an ambulance to Park Street?",
+          "ja": "パーク通りに救急車をお願いできますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "必要な支援を明示。対応が速い。"
+        },
+        {
+          "en": "I wish to report a collision involving two vehicles on Park Street.",
+          "ja": "パーク通りで車両2台の衝突事故が発生したことを通報いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "collision は「衝突」。正式な通報表現。"
+        },
+        {
+          "en": "Two cars have crashed.",
+          "ja": "車2台が衝突しました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直で分かりやすい。状況が即座に伝わる。"
+        },
+        {
+          "en": "Is anyone else calling this in?",
+          "ja": "他に通報している人はいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "重複通報を避ける。冷静さが伝わる。"
+        },
+        {
+          "en": "Two people are injured but conscious.",
+          "ja": "2名が負傷していますが意識はあります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "conscious は「意識がある」。優先度の判断に直結。"
+        },
+        {
+          "en": "It happened five minutes ago outside the station — the road is blocked.",
+          "ja": "5分ほど前に駅の外で起きました。道路が塞がっています。",
+          "register": "polite",
+          "style": "context",
+          "note": "時刻・場所・状況。最も有用な通報。"
+        },
+        {
+          "en": "I'll stay here until they arrive — what should I do meanwhile?",
+          "ja": "到着まで現場にいます。それまでに何をすべきですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "指示を仰ぐ。二次被害を防げる。"
+        }
       ]
     },
     {
-      "id": "trouble-005", "category": "trouble", "difficulty": 2,
-      "place": "At an embassy", "listener": "a staff member",
+      "id": "trouble-005",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At an embassy",
+      "listener": "a staff member",
       "want": "You want to report a lost passport.",
       "situationJa": "パスポートをなくしたと届け出たい。",
-      "tags": ["reporting", "documents"],
+      "tags": [
+        "reporting",
+        "documents"
+      ],
       "answers": [
-        { "en": "I've lost my passport.", "ja": "パスポートをなくしました。", "register": "neutral", "style": "basic", "note": "最重要。まずこれ。" },
-        { "en": "Lost passport.", "ja": "パスポートの紛失です。", "register": "casual", "style": "oneword", "note": "窓口で。焦っていても言える。" },
-        { "en": "Could you tell me what I need to do?", "ja": "何をすべきか教えていただけますか。", "register": "polite", "style": "request", "note": "手順を確認する。最も実務的な次の一手。" },
-        { "en": "I need an emergency travel document.", "ja": "緊急渡航文書が必要です。", "register": "neutral", "style": "vocab", "note": "emergency travel document は帰国用の臨時文書。" },
-        { "en": "I wish to report the loss of my passport and apply for a replacement.", "ja": "パスポートの紛失を届け出て、再発行を申請したく存じます。", "register": "formal", "style": "formal", "note": "apply for a replacement は「再発行を申請する」。正式な言い方。" },
-        { "en": "My passport's gone.", "ja": "パスポートがなくなりました。", "register": "casual", "style": "casual", "note": "率直な口語。切迫感が伝わる。" },
-        { "en": "Is there a police report I need first?", "ja": "先に警察の届出が必要ですか。", "register": "neutral", "style": "existence", "note": "多くの国で警察届出が前提。重要な確認。" },
-        { "en": "How long does a replacement take?", "ja": "再発行にはどのくらいかかりますか。", "register": "neutral", "style": "basic", "note": "帰国便との兼ね合いで最重要。" },
-        { "en": "I fly home on Friday and I have a copy of the photo page.", "ja": "金曜に帰国予定で、顔写真ページの控えは持っています。", "register": "polite", "style": "context", "note": "期限と手持ち資料を伝える。手続きが速い。" },
-        { "en": "I know it's my own fault — I'd just like to know the steps.", "ja": "自分の落ち度は承知しています。手順だけ教えていただければ。", "register": "polite", "style": "considerate", "note": "言い訳をせず前に進む。丁寧に対応してもらえる。" }
+        {
+          "en": "I've lost my passport.",
+          "ja": "パスポートをなくしました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最重要。まずこれ。"
+        },
+        {
+          "en": "Lost passport.",
+          "ja": "パスポートの紛失です。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "窓口で。焦っていても言える。"
+        },
+        {
+          "en": "Could you tell me what I need to do?",
+          "ja": "何をすべきか教えていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "手順を確認する。最も実務的な次の一手。"
+        },
+        {
+          "en": "I need an emergency travel document.",
+          "ja": "緊急渡航文書が必要です。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "emergency travel document は帰国用の臨時文書。"
+        },
+        {
+          "en": "I wish to report the loss of my passport and apply for a replacement.",
+          "ja": "パスポートの紛失を届け出て、再発行を申請したく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "apply for a replacement は「再発行を申請する」。正式な言い方。"
+        },
+        {
+          "en": "My passport's gone.",
+          "ja": "パスポートがなくなりました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な口語。切迫感が伝わる。"
+        },
+        {
+          "en": "Is there a police report I need first?",
+          "ja": "先に警察の届出が必要ですか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "多くの国で警察届出が前提。重要な確認。"
+        },
+        {
+          "en": "How long does a replacement take?",
+          "ja": "再発行にはどのくらいかかりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "帰国便との兼ね合いで最重要。"
+        },
+        {
+          "en": "I fly home on Friday and I have a copy of the photo page.",
+          "ja": "金曜に帰国予定で、顔写真ページの控えは持っています。",
+          "register": "polite",
+          "style": "context",
+          "note": "期限と手持ち資料を伝える。手続きが速い。"
+        },
+        {
+          "en": "I know it's my own fault — I'd just like to know the steps.",
+          "ja": "自分の落ち度は承知しています。手順だけ教えていただければ。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "言い訳をせず前に進む。丁寧に対応してもらえる。"
+        }
       ]
     },
     {
-      "id": "trouble-006", "category": "trouble", "difficulty": 2,
-      "place": "In a public place", "listener": "a stranger bothering you",
+      "id": "trouble-006",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a public place",
+      "listener": "a stranger bothering you",
       "want": "You want to firmly ask someone to leave you alone.",
       "situationJa": "しつこい相手にはっきり離れてほしいと伝えたい。",
-      "tags": ["refusing", "firm"],
+      "tags": [
+        "refusing",
+        "firm"
+      ],
       "answers": [
-        { "en": "Please leave me alone.", "ja": "放っておいてください。", "register": "neutral", "style": "basic", "note": "はっきりと。丁寧すぎないことが大切な場面。" },
-        { "en": "No, thank you.", "ja": "結構です。", "register": "neutral", "style": "oneword", "note": "毅然と短く。会話を続けさせない。" },
-        { "en": "I'm not interested.", "ja": "興味はありません。", "register": "neutral", "style": "basic", "note": "明確な拒絶。誤解の余地がない。" },
-        { "en": "Could you please stop?", "ja": "やめていただけますか。", "register": "polite", "style": "request", "note": "丁寧だが明確。まずここから。" },
-        { "en": "I would ask you to leave me be.", "ja": "そっとしておいていただきたいのですが。", "register": "formal", "style": "formal", "note": "leave someone be は「放っておく」。改まった拒絶。" },
-        { "en": "Go away.", "ja": "あっちへ行ってください。", "register": "casual", "style": "casual", "note": "強い拒絶。身の危険を感じるときは遠慮しない。" },
-        { "en": "Is there a member of staff nearby?", "ja": "近くに従業員の方はいますか。", "register": "neutral", "style": "existence", "note": "周囲に助けを求める。自分だけで対処しない。" },
-        { "en": "I've asked you to stop — please respect that.", "ja": "やめてくださいとお願いしました。尊重してください。", "register": "neutral", "style": "vocab", "note": "二度目の拒絶。記録に残る言い方でもある。" },
-        { "en": "I'm meeting someone here and I'd like to be left alone.", "ja": "ここで人と待ち合わせています。放っておいてください。", "register": "polite", "style": "context", "note": "一人ではないと示す。抑止力になる。" },
-        { "en": "I don't want to make a scene — but please stop.", "ja": "騒ぎにしたくありません。やめてください。", "register": "polite", "style": "considerate", "note": "make a scene は「騒ぎを起こす」。警告として効く。" }
+        {
+          "en": "Please leave me alone.",
+          "ja": "放っておいてください。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "はっきりと。丁寧すぎないことが大切な場面。"
+        },
+        {
+          "en": "No, thank you.",
+          "ja": "結構です。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "毅然と短く。会話を続けさせない。"
+        },
+        {
+          "en": "I'm not interested.",
+          "ja": "興味はありません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "明確な拒絶。誤解の余地がない。"
+        },
+        {
+          "en": "Could you please stop?",
+          "ja": "やめていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "丁寧だが明確。まずここから。"
+        },
+        {
+          "en": "I would ask you to leave me be.",
+          "ja": "そっとしておいていただきたいのですが。",
+          "register": "formal",
+          "style": "formal",
+          "note": "leave someone be は「放っておく」。改まった拒絶。"
+        },
+        {
+          "en": "Go away.",
+          "ja": "あっちへ行ってください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "強い拒絶。身の危険を感じるときは遠慮しない。"
+        },
+        {
+          "en": "Is there a member of staff nearby?",
+          "ja": "近くに従業員の方はいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "周囲に助けを求める。自分だけで対処しない。"
+        },
+        {
+          "en": "I've asked you to stop — please respect that.",
+          "ja": "やめてくださいとお願いしました。尊重してください。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "二度目の拒絶。記録に残る言い方でもある。"
+        },
+        {
+          "en": "I'm meeting someone here and I'd like to be left alone.",
+          "ja": "ここで人と待ち合わせています。放っておいてください。",
+          "register": "polite",
+          "style": "context",
+          "note": "一人ではないと示す。抑止力になる。"
+        },
+        {
+          "en": "I don't want to make a scene — but please stop.",
+          "ja": "騒ぎにしたくありません。やめてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "make a scene は「騒ぎを起こす」。警告として効く。"
+        }
       ]
     },
     {
-      "id": "trouble-007", "category": "trouble", "difficulty": 2,
-      "place": "At a hotel", "listener": "the front desk",
+      "id": "trouble-007",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a hotel",
+      "listener": "the front desk",
       "want": "You want to report that your room has been entered.",
       "situationJa": "部屋に誰かが入った形跡があると伝えたい。",
-      "tags": ["reporting", "security"],
+      "tags": [
+        "reporting",
+        "security"
+      ],
       "answers": [
-        { "en": "Someone has been in my room.", "ja": "誰かが私の部屋に入りました。", "register": "neutral", "style": "basic", "note": "端的で明確。まずこれ。" },
-        { "en": "My things have been moved.", "ja": "持ち物が動かされています。", "register": "neutral", "style": "oneword", "note": "事実を述べるだけ。断定を避けられる。" },
-        { "en": "Could you check who has access to my room?", "ja": "私の部屋に入れるのが誰か確認していただけますか。", "register": "polite", "style": "request", "note": "調査を求める形。実務的で冷静。" },
-        { "en": "Is there a record of who entered room 305?", "ja": "305号室に誰が入ったか記録はありますか。", "register": "neutral", "style": "existence", "note": "電子錠なら記録が残る。有効な確認。" },
-        { "en": "I'm afraid it appears my room has been entered without my knowledge.", "ja": "恐れ入りますが、知らぬ間に部屋に立ち入られたようです。", "register": "formal", "style": "formal", "note": "without my knowledge は「知らないうちに」。改まった申し出。" },
-        { "en": "Someone's been in there.", "ja": "誰か入っています。", "register": "casual", "style": "casual", "note": "率直。切迫感が伝わる。" },
-        { "en": "Could I change rooms, please?", "ja": "部屋を変えていただけますか。", "register": "polite", "style": "vocab", "note": "最も現実的な解決策。安心して眠れる。" },
-        { "en": "Nothing seems to be missing, but I'd like it looked into.", "ja": "紛失はなさそうですが、調べていただきたいです。", "register": "neutral", "style": "basic", "note": "被害の有無を明示。冷静な印象になる。" },
-        { "en": "I left the do-not-disturb sign out, but my case had been opened.", "ja": "「起こさないで」の札を出していましたが、スーツケースが開けられていました。", "register": "polite", "style": "context", "note": "具体的な事実。調査が真剣に行われる。" },
-        { "en": "I'm not accusing anyone — but I'd like this checked.", "ja": "誰かを責めるつもりはありませんが、確認をお願いします。", "register": "polite", "style": "considerate", "note": "対立を避けつつ要求できる。最も話が進む。" }
+        {
+          "en": "Someone has been in my room.",
+          "ja": "誰かが私の部屋に入りました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "端的で明確。まずこれ。"
+        },
+        {
+          "en": "My things have been moved.",
+          "ja": "持ち物が動かされています。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "事実を述べるだけ。断定を避けられる。"
+        },
+        {
+          "en": "Could you check who has access to my room?",
+          "ja": "私の部屋に入れるのが誰か確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "調査を求める形。実務的で冷静。"
+        },
+        {
+          "en": "Is there a record of who entered room 305?",
+          "ja": "305号室に誰が入ったか記録はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "電子錠なら記録が残る。有効な確認。"
+        },
+        {
+          "en": "I'm afraid it appears my room has been entered without my knowledge.",
+          "ja": "恐れ入りますが、知らぬ間に部屋に立ち入られたようです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "without my knowledge は「知らないうちに」。改まった申し出。"
+        },
+        {
+          "en": "Someone's been in there.",
+          "ja": "誰か入っています。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直。切迫感が伝わる。"
+        },
+        {
+          "en": "Could I change rooms, please?",
+          "ja": "部屋を変えていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "最も現実的な解決策。安心して眠れる。"
+        },
+        {
+          "en": "Nothing seems to be missing, but I'd like it looked into.",
+          "ja": "紛失はなさそうですが、調べていただきたいです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "被害の有無を明示。冷静な印象になる。"
+        },
+        {
+          "en": "I left the do-not-disturb sign out, but my case had been opened.",
+          "ja": "「起こさないで」の札を出していましたが、スーツケースが開けられていました。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的な事実。調査が真剣に行われる。"
+        },
+        {
+          "en": "I'm not accusing anyone — but I'd like this checked.",
+          "ja": "誰かを責めるつもりはありませんが、確認をお願いします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "対立を避けつつ要求できる。最も話が進む。"
+        }
       ]
     },
     {
-      "id": "trouble-008", "category": "trouble", "difficulty": 2,
-      "place": "At a station", "listener": "a staff member",
+      "id": "trouble-008",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a station",
+      "listener": "a staff member",
       "want": "You want to say you have lost your child.",
       "situationJa": "子どもとはぐれたことを伝えたい。",
-      "tags": ["emergency", "child"],
+      "tags": [
+        "emergency",
+        "child"
+      ],
       "answers": [
-        { "en": "I've lost my child.", "ja": "子どもとはぐれました。", "register": "neutral", "style": "basic", "note": "最優先で伝える一文。即座に対応してもらえる。" },
-        { "en": "My daughter is missing.", "ja": "娘が見当たりません。", "register": "neutral", "style": "oneword", "note": "missing は「行方が分からない」。緊急性が伝わる。" },
-        { "en": "Could you help me? I can't find my son.", "ja": "助けていただけますか。息子が見つかりません。", "register": "polite", "style": "request", "note": "助けを求める形。落ち着いて話せる。" },
-        { "en": "Is there an announcement system I could use?", "ja": "館内放送を使わせていただけますか。", "register": "neutral", "style": "existence", "note": "最も効果的な手段。すぐ思いつきたい。" },
-        { "en": "I need to report a missing child — she is four years old.", "ja": "迷子の届出をお願いします。4歳の女の子です。", "register": "formal", "style": "formal", "note": "年齢を即座に。捜索の最重要情報。" },
-        { "en": "I can't find my kid!", "ja": "子どもが見つかりません！", "register": "casual", "style": "casual", "note": "動転していても出る言葉。十分伝わる。" },
-        { "en": "She's wearing a red coat and has short black hair.", "ja": "赤いコートを着ていて、髪は短い黒髪です。", "register": "neutral", "style": "vocab", "note": "服装と外見。捜索に最も役立つ情報。" },
-        { "en": "We were by the ticket machines about five minutes ago.", "ja": "5分ほど前、券売機のところにいました。", "register": "neutral", "style": "basic", "note": "最後に見た場所と時刻。捜索範囲が絞れる。" },
-        { "en": "She knows my phone number — could you announce it?", "ja": "娘は私の電話番号を知っています。放送していただけますか。", "register": "polite", "style": "context", "note": "解決に直結する情報。冷静さが子どもを救う。" },
-        { "en": "I'll stay right here so she can find me — could someone look?", "ja": "見つけてもらえるようここにいます。どなたか探していただけますか。", "register": "polite", "style": "considerate", "note": "動かないのが鉄則。役割分担を申し出られる。" }
+        {
+          "en": "I've lost my child.",
+          "ja": "子どもとはぐれました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最優先で伝える一文。即座に対応してもらえる。"
+        },
+        {
+          "en": "My daughter is missing.",
+          "ja": "娘が見当たりません。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "missing は「行方が分からない」。緊急性が伝わる。"
+        },
+        {
+          "en": "Could you help me? I can't find my son.",
+          "ja": "助けていただけますか。息子が見つかりません。",
+          "register": "polite",
+          "style": "request",
+          "note": "助けを求める形。落ち着いて話せる。"
+        },
+        {
+          "en": "Is there an announcement system I could use?",
+          "ja": "館内放送を使わせていただけますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "最も効果的な手段。すぐ思いつきたい。"
+        },
+        {
+          "en": "I need to report a missing child — she is four years old.",
+          "ja": "迷子の届出をお願いします。4歳の女の子です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "年齢を即座に。捜索の最重要情報。"
+        },
+        {
+          "en": "I can't find my kid!",
+          "ja": "子どもが見つかりません！",
+          "register": "casual",
+          "style": "casual",
+          "note": "動転していても出る言葉。十分伝わる。"
+        },
+        {
+          "en": "She's wearing a red coat and has short black hair.",
+          "ja": "赤いコートを着ていて、髪は短い黒髪です。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "服装と外見。捜索に最も役立つ情報。"
+        },
+        {
+          "en": "We were by the ticket machines about five minutes ago.",
+          "ja": "5分ほど前、券売機のところにいました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最後に見た場所と時刻。捜索範囲が絞れる。"
+        },
+        {
+          "en": "She knows my phone number — could you announce it?",
+          "ja": "娘は私の電話番号を知っています。放送していただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "解決に直結する情報。冷静さが子どもを救う。"
+        },
+        {
+          "en": "I'll stay right here so she can find me — could someone look?",
+          "ja": "見つけてもらえるようここにいます。どなたか探していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "動かないのが鉄則。役割分担を申し出られる。"
+        }
       ]
     },
     {
-      "id": "trouble-009", "category": "trouble", "difficulty": 2,
-      "place": "At a restaurant", "listener": "a staff member",
+      "id": "trouble-009",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At a restaurant",
+      "listener": "a staff member",
       "want": "You want to say you have left your phone somewhere.",
       "situationJa": "スマホをどこかに置き忘れたと伝えたい。",
-      "tags": ["reporting", "lost"],
+      "tags": [
+        "reporting",
+        "lost"
+      ],
       "answers": [
-        { "en": "I think I left my phone here.", "ja": "スマホをこちらに忘れたようです。", "register": "neutral", "style": "basic", "note": "I think で断定を避ける。丁寧で自然。" },
-        { "en": "Lost phone — was I at that table?", "ja": "スマホをなくしました。あの席にいたのですが。", "register": "casual", "style": "oneword", "note": "席を指しながら。捜索が速い。" },
-        { "en": "Could you check if a phone was handed in?", "ja": "スマホの届出がないか確認していただけますか。", "register": "polite", "style": "request", "note": "hand in は「届け出る」。実務的な依頼。" },
-        { "en": "Has anyone found a black phone?", "ja": "黒いスマホを見つけた方はいますか。", "register": "neutral", "style": "existence", "note": "特徴を添えて聞く。確認が速い。" },
-        { "en": "I believe I may have left my mobile telephone at this table earlier.", "ja": "先ほどこちらの席に携帯電話を置き忘れたようです。", "register": "formal", "style": "formal", "note": "改まった申し出。丁寧に扱ってもらえる。" },
-        { "en": "I've left my phone somewhere.", "ja": "スマホをどこかに置いてきました。", "register": "casual", "style": "casual", "note": "率直。場所が特定できないときに。" },
-        { "en": "Could I ring it to see if it's here?", "ja": "こちらにあるか鳴らしてみてもよいですか。", "register": "polite", "style": "vocab", "note": "ring は「電話をかける」。最も確実な捜索法。" },
-        { "en": "It's in a blue case with a card holder on the back.", "ja": "背面にカード入れが付いた青いケースです。", "register": "neutral", "style": "basic", "note": "特徴を具体的に。取り違えを防げる。" },
-        { "en": "I was at the window table about twenty minutes ago.", "ja": "20分ほど前、窓際の席にいました。", "register": "polite", "style": "context", "note": "時刻と席。店員が探しやすい。" },
-        { "en": "No rush if you're busy — could you have a look when you can?", "ja": "お忙しければ急ぎません。手が空いたら見ていただけますか。", "register": "polite", "style": "considerate", "note": "混雑時への配慮。快く探してもらえる。" }
+        {
+          "en": "I think I left my phone here.",
+          "ja": "スマホをこちらに忘れたようです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "I think で断定を避ける。丁寧で自然。"
+        },
+        {
+          "en": "Lost phone — was I at that table?",
+          "ja": "スマホをなくしました。あの席にいたのですが。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "席を指しながら。捜索が速い。"
+        },
+        {
+          "en": "Could you check if a phone was handed in?",
+          "ja": "スマホの届出がないか確認していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "hand in は「届け出る」。実務的な依頼。"
+        },
+        {
+          "en": "Has anyone found a black phone?",
+          "ja": "黒いスマホを見つけた方はいますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "特徴を添えて聞く。確認が速い。"
+        },
+        {
+          "en": "I believe I may have left my mobile telephone at this table earlier.",
+          "ja": "先ほどこちらの席に携帯電話を置き忘れたようです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった申し出。丁寧に扱ってもらえる。"
+        },
+        {
+          "en": "I've left my phone somewhere.",
+          "ja": "スマホをどこかに置いてきました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直。場所が特定できないときに。"
+        },
+        {
+          "en": "Could I ring it to see if it's here?",
+          "ja": "こちらにあるか鳴らしてみてもよいですか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "ring は「電話をかける」。最も確実な捜索法。"
+        },
+        {
+          "en": "It's in a blue case with a card holder on the back.",
+          "ja": "背面にカード入れが付いた青いケースです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "特徴を具体的に。取り違えを防げる。"
+        },
+        {
+          "en": "I was at the window table about twenty minutes ago.",
+          "ja": "20分ほど前、窓際の席にいました。",
+          "register": "polite",
+          "style": "context",
+          "note": "時刻と席。店員が探しやすい。"
+        },
+        {
+          "en": "No rush if you're busy — could you have a look when you can?",
+          "ja": "お忙しければ急ぎません。手が空いたら見ていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "混雑時への配慮。快く探してもらえる。"
+        }
       ]
     },
     {
-      "id": "trouble-010", "category": "trouble", "difficulty": 3,
-      "place": "At an ATM", "listener": "a bank employee",
+      "id": "trouble-010",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 3,
+      "place": "At an ATM",
+      "listener": "a bank employee",
       "want": "You want to say the machine took your card.",
       "situationJa": "ATMにカードを吸い込まれたと伝えたい。",
-      "tags": ["reporting", "trouble"],
+      "tags": [
+        "reporting",
+        "trouble"
+      ],
       "answers": [
-        { "en": "The machine took my card.", "ja": "機械にカードが吸い込まれました。", "register": "neutral", "style": "basic", "note": "端的で明確。まずこれ。" },
-        { "en": "Card stuck in the ATM.", "ja": "ATMにカードが詰まっています。", "register": "casual", "style": "oneword", "note": "状況が一言で伝わる。焦っていても言える。" },
-        { "en": "Could you help me get my card back?", "ja": "カードを取り戻すのを手伝っていただけますか。", "register": "polite", "style": "request", "note": "次にしてほしいことまで伝わる。" },
-        { "en": "Is it possible to retrieve it today?", "ja": "本日中に取り出すことはできますか。", "register": "neutral", "style": "existence", "note": "retrieve は「回収する」。旅行者には死活問題。" },
-        { "en": "I'm afraid the cash machine has retained my card.", "ja": "恐れ入りますが、現金自動預払機にカードが回収されてしまいました。", "register": "formal", "style": "formal", "note": "retain は「取り込む」。ATM の正式な用語。" },
-        { "en": "The ATM ate my card.", "ja": "ATMがカードを飲み込みました。", "register": "casual", "style": "casual", "note": "eat は口語で「飲み込む」。よく使われる表現。" },
-        { "en": "What happens to cards it retains?", "ja": "回収されたカードはどうなりますか。", "register": "neutral", "style": "vocab", "note": "破棄される場合もある。手順の確認が重要。" },
-        { "en": "Do I need to order a replacement?", "ja": "再発行を申し込む必要がありますか。", "register": "neutral", "style": "basic", "note": "次の行動が決まる。実務的。" },
-        { "en": "I entered the PIN correctly and it just swallowed it — I'm leaving on Friday.", "ja": "暗証番号は正しく入れたのに飲み込まれました。金曜に発つ予定です。", "register": "polite", "style": "context", "note": "経緯と期限。優先対応してもらえる可能性が上がる。" },
-        { "en": "I understand this may take time — what's the fastest option?", "ja": "時間がかかるのは承知しています。いちばん早い方法は何でしょうか。", "register": "polite", "style": "considerate", "note": "現実を受け入れつつ最善を求める。協力を得やすい。" }
+        {
+          "en": "The machine took my card.",
+          "ja": "機械にカードが吸い込まれました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "端的で明確。まずこれ。"
+        },
+        {
+          "en": "Card stuck in the ATM.",
+          "ja": "ATMにカードが詰まっています。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "状況が一言で伝わる。焦っていても言える。"
+        },
+        {
+          "en": "Could you help me get my card back?",
+          "ja": "カードを取り戻すのを手伝っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "次にしてほしいことまで伝わる。"
+        },
+        {
+          "en": "Is it possible to retrieve it today?",
+          "ja": "本日中に取り出すことはできますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "retrieve は「回収する」。旅行者には死活問題。"
+        },
+        {
+          "en": "I'm afraid the cash machine has retained my card.",
+          "ja": "恐れ入りますが、現金自動預払機にカードが回収されてしまいました。",
+          "register": "formal",
+          "style": "formal",
+          "note": "retain は「取り込む」。ATM の正式な用語。"
+        },
+        {
+          "en": "The ATM ate my card.",
+          "ja": "ATMがカードを飲み込みました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "eat は口語で「飲み込む」。よく使われる表現。"
+        },
+        {
+          "en": "What happens to cards it retains?",
+          "ja": "回収されたカードはどうなりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "破棄される場合もある。手順の確認が重要。"
+        },
+        {
+          "en": "Do I need to order a replacement?",
+          "ja": "再発行を申し込む必要がありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "次の行動が決まる。実務的。"
+        },
+        {
+          "en": "I entered the PIN correctly and it just swallowed it — I'm leaving on Friday.",
+          "ja": "暗証番号は正しく入れたのに飲み込まれました。金曜に発つ予定です。",
+          "register": "polite",
+          "style": "context",
+          "note": "経緯と期限。優先対応してもらえる可能性が上がる。"
+        },
+        {
+          "en": "I understand this may take time — what's the fastest option?",
+          "ja": "時間がかかるのは承知しています。いちばん早い方法は何でしょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "現実を受け入れつつ最善を求める。協力を得やすい。"
+        }
       ]
     },
     {
-      "id": "trouble-011", "category": "trouble", "difficulty": 2,
-      "place": "In a taxi", "listener": "the driver",
+      "id": "trouble-011",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In a taxi",
+      "listener": "the driver",
       "want": "You want to say you think the route is wrong.",
       "situationJa": "経路が違うのではないかと伝えたい。",
-      "tags": ["questioning", "polite"],
+      "tags": [
+        "questioning",
+        "polite"
+      ],
       "answers": [
-        { "en": "Is this the usual route?", "ja": "これはいつもの経路ですか。", "register": "neutral", "style": "basic", "note": "疑いを直接ぶつけない。最も無難な確認。" },
-        { "en": "Sorry, this doesn't look right.", "ja": "すみません、道が違う気がします。", "register": "neutral", "style": "oneword", "note": "柔らかい指摘。相手が説明できる。" },
-        { "en": "Could you follow the map, please?", "ja": "地図の通りに行っていただけますか。", "register": "polite", "style": "request", "note": "地図を見せながら。明確だが失礼でない。" },
-        { "en": "Is there a reason we're going this way?", "ja": "この道を通る理由はありますか。", "register": "neutral", "style": "existence", "note": "渋滞回避など正当な理由のこともある。まず聞く。" },
-        { "en": "I'm sorry to ask, but might I check the route we're taking?", "ja": "恐れ入りますが、経路を確認させていただけますか。", "register": "formal", "style": "formal", "note": "改まった確認。丁寧だが引かない。" },
-        { "en": "This isn't the way.", "ja": "これは違う道です。", "register": "casual", "style": "casual", "note": "はっきりした指摘。確信があるときに。" },
-        { "en": "My map says to turn left here.", "ja": "地図では、ここを左と出ています。", "register": "neutral", "style": "vocab", "note": "根拠を示す。感情的にならずに済む。" },
-        { "en": "Could we go via the main road instead?", "ja": "代わりに大通りを通っていただけますか。", "register": "polite", "style": "basic", "note": "via は「〜経由で」。具体的な要望として伝えられる。" },
-        { "en": "The app estimated fifteen minutes and we've been going twenty-five.", "ja": "アプリでは15分でしたが、すでに25分です。", "register": "polite", "style": "context", "note": "数字で示す。最も説得力がある。" },
-        { "en": "I may be wrong — but could you show me the route?", "ja": "私の勘違いかもしれませんが、経路を見せていただけますか。", "register": "polite", "style": "considerate", "note": "自分の誤りの可能性を先に。もめずに確認できる。" }
+        {
+          "en": "Is this the usual route?",
+          "ja": "これはいつもの経路ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "疑いを直接ぶつけない。最も無難な確認。"
+        },
+        {
+          "en": "Sorry, this doesn't look right.",
+          "ja": "すみません、道が違う気がします。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "柔らかい指摘。相手が説明できる。"
+        },
+        {
+          "en": "Could you follow the map, please?",
+          "ja": "地図の通りに行っていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "地図を見せながら。明確だが失礼でない。"
+        },
+        {
+          "en": "Is there a reason we're going this way?",
+          "ja": "この道を通る理由はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "渋滞回避など正当な理由のこともある。まず聞く。"
+        },
+        {
+          "en": "I'm sorry to ask, but might I check the route we're taking?",
+          "ja": "恐れ入りますが、経路を確認させていただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった確認。丁寧だが引かない。"
+        },
+        {
+          "en": "This isn't the way.",
+          "ja": "これは違う道です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "はっきりした指摘。確信があるときに。"
+        },
+        {
+          "en": "My map says to turn left here.",
+          "ja": "地図では、ここを左と出ています。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "根拠を示す。感情的にならずに済む。"
+        },
+        {
+          "en": "Could we go via the main road instead?",
+          "ja": "代わりに大通りを通っていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "via は「〜経由で」。具体的な要望として伝えられる。"
+        },
+        {
+          "en": "The app estimated fifteen minutes and we've been going twenty-five.",
+          "ja": "アプリでは15分でしたが、すでに25分です。",
+          "register": "polite",
+          "style": "context",
+          "note": "数字で示す。最も説得力がある。"
+        },
+        {
+          "en": "I may be wrong — but could you show me the route?",
+          "ja": "私の勘違いかもしれませんが、経路を見せていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分の誤りの可能性を先に。もめずに確認できる。"
+        }
       ]
     },
     {
-      "id": "trouble-012", "category": "trouble", "difficulty": 3,
-      "place": "On the phone", "listener": "your bank",
+      "id": "trouble-012",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "your bank",
       "want": "You want to report a suspicious charge on your card.",
       "situationJa": "身に覚えのない請求を報告したい。",
-      "tags": ["reporting", "fraud"],
+      "tags": [
+        "reporting",
+        "fraud"
+      ],
       "answers": [
-        { "en": "There's a charge I don't recognize.", "ja": "身に覚えのない請求があります。", "register": "neutral", "style": "basic", "note": "最重要の一文。不正利用の第一報。" },
-        { "en": "I think my card's been used fraudulently.", "ja": "カードが不正に使われたようです。", "register": "neutral", "style": "vocab", "note": "fraudulently は「不正に」。事態の深刻さが伝わる。" },
-        { "en": "Could you block my card immediately?", "ja": "すぐにカードを停止していただけますか。", "register": "polite", "style": "request", "note": "最優先の対応。真っ先に頼むべき。" },
-        { "en": "Is there a way to dispute a transaction?", "ja": "取引に異議を申し立てる方法はありますか。", "register": "neutral", "style": "existence", "note": "dispute は「異議を申し立てる」。返金手続きの入口。" },
-        { "en": "I wish to report an unauthorized transaction on my account.", "ja": "口座における不正な取引を報告いたします。", "register": "formal", "style": "formal", "note": "unauthorized transaction は「不正取引」。正式な用語。" },
-        { "en": "Someone's used my card.", "ja": "誰かが私のカードを使いました。", "register": "casual", "style": "casual", "note": "率直で切迫感がある。すぐ対応してもらえる。" },
-        { "en": "Will I get the money back?", "ja": "お金は戻ってきますか。", "register": "neutral", "style": "basic", "note": "最も気になる点。多くの場合は補償される。" },
-        { "en": "Could you list the recent transactions for me?", "ja": "直近の取引を読み上げていただけますか。", "register": "polite", "style": "vocab", "note": "他にも不正がないか確認できる。重要な一手。" },
-        { "en": "There's a charge for 200 pounds in Madrid, but I've never been there.", "ja": "マドリードでの200ポンドの請求がありますが、行ったことがありません。", "register": "polite", "style": "context", "note": "具体的に示す。調査が速く進む。" },
-        { "en": "It might be something I've forgotten — but could you check?", "ja": "私が忘れているだけかもしれませんが、確認していただけますか。", "register": "polite", "style": "considerate", "note": "断定を避ける。誤解だった場合も気まずくない。" }
+        {
+          "en": "There's a charge I don't recognize.",
+          "ja": "身に覚えのない請求があります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最重要の一文。不正利用の第一報。"
+        },
+        {
+          "en": "I think my card's been used fraudulently.",
+          "ja": "カードが不正に使われたようです。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "fraudulently は「不正に」。事態の深刻さが伝わる。"
+        },
+        {
+          "en": "Could you block my card immediately?",
+          "ja": "すぐにカードを停止していただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "最優先の対応。真っ先に頼むべき。"
+        },
+        {
+          "en": "Is there a way to dispute a transaction?",
+          "ja": "取引に異議を申し立てる方法はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "dispute は「異議を申し立てる」。返金手続きの入口。"
+        },
+        {
+          "en": "I wish to report an unauthorized transaction on my account.",
+          "ja": "口座における不正な取引を報告いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "unauthorized transaction は「不正取引」。正式な用語。"
+        },
+        {
+          "en": "Someone's used my card.",
+          "ja": "誰かが私のカードを使いました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直で切迫感がある。すぐ対応してもらえる。"
+        },
+        {
+          "en": "Will I get the money back?",
+          "ja": "お金は戻ってきますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "最も気になる点。多くの場合は補償される。"
+        },
+        {
+          "en": "Could you list the recent transactions for me?",
+          "ja": "直近の取引を読み上げていただけますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "他にも不正がないか確認できる。重要な一手。"
+        },
+        {
+          "en": "There's a charge for 200 pounds in Madrid, but I've never been there.",
+          "ja": "マドリードでの200ポンドの請求がありますが、行ったことがありません。",
+          "register": "polite",
+          "style": "context",
+          "note": "具体的に示す。調査が速く進む。"
+        },
+        {
+          "en": "It might be something I've forgotten — but could you check?",
+          "ja": "私が忘れているだけかもしれませんが、確認していただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断定を避ける。誤解だった場合も気まずくない。"
+        }
       ]
     },
     {
-      "id": "trouble-013", "category": "trouble", "difficulty": 2,
-      "place": "At the airport", "listener": "an airline agent",
+      "id": "trouble-013",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "At the airport",
+      "listener": "an airline agent",
       "want": "You want to say you have missed your flight.",
       "situationJa": "便に乗り遅れたことを伝えたい。",
-      "tags": ["reporting", "travel"],
+      "tags": [
+        "reporting",
+        "travel"
+      ],
       "answers": [
-        { "en": "I've missed my flight.", "ja": "便に乗り遅れました。", "register": "neutral", "style": "basic", "note": "端的で明確。まずこれ。" },
-        { "en": "Missed my flight — what can I do?", "ja": "便に乗り遅れました。どうすればよいですか。", "register": "casual", "style": "oneword", "note": "状況と依頼を一度に。焦っていても言える。" },
-        { "en": "Could you help me get on the next one?", "ja": "次の便に乗せていただけますか。", "register": "polite", "style": "request", "note": "解決策を求める形。話が前に進む。" },
-        { "en": "Is there another flight today?", "ja": "本日、他の便はありますか。", "register": "neutral", "style": "existence", "note": "まず選択肢を確認する。冷静な対応。" },
-        { "en": "I'm afraid I was unable to reach the gate in time. Could you advise me?", "ja": "恐れ入りますが、時間までにゲートへ辿り着けませんでした。ご案内いただけますか。", "register": "formal", "style": "formal", "note": "改まった申し出。冷静な印象を与える。" },
-        { "en": "I didn't make it in time.", "ja": "間に合いませんでした。", "register": "casual", "style": "casual", "note": "make it は「間に合う」。自然な口語。" },
-        { "en": "How much would it cost to change?", "ja": "変更にはいくらかかりますか。", "register": "neutral", "style": "vocab", "note": "費用を先に確認。判断が早くなる。" },
-        { "en": "My luggage is already checked in — where does that go?", "ja": "荷物はすでに預けています。どうなりますか。", "register": "neutral", "style": "basic", "note": "見落としがちだが極めて重要な確認。" },
-        { "en": "Security took over an hour — is there anything you can do?", "ja": "保安検査に1時間以上かかりました。何かご対応いただけますか。", "register": "polite", "style": "context", "note": "空港側の事情なら配慮されることがある。" },
-        { "en": "I know it's my responsibility — I'd just like the cheapest option.", "ja": "自分の責任は承知しています。いちばん安い方法を教えてください。", "register": "polite", "style": "considerate", "note": "言い訳をしない姿勢。協力してもらいやすい。" }
+        {
+          "en": "I've missed my flight.",
+          "ja": "便に乗り遅れました。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "端的で明確。まずこれ。"
+        },
+        {
+          "en": "Missed my flight — what can I do?",
+          "ja": "便に乗り遅れました。どうすればよいですか。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "状況と依頼を一度に。焦っていても言える。"
+        },
+        {
+          "en": "Could you help me get on the next one?",
+          "ja": "次の便に乗せていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "解決策を求める形。話が前に進む。"
+        },
+        {
+          "en": "Is there another flight today?",
+          "ja": "本日、他の便はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "まず選択肢を確認する。冷静な対応。"
+        },
+        {
+          "en": "I'm afraid I was unable to reach the gate in time. Could you advise me?",
+          "ja": "恐れ入りますが、時間までにゲートへ辿り着けませんでした。ご案内いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった申し出。冷静な印象を与える。"
+        },
+        {
+          "en": "I didn't make it in time.",
+          "ja": "間に合いませんでした。",
+          "register": "casual",
+          "style": "casual",
+          "note": "make it は「間に合う」。自然な口語。"
+        },
+        {
+          "en": "How much would it cost to change?",
+          "ja": "変更にはいくらかかりますか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "費用を先に確認。判断が早くなる。"
+        },
+        {
+          "en": "My luggage is already checked in — where does that go?",
+          "ja": "荷物はすでに預けています。どうなりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "見落としがちだが極めて重要な確認。"
+        },
+        {
+          "en": "Security took over an hour — is there anything you can do?",
+          "ja": "保安検査に1時間以上かかりました。何かご対応いただけますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "空港側の事情なら配慮されることがある。"
+        },
+        {
+          "en": "I know it's my responsibility — I'd just like the cheapest option.",
+          "ja": "自分の責任は承知しています。いちばん安い方法を教えてください。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "言い訳をしない姿勢。協力してもらいやすい。"
+        }
       ]
     },
     {
-      "id": "trouble-014", "category": "trouble", "difficulty": 2,
-      "place": "In an apartment", "listener": "a landlord on the phone",
+      "id": "trouble-014",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 2,
+      "place": "In an apartment",
+      "listener": "a landlord on the phone",
       "want": "You want to report a water leak.",
       "situationJa": "水漏れを大家に報告したい。",
-      "tags": ["reporting", "housing"],
+      "tags": [
+        "reporting",
+        "housing"
+      ],
       "answers": [
-        { "en": "There's a water leak.", "ja": "水漏れがあります。", "register": "neutral", "style": "basic", "note": "端的で明確。まずこれ。" },
-        { "en": "Water leaking in the bathroom.", "ja": "浴室で水漏れしています。", "register": "casual", "style": "oneword", "note": "場所を添える。対応が速い。" },
-        { "en": "Could someone come and look at it today?", "ja": "本日中に見に来ていただけますか。", "register": "polite", "style": "request", "note": "緊急性を伝える。水漏れは放置できない。" },
-        { "en": "Is there an emergency number for this?", "ja": "こういう場合の緊急連絡先はありますか。", "register": "neutral", "style": "existence", "note": "夜間・休日に備えて。実用的な確認。" },
-        { "en": "I'm afraid there is a significant leak under the kitchen sink.", "ja": "恐れ入りますが、台所の流し台の下でかなりの水漏れが生じております。", "register": "formal", "style": "formal", "note": "significant は「相当な」。深刻度が伝わる。" },
-        { "en": "Water's coming through the ceiling!", "ja": "天井から水が漏れています！", "register": "casual", "style": "casual", "note": "切迫した状況。即座に伝わる。" },
-        { "en": "Should I turn off the water at the mains?", "ja": "元栓を止めたほうがよいですか。", "register": "neutral", "style": "vocab", "note": "mains は「本管・元栓」。被害拡大を防げる。" },
-        { "en": "It's been dripping since last night.", "ja": "昨夜から漏れ続けています。", "register": "neutral", "style": "basic", "note": "いつからかを伝える。原因の切り分けに有用。" },
-        { "en": "There's a puddle forming and it's reaching the wooden floor.", "ja": "水たまりができて、木の床まで達しています。", "register": "polite", "style": "context", "note": "被害の進行を具体的に。優先対応してもらえる。" },
-        { "en": "I've put a bucket under it for now — but it needs looking at.", "ja": "とりあえずバケツを置きましたが、点検が必要です。", "register": "polite", "style": "considerate", "note": "応急処置を伝えつつ対応を求める。協力的な印象。" }
+        {
+          "en": "There's a water leak.",
+          "ja": "水漏れがあります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "端的で明確。まずこれ。"
+        },
+        {
+          "en": "Water leaking in the bathroom.",
+          "ja": "浴室で水漏れしています。",
+          "register": "casual",
+          "style": "oneword",
+          "note": "場所を添える。対応が速い。"
+        },
+        {
+          "en": "Could someone come and look at it today?",
+          "ja": "本日中に見に来ていただけますか。",
+          "register": "polite",
+          "style": "request",
+          "note": "緊急性を伝える。水漏れは放置できない。"
+        },
+        {
+          "en": "Is there an emergency number for this?",
+          "ja": "こういう場合の緊急連絡先はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "夜間・休日に備えて。実用的な確認。"
+        },
+        {
+          "en": "I'm afraid there is a significant leak under the kitchen sink.",
+          "ja": "恐れ入りますが、台所の流し台の下でかなりの水漏れが生じております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "significant は「相当な」。深刻度が伝わる。"
+        },
+        {
+          "en": "Water's coming through the ceiling!",
+          "ja": "天井から水が漏れています！",
+          "register": "casual",
+          "style": "casual",
+          "note": "切迫した状況。即座に伝わる。"
+        },
+        {
+          "en": "Should I turn off the water at the mains?",
+          "ja": "元栓を止めたほうがよいですか。",
+          "register": "neutral",
+          "style": "vocab",
+          "note": "mains は「本管・元栓」。被害拡大を防げる。"
+        },
+        {
+          "en": "It's been dripping since last night.",
+          "ja": "昨夜から漏れ続けています。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "いつからかを伝える。原因の切り分けに有用。"
+        },
+        {
+          "en": "There's a puddle forming and it's reaching the wooden floor.",
+          "ja": "水たまりができて、木の床まで達しています。",
+          "register": "polite",
+          "style": "context",
+          "note": "被害の進行を具体的に。優先対応してもらえる。"
+        },
+        {
+          "en": "I've put a bucket under it for now — but it needs looking at.",
+          "ja": "とりあえずバケツを置きましたが、点検が必要です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "応急処置を伝えつつ対応を求める。協力的な印象。"
+        }
       ]
     },
     {
-      "id": "trouble-015", "category": "trouble", "difficulty": 3,
-      "place": "In a foreign city", "listener": "a stranger",
+      "id": "trouble-015",
+      "category": "trouble",
+      "level": 1,
+      "difficulty": 3,
+      "place": "In a foreign city",
+      "listener": "a stranger",
       "want": "You want to ask for help because you have no money.",
       "situationJa": "お金がなくて困っていると助けを求めたい。",
-      "tags": ["requesting", "help"],
+      "tags": [
+        "requesting",
+        "help"
+      ],
       "answers": [
-        { "en": "Could you help me? I've lost my wallet.", "ja": "助けていただけますか。財布をなくしました。", "register": "polite", "style": "request", "note": "理由を先に。物乞いと誤解されない。" },
-        { "en": "I have no money and I need to get to my hotel.", "ja": "お金がなく、ホテルへ戻る必要があります。", "register": "neutral", "style": "basic", "note": "状況と必要を明示。相手が判断しやすい。" },
-        { "en": "Could I borrow your phone to call my bank?", "ja": "銀行に電話するため、電話をお借りできますか。", "register": "polite", "style": "vocab", "note": "お金ではなく手段を求める。応じてもらいやすい。" },
-        { "en": "Is there a police station nearby?", "ja": "近くに警察署はありますか。", "register": "neutral", "style": "existence", "note": "公的機関に頼るのが最も安全。まずこれを探す。" },
-        { "en": "I'm terribly sorry to trouble you — I've been robbed and have no means of payment.", "ja": "大変恐縮ですが、盗難に遭い支払い手段がありません。", "register": "formal", "style": "formal", "note": "means of payment は「支払い手段」。丁寧で切実。" },
-        { "en": "I'm stuck — my card's been stolen.", "ja": "困っています。カードを盗まれました。", "register": "casual", "style": "casual", "note": "stuck は「立ち往生している」。率直に伝わる。" },
-        { "en": "Do you know where the Japanese embassy is?", "ja": "日本大使館の場所をご存じですか。", "register": "neutral", "style": "oneword", "note": "旅行者が最終的に頼れる場所。覚えておきたい。" },
-        { "en": "Could you point me to somewhere I can get help?", "ja": "助けを得られる場所を教えていただけますか。", "register": "polite", "style": "basic", "note": "金銭ではなく情報を求める。最も応じてもらいやすい。" },
-        { "en": "My bag was taken on the train — I have my passport but no cards.", "ja": "電車で鞄を取られました。パスポートはありますがカードがありません。", "register": "polite", "style": "context", "note": "手元にあるものを伝える。現実的な助言がもらえる。" },
-        { "en": "I understand if you can't help — could you just point me somewhere?", "ja": "難しければ結構です。行くべき場所だけ教えていただけますか。", "register": "polite", "style": "considerate", "note": "断る余地を残す。かえって助けてもらえることが多い。" }
+        {
+          "en": "Could you help me? I've lost my wallet.",
+          "ja": "助けていただけますか。財布をなくしました。",
+          "register": "polite",
+          "style": "request",
+          "note": "理由を先に。物乞いと誤解されない。"
+        },
+        {
+          "en": "I have no money and I need to get to my hotel.",
+          "ja": "お金がなく、ホテルへ戻る必要があります。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "状況と必要を明示。相手が判断しやすい。"
+        },
+        {
+          "en": "Could I borrow your phone to call my bank?",
+          "ja": "銀行に電話するため、電話をお借りできますか。",
+          "register": "polite",
+          "style": "vocab",
+          "note": "お金ではなく手段を求める。応じてもらいやすい。"
+        },
+        {
+          "en": "Is there a police station nearby?",
+          "ja": "近くに警察署はありますか。",
+          "register": "neutral",
+          "style": "existence",
+          "note": "公的機関に頼るのが最も安全。まずこれを探す。"
+        },
+        {
+          "en": "I'm terribly sorry to trouble you — I've been robbed and have no means of payment.",
+          "ja": "大変恐縮ですが、盗難に遭い支払い手段がありません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "means of payment は「支払い手段」。丁寧で切実。"
+        },
+        {
+          "en": "I'm stuck — my card's been stolen.",
+          "ja": "困っています。カードを盗まれました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "stuck は「立ち往生している」。率直に伝わる。"
+        },
+        {
+          "en": "Do you know where the Japanese embassy is?",
+          "ja": "日本大使館の場所をご存じですか。",
+          "register": "neutral",
+          "style": "oneword",
+          "note": "旅行者が最終的に頼れる場所。覚えておきたい。"
+        },
+        {
+          "en": "Could you point me to somewhere I can get help?",
+          "ja": "助けを得られる場所を教えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "金銭ではなく情報を求める。最も応じてもらいやすい。"
+        },
+        {
+          "en": "My bag was taken on the train — I have my passport but no cards.",
+          "ja": "電車で鞄を取られました。パスポートはありますがカードがありません。",
+          "register": "polite",
+          "style": "context",
+          "note": "手元にあるものを伝える。現実的な助言がもらえる。"
+        },
+        {
+          "en": "I understand if you can't help — could you just point me somewhere?",
+          "ja": "難しければ結構です。行くべき場所だけ教えていただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る余地を残す。かえって助けてもらえることが多い。"
+        }
       ]
     }
   ]

@@ -6,7 +6,12 @@ EIK.Views.Bookmarks = function (ctx) {
   var app = ctx.app;
   app.innerHTML = '<div class="loading">読み込み中…</div>';
 
-  EIK.Data.loadAll().then(function (all) {
+  // 保存は段階をまたぐので、3段階すべて読んでから解決する
+  Promise.all([EIK.Data.load(1), EIK.Data.load(2), EIK.Data.load(3)])
+    .then(function (lists) {
+      var all = lists[0].concat(lists[1], lists[2]);
+      return all;
+    }).then(function (all) {
     var raw = EIK.Store.raw();
     var sits = all.filter(function (s) { return raw.bookmarks.indexOf(s.id) >= 0; });
 
@@ -41,7 +46,8 @@ EIK.Views.Bookmarks = function (ctx) {
             '<span class="sitrow__box" data-lv="' + (p.lv || 0) + '" aria-hidden="true"></span>' +
             '<span class="sitrow__body">' +
               '<span class="sitrow__want">' + EIK.escapeHtml(x.want) + '</span>' +
-              '<span class="sitrow__place">' + EIK.escapeHtml(x.place) + '</span>' +
+              '<span class="sitrow__place">' + EIK.escapeHtml(x.place) + '　' +
+                EIK.escapeHtml(EIK.levelStars(x.level || 1)) + '</span>' +
             '</span></a>';
         }).join('') + '</div>' +
         '<a class="btn btn-primary btn-block" style="margin-top:12px" href="#/practice/bookmarks">' +
