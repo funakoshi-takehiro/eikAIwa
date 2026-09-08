@@ -1,0 +1,1666 @@
+{
+  "category": "meeting",
+  "level": 3,
+  "situations": [
+    {
+      "id": "meeting-3-001",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the group",
+      "want": "You want to disagree with a decision the room has already settled on.",
+      "situationJa": "場がもう決まりかけている案に、反対を述べたい。",
+      "tags": ["disagreeing", "meetings"],
+      "answers": [
+        {
+          "en": "Before we close this, I'd like to put a different view. Option B costs less in the first year, but we pay for the migration twice. I'd rather spend more now than rebuild in eighteen months.",
+          "ja": "締める前に、別の見方をお伝えしたいです。案Bは初年度は安いですが、移行費を2度払うことになります。18か月後に作り直すより、今多く払いたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "反対の前に一言置く。最も無難な入り方。"
+        },
+        {
+          "en": "I know we're close to a decision, and I don't want to reopen everything. There's one assumption I think is wrong. We costed this on last year's volumes, and volumes have doubled.",
+          "ja": "決定が近いのは分かっていますし、全部を蒸し返す気はありません。1つ、前提が誤っていると思います。昨年の量で見積もっていますが、量は倍になっています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "論点を1つに絞る。聞いてもらいやすい。"
+        },
+        {
+          "en": "I can see why the room likes this, and the logic holds for most of it. My concern is only the timing. Could we keep the decision and move the start to April?",
+          "ja": "皆さんが賛成する理由は分かりますし、大部分は筋が通っています。私の懸念は時期だけです。決定は残したまま、開始を4月にできませんか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "全否定を避ける。合意を壊さない反対。"
+        },
+        {
+          "en": "Could I ask that we don't sign this off today? I'd like twenty-four hours to check the migration numbers. If they hold, I'll withdraw the objection in writing.",
+          "ja": "本日の承認は見送っていただけませんか。移行の数字を確認する24時間をいただきたいです。問題なければ、書面で異議を取り下げます。",
+          "register": "polite",
+          "style": "request",
+          "note": "期限を切った保留。反対が建設的になる。"
+        },
+        {
+          "en": "I should like to record a reservation before the decision is taken. The projected saving relies on volumes that have since changed materially. I would ask that the figures be revisited before we proceed.",
+          "ja": "決定の前に、留保を記録させていただきたく存じます。見込まれる節減は、その後大きく変わった数量に依拠しています。進める前に数字の再確認をお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "議事録に残す反対。責任の所在が明確になる。"
+        },
+        {
+          "en": "Can I be the annoying one for a second? I don't think option B works at this volume. We'd be back here in a year.",
+          "ja": "少しだけ嫌な役をやってもいいですか。この量では案Bは無理だと思います。1年後にまたここで話すことになります。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気心の知れた場で。緊張をほぐしつつ言う。"
+        },
+        {
+          "en": "I won't block this if the room is set on it. What I'd ask for is a review point at three months. If the volumes look like I think they will, we change course then.",
+          "ja": "皆がその気なら、私は止めません。お願いしたいのは3か月時点での見直しです。数量が私の見立て通りなら、その時点で方針を変えます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "止めずに歯止めを作る。実務的な落とし所。"
+        },
+        {
+          "en": "I'm afraid I can't support this as it stands. It isn't the direction I disagree with, it's the sequence. Doing the platform first would cost us less and take the same time.",
+          "ja": "申し訳ありませんが、この形では賛成できません。方向性ではなく、順序に反対です。基盤を先にやれば、費用は減り期間は変わりません。",
+          "register": "polite",
+          "style": "decline",
+          "note": "明確な不賛成。理由を必ず添える。"
+        },
+        {
+          "en": "We made this same call two years ago and reversed it in June. Nobody in this room wants to spend that year again. Could we at least look at why it failed before we repeat it?",
+          "ja": "2年前にも同じ判断をして、6月に撤回しました。あの1年をもう一度使いたい人はここにいないはずです。繰り返す前に、なぜ失敗したかだけでも見ませんか。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "過去の事実を示す。感情に頼らない反論。"
+        },
+        {
+          "en": "Here's what I'd suggest. We take the decision today but make it conditional on the volume check. I'll have the numbers by Thursday and we confirm by email.",
+          "ja": "こう提案します。本日決定はしますが、数量の確認を条件にします。木曜までに数字を出し、メールで確定させましょう。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "進行を止めない代案。合意されやすい。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-002",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On a call",
+      "listener": "a client",
+      "want": "You want to tell a client the pilot results are worse than you promised.",
+      "situationJa": "試験導入の結果が約束より悪かったと、顧客に伝えたい。",
+      "tags": ["bad-news", "clients"],
+      "answers": [
+        {
+          "en": "I want to give you the pilot results before anything else. We targeted a thirty percent reduction and we reached eleven. I'd like to explain what we found and what we'd do differently.",
+          "ja": "何よりも先に試験導入の結果をお伝えします。30パーセントの削減を目標に、11パーセントでした。分かったことと、次にどう変えるかをご説明したいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "悪い数字を最初に出す。信頼を保つ順序。"
+        },
+        {
+          "en": "The pilot ran for six weeks across two sites. One site behaved as modelled and the other did not, because their intake process is manual. That gap accounts for almost all of the shortfall.",
+          "ja": "試験導入は2拠点で6週間行いました。1拠点は想定通りでしたが、もう1拠点は受付が手作業のため想定通りになりませんでした。その差が不足分のほぼ全てを占めます。",
+          "register": "neutral",
+          "style": "context",
+          "note": "原因を切り分ける。次の判断につながる。"
+        },
+        {
+          "en": "I realise this isn't what you took to your board, and I'm sorry for that. I'd rather you heard the real number from me now than a corrected one later. I've brought the site data so you can see it yourself.",
+          "ja": "取締役会に持って行かれた内容と違うことは承知しており、申し訳ありません。後から訂正するより、今、実数を私からお伝えしたいです。ご自身で確認いただけるよう拠点別の資料も用意しました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の立場に触れる。誠実さが伝わる。"
+        },
+        {
+          "en": "Could we spend the next twenty minutes on the second site rather than on the average? The average hides the problem. If we fix the intake step, the model still holds.",
+          "ja": "次の20分は平均ではなく、2つ目の拠点に使えませんか。平均が問題を隠しています。受付の工程を直せば、想定は依然として成り立ちます。",
+          "register": "polite",
+          "style": "request",
+          "note": "議論の焦点を移す。建設的に進む。"
+        },
+        {
+          "en": "I must inform you that the pilot did not meet the stated target. Against a thirty percent objective, the measured reduction was eleven percent. A full written analysis will follow by Friday.",
+          "ja": "試験導入が所定の目標に達しなかったことをご報告いたします。30パーセントの目標に対し、実測の削減は11パーセントでした。詳細な分析書は金曜までにお送りいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "記録が要る相手に。契約上の連絡にも使える。"
+        },
+        {
+          "en": "I'll be straight with you — the pilot came in well under. We got eleven percent, not thirty. One site pulled the whole thing down and I can tell you exactly why.",
+          "ja": "率直に申し上げます。試験導入は大きく届きませんでした。30パーセントではなく11パーセントです。1拠点が全体を押し下げていて、理由もはっきりしています。",
+          "register": "casual",
+          "style": "casual",
+          "note": "長い付き合いの相手に。回りくどさを嫌う人向け。"
+        },
+        {
+          "en": "Given the result, I don't think you should pay for phase two as scoped. I'd propose we run a shorter fix at our cost first. If it clears twenty-five percent, we resume on the original terms.",
+          "ja": "この結果を踏まえ、第2段階を当初の範囲でご負担いただくべきではないと考えます。まず当社負担で短期の改善を行うことを提案します。25パーセントを超えれば、当初の条件で再開します。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "費用の申し出。関係を守る現実的な一手。"
+        },
+        {
+          "en": "I'd rather not present this as a partial success, because it wasn't one. We missed the target we set ourselves. What I can offer is a clear reason and a fixed plan.",
+          "ja": "部分的な成功として提示するのは避けたいです。実際そうではないからです。自ら定めた目標に届きませんでした。お示しできるのは明確な理由と確かな計画です。",
+          "register": "polite",
+          "style": "decline",
+          "note": "取り繕わない姿勢。長期の信頼につながる。"
+        },
+        {
+          "en": "I should have flagged the intake difference when we scoped the pilot. It was visible in the site survey and we did not act on it. That is on us, and it is what we are changing first.",
+          "ja": "試験導入の設計時に、受付工程の違いを指摘すべきでした。現地調査で見えていたのに対応しませんでした。当社の責任であり、まずそこを改めます。",
+          "register": "polite",
+          "style": "complain",
+          "note": "自らの落ち度を認める。反省の的が絞られる。"
+        },
+        {
+          "en": "My proposal is this. We fix the intake step at the second site over four weeks and re-measure. If we clear twenty-five percent, we go to full rollout, and if we don't, you owe us nothing further.",
+          "ja": "提案はこうです。2つ目の拠点の受付工程を4週間で直し、再測定します。25パーセントを超えれば全面展開へ、届かなければ追加のご負担はありません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "条件を明示した挽回案。判断がしやすい。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-003",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the group",
+      "want": "You want to cut short a debate that has run over time, as the chair.",
+      "situationJa": "司会として、時間を超えた議論を打ち切りたい。",
+      "tags": ["chairing", "meetings"],
+      "answers": [
+        {
+          "en": "We're ten minutes over on this item and we have two left. I'm going to stop the discussion here. Kenji and Sara, could you settle the detail offline and send us the answer?",
+          "ja": "この議題で10分超過し、残りは2件です。ここで議論を止めます。ケンジさんとサラさん、詳細は別途詰めて結果を共有していただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "時間と残件を示す。打ち切りが正当に見える。"
+        },
+        {
+          "en": "We've been round this three times now and the positions haven't moved. That usually means we're missing information rather than agreement. Let's park it until we have the usage data.",
+          "ja": "3周しましたが、立場は動いていません。多くの場合それは合意ではなく情報が足りない印です。利用状況の数字が出るまで保留にしましょう。",
+          "register": "neutral",
+          "style": "context",
+          "note": "止める理由を説明する。納得が得られやすい。"
+        },
+        {
+          "en": "I know this matters to both of you and I don't want to cut anyone off. We simply don't have the time to finish it well today. Can I give you thirty minutes tomorrow instead?",
+          "ja": "お二人にとって重要なのは分かっていますし、遮りたくはありません。ただ今日は十分に終える時間がありません。代わりに明日30分お取りしましょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "打ち切りに代替を添える。角が立たない。"
+        },
+        {
+          "en": "Could I ask for one sentence each and then we move on? Give me your position, not the argument for it. I'll write both down and we decide by email.",
+          "ja": "お一人1文ずつで、その後は次に進んでよいですか。論拠ではなく、結論だけをお願いします。両方を記録し、メールで決めます。",
+          "register": "polite",
+          "style": "request",
+          "note": "強く締める前の一手。全員に発言を残す。"
+        },
+        {
+          "en": "In the interests of time, I propose we conclude this item. The remaining points will be carried to the next meeting. I would ask both parties to circulate their positions in writing beforehand.",
+          "ja": "時間の都合上、この議題は終了とすることを提案いたします。残る論点は次回に持ち越します。両者には事前に書面で立場をご共有いただきたく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった打ち切り。公式の会議に。"
+        },
+        {
+          "en": "Right, I'm calling time on this one. We're going in circles and we've got two more items. Take it offline and tell us what you land on.",
+          "ja": "はい、この件はここまでにします。堂々巡りですし、あと2件残っています。別途進めて、結論を教えてください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな社内会議で。短く決める。"
+        },
+        {
+          "en": "I'll give this five more minutes, but on one condition. We spend it on what we'd need to know to decide, not on restating the two views. If we can't name that, we park it.",
+          "ja": "あと5分だけ延ばしますが、条件が1つあります。両論の再確認ではなく、決めるために何が必要かに使ってください。それを挙げられなければ保留にします。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "延長に枠をはめる。時間が無駄にならない。"
+        },
+        {
+          "en": "I'd rather not take this into the next item's time. That decision has a deadline today and this one doesn't. I'm going to move us on.",
+          "ja": "次の議題の時間まで使うのは避けたいです。次の決定には本日の期限があり、こちらにはありません。先へ進めます。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "優先順位を根拠にする。反論されにくい。"
+        },
+        {
+          "en": "We've now spent half the meeting on an item scheduled for ten minutes. That happened last week too, on a different topic. I'd like us to be stricter with the agenda from here.",
+          "ja": "10分の予定の議題に、会議の半分を使いました。先週も別の話題で同じことが起きています。今後は議題進行をより厳しくしたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを指摘する。運営の改善につながる。"
+        },
+        {
+          "en": "Let's do this. Kenji writes up the two options with costs by Wednesday, and we take a vote at the top of next week's meeting. Anyone who wants to argue it further does it in the document.",
+          "ja": "こうしましょう。ケンジさんが水曜までに2案を費用付きでまとめ、来週の会議の冒頭で採決します。さらに議論したい方は、その資料上で行ってください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "誰が何をいつまでにを明示。実行される。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-004",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a board meeting",
+      "listener": "senior executives",
+      "want": "You want to explain a technical failure to people without technical background.",
+      "situationJa": "技術に詳しくない経営層に、技術的な障害を説明したい。",
+      "tags": ["explaining", "executives"],
+      "answers": [
+        {
+          "en": "The service was down for four hours on Tuesday morning. A routine update removed a setting that the payment system depended on. No customer data was lost, and payments taken during that window were all recovered.",
+          "ja": "火曜の午前、4時間サービスが停止しました。定例の更新で、決済側が依存していた設定が失われたためです。顧客データの消失はなく、その間の決済はすべて復旧しています。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "影響から先に述べる。経営層に最も届く順序。"
+        },
+        {
+          "en": "Think of it as two systems that share a key. We changed the lock on one side without telling the other. Everything else worked perfectly, which is why it took us ninety minutes to find it.",
+          "ja": "鍵を共有する2つの仕組みだとお考えください。片側の錠だけを、もう一方に伝えずに交換しました。他は完全に動いていたため、発見に90分かかりました。",
+          "register": "neutral",
+          "style": "context",
+          "note": "比喩で説明する。専門語なしで伝わる。"
+        },
+        {
+          "en": "I know the number you'll want is the revenue impact, so let me start there. We estimate one hundred and ten thousand in delayed orders, of which we've recovered ninety percent. The rest I'll confirm by Friday.",
+          "ja": "気になるのは売上への影響だと思いますので、そこから申し上げます。注文の遅延は11万と見込み、うち9割は回収済みです。残りは金曜までに確定します。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の関心を先取り。信頼を得やすい。"
+        },
+        {
+          "en": "Could I take two minutes on why it took so long to detect? That's the part I think we should fix first. The outage itself was ordinary, but the blindness to it was not.",
+          "ja": "検知に時間がかかった理由に2分いただけますか。まず直すべきはそこだと考えます。停止自体はよくあることですが、気づけなかったことは違います。",
+          "register": "polite",
+          "style": "request",
+          "note": "本質へ誘導する。議論の質が上がる。"
+        },
+        {
+          "en": "I should like to summarise the incident of the fourteenth. A configuration change during scheduled maintenance interrupted payment processing for four hours. The full incident report, including remedial actions, will be circulated this week.",
+          "ja": "14日の障害について要約いたします。定期保守中の設定変更により、決済処理が4時間中断しました。是正措置を含む詳細な報告書を今週中に配布いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "取締役会の議事に。記録として残る言い方。"
+        },
+        {
+          "en": "Short version — we broke it ourselves with a routine update. Four hours down, no data lost, most of the money recovered. The real problem is that nobody noticed for an hour and a half.",
+          "ja": "手短に言うと、定例更新で自ら壊しました。4時間停止、データ消失なし、金額もほぼ回収済みです。本当の問題は、1時間半誰も気づかなかったことです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直さを好む相手に。要点を落とさない。"
+        },
+        {
+          "en": "We can prevent the detection delay for about twelve thousand a year in monitoring. Preventing the outage itself would cost far more and I don't think it's warranted. I'd like your agreement on the smaller one.",
+          "ja": "検知の遅れは、年間およそ1万2千の監視費で防げます。停止そのものの防止ははるかに高額で、見合わないと考えます。小さい方についてご了承をいただきたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "費用対効果を示す。決裁が下りやすい。"
+        },
+        {
+          "en": "I'd rather not name an individual here. The change followed the process we had, and the process was wrong. Holding one engineer responsible would hide that.",
+          "ja": "ここで個人名を挙げるのは避けたいです。変更は当時の手順に沿っており、手順自体が誤っていました。技術者1人の責任にすれば、その事実が隠れます。",
+          "register": "polite",
+          "style": "decline",
+          "note": "個人攻撃を止める。原因究明が続く。"
+        },
+        {
+          "en": "This is the second incident this year with the same root cause. We wrote the action in March and it was not completed. I want to be honest that the follow-through, not the technology, is the failure here.",
+          "ja": "同じ根本原因の障害は今年2件目です。3月に対策を記録しましたが、完了していませんでした。技術ではなく実行の徹底が問題だと、正直に申し上げます。",
+          "register": "polite",
+          "style": "complain",
+          "note": "繰り返しを自ら開示する。真剣さが伝わる。"
+        },
+        {
+          "en": "My recommendation is three things. Add the monitoring, make configuration changes require a second approver, and review both at the December board. I'll bring evidence rather than a status update.",
+          "ja": "提言は3点です。監視の追加、設定変更への承認者の追加、そして12月の取締役会での両方の見直しです。進捗報告ではなく証拠をお持ちします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "対策を3点に絞る。覚えてもらえる。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-005",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a cross-team meeting",
+      "listener": "another team's manager",
+      "want": "You want to respond when another team blames yours in front of everyone.",
+      "situationJa": "皆の前で自分のチームに責任を負わされたとき、応じたい。",
+      "tags": ["disagreeing", "conflict"],
+      "answers": [
+        {
+          "en": "I'd like to correct one part of that. We received the spec on the ninth, not the second. The seven days matter because they're the whole gap you're describing.",
+          "ja": "一点だけ訂正させてください。仕様を受け取ったのは2日ではなく9日です。その7日間こそが、今おっしゃった遅れの全てです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "事実だけを正す。感情に乗らない反論。"
+        },
+        {
+          "en": "There's a longer version here that I think is worth two minutes. Both teams were working to different dates that neither of us set. That's a planning problem, and it will happen again if we treat it as a delivery problem.",
+          "ja": "背景を2分ほど補足させてください。両チームとも、自分たちが決めたのではない別々の日程で動いていました。これは計画の問題で、実行の問題として扱えば再発します。",
+          "register": "neutral",
+          "style": "context",
+          "note": "対立を構造の話に変える。前に進む。"
+        },
+        {
+          "en": "I don't want to turn this into a public argument between the two of us. There's a real issue underneath and I'd like to get to it. Could we take the detail offline and bring back a joint answer?",
+          "ja": "これを2人の公開の言い争いにはしたくありません。根には本当の課題があり、そこに向かいたいです。詳細は別途話し、共同の結論を持ち帰りませんか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "対立を場から外す。関係を壊さない。"
+        },
+        {
+          "en": "Could I ask where the second of the month comes from? I have the handover email and it's dated the ninth. If there's an earlier one I haven't seen, I'd genuinely like it.",
+          "ja": "2日という日付はどこから出たものか伺えますか。手元の引き継ぎのメールは9日付です。私が見ていない、より早い連絡があるなら、ぜひ拝見したいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "問いで返す。事実確認が公開の場で進む。"
+        },
+        {
+          "en": "I would ask that we establish the sequence of events before attributing the delay. Our records show receipt on the ninth of the month. I am happy to circulate the correspondence for the group to review.",
+          "ja": "遅延の帰属を決める前に、経緯の確認をお願いしたく存じます。当方の記録では受領は当月9日です。関係する連絡は皆さまにご確認いただけるよう共有いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。記録に基づく反論。"
+        },
+        {
+          "en": "Hang on, that's not quite how it went. We got the spec on the ninth. I've got the email if anyone wants to see it.",
+          "ja": "少し待ってください、経緯が違います。仕様を受け取ったのは9日です。ご覧になりたい方にはメールをお見せします。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い場で即座に。長引かせない。"
+        },
+        {
+          "en": "I'm not going to argue about who was late in front of this group. What I will do is agree a handover date with you now, in the meeting, so it can't happen again. Shall we say specs land five working days before the build starts?",
+          "ja": "この場で誰が遅れたかを争うつもりはありません。代わりに、再発しないよう引き継ぎ日を今ここで決めましょう。仕様は着手の5営業日前まで、でいかがですか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "争いを合意に変える。最も生産的な返し。"
+        },
+        {
+          "en": "I'd rather not accept that framing, and I'll say why. It puts a process failure on one team. If we sign up to that, we'll fix the wrong thing.",
+          "ja": "その捉え方は受け入れられません。理由を申し上げます。手順の不備を1チームの責任にしています。それを認めれば、間違った対策を打つことになります。",
+          "register": "polite",
+          "style": "decline",
+          "note": "枠組み自体を断る。単なる否定より強い。"
+        },
+        {
+          "en": "This is the third time our team has been named in a status meeting without being asked first. I'd have given you the dates if you'd called. Could we agree to check with each other before it reaches this room?",
+          "ja": "事前の確認なく、進捗会議で当チームが名指しされたのはこれで3度目です。ご連絡いただければ日付をお伝えしていました。この場に出す前に、互いに確認し合うことにしませんか。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを指摘する。運用の合意に持ち込む。"
+        },
+        {
+          "en": "Let's do it this way. We'll both send our dated records to the group by tomorrow. Whatever they show, we agree the new handover rule in the same email.",
+          "ja": "こうしましょう。明日までに双方の日付入りの記録を皆に送ります。結果がどうであれ、同じメールで新しい引き継ぎ規則に合意します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "検証と再発防止を同時に。話が終わる。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-006",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the group",
+      "want": "You want to force a decision the group keeps postponing.",
+      "situationJa": "先送りが続いている決定を、この場で決めさせたい。",
+      "tags": ["deciding", "meetings"],
+      "answers": [
+        {
+          "en": "This is the fourth meeting we've discussed the vendor. Each delay costs us about two weeks of build time. I'd like us to decide today, even if the decision is to stop.",
+          "ja": "業者の件はこれで4回目の議論です。1回の先送りごとに、開発が2週間ほど失われます。中止という結論でも構わないので、今日決めたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "費用を数字で示す。先送りが割に合わなくなる。"
+        },
+        {
+          "en": "We've had the comparison document for three weeks and nothing new has arrived. I don't think more time will change what we know. What's actually stopping us from choosing?",
+          "ja": "比較資料が出て3週間、新しい情報はありません。時間をかけても分かることは変わらないと思います。実際、何が決断を止めているのでしょうか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "詰まりの正体を問う。議論が動き出す。"
+        },
+        {
+          "en": "I understand why nobody wants to own this one. It's a big number and the information isn't perfect. It won't get more perfect, and I'd rather we chose while we still have options.",
+          "ja": "誰も引き受けたくない気持ちは分かります。金額が大きく、情報も完全ではありません。ただ、これ以上は良くなりませんし、選択肢があるうちに決めたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "ためらいを認める。責める形にならない。"
+        },
+        {
+          "en": "Could we agree right now what would let us decide? If it's a number, let's name who gets it and by when. If there isn't one, then we're choosing not to choose.",
+          "ja": "決められる条件を今ここで決めませんか。数字が必要なら、誰がいつまでに出すかを決めましょう。それが無いなら、決めないことを選んでいるだけです。",
+          "register": "polite",
+          "style": "request",
+          "note": "条件を言語化させる。先送りを封じる。"
+        },
+        {
+          "en": "I would ask the group to reach a decision at this meeting. The matter has been deferred on three prior occasions, with a cumulative delay of six weeks. Should we be unable to decide, I would ask that the reason be minuted.",
+          "ja": "本会議での決定をお願いしたく存じます。本件は過去3回延期され、累計6週間の遅延が生じています。決定できない場合は、その理由を議事録に残すようお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "議事録を持ち出す。強い圧力になる。"
+        },
+        {
+          "en": "Can we just pick one today? We've talked about it four times and nothing's changed. Either is better than another month of this.",
+          "ja": "今日どちらかに決めませんか。4回話しても何も変わっていません。どちらでも、あと1か月これを続けるよりましです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に打ち切る。社内の会議に。"
+        },
+        {
+          "en": "If we can't decide today, could we at least set a default? I'd propose that if there's no decision by the thirtieth, we go with the incumbent. That way the delay has a cost to someone.",
+          "ja": "今日決められないなら、初期値だけでも決めませんか。30日までに決定がなければ現行業者とする、を提案します。そうすれば先送りに誰かの費用が生じます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "自動的に決まる仕組み。実務で非常に有効。"
+        },
+        {
+          "en": "I'd rather not take this to a fifth meeting. My team can't plan the quarter without it. If the decision needs to move up, let's say so today and send it up.",
+          "ja": "5回目の会議に持ち越すのは避けたいです。これが無いと私のチームは四半期の計画が立てられません。上位で決めるべきなら、今日そう決めて上げましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "自分の制約を示す。上位への委任も選択肢に。"
+        },
+        {
+          "en": "Each time we defer, someone builds something they may have to throw away. Two engineers spent last month on integration work for a vendor we may not choose. I'd like that to stop today, one way or the other.",
+          "ja": "先送りのたびに、誰かが捨てるかもしれない作業を進めています。技術者2人が、選ばれないかもしれない業者向けの接続作業に先月を使いました。今日どちらかに決めて、これを止めたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "無駄を具体的に示す。効果が大きい。"
+        },
+        {
+          "en": "Here's my proposal for the next ten minutes. Everyone says their preference and the single reason for it, no debate. Then we take the majority and I'll write it up before we leave.",
+          "ja": "これからの10分の進め方を提案します。全員が結論と理由を1つずつ述べ、議論はしません。その後多数の案を採り、退室前に私が記録します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "手続きを提案する。決まらない会議に効く。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-007",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a status meeting",
+      "listener": "the programme director",
+      "want": "You want to report that two of four workstreams are behind schedule.",
+      "situationJa": "4つの作業のうち2つが遅れていると報告したい。",
+      "tags": ["reporting", "bad-news"],
+      "answers": [
+        {
+          "en": "Two of the four are behind, and I'll take those first. Data migration is nine days late and reporting is four. The other two are on track and I don't need time on them.",
+          "ja": "4つのうち2つが遅れていますので、そちらから申し上げます。データ移行が9日、帳票が4日の遅れです。他の2つは順調で、説明の時間は不要です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "遅れから話す。信頼される報告の順序。"
+        },
+        {
+          "en": "The migration slipped when we found duplicate records in the source system. We're cleaning about forty thousand rows by hand because the automated rule was unsafe. That work finishes on the twenty-second.",
+          "ja": "移行は、元の仕組みに重複記録が見つかって遅れました。自動処理が安全でないため、およそ4万件を手作業で整えています。この作業は22日に終わります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "原因と終わる日を対にする。安心感が出る。"
+        },
+        {
+          "en": "I know you're reporting upward on Thursday, so let me give you what you'll need. The headline is nine days on migration, contained, with no change to the go-live date. If that changes I'll tell you before the meeting, not in it.",
+          "ja": "木曜に上へ報告されると伺っているので、必要な内容をお伝えします。要点は、移行が9日遅れ、影響は封じ込め済み、稼働開始日に変更なしです。変わる場合は会議中ではなく事前にお伝えします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の次の行動を助ける。信頼が積み上がる。"
+        },
+        {
+          "en": "Could I ask for two more people on the cleaning work for ten days? That's the only thing standing between us and the original date. Without them, the slip reaches the go-live.",
+          "ja": "整備作業に10日間、2名を追加でお願いできませんか。当初の日程との差はそこだけです。人がいなければ、遅れが稼働開始まで及びます。",
+          "register": "polite",
+          "style": "request",
+          "note": "遅れの報告に要望を添える。ただの悪い知らせで終わらない。"
+        },
+        {
+          "en": "I should report that two of the four workstreams are behind schedule. Data migration stands at nine days late and reporting at four. Both have recovery plans, which I have attached to the pack.",
+          "ja": "4つの作業のうち2つが遅延していることをご報告いたします。データ移行は9日、帳票は4日の遅れです。いずれも回復計画があり、資料に添付しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "書面が伴う報告に。事実が明確に残る。"
+        },
+        {
+          "en": "Two are late — migration by nine days, reporting by four. Migration's the one to worry about. The other two are fine.",
+          "ja": "2つ遅れています。移行が9日、帳票が4日です。心配すべきは移行の方です。残り2つは問題ありません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "手短な定例で。優先度を即座に示す。"
+        },
+        {
+          "en": "We can hold the go-live date or we can hold the scope, but I don't think we can hold both. My preference is to drop the two optional reports and keep the date. Which would you rather defend upward?",
+          "ja": "稼働開始日か範囲か、どちらかは守れますが、両方は難しいと考えます。私としては任意の帳票2件を外して日程を守りたいです。上に説明しやすいのはどちらでしょうか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "選択肢を2つに絞る。上位者が判断しやすい。"
+        },
+        {
+          "en": "I'd rather not put an amber status on the reporting stream. Four days on a six-week task isn't a real risk, and calling it one uses up attention. I'll flag it the moment it passes ten.",
+          "ja": "帳票の作業を黄信号にするのは避けたいです。6週間の作業で4日は本当の危険ではなく、そう呼ぶと注意が浪費されます。10日を超えた時点で必ず報告します。",
+          "register": "polite",
+          "style": "decline",
+          "note": "過剰報告を断る。基準を示すのが要点。"
+        },
+        {
+          "en": "The duplicate records were flagged in the survey we did in May. The action to clean them wasn't picked up by either side. I'm raising that because the same gap exists on two other systems.",
+          "ja": "重複記録は5月の調査で指摘されていました。整備の対応が双方で引き取られていませんでした。同じ抜けが他の2つの仕組みにもあるため申し上げます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "同種の危険を予告する。次を防ぐ報告。"
+        },
+        {
+          "en": "My plan is as follows. Two extra people on cleaning for ten days, reporting resequenced behind migration, and a re-baseline on the twenty-second if either slips again. I'll send the revised plan tonight.",
+          "ja": "計画はこうです。整備に10日間2名を追加、帳票は移行の後ろに順序変更、いずれかが再度遅れれば22日に基準を引き直します。修正版の計画は今夜お送りします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "回復策を先に出す。指示を待たない姿勢。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-008",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On a call",
+      "listener": "a client",
+      "want": "You want to handle a new demand raised at the very end of the call.",
+      "situationJa": "通話の終わり際に出された新しい要求に、対応したい。",
+      "tags": ["scope", "clients"],
+      "answers": [
+        {
+          "en": "I want to make sure I've understood before we finish. You'd like the mobile version included in the same delivery. That's a genuine addition rather than a detail, so let me come back to you properly on it.",
+          "ja": "終わる前に理解を確認させてください。同じ納品に携帯端末向けの版を含めたい、ということですね。細部ではなく実質的な追加なので、改めてきちんとご回答します。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "その場で即答しない。範囲を守る基本形。"
+        },
+        {
+          "en": "The current plan was built around the desktop version only. Adding mobile changes the testing and the design review, not just the build. That's roughly three weeks of work rather than three days.",
+          "ja": "現在の計画は画面版のみを前提に組んでいます。携帯端末向けを加えると、開発だけでなく試験と設計確認も変わります。3日ではなく、およそ3週間の作業になります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "規模の差を数字で示す。誤解が解ける。"
+        },
+        {
+          "en": "I can hear that this has come from your side rather than from you. I'd like to help you go back with a clear answer. Could you tell me who's asking and what date they have in mind?",
+          "ja": "これはご自身の希望というより、社内から出た話とお見受けします。明確な回答をお持ち帰りいただけるようにしたいです。どなたの要望で、どの時期をお考えかを伺えますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を味方にする。実情がつかめる。"
+        },
+        {
+          "en": "Could we book fifteen minutes tomorrow rather than decide this in the last two? I'd like to bring you the cost and the date impact together. Deciding now would mean guessing at both.",
+          "ja": "残り2分で決めるのではなく、明日15分お時間をいただけませんか。費用と日程への影響を合わせてお持ちします。今決めれば、どちらも推測になります。",
+          "register": "polite",
+          "style": "request",
+          "note": "時間を作り直す。最も安全な返し方。"
+        },
+        {
+          "en": "I note the request regarding the mobile version. As it falls outside the agreed scope, I will prepare a change note with the cost and revised dates. I would ask that we not treat it as agreed in the meantime.",
+          "ja": "携帯端末向けの版についてのご要望を承りました。合意範囲外となるため、費用と修正日程を記した変更票をご用意します。それまでは合意事項として扱わないようお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "契約に関わる場面で。後の争いを防ぐ。"
+        },
+        {
+          "en": "That's a big one to land in the last minute! I don't want to give you a number I'd have to take back. Let me look at it properly and call you tomorrow.",
+          "ja": "最後の1分で大きな話が出ましたね。撤回するような数字はお出ししたくありません。きちんと検討して、明日ご連絡します。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい相手に。断らずに時間を取る。"
+        },
+        {
+          "en": "We could do it within the current date if we moved the reporting module to phase two. That keeps the budget the same and gives you mobile at launch. Would that trade work at your end?",
+          "ja": "帳票の機能を第2段階に回せば、現在の日程内で対応できます。予算は据え置きで、開始時に携帯端末向けをご利用いただけます。その交換はそちらで成り立ちますか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "交換条件を出す。追加を受けても崩れない。"
+        },
+        {
+          "en": "I'm afraid I can't add this at no cost, and I'd rather say so now than imply otherwise. The work is real and it displaces other work. What I can do is price it today and hold the price for a month.",
+          "ja": "申し訳ありませんが無償での追加はできません。含みを持たせるより、今申し上げます。実作業が発生し、他の作業を押しのけます。本日中に見積を出し、1か月価格を据え置くことは可能です。",
+          "register": "polite",
+          "style": "decline",
+          "note": "曖昧にしない。誠実さと範囲管理の両立。"
+        },
+        {
+          "en": "This is the third addition that's arrived at the end of a call. Each one is reasonable on its own, and together they're now half a project. Could we put new requests through the change process from here?",
+          "ja": "通話の終わり際に追加が出るのはこれで3件目です。個々は妥当ですが、合わせると半分の案件規模になっています。今後は変更手続きを通していただけませんか。",
+          "register": "polite",
+          "style": "complain",
+          "note": "積み重なりを指摘する。手続きに乗せる。"
+        },
+        {
+          "en": "Let me suggest how we take this forward. I'll send a one-page change note by Thursday with two options and prices. You decide by the following Wednesday and we hold the current plan until then.",
+          "ja": "進め方をご提案します。木曜までに2案と価格を記した1枚の変更票をお送りします。翌週水曜までにご判断いただき、それまでは現行計画を維持します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限付きの手順。宙に浮かせない。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-009",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a workshop",
+      "listener": "a colleague who is dominating",
+      "want": "You want to stop one person from taking over the discussion.",
+      "situationJa": "議論を独占している人を、やんわり止めたい。",
+      "tags": ["chairing", "conflict"],
+      "answers": [
+        {
+          "en": "Let me pause you there for a moment. We've heard your position clearly and it's on the board. I want to make sure the other five people get the same amount of air.",
+          "ja": "いったんそこで区切らせてください。ご意見は明確に伺い、板にも書いてあります。他の5人にも同じだけ発言の時間を確保したいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "止める理由を明示。個人攻撃に見えない。"
+        },
+        {
+          "en": "We've got forty minutes and eight people in the room. That's five minutes each if we're even about it. I'd like to move round the table so we hear everyone once before anyone goes twice.",
+          "ja": "40分に8人います。均等なら1人5分です。誰かが2回話す前に全員が1回話せるよう、順に回したいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "算数で示す。反論しにくい止め方。"
+        },
+        {
+          "en": "You clearly know this area better than most of us, and that's useful. What I'd like is to hear where the others disagree with you. Could you hold your reply until we've been round once?",
+          "ja": "この分野に最も詳しいのは明らかで、それは助かります。その上で、他の方がどこで異なるかを聞きたいです。一巡するまで返答をお待ちいただけますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "先に認めてから止める。角が立たない。"
+        },
+        {
+          "en": "Could I ask you to sum up in one sentence and then hand over? I'll come back to you at the end for a response. Aiko, you've been trying to come in for a while.",
+          "ja": "一文でまとめてから、次の方に譲っていただけますか。最後に必ず返答の機会をお戻しします。アイコさん、先ほどから発言されたそうでしたね。",
+          "register": "polite",
+          "style": "request",
+          "note": "終わり方と次を同時に指定。滑らかに移る。"
+        },
+        {
+          "en": "May I suggest we hear from the rest of the group at this point? Your position has been noted in full. I shall return to you before we conclude the item.",
+          "ja": "この辺りで他の皆さまのご意見を伺ってはいかがでしょうか。ご意見は十分に記録しております。議題を締める前に必ずお戻しいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場での司会に。丁寧に主導権を戻す。"
+        },
+        {
+          "en": "Sorry, let me jump in there. We've got your view — let's hear the others. I'll come back to you at the end.",
+          "ja": "すみません、少し入らせてください。ご意見は伺えたので、他の方を聞きましょう。最後にまたお戻しします。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い場で。短く区切る。"
+        },
+        {
+          "en": "How about we do it this way — everyone gets two minutes uninterrupted, including you. Then we open it up properly. That way you get a clean run at your argument rather than a series of interruptions.",
+          "ja": "こうしませんか。あなたを含め全員が2分ずつ、遮られずに話します。その後で自由に議論します。そうすれば断続的にではなく、一続きで論を述べられます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "相手にも利益がある形。受け入れられやすい。"
+        },
+        {
+          "en": "I'd rather not spend the rest of the session on this one thread. It's important but it isn't what we're here to decide. Let's take it after the workshop with whoever's interested.",
+          "ja": "残りの時間をこの1つの論点に使うのは避けたいです。重要ですが、ここで決めるべきことではありません。関心のある方と、終了後に続けましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "目的を根拠に切る。私情に見えない。"
+        },
+        {
+          "en": "I've counted, and three people haven't spoken at all yet. We're forty minutes in. I don't think we'll get a good outcome from a room where most of it is silent.",
+          "ja": "数えたところ、3人はまだ一度も発言していません。開始から40分が経っています。大半が沈黙している場から良い結論は出ないと思います。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "観察を事実として述べる。場の空気が変わる。"
+        },
+        {
+          "en": "Let's change the format for the next twenty minutes. Everyone writes their top concern on a card, and I'll read them out unattributed. Then we discuss the ones that come up more than once.",
+          "ja": "次の20分は進め方を変えましょう。各自が最大の懸念を紙に書き、私が名前を伏せて読み上げます。その後、複数出たものを議論します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "形式を変えて独占を無効にする。実効性が高い。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-010",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "your manager and the group",
+      "want": "You want to reopen a decision made while you were away.",
+      "situationJa": "自分の不在中に決まったことを、再検討してもらいたい。",
+      "tags": ["deciding", "meetings"],
+      "answers": [
+        {
+          "en": "I'd like to ask about the decision taken while I was on leave. I'm not asking to overturn it on principle. There's one input I don't think was on the table.",
+          "ja": "休暇中に決まった件について伺いたいです。原則として覆したいわけではありません。1つ、判断材料に入っていなかったと思うものがあります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "反発を招かない入り方。論点を1つに絞る。"
+        },
+        {
+          "en": "The decision assumed we could reuse the existing licences. We checked in July and the terms changed in January. That adds about eighteen thousand a year that isn't in the case.",
+          "ja": "この決定は既存の使用許諾を再利用できる前提でした。確認したのは7月で、条件は1月に変わっています。試算に無い年間およそ1万8千が増えます。",
+          "register": "neutral",
+          "style": "context",
+          "note": "新情報を具体的に。再検討の正当な根拠。"
+        },
+        {
+          "en": "I know it took a long time to reach this and nobody wants to go back. I wouldn't raise it for a small thing. If the licence number is right, it changes which option is cheaper.",
+          "ja": "結論に至るまで長くかかり、誰も戻りたくないのは分かります。小さなことなら申し上げません。使用許諾の額が正しければ、どちらが安いかが変わります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の労力に触れる。感情的な反発を減らす。"
+        },
+        {
+          "en": "Could I have ten minutes at the next meeting rather than now? I'd like to bring the licence terms in writing. If I'm wrong, I'll say so and we lose nothing.",
+          "ja": "今ではなく、次回の会議で10分いただけませんか。使用許諾の条件を書面でお持ちします。私が誤っていればそう申し上げますので、損はありません。",
+          "register": "polite",
+          "style": "request",
+          "note": "準備の時間を求める。話が軽くならない。"
+        },
+        {
+          "en": "I should like to request that the decision of the twelfth be revisited. New information regarding licensing costs has come to light since it was taken. I will circulate the relevant terms in advance of the next meeting.",
+          "ja": "12日の決定について、再検討をお願いしたく存じます。決定後に、使用許諾費用に関する新たな情報が判明いたしました。関連条項は次回会議に先立ち共有いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった申し出。手続きとして扱われる。"
+        },
+        {
+          "en": "Can I reopen the vendor decision for a minute? I found something on licences while I was away. It might flip which one is cheaper.",
+          "ja": "業者の決定を少しだけ蒸し返してもいいですか。不在中に使用許諾の件で気づいたことがあります。どちらが安いかが逆転するかもしれません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな場で。前置きを短くする。"
+        },
+        {
+          "en": "I'm not asking to restart the whole comparison. Could we test just the licence assumption and keep everything else as decided? If it holds, the decision stands and we've lost a day.",
+          "ja": "比較全体をやり直したいわけではありません。使用許諾の前提だけを検証し、他は決定のままにできませんか。問題なければ決定は維持され、失うのは1日です。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "検証の範囲を限定する。同意を得やすい。"
+        },
+        {
+          "en": "I'd rather not sign the order until this is checked. It's a three-year commitment and the number is material. A week's delay is cheaper than being wrong for three years.",
+          "ja": "この点を確認するまで、発注書には署名したくありません。3年の契約で、金額も無視できません。1週間の遅れは、3年間誤り続けるより安く済みます。",
+          "register": "polite",
+          "style": "decline",
+          "note": "署名を止める理由を示す。合理的に響く。"
+        },
+        {
+          "en": "I'd also say the decision was taken in a week when three of us were away. That's not anyone's fault, but it did narrow the room. Could we look at how we schedule decisions like this?",
+          "ja": "この決定は3人が不在の週に行われた点も申し上げます。誰の責任でもありませんが、参加者が偏りました。こうした決定の日程の組み方を見直しませんか。",
+          "register": "polite",
+          "style": "complain",
+          "note": "個別の話を仕組みの改善につなげる。"
+        },
+        {
+          "en": "Here's what I'd suggest. I confirm the licence terms with the supplier by Wednesday and send a one-page note. If the number stands, we proceed as decided without another meeting.",
+          "ja": "こう提案します。水曜までに供給元に使用許諾の条件を確認し、1枚の書面をお送りします。金額が変わらなければ、会議を開かず決定通り進めます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "会議を増やさない案。受け入れられやすい。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-011",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "a senior executive",
+      "want": "You want to answer when you are put on the spot without the data.",
+      "situationJa": "数字を持たないまま、その場で意見を求められて答えたい。",
+      "tags": ["uncertainty", "executives"],
+      "answers": [
+        {
+          "en": "I don't have the exact figure with me and I'd rather not guess at it here. What I can tell you is the shape — it's in the tens of thousands, not the hundreds. I'll have the precise number to you within the hour.",
+          "ja": "正確な数字は手元になく、この場での推測は避けたいです。規模だけ申し上げると、数十万台ではなく数万台です。正確な数字は1時間以内にお届けします。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "分かる範囲と期限を示す。最も安全な返し。"
+        },
+        {
+          "en": "The number depends on which quarter you mean, and the two are quite different. If it's the last three months, usage is up. If it's year on year, it's roughly flat.",
+          "ja": "どの四半期を指すかで数字が変わり、両者は大きく異なります。直近3か月なら利用は増加、前年同期比ならほぼ横ばいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "曖昧な問いを分解する。誤答を避けられる。"
+        },
+        {
+          "en": "I can see why you're asking, and it's the right question. I'd hate to give you a number you then repeat upward. Give me until the end of the day and you'll have something you can quote.",
+          "ja": "ご質問の意図は理解でき、的確な問いだと思います。上へ伝えられる数字を、いい加減にお出ししたくありません。本日中にお時間をいただければ、引用できる形でお渡しします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の使い道に配慮する。信頼が増す。"
+        },
+        {
+          "en": "Could I check what you'd use the number for? If it's for the board pack, I'll get the audited figure. If it's for a sense of scale, I can give you a range right now.",
+          "ja": "その数字を何にお使いか伺えますか。取締役会の資料なら、確認済みの数値を用意します。規模感の把握であれば、今この場で幅をお示しできます。",
+          "register": "polite",
+          "style": "request",
+          "note": "用途を確認する。過不足のない回答ができる。"
+        },
+        {
+          "en": "I do not have that figure to hand and would prefer not to estimate. I will confirm it in writing today. If it would help, I can also set out how the figure is derived.",
+          "ja": "その数値は手元になく、推計は控えたく存じます。本日中に書面で確認いたします。ご要望であれば、算出の根拠もあわせてお示しいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。逃げずに丁寧に留保する。"
+        },
+        {
+          "en": "Honestly, I'd be making that up. Let me check and come straight back to you. Ten minutes after this finishes.",
+          "ja": "正直に申し上げると、それは当て推量になります。確認してすぐお戻しします。この会議が終わって10分後には。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直さが評価される相手に。期限を必ず添える。"
+        },
+        {
+          "en": "I can give you a rough number now if you'll take it as rough. My estimate is around forty thousand, and I'd expect to be within twenty percent. If that's not good enough for the decision, I'll get the real one first.",
+          "ja": "概算でよければ今お出しできます。見込みは4万前後で、誤差は2割以内と考えます。判断に足りないようでしたら、先に正確な数字を取ります。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "精度を条件にする。実務で最も使いやすい。"
+        },
+        {
+          "en": "I'd rather not answer that one from memory. I've been wrong on this metric before and it travelled a long way. Let me send it in writing this afternoon.",
+          "ja": "記憶に頼って答えるのは避けたいです。以前この指標で誤り、その数字が遠くまで伝わりました。本日午後に書面でお送りします。",
+          "register": "polite",
+          "style": "decline",
+          "note": "過去の教訓を根拠に。誠実に響く。"
+        },
+        {
+          "en": "I'd also say this is the third time we've needed this number in a meeting without it being in the pack. That's a reporting gap rather than a memory problem. I'll add it to the standing report.",
+          "ja": "この数字が資料に無いまま会議で必要になったのは3度目です。記憶の問題ではなく、報告の抜けです。定例の報告に追加します。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "個人の落ち度を仕組みの話に移す。"
+        },
+        {
+          "en": "Let me propose something. I'll send the figure and its source by five today, and I'll add it to the monthly pack from now on. That way nobody has to ask in the room again.",
+          "ja": "ご提案があります。本日17時までに数値と出典をお送りし、今後は月次の資料に加えます。そうすれば、この場で尋ねる必要が無くなります。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "再発防止まで示す。評価が上がる返し方。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-012",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the chair",
+      "want": "You want agenda time for an item that keeps slipping to the end.",
+      "situationJa": "毎回最後に回される議題に、時間を確保したい。",
+      "tags": ["chairing", "requesting"],
+      "answers": [
+        {
+          "en": "My item has been last on the agenda for four weeks and we've run out of time each week. It's now blocking two people's work. Could it go first next time rather than last?",
+          "ja": "私の議題は4週続けて最後に置かれ、毎回時間切れになっています。今では2人の作業が止まっています。次回は最後ではなく最初にできませんか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "事実と影響を並べる。要求が正当に見える。"
+        },
+        {
+          "en": "Items at the end of the agenda never survive an overrun, and ours has been there since August. It's not a big item — it needs ten minutes and a decision. The cost of not having it is bigger than the item.",
+          "ja": "議題の最後に置かれたものは超過時に必ず飛びますが、私たちの件は8月からそこにあります。大きな件ではなく、10分と決定があれば済みます。決まらない損失の方が大きいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "構造の問題として述べる。個人の不満に見えない。"
+        },
+        {
+          "en": "I know the agenda is set by what's urgent, and mine hasn't been. I'd just say that it's becoming urgent by being deferred. Could we give it ten minutes before it turns into a real problem?",
+          "ja": "議題は緊急度で決まり、私の件がそうでなかったのは分かります。ただ、先送りによって緊急になりつつあります。本当の問題になる前に10分いただけませんか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "運営を責めない。協力を引き出す。"
+        },
+        {
+          "en": "Could I ask for a fixed ten minutes at the start rather than a slot at the end? I'll send the paper two days ahead so nobody reads it cold. If it takes less, we give the time back.",
+          "ja": "最後の枠ではなく、冒頭に10分の固定枠をいただけませんか。資料は2日前に送り、初見の方が出ないようにします。早く終われば時間はお返しします。",
+          "register": "polite",
+          "style": "request",
+          "note": "条件を先に差し出す。承諾されやすい。"
+        },
+        {
+          "en": "I should like to request that this item be scheduled earlier in future agendas. It has been deferred on four consecutive occasions owing to overruns. A decision is now required before the end of the month.",
+          "ja": "今後の議題では、この件をより前に配置いただきたくお願い申し上げます。超過により4回連続で見送られております。月末までに決定が必要な状況です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "公式に記録させる。放置されにくくなる。"
+        },
+        {
+          "en": "Can we move my item up? It's been last four weeks running and we've never got to it. Ten minutes is all it needs.",
+          "ja": "私の議題を前に動かせませんか。4週続けて最後で、一度も到達していません。必要なのは10分だけです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い場で。短く率直に頼む。"
+        },
+        {
+          "en": "If the agenda is genuinely full, I'd take a separate fifteen minutes with just the three people who need to decide. That would free the agenda for the bigger items. Would that be easier than finding a slot here?",
+          "ja": "議題が本当に詰まっているなら、決定に必要な3人だけで別途15分でも構いません。その方が大きな議題に時間を回せます。ここで枠を探すより容易でしょうか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "会議の外に出す代案。相手の負担を減らす。"
+        },
+        {
+          "en": "I'd rather not carry it to a fifth week. At that point I'll have to make the call myself and tell the group afterwards. I'd much prefer to decide it here with everyone.",
+          "ja": "5週目に持ち越すのは避けたいです。そうなれば自分で判断し、後から報告する形になります。できればこの場で皆さんと決めたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "自分で決める予告。優しく圧力をかける。"
+        },
+        {
+          "en": "Four weeks of deferral has cost us about nine days of engineering time. The two people involved have been picking up other work and switching back. I'd like that to stop this week.",
+          "ja": "4週間の先送りで、技術者のおよそ9日分が失われました。関係する2人は別の作業と行き来しています。今週で終わりにしたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "損失を数字で示す。優先順位が上がる。"
+        },
+        {
+          "en": "Here's a suggestion for the agenda generally. Rotate which item goes last, so the same one never absorbs every overrun. I'm happy to take the last slot next month if mine goes first this time.",
+          "ja": "議題の組み方全体への提案です。最後に置く議題を持ち回りにし、同じ件が超過をすべて被らないようにしませんか。今回私が先なら、来月は最後で構いません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "自分だけの得にしない。合意されやすい。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-013",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the group",
+      "want": "You want to say the room has misunderstood your proposal.",
+      "situationJa": "自分の提案が誤解されていると伝えたい。",
+      "tags": ["clarifying", "meetings"],
+      "answers": [
+        {
+          "en": "I think I've explained this badly, so let me try again. I'm not proposing we replace the platform. I'm proposing we stop adding to it while we decide.",
+          "ja": "説明が下手だったようなので、言い直させてください。基盤を置き換える提案ではありません。決めるまで追加を止めるという提案です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "自分の説明のせいにする。相手が守りに入らない。"
+        },
+        {
+          "en": "The confusion may come from the word freeze, which I shouldn't have used. Everything currently in flight continues as planned. What stops is new commitments after the thirtieth.",
+          "ja": "混乱の元は「freeze」という語で、使うべきではありませんでした。進行中のものはすべて予定通り続きます。止まるのは30日以降の新規の約束です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "誤解の原因を特定する。同じ誤解が繰り返されない。"
+        },
+        {
+          "en": "I can see why it landed that way, and the concern would be fair if that's what I meant. Nobody's project gets cancelled under this. I'd rather clear that up now than have people worry all week.",
+          "ja": "そう受け取られた理由は分かりますし、その意味なら懸念はもっともです。この案で中止になる案件はありません。1週間気を揉ませるより、今はっきりさせたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の懸念を正当と認める。対立が消える。"
+        },
+        {
+          "en": "Could I take two minutes to restate it? I'll do it in three sentences and then you can push back on the real version. It'll save us arguing about something I'm not asking for.",
+          "ja": "2分だけ言い直させていただけますか。3文で述べますので、その上で本来の案に反論してください。求めていない内容を巡る議論を省けます。",
+          "register": "polite",
+          "style": "request",
+          "note": "言い直しの時間を求める。議論が正常化する。"
+        },
+        {
+          "en": "May I clarify the proposal, as I believe it has been understood differently. It concerns new commitments only, and does not affect work already underway. I shall circulate a one-page summary to avoid further ambiguity.",
+          "ja": "提案の趣旨が異なって受け取られていると存じますので、補足させてください。対象は新規の約束のみで、進行中の作業には影響しません。曖昧さを避けるため、1枚の要約を共有いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった場で。書面で誤解を確実に消す。"
+        },
+        {
+          "en": "That's not quite what I meant — my fault. I'm not saying scrap the platform. I'm saying don't build more on it until we've decided.",
+          "ja": "そういう意味ではありませんでした、私の説明不足です。基盤を捨てるとは言っていません。決めるまで、その上に積み増さないという話です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く訂正する。話の流れを止めない。"
+        },
+        {
+          "en": "If the word freeze is the problem, I'll happily drop it. Call it a pause on new commitments, or nothing at all. I care about the behaviour, not the label.",
+          "ja": "「freeze」という語が問題なら、喜んで取り下げます。新規の約束の一時停止と呼んでも、名前を付けなくても構いません。大事なのは呼び方ではなく中身です。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "言葉を譲る。中身の合意に集中できる。"
+        },
+        {
+          "en": "I'd rather we didn't vote on the version that's been described. It isn't the proposal and I'd be voting against it myself. Could we defer the vote to the end of the item?",
+          "ja": "今説明された内容のまま採決するのは避けたいです。私の提案ではなく、私自身反対するものだからです。採決を議題の最後に回せませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "誤解のままの採決を止める。重要な一手。"
+        },
+        {
+          "en": "This is the second time the summary in the pack hasn't matched what I wrote. I don't think it's deliberate, but it's changed the discussion twice now. Could I check the wording before it goes out next time?",
+          "ja": "資料の要約が私の記載と食い違うのは2度目です。意図的ではないと思いますが、議論が2度歪みました。次回は配布前に文言を確認させていただけますか。",
+          "register": "polite",
+          "style": "complain",
+          "note": "繰り返しを穏やかに指摘。手順の改善を求める。"
+        },
+        {
+          "en": "Let me put it in writing to be safe. I'll send three bullet points this afternoon saying what changes and what doesn't. We take the decision at the next meeting against that text rather than my memory of what I said.",
+          "ja": "念のため書面にします。何が変わり何が変わらないかを、午後に3点で送ります。次回はその文面に基づいて決定しましょう。私の記憶ではなく。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "文書で確定させる。誤解の再発を断つ。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-014",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a board meeting",
+      "listener": "a hostile board member",
+      "want": "You want to handle a hostile question calmly.",
+      "situationJa": "敵意のある質問に、冷静に応じたい。",
+      "tags": ["pressure", "executives"],
+      "answers": [
+        {
+          "en": "That's a fair question and I'll answer it directly. We missed the target by nineteen percent. The reason is the second site, and I'll set out what we're doing about it.",
+          "ja": "もっともなご質問ですので、率直にお答えします。目標に19パーセント届きませんでした。原因は2つ目の拠点で、その対応をご説明します。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "敵意に反応せず中身に答える。最も強い対応。"
+        },
+        {
+          "en": "There are two questions in there and I'd like to take them separately. The first is whether the forecast was wrong, and it was. The second is whether we knew, and we did not until August.",
+          "ja": "ご質問には2つ含まれているので、分けてお答えします。1つは予測が誤っていたかで、誤っていました。もう1つは把握していたかで、8月まで把握していませんでした。",
+          "register": "neutral",
+          "style": "context",
+          "note": "質問を分解する。攻撃的な問いが扱いやすくなる。"
+        },
+        {
+          "en": "I understand the frustration behind the question, and I'd feel it in your position. You approved this on numbers that turned out to be wrong. I'd rather spend my time telling you how we make the next set reliable.",
+          "ja": "ご質問の背景にある苛立ちは理解でき、同じ立場なら私もそう感じます。誤った数字に基づいてご承認いただきました。次の数字を確かにする方法に、時間を使いたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "感情を認めてから中身へ。場が落ち着く。"
+        },
+        {
+          "en": "Could I ask what would answer the question for you? If it's the forecasting method, I can walk through it now. If it's accountability, that's a different conversation and I'm willing to have it.",
+          "ja": "どのような回答であればご納得いただけるか伺えますか。予測の手法であれば、今この場でご説明します。責任の所在であれば別の議論となりますが、それにも応じます。",
+          "register": "polite",
+          "style": "request",
+          "note": "問いの本意を確認する。空回りを防ぐ。"
+        },
+        {
+          "en": "I shall answer the question as put. The forecast was not met, and the variance was nineteen percent. I accept responsibility for the forecast and will set out the corrective measures.",
+          "ja": "ご質問にそのままお答えいたします。予測は達成されず、差異は19パーセントでした。予測についての責任は私にあり、是正措置をご説明いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "取締役会で。逃げない姿勢が記録に残る。"
+        },
+        {
+          "en": "Fair enough — we got it wrong. Nineteen percent under, and I signed off the forecast. Here's what I'd do differently.",
+          "ja": "おっしゃる通り、私たちの誤りです。19パーセント未達で、予測を承認したのは私です。次はどう変えるかを申し上げます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に認める。攻撃の勢いを削ぐ。"
+        },
+        {
+          "en": "I'd like to answer properly rather than quickly, if the board will allow it. Give me five minutes on the causes and the fix. If it doesn't satisfy you, I'll take the rest offline with you directly.",
+          "ja": "早くではなく、きちんとお答えしたいのですが、よろしいでしょうか。原因と対策に5分いただきます。ご納得いただけなければ、残りは個別に直接伺います。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "時間の使い方を交渉する。議論の質が保たれる。"
+        },
+        {
+          "en": "I'm not going to accept that we hid the number, and I'd like to say so plainly. It was reported the week we found it, in the August pack. I'm happy to be wrong about the forecast, but not about that.",
+          "ja": "数字を隠したという点は受け入れられませんので、はっきり申し上げます。判明した週に、8月の資料で報告しています。予測の誤りは認めますが、この点は違います。",
+          "register": "polite",
+          "style": "decline",
+          "note": "事実誤認だけは明確に否定する。信用を守る。"
+        },
+        {
+          "en": "I'd also note that this is the first time the question has been put to me. The August paper set out the variance and asked for a decision. It might be worth asking why it wasn't discussed then.",
+          "ja": "この質問を受けたのは今回が初めてであることも申し添えます。8月の書面で差異を示し、判断を求めました。なぜその時に議論されなかったかを問う価値はあるかもしれません。",
+          "register": "polite",
+          "style": "complain",
+          "note": "静かに反撃する。事実に基づく場合のみ有効。"
+        },
+        {
+          "en": "Let me propose how we close this out. I'll bring a written variance analysis to the next board with the revised forecast method. If the board wants an independent review, I'd support that too.",
+          "ja": "この件の締め方をご提案します。次回の取締役会に、差異分析と改訂した予測手法を書面でお持ちします。第三者による検証をご希望であれば、それにも賛成します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "検証を自ら申し出る。疑いを晴らす最短路。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-015",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On a call",
+      "listener": "a supplier",
+      "want": "You want a supplier to justify a sudden price increase.",
+      "situationJa": "供給元に、急な値上げの根拠を説明してもらいたい。",
+      "tags": ["negotiating", "suppliers"],
+      "answers": [
+        {
+          "en": "I've had the notice about the twelve percent increase from January. I'd like to understand what's driving it before we discuss the number. Which parts of your cost base have moved?",
+          "ja": "1月からの12パーセントの値上げのご通知を拝受しました。金額の話の前に、要因を理解したいです。御社の原価のどの部分が動いたのでしょうか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "数字より先に根拠を問う。交渉が有利に進む。"
+        },
+        {
+          "en": "Our contract sets annual review in line with the published index, which is running at four percent. The letter proposes twelve. I'd like to know what accounts for the other eight.",
+          "ja": "契約では公表指数に沿った年次見直しと定めており、その指数は4パーセントです。通知は12パーセントです。残る8パーセントの内訳を伺いたいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "契約条項を根拠にする。最も強い問い方。"
+        },
+        {
+          "en": "I know costs have risen for everyone and I'm not disputing that in principle. What I need is something I can take to my finance team. A breakdown by cost line would let me defend it internally.",
+          "ja": "各社で費用が上がっているのは承知しており、原則として異議はありません。ただ、経理に示せる資料が必要です。費目別の内訳があれば、社内で説明できます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を敵にしない。資料を引き出しやすい。"
+        },
+        {
+          "en": "Could you send a breakdown by cost line before we talk again? Labour, materials and transport separately would be ideal. I'd rather have one informed conversation than three general ones.",
+          "ja": "次回お話しする前に、費目別の内訳をお送りいただけますか。人件費、材料費、輸送費を分けていただけると助かります。一般論を3度話すより、根拠のある1度の話をしたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な資料を指定する。話が前に進む。"
+        },
+        {
+          "en": "I should be grateful for a written justification of the proposed increase. Clause nine provides for adjustment by reference to the published index, currently four percent. Please set out the basis for the balance of the proposed twelve.",
+          "ja": "ご提案の値上げについて、書面での根拠をいただければ幸いです。第9条は公表指数による調整を定めており、現在は4パーセントです。提案の12パーセントとの差の根拠をご提示ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "契約上の申し入れ。記録として機能する。"
+        },
+        {
+          "en": "Twelve percent is a big jump — where's it coming from? The index is at four. Can you show me the other eight?",
+          "ja": "12パーセントは大きな上げ幅ですが、根拠はどこにありますか。指数は4パーセントです。残る8パーセントを示していただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "長い付き合いの相手に。単刀直入に聞く。"
+        },
+        {
+          "en": "If the increase is unavoidable, could we phase it over two years? Six now and six next January would let us absorb it in the budget cycle. In return I'd extend the term by a year.",
+          "ja": "値上げが避けられないなら、2年に分けられませんか。今6パーセント、来年1月に6パーセントなら、予算の周期で吸収できます。代わりに契約期間を1年延長します。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "見返りを添える。合意に至りやすい。"
+        },
+        {
+          "en": "I'm afraid I can't approve twelve percent on the information I have. That isn't a negotiating position, it's a governance one. Send me the breakdown and I'll take it through properly.",
+          "ja": "現在の情報では12パーセントを承認できません。交渉上の立場ではなく、社内手続き上の話です。内訳をお送りいただければ、正式に手続きを進めます。",
+          "register": "polite",
+          "style": "decline",
+          "note": "個人の判断でないと示す。角が立たない拒否。"
+        },
+        {
+          "en": "This is the second increase in fourteen months, and the first was also above the index. Neither came with a breakdown. I'd like to reset how we handle these before we discuss the number.",
+          "ja": "14か月で2度目の値上げで、前回も指数を上回っていました。いずれも内訳の提示はありませんでした。金額の議論の前に、扱い方を改めたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。今後の運用まで是正できる。"
+        },
+        {
+          "en": "Let me suggest a way forward. Send the cost breakdown by the fifteenth, and we'll meet the week after with our volume forecast. If the case holds we'll agree a phased increase then.",
+          "ja": "進め方をご提案します。15日までに費目別の内訳をお送りください。翌週、当方の数量見込みを持ってお会いします。根拠が確かであれば、その場で段階的な値上げに合意します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限と交換条件を明示。実務的に進む。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-016",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the group",
+      "want": "You want to close a meeting where nothing was agreed.",
+      "situationJa": "何も決まらなかった会議を、締めくくりたい。",
+      "tags": ["chairing", "closing"],
+      "answers": [
+        {
+          "en": "We're at time and we haven't reached a decision, so let me be honest about where we are. We have two options and no agreement on the criteria. That's what I'll write in the notes.",
+          "ja": "時間になりましたが結論には至っていないので、現状を正直に申し上げます。案は2つあり、判断基準について合意がありません。議事にはそう記録します。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "決まらなかったと明記する。次が動き出す。"
+        },
+        {
+          "en": "Looking back at the hour, we spent most of it on cost and none of it on risk. I think that's why we couldn't land it. The next session should start with the risk question.",
+          "ja": "この1時間を振り返ると、大半を費用に使い、危険性には触れませんでした。決まらなかった理由はそこだと思います。次回は危険性の議論から始めるべきです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "決まらない原因を診断する。次回が変わる。"
+        },
+        {
+          "en": "I don't want anyone leaving thinking this was wasted. We ruled out two options and we know what we disagree about. That's less than I hoped for but it isn't nothing.",
+          "ja": "無駄だったと思って退室してほしくありません。2つの案を除外でき、何について意見が割れるかも分かりました。期待より少ないですが、成果はあります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "士気を守る締め方。次に人が集まる。"
+        },
+        {
+          "en": "Could everyone send me one line by tomorrow on what would change your mind? I'll collect them and circulate the list. That's the agenda for next time.",
+          "ja": "何があれば考えが変わるか、明日までに1行ずつお送りいただけますか。取りまとめて共有します。それが次回の議題になります。",
+          "register": "polite",
+          "style": "request",
+          "note": "宿題を出して締める。次が空回りしない。"
+        },
+        {
+          "en": "I shall close the item without a decision and record it as such. The two options remain open, and the outstanding question concerns the risk appetite. I will circulate a paper on that point before the next meeting.",
+          "ja": "決定に至らなかったものとして本議題を終了し、その旨を記録いたします。2案は保留とし、未解決の論点は許容できる危険の程度です。この点について次回までに書面を配布いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "公式に未決を記録。責任が曖昧にならない。"
+        },
+        {
+          "en": "Right, we didn't get there today. Let's stop rather than rush a bad decision. I'll write up where we got to and send it round.",
+          "ja": "はい、今日は決着しませんでした。急いで悪い決定を出すより、ここで止めましょう。到達点をまとめて回覧します。",
+          "register": "casual",
+          "style": "casual",
+          "note": "無理に決めない姿勢。社内会議で好まれる。"
+        },
+        {
+          "en": "I'd rather not book another full hour for this. Could the four people closest to it meet for thirty minutes and bring a recommendation? The rest of us then approve or challenge it.",
+          "ja": "この件でもう1時間を確保するのは避けたいです。関係の深い4人で30分集まり、推奨案を持ち寄れませんか。残りの私たちは承認するか異論を述べます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "会議の規模を縮める。決まる確率が上がる。"
+        },
+        {
+          "en": "I'd rather not force a vote in the last two minutes. A decision made that way tends to come back. Let's take the extra week and make it stick.",
+          "ja": "残り2分で採決を強行するのは避けたいです。そうして出た結論は、往々にして蒸し返されます。あと1週間かけて、確かなものにしましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "急がない理由を示す。無理な採決を止める。"
+        },
+        {
+          "en": "I'd say we came in without the cost paper, and that's why we went round in circles. It was due on Friday and nobody chased it. Let's make sure the paper lands before the next one.",
+          "ja": "費用の資料が無いまま始めたことが、堂々巡りの原因だと思います。金曜が期限でしたが、誰も催促しませんでした。次回は資料が揃ってから開きましょう。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "準備不足を指摘する。次回の質が上がる。"
+        },
+        {
+          "en": "Let's close it like this. Yuki brings the cost paper by Wednesday, everyone reads it before we meet, and we decide in the first fifteen minutes next time. If we can't, we escalate it.",
+          "ja": "こう締めましょう。ユキさんが水曜までに費用の資料を用意し、全員が事前に読み、次回は冒頭15分で決定します。決まらなければ上位に上げます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "次の一歩と最終手段を示す。先送りが止まる。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-017",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a steering group",
+      "listener": "senior stakeholders",
+      "want": "You want to announce a three-month delay to the launch.",
+      "situationJa": "開始が3か月遅れることを、関係者に伝えたい。",
+      "tags": ["bad-news", "executives"],
+      "answers": [
+        {
+          "en": "I'm here to tell you the launch moves from March to June. The cause is the integration with the payments provider, which needs a certification we didn't plan for. I'll explain the options after I've given you the date.",
+          "ja": "開始が3月から6月に移ることをお伝えします。原因は決済事業者との接続で、想定していなかった認証が必要になりました。日程を申し上げた上で、選択肢をご説明します。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "結論を先に。悪い知らせほど順序が重要。"
+        },
+        {
+          "en": "The certification takes eight weeks and cannot be shortened or run in parallel. We applied on the second of this month, which is the earliest the provider would accept it. Everything else remains on the original plan.",
+          "ja": "認証には8週間かかり、短縮も並行実施もできません。今月2日に申請しており、それが事業者が受け付ける最短でした。他はすべて当初の計画通りです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "短縮できない理由を先に潰す。追及が減る。"
+        },
+        {
+          "en": "I know several of you have committed to March externally. I'd like to give you what you need to reset those conversations. I've drafted a note you can send today if it helps.",
+          "ja": "何名かは対外的に3月を約束されていると承知しています。その説明をやり直すために必要なものをご用意したいです。本日そのまま送れる文案を作成しました。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の次の困りごとに先回りする。信頼が残る。"
+        },
+        {
+          "en": "Could I ask for a decision today on the scope rather than next month? If we launch in June with the full scope, that's the June date. If you want anything earlier, we'd have to cut the reporting module now.",
+          "ja": "範囲についての判断を、来月ではなく本日いただけませんか。全機能で6月開始なら、その日程です。より早くをご希望なら、今すぐ帳票の機能を外す必要があります。",
+          "register": "polite",
+          "style": "request",
+          "note": "遅延の報告に決断を求める。時間が守られる。"
+        },
+        {
+          "en": "I must advise the group that the launch date will move to June. The delay arises from a mandatory certification in the payments integration. A revised plan and risk assessment will be issued this week.",
+          "ja": "開始日が6月に移ることをご報告申し上げます。決済接続における必須の認証が遅延の原因です。修正計画と危険度評価は今週中に発行いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "公式の場で。記録に残る言い方。"
+        },
+        {
+          "en": "Bad news — we're moving to June. It's the payment certification and there's no way round it. I'll take you through what that means in a minute.",
+          "ja": "悪い知らせです。6月に移ります。決済の認証が原因で、迂回する方法はありません。それが何を意味するか、この後ご説明します。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気心の知れた場で。前置きを省く。"
+        },
+        {
+          "en": "There is one way to hold April, but it has a real cost. We'd launch without card payments and add them in June. That's cheaper than a June launch but it changes what customers see on day one.",
+          "ja": "4月を守る方法は1つありますが、相応の代償があります。カード決済なしで開始し、6月に追加する形です。費用は6月開始より安く済みますが、初日に顧客が目にするものが変わります。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "代替案と代償を対にする。判断ができる。"
+        },
+        {
+          "en": "I'd rather not promise April and miss it a second time. We've already reset this group's expectations once. June is a date I'm confident I can hold.",
+          "ja": "4月を約束して、二度目の未達となるのは避けたいです。この場での見通しは既に一度修正しています。6月は確実に守れる日程です。",
+          "register": "polite",
+          "style": "decline",
+          "note": "楽観的な日程を断る。信頼の回復につながる。"
+        },
+        {
+          "en": "The certification requirement was in the provider's documentation from the start. We did not pick it up in our review in April. That is our failure and I'm not going to present it as an external surprise.",
+          "ja": "認証の要件は当初から事業者の資料に記載されていました。4月の確認で見落としました。当方の落ち度であり、外部の想定外として説明するつもりはありません。",
+          "register": "polite",
+          "style": "complain",
+          "note": "自らの責任を明示する。誠実さが伝わる。"
+        },
+        {
+          "en": "My recommendation is to take the June date with the full scope. I'll bring a revised plan on Thursday and a weekly certification tracker from next week. If the provider moves faster, I'll tell you the day I know.",
+          "ja": "全機能を含む6月の日程を推奨します。木曜に修正計画を、来週から週次の認証の進捗表をお持ちします。事業者が早まれば、分かった日にご報告します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "推奨と監視の仕組みを示す。信頼が回復する。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-018",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On a video call",
+      "listener": "the group",
+      "want": "You want to manage a call where people keep talking over each other.",
+      "situationJa": "発言が重なり続ける通話を、整理したい。",
+      "tags": ["chairing", "video-calls"],
+      "answers": [
+        {
+          "en": "We're cutting across each other and losing about half of what's said. Let me take it one at a time. Marco first, then Rina, then whoever raises a hand.",
+          "ja": "発言が重なり、話の半分ほどが聞き取れていません。1人ずつにしましょう。まずマルコさん、次にリナさん、その後は挙手された方の順で。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "順番を明示する。混線が即座に収まる。"
+        },
+        {
+          "en": "Part of the problem is the delay on the line, which is about a second. That's long enough for two people to start at once without either being rude. Short pauses before speaking will fix most of it.",
+          "ja": "原因の一部は回線の遅れで、およそ1秒あります。悪意なく2人が同時に話し始めるには十分な長さです。話す前に少し間を置けば、ほぼ解消します。",
+          "register": "neutral",
+          "style": "context",
+          "note": "誰のせいでもないと示す。緊張が下がる。"
+        },
+        {
+          "en": "Nobody's doing anything wrong here — it's the format working against us. I'd like to slow it down so the quieter people can get in. Could we use the hand button for the next twenty minutes?",
+          "ja": "誰も悪くはなく、この形式が不利に働いているだけです。控えめな方も入れるよう、速度を落としたいです。次の20分は挙手の機能を使いませんか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "非難を避けて仕組みを変える。受け入れられやすい。"
+        },
+        {
+          "en": "Could I ask everyone to mute unless they're speaking? Two open microphones are picking up typing and it's cutting people off. It should make a noticeable difference straight away.",
+          "ja": "発言時以外は消音にしていただけますか。開いたままの音声が2つあり、打鍵音が他の方の発言を途切れさせています。すぐに違いが出るはずです。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な操作を頼む。すぐ改善する。"
+        },
+        {
+          "en": "May I suggest we take contributions in turn for the remainder of the call. I shall invite each participant by name. Please use the hand function if you wish to come in between turns.",
+          "ja": "残りの通話は順番に発言をお願いできればと存じます。私からお一人ずつお名前でお呼びします。順番の合間に発言をご希望の場合は挙手の機能をお使いください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった外部との通話で。整然と進む。"
+        },
+        {
+          "en": "Sorry, we keep talking over each other. One at a time — Marco, go ahead. Rina, you're next.",
+          "ja": "すみません、発言が重なり続けています。1人ずつにしましょう。マルコさん、どうぞ。次はリナさんです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "社内の通話で。短く整理する。"
+        },
+        {
+          "en": "If the hand button feels slow, we could put the two questions in the chat instead. I'll read them out and we answer in order. Either works, but let's pick one for the rest of the call.",
+          "ja": "挙手の機能が煩わしければ、質問2件は文字入力欄に書いていただいても構いません。私が読み上げ、順に回答します。どちらでも良いので、残りはどちらかに統一しましょう。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "手段を選ばせる。合意が得られやすい。"
+        },
+        {
+          "en": "I'd rather not push on with three conversations running at once. We'll finish the hour with nothing recorded. Let's reset and take the items one by one.",
+          "ja": "3つの会話が同時に進んだまま続けるのは避けたいです。何も記録されないまま1時間が終わります。仕切り直して、1件ずつ進めましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "続行を止める判断。会議が救われる。"
+        },
+        {
+          "en": "Two people have tried to speak four times and been cut off each time. I've been watching the screen rather than the discussion. That's a sign the format isn't working, not that they're being quiet.",
+          "ja": "2人が4度発言しようとして、そのたびに遮られています。私は議論より画面を見ていました。控えめなのではなく、この形式が機能していない証拠です。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "観察を共有する。全員の行動が変わる。"
+        },
+        {
+          "en": "Let's change how we run this. I'll go round each person for two minutes with no interruptions, then open it up. If we don't finish, I'd rather book fifteen more minutes than talk over each other for another hour.",
+          "ja": "進め方を変えましょう。まずお一人2分ずつ、遮らずに順に伺い、その後自由な議論にします。終わらなければ、重なり合って1時間続けるより15分追加します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "形式を明確に変える。最も効果が大きい。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-019",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "the group",
+      "want": "You want to raise a risk nobody in the room wants to hear.",
+      "situationJa": "誰も聞きたがらない危険性を、あえて指摘したい。",
+      "tags": ["risk", "meetings"],
+      "answers": [
+        {
+          "en": "I'm going to raise something unwelcome, and I'll be quick about it. If the supplier misses the September date, we have no fallback and the season is gone. I'd like us to decide now whether that's acceptable.",
+          "ja": "歓迎されない話を、手短に申し上げます。供給元が9月の期日を落とせば、代替が無く、この時期を丸ごと失います。それを許容するか、今決めたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "前置きを短く、影響を具体的に。聞いてもらえる。"
+        },
+        {
+          "en": "We've built the whole plan on a single supplier with no second source. That was reasonable when the volume was small. At this volume, one missed delivery stops the line for a month.",
+          "ja": "計画全体を、代替の無い単一の供給元に置いています。数量が小さいうちは妥当な判断でした。この数量では、1度の納入遅れで1か月生産が止まります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "以前の判断を責めない。受け入れられやすい。"
+        },
+        {
+          "en": "I know the room is tired of hearing about supply risk, and I understand why. I'm not asking to reopen the decision. I'm asking that we write down what we'd do if it happens.",
+          "ja": "供給の危険性の話に皆さんが飽きているのは分かりますし、理由も理解できます。決定を蒸し返したいのではありません。起きた場合の対応を書き留めたいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "要求を最小にする。反発が起きにくい。"
+        },
+        {
+          "en": "Could we spend ten minutes on the fallback rather than on whether the risk is real? I'm happy to be told the probability is low. What I'd like is for someone to own it if it happens.",
+          "ja": "危険性の有無ではなく、代替策に10分使えませんか。発生確率が低いというご判断でも構いません。起きた場合に誰が担うかを決めたいのです。",
+          "register": "polite",
+          "style": "request",
+          "note": "議論を担当者決めに移す。実効性がある。"
+        },
+        {
+          "en": "I should like to record a risk regarding single-source supply. Should the September delivery be missed, no alternative source is currently qualified. I would ask that a mitigation owner be assigned.",
+          "ja": "単一供給元に関する危険性を記録させていただきたく存じます。9月の納入が遅れた場合、現時点で認定済みの代替供給元はありません。緩和策の担当者の指名をお願い申し上げます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "登録簿に載せる。責任が明確になる。"
+        },
+        {
+          "en": "Nobody wants to hear this, but I'd rather say it now. One supplier, no backup, and September is tight. If it slips, we lose the season.",
+          "ja": "誰も聞きたくない話ですが、今のうちに言っておきます。供給元は1社、代替なし、9月は余裕がありません。遅れれば、この時期を失います。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な社内の場で。短く強い。"
+        },
+        {
+          "en": "I'm not asking for a second supplier today, which I know is expensive. Could we at least qualify one so the option exists? That's about two weeks of work and no committed spend.",
+          "ja": "費用がかかるのは承知しているので、今日2社目を求めてはいません。選択肢だけでも持てるよう、認定だけ進められませんか。作業は2週間ほどで、確定支出はありません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "費用の小さい一歩を求める。通りやすい。"
+        },
+        {
+          "en": "I'd rather not let this go unminuted. If it happens, we'll all be asked whether we knew. I'd like the answer to be that we knew and made a deliberate choice.",
+          "ja": "議事に残さないままにするのは避けたいです。起きたとき、知っていたかを全員が問われます。知った上で意図的に選んだ、と答えられるようにしたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "記録を残す理由を示す。反対しにくい。"
+        },
+        {
+          "en": "I raised this in June and it wasn't taken forward. I'm not saying that to score a point. I'm saying it because the same conversation with no owner tends to happen a third time.",
+          "ja": "6月にも指摘しましたが、進みませんでした。責めるために申し上げているのではありません。担当者を決めない議論は、3度目が起きるからです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。今度こそ担当が決まる。"
+        },
+        {
+          "en": "Here's what I'd propose. Add it to the risk register with Aya as owner, qualify a second supplier by October, and review at the November meeting. If the risk closes, we drop it and lose nothing.",
+          "ja": "こう提案します。危険性の一覧にアヤさんを担当として登録し、10月までに2社目を認定、11月の会議で見直します。危険が消えれば取り下げるだけで、損失はありません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "担当と期限を同時に決める。実行される形。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-3-020",
+      "category": "meeting",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a meeting",
+      "listener": "your manager and the project lead",
+      "want": "You want to ask to be taken off a workstream without blaming anyone.",
+      "situationJa": "誰も責めずに、ある作業から外してほしいと伝えたい。",
+      "tags": ["workload", "requesting"],
+      "answers": [
+        {
+          "en": "I'd like to ask to come off the reporting workstream. I'm carrying three and the third is the one that suffers. I'd rather hand it over cleanly now than do it badly for another month.",
+          "ja": "帳票の作業から外していただきたいです。3件を抱えており、3つ目の質が落ちています。あと1か月中途半端に続けるより、今きちんと引き継ぎたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "理由を負荷に置く。人を責めない基本形。"
+        },
+        {
+          "en": "When I picked it up in May it was a two-day-a-week commitment. It's now closer to four, mostly because the scope grew. That's nobody's fault, but it doesn't fit alongside the migration work.",
+          "ja": "5月に引き受けた時点では週2日の想定でした。範囲が広がった結果、今は週4日に近い状況です。誰の責任でもありませんが、移行の作業とは両立しません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "変化を数字で示す。感情論にならない。"
+        },
+        {
+          "en": "I want to be clear that this isn't about the team or the work itself. I've enjoyed it and I'd come back to it later. It's purely that three workstreams doesn't work at this stage of the migration.",
+          "ja": "チームや仕事内容が理由ではないことを、はっきりさせておきたいです。楽しく取り組みましたし、後で戻ることもできます。移行のこの時期に3件は無理だというだけです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "誤解を先に防ぐ。人間関係が壊れない。"
+        },
+        {
+          "en": "Could we find a replacement over the next three weeks rather than immediately? I'd like to hand over properly, not drop it. I'll write the handover note either way.",
+          "ja": "即時ではなく、今後3週間で後任を探せませんか。放り出すのではなく、きちんと引き継ぎたいです。引き継ぎ書はいずれにしても作成します。",
+          "register": "polite",
+          "style": "request",
+          "note": "移行期間を提案する。責任感が伝わる。"
+        },
+        {
+          "en": "I should like to request release from the reporting workstream. My current allocation across three workstreams is no longer sustainable alongside the migration. I would propose a handover over three weeks.",
+          "ja": "帳票の作業からの離任をお願い申し上げます。3件を担当する現在の配分は、移行と並行しては維持できません。3週間での引き継ぎを提案いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な申し出。記録に残したい場合に。"
+        },
+        {
+          "en": "Can I hand the reporting stream over to someone else? Three at once isn't working and it's the one slipping. Happy to do a proper handover over a few weeks.",
+          "ja": "帳票の作業を他の方にお渡しできませんか。3件同時は回らず、遅れているのがそれです。数週間かけてきちんと引き継ぎます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直な相談。話が早い。"
+        },
+        {
+          "en": "If nobody can pick it up, I could keep the client-facing part and hand over the build. That's about a day a week rather than four. Would that be a workable middle ground?",
+          "ja": "引き取り手がいなければ、顧客対応だけ残して開発をお渡しすることもできます。週4日ではなく週1日程度になります。折衷案として成り立ちますか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "全部か無しかにしない。合意しやすい。"
+        },
+        {
+          "en": "I'd rather not stay on all three and let the quality slip quietly. That's the outcome I'm trying to avoid by raising it now. If the answer is that I have to, I'd like to agree what drops.",
+          "ja": "3件すべてを抱えたまま、静かに質を落とすのは避けたいです。今申し上げているのは、その結末を避けるためです。続けるべきという結論なら、何を落とすかを決めたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "断りに代案の問いを添える。前に進む。"
+        },
+        {
+          "en": "The scope has grown three times since May without the plan being updated. I've raised it twice in one-to-ones and it hasn't changed. I'm bringing it here because I don't think it's a conversation between two people any more.",
+          "ja": "5月以降、計画を更新しないまま範囲が3度広がりました。個別面談で2度伝えましたが、変わっていません。もはや2人の間で済む話ではないため、この場に持ち込みました。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を事実で述べる。場に出す正当性を示す。"
+        },
+        {
+          "en": "Here's what I'd suggest. I stay until the end of the month, write the handover, and brief whoever takes it for a week. In exchange I'd like the migration date protected once I'm back on it full time.",
+          "ja": "こう提案します。月末まで残って引き継ぎ書を作り、後任に1週間説明します。その代わり、移行に専念した後は、その期日を守っていただきたいです。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "貢献と要望を対にする。通りやすい提案。"
+        }
+      ]
+    }
+  ]
+}
