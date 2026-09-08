@@ -1,0 +1,1296 @@
+{
+  "category": "trouble",
+  "level": 3,
+  "situations": [
+    {
+      "id": "trouble-3-001",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a police station",
+      "listener": "a police officer",
+      "want": "You want to report a burglary and describe what is missing.",
+      "situationJa": "空き巣の被害を届け出て、盗まれたものを説明したい。",
+      "tags": [
+        "crime",
+        "reporting"
+      ],
+      "answers": [
+        {
+          "en": "I want to report a break-in at my flat this afternoon. The back window was forced and three things are missing. I haven't touched anything since I found it.",
+          "ja": "本日午後、自宅に侵入された件を届け出たいです。裏の窓がこじ開けられ、3点が無くなっています。発見後、何にも触れていません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "場所、手口、被害数、現場保存。要点が揃う。"
+        },
+        {
+          "en": "I left at eight this morning and came back at six. The neighbour heard glass at about two but didn't see anyone. That gives us a ten-hour window with one time reference.",
+          "ja": "今朝8時に出て、18時に戻りました。隣の方が14時頃にガラスの音を聞きましたが、姿は見ていません。10時間の範囲と、目安の時刻が1つあります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "時間帯を絞る。捜査に直接役立つ。"
+        },
+        {
+          "en": "I know you'll need a full list and I don't have every serial number yet. I've brought the receipts I could find. I'd rather give you what's certain now and send the rest tonight.",
+          "ja": "詳細な一覧が必要で、製造番号はまだすべて揃っていないと承知しています。見つかった領収書は持参しました。確かなものを先にお渡しし、残りは今夜お送りします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "できることを先に出す。手続きが早く進む。"
+        },
+        {
+          "en": "Could you tell me whether anyone will attend for fingerprints? I've kept the room shut and nobody has been in. If someone is coming, I'll leave it exactly as it is.",
+          "ja": "指紋の採取に来られる方がいるかどうか、教えていただけますか。部屋は閉め切り、誰も入れていません。来られるのであれば、このままにしておきます。",
+          "register": "polite",
+          "style": "request",
+          "note": "現場保存の判断を仰ぐ。証拠が守られる。"
+        },
+        {
+          "en": "I wish to report a burglary at my address, discovered at approximately six this evening. Entry appears to have been made through a forced rear window. Three items are missing, and I can provide receipts and serial numbers.",
+          "ja": "本日18時頃に発見した、自宅への侵入盗を届け出ます。裏の窓をこじ開けて侵入されたものと見られます。3点が失われており、領収書と製造番号をご提出できます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な届出。保険の請求にも使える形。"
+        },
+        {
+          "en": "Someone's broken into my flat. The back window's been forced and three things are gone. I got home at six and haven't touched anything.",
+          "ja": "自宅に侵入されました。裏の窓がこじ開けられ、3点が無くなっています。18時に帰宅し、何も触っていません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "動転した場面で。短く必要事項を伝える。"
+        },
+        {
+          "en": "If a full report takes time, could I get the crime reference number first? The insurer needs it before they'll open a claim. I can come back tomorrow for the rest.",
+          "ja": "詳細な調書に時間がかかるようでしたら、先に受理番号をいただけますか。保険会社が請求の受付に必要としています。残りは明日改めて伺えます。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "必要な番号を先に取る。実務上とても重要。"
+        },
+        {
+          "en": "I'd rather not clean up before someone has looked at it. I know it may take a day. I'd sooner wait than lose whatever evidence is there.",
+          "ja": "確認いただく前に片付けるのは避けたいです。1日かかるかもしれないのは承知しています。証拠を失うより、待つ方を選びます。",
+          "register": "polite",
+          "style": "decline",
+          "note": "証拠保全を優先する姿勢。的確な判断。"
+        },
+        {
+          "en": "There were two break-ins on this street in August. Both were reported and neither was attended. I mention it because it may be the same pattern.",
+          "ja": "8月にも、この通りで2件の侵入がありました。いずれも届け出られ、いずれも臨場はありませんでした。同じ手口の可能性があるため、申し添えます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "地域の傾向を伝える。捜査の判断に影響する。"
+        },
+        {
+          "en": "Could we do it in this order? Take the reference number and the three items now, and I'll email the serial numbers and photographs tonight. That way the insurance can start tomorrow.",
+          "ja": "この順で進めていただけますか。受理番号と3点の情報を今取り、製造番号と写真は今夜メールでお送りします。そうすれば保険の手続きを明日始められます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "手順を提案する。二重の手間が省ける。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-002",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a hospital",
+      "listener": "a doctor",
+      "want": "You want to explain a friend's symptoms when they cannot speak for themselves.",
+      "situationJa": "話せない友人に代わって、症状を説明したい。",
+      "tags": [
+        "medical",
+        "emergency"
+      ],
+      "answers": [
+        {
+          "en": "She collapsed about twenty minutes ago and hasn't spoken since. She said her chest hurt just before it happened. She's forty-one and takes medication for blood pressure.",
+          "ja": "20分ほど前に倒れ、以降話せていません。直前に胸が痛いと言っていました。41歳で、血圧の薬を服用しています。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "経過、直前の訴え、年齢と服薬。医師が最も必要とする順。"
+        },
+        {
+          "en": "She was fine at lunch and complained of dizziness around three. It got worse over about an hour rather than suddenly. She's had nothing to drink and no head injury that I saw.",
+          "ja": "昼食時は問題なく、15時頃にめまいを訴えました。急にではなく、1時間ほどかけて悪化しました。飲酒はなく、頭部の外傷も見ていません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "進行の速さを伝える。診断の分かれ目になる。"
+        },
+        {
+          "en": "I'm not family, so I don't know her full history. I've called her sister and she's on her way. Everything I've told you is what I saw myself.",
+          "ja": "家族ではないため、既往歴のすべては分かりません。妹さんに連絡し、こちらへ向かっています。お伝えしたのは、すべて私が直接見たことです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "情報の限界を明示する。誤情報を防ぐ。"
+        },
+        {
+          "en": "Could you tell me what you need from me while we wait? I have her bag and her phone here. I can look for a medication list if that would help.",
+          "ja": "待っている間、私にできることを教えていただけますか。彼女の鞄と携帯を預かっています。役立つようでしたら、薬の一覧を探します。",
+          "register": "polite",
+          "style": "request",
+          "note": "役に立とうとする申し出。実際に助かる。"
+        },
+        {
+          "en": "I should explain what I observed, as she is unable to. She reported chest pain shortly before losing consciousness at approximately four fifteen. She is forty-one and takes medication for hypertension.",
+          "ja": "本人が話せないため、私が見た経過をご説明いたします。16時15分頃に意識を失う直前、胸の痛みを訴えておりました。41歳、高血圧の薬を服用しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "落ち着いた説明。記録としても正確。"
+        },
+        {
+          "en": "She collapsed twenty minutes ago. She said her chest hurt right before. She's forty-one and on blood pressure tablets.",
+          "ja": "20分前に倒れました。直前に胸が痛いと言っていました。41歳で、血圧の薬を飲んでいます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "緊急時に。最短で必要な情報を渡す。"
+        },
+        {
+          "en": "I can stay with her or I can go and find her sister at reception. Tell me which is more useful. I'll do whichever helps you.",
+          "ja": "付き添うことも、受付で妹さんを探すこともできます。どちらが有用か教えてください。役に立つ方をします。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "選択肢を示して指示を仰ぐ。現場が回る。"
+        },
+        {
+          "en": "I'd rather not guess at her medical history. I could give you a plausible answer and be wrong. Her sister will be here in ten minutes and she'll know.",
+          "ja": "既往歴を推測でお答えするのは避けたいです。もっともらしく答えて誤る恐れがあります。10分後に妹さんが到着し、彼女なら分かります。",
+          "register": "polite",
+          "style": "decline",
+          "note": "推測を断る。医療現場で最も大切な態度。"
+        },
+        {
+          "en": "She said the same thing about her chest last week and put it down to stress. I told her to see someone and she didn't. I'm mentioning it in case it's relevant.",
+          "ja": "先週も胸について同じことを言い、疲れのせいだと片付けていました。受診を勧めましたが、行きませんでした。関係があるかもしれないので申し添えます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "過去の訴えを伝える。診断の手がかりになる。"
+        },
+        {
+          "en": "Let me be useful rather than in the way. I'll wait by the door for her sister and bring her straight through. If you need anything from the bag, I'm just outside.",
+          "ja": "邪魔にならず、役に立つようにします。入口で妹さんを待ち、こちらへご案内します。鞄から必要なものがあれば、すぐ外におります。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "自分の立ち位置を決める。現場が助かる。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-003",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At an airport",
+      "listener": "an airline supervisor",
+      "want": "You want to get rebooked after a cancellation with no staff available.",
+      "situationJa": "欠航後、対応する人がいない中で振替を確保したい。",
+      "tags": [
+        "travel",
+        "problems"
+      ],
+      "answers": [
+        {
+          "en": "My flight was cancelled two hours ago and there's been no announcement since. I need to be in Osaka by tomorrow morning for a funeral. I'd take any routing that gets me there.",
+          "ja": "2時間前に欠航となり、以降の案内がありません。葬儀のため、明朝までに大阪へ着く必要があります。着けるのであれば、どの経路でも構いません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "期限と理由を明示する。優先されやすい。"
+        },
+        {
+          "en": "The app is showing me a rebooking for Thursday, which is two days late. There are seats on tonight's flight through Seoul on your partner airline. That routing isn't offered in the app but it exists.",
+          "ja": "案内では木曜への振替となっており、2日遅れです。提携航空会社のソウル経由の便に、今夜空席があります。その経路は案内に出ていませんが、存在します。",
+          "register": "neutral",
+          "style": "context",
+          "note": "自分で調べた経路を出す。窓口が動きやすい。"
+        },
+        {
+          "en": "I can see you've had four hundred people at this desk today. I'm not going to add to that by shouting. I would like one thing checked, and then I'll move aside.",
+          "ja": "本日この窓口に400人が来られたのは見ています。声を荒げて増やすつもりはありません。1点だけ確認いただければ、すぐに退きます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "現場の負担を認める。実際に対応が変わる。"
+        },
+        {
+          "en": "Could you check the Seoul routing tonight rather than the Thursday option? It's flight seven-two-one at nine forty. If it's full, I'll take whatever else you have.",
+          "ja": "木曜の便ではなく、今夜のソウル経由を確認していただけますか。21時40分発の721便です。満席であれば、他の便で構いません。",
+          "register": "polite",
+          "style": "request",
+          "note": "便名まで指定する。処理が一瞬で済む。"
+        },
+        {
+          "en": "I should like to be rebooked at the earliest opportunity, including on partner carriers. My original flight was cancelled at four this afternoon. Under the delay regulations I believe rerouting should be offered at the earliest opportunity.",
+          "ja": "提携航空会社を含め、最も早い便への振替をお願いいたします。当初の便は本日16時に欠航となりました。遅延に関する規定では、最も早い経路での振替が提供されるものと理解しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "規則に触れる。対応の幅が広がる。"
+        },
+        {
+          "en": "My flight's cancelled and the app says Thursday. There are seats tonight via Seoul on your partner. Could you check that one?",
+          "ja": "私の便が欠航し、案内では木曜になっています。提携社のソウル経由に、今夜空席があります。そちらを確認していただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を出す。混雑した窓口向き。"
+        },
+        {
+          "en": "If tonight isn't possible, could you put me on the standby list for the first flight tomorrow? I'll stay at the airport rather than take a hotel. I'd rather be here when a seat opens.",
+          "ja": "今夜が難しければ、明朝一番の便の空席待ちに入れていただけますか。宿泊はせず、空港で待ちます。席が空いた時にここにいたいのです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "自分から譲る。優先度が上がりやすい。"
+        },
+        {
+          "en": "I'd rather not accept the Thursday booking and lose my place in the queue. Once it's issued, I understand the rerouting obligation is treated as met. I'd like to keep the option open.",
+          "ja": "木曜の予約を受け入れて、順番を失うのは避けたいです。発券されれば、振替の義務は果たされたものとして扱われると理解しています。選択肢を残したいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "早期確定の不利益を知っている。守りが固い。"
+        },
+        {
+          "en": "I've been in three queues over five hours and been sent between them twice. Nobody has been able to see partner availability. That's why I'm asking you specifically to check it.",
+          "ja": "5時間で3つの列に並び、2度たらい回しにされました。提携社の空席を確認できる方がいませんでした。だからこそ、確認をお願いしています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。要求の正当性が伝わる。"
+        },
+        {
+          "en": "Could we do this? Check tonight's Seoul routing first, and if it's gone, put me on standby for the morning and note the funeral in the record. I'll wait here either way.",
+          "ja": "この形でお願いできますか。まず今夜のソウル経由を確認し、埋まっていれば明朝の空席待ちに入れ、葬儀の事情を記録に残してください。いずれにせよここで待ちます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "第一希望と次善策を同時に示す。処理が早い。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-004",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At the roadside",
+      "listener": "the other driver",
+      "want": "You want to exchange details after an accident without admitting fault.",
+      "situationJa": "事故の後、非を認めずに必要な情報を交換したい。",
+      "tags": [
+        "accidents",
+        "driving"
+      ],
+      "answers": [
+        {
+          "en": "Let's exchange details first and leave the fault to the insurers. I need your name, your insurance company and the policy number. I'll give you the same three things.",
+          "ja": "まず情報を交換し、過失の判断は保険会社に任せましょう。お名前、保険会社、証券番号が必要です。こちらも同じ3点をお伝えします。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "過失の議論を切り離す。事故直後の鉄則。"
+        },
+        {
+          "en": "Nobody appears to be hurt, which is the main thing. Both cars are drivable and we're blocking a lane. Let's move onto the verge and do this properly.",
+          "ja": "けが人はいないようで、それが何よりです。双方とも走行可能で、車線を塞いでいます。路肩に移動して、きちんと済ませましょう。",
+          "register": "neutral",
+          "style": "context",
+          "note": "安全を先に確保する。冷静さが伝わる。"
+        },
+        {
+          "en": "I can see you're shaken and I'm not going to argue with you here. I'd rather we both got home. Let's take the details and let the companies sort it out.",
+          "ja": "動揺されているのが分かりますし、この場で言い争うつもりはありません。互いに無事に帰ることを優先したいです。情報だけ取り、後は会社に任せましょう。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "対立を避ける。安全にも資する。"
+        },
+        {
+          "en": "Could I take a photograph of your insurance certificate and the number plate? I'll show you mine at the same time. It's faster than writing it down and there's no room for error.",
+          "ja": "保険証書と車両番号を撮影してもよいですか。同時にこちらのものもお見せします。書き写すより早く、誤りも生じません。",
+          "register": "polite",
+          "style": "request",
+          "note": "写真で正確に記録する。後の紛争を防ぐ。"
+        },
+        {
+          "en": "I propose that we exchange particulars and leave liability to our insurers. Please may I have your name, address, insurer and policy number. I shall provide the same and photograph the vehicles.",
+          "ja": "詳細を交換し、責任の判断は双方の保険会社に委ねることを提案いたします。お名前、ご住所、保険会社、証券番号をご教示ください。こちらも同様にお伝えし、車両を撮影いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった申し出。記録として整う。"
+        },
+        {
+          "en": "Let's swap details and let the insurers work it out. Name, insurer, policy number. I'll give you mine too.",
+          "ja": "情報を交換して、判断は保険会社に任せましょう。お名前、保険会社、証券番号を。こちらの分もお渡しします。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く進める。混乱した現場で有効。"
+        },
+        {
+          "en": "If you'd rather not call the police, I'm fine with that as long as we exchange everything. If anything is missing, I'll have to report it. That's not a threat, it's just what the insurer requires.",
+          "ja": "警察を呼びたくないのであれば、情報がすべて揃う限り構いません。不足があれば、届け出る必要が生じます。脅しではなく、保険会社の要件です。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "条件を明示する。相手が協力しやすい。"
+        },
+        {
+          "en": "I'd rather not discuss who was at fault here at the roadside. Neither of us has seen the junction footage. Let's keep to the facts we can both agree on.",
+          "ja": "路上で過失の話をするのは避けたいです。交差点の映像を、どちらも見ていません。互いに合意できる事実だけにしましょう。",
+          "register": "polite",
+          "style": "decline",
+          "note": "その場の議論を断つ。後で不利にならない。"
+        },
+        {
+          "en": "You've said twice that it was my fault and I don't accept that. I'm not going to argue it here either. It'll be decided on the evidence rather than on the pavement.",
+          "ja": "2度、私の過失だと仰いましたが、それは受け入れられません。ここで争うつもりもありません。歩道の上ではなく、証拠に基づいて判断されるものです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "はっきり否定しつつ議論を避ける。両立が要点。"
+        },
+        {
+          "en": "Here's what I suggest. We photograph both cars, both certificates and the junction, then move off the road. I'll report it to my insurer tonight and you do the same.",
+          "ja": "こう提案します。双方の車両、保険証書、交差点を撮影し、路上から移動しましょう。私は今夜、保険会社に報告します。そちらも同様にお願いします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "手順を主導する。抜けなく終わる。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-005",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At an embassy",
+      "listener": "a consular officer",
+      "want": "You want emergency travel documents with no passport and no money.",
+      "situationJa": "旅券も所持金も失い、緊急の渡航書類を求めたい。",
+      "tags": [
+        "emergency",
+        "documents"
+      ],
+      "answers": [
+        {
+          "en": "My passport and wallet were stolen on Tuesday and I fly home on Saturday. I have the police report and a photograph of the passport page. I need to know what's possible in four days.",
+          "ja": "火曜に旅券と財布を盗まれ、土曜に帰国便があります。警察の届出書と、旅券の写真があります。4日間で何が可能かを知りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "期限と手持ちの証拠を先に。相談が早く進む。"
+        },
+        {
+          "en": "The theft was reported to the police on Tuesday afternoon, reference nine-four-two. My bank has cancelled the cards and is sending a replacement to my home address. I have about thirty in cash from a friend.",
+          "ja": "盗難は火曜の午後に届け出済みで、受理番号は942です。銀行はカードを止め、再発行分は自宅へ送付予定です。友人から借りた現金がおよそ30あります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "済んだ手続きを列挙する。信用が得られる。"
+        },
+        {
+          "en": "I realise you deal with this every week and mine isn't unusual. I'm not asking to be treated as a special case. I would like to know the fastest lawful route.",
+          "ja": "毎週こうした案件を扱われ、私の件も特殊ではないと承知しています。特別扱いを求めているのではありません。合法的に最も早い道筋を知りたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "冷静さを示す。担当者が丁寧に応じる。"
+        },
+        {
+          "en": "Could you tell me exactly what I need to bring tomorrow? I'd rather come once with everything than three times. If a photograph and the police report are enough, I'll bring both.",
+          "ja": "明日、何を持参すればよいか正確に教えていただけますか。3度来るより、一度ですべて揃えたいです。写真と警察の届出書で足りるのであれば、両方持参します。",
+          "register": "polite",
+          "style": "request",
+          "note": "手戻りを防ぐ。窓口の負担も減る。"
+        },
+        {
+          "en": "I should like to apply for an emergency travel document. My passport was stolen on Tuesday and I hold a confirmed flight on Saturday. I can provide a police report and photographic evidence of the passport.",
+          "ja": "緊急の渡航書類の発給を申請いたします。旅券は火曜に盗難に遭い、土曜の便が確定しております。警察の届出書と、旅券の写真をご提出できます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な申請。手続きが即座に始まる。"
+        },
+        {
+          "en": "My passport and money were stolen on Tuesday. I fly on Saturday and I've got the police report. What can I do in four days?",
+          "ja": "火曜に旅券と所持金を盗まれました。土曜に出発で、警察の届出書はあります。4日間で何ができますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く事情を伝える。緊急時に。"
+        },
+        {
+          "en": "If the document can't be ready by Saturday, could you tell me now? I'd rather rebook the flight today than lose the fare on Friday. Either way I'd like to know where I stand.",
+          "ja": "土曜までに書類が間に合わないのであれば、今教えていただけますか。金曜に運賃を失うより、本日中に便を取り直したいです。いずれにせよ、見通しを知りたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "早めの判断を求める。損失を最小にする。"
+        },
+        {
+          "en": "I'd rather not wait for the standard replacement if there's an emergency route. I understand it may cost more. I'd take the more expensive option if it's faster.",
+          "ja": "緊急の経路があるのであれば、通常の再発行を待つのは避けたいです。費用が上がる可能性は理解しています。早いのであれば、高い方を選びます。",
+          "register": "polite",
+          "style": "decline",
+          "note": "選好を明示する。案内が具体的になる。"
+        },
+        {
+          "en": "I called the helpline twice on Wednesday and got a recorded message both times. The website form returned an error at the last step. That's why I've come in person.",
+          "ja": "水曜に相談窓口へ2度電話しましたが、いずれも録音案内でした。ウェブの申請は最後で不具合が出ました。だから直接伺いました。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "手を尽くしたと示す。対応が変わりやすい。"
+        },
+        {
+          "en": "Could we agree the plan now? I bring the photograph, the police report and the fee tomorrow at nine. If it can't be issued by Friday, you tell me tomorrow so I can rebook.",
+          "ja": "今、段取りを決めさせていただけますか。明朝9時に、写真、警察の届出書、手数料を持参します。金曜までに発給できない場合は、便を取り直せるよう明日お知らせください。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限付きの計画にする。動きが確実になる。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-006",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In an apartment",
+      "listener": "your landlord on the phone",
+      "want": "You want urgent repairs after weeks of being ignored.",
+      "situationJa": "数週間放置された修繕を、急いで対応させたい。",
+      "tags": [
+        "housing",
+        "escalation"
+      ],
+      "answers": [
+        {
+          "en": "The heating has been off since the twelfth of last month. I've reported it four times and nobody has attended. I need a date and a name today rather than another promise.",
+          "ja": "暖房が先月12日から止まっています。4度連絡しましたが、誰も来ていません。約束ではなく、本日中に日付と担当者名をいただきたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "回数と要求を明確に。放置されにくくなる。"
+        },
+        {
+          "en": "The flat has been at about eleven degrees for three weeks. There's a child in the property and the damp is now on two walls. That's what makes this urgent rather than inconvenient.",
+          "ja": "室温は3週間、11度前後です。子どもがおり、湿気は今や2つの壁に及んでいます。不便ではなく緊急である理由はそこにあります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "健康被害を示す。優先度が上がる。"
+        },
+        {
+          "en": "I know finding a heating engineer in winter isn't easy. I'm not blaming you for the wait itself. What I can't accept is not being told what's happening.",
+          "ja": "冬に暖房の技術者を見つけるのが容易でないのは分かります。待つこと自体を責めてはいません。受け入れられないのは、状況を知らされないことです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "論点を連絡不足に絞る。反発が少ない。"
+        },
+        {
+          "en": "Could you give me the engineer's company name and the appointment date? I'll take the day off work for it. If there's no appointment yet, tell me that plainly and I'll arrange it myself.",
+          "ja": "技術者の会社名と訪問日を教えていただけますか。その日は仕事を休みます。まだ予約が無いのであれば、率直にお伝えください。私が手配します。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な情報を求める。曖昧な返事を封じる。"
+        },
+        {
+          "en": "I am writing to give formal notice that the heating has been inoperative since the twelfth of last month. This has been reported on four occasions without attendance. Please confirm in writing when the repair will be carried out.",
+          "ja": "先月12日以降、暖房が使用できない状態にあることを正式に通知いたします。4度にわたり報告しておりますが、対応はございません。修繕の実施日を書面でご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式通知。法的手続きの前提になる。"
+        },
+        {
+          "en": "There's still no heating and it's been three weeks. I've reported it four times. When is someone actually coming?",
+          "ja": "暖房はまだ直らず、3週間になります。4度報告しました。実際にはいつ来ていただけるのですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く迫る。話が長引かない。"
+        },
+        {
+          "en": "If you can't get an engineer this week, I'll arrange one myself and deduct the cost from the rent. I'd much rather you did it. But I can't keep the flat at eleven degrees indefinitely.",
+          "ja": "今週中に技術者を手配できないのであれば、私が呼び、費用を家賃から差し引きます。そちらで対応いただく方がよいのは確かです。ただ、11度のまま無期限には過ごせません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "次の行動を予告する。動く力が最も強い。"
+        },
+        {
+          "en": "I'd rather not go to the council about this, and I don't want to. Once it's a formal complaint, it becomes slower for both of us. I'd prefer a date from you this week.",
+          "ja": "この件で自治体に相談するのは避けたいですし、そうしたくもありません。正式な苦情になれば、互いに時間がかかります。今週中に日付をいただきたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "穏便に済ませる意思を示す。圧力にもなる。"
+        },
+        {
+          "en": "I was told an engineer would come on the fourth, the eleventh and the eighteenth. Nobody came on any of those days and nobody called. I took three days off work for those appointments.",
+          "ja": "4日、11日、18日に技術者が来ると聞きました。いずれの日も誰も来ず、連絡もありませんでした。その予定のために3日仕事を休みました。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "具体的な損失を挙げる。責任が明確になる。"
+        },
+        {
+          "en": "Let's settle it now. Send me the engineer's name and a date by six today, and I'll take the day off. If nothing arrives by then, I'll book one myself and send you the invoice.",
+          "ja": "今、決めましょう。本日18時までに技術者名と日付をお送りいただければ、私はその日休みます。届かなければ、私が手配し、請求書をお送りします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限と結果を明示する。実際に動く。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-007",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a public place",
+      "listener": "a stranger who is following you",
+      "want": "You want to make it clear you are being followed and get help.",
+      "situationJa": "つけられていると示し、助けを得たい。",
+      "tags": [
+        "safety",
+        "assertiveness"
+      ],
+      "answers": [
+        {
+          "en": "You've turned the same four corners as me and I've noticed. I'm going into this shop and I'm going to speak to the staff. Please don't follow me in.",
+          "ja": "同じ4つの角を私と同じように曲がっており、気づいています。この店に入り、店員に話します。ついて入らないでください。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "気づいたと明言する。多くの場合それで止まる。"
+        },
+        {
+          "en": "I've crossed the road twice and you've crossed both times. I don't know whether it's a coincidence. I'm going to act as though it isn't.",
+          "ja": "2度道を渡り、そのたびについて来られました。偶然かどうかは分かりません。偶然でない前提で行動します。",
+          "register": "neutral",
+          "style": "context",
+          "note": "事実を並べる。冷静さが自分を守る。"
+        },
+        {
+          "en": "Excuse me — this man has been following me for ten minutes. Could I stand here with you for a moment? I've already called someone and they're on their way.",
+          "ja": "すみません、この男性に10分ほどつけられています。少しの間、こちらにいてもよいですか。既に連絡し、こちらへ向かっています。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "第三者に助けを求める型。最も安全。"
+        },
+        {
+          "en": "Could you call the police for me? I'm being followed and I don't want to walk any further. I'll wait here inside until they arrive.",
+          "ja": "警察に通報していただけますか。つけられており、これ以上歩きたくありません。到着まで、こちらの店内で待ちます。",
+          "register": "polite",
+          "style": "request",
+          "note": "店員への依頼。明確で即座に伝わる。"
+        },
+        {
+          "en": "I believe this person has been following me since the station. I should be grateful if you would remain with me until the police arrive. I do not wish to leave the premises alone.",
+          "ja": "この方に、駅からつけられていると考えております。警察が到着するまで、そばにいていただけますと幸いです。1人でこの場を離れたくありません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "落ち着いた依頼。年配の店員などにも伝わる。"
+        },
+        {
+          "en": "Stop following me. I've seen you and I'm going into this shop. Leave me alone.",
+          "ja": "つけるのをやめてください。気づいていますし、この店に入ります。放っておいてください。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く強く。周囲にも聞こえる声で言う。"
+        },
+        {
+          "en": "If you're going the same way, wait here for two minutes and I'll go on ahead. If you follow me after that, I'll call the police. That's the arrangement.",
+          "ja": "同じ方向でしたら、2分ここで待ってください。私が先に行きます。その後もついて来られるなら、警察に通報します。そういう取り決めです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "逃げ道を与えつつ線を引く。実効性がある。"
+        },
+        {
+          "en": "I'd rather not walk home while you're behind me. I'm going to stay here until you've gone. I'm not going to explain myself beyond that.",
+          "ja": "後ろにおられる状態で帰路につくのは避けたいです。お帰りになるまで、ここにいます。これ以上の説明はしません。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "説明を打ち切る。毅然とした姿勢を保つ。"
+        },
+        {
+          "en": "This is the second time this week on the same street. I reported it on Monday and was told to note the time. I've got the time, the date and now a description.",
+          "ja": "同じ通りで、今週2度目です。月曜に届け出た際、時刻を控えるよう言われました。時刻、日付、そして今回は人相も記録しました。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "記録していると示す。抑止力になる。"
+        },
+        {
+          "en": "Here's what I'm going to do. I'll wait inside until a taxi arrives, and the staff have my description of you. If you leave now, none of this goes any further.",
+          "ja": "これからこうします。車が来るまで店内で待ちます。店員には、あなたの特徴を伝えてあります。今お帰りになれば、これ以上の話にはなりません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "自分の行動を宣言する。主導権を取り戻す。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-008",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a hotel",
+      "listener": "the duty manager",
+      "want": "You want to report a serious problem and be moved to another hotel.",
+      "situationJa": "深刻な問題を伝え、別のホテルへ移してほしい。",
+      "tags": [
+        "hotels",
+        "escalation"
+      ],
+      "answers": [
+        {
+          "en": "There's been someone trying the handle of my door twice tonight. I've reported it to reception and nothing has changed. I'd like to be moved to another hotel this evening.",
+          "ja": "今夜2度、私の部屋の取っ手を回そうとする人がいました。受付に伝えましたが、何も変わっていません。今夜中に別のホテルへ移りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "事実と要求を直結させる。話が早い。"
+        },
+        {
+          "en": "The first time was at eleven and the second at half past midnight. Reception said they'd send someone and nobody came. I've not slept and I'm not going to in that room.",
+          "ja": "1度目は23時、2度目は0時半でした。受付は人を寄越すと言いましたが、誰も来ませんでした。眠れていませんし、あの部屋では眠れません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "時刻と対応の欠如を並べる。深刻さが伝わる。"
+        },
+        {
+          "en": "I understand you've only just come on shift and this isn't your doing. I'm not going to take it out on you. I do need it resolved tonight rather than in the morning.",
+          "ja": "交代されたばかりで、あなたの落ち度ではないと承知しています。あなたに当たるつもりはありません。ただ、朝ではなく今夜中の解決が必要です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者を敵にしない。協力が得られる。"
+        },
+        {
+          "en": "Could you check the corridor camera for eleven o'clock and half twelve? That would settle whether I imagined it. Whatever it shows, I'd still like a different hotel tonight.",
+          "ja": "23時と0時半の廊下の映像を確認していただけますか。私の思い過ごしかどうかがはっきりします。結果がどうであれ、今夜は別のホテルを希望します。",
+          "register": "polite",
+          "style": "request",
+          "note": "証拠の確認を求める。要求の根拠が固まる。"
+        },
+        {
+          "en": "I wish to report two attempts to open my room door tonight, at eleven and at twelve thirty. The matter was reported to reception and no action was taken. I request a transfer to alternative accommodation this evening.",
+          "ja": "本日23時と0時30分の2度、私の客室の扉を開けようとする行為があったことを届け出ます。受付に報告しましたが、対応はありませんでした。本夜中の他の宿泊施設への移動を求めます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な申し出。記録に残り、対応が変わる。"
+        },
+        {
+          "en": "Someone tried my door twice tonight and nobody came when I called. I'm not staying in that room. Can you move me to another hotel?",
+          "ja": "今夜2度、扉を開けようとされ、連絡しても誰も来ませんでした。あの部屋には泊まれません。別のホテルへ移していただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "疲弊した状況で。要点だけを伝える。"
+        },
+        {
+          "en": "If another hotel isn't possible tonight, a room on a different floor with a chain lock would do. I'd also want someone to check the corridor. But I can't go back to that room as it is.",
+          "ja": "今夜、他のホテルが難しければ、掛け金のある別の階の部屋でも構いません。廊下の確認もお願いします。ただ、あの部屋にこのまま戻ることはできません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "代替案を出す。夜間でも実現しやすい。"
+        },
+        {
+          "en": "I'd rather not accept a discount on the room. The money isn't the issue and it doesn't make the door safer. I'd like the move instead.",
+          "ja": "宿泊料の割引をお受けするのは避けたいです。金額の問題ではなく、扉が安全になるわけでもありません。移動をお願いします。",
+          "register": "polite",
+          "style": "decline",
+          "note": "見当違いの解決策を断る。要求が明確になる。"
+        },
+        {
+          "en": "I called reception at eleven and again at midnight. The second time the phone rang out for four minutes. That's the part I'll be putting in writing tomorrow.",
+          "ja": "23時と0時に受付へ電話しました。2度目は4分間、呼び出し音が鳴り続けました。その点は明日、書面にします。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "書面化を予告する。対応が真剣になる。"
+        },
+        {
+          "en": "Here's what I'd like to happen. Book me into another hotel tonight and put the charge on this reservation. I'll come back tomorrow for my things and to give a statement.",
+          "ja": "こうしていただきたいです。今夜、別のホテルを手配し、費用はこの予約に付けてください。荷物の引き取りと事情の説明のため、明日改めて伺います。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "具体的な手順を示す。即座に動いてもらえる。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-009",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "your bank",
+      "want": "You want to explain that you were tricked into making a transfer.",
+      "situationJa": "騙されて送金してしまったと、銀行に説明したい。",
+      "tags": [
+        "fraud",
+        "banking"
+      ],
+      "answers": [
+        {
+          "en": "I made a transfer of two thousand this morning that I now believe was a scam. The caller said they were from your fraud team and I acted on that. I want to report it before anything else moves.",
+          "ja": "今朝2000を送金しましたが、詐欺だったと考えています。御行の不正対策の担当者を名乗る電話に従いました。他の資金が動く前に届け出たいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "金額、時刻、経緯。最短で伝えるべき順序。"
+        },
+        {
+          "en": "They knew the last four digits of my card and my recent transactions. That's why I believed it was you. The number they called from matches the one on the back of the card.",
+          "ja": "カードの下4桁と、直近の取引を把握していました。そのため御行だと信じました。着信番号は、カード裏面の番号と一致しています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "騙された理由を示す。過失の判断に影響する。"
+        },
+        {
+          "en": "I know how this sounds and I've read the warnings myself. I'm not going to pretend I wasn't taken in. What I'd like is for the receiving bank to be contacted now.",
+          "ja": "どう聞こえるかは分かっており、注意喚起も読んでいました。騙されなかったふりをするつもりはありません。今お願いしたいのは、受取側の銀行への連絡です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "率直に認める。対応が早く動く。"
+        },
+        {
+          "en": "Could you contact the receiving bank immediately and try to recall the funds? It was sent at nine forty this morning. The sooner that goes out, the better the chance.",
+          "ja": "受取側の銀行に直ちに連絡し、資金の回収を試みていただけますか。送金は今朝9時40分です。連絡が早いほど、可能性が高まります。",
+          "register": "polite",
+          "style": "request",
+          "note": "時間との勝負を意識した依頼。最も重要。"
+        },
+        {
+          "en": "I wish to report an authorised push payment made under deception this morning. The sum was two thousand, transferred at nine forty. Please initiate a recall and confirm the reference for the claim.",
+          "ja": "本日午前、騙されて行った送金について届け出ます。金額は2000、送金時刻は9時40分です。資金の回収手続きを開始し、請求の受付番号をご確認ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な届出。補償の判断に直結する。"
+        },
+        {
+          "en": "I sent two thousand this morning and I think I've been scammed. They said they were from your fraud team. Can you try to stop it?",
+          "ja": "今朝2000を送金しましたが、詐欺だったと思います。御行の不正対策の担当を名乗っていました。止められませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "動転した場面で。要点だけを短く。"
+        },
+        {
+          "en": "If the money can't be recovered, I'd like to know what the reimbursement process is. I'll provide the call log and the messages. I'd rather understand the position than hope.",
+          "ja": "資金を回収できない場合、補償の手続きを知りたいです。通話履歴と受信した連絡は提出します。期待するより、状況を正確に把握したいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "次の段階を確認する。無駄な待機を防ぐ。"
+        },
+        {
+          "en": "I'd rather not wait for a call back tomorrow to start the recall. Every hour matters with this. Could the recall be raised while we're still on the phone?",
+          "ja": "回収の開始を、明日の折り返しまで待つのは避けたいです。1時間ごとに状況が変わります。通話中に手続きを起こしていただけませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "先送りを断る。回収の可能性を上げる。"
+        },
+        {
+          "en": "I called the number on the card at ten and waited thirty-five minutes. By the time I got through, the money had already moved on. I'd like that delay recorded with the claim.",
+          "ja": "10時にカード記載の番号へ電話し、35分待ちました。つながった時には、資金は既に別へ移されていました。その遅れも請求とあわせて記録してください。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "自分の対応の早さを記録する。補償に効く。"
+        },
+        {
+          "en": "Could we do it in this order? Raise the recall now, freeze the account, then take my statement. I'll send the call log and screenshots by secure message within the hour.",
+          "ja": "この順で進めていただけますか。まず回収手続き、口座の凍結、その後に事情の聴取です。通話履歴と画面の写しは、1時間以内に安全な手段でお送りします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "優先順位を示す。実務上きわめて有効。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-010",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a police station",
+      "listener": "an officer",
+      "want": "You want to explain that you are a witness, not a suspect.",
+      "situationJa": "容疑者ではなく目撃者だと、はっきり説明したい。",
+      "tags": [
+        "police",
+        "clarifying"
+      ],
+      "answers": [
+        {
+          "en": "I think there's been a misunderstanding about my role here. I called this in — I'm the person who reported it. I was across the road when it happened.",
+          "ja": "私の立場について、行き違いがあると思います。通報したのは私です。事件が起きたとき、私は道の向かい側にいました。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "立場を明確に述べる。冷静さが最も重要。"
+        },
+        {
+          "en": "I arrived at the corner at about ten past nine and the car was already there. The call I made is logged at nine fourteen. That should place me before I'm asked to account for it.",
+          "ja": "9時10分頃に角に着いた時点で、その車は既にありました。私の通報は9時14分で記録されています。説明を求められる前に、それで位置は裏付けられるはずです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "客観的な記録を示す。誤解が早く解ける。"
+        },
+        {
+          "en": "I understand you have to establish what everyone was doing. I'm not objecting to being asked. I would like it clear on the record that I'm here as a witness.",
+          "ja": "全員の行動を確認する必要があるのは理解しています。尋ねられること自体に異議はありません。ただ、目撃者として来ていることを記録に明記いただきたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "捜査に協力しつつ立場を守る。理想的な応対。"
+        },
+        {
+          "en": "Could you confirm whether I'm being questioned as a witness or under caution? I'd like to know which before I say anything more. I'm happy to help either way.",
+          "ja": "目撃者として伺われているのか、被疑者としてなのか、確認していただけますか。これ以上お話しする前に、どちらかを知りたいです。いずれにせよ協力します。",
+          "register": "polite",
+          "style": "request",
+          "note": "極めて重要な確認。権利を守る一言。"
+        },
+        {
+          "en": "I should like to clarify that I attended voluntarily as a witness. I made the emergency call at nine fourteen from the opposite side of the road. I am willing to provide a full statement in that capacity.",
+          "ja": "目撃者として任意で出頭したことを明確にしておきたく存じます。9時14分に、道の反対側から緊急通報を行いました。その立場での供述であれば、詳細にお話しいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "立場を記録に残す。後の扱いが変わる。"
+        },
+        {
+          "en": "I'm the one who called it in. I was on the other side of the road the whole time. I'm a witness, not anything else.",
+          "ja": "通報したのは私です。その間ずっと、道の反対側にいました。私は目撃者であって、それ以外ではありません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く明言する。誤解を即座に正す。"
+        },
+        {
+          "en": "I'll give a full statement about what I saw, and I'll do it now. What I'd ask is that the record shows how I came to be here. That's the only thing I want changed.",
+          "ja": "見たことについては、今この場で詳細に供述します。お願いしたいのは、私がここに来た経緯を記録に残すことです。求めているのはそれだけです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "協力と条件を同時に示す。話が進む。"
+        },
+        {
+          "en": "I'd rather not sign anything that describes me as present at the incident without qualification. I was across the road, which is a different thing. Could the statement say where I was?",
+          "ja": "但し書きなく現場にいたと記す書面には、署名を控えたいです。道の向かいにいたのであり、それとは異なります。私がどこにいたかを供述に明記いただけますか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "文言を確認して署名する。極めて重要な習慣。"
+        },
+        {
+          "en": "I've been waiting three hours without being told why. Twice I asked whether I was free to leave and got no answer. That's why I'm asking directly now.",
+          "ja": "理由を知らされないまま3時間待っています。退出してよいか2度尋ねましたが、回答はありませんでした。だから今、直接お尋ねしています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を記録として述べる。冷静さを保つ。"
+        },
+        {
+          "en": "Could we do it this way? Note that I'm here as a witness, take my statement, and confirm I'm free to leave afterwards. I'll come back any time if you need more.",
+          "ja": "この形で進めていただけますか。目撃者としての来所を記録し、供述を取り、その後の退出をご確認ください。追加が必要であれば、いつでも伺います。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "協力的かつ明確。最も望ましい落とし所。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-011",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On a train",
+      "listener": "a member of staff",
+      "want": "You want staff to intervene when someone is harassing another passenger.",
+      "situationJa": "他の乗客が絡まれているので、乗務員に介入してほしい。",
+      "tags": [
+        "safety",
+        "bystander"
+      ],
+      "answers": [
+        {
+          "en": "There's a man in coach C shouting at a woman who's asked him twice to stop. She's moved seats and he's followed her. Could someone come now rather than at the next stop?",
+          "ja": "C号車で、2度やめるよう求められた女性に、男性が大声を上げています。彼女は席を移りましたが、追ってきています。次の停車駅ではなく、今来ていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "場所、経緯、緊急性。乗務員が即座に動ける。"
+        },
+        {
+          "en": "It started about ten minutes ago and has got louder. Two other passengers have moved away. Nobody has laid a hand on anyone yet, and I'd like to keep it that way.",
+          "ja": "10分ほど前に始まり、声が大きくなっています。他の乗客2人が席を離れました。まだ誰も手は出していません。そのうちに収めたいのです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "程度を正確に伝える。過不足のない対応につながる。"
+        },
+        {
+          "en": "I don't want to make it worse by stepping in myself. I've stayed nearby so she isn't alone. I'd rather you handled it than me.",
+          "ja": "自分が割って入って悪化させたくありません。彼女が1人にならないよう、近くにいます。私ではなく、そちらで対応いただきたいです。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "自分の役割を弁えている。安全な判断。"
+        },
+        {
+          "en": "Could you radio ahead for police at the next station? I'll stay where I am and point them to the right coach. I can also give a description now if that helps.",
+          "ja": "次の駅に警察の手配を無線で連絡していただけますか。私はここに残り、該当の号車へご案内します。必要であれば、今、人相もお伝えします。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な協力を申し出る。対応が早くなる。"
+        },
+        {
+          "en": "I should like to report ongoing harassment of a passenger in coach C. The individual has followed her after she moved seats and has been asked to stop. I would be grateful if a member of staff could attend immediately.",
+          "ja": "C号車の乗客が継続的な嫌がらせを受けていることを報告いたします。当該の人物は、席を移った彼女を追い、やめるよう求められております。直ちに乗務員のご対応をお願いいたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった報告。記録に残り、対応が確実になる。"
+        },
+        {
+          "en": "There's a man in coach C harassing a woman. She's moved and he's followed her. Can someone come now?",
+          "ja": "C号車で、男性が女性に絡んでいます。彼女は席を移りましたが、追ってきています。今、来ていただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "緊急時に。最短で伝える。"
+        },
+        {
+          "en": "If nobody can come until the next station, I'll sit next to her until then. Could you tell me how long that is? I'd rather know than guess.",
+          "ja": "次の停車駅まで誰も来られないのであれば、それまで私が隣に座ります。あと何分か教えていただけますか。推測するより知りたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "現実的な代替行動。安全が保たれる。"
+        },
+        {
+          "en": "I'd rather not be told to move away from it. She's asked me to stay and I'm going to. What I need from you is someone in that coach.",
+          "ja": "その場から離れるよう言われるのは避けたいです。そばにいてほしいと彼女に頼まれており、そうします。必要なのは、あの号車に来ていただくことです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "回避の助言を断る。必要な支援を求め直す。"
+        },
+        {
+          "en": "I pressed the assistance button eight minutes ago and nobody came. I've now walked three coaches to find someone. That's why I'm asking rather than reporting it later.",
+          "ja": "8分前に呼び出しを押しましたが、誰も来ませんでした。人を探して3両歩いてきました。後で報告するのではなく、今お願いしている理由です。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "対応の遅れを指摘する。緊急性が伝わる。"
+        },
+        {
+          "en": "Could we do this? You come to coach C now, and I'll walk ahead and show you. If he's gone by then, I'll give you a description for the report.",
+          "ja": "こうしませんか。今C号車へ来ていただき、私が先に立ってご案内します。その時にいなければ、報告のために人相をお伝えします。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "即座の行動を促す。無駄がない。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-012",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a shop",
+      "listener": "a security guard",
+      "want": "You want to respond calmly when you are wrongly accused of theft.",
+      "situationJa": "万引きの疑いをかけられ、冷静に対応したい。",
+      "tags": [
+        "accusation",
+        "assertiveness"
+      ],
+      "answers": [
+        {
+          "en": "I haven't taken anything and I'm happy to show you my bag. I'd like it done here where the camera is. I'd rather this was recorded than resolved in a back room.",
+          "ja": "何も取っていませんし、鞄をお見せするのは構いません。ただ、カメラのあるこの場所でお願いします。奥の部屋で済ませるより、記録に残る形が望ましいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "協力と記録の要求を同時に。自分を守る型。"
+        },
+        {
+          "en": "I picked up the jacket, carried it two aisles and put it back on the rail by the till. That's probably what was seen. The camera above the till will show it going back.",
+          "ja": "上着を手に取り、2列先まで持ち歩き、レジ横の掛け具に戻しました。恐らくそれが見えたのだと思います。レジ上のカメラに、戻す様子が映っているはずです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "誤解の元を自ら説明する。解決が早い。"
+        },
+        {
+          "en": "I'm not going to shout about this and I understand you have to check. I'd just ask that you say what you think I've taken. Then we can both look for it.",
+          "ja": "声を荒げるつもりはありませんし、確認が必要なのも理解しています。ただ、何を取ったとお考えかを仰ってください。そうすれば、一緒に確かめられます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "協力的でありながら具体性を求める。強い応対。"
+        },
+        {
+          "en": "Could you check the camera above the till before we go any further? It covers the rail where I put it back. That should take two minutes.",
+          "ja": "先へ進む前に、レジ上のカメラを確認していただけますか。私が戻した掛け具が映る位置です。2分で済むはずです。",
+          "register": "polite",
+          "style": "request",
+          "note": "客観的な証拠を求める。最も有効な一手。"
+        },
+        {
+          "en": "I have taken nothing from this shop and I am willing to have my bag searched in a public area. I should like the store manager present. I would also ask for the name of the person making the allegation.",
+          "ja": "当店から何も持ち出しておらず、公共の場所での鞄の確認には応じます。店長の立ち会いを求めます。また、指摘をされた方のお名前も伺いたいです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "権利を守りつつ協力する。記録が残る。"
+        },
+        {
+          "en": "I haven't taken anything. Check my bag here if you like. And check the camera by the till — I put the jacket back there.",
+          "ja": "何も取っていません。よろしければ、この場で鞄をご確認ください。レジ横のカメラもご確認を。上着はそこに戻しました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く協力を申し出る。潔白が伝わりやすい。"
+        },
+        {
+          "en": "I'll show you the bag if the manager is here and we do it in the open. That's not me being difficult, it's protecting both of us. Would that work?",
+          "ja": "店長が立ち会い、人目のある場所であれば、鞄をお見せします。難しくしているのではなく、双方を守るためです。それでよろしいですか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "条件を付けて応じる。双方が納得できる。"
+        },
+        {
+          "en": "I'd rather not go to a back room without a manager present. I'm not refusing to cooperate. I'm asking that it happens where there's a witness.",
+          "ja": "店長の立ち会いなく奥の部屋へ行くのは避けたいです。協力を拒んでいるのではありません。立会人のいる場所での対応をお願いしているだけです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "重要な線引き。丁寧でも譲らない。"
+        },
+        {
+          "en": "You've now said twice that I put something in my bag. I'd like that specified, because it isn't true. I'll be asking for the footage either way.",
+          "ja": "鞄に何かを入れた、と2度仰いました。事実と異なるので、何をか特定してください。いずれにせよ、映像の開示は求めます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "具体性を求める。曖昧な非難を封じる。"
+        },
+        {
+          "en": "Let's settle it now. Get the manager, watch the till camera together, and I'll open my bag in front of both of you. If it clears me, I'd like an apology in front of the same people.",
+          "ja": "今、はっきりさせましょう。店長を呼び、レジのカメラを一緒に確認し、お二人の前で鞄を開けます。潔白が示されたら、同じ方々の前で謝罪をいただきたいです。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "解決の手順と結末を示す。毅然として公正。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-013",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a foreign city",
+      "listener": "a stranger",
+      "want": "You want help when you are lost, out of money and out of battery.",
+      "situationJa": "道に迷い、金も電池も尽きた状態で助けを求めたい。",
+      "tags": [
+        "emergency",
+        "asking-help"
+      ],
+      "answers": [
+        {
+          "en": "I'm sorry to stop you — I'm in a difficult spot. My phone is dead and I've no cash, and I need to get to the station. Could you point me in the right direction?",
+          "ja": "お呼び止めしてすみません。少し困っています。携帯の電池が切れ、現金もなく、駅へ行かなければなりません。方角を教えていただけますか。",
+          "register": "polite",
+          "style": "explain",
+          "note": "状況と求めることを短く。助けが得られやすい。"
+        },
+        {
+          "en": "My bag was taken at the market about an hour ago. The police have the report and my card is being replaced. What I need right now is just to get across the city.",
+          "ja": "1時間ほど前、市場で鞄を取られました。警察に届け出済みで、カードも再発行の手配中です。今必要なのは、街を横断する手段だけです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "怪しまれないよう経緯を示す。信用が得られる。"
+        },
+        {
+          "en": "I'm not asking you for money, and I'd understand if you'd rather not stop. Directions would be enough. I'm trying to reach the station before the last train.",
+          "ja": "お金をお願いしているのではありませんし、立ち止まりたくないお気持ちも分かります。道を教えていただければ十分です。終電までに駅へ着きたいのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "金銭目的でないと明示する。警戒が解ける。"
+        },
+        {
+          "en": "Could I use your phone for one call? It's to my hotel and it would take a minute. You can dial it and hold it if you'd prefer.",
+          "ja": "1度だけ電話をお借りできませんか。滞在先へで、1分で済みます。ご不安であれば、番号を押して持っていただいても構いません。",
+          "register": "polite",
+          "style": "request",
+          "note": "相手の不安に配慮した頼み方。応じてもらいやすい。"
+        },
+        {
+          "en": "Forgive me for troubling you. My belongings were stolen earlier today and I have no telephone or money. I should be very grateful for directions to the nearest station.",
+          "ja": "お手を煩わせて申し訳ございません。本日、所持品を盗まれ、電話も現金もございません。最寄りの駅への道をご教示いただけますと大変助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった依頼。年配の方などに伝わりやすい。"
+        },
+        {
+          "en": "Sorry — my phone's dead and I've lost my wallet. Which way is the station? That's all I need.",
+          "ja": "すみません、携帯の電池が切れ、財布も無くしました。駅はどちらですか。必要なのはそれだけです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "極めて短い。混雑した場所で有効。"
+        },
+        {
+          "en": "If you'd rather not stop, could you just point? I won't keep you. Even the direction would help.",
+          "ja": "立ち止まりたくなければ、指で示すだけで構いません。お引き止めしません。方角だけでも助かります。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "負担を極小にする。断られにくい。"
+        },
+        {
+          "en": "I'd rather not take money from you, thank you. Directions and a phone call would be more use. That's genuinely all I need.",
+          "ja": "お金をいただくのは遠慮します。ありがとうございます。道案内と1本の電話の方が助かります。本当にそれだけで十分です。",
+          "register": "polite",
+          "style": "decline",
+          "note": "厚意を丁寧に断る。信頼が増す。"
+        },
+        {
+          "en": "I've asked four people and everyone has walked past. I don't blame them at all. I just wanted to say I'm not going to be a problem.",
+          "ja": "4人に声をかけましたが、皆さん通り過ぎました。責める気持ちはまったくありません。ただ、迷惑をかけるつもりはない、とお伝えしたかったのです。",
+          "register": "casual",
+          "style": "complain",
+          "note": "率直な一言。かえって助けが得られる。"
+        },
+        {
+          "en": "Could we do this — you point me towards the station and I'll walk from there. If it's more than half an hour, tell me and I'll go to the police instead. Either way I'll be out of your way.",
+          "ja": "こうさせてください。駅の方角を示していただければ、そこから歩きます。30分以上かかるようでしたら、そう教えてください。代わりに警察へ行きます。いずれにせよ、お邪魔はしません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "相手の負担が終わる時点を示す。応じやすい。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-014",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "On the phone",
+      "listener": "an emergency operator",
+      "want": "You want to report a fire in a neighbouring flat.",
+      "situationJa": "隣の部屋の火災を、通報したい。",
+      "tags": [
+        "emergency",
+        "fire"
+      ],
+      "answers": [
+        {
+          "en": "There's a fire in the flat next to mine, number twenty-three Harbour Court. There's smoke coming under the door and I can hear the alarm inside. I don't know if anyone is in there.",
+          "ja": "隣の部屋で火事です。ハーバーコート23号室です。扉の下から煙が出ており、中で警報が鳴っています。人がいるかどうかは分かりません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "住所、状況、人の有無。通報の要点そのもの。"
+        },
+        {
+          "en": "It's a four-storey building and the flat is on the second floor. There are two other flats on that landing. The main door has a keypad and the code is four-one-nine-two.",
+          "ja": "4階建ての建物で、その部屋は2階です。同じ踊り場に他に2部屋あります。正面の扉は暗証番号式で、番号は4192です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "進入経路まで伝える。到着後が早い。"
+        },
+        {
+          "en": "I've knocked and there's no answer, and I'm not going to open the door. I'm getting everyone out of my flat now. I'll stay on the line while we go down.",
+          "ja": "扉を叩きましたが応答はなく、開けるつもりはありません。今、自宅から全員を退避させます。降りながら、通話は切らずにおきます。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "安全な行動を選ぶ。指示を待つ姿勢も示す。"
+        },
+        {
+          "en": "Could you tell me whether to knock on the other doors on this floor? I can do it in about thirty seconds. I'd rather ask than get it wrong.",
+          "ja": "この階の他の扉を叩いて回るべきか、教えていただけますか。30秒ほどでできます。誤った判断をするより、伺いたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "指示を仰ぐ。素人判断を避ける正しい姿勢。"
+        },
+        {
+          "en": "I wish to report a fire at flat twenty-three, Harbour Court, on the second floor. Smoke is issuing from beneath the door and an alarm is sounding within. The occupancy of the flat is unknown to me.",
+          "ja": "ハーバーコート2階、23号室での火災を通報いたします。扉の下から煙が出ており、室内で警報が鳴っております。当該住戸の在室状況は不明です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "落ち着いた通報。情報が正確に伝わる。"
+        },
+        {
+          "en": "There's a fire next door — flat twenty-three, Harbour Court. Smoke under the door and an alarm going. I don't know if anyone's inside.",
+          "ja": "隣が火事です。ハーバーコート23号室。扉の下から煙、警報が鳴っています。中に人がいるかは分かりません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "緊急時に。最短で必要事項を渡す。"
+        },
+        {
+          "en": "I can wait at the main door to let them in, or I can go straight down to the street. Tell me which is more useful. I'll do exactly what you say.",
+          "ja": "正面の扉で待って中へ案内することも、そのまま路上へ降りることもできます。どちらが有用か教えてください。指示通りにします。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "選択肢を示して指示を仰ぐ。現場が助かる。"
+        },
+        {
+          "en": "I'd rather not open their door, and I understand that's the right call. I'll leave it shut. Tell me what to do instead.",
+          "ja": "その部屋の扉を開けるのは避けたいですし、それが正しい判断だと理解しています。閉めたままにします。代わりに何をすべきか教えてください。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "危険な行動を取らない。命を守る判断。"
+        },
+        {
+          "en": "The building alarm hasn't gone off, only the one inside their flat. The panel in the lobby was showing a fault last week. I'm mentioning it in case the crew expects it to be sounding.",
+          "ja": "建物全体の警報は鳴っておらず、その部屋の中のものだけです。玄関の制御盤は先週、故障を表示していました。到着される方が鳴動を前提にされるといけないので、申し添えます。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "設備の不具合を伝える。現場の判断に効く。"
+        },
+        {
+          "en": "Here's what I'm going to do unless you tell me otherwise. Get my family out, knock on the two other doors on this landing, then wait at the main entrance with the code. I'll stay on the line throughout.",
+          "ja": "別の指示が無ければ、こうします。家族を退避させ、この踊り場の他の2つの扉を叩き、暗証番号を持って正面玄関で待ちます。その間、通話は切りません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "計画を伝えて確認を取る。混乱が生じない。"
+        }
+      ]
+    },
+    {
+      "id": "trouble-3-015",
+      "category": "trouble",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a police station",
+      "listener": "an officer",
+      "want": "You want to report ongoing harassment by a neighbour.",
+      "situationJa": "隣人からの継続的な嫌がらせを、届け出たい。",
+      "tags": [
+        "harassment",
+        "reporting"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to report a pattern of harassment rather than a single incident. It's been going on since June and I've kept a written log. There are fourteen entries with dates and times.",
+          "ja": "単発の出来事ではなく、継続的な嫌がらせを届け出たいです。6月から続いており、記録を書面で残しています。日時付きで14件あります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "継続性と記録を先に示す。扱いが変わる。"
+        },
+        {
+          "en": "It started after a dispute about a boundary fence in May. Since then there's been damage to the car twice and abuse shouted across the garden. I have photographs of both incidents.",
+          "ja": "5月の境界の柵をめぐる争いの後に始まりました。以降、車の損傷が2度、庭越しの罵声もあります。いずれの件も写真があります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "発端と具体例を示す。捜査の方向が定まる。"
+        },
+        {
+          "en": "I know each thing on its own sounds small. That's why I didn't report the first five. Taken together over four months, it isn't small any more.",
+          "ja": "一つひとつは些細に聞こえると承知しています。だから最初の5件は届け出ませんでした。4か月を通して見れば、もはや些細ではありません。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "全体像として捉えるよう促す。的確な訴え方。"
+        },
+        {
+          "en": "Could you tell me what threshold this would need to reach? I'd rather know now than keep coming back with more entries. If there's something specific you need, I'll gather it.",
+          "ja": "どの水準に達すれば対応いただけるか、教えていただけますか。記録を増やして何度も伺うより、今知りたいです。必要なものが具体的にあれば、揃えます。",
+          "register": "polite",
+          "style": "request",
+          "note": "基準を尋ねる。次の行動が定まる。"
+        },
+        {
+          "en": "I wish to report a course of conduct amounting to harassment since June of this year. I have maintained a log of fourteen incidents with dates, times and photographs. I should like a crime reference number and advice on next steps.",
+          "ja": "本年6月以降の、嫌がらせに当たる一連の行為を届け出ます。日時と写真を伴う14件の記録を保管しております。受理番号と、今後の手続きについての助言をいただきたく存じます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な届出。継続案件として扱われやすい。"
+        },
+        {
+          "en": "My neighbour has been harassing us since June. I've kept a log — fourteen incidents with dates. Twice the car's been damaged.",
+          "ja": "6月から隣人に嫌がらせを受けています。日時付きで14件、記録しています。車は2度損傷しました。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く要点を出す。窓口で伝わりやすい。"
+        },
+        {
+          "en": "If this isn't at the level for action yet, could a warning be issued instead? Sometimes that's enough to stop it. I'd rather it ended than escalated.",
+          "ja": "まだ対応の水準に達していないのであれば、代わりに警告を出していただけませんか。それだけで止まることもあります。深刻化するより、終わらせたいです。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "小さな介入を求める。実際に有効なことが多い。"
+        },
+        {
+          "en": "I'd rather not be advised to speak to him directly again. I did that in July and it made it worse for a fortnight. I'd like something more formal this time.",
+          "ja": "直接話すよう再度助言されるのは避けたいです。7月にそうして、2週間ほど悪化しました。今回はより正式な対応を求めます。",
+          "register": "polite",
+          "style": "decline",
+          "note": "試した方法を断る。経験に基づく正当な要求。"
+        },
+        {
+          "en": "I've called the non-emergency line three times and each call was logged separately. Nobody has linked them to the same address. That's part of why it looks like isolated incidents.",
+          "ja": "緊急でない窓口へ3度電話し、そのつど別件として記録されました。同一の住所として結びつけられていません。単発の出来事に見えるのは、それも一因です。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "記録の分断を指摘する。案件が統合される。"
+        },
+        {
+          "en": "Could we agree the next steps today? Take the log and the photographs, give me a reference, and tell me what would trigger a formal warning. I'll keep recording it either way.",
+          "ja": "本日、今後の進め方を決めていただけますか。記録と写真をお預けし、受理番号をいただき、どうなれば正式な警告に至るかを教えてください。いずれにせよ記録は続けます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "具体的な合意を取る。放置されにくくなる。"
+        }
+      ]
+    }
+  ]
+}
