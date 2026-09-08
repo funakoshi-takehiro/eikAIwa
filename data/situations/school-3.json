@@ -1,0 +1,1251 @@
+{
+  "category": "school",
+  "level": 3,
+  "situations": [
+    {
+      "id": "school-3-001",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In an office hour",
+      "listener": "your professor",
+      "want": "You want to challenge a grade you believe is wrong.",
+      "situationJa": "評価が不当だと考え、根拠を示して見直しを求めたい。",
+      "tags": ["grades", "disagreeing"],
+      "answers": [
+        {
+          "en": "I'd like to ask about the mark for the second essay. The feedback says I didn't address the counterargument, but section three is entirely about it. Could we look at that section together?",
+          "ja": "2本目の論文の評価について伺いたいです。反論に触れていないとありますが、第3節はまるごとその話です。その節を一緒に見ていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "具体的な箇所を示す。最も通りやすい入り方。"
+        },
+        {
+          "en": "I'm not asking for a higher mark because I worked hard on it. The comment describes something that isn't in the essay I submitted. I wondered whether an earlier draft was marked by mistake.",
+          "ja": "努力したから点を上げてほしい、という話ではありません。講評の内容が、提出した論文と一致していません。以前の草稿が誤って採点されたのではないかと思いました。",
+          "register": "neutral",
+          "style": "context",
+          "note": "根拠のある疑問。感情に頼らない申し立て。"
+        },
+        {
+          "en": "I know you mark a great many of these and I'm not questioning your judgement generally. On this one, I think there may have been a mix-up. If I've misread the comment, I'd like to understand it properly.",
+          "ja": "大量に採点されていることは承知しており、ご判断全体を疑っているのではありません。この1本については、取り違えがあったのではと考えます。私が講評を読み違えているなら、正しく理解したいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の面子を保つ。話が感情的にならない。"
+        },
+        {
+          "en": "Could you re-read pages four to six before we discuss the mark? That's where the counterargument is set out. If it isn't clear enough, I'd rather know that than argue about the grade.",
+          "ja": "評価を議論する前に、4ページから6ページを読み直していただけますか。反論はそこに記しています。伝わりにくいのであれば、点数を争うよりそれを知りたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "再読を頼む。実際に再評価につながりやすい。"
+        },
+        {
+          "en": "I should like to request a review of the mark awarded for the second essay. The written feedback refers to the omission of a counterargument which appears in section three. I have brought the submitted version for reference.",
+          "ja": "2本目の論文の評価について、見直しをお願いしたく存じます。講評は反論の欠落を指摘しておりますが、それは第3節に記載されています。提出稿を持参いたしました。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な申し立て。手続きに乗せたい場合に。"
+        },
+        {
+          "en": "Can I ask about my essay mark? The comment says I skipped the counterargument, but that's basically section three. Could you have another look?",
+          "ja": "論文の評価について伺えますか。反論を飛ばしたとありますが、それは第3節そのものです。もう一度見ていただけませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな教員に。用件だけを短く。"
+        },
+        {
+          "en": "If the mark stands after a second look, I'll accept it without argument. What I'd ask in return is a sentence on what a stronger version would have done. That's more useful to me than the number.",
+          "ja": "再確認の上で評価が変わらなければ、異議なく受け入れます。その代わり、どう書けばより良かったかを一言いただきたいです。点数より有益です。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "引き際を示す。誠実さが伝わり印象が良い。"
+        },
+        {
+          "en": "I'd rather not go through the formal appeals process if we can settle it here. It takes six weeks and it puts both of us in front of a committee. I'd much prefer a conversation.",
+          "ja": "ここで解決できるなら、正式な不服申立ては避けたいです。6週間かかり、双方が委員会の場に立つことになります。話し合いで済ませたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "手続きに触れつつ穏便に。静かな圧力になる。"
+        },
+        {
+          "en": "This is the second piece of feedback that hasn't matched what I submitted. I mentioned the first one in March and it turned out to be a filing error. I'm raising it again because I'd like to be sure my work is being read.",
+          "ja": "提出内容と一致しない講評は2度目です。3月に指摘した際は、書類の取り違えでした。自分の提出物が読まれているか確かめたく、改めて申し上げます。",
+          "register": "polite",
+          "style": "complain",
+          "note": "経緯を示す。単発の不満に見えない。"
+        },
+        {
+          "en": "Here's what I'd suggest. I'll email you the submitted file and the feedback side by side today. If the counterargument is there, you re-mark it, and if it isn't, I'll drop it entirely.",
+          "ja": "こう提案します。本日中に、提出稿と講評を並べてメールでお送りします。反論が書かれていれば再評価を、書かれていなければこの件は取り下げます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "検証の方法まで示す。相手が動きやすい。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-002",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a group project meeting",
+      "listener": "a classmate who has not contributed",
+      "want": "You want to confront a group member who has not done their part.",
+      "situationJa": "分担をやっていない班員に、直接向き合いたい。",
+      "tags": ["group-work", "conflict"],
+      "answers": [
+        {
+          "en": "I want to talk about the literature section, which was due last Friday. Nothing has been added to the shared document since the twelfth. We submit in nine days, so I need to know where you are with it.",
+          "ja": "先週金曜が期限だった文献の節について話したいです。共有の資料には12日以降、何も追加されていません。提出まで9日なので、進み具合を知りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "事実と期限だけを述べる。責めずに答えを引き出す。"
+        },
+        {
+          "en": "We split this four ways in October and everyone else has filed theirs. I'm not trying to make this a big thing in front of the group. I just can't finish the introduction until yours is in.",
+          "ja": "10月に4人で分担し、他の3人は提出済みです。班の前で大事にするつもりはありません。ただ、あなたの分が入らないと序論を仕上げられません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "自分への影響を示す。攻撃に聞こえにくい。"
+        },
+        {
+          "en": "If something's going on outside the course, you don't have to tell me what it is. I'd just rather know now than find out on the deadline. Is this one you can still do, or should we redistribute it?",
+          "ja": "授業外で事情があるなら、内容までは話さなくて構いません。ただ、締切当日に知るより今知りたいです。まだできそうですか、それとも分担し直しますか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "逃げ道を残す。正直な返事が返ってきやすい。"
+        },
+        {
+          "en": "Could you send me whatever you have by Wednesday, even if it's rough? Notes and half-sentences are fine at this point. It's much easier to build on something than on nothing.",
+          "ja": "粗くて構わないので、水曜までに今あるものを送ってもらえますか。この段階では覚書や書きかけで十分です。何も無いより、ずっと組み立てやすくなります。",
+          "register": "polite",
+          "style": "request",
+          "note": "要求の敷居を下げる。実際に動いてもらいやすい。"
+        },
+        {
+          "en": "I should like to establish the position on the literature section before we proceed. It was allocated in October and was due on the eighth. Please confirm by Wednesday whether you are able to complete it.",
+          "ja": "進める前に、文献の節の状況を確認させてください。10月に割り当てられ、期限は8日でした。完成できるかどうかを水曜までにご連絡ください。",
+          "register": "formal",
+          "style": "formal",
+          "note": "記録が要る段階で。教員に相談する前段に。"
+        },
+        {
+          "en": "What's happening with the literature bit? It was due Friday and there's nothing in the doc. I need it to finish the intro.",
+          "ja": "文献の部分はどうなっていますか。金曜が期限でしたが、資料には何もありません。序論を仕上げるのに必要です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい相手に。回りくどくせず直接聞く。"
+        },
+        {
+          "en": "If the literature section is too much, we could swap. You take the formatting and the reference list, and I'll write the section. That's a fair trade and it gets us to the deadline.",
+          "ja": "文献の節が重すぎるなら、交換もできます。体裁と参考文献一覧をお願いし、私が節を書きます。公平ですし、締切には間に合います。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "解決を優先する。関係を壊さず前に進む。"
+        },
+        {
+          "en": "I'd rather not write your section on top of mine and say nothing. That's happened in two projects already and it isn't fair on anyone. If you can't do it, let's tell the group and reassign it properly.",
+          "ja": "自分の分に加えてあなたの節も黙って書く、というのは避けたいです。すでに2つの課題でそうなり、誰にとっても不公平です。無理なら班に伝えて、正式に割り振り直しましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "肩代わりを断る。健全な線引き。"
+        },
+        {
+          "en": "You've missed the last three internal deadlines without telling anyone. Each time the rest of us have covered it quietly. I'd like to stop doing that, because it isn't helping you either.",
+          "ja": "直近3回の班内の期限を、連絡なく過ぎています。そのつど残りの者が黙って埋めてきました。あなたのためにもならないので、これを止めたいです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを指摘する。相手の利益にも触れる。"
+        },
+        {
+          "en": "Let's agree something concrete now. You send a draft by Wednesday evening, and if nothing arrives we tell the tutor and split the section. I'd rather have that agreed than have it happen by surprise.",
+          "ja": "今、具体的に決めましょう。水曜の夜までに草稿を送ってもらい、届かなければ担当教員に伝えて節を分けます。不意にそうなるより、先に合意しておきたいです。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "次の一手を予告する。逃げ道を塞ぐ穏当な形。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-003",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a seminar",
+      "listener": "the group",
+      "want": "You want to disagree with the tutor's reading of a text.",
+      "situationJa": "本文の解釈について、担当教員と異なる見方を述べたい。",
+      "tags": ["discussion", "disagreeing"],
+      "answers": [
+        {
+          "en": "I read that passage differently and I'd like to put the alternative. The narrator's account is undercut twice in the same chapter. If we take it at face value, the ending doesn't follow.",
+          "ja": "私はその箇所を別に読んだので、代わりの見方を述べたいです。語り手の説明は同じ章で2度覆されています。額面通りに取ると、結末が筋として通りません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "本文の根拠を先に出す。議論として成立する。"
+        },
+        {
+          "en": "The reading works if we assume the narrator is reliable, which most of the criticism does. What I'd question is the assumption itself. Two of the letters in chapter six contradict him directly.",
+          "ja": "語り手が信頼できるという前提を置けば、その読みは成立し、多くの批評もそうしています。私が疑うのはその前提そのものです。第6章の手紙2通が、彼と直接矛盾します。",
+          "register": "neutral",
+          "style": "context",
+          "note": "前提を疑う型。学問的な反論の基本。"
+        },
+        {
+          "en": "I may well be missing something here, and I'd like to be corrected if so. My difficulty is with the timing of the letters. They arrive after the events they're supposed to explain.",
+          "ja": "見落としがあるかもしれず、その場合は指摘いただきたいです。私が引っかかるのは手紙の時期です。説明するはずの出来事の後に届いています。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断定を避ける。教室で最も安全な反論の形。"
+        },
+        {
+          "en": "Could we look at the passage on page ninety before we move on? I think the sequence matters more than it seems. It's three lines and it changes how the chapter reads.",
+          "ja": "先へ進む前に、90ページの箇所を見られますか。順序は見た目以上に重要だと思います。3行ですが、章の読みが変わります。",
+          "register": "polite",
+          "style": "request",
+          "note": "本文に戻す。具体的で受け入れられやすい。"
+        },
+        {
+          "en": "May I offer a different reading of the passage. The chronology of the letters appears to undermine the narrator's account rather than support it. I should be glad to hear where that reasoning fails.",
+          "ja": "この箇所について、別の読みをお示ししてもよろしいでしょうか。手紙の時系列は、語り手の説明を支えるのではなく損なっているように見えます。この推論の弱点をご指摘いただければ幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった演習で。丁寧に異論を差し出す。"
+        },
+        {
+          "en": "I read it the other way round, actually. The letters turn up after the events they explain. That makes the narrator look unreliable to me.",
+          "ja": "私は逆に読みました。手紙は、説明するはずの出来事の後に出てきます。そのため語り手が信頼できないように見えます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い少人数の演習で。短く要点を出す。"
+        },
+        {
+          "en": "Both readings might hold if we separate the two narrators. Yours works for the frame, and mine for the inner story. Would it be worth testing that against chapter eight?",
+          "ja": "語り手を2人に分けて考えれば、両方の読みが成り立つかもしれません。先生の読みは外枠に、私の読みは内側の物語に当てはまります。第8章で検証してみる価値はありませんか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "対立を統合する。議論が発展する。"
+        },
+        {
+          "en": "I'd rather not settle on the standard reading this early in the term. Once we adopt it, everything after gets read through it. Could we hold both for another week?",
+          "ja": "学期の早い段階で通説に落ち着くのは避けたいです。採用すれば、以後すべてがその枠で読まれます。もう1週間、両方を保持できませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "結論を急がない提案。演習の質が上がる。"
+        },
+        {
+          "en": "I'd also say the set criticism all comes from one school. We've read four articles and three share a supervisor. That doesn't make them wrong, but it does narrow what we're testing.",
+          "ja": "指定された批評がすべて1つの学派に由来する点も申し上げます。4本読み、うち3本は指導教員が同じです。誤りだとは言いませんが、検証の幅が狭まります。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "文献の偏りを指摘する。高度だが有効。"
+        },
+        {
+          "en": "Could I bring a short paper on this next week? I'd set out the chronology and let the group judge it. That's fairer than taking seminar time now.",
+          "ja": "来週、これについて短い資料を持ってきてもよいですか。時系列を整理し、班に判断してもらいます。今の演習時間を使うより公平です。",
+          "register": "polite",
+          "style": "propose",
+          "note": "場を占有しない提案。真剣さが伝わる。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-004",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In an office hour",
+      "listener": "your supervisor",
+      "want": "You want to ask for an extension because of a personal difficulty.",
+      "situationJa": "個人的な事情で、提出期限の延長をお願いしたい。",
+      "tags": ["deadlines", "requesting"],
+      "answers": [
+        {
+          "en": "I'd like to ask for an extension on the dissertation chapter. There's been a family situation since the start of the month that I've been travelling for. I'd need about two weeks to produce something worth reading.",
+          "ja": "論文の章について、提出期限の延長をお願いしたいです。月初から家庭の事情があり、そのために移動が続いています。読むに値するものを出すには2週間ほど必要です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "事情と必要な期間を対にする。判断しやすい。"
+        },
+        {
+          "en": "I've kept up with the reading and the notes are done. What I haven't been able to do is sit down for the three clear days the writing needs. That's the gap, rather than the work as a whole.",
+          "ja": "読解は続けており、覚書もできています。できていないのは、執筆に必要な3日間まとまった時間を取ることです。作業全体ではなく、その部分だけが欠けています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "進捗を示す。怠慢ではないと伝わる。"
+        },
+        {
+          "en": "I know extensions create work for you and push the marking back. I wouldn't ask if I thought I could produce something decent by Friday. I'd rather hand in late than hand in something I'd want to withdraw.",
+          "ja": "延長は先生の手間を増やし、採点を後ろにずらすと承知しています。金曜までにまともなものが出せると思えば、お願いしません。取り下げたくなるものを出すより、遅れて出したいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の負担に触れる。心証が良くなる。"
+        },
+        {
+          "en": "Could I ask for until the twenty-second rather than the eighth? I've written to the student office as well, in case there's a form. If two weeks is too long, I'd take whatever you can give.",
+          "ja": "8日ではなく22日までとしていただけませんか。書式が必要な場合に備えて、学生課にも連絡しました。2週間が長すぎるなら、いただける範囲で構いません。",
+          "register": "polite",
+          "style": "request",
+          "note": "手続きも進めたと示す。誠実さが伝わる。"
+        },
+        {
+          "en": "I should like to request an extension to the submission deadline for the third chapter. Personal circumstances since the first of the month have prevented sustained work. I have submitted the mitigating circumstances form and can supply documentation.",
+          "ja": "第3章の提出期限の延長をお願い申し上げます。月初以降の個人的な事情により、継続した作業ができませんでした。特別な事情の届出は提出済みで、証明書類もご用意できます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な手続きに乗せる。記録が残る。"
+        },
+        {
+          "en": "Could I have a bit more time on the chapter? There's been a family thing this month and I've lost about two weeks. Two more weeks would let me do it properly.",
+          "ja": "章の提出をもう少し待っていただけませんか。今月は家庭の事情で2週間ほど失いました。あと2週間あればきちんと仕上げられます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな指導教員に。短く率直に頼む。"
+        },
+        {
+          "en": "If a full extension isn't possible, could I submit the first half on time? I'd send the analysis section by the deadline and the discussion two weeks later. That way the marking isn't held up entirely.",
+          "ja": "全面的な延長が難しければ、前半だけ期日通りに提出できませんか。分析の節を期限までに、考察を2週間後にお送りします。採点が全部止まることは避けられます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "分割提出の提案。断られにくい。"
+        },
+        {
+          "en": "I'd rather not submit the draft as it stands on Friday. It would take more of your time to read than it's worth. I'd prefer to give you something you can actually comment on.",
+          "ja": "金曜に現状の草稿を出すのは避けたいです。読んでいただく時間に見合いません。実際に講評いただけるものをお渡ししたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "低品質の提出を断る。理由が相手本位。"
+        },
+        {
+          "en": "I should have written to you two weeks ago when this started. I kept thinking I'd catch up and then didn't. That's the part I'd do differently, and I'm sorry it's arriving this late.",
+          "ja": "事情が始まった2週間前に、ご連絡すべきでした。追いつけると思い続け、そうならなかったのです。その点は改めるべきで、遅くなり申し訳ありません。",
+          "register": "polite",
+          "style": "complain",
+          "note": "自分の遅れを認める。信頼を保つ。"
+        },
+        {
+          "en": "Here's what I'd propose. I send you the chapter plan on Friday so you can see the shape, and the full draft on the twenty-second. If the plan looks wrong, we've lost nothing by finding out early.",
+          "ja": "こう提案します。金曜に章の構成をお送りして全体像をご覧いただき、完成稿を22日にお渡しします。構成に問題があれば、早く分かるだけ損はありません。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "延長中も進捗を見せる案。承諾されやすい。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-005",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a lecture",
+      "listener": "the lecturer",
+      "want": "You want to say the pace of the course is too fast for the group.",
+      "situationJa": "授業の進度が速すぎることを、教員に伝えたい。",
+      "tags": ["feedback", "courses"],
+      "answers": [
+        {
+          "en": "Could I give you some feedback on the pace? We covered three chapters last week and most of the group lost the thread at the second. I think we'd get more from two chapters done slowly.",
+          "ja": "進度について感想をお伝えしてもよいですか。先週は3章進み、多くの学生が2章目で追えなくなりました。2章をゆっくり扱う方が身につくと思います。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "個人ではなく集団の話にする。受け止められやすい。"
+        },
+        {
+          "en": "The reading list assumes we've done the statistics module, and about half of us haven't. That's why the questions have dried up. It isn't a lack of interest.",
+          "ja": "指定図書は統計の科目を履修済みであることを前提としていますが、半数ほどは未履修です。質問が出なくなったのはそのためです。関心が無いのではありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "沈黙の理由を説明する。誤解が解ける。"
+        },
+        {
+          "en": "I realise the syllabus is fixed and you have to get through it. I'm not asking you to cut material. Even ten minutes of recap at the start would help a lot of us.",
+          "ja": "計画は決まっており、消化しなければならないのは承知しています。内容を削れとは申し上げません。冒頭に10分の復習があるだけで、多くの学生が助かります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "制約を認めた上で小さく頼む。通りやすい。"
+        },
+        {
+          "en": "Could we have the slides the evening before rather than after the lecture? Reading them first would let us follow at this speed. Several of us have said the same thing.",
+          "ja": "資料を講義の後ではなく、前夜にいただけませんか。先に読めば、この速さでも追えます。複数の学生が同じことを言っています。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的で費用のかからない依頼。実現しやすい。"
+        },
+        {
+          "en": "May I raise a point about the pace of the module on behalf of several students. The material assumes prior statistical knowledge which a number of us do not have. A short recap at the start of each session would be of considerable help.",
+          "ja": "複数の学生を代表して、進度について申し上げてもよろしいでしょうか。統計の予備知識を前提としていますが、多くの学生はそれを持ちません。毎回冒頭に短い復習があれば大いに助かります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "代表して伝える形。改まった場に。"
+        },
+        {
+          "en": "Can I be honest about the pace? Three chapters a week is losing most of the room. Could we slow down a bit?",
+          "ja": "進度について正直に申し上げてもよいですか。週3章では、ほとんどの学生が追えていません。少し速度を落とせませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "率直に伝える。少人数の授業で。"
+        },
+        {
+          "en": "If the content can't be cut, could the assessment reflect that? A shorter reading list for the essay would let us go deeper on less. That might be easier than changing the lectures.",
+          "ja": "内容を削れないのであれば、評価の方を合わせられませんか。論文の指定図書を減らせば、少ない対象を深く扱えます。講義を変えるより容易かもしれません。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "別の調整弁を示す。実現の道が増える。"
+        },
+        {
+          "en": "I'd rather say this now than in the end-of-term survey. By then it's too late for this cohort. I'd like it to help us rather than next year's group.",
+          "ja": "学期末の調査ではなく、今申し上げたいです。その時では今年の学生には手遅れです。来年の学生ではなく、私たちの助けになってほしいのです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "今伝える理由を示す。真剣さが伝わる。"
+        },
+        {
+          "en": "Three of us asked about the prerequisite in week one and were told it wasn't needed. It has turned out to matter a great deal. I'd like that to be clearer for the next cohort at least.",
+          "ja": "初回に3人が前提科目について尋ね、不要と伝えられました。実際には非常に重要でした。少なくとも来年度の学生には明示していただきたいです。",
+          "register": "polite",
+          "style": "complain",
+          "note": "事実として述べる。改善につながる。"
+        },
+        {
+          "en": "Could I suggest something practical? A one-page summary of assumed knowledge, posted this week, would let us fill the gaps ourselves. I'm happy to draft it from the lecture notes if that helps.",
+          "ja": "実務的な提案をしてもよいですか。前提知識をまとめた1枚の資料を今週掲載いただければ、各自で埋められます。よろしければ講義の記録から私が原案を作ります。",
+          "register": "polite",
+          "style": "propose",
+          "note": "自ら作業を引き受ける。最も効果が高い。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-006",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In an office hour",
+      "listener": "your supervisor",
+      "want": "You want to propose changing your research topic.",
+      "situationJa": "研究テーマの変更を、指導教員に相談したい。",
+      "tags": ["research", "proposing"],
+      "answers": [
+        {
+          "en": "I'd like to talk about changing the direction of the project. The data I planned to use isn't available for the years I need. I've found a related question I could answer with what does exist.",
+          "ja": "研究の方向を変えることについて相談したいです。使う予定だった資料が、必要な年について入手できません。既存の資料で答えられる、関連した問いを見つけました。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "変更の理由と代案を同時に出す。前向きに見える。"
+        },
+        {
+          "en": "I've spent six weeks trying to get access to the hospital records and been refused twice. The ethics route would take another year. That makes the original question undoable within the programme.",
+          "ja": "病院の記録の利用許可に6週間を費やし、2度断られました。倫理審査の経路ではさらに1年かかります。現行の課程内では、当初の問いは実行不可能です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "尽くした努力を示す。安易な変更に見えない。"
+        },
+        {
+          "en": "I know you took me on partly because of this topic, and I don't take that lightly. The new question sits in the same area and uses the same method. I'd still very much want to work with you on it.",
+          "ja": "このテーマゆえに指導を引き受けてくださった面があると承知しており、軽く考えてはいません。新しい問いは同じ領域で、手法も同じです。引き続きご指導いただきたいと思っています。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "関係への配慮。指導教員の懸念に先回りする。"
+        },
+        {
+          "en": "Could I send you a two-page outline before we decide anything? It sets out the new question, the data, and what I'd keep from the current work. I'd rather you judged it on paper than on my summary.",
+          "ja": "何かを決める前に、2ページの概要をお送りしてもよいですか。新しい問い、資料、現行研究から引き継ぐ部分を記します。私の口頭説明ではなく、書面でご判断いただきたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "判断材料を用意する。真剣さが伝わる。"
+        },
+        {
+          "en": "I should like to propose a revision to the research question. Access to the primary dataset has been refused and an ethics application would exceed the programme timeline. I have prepared an alternative question using publicly available data.",
+          "ja": "研究上の問いの変更を提案いたします。主要な資料への利用許可が得られず、倫理審査は課程の期間を超過いたします。公開資料を用いた代替の問いを用意しております。",
+          "register": "formal",
+          "style": "formal",
+          "note": "正式な変更申請に。記録として機能する。"
+        },
+        {
+          "en": "I think I need to change the topic. The hospital data isn't going to happen — I've been turned down twice. I've got another question that works with open data.",
+          "ja": "テーマを変える必要があると思います。病院の資料は望み薄で、2度断られました。公開資料で成り立つ別の問いがあります。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな関係で。結論から短く。"
+        },
+        {
+          "en": "If you'd rather I didn't switch completely, there's a middle option. I keep the same question but narrow it to the one region where data is open. That's less ambitious but it's finishable.",
+          "ja": "全面的な変更をお望みでなければ、中間の案もあります。問いは変えず、資料が公開されている1つの地域に絞ります。野心は下がりますが、完成はできます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "選択肢を2つ示す。判断が具体的になる。"
+        },
+        {
+          "en": "I'd rather not spend another term waiting on access that may never come. I've been optimistic about it twice already. I'd prefer to work on something I can actually finish.",
+          "ja": "得られないかもしれない許可を待って、もう1学期を使うのは避けたいです。すでに2度、楽観的に構えました。実際に完成できるものに取り組みたいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "現実的な判断。ぶれない姿勢が伝わる。"
+        },
+        {
+          "en": "Looking back, I should have tested access before writing the proposal. I assumed it because a previous student had it. That's the lesson I've taken and it shapes the new plan.",
+          "ja": "振り返れば、計画書を書く前に利用可否を確かめるべきでした。以前の学生が使えたため、当然と考えていました。それが得た教訓で、新しい計画に反映しています。",
+          "register": "polite",
+          "style": "complain",
+          "note": "自らの反省を述べる。次への信頼につながる。"
+        },
+        {
+          "en": "Here's what I'd suggest as a way forward. I write the new proposal over two weeks and we review it at the end of the month. If you're not convinced, I'll go back to narrowing the original.",
+          "ja": "進め方をこう提案します。2週間で新しい計画書を書き、月末に検討していただきます。ご納得いただけなければ、当初の問いを絞る方向に戻ります。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "期限と後戻りの道を示す。安心して任せられる。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-007",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a study group",
+      "listener": "a classmate who is struggling",
+      "want": "You want to explain a difficult concept without patronising them.",
+      "situationJa": "見下さずに、難しい概念を同級生に説明したい。",
+      "tags": ["explaining", "peers"],
+      "answers": [
+        {
+          "en": "This one took me three attempts, so let me show you how I finally got it. Start with the simplest case where there's only one variable. Once that's clear, the general version is the same idea repeated.",
+          "ja": "私も3回目でようやく分かったので、その道筋をお見せします。まず変数が1つだけの最も簡単な場合から始めます。それが分かれば、一般の形は同じ考えの繰り返しです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "自分も苦労したと先に言う。相手が構えない。"
+        },
+        {
+          "en": "The textbook introduces the notation before the idea, which is why it feels impossible. The idea itself is that you're comparing two rates of change. The symbols are just shorthand for that comparison.",
+          "ja": "教科書は考え方より先に記号を出すので、不可能に感じます。考え自体は、2つの変化の速さを比べているだけです。記号はその比較の略記にすぎません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "難しさの原因を教材のせいにする。自信が戻る。"
+        },
+        {
+          "en": "Tell me where it stops making sense and we'll start from there. There's no point in me going over the part you already have. Most people get lost at the same line and it isn't you.",
+          "ja": "どこから分からなくなるか教えてください。そこから始めましょう。すでに分かっている部分を繰り返しても意味がありません。多くの人が同じ行で詰まるので、あなたのせいではありません。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "相手に主導権を渡す。最も丁寧な教え方。"
+        },
+        {
+          "en": "Could you talk me through how you'd start it? I'll follow along and stop you if I'd have done something different. It's easier to spot the gap that way than by me lecturing at you.",
+          "ja": "まずどう始めるか、話しながら見せてもらえますか。私は追いかけて、違うやり方をする箇所で止めます。私が一方的に説明するより、詰まりが見つけやすいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "相手に説明させる。理解の穴が正確に分かる。"
+        },
+        {
+          "en": "It may be helpful to work through a concrete example first. If we take the case where the interval is one, the algebra becomes straightforward. The general result then follows by the same steps.",
+          "ja": "まず具体例で追うのが有効かもしれません。区間を1とすれば、式変形は平易になります。一般の結果も、同じ手順で導かれます。",
+          "register": "formal",
+          "style": "formal",
+          "note": "落ち着いた説明。相手を子供扱いしない。"
+        },
+        {
+          "en": "Honestly, this bit is badly explained in the book. Forget the notation for a minute. It's just two speeds being compared.",
+          "ja": "正直、この部分は本の説明が良くありません。記号はいったん忘れてください。要は2つの速さを比べているだけです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "親しい相手に。緊張をほぐしてから入る。"
+        },
+        {
+          "en": "Do you want the short version or the full derivation? The short one gets you through the problem set tonight. The full one takes an hour but it stops this coming back in the exam.",
+          "ja": "簡単な説明と、完全な導出のどちらがよいですか。前者なら今夜の課題は片付きます。後者は1時間かかりますが、試験で同じ所に戻らずに済みます。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "相手の目的に合わせる。押し付けにならない。"
+        },
+        {
+          "en": "I'd rather not just give you the answer to copy down. You'd have the same problem again in the exam and I wouldn't be there. Let's do one together and then you do the next.",
+          "ja": "答えを書き写すために渡すのは避けたいです。試験で同じ問題に当たり、そこに私はいません。1問一緒にやって、次はご自身でやりましょう。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "断りに理由と代案を添える。冷たく響かない。"
+        },
+        {
+          "en": "I got this wrong in the mock and lost eight marks. I only understood it when someone drew it rather than wrote it. Let me draw it and you tell me if it helps.",
+          "ja": "模擬試験でこれを間違え、8点落としました。式ではなく図で示してもらって初めて理解できました。図を描きますので、役に立つか教えてください。",
+          "register": "casual",
+          "style": "complain",
+          "note": "自分の失敗を開示する。相手の羞恥心が下がる。"
+        },
+        {
+          "en": "How about we work three problems together this week? I'll do the first, we do the second together, and you do the third. If the third goes well, you've got it.",
+          "ja": "今週、一緒に3問やってみませんか。1問目は私が、2問目は一緒に、3問目はご自身でやります。3問目がうまくいけば、身についた証拠です。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "段階的な練習。実際に力がつく形。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-008",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a student office",
+      "listener": "an administrator",
+      "want": "You want to appeal an administrative decision about your enrolment.",
+      "situationJa": "履修に関する事務の決定に、異議を申し立てたい。",
+      "tags": ["administration", "appealing"],
+      "answers": [
+        {
+          "en": "I'd like to appeal the decision to remove me from the module. The email says I missed the registration deadline, but I registered on the fourth. I have the confirmation email with me.",
+          "ja": "科目の登録取り消しの決定について、異議を申し立てたいです。登録の期限を過ぎたとありますが、私は4日に登録しています。確認のメールを持参しました。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "証拠を持って行く。事実誤認は最も通りやすい。"
+        },
+        {
+          "en": "The deadline was extended for exchange students to the tenth, and that was announced in the portal. I registered on the fourth, which is inside both deadlines. I think the extension may not have been applied to my record.",
+          "ja": "交換留学生については期限が10日まで延長され、掲示板で告知されていました。私の登録は4日で、どちらの期限にも間に合っています。延長が私の記録に反映されていないのだと思います。",
+          "register": "neutral",
+          "style": "context",
+          "note": "規定を引く。事務との交渉で最も効く。"
+        },
+        {
+          "en": "I understand you're applying the rule as it's written, and I'm not asking you to break it. I'm asking whether the exchange extension applies to me. If it doesn't, I'll accept that and look at the alternatives.",
+          "ja": "規定通りに運用されているのは理解していますし、曲げてほしいとは申しません。伺いたいのは、留学生の延長が私に適用されるかです。適用外なら受け入れ、別の選択肢を検討します。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "担当者を敵にしない。協力を得やすい。"
+        },
+        {
+          "en": "Could you check the timestamp on my registration before this goes further? It should show the fourth of October at nine in the morning. If it shows something else, that's useful for both of us to know.",
+          "ja": "先へ進む前に、私の登録の日時を確認していただけますか。10月4日の午前9時と表示されるはずです。異なる表示なら、双方にとって有用な情報です。",
+          "register": "polite",
+          "style": "request",
+          "note": "確認を求める。窓口で最も現実的な一手。"
+        },
+        {
+          "en": "I should like to appeal the decision communicated on the fifteenth. My registration was submitted on the fourth of October, within the extended deadline for exchange students. I attach the system confirmation for your reference.",
+          "ja": "15日付でご連絡いただいた決定について、異議を申し立てます。私の登録は10月4日に行われ、交換留学生向けの延長期限内です。参考としてシステムの確認書を添付いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "書面での申立てに。そのまま使える。"
+        },
+        {
+          "en": "I think there's been a mistake with my registration. I signed up on the fourth and I've got the email. Could someone take another look?",
+          "ja": "私の登録について、行き違いがあると思います。4日に手続きし、メールも残っています。どなたかに再確認いただけませんか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い窓口で。短く事情を伝える。"
+        },
+        {
+          "en": "If the decision can't be changed at this desk, could you tell me who can change it? I'd rather go to the right person once than send three emails. I'm happy to put it in writing today.",
+          "ja": "この窓口で決定を変えられないのであれば、どなたなら可能か教えていただけますか。メールを3通送るより、適切な方に一度で伺いたいです。本日中に書面にします。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "権限のある人に届かせる。たらい回しを防ぐ。"
+        },
+        {
+          "en": "I'd rather not withdraw and re-apply next term if there's another route. That would put my graduation back by a year. Could we exhaust the appeal first?",
+          "ja": "他に方法があるなら、取り下げて来学期に再申請するのは避けたいです。卒業が1年遅れます。まず異議申し立てを尽くせませんか。",
+          "register": "polite",
+          "style": "decline",
+          "note": "提案された解決策を断る。影響を示す。"
+        },
+        {
+          "en": "This is the third time the exchange extension hasn't been applied to my record. It was corrected twice last year after I asked. Could the underlying record be fixed rather than each case?",
+          "ja": "留学生の延長が私の記録に反映されないのは3度目です。昨年も申し出て2度訂正いただきました。個別対応ではなく、元の記録を修正いただけませんか。",
+          "register": "polite",
+          "style": "complain",
+          "note": "根本原因の修正を求める。繰り返しが止まる。"
+        },
+        {
+          "en": "Could I suggest a way through? I'll email the confirmation and the portal announcement this afternoon. If the extension applies, you reinstate me, and if it doesn't, I'll take the late-registration penalty instead.",
+          "ja": "解決の道を提案してもよいですか。本日午後に、確認書と掲示の告知をメールでお送りします。延長が適用されるなら復帰を、されないなら遅延登録の処分を受けます。",
+          "register": "polite",
+          "style": "propose",
+          "note": "着地点を2つ用意する。担当者が判断しやすい。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-009",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a seminar",
+      "listener": "the group",
+      "want": "You want to present your work and invite criticism.",
+      "situationJa": "自分の研究を発表し、批判を歓迎したい。",
+      "tags": ["presenting", "research"],
+      "answers": [
+        {
+          "en": "I'll take fifteen minutes on the argument and then I'd like you to attack it. The claim is that the policy had no measurable effect on the smaller regions. The weakest part is the control group and I'd start there.",
+          "ja": "15分で論旨を述べますので、その後は遠慮なく批判してください。主張は、この政策が小規模地域には測定可能な影響を与えなかった、というものです。最も弱いのは対照群なので、そこから始めていただきたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "弱点を自ら示す。議論の質が上がる。"
+        },
+        {
+          "en": "The question came out of a gap in the existing work. Three studies look at the national picture and none at the regional level. That's the space this fills, for better or worse.",
+          "ja": "この問いは、先行研究の空白から生まれました。3本が全国の状況を扱い、地域単位のものは1本もありません。良くも悪くも、そこを埋める研究です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "位置づけを述べる。研究発表の基本。"
+        },
+        {
+          "en": "I'd rather hear the objections now than after it's submitted. Nothing you say will offend me, and the harder the question the more useful it is. Please don't soften anything on my account.",
+          "ja": "提出後ではなく、今のうちに反論を伺いたいです。何を言われても気を悪くしませんし、厳しい問いほど有益です。私に気を遣って和らげないでください。",
+          "register": "neutral",
+          "style": "considerate",
+          "note": "批判の許可を明示する。実際に意見が出る。"
+        },
+        {
+          "en": "Could I ask you to focus on the method rather than the writing? The prose will be revised anyway. What I can't fix later is a flaw in how the sample was drawn.",
+          "ja": "文章ではなく手法に絞ってご指摘いただけますか。文章はいずれ手を入れます。後から直せないのは、標本の取り方の欠陥です。",
+          "register": "polite",
+          "style": "request",
+          "note": "議論の的を絞る。時間が有効に使える。"
+        },
+        {
+          "en": "I shall set out the argument in three parts and welcome questions throughout. The central claim concerns the absence of a measurable regional effect. I should be particularly grateful for comments on the identification strategy.",
+          "ja": "論旨を3部に分けてご説明し、途中のご質問も歓迎いたします。中心となる主張は、地域単位で測定可能な効果が見られないことです。とりわけ識別手法へのご意見をいただければ幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった発表に。歓迎する姿勢が伝わる。"
+        },
+        {
+          "en": "Right, here's what I've got — pull it apart. Main claim is no regional effect. The control group is the shaky bit.",
+          "ja": "では、こういう内容です。どうぞ崩してください。主張は地域単位の効果が無いこと。危ういのは対照群です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い研究会で。前置きを省く。"
+        },
+        {
+          "en": "If we're short on time, I'd rather cut the background than the discussion. You've all read the literature. The part I need help with is the last ten minutes.",
+          "ja": "時間が足りなければ、議論ではなく背景を削りたいです。文献は皆さんお読みです。助けが必要なのは最後の10分の部分です。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "時間配分を交渉する。発表の価値が上がる。"
+        },
+        {
+          "en": "I'd rather not defend the choice of period today, if that's all right. I know it's contestable and I've written two pages on it. I'd get more out of the time if we spent it on the sample.",
+          "ja": "期間の選び方の弁明は、今日は避けたいのですがよろしいでしょうか。議論の余地があるのは承知しており、2ページ割いています。標本の議論に時間を使う方が得るものが多いです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "既知の論点を外す。時間を守る言い方。"
+        },
+        {
+          "en": "I presented an earlier version in June and got mostly encouragement. That was pleasant and completely useless. I'd like today to be the opposite.",
+          "ja": "6月に前の版を発表し、ほとんどが励ましでした。心地よくはありましたが、まったく役に立ちませんでした。今日は逆であってほしいです。",
+          "register": "casual",
+          "style": "complain",
+          "note": "無難な感想を封じる。率直な批判が出る。"
+        },
+        {
+          "en": "Could I suggest a format for the discussion? Two minutes each on the biggest problem you see, going round the table, and no responses from me until everyone has spoken. Then I'll answer the ones that came up twice.",
+          "ja": "議論の進め方を提案してもよいですか。最も大きいと思う問題を1人2分ずつ、順に述べていただき、全員が終わるまで私は答えません。その後、2度出た論点にお答えします。",
+          "register": "polite",
+          "style": "propose",
+          "note": "形式を決める。声の大きい人に偏らない。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-010",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In an office hour",
+      "listener": "a professor",
+      "want": "You want to ask for a reference letter for a competitive programme.",
+      "situationJa": "難関の応募に向けて、推薦状をお願いしたい。",
+      "tags": ["requesting", "careers"],
+      "answers": [
+        {
+          "en": "I'd like to ask whether you'd be willing to write me a reference. It's for the research programme in Leiden, and the deadline is the fifth of December. I'd send you my statement and a summary of the work I did in your module.",
+          "ja": "推薦状をお書きいただけないか、お願いに参りました。ライデンの研究課程向けで、締切は12月5日です。志望書と、先生の科目で行った研究の要約をお送りします。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "用途と期限を先に。判断がすぐできる。"
+        },
+        {
+          "en": "You supervised my second-year project on migration data, which is the closest thing I have to the programme's focus. That's why I'm asking you rather than my personal tutor. The work is attached in case it's useful.",
+          "ja": "2年次の移民統計の課題をご指導いただき、応募先の主題に最も近い内容です。個別指導の担当ではなく先生にお願いする理由はそこにあります。参考までに成果物を添付します。",
+          "register": "neutral",
+          "style": "context",
+          "note": "依頼の理由を示す。断られにくくなる。"
+        },
+        {
+          "en": "I know this is a busy time of year and references take real work. If you'd rather not, I'd genuinely prefer a no now than a rushed letter in December. Either answer is completely fine.",
+          "ja": "多忙な時期であり、推薦状には手間がかかると承知しています。ご都合が悪ければ、12月に急いで書かれるより、今お断りいただく方がありがたいです。どちらのご返答でも構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "断る自由を明示する。良い推薦状につながる。"
+        },
+        {
+          "en": "Could I send you a page of notes to work from? It would list the projects, the marks and the two things the programme asks referees to comment on. It should save you looking anything up.",
+          "ja": "参考用に1枚の覚書をお送りしてもよいですか。課題、評価、そして応募先が推薦者に求める2点を列挙します。お調べいただく手間が省けるはずです。",
+          "register": "polite",
+          "style": "request",
+          "note": "相手の作業を減らす。承諾されやすい。"
+        },
+        {
+          "en": "I should like to ask whether you would be willing to act as a referee for my application. The programme is the research masters at Leiden, with a deadline of the fifth of December. I would of course provide supporting material well in advance.",
+          "ja": "私の応募について、推薦者をお引き受けいただけないかお伺いいたします。応募先はライデンの研究修士課程で、締切は12月5日です。参考資料は十分な余裕をもってご用意いたします。",
+          "register": "formal",
+          "style": "formal",
+          "note": "初めて頼む相手に。丁寧で失礼がない。"
+        },
+        {
+          "en": "Would you be up for writing me a reference? It's for a research masters in Leiden, due the fifth of December. I'll send you everything you'd need.",
+          "ja": "推薦状をお願いできますか。ライデンの研究修士課程向けで、12月5日締切です。必要なものは一式お送りします。",
+          "register": "casual",
+          "style": "casual",
+          "note": "よく知る指導教員に。手短に頼む。"
+        },
+        {
+          "en": "If December is too tight, the same programme has a March round. I'd rather have a considered letter for March than a quick one now. Would that timing work better?",
+          "ja": "12月が厳しければ、同じ課程に3月の募集もあります。今急いで書かれるより、3月に熟慮された推薦状をいただきたいです。その時期の方がご都合はよろしいでしょうか。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "時期をずらす提案。無理をさせない。"
+        },
+        {
+          "en": "I'd rather not ask someone who only taught me in a large lecture. The letter would say very little and the panel would notice. That's why I've come to you even though I know you're busy.",
+          "ja": "大人数の講義でしか接点のない先生に頼むのは避けたいです。内容の薄い推薦状になり、審査側にも伝わります。ご多忙と承知の上で先生にお願いする理由です。",
+          "register": "polite",
+          "style": "decline",
+          "note": "他を当たれと言われた場合の返し。理由が明確。"
+        },
+        {
+          "en": "I left this later than I should have, and I'm sorry for that. The programme only announced the deadline last month, but I could still have written sooner. I'll make the rest of it as easy as I can.",
+          "ja": "お願いが遅くなり、申し訳ありません。締切の告知は先月でしたが、もっと早くご連絡できたはずです。残りの手続きはできる限り簡便にいたします。",
+          "register": "polite",
+          "style": "complain",
+          "note": "自らの遅れを認める。心証が良くなる。"
+        },
+        {
+          "en": "Here's what I'd propose. I send the notes and the draft statement by Friday, and you tell me by the twentieth whether you can do it. If you can't, I'll have time to ask someone else without it being awkward.",
+          "ja": "こう提案します。金曜までに覚書と志望書の草稿をお送りし、20日までに可否をお知らせいただきます。難しければ、気まずくならずに他の方に頼む時間が残ります。",
+          "register": "polite",
+          "style": "propose",
+          "note": "断りやすい期限を設ける。関係を守る。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-011",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a group project meeting",
+      "listener": "the group",
+      "want": "You want to propose a fairer way of splitting the work.",
+      "situationJa": "作業の分け方を、より公平にする案を出したい。",
+      "tags": ["group-work", "proposing"],
+      "answers": [
+        {
+          "en": "I'd like to change how we split the work for the second half. At the moment two people are writing and two are formatting, and the writing is four times the hours. I'd rather we divided by effort than by task type.",
+          "ja": "後半の分担の仕方を変えたいです。今は2人が執筆、2人が体裁で、執筆は4倍の時間がかかります。作業の種類ではなく、労力で分けたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "不均衡を数字で示す。感情論にならない。"
+        },
+        {
+          "en": "We divided by chapter in October, which looked even on paper. In practice chapter two needed forty sources and chapter four needed six. Nobody planned that, but it's where we are.",
+          "ja": "10月に章ごとに分け、紙の上では均等に見えました。実際には第2章に40件、第4章に6件の文献が必要でした。誰の計画でもありませんが、現状はそうです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "誰も責めない説明。合意を得やすい。"
+        },
+        {
+          "en": "I want to be clear that nobody has done anything wrong here. The split just turned out uneven once we started. I'd rather fix it now than have it come out in the peer assessment.",
+          "ja": "誰かに落ち度があるという話ではないことを明確にしておきます。始めてみたら分担が偏っていた、というだけです。相互評価で表に出るより、今直したいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "非難でないと明言する。防御反応を防ぐ。"
+        },
+        {
+          "en": "Could we each write down our hours so far before we redistribute? Not to check up on anyone, but so we're working from the same picture. Ten minutes now would save an argument later.",
+          "ja": "割り振り直す前に、各自これまでの時間を書き出しませんか。監視のためではなく、同じ前提に立つためです。今の10分が、後の口論を防ぎます。",
+          "register": "polite",
+          "style": "request",
+          "note": "事実から始める。議論が客観的になる。"
+        },
+        {
+          "en": "May I propose that we reallocate the remaining work by estimated hours rather than by chapter. The current division has proved uneven in practice. I would suggest we agree the estimates together before assigning anything.",
+          "ja": "残りの作業を、章ではなく見積時間で割り振り直すことを提案いたします。現行の分担は実際には不均衡でした。割り当ての前に、見積を全員で合意することを提案します。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった提案。記録に残したい場合に。"
+        },
+        {
+          "en": "Can we redo the split for part two? Writing's taking way longer than formatting. Let's divide by hours instead of by chapter.",
+          "ja": "後半の分担をやり直しませんか。執筆は体裁よりはるかに時間がかかっています。章ではなく時間で分けましょう。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い班で。短く提案する。"
+        },
+        {
+          "en": "If nobody wants to redo the whole split, we could just move the referencing. That's about six hours and it would even things out. It's a smaller change than reallocating chapters.",
+          "ja": "全体の割り振り直しに気が進まなければ、参考文献の作業だけ移すこともできます。およそ6時間分で、それだけで均衡します。章の再割当てより小さな変更です。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "最小の変更案。合意までが早い。"
+        },
+        {
+          "en": "I'd rather not carry the extra hours quietly and resent it in December. That's what happened in the last project and it showed in the peer marks. I'd prefer we sorted it out openly now.",
+          "ja": "余分な時間を黙って抱え、12月に不満を溜めるのは避けたいです。前回の課題がそうで、相互評価に表れました。今、率直に整理したいです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "我慢を断る。健全な言い方。"
+        },
+        {
+          "en": "In the last two projects the same two people did most of the writing. I don't think that's anyone's intention. It happens because writing tasks look the same size on a plan and aren't.",
+          "ja": "直近2つの課題でも、執筆の大半を同じ2人が担いました。誰かの意図ではないと思います。計画上は同じ大きさに見えて、実際は違うためです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "構造の問題として述べる。角が立たない。"
+        },
+        {
+          "en": "Here's my proposal for the rest of the term. We estimate hours for each remaining task, total them, and divide by four. We review at the halfway point and rebalance if the estimates were wrong.",
+          "ja": "残りの期間について提案します。各作業の時間を見積もり、合計を4で割ります。中間で見直し、見積が外れていれば調整します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "見直しの機会を組み込む。実務的で公平。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-012",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In an office hour",
+      "listener": "a professor",
+      "want": "You want to explain why your recent work has slipped.",
+      "situationJa": "最近の成績が落ちた理由を、教員に説明したい。",
+      "tags": ["explaining", "difficulty"],
+      "answers": [
+        {
+          "en": "I wanted to explain the drop in my recent marks rather than let it stand. I've been working four evenings a week since my funding changed in September. It's affected the essays more than the exams.",
+          "ja": "最近の評価の低下を放置せず、説明したく参りました。9月に奨学金の状況が変わり、週4晩働いています。試験より論文に影響が出ています。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "理由と影響の範囲を示す。言い訳に見えない。"
+        },
+        {
+          "en": "The first term marks were in the seventies and the last two are in the fifties. The change lines up exactly with when I started the evening job. I don't think the reading has got harder.",
+          "ja": "1学期の評価は70点台で、直近2つは50点台です。この変化は、夜の仕事を始めた時期と正確に一致します。読解が難しくなったからではないと思います。",
+          "register": "neutral",
+          "style": "context",
+          "note": "時期の一致を示す。説得力が高い。"
+        },
+        {
+          "en": "I'm not asking for the marks to be changed, and I don't think they should be. I wanted you to know the reason in case it looks like I've stopped caring. It matters to me that you don't read it that way.",
+          "ja": "評価の変更を求めているのではなく、変えるべきでもないと考えます。関心を失ったと見えるといけないので、理由をお伝えしたかったのです。そう受け取られたくないのです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "要求を伴わない説明。信頼が保たれる。"
+        },
+        {
+          "en": "Could I ask what you'd prioritise if you were in my position? I can do the reading or the problem sets well, but not both this term. I'd rather choose deliberately than let it happen.",
+          "ja": "私の立場なら何を優先されるか、伺えますか。今学期は読解か演習のどちらかしか十分にできません。成り行きに任せるより、意識して選びたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "助言を求める。前向きな相談になる。"
+        },
+        {
+          "en": "I should like to account for the decline in my recent submissions. A change in my funding in September has required substantial paid work during term. I am not seeking any adjustment, but wished you to be aware.",
+          "ja": "最近の提出物の質の低下について、ご説明申し上げたく存じます。9月の資金面の変化により、学期中の就労が相当量必要となりました。措置を求めるものではなく、状況をお伝えするものです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "記録に残る説明。後の申請の下地になる。"
+        },
+        {
+          "en": "I should probably explain the recent marks. My funding changed and I'm working four nights a week now. It's hit the essays hardest.",
+          "ja": "最近の評価について説明すべきかと思います。奨学金の状況が変わり、今は週4晩働いています。特に論文に影響しています。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな教員に。短く事情を伝える。"
+        },
+        {
+          "en": "If there's a way to move one deadline a term, that would make the difference. I'd take a lower cap on the mark in exchange. Two extra days is worth more to me than the last five percent.",
+          "ja": "学期に1つでも締切をずらせるなら、それで状況が変わります。代わりに評価の上限が下がっても構いません。最後の5パーセントより、2日の猶予の方が価値があります。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "代償を申し出る。真剣さが伝わる。"
+        },
+        {
+          "en": "I'd rather not apply for mitigating circumstances for the whole year. This isn't an emergency, it's an ongoing situation. I'd prefer to manage it with a plan than with a form.",
+          "ja": "1年分の特別措置を申請するのは避けたいです。緊急事態ではなく、継続的な状況だからです。書式ではなく、計画で対処したいです。",
+          "register": "polite",
+          "style": "decline",
+          "note": "制度の乱用を避ける姿勢。好印象を与える。"
+        },
+        {
+          "en": "I did try to flag this in October and was told to email the student office. I sent two emails and got no reply. I'm raising it with you because that route didn't work.",
+          "ja": "10月にもお伝えしようとし、学生課にメールするよう案内されました。2通送りましたが返信はありません。その経路が機能しなかったため、先生にお話ししています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "経緯を示す。相談が唐突に見えない。"
+        },
+        {
+          "en": "Here's what I'd like to do for the rest of the term. I drop the optional module, keep the two core ones, and check in with you monthly. If the marks don't recover by February, I'll look at suspending for a term.",
+          "ja": "今学期の残りはこうしたいです。選択科目を落とし、必修2科目を維持し、月1回ご相談します。2月までに評価が戻らなければ、1学期の休学を検討します。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "計画と最終手段を示す。安心してもらえる。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-013",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a seminar",
+      "listener": "a classmate",
+      "want": "You want to respond when someone dismisses your point.",
+      "situationJa": "自分の意見を軽くあしらわれたとき、応じたい。",
+      "tags": ["discussion", "conflict"],
+      "answers": [
+        {
+          "en": "I don't think that answers the point I was making. My question was about the sample, not the conclusion. Could you take the sample question directly?",
+          "ja": "それは私の論点への回答になっていないと思います。私の問いは結論ではなく標本についてでした。標本の問いに直接お答えいただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "すり替えを指摘する。冷静で効果的。"
+        },
+        {
+          "en": "The paper you're citing uses a different definition of the variable. That's why our numbers don't match, and it isn't a small difference. It changes the sign of the effect.",
+          "ja": "引用された論文は、変数の定義が異なります。数字が合わないのはそのためで、小さな違いではありません。効果の符号が変わります。",
+          "register": "neutral",
+          "style": "context",
+          "note": "根拠で返す。感情に乗らない最善の応答。"
+        },
+        {
+          "en": "It's possible I've explained it badly, so let me try once more. I'm not disputing the finding itself. I'm asking whether it holds outside the two cities in the sample.",
+          "ja": "説明が下手だったかもしれないので、もう一度述べます。結果そのものに異論はありません。標本の2都市の外でも成り立つのかを問うています。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "対立を和らげつつ論点を守る。教室向き。"
+        },
+        {
+          "en": "Could you say what specifically you disagree with? If it's the premise, I'll drop it. If it's the inference, that's a different conversation and I'd like to have it.",
+          "ja": "どの部分に反対なのか、具体的に伺えますか。前提であれば取り下げます。推論であれば別の議論になりますので、ぜひ続けたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "曖昧な否定を具体化させる。議論が戻る。"
+        },
+        {
+          "en": "I am not sure that addresses the point I raised. My concern was with the composition of the sample rather than the result. Perhaps we might take that question separately.",
+          "ja": "ご指摘は私の論点に答えていないように思われます。私の懸念は結果ではなく標本の構成にありました。その問いは分けて扱ってはいかがでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった演習で。丁寧に押し返す。"
+        },
+        {
+          "en": "That's not what I asked, though. I meant the sample, not the conclusion. Can we come back to that?",
+          "ja": "ただ、それは私が尋ねたことではありません。結論ではなく標本の話です。そこに戻れますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気安い場で。短く軌道を戻す。"
+        },
+        {
+          "en": "We might both be right about different things here. Your point holds for the national data and mine for the regional. Could we check which one the paper actually claims?",
+          "ja": "互いに別のことについて正しい可能性があります。ご意見は全国の統計に、私の意見は地域の統計に当てはまります。論文がどちらを主張しているか確認しませんか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "対立を分解する。勝ち負けにしない。"
+        },
+        {
+          "en": "I'd rather not move on from this quite yet. It's the assumption the whole second half rests on. Two more minutes and I'll let it go either way.",
+          "ja": "まだこの話から離れたくありません。後半全体が乗っている前提だからです。あと2分いただければ、結論がどうであれ引きます。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "打ち切りに抵抗する。時間を区切ると通る。"
+        },
+        {
+          "en": "This is the third week my questions have been answered as if I'd asked something simpler. I don't think it's deliberate. But I'd like to actually get an answer to the question I asked.",
+          "ja": "私の質問が、より単純な問いとして答えられるのは3週目です。意図的だとは思いません。ただ、実際に尋ねた問いへの回答が欲しいのです。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを穏やかに指摘する。扱いが変わる。"
+        },
+        {
+          "en": "Let me put it in one sentence and you can tell me if it's wrong. If the sample is only two cities, the result can't be generalised to rural areas. Is that the bit you disagree with?",
+          "ja": "一文でまとめますので、誤りがあればご指摘ください。標本が2都市のみなら、結果を農村部に一般化できません。反対されているのはその部分ですか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "論点を1文に凝縮する。議論が収束する。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-014",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "At a careers office",
+      "listener": "an adviser",
+      "want": "You want advice on whether to continue your studies or start working.",
+      "situationJa": "進学と就職のどちらを選ぶか、助言を求めたい。",
+      "tags": ["careers", "advice"],
+      "answers": [
+        {
+          "en": "I'd like help deciding between a masters and taking a job offer. The offer is in the same field and starts in September. I've been going round in circles for a month and I'd like a second view.",
+          "ja": "修士課程と内定のどちらを選ぶか、相談したいです。内定は同じ分野で、9月開始です。1か月間堂々巡りなので、第三者の見方が欲しいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "状況と困りごとを簡潔に。相談が始まる。"
+        },
+        {
+          "en": "The masters would cost about twenty thousand and take a year. The job pays from September but it's a smaller company with less training. Those are the two things I keep weighing against each other.",
+          "ja": "修士は費用がおよそ2万で、1年かかります。就職は9月から収入がありますが、規模が小さく研修も手薄です。この2点を天秤にかけ続けています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "判断材料を並べる。助言が具体的になる。"
+        },
+        {
+          "en": "I'm aware you can't make the decision for me and I'm not asking you to. What I'd find useful is knowing what people who took each route say afterwards. Do you have any sense of that?",
+          "ja": "決めていただく立場ではないと承知していますし、それを求めてもいません。有益なのは、それぞれの道を選んだ人が後に何と言うかです。何かご存じですか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手の役割を尊重する。良い助言を引き出す。"
+        },
+        {
+          "en": "Could you tell me what the deferral options usually look like? If I could accept the job and defer the masters for a year, that would change everything. I don't know whether that's normal or unusual.",
+          "ja": "入学の延期は通常どのような扱いか、教えていただけますか。就職を受けつつ修士を1年延期できるなら、状況が変わります。それが一般的なのか例外なのか分かりません。",
+          "register": "polite",
+          "style": "request",
+          "note": "第三の道を探る。相談の価値が上がる。"
+        },
+        {
+          "en": "I should be grateful for advice on choosing between postgraduate study and an offer of employment. Both are in the same field and both commence in September. I am particularly interested in whether deferral is commonly permitted.",
+          "ja": "大学院進学と就職の内定のいずれを選ぶかについて、助言をいただければ幸いです。いずれも同じ分野で、9月開始です。とりわけ延期が一般に認められるかに関心があります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相談。メールでも使える。"
+        },
+        {
+          "en": "I'm stuck between a masters and a job offer. Both start in September, same field. Any thoughts on how to think about it?",
+          "ja": "修士と内定の間で迷っています。どちらも9月開始で、分野は同じです。考え方について助言はありますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気軽な相談窓口で。短く切り出す。"
+        },
+        {
+          "en": "If I can't have both, I'd rather take the one that's harder to come back to. That's the question I can't answer on my own. Which door closes more firmly?",
+          "ja": "両立できないなら、後から戻りにくい方を選びたいです。それが自分では答えられない問いです。どちらの扉がより固く閉まりますか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "判断の基準を明確にする。助言が絞れる。"
+        },
+        {
+          "en": "I'd rather not decide by which one feels safer this week. I've noticed my answer changes depending on how the last essay went. I'd like a reason I'd still agree with in two years.",
+          "ja": "今週どちらが安心かで決めるのは避けたいです。直前の論文の出来次第で答えが変わることに気づきました。2年後にも納得できる理由が欲しいのです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "気分での決定を退ける。相談の質が上がる。"
+        },
+        {
+          "en": "I asked about this in October and was sent a list of masters programmes. That wasn't really the question. What I need is help comparing the two paths, not more options.",
+          "ja": "10月にも相談し、修士課程の一覧をいただきました。私の問いはそれではありませんでした。必要なのは選択肢の追加ではなく、2つの道の比較です。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "求めるものを明確にする。相談が正常化する。"
+        },
+        {
+          "en": "Could we do this in two steps? Today I'd like to work out what I'd need to know to decide, and I'll go and find it out. Then I'd come back in two weeks with the answers and we decide.",
+          "ja": "2段階で進めてもよいですか。今日は決めるために必要な情報を整理し、私が調べてきます。2週間後にその答えを持って伺い、そこで決めます。",
+          "register": "polite",
+          "style": "propose",
+          "note": "自分で動く前提。相談相手も協力しやすい。"
+        }
+      ]
+    },
+    {
+      "id": "school-3-015",
+      "category": "school",
+      "level": 3,
+      "difficulty": 3,
+      "place": "In a lecture hall",
+      "listener": "a fellow student",
+      "want": "You want to ask someone to stop distracting you during lectures.",
+      "situationJa": "講義中に気が散るので、やめてほしいと伝えたい。",
+      "tags": ["conflict", "peers"],
+      "answers": [
+        {
+          "en": "Could I ask you something about the lectures? I'm finding it hard to follow when there's talking next to me. Would you mind keeping it until the break?",
+          "ja": "講義のことで1つお願いがあります。隣で話し声があると、内容を追うのが難しいです。休憩まで待っていただけませんか。",
+          "register": "polite",
+          "style": "explain",
+          "note": "頼み事として切り出す。角が立たない。"
+        },
+        {
+          "en": "The material moves fast and I lose the thread if I miss thirty seconds. That's why I keep turning round, which I know looks rude. It isn't about the conversation itself.",
+          "ja": "内容の進みが速く、30秒聞き逃すと筋が追えなくなります。何度も振り返っているのはそのためで、失礼に見えるのは承知しています。会話の中身の問題ではありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "自分の事情として説明する。防御されにくい。"
+        },
+        {
+          "en": "I'm sure I'm being oversensitive about this. It's just that this module is the one I'm struggling with. Would it be all right if I moved seats, or would you rather keep the chat for the break?",
+          "ja": "私が気にしすぎなのだと思います。ただ、この科目は特に苦戦しています。私が席を移ってもよいですか。それとも会話は休憩まで、としましょうか。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "自分に非を寄せる。最も摩擦が少ない。"
+        },
+        {
+          "en": "Could you both keep it down during the lecture part? I don't mind at all in the workshop half. It's the first forty minutes that I need to hear.",
+          "ja": "講義の部分だけ、静かにしていただけますか。演習の後半はまったく構いません。聞き取りたいのは最初の40分です。",
+          "register": "polite",
+          "style": "request",
+          "note": "範囲を限定した依頼。受け入れられやすい。"
+        },
+        {
+          "en": "May I ask a favour regarding the lectures. I find it difficult to follow the material when there is conversation nearby. I should be grateful if it could wait until the interval.",
+          "ja": "講義について1つお願いがございます。近くで会話があると、内容を追うのが困難です。休憩までお待ちいただけますと幸いです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "面識の薄い相手に。丁寧で誤解がない。"
+        },
+        {
+          "en": "Sorry, would you mind keeping it down a bit? I keep losing what she's saying. Happy to catch up with you at the break.",
+          "ja": "すみません、少し静かにしていただけますか。先生の話を聞き逃してしまいます。休憩時に話すのは大歓迎です。",
+          "register": "casual",
+          "style": "casual",
+          "note": "同級生に。軽く、悪意なく伝える。"
+        },
+        {
+          "en": "If it's easier, I could move to the row in front. I'd rather do that than keep asking. Which would you prefer?",
+          "ja": "その方が楽であれば、前の列に移ります。何度もお願いするより、その方がよいです。どちらがよろしいですか。",
+          "register": "neutral",
+          "style": "negotiate",
+          "note": "自分が動く案も出す。相手が選べる。"
+        },
+        {
+          "en": "I'd rather not go to the lecturer about it, honestly. It's a small thing between us and it should stay that way. I just wanted to say it directly first.",
+          "ja": "正直、先生に相談するのは避けたいです。私たちの間の小さな話で、そのままにしておくべきです。まず直接お伝えしたかったのです。",
+          "register": "neutral",
+          "style": "decline",
+          "note": "穏当だが本気だと伝わる。効果が高い。"
+        },
+        {
+          "en": "It's been most sessions this term rather than a one-off. I've moved seats twice already. That's why I'm mentioning it rather than letting it go again.",
+          "ja": "一度だけでなく、今学期のほとんどの回で起きています。すでに2度席を移りました。だから今回は流さずにお伝えしています。",
+          "register": "neutral",
+          "style": "complain",
+          "note": "繰り返しを示す。要求が正当に見える。"
+        },
+        {
+          "en": "How about this — I'll sit two rows forward from next week. You two keep the back row and nobody has to change anything. I'd rather solve it that way than make it a thing.",
+          "ja": "こうしませんか。来週から私が2列前に座ります。お二人は後列のままで、誰も何も変えずに済みます。問題を大きくするより、その方がよいです。",
+          "register": "casual",
+          "style": "propose",
+          "note": "自分が動いて終わらせる。関係が壊れない。"
+        }
+      ]
+    }
+  ]
+}
