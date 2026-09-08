@@ -128,6 +128,14 @@ def check_content():
             if d not in (1, 2, 3):
                 err("%s: difficulty は 1..3 のいずれか（現在 %r）" % (where, d))
 
+            # situationJa に英単語が紛れ込んでいないか
+            # （下書き時に英語のまま残した箇所が実際に1件あった）
+            sja = s.get("situationJa") or ""
+            m_en = re.search(r"[A-Za-z]{3,}", sja)
+            if m_en:
+                err("%s: situationJa に英単語が残っています: %r"
+                    % (where, m_en.group()))
+
             want = s.get("want", "")
             if not re.match(r"^You want to |^You want ", want):
                 err("%s: want は 'You want to …' の形で書いてください（現在 %r）"

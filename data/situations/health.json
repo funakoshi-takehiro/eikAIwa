@@ -1,0 +1,385 @@
+{
+  "category": "health",
+  "situations": [
+    {
+      "id": "health-001", "category": "health", "difficulty": 2,
+      "place": "At a pharmacy", "listener": "a pharmacist",
+      "want": "You want something for a headache.",
+      "situationJa": "頭痛に効く薬がほしい。",
+      "tags": ["asking", "medicine"],
+      "answers": [
+        { "en": "Something for a headache, please.", "ja": "頭痛に効くものをお願いします。", "register": "neutral", "style": "oneword", "note": "薬局での定番。これで十分通じる。" },
+        { "en": "Do you have anything for a headache?", "ja": "頭痛に効くものはありますか。", "register": "neutral", "style": "existence", "note": "基本形。anything for 〜 は薬局の万能表現。" },
+        { "en": "I have a headache. What would you recommend?", "ja": "頭が痛いのですが、何がおすすめですか。", "register": "neutral", "style": "basic", "note": "症状と相談を一度に。薬剤師が選んでくれる。" },
+        { "en": "Could you recommend something for a headache?", "ja": "頭痛に効くものをおすすめしていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どの国の薬局でも通じる。" },
+        { "en": "I wonder if you could suggest something suitable for a headache.", "ja": "頭痛に適したものをご提案いただけますでしょうか。", "register": "formal", "style": "formal", "note": "suitable for 〜 は「〜に適した」。改まった言い方。" },
+        { "en": "Got anything for a headache?", "ja": "頭痛に効くのある？", "register": "casual", "style": "casual", "note": "率直な口語。小さな薬局で自然。" },
+        { "en": "Is paracetamol available here?", "ja": "パラセタモールはありますか。", "register": "neutral", "style": "vocab", "note": "英国では paracetamol、米国では acetaminophen。" },
+        { "en": "Do I need a prescription for that?", "ja": "それには処方箋が必要ですか。", "register": "neutral", "style": "basic", "note": "prescription は「処方箋」。国により市販の可否が違う。" },
+        { "en": "It's been aching since this morning and I'm traveling today — what can I take?", "ja": "今朝から痛んでいて今日は移動があります。何が飲めますか。", "register": "polite", "style": "context", "note": "状況を伝えると、眠くならない薬を選んでもらえる。" },
+        { "en": "I'd rather ask than guess — what would you suggest for a headache?", "ja": "自己判断せずに伺いたいのですが、頭痛には何がよいでしょうか。", "register": "polite", "style": "considerate", "note": "慎重な姿勢を示す。丁寧に説明してもらえる。" }
+      ]
+    },
+    {
+      "id": "health-002", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to describe your stomach pain.",
+      "situationJa": "腹痛の症状を説明したい。",
+      "tags": ["explaining", "symptoms"],
+      "answers": [
+        { "en": "My stomach hurts.", "ja": "お腹が痛いです。", "register": "neutral", "style": "oneword", "note": "最も基本。まずこれが言えれば伝わる。" },
+        { "en": "I have a stomachache.", "ja": "腹痛があります。", "register": "neutral", "style": "basic", "note": "stomachache は「腹痛」。名詞で言う形。" },
+        { "en": "I've had stomach pain since yesterday.", "ja": "昨日から腹痛があります。", "register": "neutral", "style": "basic", "note": "いつからかを添えるのが診察では最重要。" },
+        { "en": "Could I describe my symptoms? I've had pain here since yesterday.", "ja": "症状をお伝えしてもよいですか。昨日からここが痛みます。", "register": "polite", "style": "request", "note": "場所を指しながら。医師が診断しやすい。" },
+        { "en": "I've been experiencing abdominal pain for about two days.", "ja": "2日ほど腹部の痛みが続いております。", "register": "formal", "style": "formal", "note": "abdominal pain は医学的な「腹痛」。診察で通じやすい。" },
+        { "en": "My stomach's been really bad.", "ja": "お腹の調子がかなり悪いんです。", "register": "casual", "style": "casual", "note": "率直な口語。深刻さは伝わりにくい点に注意。" },
+        { "en": "Is there anything I should avoid eating?", "ja": "食べないほうがよいものはありますか。", "register": "neutral", "style": "existence", "note": "診察後の実用的な質問。" },
+        { "en": "It's a dull ache, not sharp.", "ja": "鋭い痛みではなく、鈍い痛みです。", "register": "neutral", "style": "vocab", "note": "dull ache は「鈍痛」、sharp は「鋭い痛み」。診断に重要。" },
+        { "en": "It started after dinner last night and gets worse when I move.", "ja": "昨夜の夕食後に始まり、動くと悪化します。", "register": "polite", "style": "context", "note": "きっかけと悪化条件を伝える。診断の決め手になる。" },
+        { "en": "I'm not sure how serious it is — could you take a look?", "ja": "どの程度なのか分からないので、診ていただけますか。", "register": "polite", "style": "considerate", "note": "自己判断せず委ねる形。医師にとって助かる。" }
+      ]
+    },
+    {
+      "id": "health-003", "category": "health", "difficulty": 2,
+      "place": "On the phone", "listener": "a clinic receptionist",
+      "want": "You want to make an appointment to see a doctor.",
+      "situationJa": "診察の予約を取りたい。",
+      "tags": ["booking", "phone"],
+      "answers": [
+        { "en": "I'd like to make an appointment.", "ja": "予約をお願いしたいのですが。", "register": "neutral", "style": "basic", "note": "基本形。診療所への電話での定番。" },
+        { "en": "An appointment, please.", "ja": "予約をお願いします。", "register": "neutral", "style": "oneword", "note": "短くて確実。窓口でも使える。" },
+        { "en": "Could I see a doctor today?", "ja": "今日、診ていただけますか。", "register": "polite", "style": "request", "note": "当日の受診を希望するとき。切実さが伝わる。" },
+        { "en": "Do you have any appointments available this week?", "ja": "今週、空いている予約枠はありますか。", "register": "neutral", "style": "existence", "note": "availability を確認する形。融通が利く。" },
+        { "en": "I'd like to arrange a consultation, if possible.", "ja": "可能でしたら診察の予約を取りたいのですが。", "register": "formal", "style": "formal", "note": "consultation は「診察」。改まった言い方。" },
+        { "en": "Can I get in today?", "ja": "今日、入れますか。", "register": "casual", "style": "casual", "note": "get in は口語で「予約が取れる」。" },
+        { "en": "Is there a walk-in clinic nearby?", "ja": "近くに予約不要の診療所はありますか。", "register": "neutral", "style": "vocab", "note": "walk-in clinic は「予約不要の診療所」。旅行者に便利。" },
+        { "en": "What's the earliest you have?", "ja": "いちばん早くていつですか。", "register": "neutral", "style": "basic", "note": "急ぎのときに。選択肢を早く知れる。" },
+        { "en": "I'm a visitor here and I'm not feeling well — could I be seen today?", "ja": "旅行中で体調が悪いのですが、本日診ていただけますか。", "register": "polite", "style": "context", "note": "旅行者だと伝えると、優先してもらえることがある。" },
+        { "en": "Any time would work for me — whatever you have available.", "ja": "いつでも構いません。空いている時間で結構です。", "register": "polite", "style": "considerate", "note": "柔軟だと示すと、早い枠を回してもらえる。" }
+      ]
+    },
+    {
+      "id": "health-004", "category": "health", "difficulty": 2,
+      "place": "At a pharmacy", "listener": "a pharmacist",
+      "want": "You want to ask if the medicine will make you sleepy.",
+      "situationJa": "その薬で眠くならないか確認したい。",
+      "tags": ["asking", "medicine"],
+      "answers": [
+        { "en": "Will this make me sleepy?", "ja": "これで眠くなりますか。", "register": "neutral", "style": "basic", "note": "基本形。運転や仕事がある日は必ず聞きたい。" },
+        { "en": "Drowsy?", "ja": "眠くなりますか。", "register": "casual", "style": "oneword", "note": "薬を指しながら。短くても通じる。" },
+        { "en": "Are there any side effects?", "ja": "副作用はありますか。", "register": "neutral", "style": "existence", "note": "side effect は「副作用」。より広く確認できる。" },
+        { "en": "Could you tell me if this causes drowsiness?", "ja": "これが眠気を引き起こすか教えていただけますか。", "register": "polite", "style": "request", "note": "drowsiness は「眠気」。薬の説明書で使われる語。" },
+        { "en": "I'd like to know whether this medication affects alertness.", "ja": "この薬が注意力に影響するかどうか知りたいのですが。", "register": "formal", "style": "formal", "note": "alertness は「覚醒度・注意力」。運転前の確認に。" },
+        { "en": "Is this the one that knocks you out?", "ja": "これって眠くなるやつ？", "register": "casual", "style": "casual", "note": "knock out は口語で「眠らせる」。気さくな言い方。" },
+        { "en": "Can I drive after taking this?", "ja": "これを飲んだ後に運転できますか。", "register": "neutral", "style": "vocab", "note": "最も実用的な確認。眠気の有無が分かる。" },
+        { "en": "Can I take this with alcohol?", "ja": "これはお酒と一緒に飲めますか。", "register": "neutral", "style": "basic", "note": "併用の可否。危険な組み合わせもある。" },
+        { "en": "I have a meeting this afternoon — is there a non-drowsy option?", "ja": "午後に会議があるのですが、眠くならないものはありますか。", "register": "polite", "style": "context", "note": "non-drowsy は「眠くならない」。代替品を勧めてもらえる。" },
+        { "en": "I'd rather check first — does this cause drowsiness?", "ja": "先に確認しておきたいのですが、これは眠気が出ますか。", "register": "polite", "style": "considerate", "note": "慎重な姿勢。丁寧に説明してもらえる。" }
+      ]
+    },
+    {
+      "id": "health-005", "category": "health", "difficulty": 3,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to explain that you are allergic to penicillin.",
+      "situationJa": "ペニシリンアレルギーがあることを伝えたい。",
+      "tags": ["explaining", "allergy"],
+      "answers": [
+        { "en": "I'm allergic to penicillin.", "ja": "ペニシリンにアレルギーがあります。", "register": "neutral", "style": "basic", "note": "命に関わる。必ず言えるようにしておきたい一文。" },
+        { "en": "Penicillin allergy.", "ja": "ペニシリンアレルギーです。", "register": "casual", "style": "oneword", "note": "カードを見せながら。緊急時でも伝わる。" },
+        { "en": "I can't take penicillin.", "ja": "ペニシリンは飲めません。", "register": "neutral", "style": "basic", "note": "簡潔で明確。処方前に必ず伝える。" },
+        { "en": "Could you note that I'm allergic to penicillin?", "ja": "ペニシリンアレルギーであることを記録していただけますか。", "register": "polite", "style": "request", "note": "カルテに残してもらう。次回以降も安全になる。" },
+        { "en": "I should mention that I have a documented penicillin allergy.", "ja": "ペニシリンアレルギーの診断歴があることをお伝えしておきます。", "register": "formal", "style": "formal", "note": "documented は「記録された」。信頼性が高まる。" },
+        { "en": "Penicillin's a no for me.", "ja": "ペニシリンはだめなんです。", "register": "casual", "style": "casual", "note": "口語的。ただし医療現場では明確に言うほうが安全。" },
+        { "en": "Is there an alternative antibiotic?", "ja": "代わりの抗生物質はありますか。", "register": "neutral", "style": "existence", "note": "alternative は「代替の」。次の話に進める。" },
+        { "en": "I had a severe reaction to it as a child.", "ja": "子どものころに重い反応が出ました。", "register": "neutral", "style": "vocab", "note": "reaction は「アレルギー反応」。程度が伝わる。" },
+        { "en": "I break out in a rash and my throat swells — so please avoid penicillin.", "ja": "発疹が出て喉が腫れます。ペニシリンは避けてください。", "register": "polite", "style": "context", "note": "症状を具体的に。医師が重症度を判断できる。" },
+        { "en": "I know you'll have it on file, but just to be safe — penicillin allergy.", "ja": "記録はあると思いますが、念のため。ペニシリンアレルギーです。", "register": "polite", "style": "considerate", "note": "念押しの丁寧な形。医療では確認しすぎて困らない。" }
+      ]
+    },
+    {
+      "id": "health-006", "category": "health", "difficulty": 2,
+      "place": "At a pharmacy", "listener": "a pharmacist",
+      "want": "You want to ask how many times a day to take it.",
+      "situationJa": "1日何回飲めばよいか確認したい。",
+      "tags": ["asking", "medicine"],
+      "answers": [
+        { "en": "How many times a day?", "ja": "1日何回ですか。", "register": "neutral", "style": "oneword", "note": "薬を持ちながら。これで十分通じる。" },
+        { "en": "How often should I take this?", "ja": "これはどのくらいの頻度で飲みますか。", "register": "neutral", "style": "basic", "note": "基本形。how often が最も自然。" },
+        { "en": "Could you tell me the dosage?", "ja": "用量を教えていただけますか。", "register": "polite", "style": "request", "note": "dosage は「用量・服用量」。正確な語。" },
+        { "en": "Is it before or after meals?", "ja": "食前ですか、食後ですか。", "register": "neutral", "style": "basic", "note": "服用のタイミング。忘れがちだが重要。" },
+        { "en": "Would you mind explaining how this should be taken?", "ja": "こちらの服用方法をご説明いただけますでしょうか。", "register": "formal", "style": "formal", "note": "改まった言い方。丁寧に説明してもらえる。" },
+        { "en": "How many do I take?", "ja": "何錠飲むの？", "register": "casual", "style": "casual", "note": "率直な口語。小さな薬局で。" },
+        { "en": "Is there a maximum per day?", "ja": "1日の上限はありますか。", "register": "neutral", "style": "existence", "note": "飲みすぎを防ぐ。安全のために重要。" },
+        { "en": "How many days should I take it for?", "ja": "何日間飲めばよいですか。", "register": "neutral", "style": "vocab", "note": "抗生物質は飲み切ることが大切。必ず確認したい。" },
+        { "en": "I'll be flying tomorrow with a time difference — how should I space the doses?", "ja": "明日、時差のある移動をします。服用間隔はどうすればよいですか。", "register": "polite", "style": "context", "note": "時差がある旅行では実際に迷う。具体的な助言がもらえる。" },
+        { "en": "Sorry, I want to be sure I get it right — how often do I take this?", "ja": "すみません、間違えたくないので伺います。これは何回飲みますか。", "register": "polite", "style": "considerate", "note": "確実性を求める姿勢。丁寧に教えてもらえる。" }
+      ]
+    },
+    {
+      "id": "health-007", "category": "health", "difficulty": 2,
+      "place": "At a clinic reception", "listener": "a receptionist",
+      "want": "You want to ask if your travel insurance is accepted.",
+      "situationJa": "旅行保険が使えるか聞きたい。",
+      "tags": ["asking", "insurance"],
+      "answers": [
+        { "en": "Do you take travel insurance?", "ja": "旅行保険は使えますか。", "register": "neutral", "style": "basic", "note": "基本形。受診前に必ず確認したい。" },
+        { "en": "Insurance OK?", "ja": "保険は使えますか。", "register": "casual", "style": "oneword", "note": "保険証を見せながら。短くても通じる。" },
+        { "en": "Is my insurance accepted here?", "ja": "こちらで私の保険は使えますか。", "register": "neutral", "style": "basic", "note": "accept は「受け付ける」。明確に伝わる。" },
+        { "en": "Could you tell me if you accept this insurance?", "ja": "この保険が使えるか教えていただけますか。", "register": "polite", "style": "request", "note": "保険証を示しながら。丁寧で確実。" },
+        { "en": "I'd like to confirm whether you accept international travel insurance.", "ja": "海外旅行保険をお取り扱いか確認したいのですが。", "register": "formal", "style": "formal", "note": "international travel insurance が正式名称。" },
+        { "en": "Can I use this?", "ja": "これ使えますか。", "register": "casual", "style": "casual", "note": "保険証を見せながら。最短で伝わる。" },
+        { "en": "Is there a form I need to fill in?", "ja": "記入が必要な用紙はありますか。", "register": "neutral", "style": "existence", "note": "保険請求には書類が要ることが多い。" },
+        { "en": "Do I pay first and claim it back?", "ja": "先に支払って後から請求する形ですか。", "register": "neutral", "style": "vocab", "note": "claim back は「請求して払い戻す」。実際の流れを確認できる。" },
+        { "en": "I have travel insurance from Japan — will you bill them directly?", "ja": "日本の旅行保険に入っています。直接請求していただけますか。", "register": "polite", "style": "context", "note": "bill directly は「直接請求する」。立替が不要になる。" },
+        { "en": "If not, that's fine — I just need a receipt for the claim.", "ja": "使えなければ結構です。請求用の領収書だけいただければ。", "register": "polite", "style": "considerate", "note": "領収書があれば後から請求できる。実用的な代替案。" }
+      ]
+    },
+    {
+      "id": "health-008", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to say you have a fever.",
+      "situationJa": "熱があることを伝えたい。",
+      "tags": ["explaining", "symptoms"],
+      "answers": [
+        { "en": "I have a fever.", "ja": "熱があります。", "register": "neutral", "style": "basic", "note": "最重要の一文。まずこれ。" },
+        { "en": "Fever, 38 degrees.", "ja": "熱があります、38度です。", "register": "casual", "style": "oneword", "note": "数字を添えると一気に情報量が増える。" },
+        { "en": "I've had a temperature since last night.", "ja": "昨夜から熱があります。", "register": "neutral", "style": "vocab", "note": "英国では temperature が「発熱」を指す。" },
+        { "en": "Could you check my temperature? I think I have a fever.", "ja": "体温を測っていただけますか。熱があると思います。", "register": "polite", "style": "request", "note": "測定を頼む形。診察の流れが作れる。" },
+        { "en": "I've been running a temperature of around 38 degrees for two days.", "ja": "2日ほど38度前後の熱が続いております。", "register": "formal", "style": "formal", "note": "run a temperature は「発熱している」。医療現場で自然。" },
+        { "en": "I'm burning up.", "ja": "体が熱くてたまりません。", "register": "casual", "style": "casual", "note": "burning up は「高熱がある」の口語。切迫感が伝わる。" },
+        { "en": "Is there anything going around at the moment?", "ja": "今、流行っているものはありますか。", "register": "neutral", "style": "existence", "note": "go around は「流行する」。原因の見当がつく。" },
+        { "en": "I also have chills and a sore throat.", "ja": "悪寒と喉の痛みもあります。", "register": "neutral", "style": "basic", "note": "chills は「悪寒」、sore throat は「喉の痛み」。診断に有用。" },
+        { "en": "It started two days ago and hasn't come down with paracetamol.", "ja": "2日前に始まり、解熱剤でも下がりません。", "register": "polite", "style": "context", "note": "経過と対処を伝える。診断の精度が上がる。" },
+        { "en": "I may be overreacting, but the fever hasn't broken — could you check?", "ja": "大げさかもしれませんが熱が下がりません。診ていただけますか。", "register": "polite", "style": "considerate", "note": "break は熱が「下がる」。控えめだが状況は明確。" }
+      ]
+    },
+    {
+      "id": "health-009", "category": "health", "difficulty": 1,
+      "place": "At a pharmacy", "listener": "a pharmacist",
+      "want": "You want to buy something for a cold.",
+      "situationJa": "風邪薬を買いたい。",
+      "tags": ["asking", "medicine"],
+      "answers": [
+        { "en": "Something for a cold, please.", "ja": "風邪に効くものをお願いします。", "register": "neutral", "style": "oneword", "note": "薬局での定番。これで十分。" },
+        { "en": "Do you have cold medicine?", "ja": "風邪薬はありますか。", "register": "neutral", "style": "existence", "note": "基本形。cold medicine は「風邪薬」。" },
+        { "en": "I've got a cold — what would you recommend?", "ja": "風邪をひいたのですが、何がおすすめですか。", "register": "neutral", "style": "basic", "note": "症状と相談を一度に。薬剤師が選んでくれる。" },
+        { "en": "Could you recommend something for a cold?", "ja": "風邪に効くものをおすすめしていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。どこでも使える。" },
+        { "en": "I'd be grateful for a recommendation for cold symptoms.", "ja": "風邪の症状に効くものをご提案いただけますと助かります。", "register": "formal", "style": "formal", "note": "cold symptoms は「風邪の症状」。改まった言い方。" },
+        { "en": "Anything for a cold?", "ja": "風邪に効くのある？", "register": "casual", "style": "casual", "note": "率直な口語。小さな薬局で自然。" },
+        { "en": "Is there something for a blocked nose specifically?", "ja": "特に鼻づまりに効くものはありますか。", "register": "neutral", "style": "vocab", "note": "blocked nose は「鼻づまり」。症状を絞ると的確。" },
+        { "en": "Something that won't make me drowsy, if possible.", "ja": "できれば眠くならないものをお願いします。", "register": "neutral", "style": "basic", "note": "条件を先に出す。日中に活動する人には必須。" },
+        { "en": "I have a cough and a sore throat but no fever — what should I take?", "ja": "咳と喉の痛みはありますが熱はありません。何を飲めばよいですか。", "register": "polite", "style": "context", "note": "症状を具体的に。適切な薬を選んでもらえる。" },
+        { "en": "I don't want to take more than I need — what's the simplest option?", "ja": "余計なものは飲みたくないのですが、いちばん簡単な選択肢は何ですか。", "register": "polite", "style": "considerate", "note": "総合薬より単剤を勧めてもらえる。理にかなった聞き方。" }
+      ]
+    },
+    {
+      "id": "health-010", "category": "health", "difficulty": 3,
+      "place": "At a hospital", "listener": "a nurse",
+      "want": "You want to ask how long you need to stay.",
+      "situationJa": "どのくらい入院が必要か聞きたい。",
+      "tags": ["asking", "hospital"],
+      "answers": [
+        { "en": "How long do I need to stay?", "ja": "どのくらい滞在が必要ですか。", "register": "neutral", "style": "basic", "note": "基本形。まずこれ。" },
+        { "en": "How many days?", "ja": "何日ですか。", "register": "casual", "style": "oneword", "note": "短くても通じる。不安なときでも言える。" },
+        { "en": "Could you tell me how long I'll be here?", "ja": "どのくらいここにいることになるか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。予定を立てるために必要。" },
+        { "en": "Is there an estimate for when I can go home?", "ja": "いつ帰宅できるか目安はありますか。", "register": "neutral", "style": "existence", "note": "estimate は「見込み」。断定を求めない聞き方。" },
+        { "en": "Might I ask the expected length of stay?", "ja": "予想される入院期間を伺ってもよろしいでしょうか。", "register": "formal", "style": "formal", "note": "length of stay は「滞在期間」。医療現場の正式な語。" },
+        { "en": "Am I staying overnight?", "ja": "一泊することになりますか。", "register": "casual", "style": "casual", "note": "まず一晩かどうかを確認する。実際的。" },
+        { "en": "What needs to happen before I can be discharged?", "ja": "退院までに何が必要ですか。", "register": "neutral", "style": "vocab", "note": "discharge は「退院」。条件が分かると見通しが立つ。" },
+        { "en": "Will I need to come back for a follow-up?", "ja": "再診で戻る必要はありますか。", "register": "neutral", "style": "basic", "note": "follow-up は「経過観察・再診」。旅行者には重要。" },
+        { "en": "I'm due to fly home on Friday — is that realistic?", "ja": "金曜に帰国する予定なのですが、現実的でしょうか。", "register": "polite", "style": "context", "note": "予定を伝えると、医療的な判断を踏まえた助言がもらえる。" },
+        { "en": "I know it depends — but roughly how long should I plan for?", "ja": "状況によるとは思いますが、だいたいどのくらいを想定すればよいでしょうか。", "register": "polite", "style": "considerate", "note": "断定を求めない前置き。医療者が答えやすい。" }
+      ]
+    },
+    {
+      "id": "health-011", "category": "health", "difficulty": 2,
+      "place": "At a dentist", "listener": "a dentist",
+      "want": "You want to say which tooth hurts.",
+      "situationJa": "どの歯が痛いか伝えたい。",
+      "tags": ["explaining", "symptoms"],
+      "answers": [
+        { "en": "This one hurts.", "ja": "ここが痛いです。", "register": "neutral", "style": "oneword", "note": "指をさしながら。最も確実。" },
+        { "en": "This tooth hurts when I bite.", "ja": "噛むとこの歯が痛みます。", "register": "neutral", "style": "basic", "note": "痛む条件を添える。診断に直結する。" },
+        { "en": "The pain is in the back on the left.", "ja": "痛みは左の奥です。", "register": "neutral", "style": "basic", "note": "場所を言葉でも伝えられるようにしておきたい。" },
+        { "en": "Could you look at the tooth on the upper right?", "ja": "右上の歯を見ていただけますか。", "register": "polite", "style": "request", "note": "upper right は「右上」。明確に位置を伝えられる。" },
+        { "en": "I've been experiencing sensitivity in this molar.", "ja": "この奥歯にしみる感じがございます。", "register": "formal", "style": "formal", "note": "sensitivity は「しみる感じ」、molar は「臼歯」。" },
+        { "en": "It's this one right here.", "ja": "ちょうどここのやつです。", "register": "casual", "style": "casual", "note": "指をさしながら。口語的で自然。" },
+        { "en": "Is there a cavity there?", "ja": "そこに虫歯がありますか。", "register": "neutral", "style": "existence", "note": "cavity は「虫歯」。診断を確認できる。" },
+        { "en": "It's sensitive to cold drinks.", "ja": "冷たい飲み物にしみます。", "register": "neutral", "style": "vocab", "note": "何にしみるかは診断の手がかりになる。" },
+        { "en": "It started a week ago and now it hurts to chew on that side.", "ja": "1週間前に始まり、今はその側で噛むと痛みます。", "register": "polite", "style": "context", "note": "経過と現状を伝える。最も診断に役立つ。" },
+        { "en": "I'm not sure exactly which one — could you check the back left?", "ja": "どれか正確には分からないのですが、左奥を診ていただけますか。", "register": "polite", "style": "considerate", "note": "曖昧でも範囲を伝えれば診てもらえる。" }
+      ]
+    },
+    {
+      "id": "health-012", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to ask whether you can still travel.",
+      "situationJa": "このまま旅行を続けてよいか聞きたい。",
+      "tags": ["asking", "advice"],
+      "answers": [
+        { "en": "Can I still travel?", "ja": "旅行は続けられますか。", "register": "neutral", "style": "basic", "note": "基本形。旅行者にとって最重要の質問。" },
+        { "en": "Is it safe to fly?", "ja": "飛行機に乗っても大丈夫ですか。", "register": "neutral", "style": "basic", "note": "気圧の関係で乗れない症状もある。必ず確認したい。" },
+        { "en": "Travel OK?", "ja": "旅行しても大丈夫ですか。", "register": "casual", "style": "oneword", "note": "短くても通じる。診察の最後に。" },
+        { "en": "Could you advise whether I should postpone my flight?", "ja": "便を延期すべきかどうか助言いただけますか。", "register": "polite", "style": "request", "note": "postpone は「延期する」。判断材料をもらえる。" },
+        { "en": "I'd appreciate your view on whether I'm fit to travel.", "ja": "旅行に耐えられる状態かどうか、ご見解を伺えれば幸いです。", "register": "formal", "style": "formal", "note": "fit to travel は「旅行に適した状態」。診断書の用語でもある。" },
+        { "en": "Am I OK to keep going?", "ja": "このまま続けて平気ですか。", "register": "casual", "style": "casual", "note": "率直な口語。気さくな医師に。" },
+        { "en": "Is there any reason I shouldn't fly?", "ja": "飛行機に乗らないほうがよい理由はありますか。", "register": "neutral", "style": "existence", "note": "リスクの有無を確認する形。" },
+        { "en": "Would you recommend resting for a few days first?", "ja": "まず数日休んだほうがよいでしょうか。", "register": "neutral", "style": "vocab", "note": "代替案を示して聞く。答えやすい。" },
+        { "en": "I have a six-hour flight on Friday — is that going to be a problem?", "ja": "金曜に6時間の便があります。問題になりますか。", "register": "polite", "style": "context", "note": "具体的な条件を伝えると、的確な判断がもらえる。" },
+        { "en": "I'll follow your advice either way — should I travel or wait?", "ja": "どちらでも従います。旅行すべきか、待つべきでしょうか。", "register": "polite", "style": "considerate", "note": "従う姿勢を示すと、医師が率直に助言しやすい。" }
+      ]
+    },
+    {
+      "id": "health-013", "category": "health", "difficulty": 1,
+      "place": "At a pharmacy", "listener": "a pharmacist",
+      "want": "You want to buy plasters for a blister.",
+      "situationJa": "靴ずれ用の絆創膏を買いたい。",
+      "tags": ["asking", "supplies"],
+      "answers": [
+        { "en": "Plasters, please.", "ja": "絆創膏をお願いします。", "register": "neutral", "style": "oneword", "note": "英国では plaster。これで通じる。" },
+        { "en": "Do you have Band-Aids?", "ja": "絆創膏はありますか。", "register": "neutral", "style": "vocab", "note": "米国では Band-Aid が一般名詞のように使われる。" },
+        { "en": "I need something for a blister.", "ja": "靴ずれに使うものがほしいです。", "register": "neutral", "style": "basic", "note": "blister は「水ぶくれ・靴ずれ」。専用品を勧めてもらえる。" },
+        { "en": "Could you show me where the plasters are?", "ja": "絆創膏の売り場を教えていただけますか。", "register": "polite", "style": "request", "note": "セルフサービスの薬局で。丁寧に聞ける。" },
+        { "en": "Would you have anything specifically for blisters?", "ja": "靴ずれ専用のものはございますでしょうか。", "register": "formal", "style": "formal", "note": "specifically for 〜 は「〜専用の」。改まった言い方。" },
+        { "en": "Got any plasters?", "ja": "絆創膏ある？", "register": "casual", "style": "casual", "note": "非常にくだけた口語。気さくな店で。" },
+        { "en": "Is there a waterproof kind?", "ja": "防水のものはありますか。", "register": "neutral", "style": "existence", "note": "waterproof は「防水の」。旅先では便利。" },
+        { "en": "Something for the heel, ideally.", "ja": "できればかかと用のものを。", "register": "neutral", "style": "basic", "note": "部位を伝えると、形の合うものを選んでもらえる。" },
+        { "en": "I've been walking all day and my heel is raw — what would help?", "ja": "一日中歩いてかかとがすりむけました。何がよいでしょうか。", "register": "polite", "style": "context", "note": "raw は「すりむけた」。状態が正確に伝わる。" },
+        { "en": "Whatever you'd recommend — it's just a blister from walking.", "ja": "おすすめで結構です。歩きすぎでできた靴ずれなので。", "register": "polite", "style": "considerate", "note": "任せる形。薬剤師が選びやすい。" }
+      ]
+    },
+    {
+      "id": "health-014", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to ask for a medical certificate for insurance.",
+      "situationJa": "保険請求用の診断書がほしい。",
+      "tags": ["requesting", "document"],
+      "answers": [
+        { "en": "Could I have a medical certificate?", "ja": "診断書をいただけますか。", "register": "polite", "style": "request", "note": "medical certificate は「診断書」。正式な語。" },
+        { "en": "A certificate for insurance, please.", "ja": "保険用の証明書をお願いします。", "register": "neutral", "style": "oneword", "note": "用途を添えると必要な書式で出してもらえる。" },
+        { "en": "I need a document for my travel insurance.", "ja": "旅行保険用の書類が必要です。", "register": "neutral", "style": "basic", "note": "必要性を明確に伝える形。" },
+        { "en": "Is it possible to get a written diagnosis?", "ja": "診断内容を書面でいただくことはできますか。", "register": "neutral", "style": "existence", "note": "written diagnosis は「書面の診断」。可否を確認する形。" },
+        { "en": "I'd be grateful if you could provide a certificate for my insurer.", "ja": "保険会社宛の証明書をご発行いただけますと幸いです。", "register": "formal", "style": "formal", "note": "insurer は「保険会社」。改まった依頼。" },
+        { "en": "Can you write something for my insurance?", "ja": "保険用に何か書いてもらえますか。", "register": "casual", "style": "casual", "note": "率直な口語。気さくな医師に。" },
+        { "en": "Is there a fee for the certificate?", "ja": "証明書に費用はかかりますか。", "register": "neutral", "style": "vocab", "note": "有料のことが多い。先に確認しておきたい。" },
+        { "en": "Could it be written in English?", "ja": "英語で書いていただけますか。", "register": "polite", "style": "basic", "note": "現地語だと保険会社が読めない。重要な確認。" },
+        { "en": "My insurance needs the diagnosis and treatment dates — could you include those?", "ja": "保険会社が診断名と治療日を必要としています。記載していただけますか。", "register": "polite", "style": "context", "note": "必要項目を伝えると、再発行の手間が省ける。" },
+        { "en": "I know it's extra paperwork — could you provide a certificate?", "ja": "書類のお手間をおかけしますが、診断書をいただけますか。", "register": "polite", "style": "considerate", "note": "手間への配慮。忙しい医師に好まれる。" }
+      ]
+    },
+    {
+      "id": "health-015", "category": "health", "difficulty": 2,
+      "place": "At a pharmacy", "listener": "a pharmacist",
+      "want": "You want to ask if this medicine is available without a prescription.",
+      "situationJa": "処方箋なしで買えるか聞きたい。",
+      "tags": ["asking", "medicine"],
+      "answers": [
+        { "en": "Do I need a prescription?", "ja": "処方箋は必要ですか。", "register": "neutral", "style": "basic", "note": "基本形。国により市販の可否が違う。" },
+        { "en": "Prescription needed?", "ja": "処方箋は要りますか。", "register": "casual", "style": "oneword", "note": "薬を指しながら。短くても通じる。" },
+        { "en": "Is this available over the counter?", "ja": "これは市販で買えますか。", "register": "neutral", "style": "vocab", "note": "over the counter は「処方箋なしの市販」。薬局の基本語。" },
+        { "en": "Could you tell me if I can buy this without a prescription?", "ja": "処方箋なしで買えるか教えていただけますか。", "register": "polite", "style": "request", "note": "丁寧な形。確実に確認できる。" },
+        { "en": "I'd like to know whether this requires a prescription in this country.", "ja": "この国でこれが処方箋を要するかどうか知りたいのですが。", "register": "formal", "style": "formal", "note": "国によって扱いが違うことを踏まえた聞き方。" },
+        { "en": "Can I just buy this?", "ja": "これ、そのまま買える？", "register": "casual", "style": "casual", "note": "率直な口語。小さな薬局で。" },
+        { "en": "Is there an equivalent I can buy without one?", "ja": "処方箋なしで買える同等品はありますか。", "register": "neutral", "style": "existence", "note": "equivalent は「同等品」。代替案が見つかる。" },
+        { "en": "I take this at home in Japan — is it the same here?", "ja": "日本で普段飲んでいるのですが、こちらでも同じですか。", "register": "neutral", "style": "basic", "note": "常用薬を切らしたときの実用的な聞き方。" },
+        { "en": "I ran out and my doctor is in Japan — what are my options?", "ja": "切らしてしまい、かかりつけ医は日本にいます。どんな方法がありますか。", "register": "polite", "style": "context", "note": "事情を伝えると、現実的な解決策を提案してもらえる。" },
+        { "en": "If a prescription is needed, no problem — could you tell me where to go?", "ja": "処方箋が必要でしたら構いません。どこへ行けばよいか教えていただけますか。", "register": "polite", "style": "considerate", "note": "次の行動まで確認できる。話が前に進む。" }
+      ]
+    },
+    {
+      "id": "health-016", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to say the pain has gotten worse.",
+      "situationJa": "痛みが悪化していることを伝えたい。",
+      "tags": ["explaining", "symptoms"],
+      "answers": [
+        { "en": "It's getting worse.", "ja": "悪くなっています。", "register": "neutral", "style": "oneword", "note": "端的で明確。まずこれ。" },
+        { "en": "The pain has gotten worse since yesterday.", "ja": "昨日から痛みが悪化しています。", "register": "neutral", "style": "basic", "note": "時期を添えると経過が分かる。診断に重要。" },
+        { "en": "It was mild before, but now it's constant.", "ja": "以前は軽かったのですが、今はずっと痛みます。", "register": "neutral", "style": "basic", "note": "constant は「絶え間ない」。程度の変化が伝わる。" },
+        { "en": "Could you take another look? The pain has increased.", "ja": "もう一度診ていただけますか。痛みが強くなっています。", "register": "polite", "style": "request", "note": "再診を求める形。丁寧で明確。" },
+        { "en": "I'm afraid the symptoms have deteriorated since my last visit.", "ja": "恐れ入りますが、前回の受診以降、症状が悪化しております。", "register": "formal", "style": "formal", "note": "deteriorate は「悪化する」。医療現場で使われる語。" },
+        { "en": "It's much worse now.", "ja": "今はかなりひどいです。", "register": "casual", "style": "casual", "note": "率直な口語。切迫感が伝わる。" },
+        { "en": "Is that normal at this stage?", "ja": "この段階でそれは普通ですか。", "register": "neutral", "style": "existence", "note": "経過として正常かを確認する。不安が減る。" },
+        { "en": "The painkillers aren't helping anymore.", "ja": "痛み止めがもう効きません。", "register": "neutral", "style": "vocab", "note": "painkiller は「痛み止め」。治療方針の変更につながる。" },
+        { "en": "It was a two out of ten, and now it's a seven.", "ja": "10段階で2だったのが、今は7です。", "register": "neutral", "style": "context", "note": "数字で表すと医師に最も正確に伝わる。" },
+        { "en": "I don't want to overstate it, but it's noticeably worse.", "ja": "大げさに言うつもりはありませんが、明らかに悪化しています。", "register": "polite", "style": "considerate", "note": "控えめだが事実は明確。冷静な印象を与える。" }
+      ]
+    },
+    {
+      "id": "health-017", "category": "health", "difficulty": 1,
+      "place": "At a gym", "listener": "a staff member",
+      "want": "You want to ask where the first aid kit is.",
+      "situationJa": "救急箱の場所を知りたい。",
+      "tags": ["asking", "emergency"],
+      "answers": [
+        { "en": "Where's the first aid kit?", "ja": "救急箱はどこですか。", "register": "neutral", "style": "basic", "note": "基本形。first aid kit は「救急箱」。" },
+        { "en": "First aid?", "ja": "救急用品は？", "register": "casual", "style": "oneword", "note": "怪我を見せながら。緊急時でも言える。" },
+        { "en": "Do you have a first aid kit?", "ja": "救急箱はありますか。", "register": "neutral", "style": "existence", "note": "あるかどうかから確認する形。" },
+        { "en": "Could you get me a plaster? I've cut my finger.", "ja": "絆創膏をいただけますか。指を切ってしまいました。", "register": "polite", "style": "request", "note": "必要なものと理由を一度に。対応が速い。" },
+        { "en": "Would you happen to know where the first aid supplies are kept?", "ja": "救急用品がどこに保管されているかご存じでしょうか。", "register": "formal", "style": "formal", "note": "supplies は「備品」。改まった言い方。" },
+        { "en": "Got a plaster?", "ja": "絆創膏ある？", "register": "casual", "style": "casual", "note": "軽い怪我なら十分。気さくな言い方。" },
+        { "en": "Is there someone trained in first aid here?", "ja": "こちらに応急手当ができる方はいますか。", "register": "neutral", "style": "vocab", "note": "trained in first aid は「応急手当の訓練を受けた」。" },
+        { "en": "I need something to clean a cut.", "ja": "傷を消毒するものが必要です。", "register": "neutral", "style": "basic", "note": "必要なものを具体的に。適切なものが出てくる。" },
+        { "en": "I scraped my knee on the machine — do you have anything for it?", "ja": "器具で膝をすりむきました。何かありますか。", "register": "polite", "style": "context", "note": "状況を伝えると、施設側も安全確認ができる。" },
+        { "en": "It's nothing serious — but do you have a plaster?", "ja": "大したことはないのですが、絆創膏はありますか。", "register": "polite", "style": "considerate", "note": "相手を心配させない前置き。落ち着いて頼める。" }
+      ]
+    },
+    {
+      "id": "health-018", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a doctor",
+      "want": "You want to ask what caused the problem.",
+      "situationJa": "原因が何かを聞きたい。",
+      "tags": ["asking", "diagnosis"],
+      "answers": [
+        { "en": "What caused it?", "ja": "原因は何ですか。", "register": "neutral", "style": "oneword", "note": "端的で分かりやすい。診察後の定番。" },
+        { "en": "What do you think is causing it?", "ja": "何が原因だとお考えですか。", "register": "neutral", "style": "basic", "note": "医師の見解を尋ねる形。断定を求めない。" },
+        { "en": "Do you know why this happened?", "ja": "なぜこうなったか分かりますか。", "register": "neutral", "style": "basic", "note": "素直な聞き方。会話が自然に続く。" },
+        { "en": "Could you explain what's going on?", "ja": "何が起きているのか説明していただけますか。", "register": "polite", "style": "request", "note": "説明を求める形。丁寧で使いやすい。" },
+        { "en": "I'd be grateful if you could explain the likely cause.", "ja": "考えられる原因をご説明いただけますと幸いです。", "register": "formal", "style": "formal", "note": "likely cause は「考えられる原因」。改まった言い方。" },
+        { "en": "Any idea what did it?", "ja": "何が原因か分かります？", "register": "casual", "style": "casual", "note": "気さくな口語。親しみのある医師に。" },
+        { "en": "Is there anything I did to bring it on?", "ja": "私の行動で引き起こした可能性はありますか。", "register": "neutral", "style": "existence", "note": "bring on は「引き起こす」。再発防止に役立つ。" },
+        { "en": "Is this likely to happen again?", "ja": "これはまた起こる可能性がありますか。", "register": "neutral", "style": "vocab", "note": "今後の見通しを確認する。原因より重要なことも。" },
+        { "en": "I've been walking a lot and eating differently — could that be it?", "ja": "よく歩いていて食生活も変わりました。それが関係しますか。", "register": "polite", "style": "context", "note": "心当たりを伝えると、診断の助けになる。" },
+        { "en": "I understand you may not know for sure — but what's most likely?", "ja": "断定は難しいと思いますが、いちばん可能性が高いのは何でしょうか。", "register": "polite", "style": "considerate", "note": "断定を求めない前置き。医師が答えやすい。" }
+      ]
+    },
+    {
+      "id": "health-019", "category": "health", "difficulty": 2,
+      "place": "At a clinic", "listener": "a receptionist",
+      "want": "You want to ask how much the visit will cost.",
+      "situationJa": "診察費用がいくらか聞きたい。",
+      "tags": ["asking", "payment"],
+      "answers": [
+        { "en": "How much will it cost?", "ja": "いくらかかりますか。", "register": "neutral", "style": "basic", "note": "基本形。受診前に聞いてよい。" },
+        { "en": "The cost?", "ja": "費用は？", "register": "casual", "style": "oneword", "note": "短くても通じる。窓口で。" },
+        { "en": "Could you tell me the consultation fee?", "ja": "診察料を教えていただけますか。", "register": "polite", "style": "request", "note": "consultation fee は「診察料」。正確な語。" },
+        { "en": "Is there a charge for a first visit?", "ja": "初診料はかかりますか。", "register": "neutral", "style": "existence", "note": "初診料が別にある国もある。確認しておきたい。" },
+        { "en": "I'd like to know the approximate cost before proceeding.", "ja": "進める前におおよその費用を知りたいのですが。", "register": "formal", "style": "formal", "note": "before proceeding は「進める前に」。冷静で丁寧。" },
+        { "en": "What's this going to run me?", "ja": "これいくらくらいになる？", "register": "casual", "style": "casual", "note": "run someone は口語で「費用がかかる」。米国でよく使う。" },
+        { "en": "Do you need payment today?", "ja": "本日お支払いが必要ですか。", "register": "neutral", "style": "vocab", "note": "支払時期を確認する。保険請求の流れに関わる。" },
+        { "en": "Does that include the tests?", "ja": "それに検査代は含まれますか。", "register": "neutral", "style": "basic", "note": "検査が別料金のことが多い。重要な確認。" },
+        { "en": "I'm paying myself and claiming it back later — could I have an estimate?", "ja": "自費で払って後で請求します。見積もりをいただけますか。", "register": "polite", "style": "context", "note": "estimate は「見積もり」。保険請求の準備になる。" },
+        { "en": "I'm not trying to avoid it — I just need to know the amount.", "ja": "支払いを渋っているのではなく、金額を知りたいだけです。", "register": "polite", "style": "considerate", "note": "誤解を避ける前置き。気まずくならずに聞ける。" }
+      ]
+    },
+    {
+      "id": "health-020", "category": "health", "difficulty": 3,
+      "place": "On the phone", "listener": "an emergency operator",
+      "want": "You want to report that someone has collapsed.",
+      "situationJa": "人が倒れたことを緊急通報したい。",
+      "tags": ["emergency", "reporting"],
+      "answers": [
+        { "en": "Someone has collapsed.", "ja": "人が倒れました。", "register": "neutral", "style": "basic", "note": "最重要。落ち着いてこの一文を言えるようにしたい。" },
+        { "en": "I need an ambulance.", "ja": "救急車をお願いします。", "register": "neutral", "style": "oneword", "note": "最短で要件が伝わる。緊急時はこれを最初に。" },
+        { "en": "A man has collapsed and isn't responding.", "ja": "男性が倒れて反応がありません。", "register": "neutral", "style": "basic", "note": "isn't responding は「反応がない」。重症度が伝わる。" },
+        { "en": "Could you send an ambulance to Park Street, near the church?", "ja": "教会近くのパーク通りに救急車をお願いできますか。", "register": "polite", "style": "request", "note": "場所を先に伝えるのが最重要。目印を添える。" },
+        { "en": "I'd like to report a medical emergency at 42 Park Street.", "ja": "パーク通り42番地で救急事案の通報をいたします。", "register": "formal", "style": "formal", "note": "medical emergency は「救急事案」。正式な通報の言い方。" },
+        { "en": "Someone's down — we need help now.", "ja": "人が倒れています。すぐに助けが必要です。", "register": "casual", "style": "casual", "note": "be down は口語で「倒れている」。切迫感が強い。" },
+        { "en": "Is there anything I should do while we wait?", "ja": "待っている間にすべきことはありますか。", "register": "neutral", "style": "existence", "note": "通報後の重要な質問。指示を受けられる。" },
+        { "en": "He's breathing but unconscious.", "ja": "呼吸はありますが意識がありません。", "register": "neutral", "style": "vocab", "note": "unconscious は「意識不明」。状態を正確に伝える。" },
+        { "en": "He collapsed about two minutes ago outside the station. I'm with him now.", "ja": "2分ほど前に駅の外で倒れました。今そばにいます。", "register": "polite", "style": "context", "note": "時刻・場所・自分の状況を伝える。最も有用な情報。" },
+        { "en": "I'll stay on the line — please tell me what to do.", "ja": "電話は切りません。何をすればよいか教えてください。", "register": "polite", "style": "considerate", "note": "stay on the line は「電話を切らずに待つ」。救命に直結する。" }
+      ]
+    }
+  ]
+}
