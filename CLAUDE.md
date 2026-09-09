@@ -206,15 +206,30 @@ third-party action は **SHA 固定 + `# vX.Y.Z` コメント**、Dependabot が
 
 ### 経路はひとつだけにする
 
-**Settings → Pages → Source は「GitHub Actions」。**
-「Deploy from a branch」にすると、
+**Settings → Pages → Source は「GitHub Actions」**（設定済み）。
+「Deploy from a branch」に戻すと、
 
 - `precheck.py` を通らずに公開される（唯一の防波堤が効かない）
 - 下の許可リストが無視され、`.claude/` や `CLAUDE.md` まで配信される
 - 2つの経路が同じ URL に対して同時にデプロイし、**後に終わったほうが勝つ**
 
 実際に「Deploy from a branch」のままだった間、`/.claude/settings.json` と
-`/CLAUDE.md` が 200 で読めていた。
+`/CLAUDE.md` が 200 で読めていた。切り替えたあとは同じパスがすべて 404。
+
+### 配信されるのは既定ブランチだけ
+
+`github-pages` 環境は**既定ブランチからのデプロイしか受け付けない**。
+同じコミットで実測した結果:
+
+| 押したブランチ | 結果 |
+|---|---|
+| 既定ブランチ | 成功 |
+| それ以外 | runner に載る前に失敗（ログすら残らない） |
+
+そのため `deploy-pages.yml` は `push` を全ブランチで拾い、
+job 側の `if: github.ref_name == github.event.repository.default_branch` で絞っている。
+ブランチ名をワークフローに書かないので、既定ブランチを変えても編集が要らず、
+対象外のブランチは赤い × ではなく「スキップ」になる。
 
 ### 配信するものは許可リストで決める
 

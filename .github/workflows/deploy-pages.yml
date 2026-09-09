@@ -12,9 +12,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-      - claude/english-learning-app-plan-acnz6p
+    branches: ['**']
   workflow_dispatch: {}
 
 permissions:
@@ -28,6 +26,16 @@ concurrency:
 
 jobs:
   deploy:
+    # 配信するのは既定ブランチのときだけ。
+    #
+    # github-pages 環境は既定ブランチからのデプロイしか受け付けない。
+    # 同じコミット e3af150 で実測した:
+    #   既定ブランチから  → 成功
+    #   それ以外から      → runner に載る前に失敗（ログすら残らない）
+    # 条件を job に書いておけば、ブランチ名を並べる必要がなく、
+    # 既定ブランチを変えてもワークフローを編集しなくてよい。
+    # 対象外のブランチは赤い × ではなく「スキップ」になる。
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages
