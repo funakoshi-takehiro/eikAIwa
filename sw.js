@@ -21,7 +21,7 @@
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-2026090901';
+const VERSION = 'eikaiwa-2026090902';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 
@@ -79,17 +79,42 @@ function isFontHost(host) {
   return host === 'fonts.googleapis.com' || host === 'fonts.gstatic.com';
 }
 
+async function putIfOk(cache, url) {
+  try {
+    const res = await fetch(url, { cache: 'reload' });
+    if (res && res.ok) { await cache.put(url, res); return true; }
+  } catch (e) { /* 下で失敗として扱う */ }
+  return false;
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
-    // 1件でも 404 だと addAll 全体が失敗するので、個別に入れる。
-    // （データファイルを増やす途中でも SW が壊れないようにする）
-    await Promise.all(precacheUrls().map(async (u) => {
-      try {
-        const res = await fetch(u, { cache: 'reload' });
-        if (res && res.ok) await cache.put(u, res);
-      } catch (e) { /* 取れないものは飛ばす。オンライン時に自然に埋まる */ }
-    }));
+    /* 起動に必ず要るもの。ディレクトリ自体（SHELL の ''）は外す。
+       配信側がディレクトリ索引を返さない構成もあるうえ、
+       ナビゲーションの応答は index.html を引いており、無くても起動できる。
+       ここに入れると、環境によっては install が丸ごと失敗する。 */
+    const required = SHELL.filter((p) => p !== '').map((p) => BASE + p);
+    const optional = precacheUrls().filter((u) => required.indexOf(u) < 0);
+
+    /* アプリシェルは1件でも欠けるとオフラインで起動できない。
+       以前は全ての取得失敗を握りつぶしていたため、取りこぼしたまま
+       install が成功し、activate が旧世代のキャッシュを消してしまい、
+       オフラインが無音で壊れる経路があった。
+       ここで揃わなければ install を失敗させ、動いている旧版を残す。
+       ブラウザは後で自動的に再試行する。 */
+    const got = await Promise.all(required.map((u) => putIfOk(cache, u)));
+    const missing = got.filter((ok) => !ok).length;
+    if (missing) {
+      throw new Error('アプリシェルを ' + missing + ' 件取得できませんでした。'
+                      + 'この版のインストールを中止します。');
+    }
+
+    /* 問題データは欠けても起動はできる（その段階が「準備中」になるだけ）。
+       1件の 404 で全体を止めないよう、こちらは個別に握りつぶす。
+       取りこぼしは fetch ハンドラの背景更新で自然に埋まる。 */
+    await Promise.all(optional.map((u) => putIfOk(cache, u)));
+
     /* ここで skipWaiting() を呼んではいけない。
        呼ぶと新しい版が即座に activate → clients.claim() まで進み、
        開いているページに controllerchange が飛んで location.reload() が走る。
