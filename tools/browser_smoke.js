@@ -10,7 +10,7 @@
  *
  * 使い方:
  *   python3 -m http.server 8080 -d /home/user &
- *   NODE_PATH=/opt/node22/lib/node_modules node .github/tools/browser_smoke.js
+ *   NODE_PATH=/opt/node22/lib/node_modules node tools/browser_smoke.js
  */
 'use strict';
 

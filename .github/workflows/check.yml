@@ -20,10 +20,10 @@ jobs:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: 静的チェック
-        run: python3 .github/tools/precheck.py
+        run: python3 tools/precheck.py
 
       - name: 書き込み範囲ガードの自己テスト
-        run: python3 .github/tools/guard_selftest.py
+        run: python3 tools/guard_selftest.py
 
       - name: JS の構文チェック
         run: |
@@ -81,7 +81,7 @@ jobs:
           export SMOKE_URL=http://localhost:8080/eikAIwa/
 
           echo "── ブラウザ通し確認 ──"
-          node .github/tools/browser_smoke.js
+          node tools/browser_smoke.js
 
           echo "── オフライン動作 ──"
-          node .github/tools/offline_test.js
+          node tools/offline_test.js

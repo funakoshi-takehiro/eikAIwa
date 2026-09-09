@@ -1,90 +1,142 @@
-# eikAIwa — 英語が口から出る練習
+# eikAIwa
 
-状況を英文で提示し、**自分の言葉を考えて口に出す**。そのあとで **10通りの言い方**と
-突き合わせて身につける、英会話スピーキングのトレーニングアプリです。
-
-```
-At a train station. You want to find a restroom.   （相手: 駅員）
-        ↓ 自分で考えて、声に出す
-"Excuse me, could you tell me where the restroom is?"
-        ↓
-ひとこと 〜 フォーマルまで 10通りと、ニュアンスの違いを比較
-```
-
-**株式会社ペアマインド（pAIr Mind, Inc.）** のプロダクトです。
-
-## 使う
+**英語を「知っている」から「口から出る」へ。** 状況を英文で読み、自分の言葉で
+声に出し、そのあと **10通りの言い方**と突き合わせるスピーキング練習アプリです。
 
 <https://funakoshi-takehiro.github.io/eikAIwa/>
 
-スマホのホーム画面に追加すると、**通信がなくても学習できます**。
-追加方法はアプリ内の「設定 → ホーム画面への追加方法」にあります。
+株式会社ペアマインド（pAIr Mind, Inc.）のプロダクトです。
 
-- iPhone / iPad: **Safari** で開く → 共有ボタン → ホーム画面に追加
-- Android: **Chrome** で開く → ︙ → アプリをインストール
+---
 
-## 特徴
+## 何をするアプリか
 
-- **状況 300 パターン / 解答 3,000 通り**（13カテゴリ）
-- 解答は「ひとこと・基本・ていねい・フォーマル・カジュアル」など
-  **丁寧さの軸を固定**して並べ、各文に日本語のニュアンス注が付きます
-- 状況の和訳は**既定で伏せてあり**、英語のまま考える訓練になります（設定で変更可）
-- 忘れた頃に出し直す**復習アルゴリズム**（Leitner box、5段階 / 1・2・4・7・14日）
-- 読み上げ（端末内蔵の音声を使うためオフラインで動作）
-- ライト / ダーク、文字サイズ・行間の変更
-- **学習データは端末の外に出ません**。進捗・設定・保存はすべて `localStorage` に置き、
-  どこにも送信しません。解析ツールも入れていません
-  （唯一の外部通信は、初回表示時に Google Fonts から書体を取得する分です。
-  取得できなくてもシステムフォントに落ちて動作します）
+```
+① 状況を読む        At a train station. You want to find a restroom.
+                    （相手: a station attendant ／ 和訳は既定で伏せる）
+        ↓
+② 声に出す          "Excuse me, could you tell me where the restroom is?"
+        ↓
+③ 10通りと比べる    ひとこと 〜 フォーマルまで。1文ずつ日本語のニュアンス注つき
+        ↓
+④ 自己評価         ✓ / △ / ✗ → 忘れた頃にまた出る
+```
+
+**答えを先に見ない**のが要点です。先に自分で言葉を作らないと、
+10通りは「読んで分かった気になる材料」にしかなりません。
+
+## 収録
+
+| | |
+|---|---|
+| カテゴリ | 13（空港・交通・ホテル・飲食・買い物・道案内・医療・職場・会議・学校・雑談・生活手続き・トラブル） |
+| 状況 | **900**（★300 / ★★300 / ★★★300） |
+| 解答 | **9,000**（1状況につきちょうど10通り） |
+
+難易度は**期待される文数**で分けています。単語を難しくするのではなく、
+**組み立ての段数**を上げます。
+
+| | 文数 | 例 |
+|---|---|---|
+| ★ | 1文が基本 | トイレの場所を尋ねる |
+| ★★ | ちょうど2文 | 事情を説明してから頼む |
+| ★★★ | 3〜5文 | 交渉する・断る・悪い知らせを伝える・対立を仲裁する |
+
+10件は言い換えの羅列ではありません。**丁寧さ**（カジュアル / ふつう / ていねい /
+フォーマル）と**型**（依頼・説明・確認・交渉・謝罪…）の軸を散らしてあります。
+
+## 使う
+
+上の URL を開くだけです。**スマホのホーム画面に追加すると、通信がなくても
+学習できます**（追加方法はアプリ内の「設定 → ホーム画面への追加方法」にあります）。
+
+- iPhone / iPad — **Safari** で開く → 共有 → ホーム画面に追加
+- Android — **Chrome** で開く → ︙ → アプリをインストール
+
+その他の機能: 復習アルゴリズム（Leitner box、5段階 / 1・2・4・7・14日）、
+読み上げ、ブックマーク、ライト / ダーク、文字サイズ・行間の変更。
+
+## 学習データは端末の外に出ません
+
+進捗・設定・保存はすべて `localStorage` に置き、どこにも送信しません。
+解析ツールも入れていません。アカウントもありません。
+
+外部への通信は**初回表示時に Google Fonts から書体を取得する分だけ**です
+（取得できなくてもシステムフォントに落ちて動作します）。
+「外部通信ゼロ」ではないので、そう書かないでください。
+
+---
 
 ## 開発
 
-ビルド工程はありません。HTML / CSS / 素の JavaScript のみで動きます。
+**ビルド工程はありません。** HTML / CSS / 素の JavaScript のみ。
+`package.json` も、バンドラも、フレームワークもありません。
+`git clone` して `index.html` を配信すれば、それがそのまま動くものです。
 
 ```sh
 # ローカルで開く（GitHub Pages と同じサブパス配信を再現する）
 python3 -m http.server 8080 -d ..
-# → http://localhost:8080/eikAIwa/
+open http://localhost:8080/eikAIwa/
 
-# 静的チェック（CI と同じもの）
-python3 .github/tools/precheck.py
+# 検証（CI と同じもの）
+python3 tools/precheck.py                                # 静的チェック
+python3 tools/guard_selftest.py                          # 書き込み範囲ガード
+NODE_PATH="$(npm root -g)" node tools/browser_smoke.js   # ブラウザで一周
+NODE_PATH="$(npm root -g)" node tools/offline_test.js    # オフライン動作
 
-# ブラウザで一周させる
-NODE_PATH="$(npm root -g)" node .github/tools/browser_smoke.js
-
-# オフラインで学習できることを確認する
-NODE_PATH="$(npm root -g)" node .github/tools/offline_test.js
-
-# CSS / JS を変更したら必ずキャッシュ版数を上げる
-sh .github/tools/bump-version.sh
-
-# 単一 HTML のプレビューを作る（公開前に中身を見たいとき）
-python3 .github/tools/build_preview.py
-# → preview/eikaiwa-preview.html をブラウザで開くだけで動く
-#   ただしインストールとオフラインは本番（Pages）でのみ使える
+# CSS / JS を変更したら必ず（忘れると古い資産がキャッシュから返り続ける）
+sh tools/bump-version.sh
 ```
 
-開発上の決まりごとは [`.github/CLAUDE.md`](.github/CLAUDE.md) にあります。
+**決まりごとは [`CLAUDE.md`](CLAUDE.md) に集めてあります。** 触る前に読んでください。
+過去に実際にやらかした事故から導いた規則だけが書いてあります。
 
-## 構成
+## どこに何があるか
 
 ```
-index.html               SPA の入口（<script> の読み込み順が依存順）
+README.md                この文書（人向けの入口）
+CLAUDE.md                開発の決まりごと（触る前に必読）
+
+── アプリの実体（これだけが公開される） ──────────────────
+index.html               SPA の入口。<script> の並びが依存順そのもの
+sw.js                    Service Worker（オフライン・更新通知）
+manifest.webmanifest     ホーム画面に追加するための定義
 css/style.css            デザイントークンと全スタイル
-js/base.js               ベースパス解決・共通ユーティリティ
-js/store.js              localStorage への保存
-js/data.js               問題データの読み込み
-js/srs.js                復習アルゴリズム（Leitner box）
-js/tts.js                読み上げ（Web Speech API）
-js/ui.js                 トースト / モーダル
-js/views/*.js            画面ごとの描画
-js/router.js             ハッシュルータ
-js/main.js               起動・Service Worker 登録
-sw.js                    オフライン用 Service Worker
+js/                      アプリ本体（下の表を参照）
+icons/                   アイコン各種
 data/categories.json     カテゴリ定義
-data/situations/*.json   問題データ（カテゴリ別）
-.github/tools/           検証スクリプト（依存なし）
+data/situations/*.json   問題データ（カテゴリ × 難易度）
+
+── 開発用（公開されない） ────────────────────────────
+tools/                   検証・生成スクリプト（依存ゼロ）
+.github/workflows/       CI と公開
+.claude/                 書き込み範囲ガード（AI エージェント用）
 ```
+
+`js/` はすべて同一グローバルスコープで、`index.html` の**読み込み順に依存**します。
+上から順に、依存の浅いものから並んでいます。
+
+| ファイル | 役割 |
+|---|---|
+| `js/base.js` | ベースパス解決・共通ユーティリティ。**最初に読む** |
+| `js/store.js` | `localStorage` への保存（検証・移行・複数タブ対策込み） |
+| `js/data.js` | 問題データの読み込み |
+| `js/srs.js` | 復習アルゴリズム（Leitner box） |
+| `js/tts.js` | 読み上げ（Web Speech API） |
+| `js/ui.js` | トースト / モーダル |
+| `js/views/*.js` | 画面ごとの描画（home / practice / categories / bookmarks / settings / install） |
+| `js/router.js` | ハッシュルータ |
+| `js/main.js` | 起動・Service Worker 登録。**最後に読む** |
+
+## なぜこの作りなのか
+
+- **ビルドを持たない** — 数年後に `npm install` が通らなくて動かせない、を避ける。
+  ブラウザが動く限り動きます。
+- **ハッシュルータ** — GitHub Pages のサブパス配信でサーバ側のリライト設定が要らない。
+- **キャッシュ優先の Service Worker** — 学習に必要なものは全て同一オリジンにあるので、
+  ネットワークを待つ理由がない。更新は利用者が「再読み込み」を押したときだけ切り替える。
+- **パスをハードコードしない** — プロジェクトページ（`/eikAIwa/`）でも独自ドメイン（`/`）
+  でもローカルでも、同じコードで動きます。
 
 ## ライセンス / 権利
 

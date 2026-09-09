@@ -1,14 +1,13 @@
-# GitHub Pages へのデプロイ
+# GitHub Pages への公開。
 #
-# 唯一の防波堤である precheck.py を通らなければデプロイしない。
+# 経路はこれ**だけ**。Settings → Pages → Source を「GitHub Actions」にしておくこと。
+# 「Deploy from a branch」にすると、ブランチ直下がそのまま配信され、
+#   - precheck.py を通らずに公開される（唯一の防波堤が効かない）
+#   - 下の許可リストが無視され、CLAUDE.md や .claude/ 配下まで配信される
+#   - 2つの経路が同じ URL に同時デプロイし、後に終わったほうが勝つ
+# 実測で /.claude/settings.json と /CLAUDE.md が 200 で読めていた。
 #
-# 配信するのは「アプリの実体だけ」。リポジトリ直下をそのまま上げると、
-# .claude/ 配下やルートの CLAUDE.md まで配信される（実測で 200 が返った）。
-# 開発用のものは持ち込まない。下の「公開するものだけを集める」を参照。
-#
-# 前提: Settings → Pages → Source を「GitHub Actions」にしておくこと。
-#       「Deploy from a branch」のままだとこのワークフローは失敗し、
-#       かわりにブランチ直下がそのまま配信される（= precheck を通らない）。
+# 配信するのは「アプリの実体だけ」。許可リスト方式にしてある。理由は下記。
 name: Deploy to GitHub Pages
 
 on:
@@ -39,7 +38,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: 静的チェック（これを通らなければ公開しない）
-        run: python3 .github/tools/precheck.py
+        run: python3 tools/precheck.py
 
       # enablement: true にしておくと、Pages が未設定でもこのアクションが
       # 有効化を試みる。リポジトリを public にすれば、次の push で
@@ -50,9 +49,10 @@ jobs:
         with:
           enablement: true
 
-      # リポジトリ直下をそのまま上げると開発用のものまで配信される。
-      # 許可したものだけを集める方式にして、増やし忘れではなく
-      # 「入れ忘れ」で失敗する側に倒す。
+      # 除外側を並べる方式にしない。開発用ファイルを足すたびに除外の書き足しが
+      # 要り、書き忘れがそのまま公開事故になる。許可リストなら書き忘れは
+      # 「公開されない」側に倒れる（本番で 404 になって気づく）。
+      # アプリに新しいディレクトリを足したら、下の cp に足すこと。
       - name: 公開するものだけを集める
         run: |
           set -e
@@ -61,7 +61,7 @@ jobs:
           cp -r css js icons data _site/
 
           # 開発用が混ざっていないことを機械で確かめる
-          for f in .claude CLAUDE.md README.md .github .gitignore .git; do
+          for f in .claude CLAUDE.md README.md tools .github .gitignore .git; do
             if [ -e "_site/$f" ]; then
               echo "公開物に $f が混ざっています。上の cp を見直してください。" >&2
               exit 1

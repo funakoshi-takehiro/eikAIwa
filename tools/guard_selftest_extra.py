@@ -12,7 +12,7 @@ import os
 import subprocess
 import sys
 
-HOOK = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..",
+HOOK = os.path.normpath(os.path.join(os.path.dirname(__file__), "..",
                                      ".claude", "hooks", "guard-write-scope.py"))
 HOME = "/home/user"
 OWN = HOME + "/eng_std"

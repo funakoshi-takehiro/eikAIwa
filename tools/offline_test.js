@@ -11,7 +11,7 @@
  *   3. リロードして、ホーム → 練習 → 10解答 → 自己評価 が一周できるか見る
  *
  * 使い方:
- *   NODE_PATH=/opt/node22/lib/node_modules node .github/tools/offline_test.js
+ *   NODE_PATH=/opt/node22/lib/node_modules node tools/offline_test.js
  */
 'use strict';
 

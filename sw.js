@@ -14,14 +14,14 @@
        を呼ぶと同意なしに切り替わってしまうので、呼んでいない。
      - VERSION を上げると古いキャッシュを捨てる。
        CSS/JS を変更したら index.html の ?v= と ここの VERSION を必ず両方上げる。
-       （更新漏れは .github/tools/precheck.py が検出する）
+       （更新漏れは tools/precheck.py が検出する）
      - Google Fonts だけは別キャッシュに置く。本体の版を上げるたびに
        フォントを取り直すのは無駄なため。取得できなくても
        システムフォントに落ちるので致命的にはならない。
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-2026090903';
+const VERSION = 'eikaiwa-2026090904';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 

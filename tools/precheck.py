@@ -19,7 +19,7 @@ eikAIwa 静的チェック（依存パッケージなし）
   5. manifest / icons の実在。
   6. ソース中の生 NUL バイト（grep が binary 扱いになり調査を妨げる）。
 
-使い方:  python3 .github/tools/precheck.py
+使い方:  python3 tools/precheck.py
 終了コード 0 = 合格 / 1 = 不合格
 """
 import json
@@ -27,7 +27,7 @@ import os
 import re
 import sys
 
-ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 errors = []
 warnings = []
@@ -72,7 +72,7 @@ MIN_REGISTER_SPREAD = 3
 def stray_latin(text, where, field):
     """日本語で書くべき欄に英単語が残っていないか。
 
-    situationJa / ja / note は日本語で書く決まり（.github/CLAUDE.md 7 節）。
+    situationJa / ja / note は日本語で書く決まり（CLAUDE.md 7 節）。
     英文をそのまま貼ったまま訳し忘れる事故が実際に起きたので機械で止める。
     全て大文字の略語（ATM / SIM）と、日本語文に現れて自然な少数の語は許す。
     """

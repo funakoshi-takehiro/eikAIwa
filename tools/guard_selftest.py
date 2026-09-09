@@ -13,14 +13,14 @@
 
 このファイル自身がホーム配下のパス文字列を含むため、Bash から直接
 ヒアドキュメントで生成しようとするとガードに弾かれる（＝ガードが効いている証拠）。
-そのためテストはファイルとして置き、`python3 .github/tools/guard_selftest.py` で回す。
+そのためテストはファイルとして置き、`python3 tools/guard_selftest.py` で回す。
 """
 import json
 import os
 import subprocess
 import sys
 
-HOOK = os.path.join(os.path.dirname(__file__), "..", "..", ".claude", "hooks",
+HOOK = os.path.join(os.path.dirname(__file__), "..", ".claude", "hooks",
                     "guard-write-scope.py")
 HOOK = os.path.normpath(HOOK)
 

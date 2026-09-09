@@ -13,7 +13,7 @@
     → プレビューは「インストール」も「オフライン」もできない。そこは本番だけの機能
   - 問題データは fetch を差し替えて埋め込みから返す。アプリ側のコードは変更しない
 
-使い方:  python3 .github/tools/build_preview.py [出力先]
+使い方:  python3 tools/build_preview.py [出力先]
 """
 import io
 import json
@@ -21,7 +21,7 @@ import os
 import re
 import sys
 
-ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 # --artifact を付けると、<html>/<head>/<body> を持たない断片を出力する。
 # Artifact として公開する場合、その骨組みは公開側が付けるため。

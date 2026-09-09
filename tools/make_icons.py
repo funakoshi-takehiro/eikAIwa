@@ -11,13 +11,13 @@
           大文字の "AI" を teal で重ねる
   - maskable 版は角丸を付けず全面を塗り、内容を安全領域(中央80%)に収める
 
-使い方:  python3 .github/tools/make_icons.py
+使い方:  python3 tools/make_icons.py
 """
 import os
 import struct
 import zlib
 
-OUT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "icons"))
+OUT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "icons"))
 
 BRAND = (0x02, 0x8D, 0xAE)
 BRAND_DEEP = (0x01, 0x5F, 0x78)

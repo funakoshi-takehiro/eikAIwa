@@ -11,7 +11,7 @@ __pycache__/
 *.pyc
 /tmp/
 
-# プレビューは .github/tools/build_preview.py で生成する成果物
+# プレビューは tools/build_preview.py で生成する成果物
 /preview/
 
 # 公開用に集めたもの（deploy-pages.yml が作る。中身はリポジトリ内の写し）

@@ -13,10 +13,10 @@
 # Service Worker がある以上、版数が前進しなければ修正は永久に届かない。
 # 数字なら頭打ちが無く、末尾で前進を検証もする。
 #
-# 使い方:  sh .github/tools/bump-version.sh [版数]
+# 使い方:  sh tools/bump-version.sh [版数]
 #          省略時は YYYYMMDD + 連番 を自動採番する。
 set -e
-cd "$(dirname "$0")/../.."
+cd "$(dirname "$0")/.."
 
 PREV=$(grep -o "EIK\.VERSION = '[A-Za-z0-9._-]*'" js/base.js | sed "s/.*'\(.*\)'/\1/")
 
@@ -54,4 +54,4 @@ if [ "$NOW" != "$STAMP" ]; then
 fi
 
 echo "キャッシュ版数を $PREV から $STAMP に更新しました"
-python3 .github/tools/precheck.py >/dev/null && echo "precheck: 合格"
+python3 tools/precheck.py >/dev/null && echo "precheck: 合格"
