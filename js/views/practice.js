@@ -28,7 +28,7 @@ EIK.Views.Practice = function (ctx) {
     if (!queue.length) {
       app.innerHTML =
         '<div class="card empty">' +
-          '<div class="empty__ic">' + icCheck() + '</div>' +
+          '<div class="empty__ic">' + EIK.icon('check') + '</div>' +
           '<p style="font-weight:700;color:var(--ink-2)">いまは出題できる問題がありません。</p>' +
           '<p class="small" style="margin-top:8px">復習の期限が来たものが無く、未学習も残っていません。</p>' +
           '<a class="btn btn-ghost" style="margin-top:18px" href="#/">ホームへ戻る</a>' +
@@ -43,16 +43,15 @@ EIK.Views.Practice = function (ctx) {
     function renderQuestion() {
       if (i >= queue.length) return renderDone();
       var s = queue[i];
-      var showJa = st.showJa;
 
       app.innerHTML =
         '<div class="pr fade-in">' +
           topBar(i + 1, queue.length) +
-          sitCard(s, showJa) +
+          sitCard(s, st.showJa) +
           thinkBlock(st, s) +
         '</div>';
 
-      wireJaToggle(s);
+      wireJaToggle();
       wireBookmark(s);
 
       var revealBtn = app.querySelector('#reveal');
@@ -70,7 +69,7 @@ EIK.Views.Practice = function (ctx) {
       app.innerHTML =
         '<div class="pr fade-in">' +
           topBar(i + 1, queue.length) +
-          sitCard(s, st.showJa, true) +
+          sitCard(s, st.showJa) +
           (memo && memo.trim()
             ? '<div class="card"><div class="section-title">あなたの答え</div>' +
               '<div style="font-size:.95rem;white-space:pre-wrap">' + EIK.escapeHtml(memo) + '</div></div>'
@@ -82,7 +81,7 @@ EIK.Views.Practice = function (ctx) {
           judgeBlock() +
         '</div>';
 
-      wireJaToggle(s);
+      wireJaToggle();
       wireBookmark(s);
       wireAnswerTools(s);
 
@@ -111,7 +110,7 @@ EIK.Views.Practice = function (ctx) {
       var s = EIK.Store;
       app.innerHTML =
         '<div class="card done fade-in">' +
-          '<div class="done__ic">' + icCheck() + '</div>' +
+          '<div class="done__ic">' + EIK.icon('check') + '</div>' +
           '<h2 style="font-size:1.15rem;font-weight:700">おつかれさまでした</h2>' +
           '<p class="muted small" style="margin-top:8px">' + EIK.num(answered) + ' 問を練習しました。</p>' +
           '<div class="statrow" style="margin-top:20px">' +
@@ -140,7 +139,7 @@ EIK.Views.Practice = function (ctx) {
 
   /* ---------- 出題キューの組み立て ---------- */
   function buildQueue(mode, arg, all, st) {
-    var limit = Math.max(1, parseInt(st.dailyGoal, 10) || 10);
+    var limit = Math.max(1, EIK.num(st.dailyGoal, 10));
     if (mode === 'daily')    return EIK.SRS.pickDaily(all, limit);
     if (mode === 'category') {
       var list = all.filter(function (s) { return s.category === arg; });
@@ -164,19 +163,19 @@ EIK.Views.Practice = function (ctx) {
     return '<div class="pr__top">' +
              '<span class="pr__count">' + n + ' / ' + total + '</span>' +
              '<div class="pr__bar"><div class="pbar"><div class="pbar__fill" style="width:' + pct + '%"></div></div></div>' +
-             '<button type="button" class="iconbtn" id="bm" aria-label="この状況を保存">' + icStar() + '</button>' +
+             '<button type="button" class="iconbtn" id="bm" aria-label="この状況を保存">' + EIK.icon('star') + '</button>' +
            '</div>';
   }
 
-  function sitCard(s, showJa, compact) {
+  function sitCard(s, showJa) {
     var jaBlock = showJa
       ? '<div class="sit__ja">' + EIK.escapeHtml(s.situationJa || '') + '</div>'
-      : '<button type="button" class="sit__jatoggle" id="jatoggle">' + icEye() + ' 日本語で見る</button>' +
+      : '<button type="button" class="sit__jatoggle" id="jatoggle">' + EIK.icon('eye') + ' 日本語で見る</button>' +
         '<div class="sit__ja" id="jabox" hidden>' + EIK.escapeHtml(s.situationJa || '') + '</div>';
 
     return '<div class="card sit">' +
              '<div class="sit__head">' +
-               '<div class="sit__place">' + icPin() + ' ' + EIK.escapeHtml(s.place) + '</div>' +
+               '<div class="sit__place">' + EIK.icon('pin') + ' ' + EIK.escapeHtml(s.place) + '</div>' +
                '<span class="lvbadge lvbadge--' + EIK.num(s.level, 1) + '">' +
                  EIK.escapeHtml(EIK.levelStars(s.level || 1)) + '</span>' +
              '</div>' +
@@ -206,35 +205,18 @@ EIK.Views.Practice = function (ctx) {
   }
 
   function answerList(s) {
-    var canTts = EIK.TTS.usable();
-    var rows = s.answers.map(function (a, idx) {
-      var marked = EIK.Store.isAnswerMarked(s.id, idx);
-      return '<div class="ans__item">' +
-        '<div class="ans__head">' +
-          '<div class="ans__en">' + EIK.escapeHtml(a.en) + '</div>' +
-          '<div class="ans__tools">' +
-            (canTts ? '<button type="button" class="iconbtn" data-speak="' + idx + '" aria-label="読み上げる">' + icSpeaker() + '</button>' : '') +
-            '<button type="button" class="iconbtn" data-mark="' + idx + '" aria-pressed="' + (marked ? 'true' : 'false') + '" aria-label="この言い方を保存">' + icStar() + '</button>' +
-          '</div>' +
-        '</div>' +
-        '<div class="ans__ja">' + EIK.escapeHtml(a.ja) + '</div>' +
-        '<div class="ans__meta">' +
-          '<span class="reg reg--' + EIK.escapeHtml(a.register) + '">' +
-            EIK.escapeHtml(EIK.REGISTER_LABEL[a.register] || a.register) + '</span>' +
-          (a.note ? '<span class="ans__note">' + EIK.escapeHtml(a.note) + '</span>' : '') +
-        '</div>' +
-      '</div>';
-    }).join('');
-    return '<div class="ans">' + rows + '</div>';
+    return '<div class="ans">' + s.answers.map(function (a, idx) {
+      return EIK.UI.answerItem(a, { mark: { id: s.id, idx: idx }, note: a.note });
+    }).join('') + '</div>';
   }
 
   function judgeBlock() {
     return '<div>' +
       '<div class="section-title">言えましたか？</div>' +
       '<div class="judge">' +
-        '<button type="button" class="judge__btn" data-j="got"><span class="judge__ic">' + icCheck() + '</span>言えた</button>' +
-        '<button type="button" class="judge__btn" data-j="close"><span class="judge__ic">' + icNear() + '</span>惜しい</button>' +
-        '<button type="button" class="judge__btn" data-j="miss"><span class="judge__ic">' + icMiss() + '</span>出てこなかった</button>' +
+        '<button type="button" class="judge__btn" data-j="got"><span class="judge__ic">' + EIK.icon('check') + '</span>言えた</button>' +
+        '<button type="button" class="judge__btn" data-j="close"><span class="judge__ic">' + EIK.icon('near') + '</span>惜しい</button>' +
+        '<button type="button" class="judge__btn" data-j="miss"><span class="judge__ic">' + EIK.icon('miss') + '</span>出てこなかった</button>' +
       '</div>' +
     '</div>';
   }
@@ -257,14 +239,14 @@ EIK.Views.Practice = function (ctx) {
     return function () { clearInterval(t); };
   }
 
-  function wireJaToggle(s) {
+  function wireJaToggle() {
     var btn = app.querySelector('#jatoggle');
     var box = app.querySelector('#jabox');
     if (!btn || !box) return;
     btn.addEventListener('click', function () {
       var shown = !box.hidden;
       box.hidden = shown;
-      btn.innerHTML = (shown ? icEye() + ' 日本語で見る' : icEyeOff() + ' 日本語を隠す');
+      btn.innerHTML = (shown ? EIK.icon('eye') + ' 日本語で見る' : EIK.icon('eyeOff') + ' 日本語を隠す');
     });
   }
 
@@ -283,13 +265,7 @@ EIK.Views.Practice = function (ctx) {
   }
 
   function wireAnswerTools(s) {
-    Array.prototype.forEach.call(app.querySelectorAll('[data-speak]'), function (b) {
-      b.addEventListener('click', function () {
-        var idx = +b.getAttribute('data-speak');
-        // iOS はユーザー操作起因が必要なので、必ずこのハンドラの中から呼ぶ
-        EIK.TTS.speak(s.answers[idx].en);
-      });
-    });
+    EIK.UI.wireSpeak(app);
     Array.prototype.forEach.call(app.querySelectorAll('[data-mark]'), function (b) {
       b.addEventListener('click', function () {
         var idx = +b.getAttribute('data-mark');
@@ -299,18 +275,4 @@ EIK.Views.Practice = function (ctx) {
       });
     });
   }
-
-  /* ---------- アイコン（インライン SVG・stroke 1.7・currentColor） ---------- */
-  function svg(inner, extra) {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" ' +
-           'stroke-linecap="round" stroke-linejoin="round"' + (extra || '') + '>' + inner + '</svg>';
-  }
-  function icPin()   { return svg('<path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/>'); }
-  function icStar()  { return svg('<path d="M12 3.6l2.6 5.3 5.8.85-4.2 4.1 1 5.75L12 16.9l-5.2 2.7 1-5.75-4.2-4.1 5.8-.85z"/>'); }
-  function icEye()   { return svg('<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>'); }
-  function icEyeOff(){ return svg('<path d="M3 3l18 18"/><path d="M10.6 6.1A9.7 9.7 0 0 1 12 6c6 0 9.5 6 9.5 6a17 17 0 0 1-3.3 4"/><path d="M6.3 7.6A16.6 16.6 0 0 0 2.5 12S6 18 12 18a9.5 9.5 0 0 0 3.5-.66"/>'); }
-  function icSpeaker(){ return svg('<path d="M11 5 6.5 9H3v6h3.5L11 19z"/><path d="M15.6 8.4a5 5 0 0 1 0 7.2"/><path d="M18.4 5.6a9 9 0 0 1 0 12.8"/>'); }
-  function icCheck() { return svg('<circle cx="12" cy="12" r="9"/><path d="M8.2 12.4l2.6 2.6 5-5.4"/>'); }
-  function icNear()  { return svg('<circle cx="12" cy="12" r="9"/><path d="M8 13.4c1.2-1.1 2.6-1.1 4 0s2.8 1.1 4 0"/><path d="M9 9.2h.01M15 9.2h.01"/>'); }
-  function icMiss()  { return svg('<circle cx="12" cy="12" r="9"/><path d="M9.2 9.2l5.6 5.6M14.8 9.2l-5.6 5.6"/>'); }
 };

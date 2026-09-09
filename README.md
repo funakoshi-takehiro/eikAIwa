@@ -115,6 +115,7 @@ tools/                   検証・生成スクリプト（依存ゼロ）
 
 `js/` はすべて同一グローバルスコープで、`index.html` の**読み込み順に依存**します。
 上から順に、依存の浅いものから並んでいます。
+`js/views/*.js` どうしは互いを参照しません（共有するものは `js/ui.js` に置く）。
 
 | ファイル | 役割 |
 |---|---|
@@ -123,7 +124,7 @@ tools/                   検証・生成スクリプト（依存ゼロ）
 | `js/data.js` | 問題データの読み込み |
 | `js/srs.js` | 復習アルゴリズム（Leitner box） |
 | `js/tts.js` | 読み上げ（Web Speech API） |
-| `js/ui.js` | トースト / モーダル |
+| `js/ui.js` | トースト / モーダルと、**画面をまたぐ HTML 部品**（難易度スイッチ・状況の行・解答カード） |
 | `js/views/*.js` | 画面ごとの描画（home / practice / categories / bookmarks / settings / install） |
 | `js/router.js` | ハッシュルータ |
 | `js/main.js` | 起動・Service Worker 登録。**最後に読む** |

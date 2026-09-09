@@ -139,3 +139,108 @@ EIK.UI = (function () {
 
   return { toast: toast, alert: alert, confirm: confirm, prompt: prompt, dialog: dialog };
 })();
+
+/* ── 画面をまたいで使う部品 ────────────────────────────────────────────────
+   2つ以上の画面が同じ HTML を組み立てていたものを、ここに集めた。
+
+   ここに置くのは views/*.js より先に読み込まれるため。
+   以前は難易度スイッチが views/home.js にあり、categories.js が
+   「home.js が先に読まれていること」に暗黙に依存していた。
+   同一グローバルスコープ + 読み込み順依存の構成では、この種の依存が
+   いちばん追いにくい。
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* 難易度の切り替え。ホームとカテゴリ一覧の両方から使う。 */
+EIK.UI.levelPicker = function (current) {
+  var levels = EIK.Data.allLevels();
+  if (!levels.length) {
+    levels = [{ level: 1, stars: '★' }, { level: 2, stars: '★★' }, { level: 3, stars: '★★★' }];
+  }
+  var meta = null;
+  var btns = levels.map(function (l) {
+    if (l.level === current) meta = l;
+    return '<button type="button" class="lv__btn" data-level="' + EIK.num(l.level, 1) + '" ' +
+           'aria-pressed="' + (l.level === current ? 'true' : 'false') + '">' +
+           EIK.escapeHtml(l.stars) + '</button>';
+  }).join('');
+  return '<div class="lv">' +
+    '<div class="lv__row">' +
+      '<span class="lv__label">難易度</span>' +
+      '<div class="lv__seg" role="group" aria-label="難易度">' + btns + '</div>' +
+    '</div>' +
+    (meta && meta.sentences
+      ? '<div class="lv__desc"><b>' + EIK.escapeHtml(meta.sentences) + 'で答える</b>' +
+        ' — ' + EIK.escapeHtml(meta.descJa || '') + '</div>'
+      : '') +
+  '</div>';
+};
+
+EIK.UI.wireLevelPicker = function (root) {
+  Array.prototype.forEach.call(root.querySelectorAll('.lv__btn'), function (b) {
+    b.addEventListener('click', function () {
+      var lv = parseInt(b.getAttribute('data-level'), 10);
+      if (lv === (EIK.Store.settings().level || 1)) return;
+      EIK.Store.setSetting('level', lv);
+      EIK.Store.flush();
+      EIK.Router.render();
+    });
+  });
+};
+
+/* 状況1件の行。カテゴリ詳細と保存画面が使う。
+   opts.showLevel: 場所のあとに ★ を添える（保存は段階をまたぐので要る）。 */
+EIK.UI.sitRow = function (sit, opts) {
+  opts = opts || {};
+  var p = EIK.Store.progressOf(sit.id);
+  return '<a class="card sitrow" href="#/practice/one/' + encodeURIComponent(sit.id) + '">' +
+    '<span class="sitrow__box" data-lv="' + EIK.num(p.lv) + '" aria-hidden="true"></span>' +
+    '<span class="sitrow__body">' +
+      '<span class="sitrow__want">' + EIK.escapeHtml(sit.want) + '</span>' +
+      '<span class="sitrow__place">' + EIK.escapeHtml(sit.place) +
+        (opts.showLevel ? '　' + EIK.escapeHtml(EIK.levelStars(sit.level || 1)) : '') +
+      '</span>' +
+    '</span>' +
+  '</a>';
+};
+
+/* 読み上げボタン。使えない端末では何も出さない
+   （空の枠だけ残るとレイアウトが崩れるため）。
+   読ませる文は属性に入れる。押した瞬間に元データを引き直す必要がなく、
+   画面ごとに違う配線を書かずに済む。 */
+EIK.UI.speakButton = function (text) {
+  if (!EIK.TTS.usable()) return '';
+  return '<button type="button" class="iconbtn" data-say="' + EIK.escapeHtml(text) +
+         '" aria-label="読み上げる">' + EIK.icon('speaker') + '</button>';
+};
+
+EIK.UI.wireSpeak = function (root) {
+  Array.prototype.forEach.call(root.querySelectorAll('[data-say]'), function (b) {
+    // iOS はユーザー操作起因でないと発話しない。必ずこのハンドラの中から呼ぶ
+    b.addEventListener('click', function () { EIK.TTS.speak(b.getAttribute('data-say')); });
+  });
+};
+
+/* 解答1件。練習画面と保存画面が使う。
+   opts.mark {id, idx}: ☆（この言い方を保存）を出す
+   opts.note:            丁寧さラベルの隣に添える一言 */
+EIK.UI.answerItem = function (a, opts) {
+  opts = opts || {};
+  var tools = EIK.UI.speakButton(a.en);
+  if (opts.mark) {
+    tools += '<button type="button" class="iconbtn" data-mark="' + EIK.num(opts.mark.idx) +
+             '" aria-pressed="' + (EIK.Store.isAnswerMarked(opts.mark.id, opts.mark.idx) ? 'true' : 'false') +
+             '" aria-label="この言い方を保存">' + EIK.icon('star') + '</button>';
+  }
+  return '<div class="ans__item">' +
+    '<div class="ans__head">' +
+      '<div class="ans__en">' + EIK.escapeHtml(a.en) + '</div>' +
+      '<div class="ans__tools">' + tools + '</div>' +
+    '</div>' +
+    '<div class="ans__ja">' + EIK.escapeHtml(a.ja) + '</div>' +
+    '<div class="ans__meta">' +
+      '<span class="reg reg--' + EIK.escapeHtml(a.register) + '">' +
+        EIK.escapeHtml(EIK.REGISTER_LABEL[a.register] || a.register) + '</span>' +
+      (opts.note ? '<span class="ans__note">' + EIK.escapeHtml(opts.note) + '</span>' : '') +
+    '</div>' +
+  '</div>';
+};

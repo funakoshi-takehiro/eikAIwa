@@ -229,26 +229,24 @@ EIK.Store = (function () {
     return 0;   // 途切れている
   }
 
-  function isBookmarked(id) { return load().bookmarks.indexOf(id) >= 0; }
+  /* bookmarks（状況）と answerMarks（言い方）は、どちらも文字列の集合で
+     出し入れの仕方が同じ。別々に書くと片方だけ直して食い違う。 */
+  function has(listName, key) { return load()[listName].indexOf(key) >= 0; }
 
-  function toggleBookmark(id) {
-    var b = load().bookmarks;
-    var i = b.indexOf(id);
-    if (i >= 0) b.splice(i, 1); else b.push(id);
+  function toggleIn(listName, key) {
+    var list = load()[listName];
+    var i = list.indexOf(key);
+    if (i >= 0) list.splice(i, 1); else list.push(key);
     save();
-    return i < 0;
+    return i < 0;                       // true = 追加した
   }
 
   function answerKey(sitId, idx) { return sitId + '#' + idx; }
-  function isAnswerMarked(sitId, idx) { return load().answerMarks.indexOf(answerKey(sitId, idx)) >= 0; }
-  function toggleAnswerMark(sitId, idx) {
-    var a = load().answerMarks;
-    var k = answerKey(sitId, idx);
-    var i = a.indexOf(k);
-    if (i >= 0) a.splice(i, 1); else a.push(k);
-    save();
-    return i < 0;
-  }
+
+  function isBookmarked(id) { return has('bookmarks', id); }
+  function toggleBookmark(id) { return toggleIn('bookmarks', id); }
+  function isAnswerMarked(sitId, idx) { return has('answerMarks', answerKey(sitId, idx)); }
+  function toggleAnswerMark(sitId, idx) { return toggleIn('answerMarks', answerKey(sitId, idx)); }
 
   function exportJson() { return JSON.stringify(load(), null, 2); }
 

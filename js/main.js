@@ -82,10 +82,9 @@ EIK.applyDisplaySettings = function () {
          初回訪問では install→skipWaiting→claim で必ず controllerchange が起きるため、
          無条件にリロードすると、開いた直後に画面が再読み込みされ、
          直前の操作（保存待ちの学習記録）が失われる。実測で踏んだ。 */
-      var hadController = wasControlled;
       var refreshing = false;
       navigator.serviceWorker.addEventListener('controllerchange', function () {
-        if (!hadController || refreshing) return;
+        if (!wasControlled || refreshing) return;
         refreshing = true;
         location.reload();
       });

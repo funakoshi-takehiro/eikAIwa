@@ -64,6 +64,25 @@ HTML / CSS / 素の JavaScript のみ。`package.json` は置かない。
 新しい JS を足したら `index.html` の `<script>` と `sw.js` の `SHELL` の**両方**に足す。
 片方を忘れると、それぞれ「白画面」「オフラインで動かない」になる。`precheck.py` が検出する。
 
+### 2つ以上の画面が使うものは、views の外に置く
+
+| 置き場所 | 何を | 例 |
+|---|---|---|
+| `js/base.js` | 画面に依存しない道具 | `EIK.escapeHtml` / `EIK.num` / `EIK.icon` |
+| `js/ui.js` | 画面をまたぐ HTML 部品と配線 | `EIK.UI.levelPicker` / `sitRow` / `answerItem` / `speakButton` |
+| `js/views/*.js` | **その画面だけ**のもの | 練習の出題キュー、設定の行 |
+
+`views/*.js` どうしは互いを参照しない。以前、難易度スイッチが `views/home.js` にあり、
+`views/categories.js` が「home.js が先に読まれていること」に暗黙に依存していた。
+同一グローバルスコープ + 読み込み順依存の構成では、この依存がいちばん追いにくい。
+
+**アイコンは `EIK.icon(name)` を使う。`<svg>` をベタ書きしない。**
+以前は4つの画面がそれぞれ同じ `<svg>` ラッパーを書いていて、
+`icPin` と `map`、`icStar` と保存画面の星は**パスまで完全に同じもの**が二重にあった。
+新しい絵が要るときは `EIK.ICONS` に1行足す。
+（`index.html` のアプリバーとタブバーだけは例外。JS が動く前に出す必要があるため
+ベタ書きのままにしてある。ここを JS 描画にすると、起動のたびに枠が空で点滅する。）
+
 ## 2. キャッシュ版数の規律
 
 CSS / JS を変更したら、**必ず**これを実行する。

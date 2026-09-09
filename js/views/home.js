@@ -14,14 +14,14 @@ EIK.Views.Home = function (ctx) {
     var s = EIK.SRS.stats(all);
     // 保存データ由来なので数値へ落としてから使う（取り込みで文字列が入りうる）
     var todayN = EIK.num(EIK.Store.todayCount());
-    var goal = Math.max(1, parseInt(st.dailyGoal, 10) || 10);
+    var goal = Math.max(1, EIK.num(st.dailyGoal, 10));
     var pct = Math.min(1, todayN / goal);
     var due = EIK.SRS.pickDaily(all, goal).length;
 
     app.innerHTML =
       '<div class="stack-lg fade-in">' +
 
-        levelPicker(level) +
+        EIK.UI.levelPicker(level) +
 
         '<div class="card hero">' +
           '<div class="hero__ring">' +
@@ -74,12 +74,12 @@ EIK.Views.Home = function (ctx) {
           '<div class="section-title">ほかの練習</div>' +
           '<div class="catlist">' +
             '<a class="card catcard" href="#/categories">' +
-              '<span class="catcard__ic">' + ic('<rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/>') + '</span>' +
+              '<span class="catcard__ic">' + EIK.icon('grid') + '</span>' +
               '<span class="catcard__body"><span class="catcard__name">カテゴリから選ぶ</span>' +
               '<span class="catcard__meta">場面ごとに集中して練習する</span></span>' +
             '</a>' +
             '<a class="card catcard" href="#/practice/shuffle">' +
-              '<span class="catcard__ic">' + ic('<path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/>') + '</span>' +
+              '<span class="catcard__ic">' + EIK.icon('shuffle') + '</span>' +
               '<span class="catcard__body"><span class="catcard__name">シャッフル</span>' +
               '<span class="catcard__meta">全カテゴリからランダムに出題</span></span>' +
             '</a>' +
@@ -88,55 +88,9 @@ EIK.Views.Home = function (ctx) {
 
       '</div>';
 
-    wireLevelPicker(app);
+    EIK.UI.wireLevelPicker(app);
   }).catch(function (e) {
     app.innerHTML = '<div class="card empty">データを読み込めませんでした。<br>' +
                     EIK.escapeHtml(e.message || e) + '</div>';
   });
-
-  function ic(inner) {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" ' +
-           'stroke-linecap="round" stroke-linejoin="round">' + inner + '</svg>';
-  }
 };
-
-/* 段階の切り替え。ホームとカテゴリ一覧の両方から使う。 */
-EIK.levelPickerHtml = function (current) {
-  var levels = EIK.Data.allLevels();
-  if (!levels.length) {
-    levels = [{ level: 1, stars: '★' }, { level: 2, stars: '★★' }, { level: 3, stars: '★★★' }];
-  }
-  var meta = null;
-  var btns = levels.map(function (l) {
-    if (l.level === current) meta = l;
-    return '<button type="button" class="lv__btn" data-level="' + EIK.num(l.level, 1) + '" ' +
-           'aria-pressed="' + (l.level === current ? 'true' : 'false') + '">' +
-           EIK.escapeHtml(l.stars) + '</button>';
-  }).join('');
-  return '<div class="lv">' +
-    '<div class="lv__row">' +
-      '<span class="lv__label">難易度</span>' +
-      '<div class="lv__seg" role="group" aria-label="難易度">' + btns + '</div>' +
-    '</div>' +
-    (meta && meta.sentences
-      ? '<div class="lv__desc"><b>' + EIK.escapeHtml(meta.sentences) + 'で答える</b>' +
-        ' — ' + EIK.escapeHtml(meta.descJa || '') + '</div>'
-      : '') +
-  '</div>';
-};
-
-EIK.wireLevelPicker = function (root) {
-  Array.prototype.forEach.call(root.querySelectorAll('.lv__btn'), function (b) {
-    b.addEventListener('click', function () {
-      var lv = parseInt(b.getAttribute('data-level'), 10);
-      if (lv === (EIK.Store.settings().level || 1)) return;
-      EIK.Store.setSetting('level', lv);
-      EIK.Store.flush();
-      EIK.Router.render();
-    });
-  });
-};
-
-/* Home 内で使う短縮形 */
-function levelPicker(current) { return EIK.levelPickerHtml(current); }
-function wireLevelPicker(root) { return EIK.wireLevelPicker(root); }

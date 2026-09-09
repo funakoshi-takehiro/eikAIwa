@@ -101,6 +101,18 @@ function step(name, ok, detail) {
     step('丁寧さが3種類以上に散っている', regClasses.length >= 3, regClasses.join(', '));
     await shot('03-answers');
 
+    /* ---------- 保存（☆）----------
+       ここで保存しておかないと、後の保存画面が「空です」の分岐しか通らない。
+       実際、保存画面はデータが入った経路が一度も踏まれていなかった。 */
+    const sitStar = page.locator('#bm');
+    await sitStar.click();
+    step('状況を☆で保存できる', await sitStar.getAttribute('aria-pressed') === 'true');
+
+    const ansStar = page.locator('[data-mark]').first();
+    step('言い方の☆が各解答に付く', (await page.locator('[data-mark]').count()) === 10);
+    await ansStar.click();
+    step('言い方を☆で保存できる', await ansStar.getAttribute('aria-pressed') === 'true');
+
     // ---------- 自己評価 ----------
     step('自己評価ボタンが3つ', (await page.locator('.judge__btn').count()) === 3);
     await page.locator('.judge__btn[data-j="got"]').click();
@@ -174,8 +186,20 @@ function step(name, ok, detail) {
 
     // ---------- 保存 ----------
     await page.goto(BASE + '#/bookmarks', { waitUntil: 'networkidle' });
-    await page.waitForTimeout(400);
-    step('保存画面が開く', (await page.locator('.empty, .sitrow').count()) > 0);
+    // 3段階ぶんを読んでから描くので、この画面にしかないものを待つ
+    await page.waitForSelector('a[href="#/practice/bookmarks"]', { timeout: 10000 });
+    step('保存画面が開く', true);
+
+    const bSits = await page.locator('.sitrow').count();
+    const bAns = await page.locator('.ans__item').count();
+    step('保存した状況が並ぶ', bSits === 1, `${bSits} 件`);
+    step('保存した言い方が並ぶ', bAns === 1, `${bAns} 件`);
+
+    // 保存は段階をまたぐので、行に ★ が要る
+    const bPlace = await page.locator('.sitrow__place').first().innerText();
+    step('保存した状況に難易度が出る', /★/.test(bPlace), bPlace.trim());
+    step('保存した言い方に丁寧さラベルが出る', (await page.locator('.ans__item .reg').count()) === 1);
+    await shot('04b-bookmarks');
 
     // ---------- 設定 ----------
     await page.goto(BASE + '#/settings', { waitUntil: 'networkidle' });

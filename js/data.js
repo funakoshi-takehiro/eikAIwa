@@ -83,21 +83,15 @@ EIK.Data = (function () {
 
   function get(id) { return index[id] || null; }
 
-  function categoryMeta(id) {
-    if (!categories) return null;
-    for (var i = 0; i < categories.length; i++) {
-      if (categories[i].id === id) return categories[i];
+  function findBy(list, field, value) {
+    for (var i = 0; list && i < list.length; i++) {
+      if (list[i][field] === value) return list[i];
     }
-    return null;
+    return null;                        // まだ読み込んでいない場合もここに来る
   }
 
-  function levelMeta(level) {
-    if (!levels) return null;
-    for (var i = 0; i < levels.length; i++) {
-      if (levels[i].level === level) return levels[i];
-    }
-    return null;
-  }
+  function categoryMeta(id) { return findBy(categories, 'id', id); }
+  function levelMeta(level) { return findBy(levels, 'level', level); }
 
   function inCategory(catId, level) { return byKey[catId + '@' + level] || []; }
 
