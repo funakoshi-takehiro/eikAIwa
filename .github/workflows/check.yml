@@ -66,19 +66,19 @@ jobs:
       - name: ブラウザで一周し、オフラインでも学習できることを確認する
         run: |
           set -e
-          mkdir -p /tmp/site/eng_std
+          mkdir -p /tmp/site/eikAIwa
           # .git を含めると無駄に重いので除く
-          tar --exclude=.git -cf - . | (cd /tmp/site/eng_std && tar -xf -)
+          tar --exclude=.git -cf - . | (cd /tmp/site/eikAIwa && tar -xf -)
           python3 -m http.server 8080 -d /tmp/site >/dev/null 2>&1 &
           for i in $(seq 1 30); do
-            curl -sf -o /dev/null http://localhost:8080/eng_std/index.html && break
+            curl -sf -o /dev/null http://localhost:8080/eikAIwa/index.html && break
             sleep 0.5
           done
-          curl -sf -o /dev/null http://localhost:8080/eng_std/index.html \
+          curl -sf -o /dev/null http://localhost:8080/eikAIwa/index.html \
             || { echo "ローカルサーバが起動しませんでした"; exit 1; }
 
           export NODE_PATH="$(npm root -g)"
-          export SMOKE_URL=http://localhost:8080/eng_std/
+          export SMOKE_URL=http://localhost:8080/eikAIwa/
 
           echo "── ブラウザ通し確認 ──"
           node .github/tools/browser_smoke.js

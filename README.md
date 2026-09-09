@@ -15,13 +15,7 @@ At a train station. You want to find a restroom.   （相手: 駅員）
 
 ## 使う
 
-<https://funakoshi-takehiro.github.io/eng_std/>
-
-> **公開にはリポジトリを public にする必要があります。**
-> 無料プランでは GitHub Pages が public リポジトリでしか使えません。
-> Settings → General → Change visibility から public にすれば、
-> 次の push で Pages が自動的に有効化されて公開されます
-> （`deploy-pages.yml` に `enablement: true` を入れてあります）。
+<https://funakoshi-takehiro.github.io/eikAIwa/>
 
 スマホのホーム画面に追加すると、**通信がなくても学習できます**。
 追加方法はアプリ内の「設定 → ホーム画面への追加方法」にあります。
@@ -50,7 +44,7 @@ At a train station. You want to find a restroom.   （相手: 駅員）
 ```sh
 # ローカルで開く（GitHub Pages と同じサブパス配信を再現する）
 python3 -m http.server 8080 -d ..
-# → http://localhost:8080/eng_std/
+# → http://localhost:8080/eikAIwa/
 
 # 静的チェック（CI と同じもの）
 python3 .github/tools/precheck.py

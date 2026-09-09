@@ -21,12 +21,12 @@
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-2026090902';
+const VERSION = 'eikaiwa-2026090903';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 
 /* SW 自身の位置からベースパスを導く。
-   GitHub Pages のプロジェクトページ (/eng_std/) でも独自ドメイン (/) でも
+   GitHub Pages のプロジェクトページ (/eikAIwa/) でも独自ドメイン (/) でも
    同じコードで動かすため、パスをハードコードしない。 */
 const BASE = new URL('./', self.location).pathname;
 

@@ -6,6 +6,9 @@
 > `.github/` 配下は GitHub Pages が配信しないため、ここに置いています。
 > （実測: `/.github/workflows/*.yml` は 404。一方 `/.nojekyll` や `/.gitignore` は 200 なので
 > 「ドットで始まれば安全」ではありません。**安全なのは `.github/` 配下だけ**です。）
+>
+> 現在は §9 の公開許可リストで、そもそもアプリの実体しか配信していません。
+> ここに置くのは、その許可リストを消してしまったときの二重の保険です。
 
 ## 0. 書き込み範囲【最優先】
 
@@ -56,7 +59,7 @@ CSS / JS を変更したら、**必ず** `sh .github/tools/bump-version.sh` を�
 
 ## 3. パスをハードコードしない
 
-GitHub Pages のプロジェクトページ（`/eng_std/`）と独自ドメイン（`/`）とローカルの
+GitHub Pages のプロジェクトページ（`/eikAIwa/`）と独自ドメイン（`/`）とローカルの
 どれでも同じコードで動かす。`EIK.siteBase` / `EIK.url()` を使い、
 `sw.js` では `new URL('./', self.location).pathname` からベースを導く。
 
@@ -149,13 +152,47 @@ NODE_PATH="$(npm root -g)" node .github/tools/browser_smoke.js   # ブラウザ�
 
 ## 9. 公開
 
+<https://funakoshi-takehiro.github.io/eikAIwa/> で公開している。
+
 `main` または作業ブランチへの push で `.github/workflows/deploy-pages.yml` が動く。
 `precheck.py` を通らなければデプロイしない。
 third-party action は **SHA 固定 + `# vX.Y.Z` コメント**、Dependabot が weekly で更新する。
 
-**リポジトリを public にする必要がある。**無料プランでは Pages が
-public リポジトリでしか使えない。`configure-pages` に `enablement: true` を
-入れてあるので、public にすれば次の push で Pages 側の設定は自動で入る。
+### Settings → Pages → Source は「GitHub Actions」にすること
+
+**「Deploy from a branch」のままにしない。** そちらはブランチ直下をそのまま配信するため、
+
+- `precheck.py` の検査を通らずに公開される（唯一の防波堤が効かない）
+- 下の許可リストが無視され、`.claude/` 配下や `CLAUDE.md` まで配信される
+- `deploy-pages.yml` は毎回失敗する（Pages 側が Actions からの配信を受け付けない）
+
+実際に「Deploy from a branch」のまま公開していた間、`/.claude/settings.json` と
+`/CLAUDE.md` が 200 で読めていた。
+
+### 配信するものは許可リストで決める
+
+`deploy-pages.yml` の「公開するものだけを集める」で `_site/` に**集めたものだけ**を上げる。
+
+    index.html  sw.js  manifest.webmanifest  .nojekyll
+    css/  js/  icons/  data/
+
+除外側を並べる方式にしない。新しい開発用ファイルを足すたびに除外を書き足す必要があり、
+書き忘れがそのまま公開事故になる。許可リストなら、**書き忘れは「公開されない」側に倒れる**。
+
+同じステップで、`.claude` `CLAUDE.md` `README.md` `.github` `.gitignore` `.git` が
+`_site/` に無いこと、起動に要るファイルが揃っていることを機械で確かめている。
+アプリに新しいディレクトリを足したら、この `cp` に足すこと。忘れると本番で 404 になる。
+
+### 隠せないもの
+
+**コミット履歴は隠せない。** public にした時点で全履歴が読める。
+消すには履歴の書き換え（force push）が要るが、それでも
+GitHub 側に残る到達不能オブジェクトや、既存の clone / fork までは消えない。
+**公開リポジトリには、履歴に入って困るものを最初から入れない。**
+
+`precheck.py` の `check_public_safety()` が、社名・非公開リポジトリのパスが
+ソースや問題データに紛れていないかを機械で見ている（リテラル一致のみ。
+変数展開までは追えない）。
 
 ## 10. プレビュー
 

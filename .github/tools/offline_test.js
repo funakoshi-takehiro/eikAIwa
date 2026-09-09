@@ -17,7 +17,7 @@
 
 const { chromium } = require('playwright');
 
-const BASE = process.env.SMOKE_URL || 'http://localhost:8080/eng_std/';
+const BASE = process.env.SMOKE_URL || 'http://localhost:8080/eikAIwa/';
 const SHOT_DIR = process.env.SMOKE_SHOTS || '';
 
 const steps = [];

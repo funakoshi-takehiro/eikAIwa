@@ -6,11 +6,11 @@
 
 window.EIK = window.EIK || {};
 
-EIK.VERSION = '2026090902';
+EIK.VERSION = '2026090903';
 
 /* サイトのベースパスを実行時に解決する。
    ビルドが無いので base を埋め込めない。GitHub Pages のプロジェクトページ
-   (/eng_std/)、独自ドメイン (/)、ローカル (任意) のどれでも動くようにする。
+   (/eikAIwa/)、独自ドメイン (/)、ローカル (任意) のどれでも動くようにする。
    社内の既存プロダクトの siteBase() と同じ考え方。 */
 EIK.siteBase = (function () {
   var p = location.pathname;

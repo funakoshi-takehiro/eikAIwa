@@ -1,10 +1,14 @@
 # GitHub Pages へのデプロイ
 #
-# ビルド工程が無いため、リポジトリ直下をそのまま配信する。
 # 唯一の防波堤である precheck.py を通らなければデプロイしない。
 #
-# 前提: リポジトリを public にし、Settings → Pages → Source を
-#       「GitHub Actions」にしておくこと。
+# 配信するのは「アプリの実体だけ」。リポジトリ直下をそのまま上げると、
+# .claude/ 配下やルートの CLAUDE.md まで配信される（実測で 200 が返った）。
+# 開発用のものは持ち込まない。下の「公開するものだけを集める」を参照。
+#
+# 前提: Settings → Pages → Source を「GitHub Actions」にしておくこと。
+#       「Deploy from a branch」のままだとこのワークフローは失敗し、
+#       かわりにブランチ直下がそのまま配信される（= precheck を通らない）。
 name: Deploy to GitHub Pages
 
 on:
@@ -46,10 +50,39 @@ jobs:
         with:
           enablement: true
 
+      # リポジトリ直下をそのまま上げると開発用のものまで配信される。
+      # 許可したものだけを集める方式にして、増やし忘れではなく
+      # 「入れ忘れ」で失敗する側に倒す。
+      - name: 公開するものだけを集める
+        run: |
+          set -e
+          rm -rf _site && mkdir -p _site
+          cp index.html sw.js manifest.webmanifest .nojekyll _site/
+          cp -r css js icons data _site/
+
+          # 開発用が混ざっていないことを機械で確かめる
+          for f in .claude CLAUDE.md README.md .github .gitignore .git; do
+            if [ -e "_site/$f" ]; then
+              echo "公開物に $f が混ざっています。上の cp を見直してください。" >&2
+              exit 1
+            fi
+          done
+
+          # 起動に要るものが欠けていないことも確かめる
+          for f in index.html sw.js manifest.webmanifest js/base.js js/main.js \
+                   css/style.css data/categories.json .nojekyll; do
+            if [ ! -e "_site/$f" ]; then
+              echo "公開物に $f がありません。" >&2
+              exit 1
+            fi
+          done
+
+          echo "公開するファイル数: $(find _site -type f | wc -l)"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment

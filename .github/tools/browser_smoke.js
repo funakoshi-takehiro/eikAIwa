@@ -4,7 +4,7 @@
  * ねらい: ビルド工程が無く、JS は同一グローバルスコープで読み込み順に依存する。
  *         「構文は通るが実行時に白画面」を CI とローカルの両方で捕まえる。
  *
- * GitHub Pages のプロジェクトページと同じサブパス配信 (/eng_std/) で開き、
+ * GitHub Pages のプロジェクトページと同じサブパス配信 (/eikAIwa/) で開き、
  * ホーム → 練習 → 解答表示 → 自己評価 → カテゴリ → 保存 → 設定 を実際に操作する。
  * コンソールエラーとページ内エラーは1件でも出たら失敗にする。
  *
@@ -16,7 +16,7 @@
 
 const { chromium } = require('playwright');
 
-const BASE = process.env.SMOKE_URL || 'http://localhost:8080/eng_std/';
+const BASE = process.env.SMOKE_URL || 'http://localhost:8080/eikAIwa/';
 const SHOT_DIR = process.env.SMOKE_SHOTS || '';
 
 const problems = [];
