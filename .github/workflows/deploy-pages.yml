@@ -86,10 +86,15 @@ jobs:
 
           echo "公開するファイル数: $(find _site -type f | wc -l)"
 
+      # include-hidden-files: true が要る。v5 は既定でドットで始まるものを
+      # tar から外すため、上で「ある」と確かめた .nojekyll が成果物に入らない。
+      # （v3 では入っていた。実測: v5 の tar 一覧に .nojekyll が無かった）
+      # 検査したものと配信するものが食い違う状態は、それ自体が事故のもと。
       - name: Upload artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: '_site'
+          include-hidden-files: true
 
       - name: Deploy to GitHub Pages
         id: deployment

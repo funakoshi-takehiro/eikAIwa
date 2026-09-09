@@ -216,6 +216,20 @@ third-party action は **SHA 固定 + `# vX.Y.Z` コメント**、Dependabot が
 実際に「Deploy from a branch」のままだった間、`/.claude/settings.json` と
 `/CLAUDE.md` が 200 で読めていた。切り替えたあとは同じパスがすべて 404。
 
+**Pages 画面のブランチ選択は、既定ブランチの設定ではない。** 別物が2つある。
+
+| 何を変えたいか | どこ |
+|---|---|
+| 配信の経路（Actions かブランチか） | Settings → **Pages** → Source |
+| リポジトリの既定ブランチ | Settings → **General** → Default branch |
+
+一度、Pages 画面で「Deploy from a branch」のブランチを切り替えたことがあり、
+Source がブランチ配信に戻って `/CLAUDE.md` がまた 200 になった。
+Actions 側の成果物は 64 ファイルで正しかったが、**ブランチ配信が勝っていた**。
+
+**見分け方**: Actions に `pages build and deployment`（`dynamic/pages/...`）の
+実行が現れていたら、それがブランチ配信。Source が「GitHub Actions」なら出ない。
+
 ### 配信されるのは既定ブランチだけ
 
 `github-pages` 環境は**既定ブランチからのデプロイしか受け付けない**。
