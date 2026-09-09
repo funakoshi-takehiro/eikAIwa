@@ -468,6 +468,46 @@ def check_nul():
                 pass
 
 
+def check_public_safety():
+    """公開してはいけない文字列が入り込んでいないか。
+
+    問題データは9,000解答あり、目視では追えない。実際に、実在の社名に
+    人物名を結び付けた解答が3件混入したまま公開直前まで残った。
+    例文には実在の組織・個人を出さない、という決まりを機械で守る。
+    ホーム配下の許可外パスは、参照リポジトリ名の再混入を止めるため。
+
+    限界: パスが文字列リテラルとして丸ごと書かれている場合しか拾えない。
+    `HOME + "/xxx"` のように連結されると一致しない（自己テストがその形）。
+    実際に起きた混入は全てリテラル形だったので、そこを止めるものと割り切る。
+    """
+    # 例文に出してはいけない実在の固有名詞
+    banned_in_data = ["pAIr Mind", "pairmind", "ペアマインド"]
+    for dirpath, dirs, files in os.walk(os.path.join(ROOT, "data")):
+        dirs[:] = [d for d in dirs if d != ".git"]
+        for f in files:
+            if not f.endswith(".json"):
+                continue
+            p = os.path.join(dirpath, f)
+            body = read(p)
+            for b in banned_in_data:
+                if b in body:
+                    err("%s: 例文に実在の固有名詞が入っています: %r "
+                        "（学習データには架空の名前を使う）" % (rel(p), b))
+
+    # 参照リポジトリの名前・パスがソースへ戻っていないか
+    src_exts = (".js", ".css", ".html", ".py", ".sh", ".md", ".json", ".yml")
+    pat = re.compile(r"/home/user/(?!eng_std\b)[A-Za-z0-9._-]+")
+    for dirpath, dirs, files in os.walk(ROOT):
+        dirs[:] = [d for d in dirs if d not in (".git", "node_modules", "data")]
+        for f in files:
+            if not f.endswith(src_exts):
+                continue
+            p = os.path.join(dirpath, f)
+            for m in pat.finditer(read(p)):
+                err("%s: 許可外のホーム配下パスが書かれています: %r "
+                    "（public 化で非公開リポジトリ名が露出する）" % (rel(p), m.group()))
+
+
 # ==========================================================================
 def main():
     check_content()
@@ -476,6 +516,7 @@ def main():
     check_sw_precache()
     check_manifest()
     check_nul()
+    check_public_safety()
 
     for n in notes:
         print("  ・%s" % n)

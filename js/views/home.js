@@ -12,7 +12,8 @@ EIK.Views.Home = function (ctx) {
   EIK.Data.load(level).then(function (all) {
     var lv = EIK.Data.levelMeta(level) || {};
     var s = EIK.SRS.stats(all);
-    var todayN = EIK.Store.todayCount();
+    // 保存データ由来なので数値へ落としてから使う（取り込みで文字列が入りうる）
+    var todayN = EIK.num(EIK.Store.todayCount());
     var goal = Math.max(1, parseInt(st.dailyGoal, 10) || 10);
     var pct = Math.min(1, todayN / goal);
     var due = EIK.SRS.pickDaily(all, goal).length;
@@ -50,7 +51,7 @@ EIK.Views.Home = function (ctx) {
         '<div class="statrow">' +
           '<div class="stat"><div class="stat__v accent">' + s.learned + '</div><div class="stat__l">学習した問題</div></div>' +
           '<div class="stat"><div class="stat__v">' + s.mastered + '</div><div class="stat__l">習得ずみ</div></div>' +
-          '<div class="stat"><div class="stat__v">' + EIK.Store.streak() + '</div><div class="stat__l">連続日数</div></div>' +
+          '<div class="stat"><div class="stat__v">' + EIK.num(EIK.Store.streak()) + '</div><div class="stat__l">連続日数</div></div>' +
         '</div>' +
 
         '<div>' +
@@ -108,7 +109,7 @@ EIK.levelPickerHtml = function (current) {
   var meta = null;
   var btns = levels.map(function (l) {
     if (l.level === current) meta = l;
-    return '<button type="button" class="lv__btn" data-level="' + l.level + '" ' +
+    return '<button type="button" class="lv__btn" data-level="' + EIK.num(l.level, 1) + '" ' +
            'aria-pressed="' + (l.level === current ? 'true' : 'false') + '">' +
            EIK.escapeHtml(l.stars) + '</button>';
   }).join('');

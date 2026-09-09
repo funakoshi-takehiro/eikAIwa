@@ -5,6 +5,12 @@
 目的: このセッションで書き込んでよいのは eng_std リポジトリの中だけ、という
       所有者の指示を、モデルの自制ではなくツール実行前の層で担保する。
 
+保護対象は「列挙」ではなく「許可されていないもの全部」として導く。
+以前は参照リポジトリの名前を直接書いていたが、このリポジトリは public に
+するため、それでは非公開リポジトリの名前がそのまま公開されてしまう。
+ALLOWED_ROOTS だけを書き、ホーム配下でそこに入らないものは一律で保護する。
+名前を書かないので、参照先が増えても減っても、このファイルは変わらない。
+
 守備範囲と限界（正直に書く）:
   - Write / Edit / NotebookEdit は file_path を絶対パス解決して判定するので確実。
   - Bash は「書き込み動詞 + 許可外パス」をパターンで拾うベストエフォート。
@@ -29,13 +35,8 @@ ALLOWED_ROOTS = [
     "/tmp",                 # 一時ファイル一般
 ]
 
-# 明示的に保護する参照リポジトリ（読み取り専用）
-PROTECTED_ROOTS = [
-    "/home/user/pairmind_hp",
-    "/home/user/haichi_webapp_2026_0510",
-    "/home/user/pyhiroba",
-    "/home/user/funakoshi-takehiro",
-]
+# この配下は、ALLOWED_ROOTS に入らない限りすべて読み取り専用として扱う
+GUARDED_HOME = "/home/user"
 
 
 def resolve(p, cwd):
@@ -51,13 +52,31 @@ def under(path, root):
     return path == root or path.startswith(root.rstrip("/") + "/")
 
 
+def is_allowed_root(path):
+    return any(under(path, r) for r in ALLOWED_ROOTS)
+
+
 def allowed(path):
+    """ホーム配下は許可ルート以外すべて拒否。ホームの外は許可ルートのみ。"""
     if path is None:
         return True
-    for r in PROTECTED_ROOTS:
-        if under(path, r):
-            return False
-    return any(under(path, r) for r in ALLOWED_ROOTS)
+    if under(path, GUARDED_HOME) and not is_allowed_root(path):
+        return False
+    return is_allowed_root(path)
+
+
+def protected_dirs():
+    """実際に存在する保護対象ディレクトリ。名前はここで初めて実体から得る
+    （ソースには残さない）。列挙できなくても allowed() 側で拒否される。"""
+    out = []
+    try:
+        for name in sorted(os.listdir(GUARDED_HOME)):
+            p = os.path.join(GUARDED_HOME, name)
+            if os.path.isdir(p) and not is_allowed_root(p):
+                out.append(p)
+    except OSError:
+        pass
+    return out
 
 
 def deny(msg):
@@ -65,8 +84,7 @@ def deny(msg):
         "書き込み範囲ガードによりブロックしました。\n"
         + msg
         + "\n書き込みが許可されているのは /home/user/eng_std 配下のみです。\n"
-        "参照リポジトリ (pairmind_hp / haichi_webapp_2026_0510 / pyhiroba / "
-        "funakoshi-takehiro/*) は読み取り専用です。\n"
+        "ホーム配下のそれ以外のディレクトリは、すべて読み取り専用として扱います。\n"
     )
     sys.exit(2)
 
@@ -85,22 +103,23 @@ def main():
     if tool in ("Write", "Edit", "NotebookEdit", "MultiEdit"):
         target = resolve(ti.get("file_path") or ti.get("notebook_path"), cwd)
         if not allowed(target):
-            deny(f"  ツール: {tool}\n  対象: {target}")
+            deny("  ツール: %s\n  対象: %s" % (tool, target))
         sys.exit(0)
 
     # --- Bash: ベストエフォート ---
     if tool == "Bash":
         cmd = ti.get("command") or ""
+        guarded = protected_dirs()
 
         # 参照クローンへの push を止める（remote 側の認証は無いが、二重の安全弁）。
         # -C を省略可能にすると「あらゆる git push」に一致してしまい、
         # eng_std への正当な push まで拒否される。-C は必須で書く。
-        for r in PROTECTED_ROOTS:
+        for r in guarded:
             if re.search(r"\bgit\s+-C\s+%s\S*\s+\S*\s*push\b" % re.escape(r), cmd):
-                deny(f"  参照リポジトリへの push: {r}")
+                deny("  参照リポジトリへの push を検出しました。")
         # cwd 自体が保護パスの中にあるなら、そこでの push も止める
         if re.search(r"\bgit\b[^|;&]*\bpush\b", cmd) and not allowed(os.path.normpath(cwd)):
-            deny(f"  保護パス内での push: cwd={cwd}")
+            deny("  保護パス内での push: cwd=%s" % cwd)
 
         # 書き込み動詞 + 保護パス の同時出現を拾う
         write_verbs = (
@@ -108,12 +127,17 @@ def main():
             r"\bchown\b|\btruncate\b|\bdd\b|\bln\b|\bsed\b[^|]*-i|\bgit\b[^|]*\b"
             r"(?:commit|push|checkout|reset|clean|apply|restore)\b)"
         )
-        has_write = re.search(write_verbs, cmd) is not None
-        if has_write:
-            for r in PROTECTED_ROOTS:
+        if re.search(write_verbs, cmd):
+            # 実在するディレクトリ名での一致
+            for r in guarded:
                 if r in cmd:
-                    deny(f"  コマンド中に保護パスと書き込み操作が同時に現れました: {r}\n"
-                         f"  command: {cmd[:400]}")
+                    deny("  コマンド中に保護パスと書き込み操作が同時に現れました。\n"
+                         "  command: %s" % cmd[:400])
+            # 実在しなくても、ホーム配下の許可外パスが書かれていれば止める
+            for m in re.finditer(r"/home/user/[A-Za-z0-9._-]+", cmd):
+                if not allowed(os.path.normpath(m.group())):
+                    deny("  コマンド中に許可外のホーム配下パスと書き込み操作が"
+                         "同時に現れました。\n  command: %s" % cmd[:400])
 
         sys.exit(0)
 

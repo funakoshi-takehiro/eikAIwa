@@ -6,12 +6,12 @@
 
 window.EIK = window.EIK || {};
 
-EIK.VERSION = '20260908l';
+EIK.VERSION = '2026090901';
 
 /* サイトのベースパスを実行時に解決する。
    ビルドが無いので base を埋め込めない。GitHub Pages のプロジェクトページ
    (/eng_std/)、独自ドメイン (/)、ローカル (任意) のどれでも動くようにする。
-   PyHiroba の siteBase() と同じ考え方。 */
+   社内の既存プロダクトの siteBase() と同じ考え方。 */
 EIK.siteBase = (function () {
   var p = location.pathname;
   // 末尾のファイル名を落としてディレクトリ部分だけにする
@@ -28,6 +28,15 @@ EIK.escapeHtml = function (s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
   });
+};
+
+/* 保存データ由来の数値は、表示する前に必ずここを通す。
+   設定＞取り込む は任意の JSON を受け取るため、streak や progress.lv に
+   文字列が入りうる。素通しすると innerHTML と属性に流れ込む
+   （実際に持続型 XSS が成立した）。数値でなければ既定値に落とす。 */
+EIK.num = function (v, fallback) {
+  var n = typeof v === 'number' ? v : parseInt(v, 10);
+  return isFinite(n) ? n : (fallback || 0);
 };
 
 EIK.el = function (tag, cls, html) {

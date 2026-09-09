@@ -7,7 +7,7 @@
 ## 最優先の制約
 
 **書き込んでよいのは `eng_std` リポジトリの中だけです。**
-参照用にクローンしている他リポジトリ（コーポレートHP、ceoprofile、hAIchi、PyHiroba）は
+参照用にクローンしている社内の他リポジトリは
 **読み取り専用**です。
 
 `.claude/hooks/guard-write-scope.py` と `.claude/settings.json` で機械的に止めています。

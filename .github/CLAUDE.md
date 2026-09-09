@@ -10,12 +10,19 @@
 ## 0. 書き込み範囲【最優先】
 
 **この作業で書き込んでよいのは `eng_std` リポジトリの中だけ。**
-参照用にクローンしている他リポジトリ（コーポレートHP、ceoprofile、hAIchi、PyHiroba）は
+参照用にクローンしている社内の他リポジトリは
 **読み取り専用**として扱うこと。
 
-これは `.claude/settings.json` の `permissions.deny` と
-`.claude/hooks/guard-write-scope.py`（PreToolUse フック）で機械的に止めている。
-`python3 .github/tools/guard_selftest.py` で16件の判定を検証できる（CI でも実行）。
+これは `.claude/hooks/guard-write-scope.py`（PreToolUse フック）で機械的に止めている。
+`python3 .github/tools/guard_selftest.py` と `guard_selftest_extra.py` の
+**26件**で検証できる（CI でも実行）。
+
+保護対象は**列挙していない**。「`ALLOWED_ROOTS` 以外のホーム配下はすべて読み取り専用」
+という規則で導いている。このリポジトリは public にするため、参照リポジトリの名前を
+ソースに書くと、それ自体が非公開リポジトリ名の公開になるため。
+同じ理由で `.claude/settings.json` の `permissions.deny` も外した
+（`permissions` のパターンに「eng_std 以外のホーム配下」を表す否定形が無く、
+ホーム全体を deny すると自分への書き込みまで止まるため）。
 
 限界も正しく理解しておくこと:
 

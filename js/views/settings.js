@@ -73,7 +73,8 @@ EIK.Views.Settings = function (ctx) {
     '<div class="card">' +
       '<div class="section-title">学習データ</div>' +
       '<p class="small muted" style="margin-bottom:14px">' +
-        'データはこの端末の中だけに保存されます。外部には一切送信しません。' +
+        '学習データはこの端末の中だけに保存され、外部には送信しません。' +
+        '（画面の書体のみ Google Fonts から取得します）' +
       '</p>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
         '<button type="button" class="btn btn-ghost" id="export">書き出す</button>' +

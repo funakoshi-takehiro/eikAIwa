@@ -43,7 +43,7 @@ EIK.Views.Bookmarks = function (ctx) {
         '<div class="sitlist">' + sits.map(function (x) {
           var p = EIK.Store.progressOf(x.id);
           return '<a class="card sitrow" href="#/practice/one/' + encodeURIComponent(x.id) + '">' +
-            '<span class="sitrow__box" data-lv="' + (p.lv || 0) + '" aria-hidden="true"></span>' +
+            '<span class="sitrow__box" data-lv="' + EIK.num(p.lv) + '" aria-hidden="true"></span>' +
             '<span class="sitrow__body">' +
               '<span class="sitrow__want">' + EIK.escapeHtml(x.want) + '</span>' +
               '<span class="sitrow__place">' + EIK.escapeHtml(x.place) + '　' +

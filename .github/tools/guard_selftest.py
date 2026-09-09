@@ -5,7 +5,13 @@
 .claude/hooks/guard-write-scope.py に実際のフック入力を流し込み、
 許可すべきものが許可され、拒否すべきものが拒否されることを確認する。
 
-このファイル自身が保護パスの文字列を含むため、Bash から直接
+参照リポジトリの実名はここには書かない。このリポジトリは public にするため、
+テストコードに名前が残ると、それ自体が非公開リポジトリ名の公開になる。
+ガードは「許可ルート以外のホーム配下は全部保護」という規則なので、
+実在しない名前でも同じ判定を通り、テストとしては等価に働く。
+実在するディレクトリを使う経路だけは、実体から1つ拾って確認する。
+
+このファイル自身がホーム配下のパス文字列を含むため、Bash から直接
 ヒアドキュメントで生成しようとするとガードに弾かれる（＝ガードが効いている証拠）。
 そのためテストはファイルとして置き、`python3 .github/tools/guard_selftest.py` で回す。
 """
@@ -19,11 +25,12 @@ HOOK = os.path.join(os.path.dirname(__file__), "..", "..", ".claude", "hooks",
 HOOK = os.path.normpath(HOOK)
 
 HOME = "/home/user"
-REF_PY = HOME + "/pyhiroba"
-REF_HP = HOME + "/pairmind_hp"
-REF_HA = HOME + "/haichi_webapp_2026_0510"
-REF_CEO = HOME + "/funakoshi-takehiro/ceoprofile"
 OWN = HOME + "/eng_std"
+
+# 架空の参照リポジトリ。実名を書かないための代役。
+REF_A = HOME + "/ref_repo_a"
+REF_B = HOME + "/ref_repo_b"
+REF_C = HOME + "/ref_owner/ref_site"
 
 # (説明, payload, 期待する exit code)
 CASES = [
@@ -34,35 +41,59 @@ CASES = [
      {"tool_name": "Write", "tool_input": {"file_path": "css/style.css"}}, 0),
     ("計画ファイルへ Write",
      {"tool_name": "Write", "tool_input": {"file_path": "/root/.claude/plans/x.md"}}, 0),
+    ("スクラッチへ Write",
+     {"tool_name": "Write", "tool_input": {"file_path": "/tmp/claude-0/x.txt"}}, 0),
     ("参照リポジトリを読むだけの Bash",
-     {"tool_name": "Bash", "tool_input": {"command": "cat " + REF_PY + "/sw.js"}}, 0),
+     {"tool_name": "Bash", "tool_input": {"command": "cat " + REF_A + "/sw.js"}}, 0),
     ("参照リポジトリを grep するだけ",
-     {"tool_name": "Bash", "tool_input": {"command": "grep -r accent " + REF_HP}}, 0),
+     {"tool_name": "Bash", "tool_input": {"command": "grep -r accent " + REF_B}}, 0),
     ("eng_std 内での書き込み Bash",
      {"tool_name": "Bash", "tool_input": {"command": "echo x > " + OWN + "/tmp.txt"}}, 0),
+    ("eng_std への git push は止めない",
+     {"tool_name": "Bash", "tool_input": {"command": "git push -u origin main"}}, 0),
 
     # --- ブロックされるべき ---
-    ("pyhiroba へ Write",
-     {"tool_name": "Write", "tool_input": {"file_path": REF_PY + "/css/style.css"}}, 2),
-    ("pairmind_hp へ Edit",
-     {"tool_name": "Edit", "tool_input": {"file_path": REF_HP + "/src/styles/global.css"}}, 2),
-    ("ceoprofile へ Edit",
-     {"tool_name": "Edit", "tool_input": {"file_path": REF_CEO + "/index.html"}}, 2),
-    ("hAIchi へ Write",
-     {"tool_name": "Write", "tool_input": {"file_path": REF_HA + "/CLAUDE.md"}}, 2),
+    ("参照リポジトリへ Write",
+     {"tool_name": "Write", "tool_input": {"file_path": REF_A + "/css/style.css"}}, 2),
+    ("参照リポジトリへ Edit",
+     {"tool_name": "Edit", "tool_input": {"file_path": REF_B + "/src/global.css"}}, 2),
+    ("入れ子の参照リポジトリへ Edit",
+     {"tool_name": "Edit", "tool_input": {"file_path": REF_C + "/index.html"}}, 2),
     (".. で脱出する相対パス",
-     {"tool_name": "Write", "tool_input": {"file_path": "../pyhiroba/x.js"}}, 2),
+     {"tool_name": "Write", "tool_input": {"file_path": "../ref_repo_a/x.js"}}, 2),
     ("リダイレクトで参照リポジトリに書く",
-     {"tool_name": "Bash", "tool_input": {"command": "echo hi > " + REF_PY + "/x.txt"}}, 2),
+     {"tool_name": "Bash", "tool_input": {"command": "echo hi > " + REF_A + "/x.txt"}}, 2),
     ("参照リポジトリを rm",
-     {"tool_name": "Bash", "tool_input": {"command": "rm -rf " + REF_HA + "/docs"}}, 2),
+     {"tool_name": "Bash", "tool_input": {"command": "rm -rf " + REF_B + "/docs"}}, 2),
     ("参照リポジトリへ git push",
-     {"tool_name": "Bash", "tool_input": {"command": "git -C " + REF_PY + " push origin main"}}, 2),
+     {"tool_name": "Bash", "tool_input": {"command": "git -C " + REF_A + " push origin main"}}, 2),
     ("参照リポジトリを sed -i",
-     {"tool_name": "Bash", "tool_input": {"command": "sed -i s/a/b/ " + REF_HP + "/package.json"}}, 2),
+     {"tool_name": "Bash", "tool_input": {"command": "sed -i s/a/b/ " + REF_B + "/package.json"}}, 2),
     ("参照リポジトリへ cp",
-     {"tool_name": "Bash", "tool_input": {"command": "cp a.txt " + REF_CEO + "/a.txt"}}, 2),
+     {"tool_name": "Bash", "tool_input": {"command": "cp a.txt " + REF_C + "/a.txt"}}, 2),
+    ("ホーム直下へ Write",
+     {"tool_name": "Write", "tool_input": {"file_path": HOME + "/notes.txt"}}, 2),
 ]
+
+
+def a_real_protected_dir():
+    """実在する保護ディレクトリを1つ、実体から拾う（ソースに名前を残さない）。"""
+    try:
+        for name in sorted(os.listdir(HOME)):
+            p = os.path.join(HOME, name)
+            if os.path.isdir(p) and p != OWN:
+                return p
+    except OSError:
+        pass
+    return None
+
+
+def run(payload):
+    payload.setdefault("cwd", OWN)
+    p = subprocess.run([sys.executable, HOOK],
+                       input=json.dumps(payload),
+                       capture_output=True, text=True)
+    return p.returncode
 
 
 def main():
@@ -70,24 +101,32 @@ def main():
         print("NG: フック本体が見つかりません: " + HOOK)
         return 1
 
-    ok = 0
-    ng = 0
-    for desc, payload, expected in CASES:
-        payload.setdefault("cwd", OWN)
-        p = subprocess.run([sys.executable, HOOK],
-                           input=json.dumps(payload),
-                           capture_output=True, text=True)
-        got = p.returncode
-        mark = "ok " if got == expected else "NG "
+    cases = list(CASES)
+
+    # 実在するディレクトリでの判定も1組だけ確認する（名前は実体から取る）
+    real = a_real_protected_dir()
+    if real:
+        cases.append(("実在する参照ディレクトリへ Write",
+                      {"tool_name": "Write", "tool_input": {"file_path": real + "/x.txt"}}, 2))
+        cases.append(("実在する参照ディレクトリを rm",
+                      {"tool_name": "Bash", "tool_input": {"command": "rm -rf " + real}}, 2))
+
+    ok = ng = 0
+    for desc, payload, expected in cases:
+        got = run(payload)
         if got == expected:
             ok += 1
+            mark = "ok "
         else:
             ng += 1
+            mark = "NG "
         want = "許可" if expected == 0 else "ブロック"
         print("  %s %-38s 期待=%s 実際exit=%d" % (mark, desc, want, got))
 
     print()
     print("  合格 %d / %d" % (ok, ok + ng))
+    if not real:
+        print("  （/home/user が無い環境のため、実在ディレクトリの2件は省略）")
     if ng:
         print("  失敗 %d 件。ガードが意図通りに効いていません。" % ng)
         return 1

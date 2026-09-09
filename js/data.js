@@ -27,7 +27,17 @@ EIK.Data = (function () {
       });
   }
 
+  /* 段階は 1/2/3 のいずれか。ここを通さないと、設定に入った任意の文字列が
+     そのままファイルパスに連結され、data/situations/ の外へ出られる
+     （'../../../../manifest' で実際に外部のファイルを取りに行けた）。
+     store.js 側でも検証しているが、パスを組む直前でも必ず丸める。 */
+  function normLevel(level) {
+    var n = parseInt(level, 10);
+    return (n === 2 || n === 3) ? n : 1;
+  }
+
   function fileFor(catId, level) {
+    level = normLevel(level);
     return 'data/situations/' + catId + (level === 1 ? '' : '-' + level) + '.json';
   }
 
@@ -55,7 +65,7 @@ EIK.Data = (function () {
      1件でも落ちたら全体を止めるのではなく、読めたぶんだけで動かす
      （オフライン中の部分的な失敗や、未作成の段階で学習を止めない）。 */
   function load(level) {
-    level = level || 1;
+    level = normLevel(level);
     if (byLevel[level]) return Promise.resolve(byLevel[level]);
     return loadCategories().then(function (cats) {
       return Promise.all(cats.map(function (c) {

@@ -1375,8 +1375,8 @@
       ],
       "answers": [
         {
-          "en": "Hi, this is Ken from pAIr Mind.",
-          "ja": "こんにちは、ペアマインドのケンです。",
+          "en": "Hi, this is Ken from Sakura Systems.",
+          "ja": "こんにちは、サクラシステムズのケンです。",
           "register": "neutral",
           "style": "basic",
           "note": "電話では this is 〜 が正しい。I am ではない。"
@@ -1403,8 +1403,8 @@
           "note": "役割を添える。相手が関係を把握できる。"
         },
         {
-          "en": "Good afternoon. My name is Ken Tanaka, from the product team at pAIr Mind.",
-          "ja": "こんにちは。ペアマインドのプロダクトチームの田中ケンと申します。",
+          "en": "Good afternoon. My name is Ken Mori, from the product team at Sakura Systems.",
+          "ja": "こんにちは。サクラシステムズのプロダクトチームの森ケンと申します。",
           "register": "formal",
           "style": "formal",
           "note": "フルネームと所属。初回の正式な通話に。"
@@ -1431,8 +1431,8 @@
           "note": "通話冒頭の必須確認。忘れると空回りする。"
         },
         {
-          "en": "We met briefly at the conference — I'm Ken from pAIr Mind.",
-          "ja": "会議で少しお話ししました。ペアマインドのケンです。",
+          "en": "We met briefly at the conference — I'm Ken from Sakura Systems.",
+          "ja": "カンファレンスで少しお話ししました。サクラシステムズのケンです。",
           "register": "polite",
           "style": "context",
           "note": "接点を思い出させる。距離が縮まる。"

@@ -58,6 +58,9 @@ EIK.applyDisplaySettings = function () {
 
       navigator.serviceWorker.register(EIK.url('sw.js'), { scope: EIK.siteBase })
         .then(function (reg) {
+          // 前回の訪問で用意され、待機したままの版があることもある
+          if (reg.waiting && wasControlled) showUpdateBar(reg);
+
           // 新しい版が用意できたら再読み込みを促すバーを出す
           reg.addEventListener('updatefound', function () {
             var sw = reg.installing;
@@ -89,12 +92,20 @@ EIK.applyDisplaySettings = function () {
     });
   }
 
+  /* 更新バーは複数回呼ばれうる（waiting の検出と updatefound の両方）。
+     そのたびに listener を足すと、1回の押下で何度も切り替えが走る。 */
+  var barWired = false;
   function showUpdateBar(reg) {
     var bar = document.getElementById('update-bar');
     var btn = document.getElementById('update-reload');
     if (!bar || !btn) return;
     bar.hidden = false;
+    if (barWired) return;
+    barWired = true;
     btn.addEventListener('click', function () {
+      btn.disabled = true;
+      // 待機中の版に切り替えを指示する。activate → claim → controllerchange
+      // と進み、下の listener が reload する。
       if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
       else location.reload();
     });

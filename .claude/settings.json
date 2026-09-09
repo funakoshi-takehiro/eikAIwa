@@ -1,17 +1,6 @@
 {
-  "$comment": "書き込み範囲を eng_std に限定する。詳細は .claude/hooks/guard-write-scope.py",
-  "permissions": {
-    "deny": [
-      "Write(//home/user/pairmind_hp/**)",
-      "Edit(//home/user/pairmind_hp/**)",
-      "Write(//home/user/haichi_webapp_2026_0510/**)",
-      "Edit(//home/user/haichi_webapp_2026_0510/**)",
-      "Write(//home/user/pyhiroba/**)",
-      "Edit(//home/user/pyhiroba/**)",
-      "Write(//home/user/funakoshi-takehiro/**)",
-      "Edit(//home/user/funakoshi-takehiro/**)"
-    ]
-  },
+  "$comment": "書き込み範囲を eng_std に限定する。実際の判定は PreToolUse フックが行う。詳細は .claude/hooks/guard-write-scope.py",
+  "$comment2": "以前はここに参照リポジトリ名を deny で列挙していたが、このリポジトリを public にすると非公開リポジトリ名がそのまま公開されるため取り除いた。permissions のパターンには「eng_std 以外のホーム配下」を表す否定形が無く、ホーム全体を deny すると eng_std への書き込みまで止まる。フック側で『許可ルート以外は全て保護』として担保している。",
   "hooks": {
     "PreToolUse": [
       {

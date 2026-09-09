@@ -101,23 +101,37 @@ EIK.Views.Practice = function (ctx) {
       });
     }
 
+    /* 「もう一度」はリンクではなくボタンにしてある。理由が2つある。
+       ・遷移先がいまのハッシュと同値になるため、リンクでは hashchange が
+         発火せず、押しても何も起きなかった。
+       ・href に mode / arg を連結していたが、これらはハッシュ由来で
+         任意の文字列を取りうる。属性を抜けてイベントハンドラを注入できた。
+       ボタンにすると、どちらも構造的に起きない。 */
     function renderDone() {
       var s = EIK.Store;
       app.innerHTML =
         '<div class="card done fade-in">' +
           '<div class="done__ic">' + icCheck() + '</div>' +
           '<h2 style="font-size:1.15rem;font-weight:700">おつかれさまでした</h2>' +
-          '<p class="muted small" style="margin-top:8px">' + answered + ' 問を練習しました。</p>' +
+          '<p class="muted small" style="margin-top:8px">' + EIK.num(answered) + ' 問を練習しました。</p>' +
           '<div class="statrow" style="margin-top:20px">' +
-            '<div class="stat"><div class="stat__v accent">' + s.todayCount() + '</div><div class="stat__l">今日の合計</div></div>' +
-            '<div class="stat"><div class="stat__v">' + s.streak() + '</div><div class="stat__l">連続日数</div></div>' +
-            '<div class="stat"><div class="stat__v">' + answered + '</div><div class="stat__l">この回</div></div>' +
+            '<div class="stat"><div class="stat__v accent">' + EIK.num(s.todayCount()) + '</div><div class="stat__l">今日の合計</div></div>' +
+            '<div class="stat"><div class="stat__v">' + EIK.num(s.streak()) + '</div><div class="stat__l">連続日数</div></div>' +
+            '<div class="stat"><div class="stat__v">' + EIK.num(answered) + '</div><div class="stat__l">この回</div></div>' +
           '</div>' +
           '<div style="display:flex;gap:8px;margin-top:20px">' +
             '<a class="btn btn-ghost btn-block" href="#/">ホーム</a>' +
-            '<a class="btn btn-primary btn-block" href="#/practice/' + mode + (arg ? '/' + arg : '') + '">もう一度</a>' +
+            '<button type="button" class="btn btn-primary btn-block" id="again">もう一度</button>' +
           '</div>' +
         '</div>';
+
+      var again = app.querySelector('#again');
+      if (again) {
+        again.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'auto' });
+          EIK.Views.Practice(ctx);   // 同じ条件で組み直す
+        });
+      }
     }
   }).catch(function (e) {
     app.innerHTML = '<div class="card empty">問題データを読み込めませんでした。<br>' +
@@ -163,7 +177,7 @@ EIK.Views.Practice = function (ctx) {
     return '<div class="card sit">' +
              '<div class="sit__head">' +
                '<div class="sit__place">' + icPin() + ' ' + EIK.escapeHtml(s.place) + '</div>' +
-               '<span class="lvbadge lvbadge--' + (s.level || 1) + '">' +
+               '<span class="lvbadge lvbadge--' + EIK.num(s.level, 1) + '">' +
                  EIK.escapeHtml(EIK.levelStars(s.level || 1)) + '</span>' +
              '</div>' +
              '<div class="sit__want">' + EIK.escapeHtml(s.want) + '</div>' +

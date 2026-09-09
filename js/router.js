@@ -21,22 +21,44 @@ EIK.Router = (function () {
     return h || '/';
   }
 
+  /* 経路は必ず / で始まる。それ以外のハッシュはページ内アンカー
+     （index.html のスキップリンク #main など）なので、経路として扱わない。
+     以前はこれを経路と解釈し、「本文へスキップ」を押すと
+     「ページが見つかりません」で本文が消えていた。 */
+  function isRoutePath(path) {
+    return path.charAt(0) === '/';
+  }
+
   function resolve(path) {
     for (var i = 0; i < ROUTES.length; i++) {
       var m = path.match(ROUTES[i].re);
       if (!m) continue;
       var params = {};
+      var bad = false;
       (ROUTES[i].keys || []).forEach(function (k, j) {
-        params[k] = decodeURIComponent(m[j + 1]);
+        // 壊れた percent エスケープ（#/categories/% など）で
+        // decodeURIComponent は例外を投げる。ここで受けないと
+        // render() の外まで抜けて、画面が前のまま固まる。
+        try {
+          params[k] = decodeURIComponent(m[j + 1]);
+        } catch (e) {
+          bad = true;
+        }
       });
+      if (bad) return null;
       return { route: ROUTES[i], params: params };
     }
     return null;
   }
 
   function render() {
-    var app = document.getElementById('app');
     var path = current();
+    if (!isRoutePath(path)) return;   // ページ内アンカー。本文はそのまま
+    renderPath(path);
+  }
+
+  function renderPath(path) {
+    var app = document.getElementById('app');
     var hit = resolve(path);
 
     EIK.TTS.stop();
@@ -73,11 +95,14 @@ EIK.Router = (function () {
 
   function start() {
     window.addEventListener('hashchange', function () {
+      if (!isRoutePath(current())) return;   // #main などは経路ではない
       window.scrollTo({ top: 0, behavior: 'auto' });
       render();
     });
     if (!location.hash) location.hash = '#/';
-    render();
+    // 初回だけは、ページ内アンカー付きの URL で開かれてもホームを描く。
+    // ここで早期 return すると「読み込み中…」のまま止まってしまう。
+    renderPath(isRoutePath(current()) ? current() : '/');
   }
 
   return { start: start, render: render, current: current };

@@ -6,9 +6,12 @@
 
    方針:
      - アプリシェルと問題データは「プリキャッシュ + キャッシュ優先」。
-       外部への依存がゼロなので、ネットワークを待つ理由がない。
+       学習に必要なものは全て同一オリジンにあるので、ネットワークを待つ理由がない。
+       （唯一の外部依存は Google Fonts。取得できなくてもシステムフォントに落ちる）
      - バックグラウンドで更新を取りに行き、新しい版が入ったらページ側に
        「再読み込み」バーを出させる（キャッシュ固着を防ぐ）。
+       切り替えは利用者が再読み込みを押したときだけ。install で skipWaiting()
+       を呼ぶと同意なしに切り替わってしまうので、呼んでいない。
      - VERSION を上げると古いキャッシュを捨てる。
        CSS/JS を変更したら index.html の ?v= と ここの VERSION を必ず両方上げる。
        （更新漏れは .github/tools/precheck.py が検出する）
@@ -18,7 +21,7 @@
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-20260908l';
+const VERSION = 'eikaiwa-2026090901';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 
@@ -87,7 +90,12 @@ self.addEventListener('install', (event) => {
         if (res && res.ok) await cache.put(u, res);
       } catch (e) { /* 取れないものは飛ばす。オンライン時に自然に埋まる */ }
     }));
-    await self.skipWaiting();
+    /* ここで skipWaiting() を呼んではいけない。
+       呼ぶと新しい版が即座に activate → clients.claim() まで進み、
+       開いているページに controllerchange が飛んで location.reload() が走る。
+       利用者は同意していないし、入力中の答えも消える（実測で確認した）。
+       更新は「更新バー」の再読み込みボタンから、下の message で行う。
+       初回インストールでは待機する相手がいないので、そのまま activate される。 */
   })());
 });
 

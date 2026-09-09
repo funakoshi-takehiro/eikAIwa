@@ -4,6 +4,8 @@
 git push の判定は一度壊した実績がある（-C を省略可能にしたため、
 あらゆる `git push` に一致し、自分のリポジトリへの正当な push まで拒否した）。
 その再発を専用に見張る。
+
+参照リポジトリの実名は書かない（理由は guard_selftest.py の冒頭に同じ）。
 """
 import json
 import os
@@ -14,8 +16,8 @@ HOOK = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..",
                                      ".claude", "hooks", "guard-write-scope.py"))
 HOME = "/home/user"
 OWN = HOME + "/eng_std"
-REF_PY = HOME + "/pyhiroba"
-REF_HP = HOME + "/pairmind_hp"
+REF_A = HOME + "/ref_repo_a"
+REF_B = HOME + "/ref_repo_b"
 
 CASES = [
     ("自分のリポジトリへ push",
@@ -27,14 +29,14 @@ CASES = [
     ("自分のリポジトリで commit",
      {"tool_name": "Bash", "tool_input": {"command": "git commit -m 'x'"}, "cwd": OWN}, 0),
     ("参照リポジトリへ push（-C 付き）",
-     {"tool_name": "Bash", "tool_input": {"command": "git -C " + REF_PY + " push origin main"},
+     {"tool_name": "Bash", "tool_input": {"command": "git -C " + REF_A + " push origin main"},
       "cwd": OWN}, 2),
     ("参照リポジトリの中から push",
      {"tool_name": "Bash", "tool_input": {"command": "git push origin main"},
-      "cwd": REF_HP}, 2),
+      "cwd": REF_B}, 2),
     ("参照リポジトリの remote を書き換える",
      {"tool_name": "Bash",
-      "tool_input": {"command": "git -C " + REF_PY + " remote set-url --push origin X"},
+      "tool_input": {"command": "git -C " + REF_A + " remote set-url --push origin X"},
       "cwd": OWN}, 2),
 ]
 

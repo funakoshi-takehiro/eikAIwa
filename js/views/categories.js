@@ -64,7 +64,7 @@ EIK.Views.Category = function (ctx) {
     var rows = list.map(function (x) {
       var p = EIK.Store.progressOf(x.id);
       return '<a class="card sitrow" href="#/practice/one/' + encodeURIComponent(x.id) + '">' +
-        '<span class="sitrow__box" data-lv="' + (p.lv || 0) + '" aria-hidden="true"></span>' +
+        '<span class="sitrow__box" data-lv="' + EIK.num(p.lv) + '" aria-hidden="true"></span>' +
         '<span class="sitrow__body">' +
           '<span class="sitrow__want">' + EIK.escapeHtml(x.want) + '</span>' +
           '<span class="sitrow__place">' + EIK.escapeHtml(x.place) + '</span>' +
@@ -93,7 +93,7 @@ EIK.Views.Category = function (ctx) {
         ? '<div class="sitlist">' + rows + '</div>'
         : '<div class="card empty">' + EIK.escapeHtml(EIK.levelStars(level)) +
           ' のこのカテゴリはまだ準備中です。' +
-          (planned ? '<br>' + planned + '問を予定しています。' : '') +
+          (planned ? '<br>' + EIK.num(planned) + '問を予定しています。' : '') +
           '<br>上の段階を切り替えるとほかの難易度を練習できます。</div>') +
       '</div>' +
       '<a class="btn btn-ghost btn-block" href="#/categories">カテゴリ一覧へ戻る</a>' +

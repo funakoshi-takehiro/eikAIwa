@@ -1,5 +1,5 @@
 /* ── 保存領域 (localStorage) ───────────────────────────────────────────────
-   学習履歴・設定・ブックマークを保持する。外部通信は一切しない。
+   学習履歴・設定・ブックマークを保持する。ここから外部への送信は一切しない。
    容量は数百 KB 程度に収まる見込み（300問 × 小さなレコード）。
    ────────────────────────────────────────────────────────────────────────── */
 'use strict';
@@ -31,29 +31,84 @@ EIK.Store = (function () {
     lastDay: ''
   };
 
+  /* 値が取りうる範囲。ここを外れたものは既定値に落とす。
+     theme / textSize / lineHeight は <html> の属性になり、
+     level は読み込むファイル名の一部になるため、素通しできない。 */
+  var ENUMS = {
+    theme: ['auto', 'light', 'dark'],
+    textSize: ['s', 'm', 'l', 'xl'],
+    lineHeight: ['s', 'm', 'l'],
+    level: [1, 2, 3]
+  };
+  var YMD = /^\d{4}-\d{2}-\d{2}$/;
+
   var state = null;
 
   function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function isObj(o) { return o && typeof o === 'object' && !Array.isArray(o); }
+  function n(v, d) { var x = Number(v); return isFinite(x) ? x : d; }
+
+  /* 保存データは「外から来たもの」として扱う。
+     設定＞取り込む は任意の JSON を受け取れるし、localStorage は
+     同一オリジンの別のコードからも書ける。実際、型を見ていなかったため
+     streak や progress.lv に文字列を入れて持続型 XSS が成立した。
+     ここで形を整えてから、はじめてアプリの中へ入れる。 */
+  function sanitize(obj) {
+    var s = clone(DEFAULTS);
+    if (!isObj(obj)) return s;
+
+    if (isObj(obj.settings)) {
+      Object.keys(DEFAULTS.settings).forEach(function (k) {
+        if (!(k in obj.settings)) return;
+        var v = obj.settings[k], d = DEFAULTS.settings[k];
+        if (ENUMS[k]) { if (ENUMS[k].indexOf(v) >= 0) s.settings[k] = v; }
+        else if (typeof d === 'boolean') { if (typeof v === 'boolean') s.settings[k] = v; }
+        else if (typeof d === 'number') { s.settings[k] = n(v, d); }
+        else if (typeof v === 'string') { s.settings[k] = v; }
+      });
+      s.settings.countdown = Math.max(0, Math.min(600, n(s.settings.countdown, 10)));
+      s.settings.dailyGoal = Math.max(1, Math.min(300, n(s.settings.dailyGoal, 10)));
+      s.settings.ttsRate = Math.max(0.1, Math.min(2, n(s.settings.ttsRate, 0.95)));
+      s.settings.ttsVoice = String(s.settings.ttsVoice || '').slice(0, 200);
+    }
+
+    if (isObj(obj.progress)) {
+      Object.keys(obj.progress).forEach(function (id) {
+        var p = obj.progress[id];
+        if (!isObj(p)) return;
+        s.progress[String(id)] = {
+          lv: Math.max(0, Math.min(5, n(p.lv, 0))),
+          due: YMD.test(p.due) ? p.due : '',
+          seen: Math.max(0, n(p.seen, 0)),
+          got: Math.max(0, n(p.got, 0)),
+          last: YMD.test(p.last) ? p.last : ''
+        };
+      });
+    }
+
+    ['bookmarks', 'answerMarks'].forEach(function (k) {
+      if (!Array.isArray(obj[k])) return;
+      s[k] = obj[k].filter(function (v) { return typeof v === 'string'; })
+                   .map(function (v) { return v.slice(0, 200); });
+    });
+
+    if (isObj(obj.days)) {
+      Object.keys(obj.days).forEach(function (d) {
+        if (YMD.test(d)) s.days[d] = Math.max(0, n(obj.days[d], 0));
+      });
+    }
+
+    s.streak = Math.max(0, n(obj.streak, 0));
+    s.lastDay = YMD.test(obj.lastDay) ? obj.lastDay : '';
+    return s;
+  }
 
   function load() {
     if (state) return state;
     state = clone(DEFAULTS);
     try {
       var raw = localStorage.getItem(KEY);
-      if (raw) {
-        var saved = JSON.parse(raw);
-        // 浅いマージ。settings だけは既定値で埋めてから上書きする
-        Object.keys(DEFAULTS).forEach(function (k) {
-          if (saved[k] == null) return;
-          if (k === 'settings') {
-            Object.keys(saved.settings || {}).forEach(function (sk) {
-              if (sk in DEFAULTS.settings) state.settings[sk] = saved.settings[sk];
-            });
-          } else {
-            state[k] = saved[k];
-          }
-        });
-      }
+      if (raw) state = sanitize(JSON.parse(raw));
     } catch (e) {
       // 壊れていても既定値で起動する（学習を止めない）
       console.warn('保存データを読めませんでした。既定値で起動します。', e);
@@ -61,9 +116,42 @@ EIK.Store = (function () {
     return state;
   }
 
+  /* 保存の直前に、いま localStorage にあるものと突き合わせる。
+     以前は state 全体をそのまま書き戻していたため、2つのタブで開くと
+     後から保存した側が相手の学習記録を丸ごと消していた。 */
+  function mergeStored(mine) {
+    var stored;
+    try { stored = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { return mine; }
+    if (!isObj(stored)) return mine;
+    var theirs = sanitize(stored);
+    var out = mine;
+
+    Object.keys(theirs.progress).forEach(function (id) {
+      var a = out.progress[id], b = theirs.progress[id];
+      // 同じ問題は「最後に触った日」が新しい方を残す
+      if (!a || String(b.last) > String(a.last)) out.progress[id] = b;
+    });
+    Object.keys(theirs.days).forEach(function (d) {
+      // 同じ日は多い方を採る。書き込みのたびに突き合わせるので、
+      // 取りこぼすのは相手が直前に増やした分だけに収まる。
+      out.days[d] = Math.max(n(out.days[d], 0), theirs.days[d]);
+    });
+    ['bookmarks', 'answerMarks'].forEach(function (k) {
+      theirs[k].forEach(function (v) { if (out[k].indexOf(v) < 0) out[k].push(v); });
+    });
+    if (String(theirs.lastDay) > String(out.lastDay)) {
+      out.lastDay = theirs.lastDay;
+      out.streak = theirs.streak;
+    }
+    // settings はこのタブの操作を優先する（利用者がいま変えたもの）
+    return out;
+  }
+
   var saveTimer = null;
 
-  function flush() {
+  /* いまの state をそのまま書く。突き合わせをしない経路。
+     取り込みとリセットは「置き換え」が目的なので、こちらを使う。 */
+  function writeNow() {
     if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; }
     if (!state) return;
     try {
@@ -72,6 +160,13 @@ EIK.Store = (function () {
       console.warn('保存に失敗しました（容量超過の可能性）', e);
       if (EIK.UI) EIK.UI.toast('保存できませんでした。ブラウザの空き容量をご確認ください。');
     }
+  }
+
+  /* 通常の保存。他のタブの記録を消さないよう、書く前に突き合わせる。 */
+  function flush() {
+    if (!state) return;
+    state = mergeStored(state);
+    writeNow();
   }
 
   function save() {
@@ -86,6 +181,13 @@ EIK.Store = (function () {
   window.addEventListener('pagehide', flush);
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === 'hidden') flush();
+  });
+
+  /* 他のタブが保存したら、こちらの手元にも取り込む。
+     置き換えではなく突き合わせなので、このタブの未保存分は消えない。 */
+  window.addEventListener('storage', function (e) {
+    if (e.key !== KEY || !state) return;
+    state = mergeStored(state);
   });
 
   function settings() { return load().settings; }
@@ -150,26 +252,19 @@ EIK.Store = (function () {
 
   function exportJson() { return JSON.stringify(load(), null, 2); }
 
+  /* 取り込みは、このアプリで最も「外から来たもの」が入る場所。
+     形の検査は sanitize に一本化してある（load と同じ道を通す）。 */
   function importJson(text) {
     var obj = JSON.parse(text);
-    if (!obj || typeof obj !== 'object') throw new Error('形式が正しくありません');
-    state = clone(DEFAULTS);
-    Object.keys(DEFAULTS).forEach(function (k) {
-      if (obj[k] != null) state[k] = obj[k];
-    });
-    // settings は既定値で穴埋め
-    var s = clone(DEFAULTS.settings);
-    Object.keys(obj.settings || {}).forEach(function (sk) {
-      if (sk in s) s[sk] = obj.settings[sk];
-    });
-    state.settings = s;
-    save();
+    if (!isObj(obj)) throw new Error('形式が正しくありません');
+    state = sanitize(obj);
+    writeNow();   // 取り込みは置き換え。突き合わせると元のデータが戻ってしまう
   }
 
   function reset() {
     state = clone(DEFAULTS);
     try { localStorage.removeItem(KEY); } catch (e) { /* noop */ }
-    save();
+    writeNow();   // リセットも置き換え
   }
 
   function raw() { return load(); }

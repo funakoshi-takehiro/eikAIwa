@@ -1,6 +1,6 @@
 /* ==========================================================================
    eikAIwa — pAIr Mind デザインテーマ
-   トークンは pyhiroba/css/style.css の :root を出発点にしている
+   トークンは社内の既存プロダクトの :root を出発点にしている
    （コントラスト AA 監査済み・文字サイズ/行間スケール対応の最も成熟した版）。
    ブランドは #028DAE 一色 + 28px の方眼紙グリッド + Zen Kaku Gothic New。
    ========================================================================== */
@@ -71,7 +71,7 @@
 
 /* --------------------------------------------------------------------------
    ダークモード
-   hAIchi 方式:「ダーク用トークンは [data-theme=dark] の中でだけ定義し、
+   社内の既存方式:「ダーク用トークンは [data-theme=dark] の中でだけ定義し、
    利用側は var(--x, リテラル) と書く」…にしたいところだが、本アプリは
    トークン数が少なくすべて :root で定義済みなので、素直に上書きする。
    グリッド線とブランド色は暗背景でのコントラストを確保するため明るくする。
@@ -625,7 +625,7 @@ select.sel {
 .modal__foot { display: flex; gap: 8px; margin-top: 20px; }
 .modal__foot .btn { flex: 1 1 auto; }
 
-/* 入場アニメーション（ceoprofile の fadeSlideIn） */
+/* 入場アニメーション（社内の既存プロダクトから踏襲） */
 .fade-in { animation: fadeSlideIn .4s var(--ease) both; }
 @keyframes fadeSlideIn {
   from { opacity: 0; transform: translateY(10px); }
