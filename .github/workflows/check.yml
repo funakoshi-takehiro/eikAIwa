@@ -45,6 +45,16 @@ jobs:
       - name: Playwright を取得
         run: |
           set -e
+          # --with-deps は apt-get update を走らせる。runner 標準イメージには
+          # Google Chrome の apt リポジトリが登録されているが、Playwright が使う
+          # のは同梱の Chromium なので、このリポジトリは要らない。
+          # 一方 apt-get update は1つでも壊れたリポジトリがあると全体が失敗する。
+          # 実際、dl.google.com が Release と一致しない Packages.gz を配信して
+          # 「Hash Sum mismatch」で CI が落ちた（こちらのコードとは無関係）。
+          # 使わないものを外して、巻き添えを断つ。
+          sudo rm -f /etc/apt/sources.list.d/google-chrome.list \
+                     /etc/apt/sources.list.d/google-chrome-*.list \
+                     /etc/apt/sources.list.d/google-chrome.sources
           npm install -g playwright@1.56.1
           npx --yes playwright@1.56.1 install --with-deps chromium
           NODE_PATH="$(npm root -g)" node -e "require('playwright')"
