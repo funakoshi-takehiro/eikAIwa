@@ -9,7 +9,6 @@ EIK.Router = (function () {
     { re: /^\/?$/,                          view: 'Home',       tab: 'home'       },
     { re: /^\/categories$/,                 view: 'Categories', tab: 'categories' },
     { re: /^\/categories\/([^/]+)$/,        view: 'Category',   tab: 'categories', keys: ['id'] },
-    { re: /^\/bookmarks$/,                  view: 'Bookmarks',  tab: 'bookmarks'  },
     { re: /^\/settings$/,                   view: 'Settings',   tab: 'settings'   },
     { re: /^\/install$/,                    view: 'Install',    tab: 'settings'   },
     { re: /^\/practice\/([^/]+)$/,          view: 'Practice',   tab: 'home', keys: ['mode'] },

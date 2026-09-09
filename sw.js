@@ -21,7 +21,7 @@
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-2026090905';
+const VERSION = 'eikaiwa-2026090907';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 
@@ -38,13 +38,11 @@ const SHELL = [
   'js/base.js',
   'js/store.js',
   'js/data.js',
-  'js/srs.js',
   'js/tts.js',
   'js/ui.js',
   'js/views/home.js',
   'js/views/practice.js',
   'js/views/categories.js',
-  'js/views/bookmarks.js',
   'js/views/settings.js',
   'js/views/install.js',
   'js/router.js',

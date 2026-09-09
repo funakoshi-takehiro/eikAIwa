@@ -42,9 +42,6 @@ EIK.Views.Settings = function (ctx) {
         { v: 0, l: 'なし' }, { v: 5, l: '5秒' }, { v: 10, l: '10秒' }, { v: 20, l: '20秒' }
       ], st.countdown)) +
       row('自分の答えのメモ欄', '練習中に入力欄を出す', sw('showMyAnswer', st.showMyAnswer)) +
-      row('1回の問題数', '「今日の練習」で出す問題数', seg('dailyGoal', [
-        { v: 5, l: '5' }, { v: 10, l: '10' }, { v: 20, l: '20' }, { v: 30, l: '30' }
-      ], st.dailyGoal)) +
     '</div>' +
 
     '<div class="card">' +
@@ -71,21 +68,18 @@ EIK.Views.Settings = function (ctx) {
     '</div>' +
 
     '<div class="card">' +
-      '<div class="section-title">学習データ</div>' +
+      '<div class="section-title">データ</div>' +
       '<p class="small muted" style="margin-bottom:14px">' +
-        '学習データはこの端末の中だけに保存され、外部には送信しません。' +
+        '<b>学習の記録は残していません。</b>出題は毎回ランダムです。' +
+        'この端末に保存しているのは、上の設定だけです。どこにも送信しません。' +
         '（画面の書体のみ Google Fonts から取得します）' +
       '</p>' +
-      '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-        '<button type="button" class="btn btn-ghost" id="export">書き出す</button>' +
-        '<button type="button" class="btn btn-ghost" id="import">取り込む</button>' +
-        '<button type="button" class="btn btn-ghost" id="reset">リセット</button>' +
-      '</div>' +
+      '<button type="button" class="btn btn-ghost" id="reset">設定を初期値に戻す</button>' +
     '</div>' +
 
     '<div class="card">' +
       '<div class="section-title">このアプリについて</div>' +
-      '<p class="small muted">eikAIwa — 版 ' + EIK.VERSION + '</p>' +
+      '<p class="small muted">eikAIwa — 版 ' + EIK.escapeHtml(EIK.VERSION) + '</p>' +
       '<p class="small muted" style="margin-top:6px">オフラインで動作します。' +
         '<a href="#/install" style="color:var(--accent);font-weight:700">ホーム画面への追加方法</a></p>' +
     '</div>' +
@@ -121,42 +115,15 @@ EIK.Views.Settings = function (ctx) {
     });
   });
 
-  app.querySelector('#export').addEventListener('click', function () {
-    var text = EIK.Store.exportJson();
-    // 配信元がダウンロードを塞ぐ環境でも取り出せるよう、本文をそのまま見せる
-    EIK.UI.dialog({
-      title: '学習データの書き出し',
-      message: '下のテキストをすべてコピーして保存してください。',
-      prompt: true, value: text,
-      buttons: [{ label: '閉じる', value: null, variant: 'ghost' }]
-    });
-  });
-
-  app.querySelector('#import').addEventListener('click', function () {
-    EIK.UI.prompt('書き出したテキストを貼り付けてください。現在のデータは置き換わります。',
-                  { title: '学習データの取り込み', placeholder: '{ … }' })
-      .then(function (v) {
-        if (v == null || !String(v).trim()) return;
-        try {
-          EIK.Store.importJson(v);
-          EIK.applyDisplaySettings();
-          EIK.UI.toast('取り込みました');
-          location.hash = '#/';
-        } catch (e) {
-          EIK.UI.alert('取り込めませんでした。\n' + (e.message || e), 'エラー');
-        }
-      });
-  });
-
   app.querySelector('#reset').addEventListener('click', function () {
-    EIK.UI.confirm('学習履歴・保存・設定をすべて消します。元に戻せません。',
-                   { title: 'リセット', okText: '消す' })
+    EIK.UI.confirm('テーマ・文字サイズ・読み上げなどの設定を初期値に戻します。',
+                   { title: '設定を初期化', okText: '戻す' })
       .then(function (ok) {
         if (!ok) return;
         EIK.Store.reset();
         EIK.applyDisplaySettings();
-        EIK.UI.toast('リセットしました');
-        location.hash = '#/';
+        EIK.UI.toast('設定を初期値に戻しました');
+        EIK.Router.render();
       });
   });
 };

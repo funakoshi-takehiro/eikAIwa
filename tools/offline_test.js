@@ -8,7 +8,7 @@
  * 手順:
  *   1. オンラインで開き、Service Worker がプリキャッシュを終えるまで待つ
  *   2. context.setOffline(true) で通信を遮断する
- *   3. リロードして、ホーム → 練習 → 10解答 → 自己評価 が一周できるか見る
+ *   3. リロードして、ホーム → 練習 → 10解答 → 次の問題 が一周できるか見る
  *
  * 使い方:
  *   NODE_PATH=/opt/node22/lib/node_modules node tools/offline_test.js
@@ -40,7 +40,7 @@ function step(name, ok, detail) {
   try {
     // ---------- 1. オンラインで開いてプリキャッシュを待つ ----------
     await page.goto(BASE, { waitUntil: 'networkidle' });
-    await page.waitForSelector('.hero', { timeout: 15000 });
+    await page.waitForSelector('.steps', { timeout: 15000 });
 
     // SW が activate し、全カテゴリのプリキャッシュが載るまで待つ
     const cached = await page.evaluate(async () => {
@@ -83,7 +83,7 @@ function step(name, ok, detail) {
 
     // ---------- 3. オフラインのままリロードして一周する ----------
     await page.reload({ waitUntil: 'domcontentloaded' });
-    await page.waitForSelector('.hero', { timeout: 15000 });
+    await page.waitForSelector('.steps', { timeout: 15000 });
     step('オフラインでもホームが開く', true);
 
     const catCount = await page.evaluate(async (base) => {
@@ -93,7 +93,7 @@ function step(name, ok, detail) {
     }, BASE);
     step('オフラインでカテゴリ定義を読める', catCount === 13, `${catCount} カテゴリ`);
 
-    await page.locator('a[href="#/practice/daily"]').first().click();
+    await page.locator('a[href="#/practice/random"]').first().click();
     await page.waitForSelector('.sit__want', { timeout: 15000 });
     const want = (await page.locator('.sit__want').first().innerText()).trim();
     step('オフラインで状況カードが出る', want.length > 0, want.slice(0, 44));
@@ -108,16 +108,15 @@ function step(name, ok, detail) {
       await page.screenshot({ path: `${SHOT_DIR}/offline-answers.png` });
     }
 
-    await page.locator('.judge__btn[data-j="got"]').click();
-    await page.waitForSelector('.sit__want', { timeout: 15000 });
-    step('オフラインで自己評価して次へ進める', true);
+    await page.locator('#next').click();
+    await page.waitForSelector('#reveal', { timeout: 15000 });
+    step('オフラインで次の問題へ進める', true);
 
-    await page.waitForTimeout(400);
-    const saved = await page.evaluate(() => {
-      const raw = localStorage.getItem('eikAIwa.v1');
-      return raw ? Object.keys(JSON.parse(raw).progress || {}).length : 0;
-    });
-    step('オフラインでも学習履歴が保存される', saved >= 1, `${saved} 件`);
+    // 設定はオフラインでも書ける（履歴は元から持たない）
+    await page.waitForTimeout(300);
+    const keys = await page.evaluate(() => Object.keys(localStorage));
+    step('保存しているのは設定だけ',
+      keys.every((k) => k === 'eikAIwa.v2'), keys.join(', ') || '(空)');
 
     // 別カテゴリもオフラインで読めるか（全13カテゴリがキャッシュされている確認）
     await page.goto(BASE + '#/categories/trouble', { waitUntil: 'domcontentloaded' });

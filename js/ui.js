@@ -180,25 +180,19 @@ EIK.UI.wireLevelPicker = function (root) {
     b.addEventListener('click', function () {
       var lv = parseInt(b.getAttribute('data-level'), 10);
       if (lv === (EIK.Store.settings().level || 1)) return;
-      EIK.Store.setSetting('level', lv);
-      EIK.Store.flush();
+      EIK.Store.setSetting('level', lv);   // setSetting が即書きするので flush は不要
       EIK.Router.render();
     });
   });
 };
 
-/* 状況1件の行。カテゴリ詳細と保存画面が使う。
-   opts.showLevel: 場所のあとに ★ を添える（保存は段階をまたぐので要る）。 */
-EIK.UI.sitRow = function (sit, opts) {
-  opts = opts || {};
-  var p = EIK.Store.progressOf(sit.id);
+/* 状況1件の行。カテゴリ詳細で使う。
+   以前は左端に習熟度の四角を出していたが、進捗を持たなくなったので外した。 */
+EIK.UI.sitRow = function (sit) {
   return '<a class="card sitrow" href="#/practice/one/' + encodeURIComponent(sit.id) + '">' +
-    '<span class="sitrow__box" data-lv="' + EIK.num(p.lv) + '" aria-hidden="true"></span>' +
     '<span class="sitrow__body">' +
       '<span class="sitrow__want">' + EIK.escapeHtml(sit.want) + '</span>' +
-      '<span class="sitrow__place">' + EIK.escapeHtml(sit.place) +
-        (opts.showLevel ? '　' + EIK.escapeHtml(EIK.levelStars(sit.level || 1)) : '') +
-      '</span>' +
+      '<span class="sitrow__place">' + EIK.escapeHtml(sit.place) + '</span>' +
     '</span>' +
   '</a>';
 };
@@ -220,17 +214,10 @@ EIK.UI.wireSpeak = function (root) {
   });
 };
 
-/* 解答1件。練習画面と保存画面が使う。
-   opts.mark {id, idx}: ☆（この言い方を保存）を出す
-   opts.note:            丁寧さラベルの隣に添える一言 */
+/* 解答1件。opts.note で丁寧さラベルの隣に一言を添える。 */
 EIK.UI.answerItem = function (a, opts) {
   opts = opts || {};
   var tools = EIK.UI.speakButton(a.en);
-  if (opts.mark) {
-    tools += '<button type="button" class="iconbtn" data-mark="' + EIK.num(opts.mark.idx) +
-             '" aria-pressed="' + (EIK.Store.isAnswerMarked(opts.mark.id, opts.mark.idx) ? 'true' : 'false') +
-             '" aria-label="この言い方を保存">' + EIK.icon('star') + '</button>';
-  }
   return '<div class="ans__item">' +
     '<div class="ans__head">' +
       '<div class="ans__en">' + EIK.escapeHtml(a.en) + '</div>' +

@@ -5,7 +5,7 @@
  *         「構文は通るが実行時に白画面」を CI とローカルの両方で捕まえる。
  *
  * GitHub Pages のプロジェクトページと同じサブパス配信 (/eikAIwa/) で開き、
- * ホーム → 練習 → 解答表示 → 自己評価 → カテゴリ → 保存 → 設定 を実際に操作する。
+ * ホーム → 練習 → 解答表示 → 次へ → カテゴリ → 設定 を実際に操作する。
  * コンソールエラーとページ内エラーは1件でも出たら失敗にする。
  *
  * 使い方:
@@ -56,13 +56,31 @@ function step(name, ok, detail) {
   try {
     // ---------- ホーム ----------
     await page.goto(BASE, { waitUntil: 'networkidle' });
-    await page.waitForSelector('.hero', { timeout: 10000 });
+    await page.waitForSelector('.steps', { timeout: 10000 });
     step('ホームが描画される', true);
+
+    // ホームは「これは何をするアプリか」を語る場所。数字の羅列に戻さない。
+    const lead = (await page.locator('.lead').innerText()).replace(/\s+/g, '');
+    step('何をするアプリかが書いてある', lead.length > 10, lead);
+    const stepsN = await page.locator('.steps li').count();
+    step('3手順が並ぶ', stepsN === 3, `${stepsN} 件`);
+    step('記録を残さないと明記している',
+      /記録は残しません/.test(await page.locator('.app').innerText()));
 
     const title = await page.title();
     step('title が設定されている', /eikAIwa/.test(title), title);
 
-    const startBtn = page.locator('a[href="#/practice/daily"]').first();
+    /* タブバーが等分されているか。列数を CSS に書くと、タブを増減したときに
+       空の列が残って全体が寄る。実際に4列指定のままタブを3つにして踏んだ。 */
+    const tabs = await page.$$eval('.tabbar__item', (els) =>
+      els.map((e) => { const r = e.getBoundingClientRect(); return r.left + r.width / 2; }));
+    const vw = page.viewportSize().width;
+    const expectCenters = tabs.map((_, i) => vw * (i + 0.5) / tabs.length);
+    step('タブが画面幅を等分している',
+      tabs.length > 0 && tabs.every((c, i) => Math.abs(c - expectCenters[i]) < 2),
+      `${tabs.length} 個 / 中心 ${tabs.map((c) => Math.round(c)).join(', ')}`);
+
+    const startBtn = page.locator('a[href="#/practice/random"]').first();
     step('「練習をはじめる」がある', (await startBtn.count()) > 0);
 
     // 初回訪問で「新しい版が公開されています」バーが出てはいけない
@@ -101,34 +119,27 @@ function step(name, ok, detail) {
     step('丁寧さが3種類以上に散っている', regClasses.length >= 3, regClasses.join(', '));
     await shot('03-answers');
 
-    /* ---------- 保存（☆）----------
-       ここで保存しておかないと、後の保存画面が「空です」の分岐しか通らない。
-       実際、保存画面はデータが入った経路が一度も踏まれていなかった。 */
-    const sitStar = page.locator('#bm');
-    await sitStar.click();
-    step('状況を☆で保存できる', await sitStar.getAttribute('aria-pressed') === 'true');
-
-    const ansStar = page.locator('[data-mark]').first();
-    step('言い方の☆が各解答に付く', (await page.locator('[data-mark]').count()) === 10);
-    await ansStar.click();
-    step('言い方を☆で保存できる', await ansStar.getAttribute('aria-pressed') === 'true');
-
-    // ---------- 自己評価 ----------
-    step('自己評価ボタンが3つ', (await page.locator('.judge__btn').count()) === 3);
-    await page.locator('.judge__btn[data-j="got"]').click();
-    await page.waitForSelector('.sit__want', { timeout: 10000 });
+    // ---------- 次の問題へ ----------
+    step('自己評価ボタンは無い', (await page.locator('.judge__btn').count()) === 0);
+    const firstWant = await page.locator('.sit__want').first().innerText();
+    await page.locator('#next').click();
+    await page.waitForSelector('#reveal', { timeout: 10000 });
     step('次の問題へ進む', true);
 
-    // localStorage に記録されたか（まとめ書きの 120ms を待つ）
-    await page.waitForTimeout(400);
-    const saved = await page.evaluate(() => {
-      const raw = localStorage.getItem('eikAIwa.v1');
-      if (!raw) return null;
-      const o = JSON.parse(raw);
-      return { progress: Object.keys(o.progress || {}).length, days: o.days };
+    /* 学習履歴を持たないことを、実際の保存領域で確かめる。
+       localStorage に置けるのは設定だけ。ここが緩むと
+       「端末を変えたら消える記録」が黙って復活する。 */
+    await page.waitForTimeout(300);
+    const ls = await page.evaluate(() => {
+      const out = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        out[k] = localStorage.getItem(k);
+      }
+      return out;
     });
-    step('学習履歴が localStorage に残る',
-      saved && saved.progress >= 1, JSON.stringify(saved));
+    const keys = Object.keys(ls);
+    step('練習しても何も書き込まない', keys.length === 0, keys.join(', ') || '(空)');
 
     // ---------- カテゴリ ----------
     await page.goto(BASE + '#/categories', { waitUntil: 'networkidle' });
@@ -184,22 +195,10 @@ function step(name, ok, detail) {
     await page.waitForSelector('.sitrow, .empty', { timeout: 10000 });
     step('未作成カテゴリでも画面が壊れない', true);
 
-    // ---------- 保存 ----------
+    // 消した経路を開いても壊れないこと（古いブックマークや共有 URL 対策）
     await page.goto(BASE + '#/bookmarks', { waitUntil: 'networkidle' });
-    // 3段階ぶんを読んでから描くので、この画面にしかないものを待つ
-    await page.waitForSelector('a[href="#/practice/bookmarks"]', { timeout: 10000 });
-    step('保存画面が開く', true);
-
-    const bSits = await page.locator('.sitrow').count();
-    const bAns = await page.locator('.ans__item').count();
-    step('保存した状況が並ぶ', bSits === 1, `${bSits} 件`);
-    step('保存した言い方が並ぶ', bAns === 1, `${bAns} 件`);
-
-    // 保存は段階をまたぐので、行に ★ が要る
-    const bPlace = await page.locator('.sitrow__place').first().innerText();
-    step('保存した状況に難易度が出る', /★/.test(bPlace), bPlace.trim());
-    step('保存した言い方に丁寧さラベルが出る', (await page.locator('.ans__item .reg').count()) === 1);
-    await shot('04b-bookmarks');
+    await page.waitForSelector('.empty', { timeout: 10000 });
+    step('廃止した経路は案内に落ちる', /見つかりません/.test(await page.locator('.app').innerText()));
 
     // ---------- 設定 ----------
     await page.goto(BASE + '#/settings', { waitUntil: 'networkidle' });
@@ -218,6 +217,20 @@ function step(name, ok, detail) {
     await page.waitForTimeout(200);
     const ts = await page.evaluate(() => document.documentElement.getAttribute('data-text'));
     step('文字サイズを変えられる', ts === 'l', String(ts));
+
+    /* 設定を触った「あと」に保存領域を見る。空のまま通る検査にしないため、
+       ここまでで必ず1件書かれている状態にしてから確かめる。 */
+    await page.waitForTimeout(200);
+    const ls2 = await page.evaluate(() => {
+      const o = {};
+      for (let i = 0; i < localStorage.length; i++) o[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
+      return o;
+    });
+    const k2 = Object.keys(ls2);
+    step('保存されたのは設定だけ', k2.length === 1 && k2[0] === 'eikAIwa.v2', k2.join(', ') || '(空)');
+    step('設定の中身に履歴が混ざっていない',
+      !/progress|streak|bookmark|answerMarks|days|lastDay|dailyGoal/.test(ls2['eikAIwa.v2'] || ''),
+      (ls2['eikAIwa.v2'] || '').slice(0, 80));
 
     // 横スクロールが出ていないか（狭い画面での日本語折り返し事故の検出）
     const overflow = await page.evaluate(() =>

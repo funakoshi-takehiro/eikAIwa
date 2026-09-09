@@ -6,7 +6,7 @@
 
 window.EIK = window.EIK || {};
 
-EIK.VERSION = '2026090905';
+EIK.VERSION = '2026090907';
 
 /* サイトのベースパスを実行時に解決する。
    ビルドが無いので base を埋め込めない。GitHub Pages のプロジェクトページ
@@ -46,28 +46,6 @@ EIK.el = function (tag, cls, html) {
   return e;
 };
 
-/* 今日を YYYY-MM-DD で返す（ローカル時刻基準）。
-   UTC にすると日本の夜が翌日扱いになり「連続日数」が壊れるので必ずローカル。 */
-EIK.today = function (d) {
-  d = d || new Date();
-  var m = String(d.getMonth() + 1).padStart(2, '0');
-  var day = String(d.getDate()).padStart(2, '0');
-  return d.getFullYear() + '-' + m + '-' + day;
-};
-
-EIK.dayNumber = function (ymd) {
-  // YYYY-MM-DD → 経過日数（ローカル正午基準で DST の影響を避ける）
-  var p = String(ymd).split('-');
-  return Math.floor(new Date(+p[0], +p[1] - 1, +p[2], 12, 0, 0).getTime() / 86400000);
-};
-
-EIK.addDays = function (ymd, n) {
-  var p = String(ymd).split('-');
-  var d = new Date(+p[0], +p[1] - 1, +p[2], 12, 0, 0);
-  d.setDate(d.getDate() + n);
-  return EIK.today(d);
-};
-
 /* Fisher–Yates。seed を渡すと再現性のある並びになる（同日は同じ順序にしたい） */
 EIK.shuffle = function (arr, seed) {
   var a = arr.slice();
@@ -88,29 +66,6 @@ EIK.shuffle = function (arr, seed) {
   return a;
 };
 
-EIK.hashStr = function (s) {
-  var h = 2166136261 >>> 0;
-  for (var i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 16777619) >>> 0;
-  }
-  return h >>> 0;
-};
-
-/* 進捗リングの SVG。塗りつぶさず 1px ストロークの円にする（ブランドの流儀） */
-EIK.ringSvg = function (pct, size, stroke) {
-  size = size || 92;
-  stroke = stroke || 4;
-  var r = (size - stroke) / 2;
-  var c = 2 * Math.PI * r;
-  var off = c * (1 - Math.max(0, Math.min(1, pct)));
-  return '<svg class="ring" width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '" aria-hidden="true">' +
-    '<circle class="ring__track" cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke-width="' + stroke + '"/>' +
-    '<circle class="ring__value" cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke-width="' + stroke + '" ' +
-    'stroke-dasharray="' + c.toFixed(2) + '" stroke-dashoffset="' + off.toFixed(2) + '" ' +
-    'transform="rotate(-90 ' + size / 2 + ' ' + size / 2 + ')"/></svg>';
-};
-
 /* インライン SVG のアイコン。
    以前は practice / categories / home / bookmarks の4箇所が、それぞれ
    同じ <svg> ラッパーを書いていた。しかも icPin と map、icStar と保存画面の星は
@@ -121,16 +76,14 @@ EIK.ringSvg = function (pct, size, stroke) {
 EIK.ICONS = {
   // 画面部品
   pin:     '<path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/>',
-  star:    '<path d="M12 3.6l2.6 5.3 5.8.85-4.2 4.1 1 5.75L12 16.9l-5.2 2.7 1-5.75-4.2-4.1 5.8-.85z"/>',
   eye:     '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>',
   eyeOff:  '<path d="M3 3l18 18"/><path d="M10.6 6.1A9.7 9.7 0 0 1 12 6c6 0 9.5 6 9.5 6a17 17 0 0 1-3.3 4"/><path d="M6.3 7.6A16.6 16.6 0 0 0 2.5 12S6 18 12 18a9.5 9.5 0 0 0 3.5-.66"/>',
   speaker: '<path d="M11 5 6.5 9H3v6h3.5L11 19z"/><path d="M15.6 8.4a5 5 0 0 1 0 7.2"/><path d="M18.4 5.6a9 9 0 0 1 0 12.8"/>',
   check:   '<circle cx="12" cy="12" r="9"/><path d="M8.2 12.4l2.6 2.6 5-5.4"/>',
-  near:    '<circle cx="12" cy="12" r="9"/><path d="M8 13.4c1.2-1.1 2.6-1.1 4 0s2.8 1.1 4 0"/><path d="M9 9.2h.01M15 9.2h.01"/>',
-  miss:    '<circle cx="12" cy="12" r="9"/><path d="M9.2 9.2l5.6 5.6M14.8 9.2l-5.6 5.6"/>',
   grid:    '<rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/>',
-  shuffle: '<path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/>',
-  // カテゴリ（data/categories.json の icon がこの名前を指す）
+  /* カテゴリ。data/categories.json の icon がこの名前を指す。
+     EIK.icon(c.icon) と動的に引くので、ソースを文字列検索しても
+     使用箇所が出てこない。未使用と誤解して消さないこと。 */
   plane:  '<path d="M10.2 4.2a1.6 1.6 0 0 1 3 0l.5 5 6.3 3.4a1 1 0 0 1 .5.9v1.2l-7-1.6-.6 4 2.3 1.7v1.4l-3.5-.9-3.5.9v-1.4l2.3-1.7-.6-4-7 1.6v-1.2a1 1 0 0 1 .5-.9l6.3-3.4z"/>',
   train:  '<rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14"/><path d="M8.5 20l-2 2M15.5 20l2 2"/><circle cx="9" cy="13" r=".6"/><circle cx="15" cy="13" r=".6"/>',
   bed:    '<path d="M3 18V7"/><path d="M3 12h18v6"/><path d="M21 18v-4"/><circle cx="7.5" cy="9.5" r="2"/>',

@@ -3,7 +3,11 @@
      ① 状況を読む（英文・和訳は既定で伏せる）
      ② 口に出して言ってみる（任意のカウントダウン / 任意のメモ入力）
      ③ 10通りの言い方を開いて比べる
-     ④ 自己評価 → Leitner box に反映
+     ④ 次へ
+
+   自己評価（✓ / △ / ✗）は外した。受け取る先だった復習アルゴリズムを
+   やめたため、押しても何も起きないボタンになっていた。
+   出題順は毎回シャッフルする。
    ────────────────────────────────────────────────────────────────────────── */
 'use strict';
 
@@ -11,33 +15,30 @@ EIK.Views = EIK.Views || {};
 
 EIK.Views.Practice = function (ctx) {
   var app = ctx.app;
-  var mode = ctx.params.mode || 'daily';
+  var mode = ctx.params.mode || 'random';
   var arg = ctx.params.arg || '';
 
   app.innerHTML = '<div class="loading">問題を準備しています…</div>';
 
-  var st0 = EIK.Store.settings();
   // 1問だけ開くときは、その問題が属する段階を id から判断する。
-  // 設定中の段階と違ってもブックマークから直接開けるようにするため。
-  var wantLevel = (mode === 'one') ? EIK.levelFromId(arg) : (st0.level || 1);
+  // カテゴリ一覧から直接開いたとき、設定中の段階と違っても正しく開くため。
+  var wantLevel = (mode === 'one') ? EIK.levelFromId(arg) : (EIK.Store.settings().level || 1);
 
   EIK.Data.load(wantLevel).then(function (all) {
     var st = EIK.Store.settings();
-    var queue = buildQueue(mode, arg, all, st);
+    var queue = buildQueue(mode, arg, all);
 
     if (!queue.length) {
       app.innerHTML =
         '<div class="card empty">' +
           '<div class="empty__ic">' + EIK.icon('check') + '</div>' +
-          '<p style="font-weight:700;color:var(--ink-2)">いまは出題できる問題がありません。</p>' +
-          '<p class="small" style="margin-top:8px">復習の期限が来たものが無く、未学習も残っていません。</p>' +
+          '<p style="font-weight:700;color:var(--ink-2)">出題できる問題がありません。</p>' +
           '<a class="btn btn-ghost" style="margin-top:18px" href="#/">ホームへ戻る</a>' +
         '</div>';
       return;
     }
 
     var i = 0;
-    var answered = 0;
     renderQuestion();
 
     function renderQuestion() {
@@ -46,19 +47,17 @@ EIK.Views.Practice = function (ctx) {
 
       app.innerHTML =
         '<div class="pr fade-in">' +
-          topBar(i + 1, queue.length) +
+          topBar(i + 1) +
           sitCard(s, st.showJa) +
           thinkBlock(st, s) +
         '</div>';
 
       wireJaToggle();
-      wireBookmark(s);
 
-      var revealBtn = app.querySelector('#reveal');
       var timerEl = app.querySelector('#timer');
       var stopTimer = startCountdown(timerEl, st.countdown);
 
-      revealBtn.addEventListener('click', function () {
+      app.querySelector('#reveal').addEventListener('click', function () {
         stopTimer();
         var memo = app.querySelector('#myans');
         renderAnswers(s, memo ? memo.value : '');
@@ -66,9 +65,10 @@ EIK.Views.Practice = function (ctx) {
     }
 
     function renderAnswers(s, memo) {
+      var last = (i + 1 >= queue.length);
       app.innerHTML =
         '<div class="pr fade-in">' +
-          topBar(i + 1, queue.length) +
+          topBar(i + 1) +
           sitCard(s, st.showJa) +
           (memo && memo.trim()
             ? '<div class="card"><div class="section-title">あなたの答え</div>' +
@@ -78,25 +78,19 @@ EIK.Views.Practice = function (ctx) {
             '<div class="section-title">こう言えます（' + s.answers.length + '通り）</div>' +
             answerList(s) +
           '</div>' +
-          judgeBlock() +
+          '<button type="button" class="btn btn-primary btn-lg btn-block" id="next">' +
+            (last ? '終わる' : '次の問題へ') +
+          '</button>' +
         '</div>';
 
       wireJaToggle();
-      wireBookmark(s);
-      wireAnswerTools(s);
+      EIK.UI.wireSpeak(app);
 
-      Array.prototype.forEach.call(app.querySelectorAll('.judge__btn'), function (b) {
-        b.addEventListener('click', function () {
-          var j = b.getAttribute('data-j');
-          var p = EIK.Store.progressOf(s.id);
-          EIK.Store.setProgress(s.id, EIK.SRS.apply(p, j));
-          EIK.Store.recordAnswer();
-          answered++;
-          EIK.TTS.stop();
-          i++;
-          window.scrollTo({ top: 0, behavior: 'auto' });
-          renderQuestion();
-        });
+      app.querySelector('#next').addEventListener('click', function () {
+        EIK.TTS.stop();
+        i++;
+        window.scrollTo({ top: 0, behavior: 'auto' });
+        renderQuestion();
       });
     }
 
@@ -107,63 +101,45 @@ EIK.Views.Practice = function (ctx) {
          任意の文字列を取りうる。属性を抜けてイベントハンドラを注入できた。
        ボタンにすると、どちらも構造的に起きない。 */
     function renderDone() {
-      var s = EIK.Store;
       app.innerHTML =
         '<div class="card done fade-in">' +
           '<div class="done__ic">' + EIK.icon('check') + '</div>' +
           '<h2 style="font-size:1.15rem;font-weight:700">おつかれさまでした</h2>' +
-          '<p class="muted small" style="margin-top:8px">' + EIK.num(answered) + ' 問を練習しました。</p>' +
-          '<div class="statrow" style="margin-top:20px">' +
-            '<div class="stat"><div class="stat__v accent">' + EIK.num(s.todayCount()) + '</div><div class="stat__l">今日の合計</div></div>' +
-            '<div class="stat"><div class="stat__v">' + EIK.num(s.streak()) + '</div><div class="stat__l">連続日数</div></div>' +
-            '<div class="stat"><div class="stat__v">' + EIK.num(answered) + '</div><div class="stat__l">この回</div></div>' +
-          '</div>' +
+          '<p class="muted small" style="margin-top:8px">' +
+            EIK.num(queue.length) + ' 問を練習しました。</p>' +
           '<div style="display:flex;gap:8px;margin-top:20px">' +
             '<a class="btn btn-ghost btn-block" href="#/">ホーム</a>' +
             '<button type="button" class="btn btn-primary btn-block" id="again">もう一度</button>' +
           '</div>' +
         '</div>';
 
-      var again = app.querySelector('#again');
-      if (again) {
-        again.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: 'auto' });
-          EIK.Views.Practice(ctx);   // 同じ条件で組み直す
-        });
-      }
+      app.querySelector('#again').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+        EIK.Views.Practice(ctx);   // 同じ条件で組み直す（並びは引き直される）
+      });
     }
   }).catch(function (e) {
     app.innerHTML = '<div class="card empty">問題データを読み込めませんでした。<br>' +
                     EIK.escapeHtml(e.message || e) + '</div>';
   });
 
-  /* ---------- 出題キューの組み立て ---------- */
-  function buildQueue(mode, arg, all, st) {
-    var limit = Math.max(1, EIK.num(st.dailyGoal, 10));
-    if (mode === 'daily')    return EIK.SRS.pickDaily(all, limit);
+  /* ---------- 出題キューの組み立て ----------
+     並びは毎回引き直す。seed を渡さないので、開くたびに違う順序になる。 */
+  function buildQueue(mode, arg, all) {
     if (mode === 'category') {
-      var list = all.filter(function (s) { return s.category === arg; });
-      var due = list.filter(function (s) { return EIK.SRS.isDue(EIK.Store.progressOf(s.id)); });
-      return EIK.shuffle(due.length ? due : list, EIK.hashStr(EIK.today() + arg)).slice(0, limit);
-    }
-    if (mode === 'bookmarks') {
-      var ids = EIK.Store.raw().bookmarks;
-      return all.filter(function (s) { return ids.indexOf(s.id) >= 0; });
+      return EIK.shuffle(all.filter(function (s) { return s.category === arg; }));
     }
     if (mode === 'one') {
       return all.filter(function (s) { return s.id === arg; });
     }
-    // shuffle
-    return EIK.shuffle(all).slice(0, limit);
+    return EIK.shuffle(all);
   }
 
   /* ---------- 部品 ---------- */
-  function topBar(n, total) {
-    var pct = Math.round((n - 1) / total * 100);
+  function topBar(n) {
     return '<div class="pr__top">' +
-             '<span class="pr__count">' + n + ' / ' + total + '</span>' +
-             '<div class="pr__bar"><div class="pbar"><div class="pbar__fill" style="width:' + pct + '%"></div></div></div>' +
-             '<button type="button" class="iconbtn" id="bm" aria-label="この状況を保存">' + EIK.icon('star') + '</button>' +
+             '<span class="pr__count">' + EIK.num(n) + ' 問目</span>' +
+             '<a class="btn btn-ghost btn-sm" href="#/">やめる</a>' +
            '</div>';
   }
 
@@ -187,7 +163,7 @@ EIK.Views.Practice = function (ctx) {
 
   function thinkBlock(st, sit) {
     var timer = st.countdown > 0
-      ? '<div class="think__timer" id="timer">' + st.countdown + '</div>'
+      ? '<div class="think__timer" id="timer">' + EIK.num(st.countdown) + '</div>'
       : '<div class="think__timer is-done" id="timer" aria-hidden="true">—</div>';
     var lv = EIK.Data.levelMeta(sit.level || 1);
     var target = lv && lv.sentences
@@ -205,20 +181,9 @@ EIK.Views.Practice = function (ctx) {
   }
 
   function answerList(s) {
-    return '<div class="ans">' + s.answers.map(function (a, idx) {
-      return EIK.UI.answerItem(a, { mark: { id: s.id, idx: idx }, note: a.note });
+    return '<div class="ans">' + s.answers.map(function (a) {
+      return EIK.UI.answerItem(a, { note: a.note });
     }).join('') + '</div>';
-  }
-
-  function judgeBlock() {
-    return '<div>' +
-      '<div class="section-title">言えましたか？</div>' +
-      '<div class="judge">' +
-        '<button type="button" class="judge__btn" data-j="got"><span class="judge__ic">' + EIK.icon('check') + '</span>言えた</button>' +
-        '<button type="button" class="judge__btn" data-j="close"><span class="judge__ic">' + EIK.icon('near') + '</span>惜しい</button>' +
-        '<button type="button" class="judge__btn" data-j="miss"><span class="judge__ic">' + EIK.icon('miss') + '</span>出てこなかった</button>' +
-      '</div>' +
-    '</div>';
   }
 
   /* ---------- 配線 ---------- */
@@ -247,32 +212,6 @@ EIK.Views.Practice = function (ctx) {
       var shown = !box.hidden;
       box.hidden = shown;
       btn.innerHTML = (shown ? EIK.icon('eye') + ' 日本語で見る' : EIK.icon('eyeOff') + ' 日本語を隠す');
-    });
-  }
-
-  function wireBookmark(s) {
-    var btn = app.querySelector('#bm');
-    if (!btn) return;
-    var set = function () {
-      btn.setAttribute('aria-pressed', EIK.Store.isBookmarked(s.id) ? 'true' : 'false');
-    };
-    set();
-    btn.addEventListener('click', function () {
-      var on = EIK.Store.toggleBookmark(s.id);
-      set();
-      EIK.UI.toast(on ? 'この状況を保存しました' : '保存を解除しました');
-    });
-  }
-
-  function wireAnswerTools(s) {
-    EIK.UI.wireSpeak(app);
-    Array.prototype.forEach.call(app.querySelectorAll('[data-mark]'), function (b) {
-      b.addEventListener('click', function () {
-        var idx = +b.getAttribute('data-mark');
-        var on = EIK.Store.toggleAnswerMark(s.id, idx);
-        b.setAttribute('aria-pressed', on ? 'true' : 'false');
-        EIK.UI.toast(on ? 'この言い方を保存しました' : '保存を解除しました');
-      });
     });
   }
 };

@@ -152,8 +152,7 @@ img, svg { max-width: 100%; }
 /* 既定寸法(300x150)での描画事故を防ぐ全体の保険。
    個別に width/height を当てている箇所はそちらが勝つ。 */
 svg { display: block; width: 1em; height: 1em; }
-.done__ic svg, .empty__ic svg, .hero__ring svg, .catcard__ring svg,
-.ring, .judge__ic svg, .tabbar__ic svg, .appbar__logo svg,
+.done__ic svg, .empty__ic svg, .tabbar__ic svg, .appbar__logo svg,
 .catcard__ic svg, .iconbtn svg { width: 100%; height: 100%; }
 
 /* ==========================================================================
@@ -175,11 +174,6 @@ textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
 }
 :focus:not(:focus-visible) { outline: none; }
 
-.sr-only {
-  position: absolute !important; width: 1px; height: 1px;
-  padding: 0; margin: -1px; overflow: hidden;
-  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
-}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -228,7 +222,10 @@ textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
    ========================================================================== */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  /* 列数を書かない。タブを増減しても自動で等分される。
+     以前 repeat(4, 1fr) と数を書いていて、タブを3つに減らしたときに
+     4列目が空のまま残り、全体が左へ寄っていた（見た目では気づけなかった）。 */
+  display: grid; grid-auto-flow: column; grid-auto-columns: 1fr;
   background: color-mix(in srgb, var(--paper) 92%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -296,9 +293,8 @@ a.card:active, button.card:active { transform: translateY(0); }
 .btn-primary:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 10px 24px -10px rgba(2,141,174,.5); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn-ghost:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent-border); }
-.btn-quiet { background: transparent; color: var(--ink-3); border-color: transparent; min-height: 40px; padding: 0 12px; }
-.btn-quiet:hover:not(:disabled) { background: var(--bg-2); color: var(--ink); }
 .btn-lg { min-height: 56px; padding: 0 30px; font-size: 1rem; font-weight: 700; }
+.btn-sm { min-height: 34px; padding: 0 12px; font-size: .78rem; }
 .btn-block { width: 100%; }
 
 .iconbtn {
@@ -379,46 +375,37 @@ a.catcard.is-pending { opacity: .62; }
                 color: var(--accent-dk); border: 1px solid var(--accent-border); }
 .reg--formal  { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
 
-/* 進捗リング ------------------------------------------------------------ */
-.ring { display: block; }
-.ring__track { stroke: var(--line); }
-.ring__value { stroke: var(--accent); stroke-linecap: round; transition: stroke-dashoffset .5s var(--ease); }
-
-/* 進捗バー -------------------------------------------------------------- */
-.pbar { height: 4px; background: var(--line); border-radius: 999px; overflow: hidden; }
-.pbar__fill { height: 100%; background: var(--accent); border-radius: 999px; transition: width .3s var(--ease); }
 
 /* ==========================================================================
    ホーム
    ========================================================================== */
-.hero { display: flex; align-items: center; gap: 18px; }
-.hero__ring { position: relative; flex: 0 0 auto; width: 92px; height: 92px; }
-.hero__ringtext {
-  position: absolute; inset: 0; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 0;
-}
-.hero__num { font-size: 1.5rem; font-weight: 700; line-height: 1; color: var(--ink); }
-.hero__den { font-size: .68rem; color: var(--ink-4); font-weight: 700; }
-.hero__body { min-width: 0; flex: 1 1 auto; }
-.hero__title { font-size: 1.02rem; font-weight: 700; margin-bottom: 3px; }
-.hero__sub { font-size: .82rem; color: var(--ink-4); }
+.lead { font-size: 1.24rem; font-weight: 700; line-height: 1.55; text-wrap: balance; }
 
-.statrow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0;
-           background: var(--paper); border: 1px solid var(--line);
-           border-radius: var(--r-md); overflow: hidden; box-shadow: var(--sh-sm); }
-.stat { padding: 14px 10px; text-align: center; border-right: 1px solid var(--line-2); }
-.stat:last-child { border-right: 0; }
-.stat__v { font-size: 1.3rem; font-weight: 700; line-height: 1.1; }
-.stat__v.accent { color: var(--accent); }
-.stat__l { font-size: .68rem; color: var(--ink-4); font-weight: 700; margin-top: 3px; }
+/* 3手順。番号は counter で描く。
+   既定の <ol> マーカーだと数字と本文の行頭が揃わず、
+   説明が2行になったときに段が崩れるため、grid で桁を固定する。 */
+.steps { list-style: none; margin-top: 18px; display: grid; gap: 13px; counter-reset: step; }
+.steps li {
+  counter-increment: step;
+  display: grid; grid-template-columns: 24px 1fr; column-gap: 11px;
+}
+.steps li::before {
+  content: counter(step);
+  grid-column: 1; grid-row: 1 / span 2; align-self: start;
+  display: flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent-dk);
+  font-size: .74rem; font-weight: 700;
+}
+.steps b    { grid-column: 2; grid-row: 1; font-size: .92rem; }
+.steps span { grid-column: 2; grid-row: 2; font-size: .78rem; color: var(--ink-4); margin-top: 2px; }
 
 /* ==========================================================================
    練習画面
    ========================================================================== */
 .pr { display: flex; flex-direction: column; gap: 14px; }
-.pr__top { display: flex; align-items: center; gap: 10px; }
+.pr__top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .pr__count { font-size: .76rem; font-weight: 700; color: var(--ink-4); white-space: nowrap; }
-.pr__bar { flex: 1 1 auto; }
 
 /* 状況カード */
 .sit { padding: 22px 20px; }
@@ -481,27 +468,9 @@ a.catcard.is-pending { opacity: .62; }
 .ans__ja { margin-top: 7px; font-size: .84rem; color: var(--ink-3); }
 .ans__tools { display: flex; align-items: center; gap: 2px; flex: 0 0 auto; }
 
-/* 自己評価 */
-.judge { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.judge__btn {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 5px; min-height: 74px; padding: 10px 6px;
-  border-radius: var(--r-md); cursor: pointer; background: var(--paper);
-  border: 1px solid var(--line); color: var(--ink-2);
-  font-weight: 700; font-size: .8rem; white-space: nowrap;
-  transition: transform .15s var(--ease), box-shadow .15s var(--ease),
-              border-color .15s var(--ease), background .15s var(--ease);
-}
-.judge__btn:hover { transform: translateY(-2px); box-shadow: var(--sh-hover); }
-.judge__ic { width: 24px; height: 24px; }
-.judge__btn[data-j="got"]   { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); color: var(--accent-dk); }
-.judge__btn[data-j="close"] { border-style: dashed; }
-.judge__btn[data-j="miss"]  { }
-
 /* 完了画面 */
 .done { text-align: center; padding: 26px 12px; }
 .done__ic { width: 62px; height: 62px; margin: 0 auto 16px; color: var(--accent); }
-.judge__ic { width: 24px; height: 24px; }
 
 /* ==========================================================================
    カテゴリ / リスト
@@ -527,9 +496,6 @@ a.catcard, button.catcard, .catcard {
    名前と説明が同じ行に並んで重なる（実測で踏んだ）。 */
 .catcard__name { display: block; font-weight: 700; font-size: .95rem; }
 .catcard__meta { display: block; font-size: .74rem; color: var(--ink-4); margin-top: 2px; }
-.catcard__ring { display: block; flex: 0 0 auto; width: 38px; height: 38px; position: relative; }
-.catcard__pct { position: absolute; inset: 0; display: flex; align-items: center;
-                justify-content: center; font-size: .62rem; font-weight: 700; color: var(--ink-3); }
 
 .sitlist { display: grid; gap: 8px; }
 a.sitrow, button.sitrow, .sitrow {
@@ -538,16 +504,6 @@ a.sitrow, button.sitrow, .sitrow {
 .sitrow__body { flex: 1 1 auto; min-width: 0; }
 .sitrow__want { display: block; font-size: .9rem; font-weight: 500; line-height: 1.5; }
 .sitrow__place { display: block; font-size: .72rem; color: var(--ink-4); margin-top: 3px; }
-.sitrow__box {
-  display: block; flex: 0 0 auto; width: 10px; height: 10px; border-radius: 3px;
-  background: var(--line); border: 1px solid var(--line);
-}
-.sitrow__box[data-lv="0"] { background: transparent; }
-.sitrow__box[data-lv="1"] { background: color-mix(in srgb, var(--accent) 25%, var(--paper)); border-color: var(--accent-border); }
-.sitrow__box[data-lv="2"] { background: color-mix(in srgb, var(--accent) 45%, var(--paper)); border-color: var(--accent-border); }
-.sitrow__box[data-lv="3"] { background: color-mix(in srgb, var(--accent) 65%, var(--paper)); border-color: var(--accent); }
-.sitrow__box[data-lv="4"] { background: color-mix(in srgb, var(--accent) 82%, var(--paper)); border-color: var(--accent); }
-.sitrow__box[data-lv="5"] { background: var(--accent); border-color: var(--accent); }
 
 .empty { text-align: center; padding: 44px 20px; color: var(--ink-4); }
 .empty__ic { width: 46px; height: 46px; margin: 0 auto 14px; color: var(--line); }
@@ -639,7 +595,6 @@ select.sel {
   .app { padding: 14px 12px 28px; }
   .sit { padding: 18px 16px; }
   .sit__want { font-size: 1.12rem; }
-  .judge__btn { font-size: .74rem; min-height: 68px; }
   .tabbar__label { font-size: .64rem; }
 }
 
@@ -647,7 +602,6 @@ select.sel {
 @media (hover: none) {
   a.card:hover, button.card:hover { transform: none; box-shadow: var(--sh-sm); border-color: var(--line); }
   .btn-primary:hover:not(:disabled) { transform: none; }
-  .judge__btn:hover { transform: none; box-shadow: none; }
 }
 
 @media print {
