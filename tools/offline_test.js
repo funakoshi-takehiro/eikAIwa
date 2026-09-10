@@ -40,7 +40,7 @@ function step(name, ok, detail) {
   try {
     // ---------- 1. オンラインで開いてプリキャッシュを待つ ----------
     await page.goto(BASE, { waitUntil: 'networkidle' });
-    await page.waitForSelector('.steps', { timeout: 15000 });
+    await page.waitForSelector('.lead', { timeout: 15000 });
 
     // SW が activate し、全カテゴリのプリキャッシュが載るまで待つ
     const cached = await page.evaluate(async () => {
@@ -83,7 +83,7 @@ function step(name, ok, detail) {
 
     // ---------- 3. オフラインのままリロードして一周する ----------
     await page.reload({ waitUntil: 'domcontentloaded' });
-    await page.waitForSelector('.steps', { timeout: 15000 });
+    await page.waitForSelector('.lead', { timeout: 15000 });
     step('オフラインでもホームが開く', true);
 
     const catCount = await page.evaluate(async (base) => {

@@ -168,9 +168,11 @@ EIK.UI.levelPicker = function (current) {
       '<span class="lv__label">難易度</span>' +
       '<div class="lv__seg" role="group" aria-label="難易度">' + btns + '</div>' +
     '</div>' +
+    /* ダッシュで区切らない。全角の空きで足りるうえ、
+       日本語の文中のダッシュは翻訳調に見える。 */
     (meta && meta.sentences
       ? '<div class="lv__desc"><b>' + EIK.escapeHtml(meta.sentences) + 'で答える</b>' +
-        ' — ' + EIK.escapeHtml(meta.descJa || '') + '</div>'
+        '\u3000' + EIK.escapeHtml(meta.descJa || '') + '</div>'
       : '') +
   '</div>';
 };

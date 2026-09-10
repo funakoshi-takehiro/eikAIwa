@@ -79,7 +79,7 @@ EIK.Views.Settings = function (ctx) {
 
     '<div class="card">' +
       '<div class="section-title">このアプリについて</div>' +
-      '<p class="small muted">eikAIwa — 版 ' + EIK.escapeHtml(EIK.VERSION) + '</p>' +
+      '<p class="small muted">eikAIwa 版 ' + EIK.escapeHtml(EIK.VERSION) + '</p>' +
       '<p class="small muted" style="margin-top:6px">オフラインで動作します。' +
         '<a href="#/install" style="color:var(--accent);font-weight:700">ホーム画面への追加方法</a></p>' +
     '</div>' +

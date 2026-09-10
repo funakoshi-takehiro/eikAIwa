@@ -56,16 +56,15 @@ function step(name, ok, detail) {
   try {
     // ---------- ホーム ----------
     await page.goto(BASE, { waitUntil: 'networkidle' });
-    await page.waitForSelector('.steps', { timeout: 10000 });
+    await page.waitForSelector('.lead', { timeout: 10000 });
     step('ホームが描画される', true);
 
     // ホームは「これは何をするアプリか」を語る場所。数字の羅列に戻さない。
     const lead = (await page.locator('.lead').innerText()).replace(/\s+/g, '');
     step('何をするアプリかが書いてある', lead.length > 10, lead);
-    const stepsN = await page.locator('.steps li').count();
-    step('3手順が並ぶ', stepsN === 3, `${stepsN} 件`);
-    step('記録を残さないと明記している',
-      /記録は残しません/.test(await page.locator('.app').innerText()));
+    const homeBody = await page.locator('.app').innerText();
+    step('学習の流れが説明されている', /声に出/.test(homeBody) && /10通り/.test(homeBody));
+    step('記録を残さないと明記している', /記録は残していません/.test(homeBody));
 
     const title = await page.title();
     step('title が設定されている', /eikAIwa/.test(title), title);
@@ -82,6 +81,16 @@ function step(name, ok, detail) {
 
     const startBtn = page.locator('a[href="#/practice/random"]').first();
     step('「練習をはじめる」がある', (await startBtn.count()) > 0);
+
+    /* ---------- ホームの文章の作法 ----------
+       飾りの英語ラベルとダッシュを使わない、という決まり（CLAUDE.md 4節）。
+       文章は書き直すたびに戻りがちなので機械で見る。
+       アプリバーのロゴは商品名なので #app の中だけを対象にする。 */
+    const homeText = await page.locator('#app').innerText();
+    const dashes = [...homeText].filter((c) => '-\u2010\u2011\u2012\u2013\u2014\u2015\u2212\u301c\uff5e'.includes(c));
+    step('ホームにダッシュ類が無い', dashes.length === 0, JSON.stringify(dashes));
+    const caps = homeText.match(/[A-Z]/g) || [];
+    step('ホームに飾りの大文字が無い', caps.length === 0, JSON.stringify(caps));
 
     // 初回訪問で「新しい版が公開されています」バーが出てはいけない
     await page.waitForTimeout(1800);

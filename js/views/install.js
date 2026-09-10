@@ -19,7 +19,6 @@ EIK.Views.Install = function (ctx) {
   app.innerHTML = '<div class="stack-lg fade-in">' + installed +
 
     '<div class="card">' +
-      '<div class="eyebrow">Install</div>' +
       '<h2 style="font-size:1.1rem;font-weight:700;margin-top:6px">ホーム画面に追加する</h2>' +
       '<p class="small muted" style="margin-top:8px">' +
         '追加すると、ふつうのアプリのように起動でき、<b>通信がなくても学習できます</b>。' +

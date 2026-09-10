@@ -1,9 +1,12 @@
 /* ── ホーム ────────────────────────────────────────────────────────────────
    このアプリが何なのかを最初に言う場所。
-   以前は「今日の目標」「連続日数」「習得ずみ」を並べていたが、
-   その数字を支えていたのは localStorage だけで、端末を変えれば消えるものだった。
-   維持できないものを維持しているように見せるのをやめ、
-   代わりに「何をする道具か」を置いた。
+
+   文章の作り方について。
+   飾りの英語ラベル（Speaking practice のような見出し）、
+   「AからBへ」の標語、3段の手順リストは書かない。
+   どれも売り文句の型で、中身を読まなくても読み飛ばせてしまう。
+   代わりに、実際に何が起きるかをそのまま順に書く。
+   ダッシュ（波ダッシュを含む）も使わない。
    ────────────────────────────────────────────────────────────────────────── */
 'use strict';
 EIK.Views = EIK.Views || {};
@@ -15,22 +18,26 @@ EIK.Views.Home = function (ctx) {
   var level = EIK.Store.settings().level || 1;
 
   EIK.Data.load(level).then(function (all) {
+    var cats = EIK.Data.allCategories().length;
+
     app.innerHTML =
       '<div class="stack-lg fade-in">' +
 
         '<div class="card">' +
-          '<div class="eyebrow">Speaking practice</div>' +
-          '<h2 class="lead">英語を「知っている」から<br>「口から出る」へ。</h2>' +
-          '<p class="small muted" style="margin-top:10px">' +
-            '状況を英文で読み、<b>自分の言葉を考えて声に出し</b>、' +
-            'そのあと10通りの言い方と突き合わせます。' +
-            '先に答えを見ないことが要点です。' +
+          '<h2 class="lead">声に出してから、<br>答えを見る。</h2>' +
+          '<p class="small" style="margin-top:12px;color:var(--ink-3)">' +
+            '英語で短い場面が出ます。たとえば「駅で、トイレの場所を聞きたい」。' +
+            'まず自分の言葉で言ってみてください。うまく言えなくてかまいません。' +
           '</p>' +
-          '<ol class="steps">' +
-            '<li><b>状況を読む</b><span>英文で。和訳は伏せてあります</span></li>' +
-            '<li><b>声に出す</b><span>うまく言えなくてかまいません</span></li>' +
-            '<li><b>10通りと比べる</b><span>ひとこと〜フォーマルまで、違いつき</span></li>' +
-          '</ol>' +
+          '<p class="small" style="margin-top:10px;color:var(--ink-3)">' +
+            'そのあとで、同じ場面の言い方を10通り並べます。' +
+            'ひとことで済ませる形から、かしこまった形まで。' +
+            'どれをいつ使うかも書いてあります。' +
+          '</p>' +
+          '<p class="small muted" style="margin-top:14px">' +
+            '先に答えを見ると、読んで分かった気になって終わります。' +
+            '和訳を伏せてあるのも同じ理由です。' +
+          '</p>' +
         '</div>' +
 
         EIK.UI.levelPicker(level) +
@@ -39,20 +46,21 @@ EIK.Views.Home = function (ctx) {
           ? '<a class="btn btn-primary btn-lg btn-block" href="#/practice/random">' +
               '練習をはじめる</a>'
           : '<div class="card empty">' + EIK.escapeHtml(EIK.levelStars(level)) +
-            ' の問題はまだ準備中です。<br>上の段階を切り替えてお使いください。</div>') +
+            ' の問題はまだ用意できていません。<br>上の段階を切り替えてお使いください。</div>') +
 
         '<div class="catlist">' +
           '<a class="card catcard" href="#/categories">' +
             '<span class="catcard__ic">' + EIK.icon('grid') + '</span>' +
             '<span class="catcard__body">' +
-              '<span class="catcard__name">カテゴリから選ぶ</span>' +
-              '<span class="catcard__meta">場面をしぼって練習する</span>' +
+              '<span class="catcard__name">場面をしぼって練習する</span>' +
+              '<span class="catcard__meta">空港、病院、職場など' +
+                EIK.num(cats, 13) + 'の場面から選べます</span>' +
             '</span>' +
           '</a>' +
         '</div>' +
 
         '<p class="small muted" style="text-align:center">' +
-          '出題は毎回ランダムです。学習の記録は残しません。' +
+          '問題は毎回ちがう順で出ます。学習の記録は残していません。' +
         '</p>' +
 
       '</div>';
