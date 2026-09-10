@@ -181,6 +181,16 @@ data/situations/<category>-3.json   ★★★
 `want` は必ず `You want to …` の形でピリオドで終える。
 `place` は場面（`At a train station`）、`listener` は相手（`a station attendant`）。
 
+### 問題を足したら counts を合わせる
+
+```sh
+python3 tools/sync_counts.py --write
+```
+
+`data/categories.json` の `counts` は、アプリが「準備中（N問を予定）」と出すために使う。
+実データを足してここを直し忘れると `precheck.py` が注意を出す。
+13カテゴリ × 3段階を手で数え直すと間違えるので、機械で合わせる。
+
 ## 7.5 学習の記録を持たない
 
 **進捗・連続日数・復習の期限・ブックマークのたぐいを復活させないこと。**

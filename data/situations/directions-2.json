@@ -11,18 +11,81 @@
       "listener": "a passer-by",
       "want": "You want to say you are looking for the museum and ask if it is walkable.",
       "situationJa": "美術館を探していると伝えて、歩ける距離か聞きたい。",
-      "tags": ["directions", "asking"],
+      "tags": [
+        "directions",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'm looking for the city museum. Is it walkable from here?", "ja": "市立美術館を探しています。ここから歩けますか。", "register": "neutral", "style": "basic", "note": "目的地→距離。道を尋ねる基本形。" },
-        { "en": "I'm trying to find the museum on Bridge Street. I don't mind walking if it's under twenty minutes.", "ja": "ブリッジ通りの美術館を探しています。20分以内なら歩いても構いません。", "register": "neutral", "style": "explain", "note": "許容範囲を示す。的確な助言が返る。" },
-        { "en": "Could you point me in the right direction? I think I've been going the wrong way.", "ja": "正しい方向を教えていただけますか。逆に来てしまった気がします。", "register": "polite", "style": "request", "note": "依頼→事情。助けてもらいやすい。" },
-        { "en": "Is it that way past the church? I saw a sign a few streets back.", "ja": "教会の先のあちらですか。数本前の通りで案内板を見ました。", "register": "polite", "style": "confirm", "note": "自分の理解を確かめる。会話が短く済む。" },
-        { "en": "I am trying to locate the city museum. Could you tell me whether it is within walking distance?", "ja": "市立美術館を探しております。徒歩圏内かどうか教えていただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に尋ねられる。" },
-        { "en": "I'm after the museum. Can I walk it from here?", "ja": "美術館を探しています。ここから歩けますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く伝わる。" },
-        { "en": "If it's far, I'll take the tram. Which stop should I get off at?", "ja": "遠ければ路面電車に乗ります。どの停留所で降りればよいですか。", "register": "neutral", "style": "propose", "note": "次の手も同時に聞く。二度尋ねずに済む。" },
-        { "en": "I've got a couple of hours before my train. I'd like to see it if there's time.", "ja": "列車まで2時間ほどあります。時間があれば見たいです。", "register": "neutral", "style": "context", "note": "制約を伝える。現実的な助言が返る。" },
-        { "en": "Sorry to stop you in the street. It'll only take a second.", "ja": "路上で呼び止めてすみません。すぐ済みます。", "register": "polite", "style": "apology", "note": "急いでいそうな人に。声をかけやすくなる。" },
-        { "en": "Please don't worry if you're not sure. I can ask at the next corner.", "ja": "分からなければ気になさらないでください。次の角でまた聞きます。", "register": "polite", "style": "considerate", "note": "相手を困らせない。感じよく終われる。" }
+        {
+          "en": "I'm looking for the city museum. Is it walkable from here?",
+          "ja": "市立美術館を探しています。ここから歩けますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "目的地→距離。道を尋ねる基本形。"
+        },
+        {
+          "en": "I'm trying to find the museum on Bridge Street. I don't mind walking if it's under twenty minutes.",
+          "ja": "ブリッジ通りの美術館を探しています。20分以内なら歩いても構いません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "許容範囲を示す。的確な助言が返る。"
+        },
+        {
+          "en": "Could you point me in the right direction? I think I've been going the wrong way.",
+          "ja": "正しい方向を教えていただけますか。逆に来てしまった気がします。",
+          "register": "polite",
+          "style": "request",
+          "note": "依頼→事情。助けてもらいやすい。"
+        },
+        {
+          "en": "Is it that way past the church? I saw a sign a few streets back.",
+          "ja": "教会の先のあちらですか。数本前の通りで案内板を見ました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "自分の理解を確かめる。会話が短く済む。"
+        },
+        {
+          "en": "I am trying to locate the city museum. Could you tell me whether it is within walking distance?",
+          "ja": "市立美術館を探しております。徒歩圏内かどうか教えていただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に尋ねられる。"
+        },
+        {
+          "en": "I'm after the museum. Can I walk it from here?",
+          "ja": "美術館を探しています。ここから歩けますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く伝わる。"
+        },
+        {
+          "en": "If it's far, I'll take the tram. Which stop should I get off at?",
+          "ja": "遠ければ路面電車に乗ります。どの停留所で降りればよいですか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "次の手も同時に聞く。二度尋ねずに済む。"
+        },
+        {
+          "en": "I've got a couple of hours before my train. I'd like to see it if there's time.",
+          "ja": "列車まで2時間ほどあります。時間があれば見たいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "制約を伝える。現実的な助言が返る。"
+        },
+        {
+          "en": "Sorry to stop you in the street. It'll only take a second.",
+          "ja": "路上で呼び止めてすみません。すぐ済みます。",
+          "register": "polite",
+          "style": "apology",
+          "note": "急いでいそうな人に。声をかけやすくなる。"
+        },
+        {
+          "en": "Please don't worry if you're not sure. I can ask at the next corner.",
+          "ja": "分からなければ気になさらないでください。次の角でまた聞きます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を困らせない。感じよく終われる。"
+        }
       ]
     },
     {
@@ -34,18 +97,81 @@
       "listener": "a passer-by",
       "want": "You want to say you got off at the wrong stop and ask how to get back.",
       "situationJa": "降りる停留所を間違えたと伝えて、戻り方を聞きたい。",
-      "tags": ["directions", "trouble"],
+      "tags": [
+        "directions",
+        "trouble"
+      ],
       "answers": [
-        { "en": "I got off at the wrong stop. How do I get back?", "ja": "停留所を間違えて降りました。どう戻ればよいですか。", "register": "neutral", "style": "basic", "note": "事実→質問。落ち着いて聞ける。" },
-        { "en": "I meant to get off at the hospital but stayed on too long. Is there a bus going the other way?", "ja": "病院で降りるつもりが乗り過ごしました。反対方向のバスはありますか。", "register": "neutral", "style": "explain", "note": "経緯を伝える。的確に案内される。" },
-        { "en": "Could you tell me where the stop on the other side is? I can't see one nearby.", "ja": "反対側の停留所がどこか教えていただけますか。近くに見当たりません。", "register": "polite", "style": "request", "note": "具体的に頼む。すぐ動ける。" },
-        { "en": "Is it quicker to walk back? It looked like only two stops.", "ja": "歩いて戻るほうが早いですか。2駅分だけに見えました。", "register": "polite", "style": "confirm", "note": "選択肢を比べる。時間を無駄にしない。" },
-        { "en": "I appear to have alighted at the wrong stop. Could you advise me how to return?", "ja": "誤った停留所で降りてしまったようです。戻り方をご教示いただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。落ち着いて頼める。" },
-        { "en": "I've got off too late. How do I get back that way?", "ja": "降りるのが遅れました。あちらへどう戻ればよいですか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く伝わる。" },
-        { "en": "I have an appointment at four. I'd rather take a taxi if the bus is slow.", "ja": "4時に約束があります。バスが遅いならタクシーにします。", "register": "neutral", "style": "context", "note": "急ぐ理由。助言が現実的になる。" },
-        { "en": "Could you show me on my map? I'd like to see where I am first.", "ja": "地図で示していただけますか。まず現在地を知りたいです。", "register": "polite", "style": "propose", "note": "地図を使う。言葉に頼らず確実。" },
-        { "en": "My ticket is still valid for an hour. Can I use it on the return bus?", "ja": "切符はあと1時間有効です。戻りのバスでも使えますか。", "register": "neutral", "style": "confirm", "note": "無駄な出費を防ぐ。実務的。" },
-        { "en": "Thank you, that's very kind. I'll walk back the way you said.", "ja": "ご親切にありがとうございます。教わった道を歩いて戻ります。", "register": "polite", "style": "reassure", "note": "会話の締め。理解したと示せる。" }
+        {
+          "en": "I got off at the wrong stop. How do I get back?",
+          "ja": "停留所を間違えて降りました。どう戻ればよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "事実→質問。落ち着いて聞ける。"
+        },
+        {
+          "en": "I meant to get off at the hospital but stayed on too long. Is there a bus going the other way?",
+          "ja": "病院で降りるつもりが乗り過ごしました。反対方向のバスはありますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "経緯を伝える。的確に案内される。"
+        },
+        {
+          "en": "Could you tell me where the stop on the other side is? I can't see one nearby.",
+          "ja": "反対側の停留所がどこか教えていただけますか。近くに見当たりません。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的に頼む。すぐ動ける。"
+        },
+        {
+          "en": "Is it quicker to walk back? It looked like only two stops.",
+          "ja": "歩いて戻るほうが早いですか。2駅分だけに見えました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "選択肢を比べる。時間を無駄にしない。"
+        },
+        {
+          "en": "I appear to have alighted at the wrong stop. Could you advise me how to return?",
+          "ja": "誤った停留所で降りてしまったようです。戻り方をご教示いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。落ち着いて頼める。"
+        },
+        {
+          "en": "I've got off too late. How do I get back that way?",
+          "ja": "降りるのが遅れました。あちらへどう戻ればよいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く伝わる。"
+        },
+        {
+          "en": "I have an appointment at four. I'd rather take a taxi if the bus is slow.",
+          "ja": "4時に約束があります。バスが遅いならタクシーにします。",
+          "register": "neutral",
+          "style": "context",
+          "note": "急ぐ理由。助言が現実的になる。"
+        },
+        {
+          "en": "Could you show me on my map? I'd like to see where I am first.",
+          "ja": "地図で示していただけますか。まず現在地を知りたいです。",
+          "register": "polite",
+          "style": "propose",
+          "note": "地図を使う。言葉に頼らず確実。"
+        },
+        {
+          "en": "My ticket is still valid for an hour. Can I use it on the return bus?",
+          "ja": "切符はあと1時間有効です。戻りのバスでも使えますか。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "無駄な出費を防ぐ。実務的。"
+        },
+        {
+          "en": "Thank you, that's very kind. I'll walk back the way you said.",
+          "ja": "ご親切にありがとうございます。教わった道を歩いて戻ります。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "会話の締め。理解したと示せる。"
+        }
       ]
     },
     {
@@ -57,18 +183,81 @@
       "listener": "a passer-by",
       "want": "You want to say your phone has no signal and ask for directions to the station.",
       "situationJa": "携帯がつながらないと伝えて、駅への道を聞きたい。",
-      "tags": ["directions", "asking"],
+      "tags": [
+        "directions",
+        "asking"
+      ],
       "answers": [
-        { "en": "My phone has no signal. Could you tell me the way to the station?", "ja": "携帯がつながりません。駅への道を教えていただけますか。", "register": "polite", "style": "basic", "note": "事情→依頼。頼む理由が明確。" },
-        { "en": "I'd normally use a map but I've lost my connection. I'm heading to the central station.", "ja": "普段は地図を使いますが接続が切れました。中央駅へ向かっています。", "register": "neutral", "style": "explain", "note": "事情と目的地を一度に。話が早い。" },
-        { "en": "Could you point me the right way? I'll manage from there.", "ja": "方向だけ教えていただけますか。そこからは何とかします。", "register": "polite", "style": "request", "note": "負担を小さく。応じてもらいやすい。" },
-        { "en": "Is the station in that direction? I've been walking for ten minutes already.", "ja": "駅はあちらの方向ですか。すでに10分歩いています。", "register": "polite", "style": "confirm", "note": "自分の推測を確かめる。答えやすい。" },
-        { "en": "I am unable to use my telephone at present. Could you direct me to the railway station?", "ja": "今は電話が使えません。鉄道の駅への道をお教えいただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に頼める。" },
-        { "en": "My phone's dead. Which way is the station?", "ja": "携帯が使えません。駅はどちらですか。", "register": "casual", "style": "casual", "note": "急ぎのとき。短く伝わる。" },
-        { "en": "I can follow street names if you tell me them. Writing them down would help even more.", "ja": "通りの名前を言っていただければ辿れます。書いていただけるとさらに助かります。", "register": "polite", "style": "propose", "note": "確実に伝わる方法を示す。" },
-        { "en": "My train leaves in twenty-five minutes. I'd rather not get lost now.", "ja": "列車は25分後に出ます。今迷うわけにはいきません。", "register": "neutral", "style": "context", "note": "切迫度を伝える。丁寧に案内される。" },
-        { "en": "Sorry to bother you with this. I've asked two people already.", "ja": "こんなことでお手を煩わせてすみません。すでに2人に聞きました。", "register": "polite", "style": "apology", "note": "困っていると伝わる。助けてもらいやすい。" },
-        { "en": "Could you repeat the last part? I want to be sure I have it right.", "ja": "最後のところをもう一度お願いできますか。確実に覚えたいです。", "register": "polite", "style": "confirm", "note": "聞き返す言い方。迷子を防ぐ。" }
+        {
+          "en": "My phone has no signal. Could you tell me the way to the station?",
+          "ja": "携帯がつながりません。駅への道を教えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "事情→依頼。頼む理由が明確。"
+        },
+        {
+          "en": "I'd normally use a map but I've lost my connection. I'm heading to the central station.",
+          "ja": "普段は地図を使いますが接続が切れました。中央駅へ向かっています。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "事情と目的地を一度に。話が早い。"
+        },
+        {
+          "en": "Could you point me the right way? I'll manage from there.",
+          "ja": "方向だけ教えていただけますか。そこからは何とかします。",
+          "register": "polite",
+          "style": "request",
+          "note": "負担を小さく。応じてもらいやすい。"
+        },
+        {
+          "en": "Is the station in that direction? I've been walking for ten minutes already.",
+          "ja": "駅はあちらの方向ですか。すでに10分歩いています。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "自分の推測を確かめる。答えやすい。"
+        },
+        {
+          "en": "I am unable to use my telephone at present. Could you direct me to the railway station?",
+          "ja": "今は電話が使えません。鉄道の駅への道をお教えいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に頼める。"
+        },
+        {
+          "en": "My phone's dead. Which way is the station?",
+          "ja": "携帯が使えません。駅はどちらですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "急ぎのとき。短く伝わる。"
+        },
+        {
+          "en": "I can follow street names if you tell me them. Writing them down would help even more.",
+          "ja": "通りの名前を言っていただければ辿れます。書いていただけるとさらに助かります。",
+          "register": "polite",
+          "style": "propose",
+          "note": "確実に伝わる方法を示す。"
+        },
+        {
+          "en": "My train leaves in twenty-five minutes. I'd rather not get lost now.",
+          "ja": "列車は25分後に出ます。今迷うわけにはいきません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "切迫度を伝える。丁寧に案内される。"
+        },
+        {
+          "en": "Sorry to bother you with this. I've asked two people already.",
+          "ja": "こんなことでお手を煩わせてすみません。すでに2人に聞きました。",
+          "register": "polite",
+          "style": "apology",
+          "note": "困っていると伝わる。助けてもらいやすい。"
+        },
+        {
+          "en": "Could you repeat the last part? I want to be sure I have it right.",
+          "ja": "最後のところをもう一度お願いできますか。確実に覚えたいです。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "聞き返す言い方。迷子を防ぐ。"
+        }
       ]
     },
     {
@@ -80,18 +269,81 @@
       "listener": "a passer-by",
       "want": "You want to show an address on paper and ask which way to go.",
       "situationJa": "紙に書いた住所を見せて、どちらへ行けばよいか聞きたい。",
-      "tags": ["directions", "asking"],
+      "tags": [
+        "directions",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'm looking for this address. Which way should I go?", "ja": "この住所を探しています。どちらへ行けばよいですか。", "register": "neutral", "style": "basic", "note": "紙を見せながら。最短で伝わる。" },
-        { "en": "I have the address written here but no map. Do you know this street?", "ja": "住所は書いてありますが地図がありません。この通りをご存じですか。", "register": "neutral", "style": "explain", "note": "状況を説明。相手が判断しやすい。" },
-        { "en": "Could you read this for me? My pronunciation would only confuse things.", "ja": "これを読んでいただけますか。私が発音すると混乱するだけです。", "register": "polite", "style": "request", "note": "発音に自信がないとき。素直で伝わる。" },
-        { "en": "Is this near here at all? I may be in completely the wrong area.", "ja": "この辺りに近いですか。全く違う区域にいるかもしれません。", "register": "polite", "style": "confirm", "note": "大きく外している可能性を先に確かめる。" },
-        { "en": "I am attempting to find this address. Could you indicate which direction I should take?", "ja": "この住所を探しております。どちらの方向へ進むべきかお示しいただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に尋ねられる。" },
-        { "en": "Do you know where this is? I've written it down here.", "ja": "ここがどこかご存じですか。ここに書いてあります。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く済む。" },
-        { "en": "It's near a big park, I was told. Does that help at all?", "ja": "大きな公園の近くだと聞きました。手掛かりになりますか。", "register": "neutral", "style": "context", "note": "目印を添える。特定しやすくなる。" },
-        { "en": "If it's too far to explain, I'll take a taxi. Is there a rank nearby?", "ja": "説明が難しいほど遠ければタクシーにします。乗り場は近くにありますか。", "register": "polite", "style": "propose", "note": "相手の負担を減らす。すぐ切り替えられる。" },
-        { "en": "Could you mark it on my map? I'll find my own way from there.", "ja": "地図に印を付けていただけますか。そこからは自分で行きます。", "register": "polite", "style": "request", "note": "確実な方法。言葉の壁を越えられる。" },
-        { "en": "Thank you for stopping to help. I'd been standing here a while.", "ja": "立ち止まって助けてくださりありがとうございます。しばらくここに立っていました。", "register": "polite", "style": "reassure", "note": "感謝を伝える。気持ちよく別れられる。" }
+        {
+          "en": "I'm looking for this address. Which way should I go?",
+          "ja": "この住所を探しています。どちらへ行けばよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "紙を見せながら。最短で伝わる。"
+        },
+        {
+          "en": "I have the address written here but no map. Do you know this street?",
+          "ja": "住所は書いてありますが地図がありません。この通りをご存じですか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "状況を説明。相手が判断しやすい。"
+        },
+        {
+          "en": "Could you read this for me? My pronunciation would only confuse things.",
+          "ja": "これを読んでいただけますか。私が発音すると混乱するだけです。",
+          "register": "polite",
+          "style": "request",
+          "note": "発音に自信がないとき。素直で伝わる。"
+        },
+        {
+          "en": "Is this near here at all? I may be in completely the wrong area.",
+          "ja": "この辺りに近いですか。全く違う区域にいるかもしれません。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "大きく外している可能性を先に確かめる。"
+        },
+        {
+          "en": "I am attempting to find this address. Could you indicate which direction I should take?",
+          "ja": "この住所を探しております。どちらの方向へ進むべきかお示しいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に尋ねられる。"
+        },
+        {
+          "en": "Do you know where this is? I've written it down here.",
+          "ja": "ここがどこかご存じですか。ここに書いてあります。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く済む。"
+        },
+        {
+          "en": "It's near a big park, I was told. Does that help at all?",
+          "ja": "大きな公園の近くだと聞きました。手掛かりになりますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "目印を添える。特定しやすくなる。"
+        },
+        {
+          "en": "If it's too far to explain, I'll take a taxi. Is there a rank nearby?",
+          "ja": "説明が難しいほど遠ければタクシーにします。乗り場は近くにありますか。",
+          "register": "polite",
+          "style": "propose",
+          "note": "相手の負担を減らす。すぐ切り替えられる。"
+        },
+        {
+          "en": "Could you mark it on my map? I'll find my own way from there.",
+          "ja": "地図に印を付けていただけますか。そこからは自分で行きます。",
+          "register": "polite",
+          "style": "request",
+          "note": "確実な方法。言葉の壁を越えられる。"
+        },
+        {
+          "en": "Thank you for stopping to help. I'd been standing here a while.",
+          "ja": "立ち止まって助けてくださりありがとうございます。しばらくここに立っていました。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "感謝を伝える。気持ちよく別れられる。"
+        }
       ]
     },
     {
@@ -103,18 +355,81 @@
       "listener": "a station attendant",
       "want": "You want to say where you are going and ask which exit to take.",
       "situationJa": "行き先を伝えて、どの出口を使えばよいか聞きたい。",
-      "tags": ["station", "asking"],
+      "tags": [
+        "station",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'm going to the town hall. Which exit should I use?", "ja": "市庁舎へ行きます。どの出口を使えばよいですか。", "register": "neutral", "style": "basic", "note": "行き先→出口。大きな駅で必須。" },
-        { "en": "This station has six exits and I always pick the wrong one. I need the one for the concert hall.", "ja": "この駅は出口が6つあり、いつも間違えます。演奏会場に近いものが必要です。", "register": "neutral", "style": "explain", "note": "率直に言う。丁寧に案内される。" },
-        { "en": "Could you tell me which way is quickest? I have a heavy bag with me.", "ja": "どちらが一番早いか教えていただけますか。重い荷物があります。", "register": "polite", "style": "request", "note": "条件を添える。階段を避けられる。" },
-        { "en": "Is the north exit the right one? The sign wasn't clear to me.", "ja": "北口で合っていますか。案内板が分かりませんでした。", "register": "polite", "style": "confirm", "note": "自分の推測を確かめる。会話が短い。" },
-        { "en": "I am heading for the town hall this morning. Could you tell me which exit I should take?", "ja": "本日は市庁舎へ向かいます。どの出口を使うべきか教えていただけますか。", "register": "formal", "style": "formal", "note": "改まった駅員に。丁寧に尋ねられる。" },
-        { "en": "I'm off to the town hall. Which way out?", "ja": "市庁舎へ行きます。出口はどちらですか。", "register": "casual", "style": "casual", "note": "急ぐとき。短く済む。" },
-        { "en": "Is there a lift to street level? I'd rather avoid the stairs today.", "ja": "地上へのエレベーターはありますか。今日は階段を避けたいです。", "register": "polite", "style": "propose", "note": "条件を追加。移動が楽になる。" },
-        { "en": "I'm meeting someone outside in five minutes. I don't want to come out on the wrong side.", "ja": "5分後に外で人と会います。違う側に出たくありません。", "register": "neutral", "style": "context", "note": "失敗できない理由。丁寧に案内される。" },
-        { "en": "Could you write the exit number down? I'll never remember it otherwise.", "ja": "出口の番号を書いていただけますか。でないと覚えられません。", "register": "polite", "style": "request", "note": "記録に残す。確実に着ける。" },
-        { "en": "Thank you, that's much clearer now. I'll follow the blue signs.", "ja": "ありがとうございます、よく分かりました。青い案内に従います。", "register": "polite", "style": "reassure", "note": "理解を確認して締める。行き違いを防ぐ。" }
+        {
+          "en": "I'm going to the town hall. Which exit should I use?",
+          "ja": "市庁舎へ行きます。どの出口を使えばよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "行き先→出口。大きな駅で必須。"
+        },
+        {
+          "en": "This station has six exits and I always pick the wrong one. I need the one for the concert hall.",
+          "ja": "この駅は出口が6つあり、いつも間違えます。演奏会場に近いものが必要です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "率直に言う。丁寧に案内される。"
+        },
+        {
+          "en": "Could you tell me which way is quickest? I have a heavy bag with me.",
+          "ja": "どちらが一番早いか教えていただけますか。重い荷物があります。",
+          "register": "polite",
+          "style": "request",
+          "note": "条件を添える。階段を避けられる。"
+        },
+        {
+          "en": "Is the north exit the right one? The sign wasn't clear to me.",
+          "ja": "北口で合っていますか。案内板が分かりませんでした。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "自分の推測を確かめる。会話が短い。"
+        },
+        {
+          "en": "I am heading for the town hall this morning. Could you tell me which exit I should take?",
+          "ja": "本日は市庁舎へ向かいます。どの出口を使うべきか教えていただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった駅員に。丁寧に尋ねられる。"
+        },
+        {
+          "en": "I'm off to the town hall. Which way out?",
+          "ja": "市庁舎へ行きます。出口はどちらですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "急ぐとき。短く済む。"
+        },
+        {
+          "en": "Is there a lift to street level? I'd rather avoid the stairs today.",
+          "ja": "地上へのエレベーターはありますか。今日は階段を避けたいです。",
+          "register": "polite",
+          "style": "propose",
+          "note": "条件を追加。移動が楽になる。"
+        },
+        {
+          "en": "I'm meeting someone outside in five minutes. I don't want to come out on the wrong side.",
+          "ja": "5分後に外で人と会います。違う側に出たくありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "失敗できない理由。丁寧に案内される。"
+        },
+        {
+          "en": "Could you write the exit number down? I'll never remember it otherwise.",
+          "ja": "出口の番号を書いていただけますか。でないと覚えられません。",
+          "register": "polite",
+          "style": "request",
+          "note": "記録に残す。確実に着ける。"
+        },
+        {
+          "en": "Thank you, that's much clearer now. I'll follow the blue signs.",
+          "ja": "ありがとうございます、よく分かりました。青い案内に従います。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "理解を確認して締める。行き違いを防ぐ。"
+        }
       ]
     },
     {
@@ -126,18 +441,81 @@
       "listener": "a station attendant",
       "want": "You want to say you have a heavy suitcase and ask if there is a lift.",
       "situationJa": "重いスーツケースがあると伝えて、エレベーターがあるか聞きたい。",
-      "tags": ["station", "asking"],
+      "tags": [
+        "station",
+        "asking"
+      ],
       "answers": [
-        { "en": "I have a heavy suitcase. Is there a lift to the platform?", "ja": "重いスーツケースがあります。ホームへのエレベーターはありますか。", "register": "neutral", "style": "basic", "note": "事情→質問。乗り換えの前に。" },
-        { "en": "My case is too heavy to carry up stairs. I'd like a step-free route if there is one.", "ja": "スーツケースは階段を持ち上げるには重すぎます。段差のない経路があれば知りたいです。", "register": "neutral", "style": "explain", "note": "必要な条件を明確に。案内が的確になる。" },
-        { "en": "Could you show me where the lift is? I couldn't find it on the map.", "ja": "エレベーターの場所を教えていただけますか。案内図で見つかりませんでした。", "register": "polite", "style": "request", "note": "探した上でと示す。丁寧に扱われる。" },
-        { "en": "Is the lift working today? I saw a notice by the entrance.", "ja": "今日はエレベーターは動いていますか。入口に掲示を見ました。", "register": "polite", "style": "confirm", "note": "故障中のことがある。先に確かめる。" },
-        { "en": "I am travelling with heavy luggage. Could you direct me to a step-free route?", "ja": "重い荷物を持って移動しています。段差のない経路へご案内いただけますか。", "register": "formal", "style": "formal", "note": "改まった言い方。設備の案内が受けられる。" },
-        { "en": "My bag's really heavy. Any lifts around here?", "ja": "荷物がかなり重いです。この辺にエレベーターはありますか。", "register": "casual", "style": "casual", "note": "気さくな駅員に。短く伝わる。" },
-        { "en": "If there's no lift, is there a ramp instead? Even a longer way round is fine.", "ja": "エレベーターがなければ斜路はありますか。遠回りでも構いません。", "register": "polite", "style": "propose", "note": "代案を出す。解決の可能性が広がる。" },
-        { "en": "I'm changing trains in eight minutes. That's why I'm asking rather than looking.", "ja": "8分後に乗り換えます。それで探さずに伺っています。", "register": "neutral", "style": "context", "note": "急ぐ理由。すぐ答えてもらえる。" },
-        { "en": "Could someone help me with the stairs instead? I only need a hand for one flight.", "ja": "代わりに階段を手伝っていただけますか。ひと続き分だけで十分です。", "register": "polite", "style": "request", "note": "人手を頼む。設備がない駅で。" },
-        { "en": "Thank you for taking the time. I know the platform is about to fill up.", "ja": "時間を割いてくださりありがとうございます。もうすぐホームが混みますよね。", "register": "polite", "style": "considerate", "note": "忙しい時間帯に。感じよく終われる。" }
+        {
+          "en": "I have a heavy suitcase. Is there a lift to the platform?",
+          "ja": "重いスーツケースがあります。ホームへのエレベーターはありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "事情→質問。乗り換えの前に。"
+        },
+        {
+          "en": "My case is too heavy to carry up stairs. I'd like a step-free route if there is one.",
+          "ja": "スーツケースは階段を持ち上げるには重すぎます。段差のない経路があれば知りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "必要な条件を明確に。案内が的確になる。"
+        },
+        {
+          "en": "Could you show me where the lift is? I couldn't find it on the map.",
+          "ja": "エレベーターの場所を教えていただけますか。案内図で見つかりませんでした。",
+          "register": "polite",
+          "style": "request",
+          "note": "探した上でと示す。丁寧に扱われる。"
+        },
+        {
+          "en": "Is the lift working today? I saw a notice by the entrance.",
+          "ja": "今日はエレベーターは動いていますか。入口に掲示を見ました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "故障中のことがある。先に確かめる。"
+        },
+        {
+          "en": "I am travelling with heavy luggage. Could you direct me to a step-free route?",
+          "ja": "重い荷物を持って移動しています。段差のない経路へご案内いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。設備の案内が受けられる。"
+        },
+        {
+          "en": "My bag's really heavy. Any lifts around here?",
+          "ja": "荷物がかなり重いです。この辺にエレベーターはありますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな駅員に。短く伝わる。"
+        },
+        {
+          "en": "If there's no lift, is there a ramp instead? Even a longer way round is fine.",
+          "ja": "エレベーターがなければ斜路はありますか。遠回りでも構いません。",
+          "register": "polite",
+          "style": "propose",
+          "note": "代案を出す。解決の可能性が広がる。"
+        },
+        {
+          "en": "I'm changing trains in eight minutes. That's why I'm asking rather than looking.",
+          "ja": "8分後に乗り換えます。それで探さずに伺っています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "急ぐ理由。すぐ答えてもらえる。"
+        },
+        {
+          "en": "Could someone help me with the stairs instead? I only need a hand for one flight.",
+          "ja": "代わりに階段を手伝っていただけますか。ひと続き分だけで十分です。",
+          "register": "polite",
+          "style": "request",
+          "note": "人手を頼む。設備がない駅で。"
+        },
+        {
+          "en": "Thank you for taking the time. I know the platform is about to fill up.",
+          "ja": "時間を割いてくださりありがとうございます。もうすぐホームが混みますよね。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "忙しい時間帯に。感じよく終われる。"
+        }
       ]
     },
     {
@@ -149,18 +527,81 @@
       "listener": "a bus driver",
       "want": "You want to check the bus goes to the airport and ask how long it takes.",
       "situationJa": "このバスが空港へ行くか確かめて、所要時間を聞きたい。",
-      "tags": ["bus", "confirming"],
+      "tags": [
+        "bus",
+        "confirming"
+      ],
       "answers": [
-        { "en": "Does this bus go to the airport? How long does it take?", "ja": "このバスは空港へ行きますか。どのくらいかかりますか。", "register": "neutral", "style": "basic", "note": "確認→時間。乗る前に必ず。" },
-        { "en": "I need to be at terminal two by six. Will this bus get me there in time?", "ja": "6時までに第2ターミナルに着く必要があります。このバスで間に合いますか。", "register": "neutral", "style": "explain", "note": "期限を出す。運転手が判断できる。" },
-        { "en": "Could you tell me when to get off? I don't know the stops here.", "ja": "降りるときに教えていただけますか。この辺の停留所が分かりません。", "register": "polite", "style": "request", "note": "頼んでおくと安心。よくある依頼。" },
-        { "en": "Is this the express or the local one? The board showed both numbers.", "ja": "これは急行ですか、各停ですか。掲示に両方の番号が出ていました。", "register": "polite", "style": "confirm", "note": "取り違えを防ぐ。所要時間が大きく違う。" },
-        { "en": "I should like to travel to the airport. Could you confirm that this service goes there?", "ja": "空港へ行きたいのですが。この便がそちらへ向かうかご確認いただけますか。", "register": "formal", "style": "formal", "note": "改まった言い方。落ち着いて確認できる。" },
-        { "en": "Airport, right? How long is the ride?", "ja": "空港行きで合っていますか。乗車時間はどのくらいですか。", "register": "casual", "style": "casual", "note": "乗車口で。短く済む。" },
-        { "en": "If this one takes an hour, I'll wait for the express. Is one coming soon?", "ja": "これで1時間かかるなら急行を待ちます。もうすぐ来ますか。", "register": "neutral", "style": "propose", "note": "選択肢を比べる。時間を無駄にしない。" },
-        { "en": "I have a large case with me. Is there space for luggage on board?", "ja": "大きなスーツケースがあります。荷物を置く場所はありますか。", "register": "polite", "style": "context", "note": "乗れるか事前に確認。トラブルを防ぐ。" },
-        { "en": "Could I buy a ticket from you? I don't have the app.", "ja": "こちらで切符を買えますか。専用の応用ソフトを持っていません。", "register": "polite", "style": "request", "note": "支払い方法を確かめる。乗車前に解決。" },
-        { "en": "Thanks, I'll sit near the front then. That way I'll hear you.", "ja": "ありがとうございます、では前のほうに座ります。そのほうが声が聞こえます。", "register": "polite", "style": "reassure", "note": "頼んだあとの一言。運転手も楽になる。" }
+        {
+          "en": "Does this bus go to the airport? How long does it take?",
+          "ja": "このバスは空港へ行きますか。どのくらいかかりますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "確認→時間。乗る前に必ず。"
+        },
+        {
+          "en": "I need to be at terminal two by six. Will this bus get me there in time?",
+          "ja": "6時までに第2ターミナルに着く必要があります。このバスで間に合いますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "期限を出す。運転手が判断できる。"
+        },
+        {
+          "en": "Could you tell me when to get off? I don't know the stops here.",
+          "ja": "降りるときに教えていただけますか。この辺の停留所が分かりません。",
+          "register": "polite",
+          "style": "request",
+          "note": "頼んでおくと安心。よくある依頼。"
+        },
+        {
+          "en": "Is this the express or the local one? The board showed both numbers.",
+          "ja": "これは急行ですか、各停ですか。掲示に両方の番号が出ていました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "取り違えを防ぐ。所要時間が大きく違う。"
+        },
+        {
+          "en": "I should like to travel to the airport. Could you confirm that this service goes there?",
+          "ja": "空港へ行きたいのですが。この便がそちらへ向かうかご確認いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった言い方。落ち着いて確認できる。"
+        },
+        {
+          "en": "Airport, right? How long is the ride?",
+          "ja": "空港行きで合っていますか。乗車時間はどのくらいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "乗車口で。短く済む。"
+        },
+        {
+          "en": "If this one takes an hour, I'll wait for the express. Is one coming soon?",
+          "ja": "これで1時間かかるなら急行を待ちます。もうすぐ来ますか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "選択肢を比べる。時間を無駄にしない。"
+        },
+        {
+          "en": "I have a large case with me. Is there space for luggage on board?",
+          "ja": "大きなスーツケースがあります。荷物を置く場所はありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "乗れるか事前に確認。トラブルを防ぐ。"
+        },
+        {
+          "en": "Could I buy a ticket from you? I don't have the app.",
+          "ja": "こちらで切符を買えますか。専用の応用ソフトを持っていません。",
+          "register": "polite",
+          "style": "request",
+          "note": "支払い方法を確かめる。乗車前に解決。"
+        },
+        {
+          "en": "Thanks, I'll sit near the front then. That way I'll hear you.",
+          "ja": "ありがとうございます、では前のほうに座ります。そのほうが声が聞こえます。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "頼んだあとの一言。運転手も楽になる。"
+        }
       ]
     },
     {
@@ -172,18 +613,81 @@
       "listener": "an information officer",
       "want": "You want to say you have forty minutes and ask what you can see nearby.",
       "situationJa": "40分あると伝えて、近くで何が見られるか聞きたい。",
-      "tags": ["sightseeing", "asking"],
+      "tags": [
+        "sightseeing",
+        "asking"
+      ],
       "answers": [
-        { "en": "I have about forty minutes. What could I see nearby?", "ja": "40分ほどあります。近くで何が見られますか。", "register": "neutral", "style": "basic", "note": "時間→質問。乗り継ぎの合間に。" },
-        { "en": "My train leaves at half past two and I don't want to rush. Is there something close I could look at?", "ja": "列車は2時半発で、慌てたくありません。近くに見られるものはありますか。", "register": "neutral", "style": "explain", "note": "余裕を持ちたいと伝える。無理のない提案が返る。" },
-        { "en": "Could you suggest one thing rather than a list? I'd rather do one properly.", "ja": "一覧ではなくひとつ挙げていただけますか。ひとつをきちんと見たいです。", "register": "polite", "style": "request", "note": "絞ってもらう。決めやすくなる。" },
-        { "en": "Is the cathedral close enough to walk to? It looked near on the map.", "ja": "大聖堂は歩ける距離ですか。地図では近く見えました。", "register": "polite", "style": "confirm", "note": "具体案を確かめる。答えが早い。" },
-        { "en": "I have a limited amount of time before my train. Could you recommend something within walking distance?", "ja": "列車まで時間が限られています。徒歩圏で何かお勧めいただけますか。", "register": "formal", "style": "formal", "note": "改まった案内所で。丁寧に頼める。" },
-        { "en": "I've got forty minutes to kill. Anything worth seeing round here?", "ja": "40分ほど時間があります。この辺に見る価値のあるものはありますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く聞ける。" },
-        { "en": "I'd rather sit somewhere pleasant than rush a museum. A park or a café would be perfect.", "ja": "美術館を駆け足で見るより、気持ちの良い場所に座りたいです。公園か喫茶店が理想です。", "register": "neutral", "style": "propose", "note": "好みを伝える。満足度が上がる。" },
-        { "en": "I've got my suitcase with me. Is there anywhere I could leave it for half an hour?", "ja": "スーツケースを持っています。30分ほど預けられる場所はありますか。", "register": "polite", "style": "context", "note": "現実的な制約。先に解決できる。" },
-        { "en": "Could you mark it on this map? I'll head straight there.", "ja": "この地図に印を付けていただけますか。まっすぐ向かいます。", "register": "polite", "style": "request", "note": "迷わずに行ける。時間を無駄にしない。" },
-        { "en": "Thank you, that sounds perfect. I'll be back this way by two.", "ja": "ありがとうございます、それは良さそうです。2時までにはこちらへ戻ります。", "register": "polite", "style": "reassure", "note": "会話の締め。次の予定も共有できる。" }
+        {
+          "en": "I have about forty minutes. What could I see nearby?",
+          "ja": "40分ほどあります。近くで何が見られますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "時間→質問。乗り継ぎの合間に。"
+        },
+        {
+          "en": "My train leaves at half past two and I don't want to rush. Is there something close I could look at?",
+          "ja": "列車は2時半発で、慌てたくありません。近くに見られるものはありますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "余裕を持ちたいと伝える。無理のない提案が返る。"
+        },
+        {
+          "en": "Could you suggest one thing rather than a list? I'd rather do one properly.",
+          "ja": "一覧ではなくひとつ挙げていただけますか。ひとつをきちんと見たいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "絞ってもらう。決めやすくなる。"
+        },
+        {
+          "en": "Is the cathedral close enough to walk to? It looked near on the map.",
+          "ja": "大聖堂は歩ける距離ですか。地図では近く見えました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "具体案を確かめる。答えが早い。"
+        },
+        {
+          "en": "I have a limited amount of time before my train. Could you recommend something within walking distance?",
+          "ja": "列車まで時間が限られています。徒歩圏で何かお勧めいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった案内所で。丁寧に頼める。"
+        },
+        {
+          "en": "I've got forty minutes to kill. Anything worth seeing round here?",
+          "ja": "40分ほど時間があります。この辺に見る価値のあるものはありますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く聞ける。"
+        },
+        {
+          "en": "I'd rather sit somewhere pleasant than rush a museum. A park or a café would be perfect.",
+          "ja": "美術館を駆け足で見るより、気持ちの良い場所に座りたいです。公園か喫茶店が理想です。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "好みを伝える。満足度が上がる。"
+        },
+        {
+          "en": "I've got my suitcase with me. Is there anywhere I could leave it for half an hour?",
+          "ja": "スーツケースを持っています。30分ほど預けられる場所はありますか。",
+          "register": "polite",
+          "style": "context",
+          "note": "現実的な制約。先に解決できる。"
+        },
+        {
+          "en": "Could you mark it on this map? I'll head straight there.",
+          "ja": "この地図に印を付けていただけますか。まっすぐ向かいます。",
+          "register": "polite",
+          "style": "request",
+          "note": "迷わずに行ける。時間を無駄にしない。"
+        },
+        {
+          "en": "Thank you, that sounds perfect. I'll be back this way by two.",
+          "ja": "ありがとうございます、それは良さそうです。2時までにはこちらへ戻ります。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "会話の締め。次の予定も共有できる。"
+        }
       ]
     },
     {
@@ -195,18 +699,81 @@
       "listener": "a passer-by",
       "want": "You want to say you do not understand the machine and ask how to buy a ticket.",
       "situationJa": "券売機が分からないと伝えて、切符の買い方を聞きたい。",
-      "tags": ["ticket", "asking"],
+      "tags": [
+        "ticket",
+        "asking"
+      ],
       "answers": [
-        { "en": "I don't understand this machine. Could you show me how it works?", "ja": "この機械が分かりません。使い方を教えていただけますか。", "register": "polite", "style": "basic", "note": "事情→依頼。素直に頼める。" },
-        { "en": "I want a single to the airport but the menu is in Dutch. Could you help me choose?", "ja": "空港までの片道が欲しいのですが表示がオランダ語です。選ぶのを手伝っていただけますか。", "register": "neutral", "style": "explain", "note": "何が必要か明確に。すぐ助けてもらえる。" },
-        { "en": "Could you tell me which button to press? I've got the right coins ready.", "ja": "どの押しボタンか教えていただけますか。硬貨は用意してあります。", "register": "polite", "style": "request", "note": "準備できていると示す。手間が少ない。" },
-        { "en": "Is there an English option somewhere? I couldn't find a flag icon.", "ja": "どこかに英語の選択はありますか。国旗の絵が見つかりませんでした。", "register": "polite", "style": "confirm", "note": "自分で探したと示す。丁寧に見える。" },
-        { "en": "I am unfamiliar with this ticket machine. Could you explain how to purchase a ticket?", "ja": "この券売機に不慣れです。切符の買い方をご説明いただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に頼める。" },
-        { "en": "I can't work this out. Could you give me a hand?", "ja": "これが分かりません。手を貸していただけますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く伝わる。" },
-        { "en": "If the machine only takes cards, I have one. It just wouldn't accept my first attempt.", "ja": "カードしか使えないなら持っています。最初の1回が受け付けられなかっただけです。", "register": "neutral", "style": "context", "note": "試したことを伝える。原因の切り分けになる。" },
-        { "en": "Is it cheaper to buy at the counter? I don't mind queuing.", "ja": "窓口のほうが安いですか。並ぶのは構いません。", "register": "polite", "style": "propose", "note": "別の方法を検討。損をしない。" },
-        { "en": "Sorry to hold you up at the machine. There's no one else around to ask.", "ja": "券売機で足止めしてすみません。ほかに聞ける人がいなくて。", "register": "polite", "style": "apology", "note": "急いでいそうな人に。助けてもらいやすい。" },
-        { "en": "Thank you, I can manage from here. You've saved me a lot of time.", "ja": "ありがとうございます、ここからは大丈夫です。ずいぶん時間が助かりました。", "register": "polite", "style": "reassure", "note": "相手を解放する一言。感じよく終われる。" }
+        {
+          "en": "I don't understand this machine. Could you show me how it works?",
+          "ja": "この機械が分かりません。使い方を教えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "事情→依頼。素直に頼める。"
+        },
+        {
+          "en": "I want a single to the airport but the menu is in Dutch. Could you help me choose?",
+          "ja": "空港までの片道が欲しいのですが表示がオランダ語です。選ぶのを手伝っていただけますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "何が必要か明確に。すぐ助けてもらえる。"
+        },
+        {
+          "en": "Could you tell me which button to press? I've got the right coins ready.",
+          "ja": "どの押しボタンか教えていただけますか。硬貨は用意してあります。",
+          "register": "polite",
+          "style": "request",
+          "note": "準備できていると示す。手間が少ない。"
+        },
+        {
+          "en": "Is there an English option somewhere? I couldn't find a flag icon.",
+          "ja": "どこかに英語の選択はありますか。国旗の絵が見つかりませんでした。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "自分で探したと示す。丁寧に見える。"
+        },
+        {
+          "en": "I am unfamiliar with this ticket machine. Could you explain how to purchase a ticket?",
+          "ja": "この券売機に不慣れです。切符の買い方をご説明いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に頼める。"
+        },
+        {
+          "en": "I can't work this out. Could you give me a hand?",
+          "ja": "これが分かりません。手を貸していただけますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く伝わる。"
+        },
+        {
+          "en": "If the machine only takes cards, I have one. It just wouldn't accept my first attempt.",
+          "ja": "カードしか使えないなら持っています。最初の1回が受け付けられなかっただけです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "試したことを伝える。原因の切り分けになる。"
+        },
+        {
+          "en": "Is it cheaper to buy at the counter? I don't mind queuing.",
+          "ja": "窓口のほうが安いですか。並ぶのは構いません。",
+          "register": "polite",
+          "style": "propose",
+          "note": "別の方法を検討。損をしない。"
+        },
+        {
+          "en": "Sorry to hold you up at the machine. There's no one else around to ask.",
+          "ja": "券売機で足止めしてすみません。ほかに聞ける人がいなくて。",
+          "register": "polite",
+          "style": "apology",
+          "note": "急いでいそうな人に。助けてもらいやすい。"
+        },
+        {
+          "en": "Thank you, I can manage from here. You've saved me a lot of time.",
+          "ja": "ありがとうございます、ここからは大丈夫です。ずいぶん時間が助かりました。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "相手を解放する一言。感じよく終われる。"
+        }
       ]
     },
     {
@@ -218,18 +785,81 @@
       "listener": "a shop worker",
       "want": "You want to say you are lost and ask where you are on the map.",
       "situationJa": "道に迷ったと伝えて、地図上の現在地を教えてほしい。",
-      "tags": ["directions", "trouble"],
+      "tags": [
+        "directions",
+        "trouble"
+      ],
       "answers": [
-        { "en": "I think I'm lost. Could you show me where I am on this map?", "ja": "道に迷ったようです。地図上のどこにいるか教えていただけますか。", "register": "polite", "style": "basic", "note": "状況→依頼。地図を出しながら。" },
-        { "en": "I came out of the station and turned left. Somewhere after that I went wrong.", "ja": "駅を出て左に曲がりました。その後どこかで間違えたようです。", "register": "neutral", "style": "explain", "note": "経路を伝える。位置の特定が早い。" },
-        { "en": "Could you point to this street on the map? I can't match it with the signs.", "ja": "この通りを地図で指していただけますか。標識と照らし合わせられません。", "register": "polite", "style": "request", "note": "具体的に頼む。すぐ解決する。" },
-        { "en": "Is this the old town or the new part? They look similar to me.", "ja": "ここは旧市街ですか、新しい区域ですか。私には似て見えます。", "register": "polite", "style": "confirm", "note": "大まかな位置から確かめる。会話が進む。" },
-        { "en": "I appear to have lost my bearings. Could you indicate my position on this map?", "ja": "方向が分からなくなりました。この地図で現在地をお示しいただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。落ち着いて頼める。" },
-        { "en": "I've got completely turned around. Where am I on here?", "ja": "すっかり方向を見失いました。ここではどこになりますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く伝わる。" },
-        { "en": "I'm trying to reach the harbour before dark. Which way should I head?", "ja": "暗くなる前に港へ着きたいです。どちらへ向かえばよいですか。", "register": "neutral", "style": "context", "note": "目的と制約を伝える。的確に案内される。" },
-        { "en": "If it's complicated, I'll just take a taxi. Is there a rank near here?", "ja": "複雑ならタクシーにします。この近くに乗り場はありますか。", "register": "polite", "style": "propose", "note": "相手の負担を減らす。すぐ切り替えられる。" },
-        { "en": "Could you say the street names slowly? I'll write them down as you go.", "ja": "通りの名前をゆっくり言っていただけますか。言われた通りに書き取ります。", "register": "polite", "style": "request", "note": "聞き取りに不安があるとき。確実に残せる。" },
-        { "en": "Thank you so much for stopping. I'd been walking in circles.", "ja": "立ち止まってくださって本当に助かりました。ぐるぐる回っていました。", "register": "polite", "style": "reassure", "note": "感謝を伝える。気持ちよく終われる。" }
+        {
+          "en": "I think I'm lost. Could you show me where I am on this map?",
+          "ja": "道に迷ったようです。地図上のどこにいるか教えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "状況→依頼。地図を出しながら。"
+        },
+        {
+          "en": "I came out of the station and turned left. Somewhere after that I went wrong.",
+          "ja": "駅を出て左に曲がりました。その後どこかで間違えたようです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "経路を伝える。位置の特定が早い。"
+        },
+        {
+          "en": "Could you point to this street on the map? I can't match it with the signs.",
+          "ja": "この通りを地図で指していただけますか。標識と照らし合わせられません。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的に頼む。すぐ解決する。"
+        },
+        {
+          "en": "Is this the old town or the new part? They look similar to me.",
+          "ja": "ここは旧市街ですか、新しい区域ですか。私には似て見えます。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "大まかな位置から確かめる。会話が進む。"
+        },
+        {
+          "en": "I appear to have lost my bearings. Could you indicate my position on this map?",
+          "ja": "方向が分からなくなりました。この地図で現在地をお示しいただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。落ち着いて頼める。"
+        },
+        {
+          "en": "I've got completely turned around. Where am I on here?",
+          "ja": "すっかり方向を見失いました。ここではどこになりますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く伝わる。"
+        },
+        {
+          "en": "I'm trying to reach the harbour before dark. Which way should I head?",
+          "ja": "暗くなる前に港へ着きたいです。どちらへ向かえばよいですか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "目的と制約を伝える。的確に案内される。"
+        },
+        {
+          "en": "If it's complicated, I'll just take a taxi. Is there a rank near here?",
+          "ja": "複雑ならタクシーにします。この近くに乗り場はありますか。",
+          "register": "polite",
+          "style": "propose",
+          "note": "相手の負担を減らす。すぐ切り替えられる。"
+        },
+        {
+          "en": "Could you say the street names slowly? I'll write them down as you go.",
+          "ja": "通りの名前をゆっくり言っていただけますか。言われた通りに書き取ります。",
+          "register": "polite",
+          "style": "request",
+          "note": "聞き取りに不安があるとき。確実に残せる。"
+        },
+        {
+          "en": "Thank you so much for stopping. I'd been walking in circles.",
+          "ja": "立ち止まってくださって本当に助かりました。ぐるぐる回っていました。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "感謝を伝える。気持ちよく終われる。"
+        }
       ]
     },
     {
@@ -241,18 +871,81 @@
       "listener": "a passer-by",
       "want": "You want to say it is raining hard and ask for the quickest covered route.",
       "situationJa": "雨がひどいと伝えて、濡れずに済む最短の道を聞きたい。",
-      "tags": ["directions", "weather"],
+      "tags": [
+        "directions",
+        "weather"
+      ],
       "answers": [
-        { "en": "It's pouring down. Is there a covered way to the station?", "ja": "雨がひどく降っています。駅まで屋根のある道はありますか。", "register": "neutral", "style": "basic", "note": "状況→質問。雨天でよく使う。" },
-        { "en": "I haven't got an umbrella and I'm soaked already. I'd take a longer route if it's under cover.", "ja": "傘がなくすでにびしょ濡れです。屋根があるなら遠回りでも構いません。", "register": "neutral", "style": "explain", "note": "条件を示す。的確な助言が返る。" },
-        { "en": "Could you tell me the shortest way? I'll run for it.", "ja": "一番短い道を教えていただけますか。走って行きます。", "register": "polite", "style": "request", "note": "覚悟を示す。単純な答えで済む。" },
-        { "en": "Is there an arcade through those buildings? I saw people going in.", "ja": "あの建物の中に通り抜けの商店街はありますか。人が入っていくのを見ました。", "register": "polite", "style": "confirm", "note": "推測を確かめる。近道が見つかる。" },
-        { "en": "The rain is rather heavy at the moment. Could you suggest a sheltered route to the centre?", "ja": "今はかなり強い雨です。中心街まで屋根のある道をご提案いただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に頼める。" },
-        { "en": "It's really chucking it down. Any way to stay dry?", "ja": "雨がとても激しいです。濡れずに行く方法はありますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く伝わる。" },
-        { "en": "If there's a bus, I'll take that instead. Even one stop would help.", "ja": "バスがあるならそれにします。一区間でも助かります。", "register": "neutral", "style": "propose", "note": "代案を出す。すぐ動ける。" },
-        { "en": "I have a laptop in my bag. Getting it wet would be a disaster.", "ja": "かばんにパソコンが入っています。濡らすと大変です。", "register": "neutral", "style": "context", "note": "急ぐ理由。親身に教えてもらえる。" },
-        { "en": "Could I stand here for a moment? I'll move on as soon as it eases.", "ja": "少しここに立たせていただけますか。弱まったらすぐ移動します。", "register": "polite", "style": "request", "note": "店先などで。断られにくい頼み方。" },
-        { "en": "Thank you, I'll go that way. Stay dry yourself.", "ja": "ありがとうございます、そちらへ行きます。ご自身もお気をつけて。", "register": "polite", "style": "reassure", "note": "ひとこと返す。会話が温かく終わる。" }
+        {
+          "en": "It's pouring down. Is there a covered way to the station?",
+          "ja": "雨がひどく降っています。駅まで屋根のある道はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "状況→質問。雨天でよく使う。"
+        },
+        {
+          "en": "I haven't got an umbrella and I'm soaked already. I'd take a longer route if it's under cover.",
+          "ja": "傘がなくすでにびしょ濡れです。屋根があるなら遠回りでも構いません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "条件を示す。的確な助言が返る。"
+        },
+        {
+          "en": "Could you tell me the shortest way? I'll run for it.",
+          "ja": "一番短い道を教えていただけますか。走って行きます。",
+          "register": "polite",
+          "style": "request",
+          "note": "覚悟を示す。単純な答えで済む。"
+        },
+        {
+          "en": "Is there an arcade through those buildings? I saw people going in.",
+          "ja": "あの建物の中に通り抜けの商店街はありますか。人が入っていくのを見ました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "推測を確かめる。近道が見つかる。"
+        },
+        {
+          "en": "The rain is rather heavy at the moment. Could you suggest a sheltered route to the centre?",
+          "ja": "今はかなり強い雨です。中心街まで屋根のある道をご提案いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に頼める。"
+        },
+        {
+          "en": "It's really chucking it down. Any way to stay dry?",
+          "ja": "雨がとても激しいです。濡れずに行く方法はありますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く伝わる。"
+        },
+        {
+          "en": "If there's a bus, I'll take that instead. Even one stop would help.",
+          "ja": "バスがあるならそれにします。一区間でも助かります。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "代案を出す。すぐ動ける。"
+        },
+        {
+          "en": "I have a laptop in my bag. Getting it wet would be a disaster.",
+          "ja": "かばんにパソコンが入っています。濡らすと大変です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "急ぐ理由。親身に教えてもらえる。"
+        },
+        {
+          "en": "Could I stand here for a moment? I'll move on as soon as it eases.",
+          "ja": "少しここに立たせていただけますか。弱まったらすぐ移動します。",
+          "register": "polite",
+          "style": "request",
+          "note": "店先などで。断られにくい頼み方。"
+        },
+        {
+          "en": "Thank you, I'll go that way. Stay dry yourself.",
+          "ja": "ありがとうございます、そちらへ行きます。ご自身もお気をつけて。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "ひとこと返す。会話が温かく終わる。"
+        }
       ]
     },
     {
@@ -264,18 +957,81 @@
       "listener": "a receptionist",
       "want": "You want to say you will walk back at night and ask if the route is safe.",
       "situationJa": "夜に歩いて戻ると伝えて、その道が安全か聞きたい。",
-      "tags": ["safety", "asking"],
+      "tags": [
+        "safety",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'll be walking back around eleven. Is that route safe at night?", "ja": "11時ごろ歩いて戻ります。その道は夜も安全ですか。", "register": "neutral", "style": "basic", "note": "予定→質問。遠慮せず聞くべきこと。" },
-        { "en": "I don't know the area at all and I'll be on my own. I'd rather take a well-lit street.", "ja": "この辺りを全く知らず、ひとりです。明るい通りを通りたいです。", "register": "neutral", "style": "explain", "note": "条件を示す。具体的な経路を教えてもらえる。" },
-        { "en": "Could you suggest the best way back? I'm coming from the theatre.", "ja": "戻る道でおすすめを教えていただけますか。劇場から帰ります。", "register": "polite", "style": "request", "note": "出発地を伝える。案内が具体的になる。" },
-        { "en": "Is the park shortcut a bad idea after dark? It looked quiet earlier.", "ja": "暗くなってから公園を抜けるのはよくないですか。昼は静かに見えました。", "register": "polite", "style": "confirm", "note": "具体案を確かめる。正直に答えてもらえる。" },
-        { "en": "I shall be returning on foot late this evening. Could you advise whether the route is safe?", "ja": "本日は夜遅く徒歩で戻ります。その道が安全かご助言いただけますか。", "register": "formal", "style": "formal", "note": "改まった宿で。真剣に答えてもらえる。" },
-        { "en": "I'm walking back late tonight. Is it all right around here?", "ja": "今夜は遅くに歩いて戻ります。この辺は大丈夫ですか。", "register": "casual", "style": "casual", "note": "気さくな宿で。短く聞ける。" },
-        { "en": "If it's better to take a taxi, I will. Could you give me a number to call?", "ja": "タクシーのほうがよければそうします。電話番号を教えていただけますか。", "register": "polite", "style": "propose", "note": "助言に従う姿勢。準備が整う。" },
-        { "en": "I'll have my camera with me. I'd rather not draw attention to it.", "ja": "写真機を持っています。目立たせたくありません。", "register": "neutral", "style": "context", "note": "心配の理由。具体的な助言が返る。" },
-        { "en": "Could you write down the streets to avoid? I'll take a photo of it.", "ja": "避けるべき通りを書いていただけますか。写真に撮ります。", "register": "polite", "style": "request", "note": "記録に残す。実用的。" },
-        { "en": "Please be honest with me. I'd rather know than be reassured.", "ja": "正直におっしゃってください。安心させられるより本当のことを知りたいです。", "register": "polite", "style": "considerate", "note": "本音を引き出す。安全に直結する。" }
+        {
+          "en": "I'll be walking back around eleven. Is that route safe at night?",
+          "ja": "11時ごろ歩いて戻ります。その道は夜も安全ですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "予定→質問。遠慮せず聞くべきこと。"
+        },
+        {
+          "en": "I don't know the area at all and I'll be on my own. I'd rather take a well-lit street.",
+          "ja": "この辺りを全く知らず、ひとりです。明るい通りを通りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "条件を示す。具体的な経路を教えてもらえる。"
+        },
+        {
+          "en": "Could you suggest the best way back? I'm coming from the theatre.",
+          "ja": "戻る道でおすすめを教えていただけますか。劇場から帰ります。",
+          "register": "polite",
+          "style": "request",
+          "note": "出発地を伝える。案内が具体的になる。"
+        },
+        {
+          "en": "Is the park shortcut a bad idea after dark? It looked quiet earlier.",
+          "ja": "暗くなってから公園を抜けるのはよくないですか。昼は静かに見えました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "具体案を確かめる。正直に答えてもらえる。"
+        },
+        {
+          "en": "I shall be returning on foot late this evening. Could you advise whether the route is safe?",
+          "ja": "本日は夜遅く徒歩で戻ります。その道が安全かご助言いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった宿で。真剣に答えてもらえる。"
+        },
+        {
+          "en": "I'm walking back late tonight. Is it all right around here?",
+          "ja": "今夜は遅くに歩いて戻ります。この辺は大丈夫ですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな宿で。短く聞ける。"
+        },
+        {
+          "en": "If it's better to take a taxi, I will. Could you give me a number to call?",
+          "ja": "タクシーのほうがよければそうします。電話番号を教えていただけますか。",
+          "register": "polite",
+          "style": "propose",
+          "note": "助言に従う姿勢。準備が整う。"
+        },
+        {
+          "en": "I'll have my camera with me. I'd rather not draw attention to it.",
+          "ja": "写真機を持っています。目立たせたくありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "心配の理由。具体的な助言が返る。"
+        },
+        {
+          "en": "Could you write down the streets to avoid? I'll take a photo of it.",
+          "ja": "避けるべき通りを書いていただけますか。写真に撮ります。",
+          "register": "polite",
+          "style": "request",
+          "note": "記録に残す。実用的。"
+        },
+        {
+          "en": "Please be honest with me. I'd rather know than be reassured.",
+          "ja": "正直におっしゃってください。安心させられるより本当のことを知りたいです。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "本音を引き出す。安全に直結する。"
+        }
       ]
     },
     {
@@ -287,18 +1043,81 @@
       "listener": "a passenger",
       "want": "You want to say where you are going and ask them to tell you when to get off.",
       "situationJa": "行き先を伝えて、降りるときに教えてほしいと頼みたい。",
-      "tags": ["transport", "asking"],
+      "tags": [
+        "transport",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'm going to the cathedral. Could you tell me when to get off?", "ja": "大聖堂へ行きます。降りるときに教えていただけますか。", "register": "polite", "style": "basic", "note": "行き先→依頼。乗ってすぐ頼む。" },
-        { "en": "I can't hear the announcements very well. Would you mind letting me know at the cathedral stop?", "ja": "車内放送がよく聞き取れません。大聖堂の停留所で教えていただけませんか。", "register": "polite", "style": "explain", "note": "理由を添える。快く応じてもらえる。" },
-        { "en": "Could you nod when we're getting close? I'll watch for your signal.", "ja": "近づいたらうなずいていただけますか。合図を見ています。", "register": "polite", "style": "request", "note": "負担の小さい頼み方。断られにくい。" },
-        { "en": "Is the cathedral three stops from here? That's what the map showed.", "ja": "大聖堂はここから3つ目ですか。地図にはそう出ていました。", "register": "polite", "style": "confirm", "note": "自分で調べた上で確認。丁寧に見える。" },
-        { "en": "I am travelling to the cathedral this morning. Would you be kind enough to indicate the correct stop?", "ja": "本日は大聖堂へ向かいます。正しい停留所を教えていただけませんでしょうか。", "register": "formal", "style": "formal", "note": "年配の方などに。丁寧に頼める。" },
-        { "en": "I'm getting off at the cathedral. Could you give me a shout?", "ja": "大聖堂で降ります。声をかけてもらえますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く伝わる。" },
-        { "en": "I'm watching the screen too. I just want to be sure I don't miss it.", "ja": "画面も見ています。乗り過ごさないよう念のためです。", "register": "polite", "style": "reassure", "note": "頼りきりでないと示す。感じがよい。" },
-        { "en": "It's my first day in the city. Everything still looks the same to me.", "ja": "この街は今日が初日です。まだ景色の区別がつきません。", "register": "neutral", "style": "context", "note": "事情を添える。親切にしてもらいやすい。" },
-        { "en": "If you get off first, just point. That would be enough.", "ja": "先に降りるようなら指さすだけで結構です。それで十分です。", "register": "polite", "style": "propose", "note": "相手の都合に合わせる。頼みやすい。" },
-        { "en": "Thank you very much for your help. I'd have gone right past it.", "ja": "助けていただき本当にありがとうございます。通り過ぎるところでした。", "register": "polite", "style": "reassure", "note": "降りる前の一言。気持ちよく終わる。" }
+        {
+          "en": "I'm going to the cathedral. Could you tell me when to get off?",
+          "ja": "大聖堂へ行きます。降りるときに教えていただけますか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "行き先→依頼。乗ってすぐ頼む。"
+        },
+        {
+          "en": "I can't hear the announcements very well. Would you mind letting me know at the cathedral stop?",
+          "ja": "車内放送がよく聞き取れません。大聖堂の停留所で教えていただけませんか。",
+          "register": "polite",
+          "style": "explain",
+          "note": "理由を添える。快く応じてもらえる。"
+        },
+        {
+          "en": "Could you nod when we're getting close? I'll watch for your signal.",
+          "ja": "近づいたらうなずいていただけますか。合図を見ています。",
+          "register": "polite",
+          "style": "request",
+          "note": "負担の小さい頼み方。断られにくい。"
+        },
+        {
+          "en": "Is the cathedral three stops from here? That's what the map showed.",
+          "ja": "大聖堂はここから3つ目ですか。地図にはそう出ていました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "自分で調べた上で確認。丁寧に見える。"
+        },
+        {
+          "en": "I am travelling to the cathedral this morning. Would you be kind enough to indicate the correct stop?",
+          "ja": "本日は大聖堂へ向かいます。正しい停留所を教えていただけませんでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "年配の方などに。丁寧に頼める。"
+        },
+        {
+          "en": "I'm getting off at the cathedral. Could you give me a shout?",
+          "ja": "大聖堂で降ります。声をかけてもらえますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く伝わる。"
+        },
+        {
+          "en": "I'm watching the screen too. I just want to be sure I don't miss it.",
+          "ja": "画面も見ています。乗り過ごさないよう念のためです。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "頼りきりでないと示す。感じがよい。"
+        },
+        {
+          "en": "It's my first day in the city. Everything still looks the same to me.",
+          "ja": "この街は今日が初日です。まだ景色の区別がつきません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "事情を添える。親切にしてもらいやすい。"
+        },
+        {
+          "en": "If you get off first, just point. That would be enough.",
+          "ja": "先に降りるようなら指さすだけで結構です。それで十分です。",
+          "register": "polite",
+          "style": "propose",
+          "note": "相手の都合に合わせる。頼みやすい。"
+        },
+        {
+          "en": "Thank you very much for your help. I'd have gone right past it.",
+          "ja": "助けていただき本当にありがとうございます。通り過ぎるところでした。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "降りる前の一言。気持ちよく終わる。"
+        }
       ]
     },
     {
@@ -310,18 +1129,81 @@
       "listener": "a station attendant",
       "want": "You want to check the platform and confirm the train goes the right way.",
       "situationJa": "ホームを確かめて、その列車が正しい方向か確認したい。",
-      "tags": ["station", "confirming"],
+      "tags": [
+        "station",
+        "confirming"
+      ],
       "answers": [
-        { "en": "Is this the right platform for Oxford? I want to check the direction.", "ja": "オックスフォード行きはこのホームですか。方向を確かめたいです。", "register": "neutral", "style": "basic", "note": "確認→理由。乗り間違いを防ぐ。" },
-        { "en": "The board says platform four but the announcement mentioned six. Which should I trust?", "ja": "掲示は4番ですが放送では6番と言っていました。どちらが正しいですか。", "register": "neutral", "style": "explain", "note": "食い違いを具体的に。すぐ調べてもらえる。" },
-        { "en": "Could you confirm this train stops at Reading? I need to change there.", "ja": "この列車がレディングに停まるか確認していただけますか。そこで乗り換えます。", "register": "polite", "style": "request", "note": "乗り換え地を伝える。的確に確認される。" },
-        { "en": "Is this the fast train or the stopping one? They leave from the same platform.", "ja": "これは速いほうですか、各駅停車ですか。同じホームから出ますよね。", "register": "polite", "style": "confirm", "note": "似た列車があるとき。取り違えを防ぐ。" },
-        { "en": "I wish to travel towards Oxford. Could you confirm that this is the correct platform?", "ja": "オックスフォード方面へ行きたいのですが。こちらのホームで正しいかご確認いただけますか。", "register": "formal", "style": "formal", "note": "改まった駅で。落ち着いて確認できる。" },
-        { "en": "Is this one going to Oxford? I don't want the wrong direction.", "ja": "これはオックスフォード行きですか。逆方向は避けたいです。", "register": "casual", "style": "casual", "note": "発車直前に。短く聞ける。" },
-        { "en": "It leaves in three minutes. Should I get on now and check inside?", "ja": "発車まで3分です。今乗って中で確認したほうがよいですか。", "register": "neutral", "style": "propose", "note": "時間がないとき。現実的な判断ができる。" },
-        { "en": "I have a reserved seat in coach C. Is that at this end of the platform?", "ja": "C号車に座席を予約しています。ホームのこちら側ですか。", "register": "polite", "style": "context", "note": "指定席のとき。走らずに済む。" },
-        { "en": "Could you tell me the last stop? That would tell me the direction.", "ja": "終点を教えていただけますか。それで方向が分かります。", "register": "polite", "style": "request", "note": "方向を自分で判断する方法。応用が利く。" },
-        { "en": "Thank you, I'll get on this one. I'll check with the guard as well.", "ja": "ありがとうございます、これに乗ります。車掌にも確認します。", "register": "polite", "style": "reassure", "note": "念を入れる姿勢。安心して乗れる。" }
+        {
+          "en": "Is this the right platform for Oxford? I want to check the direction.",
+          "ja": "オックスフォード行きはこのホームですか。方向を確かめたいです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "確認→理由。乗り間違いを防ぐ。"
+        },
+        {
+          "en": "The board says platform four but the announcement mentioned six. Which should I trust?",
+          "ja": "掲示は4番ですが放送では6番と言っていました。どちらが正しいですか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "食い違いを具体的に。すぐ調べてもらえる。"
+        },
+        {
+          "en": "Could you confirm this train stops at Reading? I need to change there.",
+          "ja": "この列車がレディングに停まるか確認していただけますか。そこで乗り換えます。",
+          "register": "polite",
+          "style": "request",
+          "note": "乗り換え地を伝える。的確に確認される。"
+        },
+        {
+          "en": "Is this the fast train or the stopping one? They leave from the same platform.",
+          "ja": "これは速いほうですか、各駅停車ですか。同じホームから出ますよね。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "似た列車があるとき。取り違えを防ぐ。"
+        },
+        {
+          "en": "I wish to travel towards Oxford. Could you confirm that this is the correct platform?",
+          "ja": "オックスフォード方面へ行きたいのですが。こちらのホームで正しいかご確認いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった駅で。落ち着いて確認できる。"
+        },
+        {
+          "en": "Is this one going to Oxford? I don't want the wrong direction.",
+          "ja": "これはオックスフォード行きですか。逆方向は避けたいです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "発車直前に。短く聞ける。"
+        },
+        {
+          "en": "It leaves in three minutes. Should I get on now and check inside?",
+          "ja": "発車まで3分です。今乗って中で確認したほうがよいですか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "時間がないとき。現実的な判断ができる。"
+        },
+        {
+          "en": "I have a reserved seat in coach C. Is that at this end of the platform?",
+          "ja": "C号車に座席を予約しています。ホームのこちら側ですか。",
+          "register": "polite",
+          "style": "context",
+          "note": "指定席のとき。走らずに済む。"
+        },
+        {
+          "en": "Could you tell me the last stop? That would tell me the direction.",
+          "ja": "終点を教えていただけますか。それで方向が分かります。",
+          "register": "polite",
+          "style": "request",
+          "note": "方向を自分で判断する方法。応用が利く。"
+        },
+        {
+          "en": "Thank you, I'll get on this one. I'll check with the guard as well.",
+          "ja": "ありがとうございます、これに乗ります。車掌にも確認します。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "念を入れる姿勢。安心して乗れる。"
+        }
       ]
     },
     {
@@ -333,18 +1215,81 @@
       "listener": "a friend",
       "want": "You want to say where you are standing and ask where exactly to meet.",
       "situationJa": "今いる場所を伝えて、どこで落ち合うか確かめたい。",
-      "tags": ["meeting", "phone"],
+      "tags": [
+        "meeting",
+        "phone"
+      ],
       "answers": [
-        { "en": "I'm standing by the main entrance. Where exactly are you?", "ja": "正面入口のところに立っています。あなたは正確にはどこですか。", "register": "neutral", "style": "basic", "note": "現在地→質問。待ち合わせの基本。" },
-        { "en": "I'm outside the station under the big clock. There seem to be two entrances here.", "ja": "駅の外、大きな時計の下にいます。ここには入口が2つあるようです。", "register": "neutral", "style": "explain", "note": "目印と問題点を伝える。すれ違いを防ぐ。" },
-        { "en": "Could you come to the fountain instead? It's easier to find than the café.", "ja": "代わりに噴水まで来ていただけますか。喫茶店より見つけやすいです。", "register": "polite", "style": "request", "note": "分かりやすい場所を提案。合流が早い。" },
-        { "en": "Are you on the street level or downstairs? I can see two floors from here.", "ja": "地上階ですか、地下ですか。ここからは2つの階が見えます。", "register": "neutral", "style": "confirm", "note": "階の違いはよくある原因。先に確かめる。" },
-        { "en": "I am currently waiting at the main entrance. Could you tell me precisely where you are?", "ja": "現在、正面入口で待っております。正確な居場所を教えていただけますか。", "register": "formal", "style": "formal", "note": "仕事の相手と待ち合わせるとき。" },
-        { "en": "I'm by the front door. Where are you exactly?", "ja": "正面の扉のそばです。今どこにいますか。", "register": "casual", "style": "casual", "note": "友人との待ち合わせ。短く済む。" },
-        { "en": "I'll send you a photo of what I can see. That should make it obvious.", "ja": "見えている景色の写真を送ります。それで分かるはずです。", "register": "neutral", "style": "propose", "note": "確実な方法。言葉より速いことがある。" },
-        { "en": "I'm the one in the red coat. I'm waving now.", "ja": "赤い上着を着ているのが私です。今、手を振っています。", "register": "casual", "style": "context", "note": "見つけてもらう工夫。人混みで効く。" },
-        { "en": "If you're running late, I'll wait inside. It's cold out here.", "ja": "遅れるようなら中で待ちます。外は寒いので。", "register": "polite", "style": "propose", "note": "居場所の変更を先に伝える。混乱しない。" },
-        { "en": "Stay where you are and I'll come to you. It's easier if only one of us moves.", "ja": "そこにいてください、私が行きます。片方だけ動くほうが楽です。", "register": "neutral", "style": "propose", "note": "行き違いを防ぐ鉄則。実用的。" }
+        {
+          "en": "I'm standing by the main entrance. Where exactly are you?",
+          "ja": "正面入口のところに立っています。あなたは正確にはどこですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "現在地→質問。待ち合わせの基本。"
+        },
+        {
+          "en": "I'm outside the station under the big clock. There seem to be two entrances here.",
+          "ja": "駅の外、大きな時計の下にいます。ここには入口が2つあるようです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "目印と問題点を伝える。すれ違いを防ぐ。"
+        },
+        {
+          "en": "Could you come to the fountain instead? It's easier to find than the café.",
+          "ja": "代わりに噴水まで来ていただけますか。喫茶店より見つけやすいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "分かりやすい場所を提案。合流が早い。"
+        },
+        {
+          "en": "Are you on the street level or downstairs? I can see two floors from here.",
+          "ja": "地上階ですか、地下ですか。ここからは2つの階が見えます。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "階の違いはよくある原因。先に確かめる。"
+        },
+        {
+          "en": "I am currently waiting at the main entrance. Could you tell me precisely where you are?",
+          "ja": "現在、正面入口で待っております。正確な居場所を教えていただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "仕事の相手と待ち合わせるとき。"
+        },
+        {
+          "en": "I'm by the front door. Where are you exactly?",
+          "ja": "正面の扉のそばです。今どこにいますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "友人との待ち合わせ。短く済む。"
+        },
+        {
+          "en": "I'll send you a photo of what I can see. That should make it obvious.",
+          "ja": "見えている景色の写真を送ります。それで分かるはずです。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "確実な方法。言葉より速いことがある。"
+        },
+        {
+          "en": "I'm the one in the red coat. I'm waving now.",
+          "ja": "赤い上着を着ているのが私です。今、手を振っています。",
+          "register": "casual",
+          "style": "context",
+          "note": "見つけてもらう工夫。人混みで効く。"
+        },
+        {
+          "en": "If you're running late, I'll wait inside. It's cold out here.",
+          "ja": "遅れるようなら中で待ちます。外は寒いので。",
+          "register": "polite",
+          "style": "propose",
+          "note": "居場所の変更を先に伝える。混乱しない。"
+        },
+        {
+          "en": "Stay where you are and I'll come to you. It's easier if only one of us moves.",
+          "ja": "そこにいてください、私が行きます。片方だけ動くほうが楽です。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "行き違いを防ぐ鉄則。実用的。"
+        }
       ]
     },
     {
@@ -356,18 +1301,81 @@
       "listener": "a member of staff",
       "want": "You want to say you are driving to the coast and ask about parking there.",
       "situationJa": "海岸まで運転すると伝えて、駐車について聞きたい。",
-      "tags": ["driving", "asking"],
+      "tags": [
+        "driving",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'm driving to the coast today. Is there parking near the beach?", "ja": "今日は海岸まで運転します。浜辺の近くに駐車場はありますか。", "register": "neutral", "style": "basic", "note": "予定→質問。出発前に確かめる。" },
-        { "en": "We're heading down for the afternoon with two children. I'd like somewhere close to the sand.", "ja": "午後、子ども2人と向かいます。砂浜に近い場所がよいです。", "register": "neutral", "style": "explain", "note": "条件を示す。的確な助言が返る。" },
-        { "en": "Could you tell me if it gets full early? We could leave sooner if so.", "ja": "早くに満車になるか教えていただけますか。そうなら早めに出ます。", "register": "polite", "style": "request", "note": "計画を調整できる。実用的。" },
-        { "en": "Is it free on Sundays? I've heard the rules change at weekends.", "ja": "日曜は無料ですか。週末は規則が変わると聞きました。", "register": "polite", "style": "confirm", "note": "地域の規則を確かめる。罰金を避けられる。" },
-        { "en": "I intend to drive to the coast this afternoon. Could you advise me regarding parking facilities?", "ja": "本日の午後、海岸まで運転する予定です。駐車設備についてご助言いただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に尋ねられる。" },
-        { "en": "We're off to the coast. Easy to park down there?", "ja": "海岸へ行きます。あちらは駐車しやすいですか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く聞ける。" },
-        { "en": "If parking is difficult, is there a park-and-ride? We don't mind a short bus.", "ja": "駐車が難しければ乗り換え駐車場はありますか。短いバスなら構いません。", "register": "polite", "style": "propose", "note": "代案を尋ねる。混雑地で有効。" },
-        { "en": "Our car is quite large for these roads. I'd rather avoid narrow lanes.", "ja": "この辺の道には車が大きめです。狭い道は避けたいです。", "register": "neutral", "style": "context", "note": "制約を伝える。安全な経路を教わる。" },
-        { "en": "Could you point out the route on this map? I'd rather not follow the satnav blindly.", "ja": "この地図で道を教えていただけますか。案内機に頼りきりたくありません。", "register": "polite", "style": "request", "note": "経路を把握する。安心して運転できる。" },
-        { "en": "Thanks, that's really helpful. We'll set off in ten minutes then.", "ja": "ありがとうございます、とても助かります。では10分後に出発します。", "register": "polite", "style": "reassure", "note": "会話の締め。予定も共有できる。" }
+        {
+          "en": "I'm driving to the coast today. Is there parking near the beach?",
+          "ja": "今日は海岸まで運転します。浜辺の近くに駐車場はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "予定→質問。出発前に確かめる。"
+        },
+        {
+          "en": "We're heading down for the afternoon with two children. I'd like somewhere close to the sand.",
+          "ja": "午後、子ども2人と向かいます。砂浜に近い場所がよいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "条件を示す。的確な助言が返る。"
+        },
+        {
+          "en": "Could you tell me if it gets full early? We could leave sooner if so.",
+          "ja": "早くに満車になるか教えていただけますか。そうなら早めに出ます。",
+          "register": "polite",
+          "style": "request",
+          "note": "計画を調整できる。実用的。"
+        },
+        {
+          "en": "Is it free on Sundays? I've heard the rules change at weekends.",
+          "ja": "日曜は無料ですか。週末は規則が変わると聞きました。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "地域の規則を確かめる。罰金を避けられる。"
+        },
+        {
+          "en": "I intend to drive to the coast this afternoon. Could you advise me regarding parking facilities?",
+          "ja": "本日の午後、海岸まで運転する予定です。駐車設備についてご助言いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に尋ねられる。"
+        },
+        {
+          "en": "We're off to the coast. Easy to park down there?",
+          "ja": "海岸へ行きます。あちらは駐車しやすいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く聞ける。"
+        },
+        {
+          "en": "If parking is difficult, is there a park-and-ride? We don't mind a short bus.",
+          "ja": "駐車が難しければ乗り換え駐車場はありますか。短いバスなら構いません。",
+          "register": "polite",
+          "style": "propose",
+          "note": "代案を尋ねる。混雑地で有効。"
+        },
+        {
+          "en": "Our car is quite large for these roads. I'd rather avoid narrow lanes.",
+          "ja": "この辺の道には車が大きめです。狭い道は避けたいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "制約を伝える。安全な経路を教わる。"
+        },
+        {
+          "en": "Could you point out the route on this map? I'd rather not follow the satnav blindly.",
+          "ja": "この地図で道を教えていただけますか。案内機に頼りきりたくありません。",
+          "register": "polite",
+          "style": "request",
+          "note": "経路を把握する。安心して運転できる。"
+        },
+        {
+          "en": "Thanks, that's really helpful. We'll set off in ten minutes then.",
+          "ja": "ありがとうございます、とても助かります。では10分後に出発します。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "会話の締め。予定も共有できる。"
+        }
       ]
     },
     {
@@ -379,18 +1387,81 @@
       "listener": "a member of staff",
       "want": "You want to say your child needs the toilet and ask where the nearest one is.",
       "situationJa": "子どもがお手洗いに行きたいと伝えて、一番近い場所を聞きたい。",
-      "tags": ["facilities", "urgent"],
+      "tags": [
+        "facilities",
+        "urgent"
+      ],
       "answers": [
-        { "en": "My son needs the toilet. Where's the nearest one?", "ja": "息子がお手洗いに行きたがっています。一番近いのはどこですか。", "register": "neutral", "style": "basic", "note": "事情→質問。急ぐときに最短。" },
-        { "en": "My daughter can't wait very long. Is there one on this floor?", "ja": "娘はあまり我慢できません。この階にありますか。", "register": "neutral", "style": "explain", "note": "切迫度を伝える。近い場所を教わる。" },
-        { "en": "Could you point the way quickly? We're in a bit of a hurry.", "ja": "急いで方向を教えていただけますか。少し急いでいます。", "register": "polite", "style": "request", "note": "簡潔に頼む。相手も要点だけ答える。" },
-        { "en": "Is there a baby-changing room as well? We may need both.", "ja": "おむつ替えの部屋もありますか。両方必要かもしれません。", "register": "polite", "style": "confirm", "note": "まとめて確認する。二度聞かずに済む。" },
-        { "en": "My child requires the toilet urgently. Could you direct us to the nearest facilities?", "ja": "子どもが急いでお手洗いを必要としています。最寄りの設備へご案内いただけますか。", "register": "formal", "style": "formal", "note": "改まった施設で。丁寧に頼める。" },
-        { "en": "My little one needs the loo. Which way?", "ja": "うちの子がお手洗いに行きたがっています。どちらですか。", "register": "casual", "style": "casual", "note": "急ぐとき。最短で伝わる。" },
-        { "en": "If the public ones are far, is there a staff one? I'd be very grateful.", "ja": "一般用が遠ければ従業員用はありますか。使わせていただけると助かります。", "register": "polite", "style": "negotiate", "note": "本当に急ぐとき。認められることも多い。" },
-        { "en": "We've just come off a long train. He's been holding it for a while.", "ja": "長い列車から降りたところです。しばらく我慢していました。", "register": "neutral", "style": "context", "note": "事情を伝える。親身になってもらえる。" },
-        { "en": "Could you watch our bags for a second? My husband will stay here.", "ja": "少しの間、荷物を見ていただけますか。夫がここに残ります。", "register": "polite", "style": "propose", "note": "現実的な段取り。慌てずに済む。" },
-        { "en": "Thank you, we'll be quick. Sorry to rush at you like that.", "ja": "ありがとうございます、急ぎます。慌てて話しかけてすみません。", "register": "polite", "style": "apology", "note": "急いで声をかけたあとに。感じよく終わる。" }
+        {
+          "en": "My son needs the toilet. Where's the nearest one?",
+          "ja": "息子がお手洗いに行きたがっています。一番近いのはどこですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "事情→質問。急ぐときに最短。"
+        },
+        {
+          "en": "My daughter can't wait very long. Is there one on this floor?",
+          "ja": "娘はあまり我慢できません。この階にありますか。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "切迫度を伝える。近い場所を教わる。"
+        },
+        {
+          "en": "Could you point the way quickly? We're in a bit of a hurry.",
+          "ja": "急いで方向を教えていただけますか。少し急いでいます。",
+          "register": "polite",
+          "style": "request",
+          "note": "簡潔に頼む。相手も要点だけ答える。"
+        },
+        {
+          "en": "Is there a baby-changing room as well? We may need both.",
+          "ja": "おむつ替えの部屋もありますか。両方必要かもしれません。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "まとめて確認する。二度聞かずに済む。"
+        },
+        {
+          "en": "My child requires the toilet urgently. Could you direct us to the nearest facilities?",
+          "ja": "子どもが急いでお手洗いを必要としています。最寄りの設備へご案内いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった施設で。丁寧に頼める。"
+        },
+        {
+          "en": "My little one needs the loo. Which way?",
+          "ja": "うちの子がお手洗いに行きたがっています。どちらですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "急ぐとき。最短で伝わる。"
+        },
+        {
+          "en": "If the public ones are far, is there a staff one? I'd be very grateful.",
+          "ja": "一般用が遠ければ従業員用はありますか。使わせていただけると助かります。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "本当に急ぐとき。認められることも多い。"
+        },
+        {
+          "en": "We've just come off a long train. He's been holding it for a while.",
+          "ja": "長い列車から降りたところです。しばらく我慢していました。",
+          "register": "neutral",
+          "style": "context",
+          "note": "事情を伝える。親身になってもらえる。"
+        },
+        {
+          "en": "Could you watch our bags for a second? My husband will stay here.",
+          "ja": "少しの間、荷物を見ていただけますか。夫がここに残ります。",
+          "register": "polite",
+          "style": "propose",
+          "note": "現実的な段取り。慌てずに済む。"
+        },
+        {
+          "en": "Thank you, we'll be quick. Sorry to rush at you like that.",
+          "ja": "ありがとうございます、急ぎます。慌てて話しかけてすみません。",
+          "register": "polite",
+          "style": "apology",
+          "note": "急いで声をかけたあとに。感じよく終わる。"
+        }
       ]
     },
     {
@@ -402,18 +1473,81 @@
       "listener": "a doorman",
       "want": "You want to say where you are going and ask about the taxi fare.",
       "situationJa": "行き先を伝えて、タクシー代がどのくらいか聞きたい。",
-      "tags": ["taxi", "asking"],
+      "tags": [
+        "taxi",
+        "asking"
+      ],
       "answers": [
-        { "en": "I'm going to the north station. Roughly how much is a taxi?", "ja": "北駅へ行きます。タクシーはおおよそいくらですか。", "register": "neutral", "style": "basic", "note": "行き先→料金。乗る前に必ず。" },
-        { "en": "It's about four kilometres according to my map. I'd like to know what's normal before I get in.", "ja": "地図では4キロほどです。乗る前に相場を知りたいです。", "register": "neutral", "style": "explain", "note": "自分で調べた上で聞く。ぼったくりを防ぐ。" },
-        { "en": "Could you tell the driver the address? My pronunciation isn't reliable.", "ja": "運転手に住所を伝えていただけますか。私の発音では心配です。", "register": "polite", "style": "request", "note": "行き違いを防ぐ。よくある頼み方。" },
-        { "en": "Is it cheaper to walk to the rank? I don't mind five minutes.", "ja": "乗り場まで歩いたほうが安いですか。5分なら構いません。", "register": "polite", "style": "confirm", "note": "呼び出し料の有無を確かめる。" },
-        { "en": "I require a taxi to the north station. Could you tell me the approximate fare?", "ja": "北駅までタクシーをお願いします。おおよその料金を教えていただけますか。", "register": "formal", "style": "formal", "note": "格式のある店で。丁寧に確認できる。" },
-        { "en": "I'm heading to the north station. What should that cost?", "ja": "北駅へ向かいます。だいたいいくらになりますか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く聞ける。" },
-        { "en": "If it's over thirty, I'll take the tram instead. Is there one from here?", "ja": "30を超えるなら路面電車にします。ここから出ていますか。", "register": "neutral", "style": "propose", "note": "上限を決める。判断が早い。" },
-        { "en": "I have three cases with me. Does that change the price?", "ja": "スーツケースが3つあります。それで料金は変わりますか。", "register": "neutral", "style": "context", "note": "追加料金の有無。降車時に揉めない。" },
-        { "en": "Could you ask for a receipt to be given? I need it for my company.", "ja": "領収書を出すよう伝えていただけますか。会社に必要です。", "register": "polite", "style": "request", "note": "出張のとき。忘れずに頼める。" },
-        { "en": "Thank you for arranging it. I'll wait just inside the door.", "ja": "手配してくださりありがとうございます。扉のすぐ内側で待ちます。", "register": "polite", "style": "reassure", "note": "待つ場所を伝える。行き違いを防ぐ。" }
+        {
+          "en": "I'm going to the north station. Roughly how much is a taxi?",
+          "ja": "北駅へ行きます。タクシーはおおよそいくらですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "行き先→料金。乗る前に必ず。"
+        },
+        {
+          "en": "It's about four kilometres according to my map. I'd like to know what's normal before I get in.",
+          "ja": "地図では4キロほどです。乗る前に相場を知りたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "自分で調べた上で聞く。ぼったくりを防ぐ。"
+        },
+        {
+          "en": "Could you tell the driver the address? My pronunciation isn't reliable.",
+          "ja": "運転手に住所を伝えていただけますか。私の発音では心配です。",
+          "register": "polite",
+          "style": "request",
+          "note": "行き違いを防ぐ。よくある頼み方。"
+        },
+        {
+          "en": "Is it cheaper to walk to the rank? I don't mind five minutes.",
+          "ja": "乗り場まで歩いたほうが安いですか。5分なら構いません。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "呼び出し料の有無を確かめる。"
+        },
+        {
+          "en": "I require a taxi to the north station. Could you tell me the approximate fare?",
+          "ja": "北駅までタクシーをお願いします。おおよその料金を教えていただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "格式のある店で。丁寧に確認できる。"
+        },
+        {
+          "en": "I'm heading to the north station. What should that cost?",
+          "ja": "北駅へ向かいます。だいたいいくらになりますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く聞ける。"
+        },
+        {
+          "en": "If it's over thirty, I'll take the tram instead. Is there one from here?",
+          "ja": "30を超えるなら路面電車にします。ここから出ていますか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "上限を決める。判断が早い。"
+        },
+        {
+          "en": "I have three cases with me. Does that change the price?",
+          "ja": "スーツケースが3つあります。それで料金は変わりますか。",
+          "register": "neutral",
+          "style": "context",
+          "note": "追加料金の有無。降車時に揉めない。"
+        },
+        {
+          "en": "Could you ask for a receipt to be given? I need it for my company.",
+          "ja": "領収書を出すよう伝えていただけますか。会社に必要です。",
+          "register": "polite",
+          "style": "request",
+          "note": "出張のとき。忘れずに頼める。"
+        },
+        {
+          "en": "Thank you for arranging it. I'll wait just inside the door.",
+          "ja": "手配してくださりありがとうございます。扉のすぐ内側で待ちます。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "待つ場所を伝える。行き違いを防ぐ。"
+        }
       ]
     },
     {
@@ -425,18 +1559,81 @@
       "listener": "a concierge",
       "want": "You want to say you have an hour and ask whether to walk or take the tram.",
       "situationJa": "1時間あると伝えて、歩くか路面電車か迷っていると相談したい。",
-      "tags": ["directions", "asking"],
+      "tags": [
+        "directions",
+        "asking"
+      ],
       "answers": [
-        { "en": "I have an hour before dinner. Should I walk or take the tram?", "ja": "夕食まで1時間あります。歩くのと路面電車、どちらがよいですか。", "register": "neutral", "style": "basic", "note": "条件→相談。地元の判断を借りる。" },
-        { "en": "I'd like to see the old bridge on the way. Walking sounds nicer if there's time.", "ja": "途中で古い橋を見たいです。時間があるなら歩くほうがよさそうです。", "register": "neutral", "style": "explain", "note": "希望を伝える。提案が的確になる。" },
-        { "en": "Could you tell me how long each takes? Then I can decide.", "ja": "それぞれの所要時間を教えていただけますか。それで決められます。", "register": "polite", "style": "request", "note": "判断材料を求める。押しつけがない。" },
-        { "en": "Is the walk pleasant or mostly main roads? That would change my mind.", "ja": "その道は気持ちよいですか、それとも大通りばかりですか。それで考えが変わります。", "register": "polite", "style": "confirm", "note": "質を確かめる。満足度が上がる。" },
-        { "en": "I have approximately one hour available. Would you recommend walking or taking the tram?", "ja": "1時間ほど時間があります。徒歩と路面電車のどちらをお勧めになりますか。", "register": "formal", "style": "formal", "note": "改まった宿で。丁寧に相談できる。" },
-        { "en": "I've got an hour to spare. Walk or tram?", "ja": "1時間ほど空いています。歩きですか、電車ですか。", "register": "casual", "style": "casual", "note": "気さくな相手に。短く聞ける。" },
-        { "en": "I'd rather walk one way and ride back. Does the tram run late enough?", "ja": "行きは歩いて帰りは乗りたいです。路面電車は遅くまで動いていますか。", "register": "neutral", "style": "propose", "note": "両方を活かす案。実際に便利。" },
-        { "en": "My shoes aren't great for cobbles. That's my only concern.", "ja": "石畳には向かない靴です。心配はそれだけです。", "register": "neutral", "style": "context", "note": "条件を伝える。現実的な助言が返る。" },
-        { "en": "If the tram is complicated, I'll just walk. I don't want to buy the wrong ticket.", "ja": "路面電車が複雑なら歩きます。間違った切符を買いたくありません。", "register": "polite", "style": "propose", "note": "面倒を避ける判断。素直で伝わる。" },
-        { "en": "Thank you, I'll walk then. I'll follow the river as you suggested.", "ja": "ありがとうございます、では歩きます。おっしゃった通り川沿いを行きます。", "register": "polite", "style": "reassure", "note": "理解したと示して締める。行き違いがない。" }
+        {
+          "en": "I have an hour before dinner. Should I walk or take the tram?",
+          "ja": "夕食まで1時間あります。歩くのと路面電車、どちらがよいですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "条件→相談。地元の判断を借りる。"
+        },
+        {
+          "en": "I'd like to see the old bridge on the way. Walking sounds nicer if there's time.",
+          "ja": "途中で古い橋を見たいです。時間があるなら歩くほうがよさそうです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "希望を伝える。提案が的確になる。"
+        },
+        {
+          "en": "Could you tell me how long each takes? Then I can decide.",
+          "ja": "それぞれの所要時間を教えていただけますか。それで決められます。",
+          "register": "polite",
+          "style": "request",
+          "note": "判断材料を求める。押しつけがない。"
+        },
+        {
+          "en": "Is the walk pleasant or mostly main roads? That would change my mind.",
+          "ja": "その道は気持ちよいですか、それとも大通りばかりですか。それで考えが変わります。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "質を確かめる。満足度が上がる。"
+        },
+        {
+          "en": "I have approximately one hour available. Would you recommend walking or taking the tram?",
+          "ja": "1時間ほど時間があります。徒歩と路面電車のどちらをお勧めになりますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった宿で。丁寧に相談できる。"
+        },
+        {
+          "en": "I've got an hour to spare. Walk or tram?",
+          "ja": "1時間ほど空いています。歩きですか、電車ですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな相手に。短く聞ける。"
+        },
+        {
+          "en": "I'd rather walk one way and ride back. Does the tram run late enough?",
+          "ja": "行きは歩いて帰りは乗りたいです。路面電車は遅くまで動いていますか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "両方を活かす案。実際に便利。"
+        },
+        {
+          "en": "My shoes aren't great for cobbles. That's my only concern.",
+          "ja": "石畳には向かない靴です。心配はそれだけです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "条件を伝える。現実的な助言が返る。"
+        },
+        {
+          "en": "If the tram is complicated, I'll just walk. I don't want to buy the wrong ticket.",
+          "ja": "路面電車が複雑なら歩きます。間違った切符を買いたくありません。",
+          "register": "polite",
+          "style": "propose",
+          "note": "面倒を避ける判断。素直で伝わる。"
+        },
+        {
+          "en": "Thank you, I'll walk then. I'll follow the river as you suggested.",
+          "ja": "ありがとうございます、では歩きます。おっしゃった通り川沿いを行きます。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "理解したと示して締める。行き違いがない。"
+        }
       ]
     },
     {
@@ -448,18 +1645,1371 @@
       "listener": "a passer-by",
       "want": "You want to repeat the directions back and check you have understood.",
       "situationJa": "教わった道を繰り返して、理解が合っているか確かめたい。",
-      "tags": ["directions", "confirming"],
+      "tags": [
+        "directions",
+        "confirming"
+      ],
       "answers": [
-        { "en": "So I go straight and turn left at the church. Is that right?", "ja": "まっすぐ行って教会を左ですね。合っていますか。", "register": "neutral", "style": "basic", "note": "復唱→確認。最も確実な方法。" },
-        { "en": "Left at the lights, then second right. I want to make sure I've got it.", "ja": "信号を左、それから2つ目を右ですね。間違いないか確かめたいです。", "register": "neutral", "style": "explain", "note": "手順を並べる。誤解がその場で分かる。" },
-        { "en": "Could you say the last part again? I lost you after the bridge.", "ja": "最後のところをもう一度お願いできますか。橋の後が分かりませんでした。", "register": "polite", "style": "request", "note": "どこで分からなくなったか示す。効率がよい。" },
-        { "en": "Is it the second or the third turning? I want to be sure before I set off.", "ja": "2つ目ですか、3つ目ですか。歩き出す前に確かめたいです。", "register": "polite", "style": "confirm", "note": "曖昧な点を潰す。迷子を防ぐ。" },
-        { "en": "If I have understood correctly, I continue past the square. Could you confirm that?", "ja": "正しく理解していれば、広場を過ぎてさらに進むのですね。ご確認いただけますか。", "register": "formal", "style": "formal", "note": "改まった相手に。丁寧に確かめられる。" },
-        { "en": "Straight on, then left. Got it?", "ja": "まっすぐ、それから左ですね。これで合っていますか。", "register": "casual", "style": "casual", "note": "短く確認。忙しい相手に。" },
-        { "en": "I'll write that down as you say it. Give me one second.", "ja": "おっしゃる通りに書き取ります。少しお待ちください。", "register": "polite", "style": "propose", "note": "確実に残す。長い道順のとき。" },
-        { "en": "My English isn't perfect, so I repeat things. Please don't mind me.", "ja": "英語が万全でないので繰り返します。気になさらないでください。", "register": "polite", "style": "context", "note": "何度も聞く理由。相手も気にしなくなる。" },
-        { "en": "Roughly how many minutes is that? I'll know if I've gone too far.", "ja": "だいたい何分ぐらいですか。行き過ぎたかどうか分かります。", "register": "neutral", "style": "confirm", "note": "距離の感覚を得る。迷いに気づける。" },
-        { "en": "Thank you, that's very clear now. I appreciate you taking the time.", "ja": "ありがとうございます、よく分かりました。時間を割いてくださり感謝します。", "register": "polite", "style": "reassure", "note": "会話の締め。気持ちよく別れられる。" }
+        {
+          "en": "So I go straight and turn left at the church. Is that right?",
+          "ja": "まっすぐ行って教会を左ですね。合っていますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "復唱→確認。最も確実な方法。"
+        },
+        {
+          "en": "Left at the lights, then second right. I want to make sure I've got it.",
+          "ja": "信号を左、それから2つ目を右ですね。間違いないか確かめたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "手順を並べる。誤解がその場で分かる。"
+        },
+        {
+          "en": "Could you say the last part again? I lost you after the bridge.",
+          "ja": "最後のところをもう一度お願いできますか。橋の後が分かりませんでした。",
+          "register": "polite",
+          "style": "request",
+          "note": "どこで分からなくなったか示す。効率がよい。"
+        },
+        {
+          "en": "Is it the second or the third turning? I want to be sure before I set off.",
+          "ja": "2つ目ですか、3つ目ですか。歩き出す前に確かめたいです。",
+          "register": "polite",
+          "style": "confirm",
+          "note": "曖昧な点を潰す。迷子を防ぐ。"
+        },
+        {
+          "en": "If I have understood correctly, I continue past the square. Could you confirm that?",
+          "ja": "正しく理解していれば、広場を過ぎてさらに進むのですね。ご確認いただけますか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった相手に。丁寧に確かめられる。"
+        },
+        {
+          "en": "Straight on, then left. Got it?",
+          "ja": "まっすぐ、それから左ですね。これで合っていますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く確認。忙しい相手に。"
+        },
+        {
+          "en": "I'll write that down as you say it. Give me one second.",
+          "ja": "おっしゃる通りに書き取ります。少しお待ちください。",
+          "register": "polite",
+          "style": "propose",
+          "note": "確実に残す。長い道順のとき。"
+        },
+        {
+          "en": "My English isn't perfect, so I repeat things. Please don't mind me.",
+          "ja": "英語が万全でないので繰り返します。気になさらないでください。",
+          "register": "polite",
+          "style": "context",
+          "note": "何度も聞く理由。相手も気にしなくなる。"
+        },
+        {
+          "en": "Roughly how many minutes is that? I'll know if I've gone too far.",
+          "ja": "だいたい何分ぐらいですか。行き過ぎたかどうか分かります。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "距離の感覚を得る。迷いに気づける。"
+        },
+        {
+          "en": "Thank you, that's very clear now. I appreciate you taking the time.",
+          "ja": "ありがとうございます、よく分かりました。時間を割いてくださり感謝します。",
+          "register": "polite",
+          "style": "reassure",
+          "note": "会話の締め。気持ちよく別れられる。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-021",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "In a station",
+      "listener": "a station attendant",
+      "want": "You want to say which train you need and ask which platform to use.",
+      "situationJa": "乗りたい列車を伝えて、何番線か聞きたい。",
+      "tags": [
+        "platform",
+        "train"
+      ],
+      "answers": [
+        {
+          "en": "I need the train to Bristol. Which platform is it from?",
+          "ja": "ブリストル行きに乗ります。何番線から出ますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "行き先と質問を1つずつ。最短形。"
+        },
+        {
+          "en": "The board shows two trains to Bristol at almost the same time. I'm not sure which is mine.",
+          "ja": "案内板にブリストル行きがほぼ同時刻で2本出ています。どちらか分かりません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "迷っている理由を示す。的確に答えてもらえる。"
+        },
+        {
+          "en": "Could you point me to the right platform? My ticket says nine forty.",
+          "ja": "正しい番線を教えていただけますか。切符には9時40分とあります。",
+          "register": "polite",
+          "style": "request",
+          "note": "切符の情報を添える。"
+        },
+        {
+          "en": "Is it platform four? That's what the machine printed.",
+          "ja": "4番線ですか。券売機にはそう印字されていました。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "手元の情報を確かめる。相手は頷くだけで済む。"
+        },
+        {
+          "en": "Could you tell me the departure platform for the Bristol service? I would like to be there in good time.",
+          "ja": "ブリストル行きの出発番線を教えていただけますでしょうか。余裕をもって向かいたいです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった窓口で。"
+        },
+        {
+          "en": "Which platform for Bristol? I'm running a bit late.",
+          "ja": "ブリストルは何番線ですか。少し急いでいます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "時間が無いとき。"
+        },
+        {
+          "en": "If the platform isn't announced yet, could you tell me where to wait? I'd rather not miss the call.",
+          "ja": "番線がまだ出ていないなら、どこで待てばよいか教えてもらえますか。案内を聞き逃したくないので。",
+          "register": "polite",
+          "style": "propose",
+          "note": "未定のときの現実的な頼み方。"
+        },
+        {
+          "en": "I have a large suitcase with me. I'd rather not cross the bridge twice.",
+          "ja": "大きなスーツケースがあります。橋を二度渡りたくありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "経路の選び方が変わる。"
+        },
+        {
+          "en": "Sorry to ask when the barrier is busy. I'll be out of the way in a second.",
+          "ja": "改札が混んでいるところで聞いてすみません。すぐにどきます。",
+          "register": "polite",
+          "style": "apology",
+          "note": "混雑時に。"
+        },
+        {
+          "en": "Please deal with the passengers behind me first. I have a few minutes.",
+          "ja": "後ろの方を先にどうぞ。私は少し余裕があります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "急いでいないとき。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-022",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "On a street",
+      "listener": "a passer-by",
+      "want": "You want to say you are going to the hospital and ask for the fastest way.",
+      "situationJa": "病院へ行きたい。いちばん早い行き方を聞きたい。",
+      "tags": [
+        "hospital",
+        "urgent"
+      ],
+      "answers": [
+        {
+          "en": "I need to get to the hospital. What's the fastest way from here?",
+          "ja": "病院へ行かなければなりません。ここからいちばん早いのはどれですか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "行き先と質問を1つずつ。"
+        },
+        {
+          "en": "My friend is waiting for me in the emergency department. I don't mind paying for a taxi.",
+          "ja": "友人が救急外来で待っています。タクシー代は惜しみません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "急ぐ事情と条件を示す。"
+        },
+        {
+          "en": "Could you tell me where to find a taxi? I don't know this area at all.",
+          "ja": "タクシーはどこで拾えるか教えていただけますか。この辺りをまったく知りません。",
+          "register": "polite",
+          "style": "request",
+          "note": "具体的な次の一歩を頼む。"
+        },
+        {
+          "en": "Is the general hospital the one on the hill? I want to be sure before I set off.",
+          "ja": "総合病院は丘の上のものですか。出発する前に確かめたいです。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "行き先を取り違えない。"
+        },
+        {
+          "en": "I need to reach the hospital as quickly as possible. Could you advise me on the best route?",
+          "ja": "できるだけ早く病院へ着きたいです。最適な経路を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "落ち着いて頼むとき。"
+        },
+        {
+          "en": "How do I get to the hospital fast? It's urgent.",
+          "ja": "病院へ早く行くにはどうすればいいですか。急いでいます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "とっさに出る形。"
+        },
+        {
+          "en": "If walking takes over twenty minutes, I'd rather take the bus. Which would you choose?",
+          "ja": "歩いて20分以上かかるならバスにします。あなたならどちらにしますか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "判断を委ねる。土地勘のある答えが返る。"
+        },
+        {
+          "en": "I don't have a working phone with me. I can't look at a map.",
+          "ja": "使える携帯を持っていません。地図を見られません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "口頭で完結する案内が返る。"
+        },
+        {
+          "en": "Sorry to stop you in the middle of the street. I wouldn't ask if it weren't urgent.",
+          "ja": "路上で呼び止めてすみません。急ぎでなければ聞きません。",
+          "register": "polite",
+          "style": "apology",
+          "note": "見知らぬ人を止めるとき。"
+        },
+        {
+          "en": "Please don't go out of your way for me. Just the direction is enough.",
+          "ja": "わざわざ付いてこなくて大丈夫です。方向だけで十分です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "案内を申し出られたとき。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-023",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "On a street",
+      "listener": "a passer-by",
+      "want": "You want to ask for a landmark you can recognise on the way.",
+      "situationJa": "途中で目印になるものを教えてほしいと頼みたい。",
+      "tags": [
+        "landmark",
+        "route"
+      ],
+      "answers": [
+        {
+          "en": "Is there something I can look out for? I lose my way easily.",
+          "ja": "目印になるものはありますか。すぐ道に迷うもので。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "頼みと理由を1つずつ。"
+        },
+        {
+          "en": "Street names here are hard for me to read. A building or a sign would help more.",
+          "ja": "この辺の通りの名前は私には読みにくいです。建物や看板のほうが助かります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "何が役に立つか具体的に伝える。"
+        },
+        {
+          "en": "Could you name one thing at each turn? Then I can check as I go.",
+          "ja": "曲がるたびの目印をひとつずつ挙げてもらえますか。歩きながら確かめられます。",
+          "register": "polite",
+          "style": "request",
+          "note": "覚えやすい形で頼む。"
+        },
+        {
+          "en": "So I turn at the church, not the bank? I want to make sure I have that right.",
+          "ja": "銀行ではなく教会で曲がるのですね。そこを間違えたくありません。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "取り違えやすい点を潰す。"
+        },
+        {
+          "en": "Would you mind mentioning a landmark or two? I would like something visible to guide me.",
+          "ja": "目印をひとつふたつ挙げていただけますでしょうか。目に見えるものを頼りにしたいです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Anything I can spot on the way? I'm bad with street names.",
+          "ja": "途中で見つけられるものはありますか。通りの名前が苦手で。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくに聞く。"
+        },
+        {
+          "en": "Shall I repeat it back to you? That way we can catch any mistake now.",
+          "ja": "私が復唱しましょうか。今のうちに間違いを見つけられます。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "その場で正確さを担保する。"
+        },
+        {
+          "en": "I'll be walking back in the dark later. Something lit would be ideal.",
+          "ja": "後で暗くなってから歩いて戻ります。明かりのあるものだと理想的です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "条件を伝える。よい目印が返る。"
+        },
+        {
+          "en": "Sorry to ask for so much detail. I've already gone the wrong way twice.",
+          "ja": "細かく聞いてすみません。すでに二度も道を間違えました。",
+          "register": "polite",
+          "style": "apology",
+          "note": "しつこく聞く理由を添える。"
+        },
+        {
+          "en": "Please don't worry if you can't think of one. I'll manage with the street names.",
+          "ja": "思いつかなくても気にしないでください。通りの名前で何とかします。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を困らせない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-024",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "At a hotel reception",
+      "listener": "a receptionist",
+      "want": "You want to ask how far the beach is on foot and whether it is worth walking.",
+      "situationJa": "海岸まで歩いてどれくらいか、歩く価値があるか聞きたい。",
+      "tags": [
+        "walking",
+        "distance"
+      ],
+      "answers": [
+        {
+          "en": "How far is the beach on foot? Is it worth walking?",
+          "ja": "海岸までは歩いてどれくらいですか。歩く価値はありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "距離と判断をまとめて聞く。"
+        },
+        {
+          "en": "We have a couple of hours before dinner. We'd like to stretch our legs if it's close.",
+          "ja": "夕食まで2時間ほどあります。近ければ少し歩きたいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "使える時間を伝える。提案が具体的になる。"
+        },
+        {
+          "en": "Could you show me the way on this map? I'd like to mark it.",
+          "ja": "この地図で道を示していただけますか。印を付けたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "地図を出して頼む。"
+        },
+        {
+          "en": "Is it about twenty minutes? That's what the sign outside said.",
+          "ja": "20分ほどですか。外の表示にはそうありました。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "掲示との照合。"
+        },
+        {
+          "en": "Could you tell me the walking distance to the beach? We would also like to know whether the path is pleasant.",
+          "ja": "海岸までの徒歩の距離を教えていただけますでしょうか。道が快適かどうかも知りたいです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "丁寧な宿で。"
+        },
+        {
+          "en": "How long to the beach on foot? Worth it?",
+          "ja": "海岸まで歩いてどれくらいですか。行く価値ありますか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな宿で。"
+        },
+        {
+          "en": "If it's mostly along a main road, we'd rather take the bus. Which do you recommend?",
+          "ja": "ほとんど幹線道路沿いならバスにします。どちらがよいと思いますか。",
+          "register": "polite",
+          "style": "propose",
+          "note": "条件を示して勧めてもらう。"
+        },
+        {
+          "en": "We have a five-year-old with us. He walks well but not for an hour.",
+          "ja": "5歳の子どもが一緒です。よく歩きますが1時間は無理です。",
+          "register": "neutral",
+          "style": "context",
+          "note": "同行者の条件を伝える。"
+        },
+        {
+          "en": "Sorry to ask something you must be asked all day. I'd still value your view.",
+          "ja": "毎日聞かれる質問でしょうに、すみません。それでもご意見を伺いたいです。",
+          "register": "polite",
+          "style": "apology",
+          "note": "定番の質問をするとき。"
+        },
+        {
+          "en": "Please don't print anything out for us. A quick answer is plenty.",
+          "ja": "何も印刷しないでください。簡単な答えで十分です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手間をかけさせない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-025",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "On a street",
+      "listener": "a passer-by",
+      "want": "You want to ask where the nearest cash machine is and whether it takes foreign cards.",
+      "situationJa": "近くの現金自動預払機の場所と、海外のカードが使えるか聞きたい。",
+      "tags": [
+        "cash",
+        "card"
+      ],
+      "answers": [
+        {
+          "en": "Where's the nearest cash machine? Does it take foreign cards?",
+          "ja": "いちばん近い現金自動預払機はどこですか。海外のカードは使えますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "場所と条件をまとめて聞く。"
+        },
+        {
+          "en": "The one at the station refused my card twice. I'd like to try a different bank.",
+          "ja": "駅の機械で2回はじかれました。別の銀行のもので試したいです。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "経緯を出す。よい案内が返る。"
+        },
+        {
+          "en": "Could you point me toward one that's open now? It's nearly ten o'clock.",
+          "ja": "今開いているところを教えていただけますか。もうすぐ10時です。",
+          "register": "polite",
+          "style": "request",
+          "note": "時間の条件を添える。"
+        },
+        {
+          "en": "Is the one in the supermarket free to use? Some of them charge a fee.",
+          "ja": "スーパーの中のものは手数料無料ですか。有料のものもあるので。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "費用を確かめる。"
+        },
+        {
+          "en": "Could you tell me where I might find a cash machine? I would also need one that accepts international cards.",
+          "ja": "現金自動預払機のある場所を教えていただけますでしょうか。海外のカードに対応したものが必要です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Any cash machines round here? Mine's a foreign card.",
+          "ja": "この辺に現金自動預払機はありますか。海外のカードなんです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く聞きたいとき。"
+        },
+        {
+          "en": "If there isn't one nearby, could I pay by card somewhere instead? I only need a small amount.",
+          "ja": "近くに無ければ、どこかでカード払いにしてもよいです。少額で足りるので。",
+          "register": "polite",
+          "style": "propose",
+          "note": "別の解決に切り替える。"
+        },
+        {
+          "en": "I need cash for the bus fare only. The driver doesn't take cards.",
+          "ja": "必要なのはバス代の現金だけです。運転手はカードを扱いません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "必要額と用途を伝える。"
+        },
+        {
+          "en": "Sorry to trouble you with this. I know it's an odd thing to ask.",
+          "ja": "こんなことでお手数をかけてすみません。妙な質問だと分かっています。",
+          "register": "polite",
+          "style": "apology",
+          "note": "見知らぬ人に頼むとき。"
+        },
+        {
+          "en": "Please don't walk me there. Just the street name will do.",
+          "ja": "連れて行かなくて大丈夫です。通りの名前だけで足ります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "案内を申し出られたとき。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-026",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "At a station",
+      "listener": "a station attendant",
+      "want": "You want to ask whether there is step-free access to the platform.",
+      "situationJa": "ホームまで段差なしで行けるか聞きたい。",
+      "tags": [
+        "access",
+        "step-free"
+      ],
+      "answers": [
+        {
+          "en": "Is there step-free access to platform two? I can't manage stairs today.",
+          "ja": "2番線まで段差なしで行けますか。今日は階段が使えません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "条件と理由を1つずつ。"
+        },
+        {
+          "en": "I'm travelling with my mother who uses a walking frame. Stairs are not possible for her.",
+          "ja": "歩行器を使う母と一緒です。階段は無理です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "同行者の事情を伝える。"
+        },
+        {
+          "en": "Could you show me where the lift is? I couldn't see any signs.",
+          "ja": "昇降機の場所を教えていただけますか。案内が見当たりませんでした。",
+          "register": "polite",
+          "style": "request",
+          "note": "探せなかったと添える。"
+        },
+        {
+          "en": "Is the lift working today? I've been caught out before.",
+          "ja": "今日、昇降機は動いていますか。以前止まっていたことがあって。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "故障の可能性を先に潰す。"
+        },
+        {
+          "en": "Could you advise whether step-free access is available to this platform? We would need to avoid stairs entirely.",
+          "ja": "このホームへ段差なしで行けるか教えていただけますでしょうか。階段は完全に避ける必要があります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった問い合わせ。"
+        },
+        {
+          "en": "Any way up without stairs? We can't do steps.",
+          "ja": "階段なしで上がる方法はありますか。段差は無理なんです。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く聞きたいとき。"
+        },
+        {
+          "en": "If there's no lift here, could we board at the next station instead? We have time to move.",
+          "ja": "ここに昇降機が無ければ、次の駅から乗ることもできます。移動する時間はあります。",
+          "register": "polite",
+          "style": "propose",
+          "note": "代案を自分から出す。"
+        },
+        {
+          "en": "We have a return journey this evening as well. I'd like to know for both directions.",
+          "ja": "今夜は帰りもあります。往復とも知っておきたいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "一度で必要な情報を得る。"
+        },
+        {
+          "en": "Sorry to ask when the train is about to leave. I'd rather check than risk it.",
+          "ja": "発車直前に伺ってすみません。賭けるより確かめたいので。",
+          "register": "polite",
+          "style": "apology",
+          "note": "時間が迫っているとき。"
+        },
+        {
+          "en": "Please don't arrange staff assistance for us. We'll be fine with the lift alone.",
+          "ja": "係の方の付き添いは手配しないでください。昇降機だけで大丈夫です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "過剰な手配を断る。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-027",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "In a shopping centre",
+      "listener": "an information desk staff member",
+      "want": "You want to find a particular shop and ask which floor it is on.",
+      "situationJa": "特定の店を探している。何階か聞きたい。",
+      "tags": [
+        "shop",
+        "floor"
+      ],
+      "answers": [
+        {
+          "en": "I'm looking for the bookshop. Which floor is it on?",
+          "ja": "書店を探しています。何階にありますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "探し物と質問を1つずつ。"
+        },
+        {
+          "en": "I walked the whole second floor without finding it. The board downstairs may be out of date.",
+          "ja": "2階を一周しましたが見つかりませんでした。下の案内板が古いのかもしれません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "探した範囲を伝える。手戻りを防ぐ。"
+        },
+        {
+          "en": "Could you mark it on this leaflet? I'll find it from there.",
+          "ja": "この案内図に印を付けていただけますか。そこから自分で行けます。",
+          "register": "polite",
+          "style": "request",
+          "note": "手間をかけない頼み方。"
+        },
+        {
+          "en": "Is it near the cinema entrance? Someone told me that earlier.",
+          "ja": "映画館の入口の近くですか。先ほどそう聞きました。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "得た情報を確かめる。"
+        },
+        {
+          "en": "Could you tell me where the bookshop is located? I have been unable to find it on the directory.",
+          "ja": "書店の場所を教えていただけますでしょうか。案内板では見つけられませんでした。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった問い合わせ。"
+        },
+        {
+          "en": "Where's the bookshop? I can't find it anywhere.",
+          "ja": "書店はどこですか。どこにも見つかりません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く聞きたいとき。"
+        },
+        {
+          "en": "If it's closed down, is there another one nearby? I only need one book.",
+          "ja": "閉店したなら、近くに別の店はありますか。1冊必要なだけです。",
+          "register": "polite",
+          "style": "propose",
+          "note": "無い場合の続きを用意する。"
+        },
+        {
+          "en": "My train leaves in forty minutes. I'd rather not walk the wrong way.",
+          "ja": "40分後の列車に乗ります。逆方向へ歩きたくありません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "時間の制約を伝える。"
+        },
+        {
+          "en": "Sorry, I should have looked at the map by the door. I walked straight past it.",
+          "ja": "入口の案内図を見るべきでした、すみません。素通りしてしまいました。",
+          "register": "polite",
+          "style": "apology",
+          "note": "案内があったと気づいたとき。"
+        },
+        {
+          "en": "Please finish with this customer first. I can wait my turn.",
+          "ja": "こちらのお客様を先にどうぞ。順番を待てます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "窓口が対応中のとき。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-028",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "On a street",
+      "listener": "a passer-by",
+      "want": "You want to ask whether the road ahead is closed and how to get around it.",
+      "situationJa": "この先の道が通行止めか、迂回路はどこか聞きたい。",
+      "tags": [
+        "closure",
+        "detour"
+      ],
+      "answers": [
+        {
+          "en": "Is the road ahead closed? How do people get around it?",
+          "ja": "この先の道は通行止めですか。皆さんどう迂回していますか。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "状況と迂回をまとめて聞く。"
+        },
+        {
+          "en": "There are barriers across the street but no diversion signs. I can't tell if I can walk through.",
+          "ja": "通りに柵がありますが迂回の表示がありません。歩いて通れるのか分かりません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "見えているものを伝える。"
+        },
+        {
+          "en": "Could you show me another way to the square? I'm on foot.",
+          "ja": "広場への別の道を教えていただけますか。徒歩です。",
+          "register": "polite",
+          "style": "request",
+          "note": "移動手段を添える。"
+        },
+        {
+          "en": "Is it closed to cars only? Walking through may still be allowed.",
+          "ja": "車だけの通行止めですか。歩行者は通れるのかもしれません。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "誤解しやすい点を確かめる。"
+        },
+        {
+          "en": "Could you tell me whether this road is closed at present? I would need an alternative route on foot.",
+          "ja": "この道は現在通行止めでしょうか。徒歩での迂回路が必要です。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Is that road shut? How do I get past?",
+          "ja": "その道は閉まっていますか。どう抜ければいいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く聞きたいとき。"
+        },
+        {
+          "en": "If the detour is long, I could take a bus instead. Which would you do?",
+          "ja": "迂回が長いならバスにします。あなたならどうしますか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "判断を委ねる。"
+        },
+        {
+          "en": "I'm meeting someone at the square in ten minutes. That's why I'm asking rather than trying it.",
+          "ja": "10分後に広場で人と会います。だから試さずに聞いています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "急ぐ理由を示す。"
+        },
+        {
+          "en": "Sorry to stop you when it's raining. I'll keep it short.",
+          "ja": "雨の中、呼び止めてすみません。手短にします。",
+          "register": "polite",
+          "style": "apology",
+          "note": "悪天候で。"
+        },
+        {
+          "en": "Please don't go back to check for me. Your best guess is fine.",
+          "ja": "わざわざ戻って確かめないでください。だいたいで構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を歩かせない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-029",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "At a bus stop",
+      "listener": "another passenger",
+      "want": "You want to check which side of the road to wait on for your direction.",
+      "situationJa": "行きたい方向のバスは道のどちら側で待つのか確かめたい。",
+      "tags": [
+        "bus",
+        "direction"
+      ],
+      "answers": [
+        {
+          "en": "Am I on the right side for the city centre? I don't want to go the wrong way.",
+          "ja": "中心街へ行くにはこちら側でよいですか。逆方向に行きたくありません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "確認と理由を1つずつ。"
+        },
+        {
+          "en": "The stop names look the same on both sides. I can't tell them apart from here.",
+          "ja": "両側とも停留所名が同じに見えます。ここからでは見分けられません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "迷った理由を伝える。"
+        },
+        {
+          "en": "Could you tell me where the number nine stops? I'm heading to the museum.",
+          "ja": "9番はどこに停まるか教えていただけますか。博物館へ向かっています。",
+          "register": "polite",
+          "style": "request",
+          "note": "路線と行き先を添える。"
+        },
+        {
+          "en": "Does this one go past the cathedral? That's the way I need.",
+          "ja": "これは大聖堂の前を通りますか。その方向に行きたいです。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "経路で確かめる。"
+        },
+        {
+          "en": "Could you confirm which side serves the city centre? I would rather not board in the wrong direction.",
+          "ja": "中心街行きはどちら側か教えていただけますでしょうか。逆方向に乗りたくありません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Is this the right side for town? I always get it wrong.",
+          "ja": "町へ行くのはこちら側ですか。いつも間違えるもので。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくに聞く。"
+        },
+        {
+          "en": "Shall I just follow you if you're going that way? I'd rather not risk it alone.",
+          "ja": "同じ方向なら付いていってもよいですか。一人では自信が無いので。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "同じ方向の人がいるとき。"
+        },
+        {
+          "en": "I've already taken the wrong bus once today. That's why I'm checking twice.",
+          "ja": "今日すでに一度、逆のバスに乗りました。だから二度確かめています。",
+          "register": "neutral",
+          "style": "context",
+          "note": "慎重にしている理由を示す。"
+        },
+        {
+          "en": "Sorry to interrupt your call. I'll only take a second.",
+          "ja": "電話中に割り込んですみません。すぐ終わります。",
+          "register": "polite",
+          "style": "apology",
+          "note": "相手が通話中のとき。"
+        },
+        {
+          "en": "Don't worry if you're not sure. I'll ask the driver as well.",
+          "ja": "分からなくても大丈夫です。運転手にも聞いてみます。",
+          "register": "neutral",
+          "style": "reassure",
+          "note": "相手に責任を負わせない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-030",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "At a tourist information desk",
+      "listener": "a staff member",
+      "want": "You want to ask for a route to a viewpoint in time for sunset.",
+      "situationJa": "日の入りに間に合う展望台への行き方を聞きたい。",
+      "tags": [
+        "viewpoint",
+        "sunset"
+      ],
+      "answers": [
+        {
+          "en": "I'd like to reach the viewpoint before sunset. What's the best way?",
+          "ja": "日の入り前に展望台へ着きたいです。どう行くのがよいですか。",
+          "register": "polite",
+          "style": "basic",
+          "note": "目的と質問を1つずつ。"
+        },
+        {
+          "en": "The sun sets at about half past seven today. I have just over an hour from now.",
+          "ja": "今日は7時半ごろに日が沈みます。今から1時間強あります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "使える時間を数字で示す。"
+        },
+        {
+          "en": "Could you write down the bus number and stop? I'd rather not rely on my memory.",
+          "ja": "バスの番号と停留所を書いていただけますか。記憶に頼りたくないので。",
+          "register": "polite",
+          "style": "request",
+          "note": "書いてもらう。乗り間違いを防ぐ。"
+        },
+        {
+          "en": "Is the last bus back at nine? I don't want to be stranded up there.",
+          "ja": "帰りの最終は9時ですか。上で足止めされたくありません。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "帰りまで確かめる。"
+        },
+        {
+          "en": "I would like to reach the viewpoint in time for sunset. Could you recommend the most reliable route?",
+          "ja": "日の入りに間に合うよう展望台へ行きたいです。最も確実な経路を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "丁寧な窓口で。"
+        },
+        {
+          "en": "Can I make the viewpoint by sunset? How do I get there?",
+          "ja": "日の入りまでに展望台へ行けますか。どう行けばいいですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く聞きたいとき。"
+        },
+        {
+          "en": "If the bus is too slow, I'd happily take a taxi one way. Would that get me there in time?",
+          "ja": "バスが遅いなら、片道はタクシーでも構いません。それで間に合いますか。",
+          "register": "polite",
+          "style": "propose",
+          "note": "予算の柔軟さを示す。"
+        },
+        {
+          "en": "I'm carrying a tripod and a camera bag. A long climb would be difficult.",
+          "ja": "三脚とカメラのかばんを持っています。長い登りは厳しいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "荷物の条件を伝える。"
+        },
+        {
+          "en": "Sorry to come in right before you close. I'll be as quick as I can.",
+          "ja": "閉まる直前に来てすみません。できるだけ手短にします。",
+          "register": "polite",
+          "style": "apology",
+          "note": "終業間際に。"
+        },
+        {
+          "en": "Please don't call the bus company for me. The timetable on the wall is enough.",
+          "ja": "バス会社に電話しなくて大丈夫です。壁の時刻表で足ります。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手間をかけさせない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-031",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "On a street",
+      "listener": "a passer-by",
+      "want": "You want to ask how long the walk takes with a small child.",
+      "situationJa": "小さな子ども連れで歩くとどれくらいかかるか聞きたい。",
+      "tags": [
+        "walking",
+        "child"
+      ],
+      "answers": [
+        {
+          "en": "How long is the walk with a small child? He's four.",
+          "ja": "小さな子ども連れだとどれくらいかかりますか。4歳です。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "条件を数字で添える。"
+        },
+        {
+          "en": "He walks slowly and stops a lot. Twenty minutes for me is usually forty for us.",
+          "ja": "ゆっくり歩いてよく立ち止まります。私の20分は二人だと40分です。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "実感が伝わる。現実的な答えが返る。"
+        },
+        {
+          "en": "Could you tell me if there are steps on the way? I have a pushchair with me.",
+          "ja": "途中に段差があるか教えていただけますか。ベビーカーがあります。",
+          "register": "polite",
+          "style": "request",
+          "note": "必要な情報を特定して聞く。"
+        },
+        {
+          "en": "Is the path flat most of the way? The hill is what worries me.",
+          "ja": "道はだいたい平らですか。心配なのは坂です。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "懸念を先に出す。"
+        },
+        {
+          "en": "Could you tell me roughly how long the walk takes at a child's pace? We are not in any hurry.",
+          "ja": "子どもの歩調でどれくらいかかるか、おおよそ教えていただけますでしょうか。急いではおりません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "How long with a little one? He doesn't walk fast.",
+          "ja": "小さい子連れだとどれくらいですか。速くは歩けません。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくに聞く。"
+        },
+        {
+          "en": "If it's over half an hour, we'd take the bus. Is there a stop near here?",
+          "ja": "30分以上ならバスにします。近くに停留所はありますか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "条件つきで次の質問へつなぐ。"
+        },
+        {
+          "en": "We've been out since early this morning. He's getting tired now.",
+          "ja": "今朝早くから出ています。そろそろ疲れてきました。",
+          "register": "neutral",
+          "style": "context",
+          "note": "背景を伝える。無理のない案が返る。"
+        },
+        {
+          "en": "Sorry to ask something so specific. Most estimates don't fit us.",
+          "ja": "細かいことを聞いてすみません。普通の目安が当てはまらないもので。",
+          "register": "polite",
+          "style": "apology",
+          "note": "変わった質問をするとき。"
+        },
+        {
+          "en": "Please don't worry about being exact. A rough idea is all I need.",
+          "ja": "正確でなくて大丈夫です。おおよそで十分です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を悩ませない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-032",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "At a station",
+      "listener": "a station attendant",
+      "want": "You want to ask where the replacement bus leaves from.",
+      "situationJa": "代行バスがどこから出るのか聞きたい。",
+      "tags": [
+        "replacement",
+        "bus"
+      ],
+      "answers": [
+        {
+          "en": "Where does the replacement bus leave from? The board doesn't say.",
+          "ja": "代行バスはどこから出ますか。案内板には書かれていません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "質問と理由を1つずつ。"
+        },
+        {
+          "en": "The announcement said to use the bus but not where to find it. Everyone here seems just as lost.",
+          "ja": "放送はバスを使えと言うだけで場所は言いませんでした。ここの皆も同じように困っています。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "情報が足りていないと伝わる。"
+        },
+        {
+          "en": "Could you point me to the right exit? I'll find it from there.",
+          "ja": "どの出口へ行けばよいか教えていただけますか。そこから探せます。",
+          "register": "polite",
+          "style": "request",
+          "note": "最初の一歩だけ頼む。"
+        },
+        {
+          "en": "Is it the same stop as the airport coach? I remember that one from earlier.",
+          "ja": "空港行きの長距離バスと同じ乗り場ですか。先ほど見た記憶があります。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "手がかりを出して確かめる。"
+        },
+        {
+          "en": "Could you tell me the departure point for the rail replacement service? I have a connection to make.",
+          "ja": "代行輸送の出発地点を教えていただけますでしょうか。乗り継ぎがあります。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Where do I get the bus? Nobody seems to know.",
+          "ja": "バスはどこで乗りますか。誰も知らないようで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "混乱した現場で。"
+        },
+        {
+          "en": "If the buses are full, could I take a taxi and claim it back? I'd like to know the rule first.",
+          "ja": "バスが満員なら、タクシーを使って後で請求できますか。先に規則を知りたいです。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "混乱時の現実的な確認。"
+        },
+        {
+          "en": "I'm connecting to a flight at eight tomorrow morning. Missing this leg would be serious for me.",
+          "ja": "明朝8時の便に乗り継ぎます。ここで遅れると大ごとです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "優先してもらいやすくなる。"
+        },
+        {
+          "en": "Sorry to add to the questions you're getting. I know it's chaotic right now.",
+          "ja": "質問攻めに加わってすみません。今は大変ですね。",
+          "register": "polite",
+          "style": "apology",
+          "note": "混雑している駅員に。"
+        },
+        {
+          "en": "Please help the people with children first. I can wait here.",
+          "ja": "お子さん連れの方を先にどうぞ。ここで待てます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "列を譲る。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-033",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "On a street",
+      "listener": "a passer-by",
+      "want": "You want to ask whether the riverside path leads to the bridge.",
+      "situationJa": "川沿いの道が橋につながっているか聞きたい。",
+      "tags": [
+        "path",
+        "river"
+      ],
+      "answers": [
+        {
+          "en": "Does this riverside path lead to the bridge? I'd rather walk by the water.",
+          "ja": "この川沿いの道は橋に続いていますか。できれば水辺を歩きたいです。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "質問と希望を1つずつ。"
+        },
+        {
+          "en": "The map shows it stopping halfway. I can't tell if that's out of date.",
+          "ja": "地図では途中で途切れています。古い情報なのか分かりません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "疑問の出どころを示す。"
+        },
+        {
+          "en": "Could you tell me where it comes out? I'd like to know before I commit.",
+          "ja": "どこに出るか教えていただけますか。歩き出す前に知りたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "引き返す手間を避ける。"
+        },
+        {
+          "en": "Is it open all the way along? Part of it looked fenced off earlier.",
+          "ja": "最後まで通れますか。先ほど一部が柵で塞がれて見えました。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "見たことを添えて確かめる。"
+        },
+        {
+          "en": "Could you tell me whether this path continues to the bridge? I would prefer to avoid the main road.",
+          "ja": "この道は橋まで続いていますでしょうか。幹線道路は避けたいのです。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Does this path go to the bridge? Or do I have to go back?",
+          "ja": "この道は橋まで行けますか。それとも戻らないとだめですか。",
+          "register": "casual",
+          "style": "casual",
+          "note": "短く聞きたいとき。"
+        },
+        {
+          "en": "If it's blocked, I could cross here and walk on the other bank. Would that work?",
+          "ja": "塞がっているなら、ここで渡って対岸を歩けます。それで大丈夫ですか。",
+          "register": "neutral",
+          "style": "propose",
+          "note": "自分の案を確かめる。"
+        },
+        {
+          "en": "I'm cycling, not walking. Some of these paths don't allow bikes.",
+          "ja": "歩きではなく自転車です。自転車が入れない道もあるので。",
+          "register": "neutral",
+          "style": "context",
+          "note": "条件が変わる情報を先に出す。"
+        },
+        {
+          "en": "Sorry to bother you while you're out running. I'll be quick.",
+          "ja": "走っている途中に声をかけてすみません。すぐ終わります。",
+          "register": "polite",
+          "style": "apology",
+          "note": "相手が運動中のとき。"
+        },
+        {
+          "en": "Please don't stop your run for this. Just a yes or no is fine.",
+          "ja": "このために足を止めなくて大丈夫です。はいかいいえで十分です。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "相手を止めない。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-034",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "At a hotel reception",
+      "listener": "a receptionist",
+      "want": "You want to ask how to get to the airport before six in the morning.",
+      "situationJa": "朝6時前に空港へ行く方法を聞きたい。",
+      "tags": [
+        "airport",
+        "early"
+      ],
+      "answers": [
+        {
+          "en": "How do I get to the airport before six in the morning? The trains may not run yet.",
+          "ja": "朝6時前に空港へ行くにはどうすればよいですか。まだ列車が動いていないかもしれません。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "時間の条件を先に出す。"
+        },
+        {
+          "en": "My flight is at eight and check-in closes an hour before. I need to leave here by five.",
+          "ja": "便は8時で、搭乗手続きは1時間前に締まります。5時にはここを出る必要があります。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "逆算した時刻を示す。"
+        },
+        {
+          "en": "Could you book a taxi for half past four? I'd rather arrange it tonight.",
+          "ja": "4時半にタクシーを手配していただけますか。今夜のうちに決めておきたいです。",
+          "register": "polite",
+          "style": "request",
+          "note": "時刻を指定して頼む。"
+        },
+        {
+          "en": "Is the night bus still running at that hour? Someone mentioned one earlier.",
+          "ja": "その時間、深夜バスはまだ走っていますか。先ほど誰かが言っていました。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "安い手段を確かめる。"
+        },
+        {
+          "en": "I need to reach the airport before six in the morning. Could you advise me on the available options?",
+          "ja": "朝6時前に空港へ着く必要があります。利用できる手段を教えていただけますでしょうか。",
+          "register": "formal",
+          "style": "formal",
+          "note": "丁寧な宿で。"
+        },
+        {
+          "en": "How do I get to the airport that early? Nothing seems to run.",
+          "ja": "そんなに早く空港へはどう行けますか。何も動いていないようで。",
+          "register": "casual",
+          "style": "casual",
+          "note": "気さくな宿で。"
+        },
+        {
+          "en": "If a taxi is very expensive, I'd share with another guest. Could you ask if anyone else is going?",
+          "ja": "タクシーが高いなら他の客と相乗りします。他に行く方がいないか聞いてもらえますか。",
+          "register": "polite",
+          "style": "negotiate",
+          "note": "費用を下げる案を出す。"
+        },
+        {
+          "en": "I'll be checking out with two large cases. Public transport would be hard with those.",
+          "ja": "大きな荷物2つで出発します。公共交通では厳しいです。",
+          "register": "neutral",
+          "style": "context",
+          "note": "条件を伝える。案が絞れる。"
+        },
+        {
+          "en": "Sorry to ask you to plan my morning. I'd rather not get it wrong.",
+          "ja": "朝の段取りまでお願いしてすみません。間違えたくないので。",
+          "register": "polite",
+          "style": "apology",
+          "note": "手間をかけるとき。"
+        },
+        {
+          "en": "Please don't wake anyone early for me. I can let myself out.",
+          "ja": "私のために誰かを早く起こさないでください。自分で出られます。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "宿の負担を減らす。"
+        }
+      ]
+    },
+    {
+      "id": "directions-2-035",
+      "category": "directions",
+      "level": 2,
+      "difficulty": 2,
+      "place": "In a station",
+      "listener": "a station attendant",
+      "want": "You want to ask which carriage to board for the exit you need.",
+      "situationJa": "使いたい出口に近いのは何両目か聞きたい。",
+      "tags": [
+        "carriage",
+        "exit"
+      ],
+      "answers": [
+        {
+          "en": "Which carriage is best for the south exit? I'm changing to a bus there.",
+          "ja": "南口に近いのは何両目ですか。そこでバスに乗り換えます。",
+          "register": "neutral",
+          "style": "basic",
+          "note": "目的も添える。的確な答えが返る。"
+        },
+        {
+          "en": "The station is long and I have only four minutes to change. Walking the platform would cost me the connection.",
+          "ja": "駅が長く、乗り換えの時間は4分しかありません。ホームを歩くと乗り継げません。",
+          "register": "neutral",
+          "style": "explain",
+          "note": "時間の制約を数字で示す。"
+        },
+        {
+          "en": "Could you tell me where to stand on the platform? I'll wait there.",
+          "ja": "ホームのどこに立てばよいか教えていただけますか。そこで待ちます。",
+          "register": "polite",
+          "style": "request",
+          "note": "行動につながる形で頼む。"
+        },
+        {
+          "en": "Is the front of the train nearer the exit? That's what I assumed.",
+          "ja": "先頭のほうが出口に近いですか。そう思っていました。",
+          "register": "neutral",
+          "style": "confirm",
+          "note": "自分の推測を確かめる。"
+        },
+        {
+          "en": "Could you advise which carriage is closest to the south exit? I have a tight connection to make.",
+          "ja": "南口にいちばん近い車両を教えていただけますでしょうか。乗り継ぎに余裕がありません。",
+          "register": "formal",
+          "style": "formal",
+          "note": "改まった聞き方。"
+        },
+        {
+          "en": "Which car for the south exit? I'm in a rush.",
+          "ja": "南口は何両目ですか。急いでいます。",
+          "register": "casual",
+          "style": "casual",
+          "note": "時間が無いとき。"
+        },
+        {
+          "en": "If the carriages aren't marked, could I ask the guard on board? I'd rather not guess.",
+          "ja": "車両に表示が無ければ、車内で乗務員に聞いてもよいですか。当てずっぽうは避けたいので。",
+          "register": "polite",
+          "style": "propose",
+          "note": "確かめ続ける道を用意する。"
+        },
+        {
+          "en": "I'll have a bicycle with me as well. That may limit which carriage I can use.",
+          "ja": "自転車も一緒です。乗れる車両が限られるかもしれません。",
+          "register": "neutral",
+          "style": "context",
+          "note": "条件を先に出す。"
+        },
+        {
+          "en": "Sorry to ask something so detailed. It makes a real difference to my connection.",
+          "ja": "細かいことを聞いてすみません。乗り継ぎに大きく響くもので。",
+          "register": "polite",
+          "style": "apology",
+          "note": "細かい質問をするとき。"
+        },
+        {
+          "en": "Please don't check the diagram for me. Your best guess will do.",
+          "ja": "わざわざ図を確かめなくて大丈夫です。だいたいで構いません。",
+          "register": "polite",
+          "style": "considerate",
+          "note": "手間をかけさせない。"
+        }
       ]
     }
   ]

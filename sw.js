@@ -21,7 +21,7 @@
    ================================================================== */
 'use strict';
 
-const VERSION = 'eikaiwa-2026090907';
+const VERSION = 'eikaiwa-2026091001';
 const CACHE = VERSION;
 const FONT_CACHE = 'eikaiwa-fonts-v1';
 

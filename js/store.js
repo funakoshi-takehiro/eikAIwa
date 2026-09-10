@@ -22,7 +22,10 @@ EIK.Store = (function () {
 
   var DEFAULTS = {
     showJa: false,        // 状況カードの和訳を既定で表示するか
-    countdown: 10,        // 考える時間（秒）。0 で OFF
+    /* 考える時間は既定で OFF。
+       秒数が減っていくのが目に入ると、言い方を組み立てる前に
+       「時間切れ」のほうへ気が向く。急かされたい人だけ設定で入れる。 */
+    countdown: 0,
     showMyAnswer: true,   // 自分の答えの入力欄を出すか
     ttsRate: 0.95,
     ttsVoice: '',         // voiceURI
